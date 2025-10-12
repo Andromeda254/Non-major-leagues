@@ -1,0 +1,22 @@
+{
+  "name": "testgames",
+  "version": "1.0.0",
+  "description": "A comprehensive machine learning pipeline for predicting soccer match outcomes in non-major leagues, with integrated betting strategy and risk management.",
+  "main": "enhanced_soccer_match_crawler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "dotenv": "^17.2.3",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7",
+    "puppeteer": "^24.24.0",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2"
+  }
+}

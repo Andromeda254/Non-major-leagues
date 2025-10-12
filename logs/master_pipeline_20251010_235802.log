@@ -1,0 +1,91 @@
+2025-10-10 23:58:02,882 - __main__ - INFO - Master Pipeline initialized
+2025-10-10 23:58:02,882 - __main__ - INFO - Using default configuration
+2025-10-10 23:58:02,882 - __main__ - INFO - ================================================================================
+2025-10-10 23:58:02,882 - __main__ - INFO - STARTING MULTI-MARKET BETTING PIPELINE
+2025-10-10 23:58:02,882 - __main__ - INFO - ================================================================================
+2025-10-10 23:58:02,882 - multi_market_integration - INFO - Initializing multi-market components
+2025-10-10 23:58:02,882 - multi_market_integration - INFO - All components initialized
+2025-10-10 23:58:02,882 - multi_market_integration - INFO - Running complete multi-market pipeline for E1
+2025-10-10 23:58:02,882 - multi_market_integration - INFO - Phase 1: Data Collection
+2025-10-10 23:58:02,882 - multi_market_integration - INFO - Collecting multi-market data for E1
+2025-10-10 23:58:02,883 - non_major_league_data_collector - INFO - Collecting multi-market data for E1
+2025-10-10 23:58:02,883 - non_major_league_data_collector - INFO - Collecting historical data for E1, seasons: ['2324', '2223']
+2025-10-10 23:58:06,035 - non_major_league_data_collector - INFO - Collected 552 matches for E1 2324
+2025-10-10 23:58:09,016 - non_major_league_data_collector - INFO - Collected 552 matches for E1 2223
+2025-10-10 23:58:09,021 - non_major_league_data_collector - INFO - Validating data quality for E1
+2025-10-10 23:58:09,046 - non_major_league_data_collector - INFO - Removed 0 duplicate rows
+2025-10-10 23:58:09,058 - non_major_league_data_collector - WARNING - Found 634 invalid dates
+2025-10-10 23:58:09,064 - non_major_league_data_collector - INFO - Found 30 unique teams
+2025-10-10 23:58:09,079 - non_major_league_data_collector - INFO - Data validation complete. Final dataset: 470 matches
+2025-10-10 23:58:09,080 - non_major_league_data_collector - INFO - Total historical data collected: 470 matches
+2025-10-10 23:58:09,080 - non_major_league_data_collector - INFO - Enhancing with match statistics
+2025-10-10 23:58:09,080 - non_major_league_data_collector - INFO - Enhancing with half-time data
+2025-10-10 23:58:09,085 - non_major_league_data_collector - INFO - Enhancing with detailed statistics
+2025-10-10 23:58:09,094 - non_major_league_data_collector - INFO - Multi-market data collection complete: 470 matches
+2025-10-10 23:58:09,094 - multi_market_integration - INFO - Collected 470 matches with 126 features
+2025-10-10 23:58:09,094 - multi_market_integration - INFO - Phase 2: Feature Engineering
+2025-10-10 23:58:09,094 - multi_market_integration - INFO - Engineering multi-market features
+2025-10-10 23:58:09,094 - multi_market_strategy - INFO - Creating multi-market targets
+2025-10-10 23:58:09,131 - multi_market_strategy - INFO - Created 14 market targets
+2025-10-10 23:58:09,132 - multi_market_strategy - INFO - Creating market-specific features
+2025-10-10 23:58:09,186 - multi_market_strategy - INFO - Created market-specific features
+2025-10-10 23:58:09,187 - non_major_league_feature_engineer - INFO - Starting feature engineering for 470 matches
+2025-10-10 23:58:09,188 - non_major_league_feature_engineer - INFO - Creating basic features
+2025-10-10 23:58:09,192 - non_major_league_feature_engineer - INFO - Creating form features
+2025-10-10 23:58:17,020 - non_major_league_feature_engineer - INFO - Creating consistency features
+2025-10-10 23:58:19,782 - non_major_league_feature_engineer - INFO - Creating market features
+2025-10-10 23:58:19,799 - non_major_league_feature_engineer - INFO - Creating temporal features
+2025-10-10 23:58:21,731 - non_major_league_feature_engineer - INFO - Creating seasonal features
+2025-10-10 23:58:24,163 - non_major_league_feature_engineer - INFO - Creating fixture congestion features
+2025-10-10 23:58:31,473 - non_major_league_feature_engineer - INFO - Creating temporal context features
+2025-10-10 23:58:31,489 - non_major_league_feature_engineer - INFO - Creating momentum features
+2025-10-10 23:58:35,891 - non_major_league_feature_engineer - INFO - Creating league position features
+2025-10-10 23:58:36,157 - non_major_league_feature_engineer - INFO - Creating league-specific features
+2025-10-10 23:58:36,157 - non_major_league_feature_engineer - INFO - Creating cross-league features
+2025-10-10 23:58:36,160 - non_major_league_feature_engineer - INFO - Creating advanced statistical features
+2025-10-10 23:58:36,167 - non_major_league_feature_engineer - INFO - Creating team embedding features
+2025-10-10 23:58:36,435 - non_major_league_feature_engineer - INFO - Finalizing features
+2025-10-10 23:58:37,057 - non_major_league_feature_engineer - INFO - Feature engineering complete. Final features: 286
+2025-10-10 23:58:37,057 - multi_market_integration - INFO - Feature engineering complete: 286 features
+2025-10-10 23:58:37,058 - multi_market_integration - INFO - Phase 3: Model Training
+2025-10-10 23:58:37,058 - multi_market_integration - INFO - Training multi-market models
+2025-10-10 23:58:37,058 - multi_market_model_architecture - INFO - Creating market-specific features
+2025-10-10 23:58:37,064 - multi_market_model_architecture - INFO - Created features for 6 markets
+2025-10-10 23:58:37,066 - multi_market_model_architecture - INFO - Training multi-output models
+2025-10-10 23:58:37,066 - multi_market_model_architecture - INFO - Creating multi-output models
+2025-10-10 23:58:37,067 - multi_market_model_architecture - INFO - Created 3 multi-output models
+2025-10-10 23:58:37,067 - multi_market_model_architecture - INFO - Training xgboost multi-output model...
+2025-10-10 23:58:37,070 - multi_market_model_architecture - ERROR - Error training xgboost: Unknown label type: continuous-multioutput. Maybe you are trying to fit a classifier, which expects discrete classes on a regression target with continuous values.
+2025-10-10 23:58:37,071 - multi_market_model_architecture - INFO - Training lightgbm multi-output model...
+2025-10-10 23:58:37,073 - multi_market_model_architecture - ERROR - Error training lightgbm: Unknown label type: continuous-multioutput. Maybe you are trying to fit a classifier, which expects discrete classes on a regression target with continuous values.
+2025-10-10 23:58:37,074 - multi_market_model_architecture - INFO - Training random_forest multi-output model...
+2025-10-10 23:58:37,077 - multi_market_model_architecture - ERROR - Error training random_forest: Unknown label type: continuous-multioutput. Maybe you are trying to fit a classifier, which expects discrete classes on a regression target with continuous values.
+2025-10-10 23:58:37,077 - multi_market_model_architecture - INFO - Creating market ensembles
+2025-10-10 23:58:37,077 - multi_market_model_architecture - INFO - Created 0 ensemble models
+2025-10-10 23:58:37,077 - multi_market_model_architecture - INFO - Calibrating market models
+2025-10-10 23:58:37,082 - multi_market_model_architecture - ERROR - Error calibrating xgboost: Unknown label type: continuous-multioutput. Maybe you are trying to fit a classifier, which expects discrete classes on a regression target with continuous values.
+2025-10-10 23:58:37,086 - multi_market_model_architecture - ERROR - Error calibrating lightgbm: Unknown label type: continuous-multioutput. Maybe you are trying to fit a classifier, which expects discrete classes on a regression target with continuous values.
+2025-10-10 23:58:37,090 - multi_market_model_architecture - ERROR - Error calibrating random_forest: Unknown label type: continuous-multioutput. Maybe you are trying to fit a classifier, which expects discrete classes on a regression target with continuous values.
+2025-10-10 23:58:37,090 - multi_market_integration - INFO - Multi-market model training complete
+2025-10-10 23:58:37,090 - multi_market_integration - INFO - Phase 4: Making Predictions
+2025-10-10 23:58:37,090 - multi_market_integration - INFO - Making multi-market predictions
+2025-10-10 23:58:37,090 - multi_market_model_architecture - INFO - Creating market-specific features
+2025-10-10 23:58:37,096 - multi_market_model_architecture - INFO - Created features for 6 markets
+2025-10-10 23:58:37,096 - multi_market_model_architecture - INFO - Making multi-market predictions
+2025-10-10 23:58:37,097 - multi_market_model_architecture - ERROR - Error predicting with xgboost: This MultiOutputClassifier instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-10-10 23:58:37,097 - multi_market_model_architecture - ERROR - Error predicting with lightgbm: This MultiOutputClassifier instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-10-10 23:58:37,097 - multi_market_model_architecture - ERROR - Error predicting with random_forest: This MultiOutputClassifier instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-10-10 23:58:37,097 - multi_market_model_architecture - INFO - Calculating market correlations
+2025-10-10 23:58:37,097 - multi_market_integration - INFO - Predictions made for 0 models
+2025-10-10 23:58:37,097 - multi_market_integration - INFO - Phase 5: Strategy Execution
+2025-10-10 23:58:37,098 - multi_market_integration - INFO - Executing multi-market strategy
+2025-10-10 23:58:37,098 - multi_market_strategy - INFO - Executing multi-market strategy
+2025-10-10 23:58:37,098 - multi_market_strategy - INFO - Selecting best markets
+2025-10-10 23:58:37,098 - multi_market_strategy - INFO - Selected markets: ['match_result', 'both_teams_score']
+2025-10-10 23:58:37,099 - multi_market_strategy - INFO - Calculating position sizes
+2025-10-10 23:58:37,099 - multi_market_strategy - INFO - Optimizing portfolio weights
+2025-10-10 23:58:37,099 - multi_market_strategy - INFO - Optimized weights: {'match_result': 0.625, 'both_teams_score': 0.375}
+2025-10-10 23:58:37,099 - multi_market_strategy - INFO - Position sizes: {'match_result': 31.25, 'both_teams_score': 18.75}
+2025-10-10 23:58:37,099 - multi_market_strategy - INFO - Multi-market strategy executed: 2 bets, 50.00 total risk
+2025-10-10 23:58:37,099 - multi_market_integration - INFO - Complete multi-market pipeline executed successfully
+2025-10-10 23:58:37,101 - __main__ - INFO - Multi-market pipeline completed successfully in 34.22 seconds

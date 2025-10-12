@@ -1,0 +1,73 @@
+2025-10-10 23:56:56,212 - __main__ - INFO - Master Pipeline initialized
+2025-10-10 23:56:56,212 - __main__ - INFO - Using default configuration
+2025-10-10 23:56:56,213 - __main__ - INFO - ================================================================================
+2025-10-10 23:56:56,213 - __main__ - INFO - STARTING MULTI-MARKET BETTING PIPELINE
+2025-10-10 23:56:56,213 - __main__ - INFO - ================================================================================
+2025-10-10 23:56:56,213 - multi_market_integration - INFO - Initializing multi-market components
+2025-10-10 23:56:56,213 - multi_market_integration - INFO - All components initialized
+2025-10-10 23:56:56,213 - multi_market_integration - INFO - Running complete multi-market pipeline for E1
+2025-10-10 23:56:56,213 - multi_market_integration - INFO - Phase 1: Data Collection
+2025-10-10 23:56:56,213 - multi_market_integration - INFO - Collecting multi-market data for E1
+2025-10-10 23:56:56,213 - non_major_league_data_collector - INFO - Collecting multi-market data for E1
+2025-10-10 23:56:56,213 - non_major_league_data_collector - INFO - Collecting historical data for E1, seasons: ['2324', '2223']
+2025-10-10 23:56:59,412 - non_major_league_data_collector - INFO - Collected 552 matches for E1 2324
+2025-10-10 23:57:02,615 - non_major_league_data_collector - INFO - Collected 552 matches for E1 2223
+2025-10-10 23:57:02,617 - non_major_league_data_collector - INFO - Validating data quality for E1
+2025-10-10 23:57:02,637 - non_major_league_data_collector - INFO - Removed 0 duplicate rows
+2025-10-10 23:57:02,655 - non_major_league_data_collector - WARNING - Found 634 invalid dates
+2025-10-10 23:57:02,665 - non_major_league_data_collector - INFO - Found 30 unique teams
+2025-10-10 23:57:02,681 - non_major_league_data_collector - INFO - Data validation complete. Final dataset: 470 matches
+2025-10-10 23:57:02,681 - non_major_league_data_collector - INFO - Total historical data collected: 470 matches
+2025-10-10 23:57:02,682 - non_major_league_data_collector - INFO - Enhancing with match statistics
+2025-10-10 23:57:02,682 - non_major_league_data_collector - INFO - Enhancing with half-time data
+2025-10-10 23:57:02,688 - non_major_league_data_collector - INFO - Enhancing with detailed statistics
+2025-10-10 23:57:02,698 - non_major_league_data_collector - INFO - Multi-market data collection complete: 470 matches
+2025-10-10 23:57:02,698 - multi_market_integration - INFO - Collected 470 matches with 126 features
+2025-10-10 23:57:02,698 - multi_market_integration - INFO - Phase 2: Feature Engineering
+2025-10-10 23:57:02,699 - multi_market_integration - INFO - Engineering multi-market features
+2025-10-10 23:57:02,699 - multi_market_strategy - INFO - Creating multi-market targets
+2025-10-10 23:57:02,747 - multi_market_strategy - INFO - Created 14 market targets
+2025-10-10 23:57:02,747 - multi_market_strategy - INFO - Creating market-specific features
+2025-10-10 23:57:02,829 - multi_market_strategy - INFO - Created market-specific features
+2025-10-10 23:57:02,829 - non_major_league_feature_engineer - INFO - Starting feature engineering for 470 matches
+2025-10-10 23:57:02,831 - non_major_league_feature_engineer - INFO - Creating basic features
+2025-10-10 23:57:02,837 - non_major_league_feature_engineer - INFO - Creating form features
+2025-10-10 23:57:11,512 - non_major_league_feature_engineer - INFO - Creating consistency features
+2025-10-10 23:57:14,728 - non_major_league_feature_engineer - INFO - Creating market features
+2025-10-10 23:57:14,751 - non_major_league_feature_engineer - INFO - Creating temporal features
+2025-10-10 23:57:17,494 - non_major_league_feature_engineer - INFO - Creating seasonal features
+2025-10-10 23:57:20,486 - non_major_league_feature_engineer - INFO - Creating fixture congestion features
+2025-10-10 23:57:29,761 - non_major_league_feature_engineer - INFO - Creating temporal context features
+2025-10-10 23:57:29,770 - non_major_league_feature_engineer - INFO - Creating momentum features
+2025-10-10 23:57:35,987 - non_major_league_feature_engineer - INFO - Creating league position features
+2025-10-10 23:57:36,434 - non_major_league_feature_engineer - INFO - Creating league-specific features
+2025-10-10 23:57:36,435 - non_major_league_feature_engineer - INFO - Creating cross-league features
+2025-10-10 23:57:36,439 - non_major_league_feature_engineer - INFO - Creating advanced statistical features
+2025-10-10 23:57:36,450 - non_major_league_feature_engineer - INFO - Creating team embedding features
+2025-10-10 23:57:36,787 - non_major_league_feature_engineer - INFO - Finalizing features
+2025-10-10 23:57:37,078 - non_major_league_feature_engineer - INFO - Feature engineering complete. Final features: 286
+2025-10-10 23:57:37,078 - multi_market_integration - INFO - Feature engineering complete: 286 features
+2025-10-10 23:57:37,078 - multi_market_integration - INFO - Phase 3: Model Training
+2025-10-10 23:57:37,079 - multi_market_integration - INFO - Training multi-market models
+2025-10-10 23:57:37,079 - multi_market_model_architecture - INFO - Creating market-specific features
+2025-10-10 23:57:37,086 - multi_market_model_architecture - INFO - Created features for 6 markets
+2025-10-10 23:57:37,088 - multi_market_integration - ERROR - Model training failed: 'model_training'
+2025-10-10 23:57:37,088 - multi_market_integration - INFO - Phase 4: Making Predictions
+2025-10-10 23:57:37,088 - multi_market_integration - INFO - Making multi-market predictions
+2025-10-10 23:57:37,088 - multi_market_model_architecture - INFO - Creating market-specific features
+2025-10-10 23:57:37,093 - multi_market_model_architecture - INFO - Created features for 6 markets
+2025-10-10 23:57:37,093 - multi_market_model_architecture - INFO - Making multi-market predictions
+2025-10-10 23:57:37,093 - multi_market_model_architecture - INFO - Calculating market correlations
+2025-10-10 23:57:37,093 - multi_market_integration - INFO - Predictions made for 0 models
+2025-10-10 23:57:37,093 - multi_market_integration - INFO - Phase 5: Strategy Execution
+2025-10-10 23:57:37,095 - multi_market_integration - INFO - Executing multi-market strategy
+2025-10-10 23:57:37,095 - multi_market_strategy - INFO - Executing multi-market strategy
+2025-10-10 23:57:37,095 - multi_market_strategy - INFO - Selecting best markets
+2025-10-10 23:57:37,095 - multi_market_strategy - INFO - Selected markets: ['match_result', 'both_teams_score']
+2025-10-10 23:57:37,095 - multi_market_strategy - INFO - Calculating position sizes
+2025-10-10 23:57:37,095 - multi_market_strategy - INFO - Optimizing portfolio weights
+2025-10-10 23:57:37,095 - multi_market_strategy - INFO - Optimized weights: {'match_result': 0.625, 'both_teams_score': 0.375}
+2025-10-10 23:57:37,095 - multi_market_strategy - INFO - Position sizes: {'match_result': 31.25, 'both_teams_score': 18.75}
+2025-10-10 23:57:37,095 - multi_market_strategy - INFO - Multi-market strategy executed: 2 bets, 50.00 total risk
+2025-10-10 23:57:37,096 - multi_market_integration - INFO - Complete multi-market pipeline executed successfully
+2025-10-10 23:57:37,098 - __main__ - INFO - Multi-market pipeline completed successfully in 40.89 seconds

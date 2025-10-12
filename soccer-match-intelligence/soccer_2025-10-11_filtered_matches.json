@@ -1,0 +1,1937 @@
+{
+  "sessionId": "soccer_2025-10-11T00-47-49-425Z",
+  "timestamp": "2025-10-11T00:48:54.796Z",
+  "totalMatches": 32,
+  "matches": [
+    {
+      "id": "api_match_245_1760143734763",
+      "text": "Venados vs Tepatitlan FC",
+      "teams": [
+        "Venados",
+        "Tepatitlan FC"
+      ],
+      "homeTeam": "Venados",
+      "awayTeam": "Tepatitlan FC",
+      "time": "2025-10-11 05:00:00",
+      "matchTime": "2025-10-11 05:00:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "Venados",
+              "odd_def": "{$competitor1}",
+              "odd_value": "2.22",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "3.45",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "Tepatitlan FC",
+              "odd_def": "{$competitor2}",
+              "odd_value": "2.95",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "Mexico",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-11T00:48:54.763Z",
+      "method": "api-fallback"
+    },
+    {
+      "id": "api_match_246_1760143734763",
+      "text": "Sporting W vs Dimas Escazu W",
+      "teams": [
+        "Sporting W",
+        "Dimas Escazu W"
+      ],
+      "homeTeam": "Sporting W",
+      "awayTeam": "Dimas Escazu W",
+      "time": "2025-10-11 05:00:00",
+      "matchTime": "2025-10-11 05:00:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "Sporting W",
+              "odd_def": "{$competitor1}",
+              "odd_value": "1.68",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "3.95",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "Dimas Escazu W",
+              "odd_def": "{$competitor2}",
+              "odd_value": "4.30",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "Costa Rica",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-11T00:48:54.763Z",
+      "method": "api-fallback"
+    },
+    {
+      "id": "api_match_247_1760143734763",
+      "text": "Metro Stars vs APIA Leichhardt",
+      "teams": [
+        "Metro Stars",
+        "APIA Leichhardt"
+      ],
+      "homeTeam": "Metro Stars",
+      "awayTeam": "APIA Leichhardt",
+      "time": "2025-10-11 05:00:00",
+      "matchTime": "2025-10-11 05:00:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "Metro Stars",
+              "odd_def": "{$competitor1}",
+              "odd_value": "3.65",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "3.90",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "APIA Leichhardt",
+              "odd_def": "{$competitor2}",
+              "odd_value": "1.82",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "Australia",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-11T00:48:54.763Z",
+      "method": "api-fallback"
+    },
+    {
+      "id": "api_match_248_1760143734763",
+      "text": "Seattle Reign FC vs Bay FC",
+      "teams": [
+        "Seattle Reign FC",
+        "Bay FC"
+      ],
+      "homeTeam": "Seattle Reign FC",
+      "awayTeam": "Bay FC",
+      "time": "2025-10-11 05:30:00",
+      "matchTime": "2025-10-11 05:30:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "Seattle Reign FC",
+              "odd_def": "{$competitor1}",
+              "odd_value": "1.88",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "3.45",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "Bay FC",
+              "odd_def": "{$competitor2}",
+              "odd_value": "3.60",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "USA",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-11T00:48:54.763Z",
+      "method": "api-fallback"
+    },
+    {
+      "id": "api_match_249_1760143734763",
+      "text": "Club Tijuana Women vs Monterrey Women",
+      "teams": [
+        "Club Tijuana Women",
+        "Monterrey Women"
+      ],
+      "homeTeam": "Club Tijuana Women",
+      "awayTeam": "Monterrey Women",
+      "time": "2025-10-11 06:00:00",
+      "matchTime": "2025-10-11 06:00:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "Club Tijuana Women",
+              "odd_def": "{$competitor1}",
+              "odd_value": "3.80",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "3.85",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "Monterrey Women",
+              "odd_def": "{$competitor2}",
+              "odd_value": "1.76",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "Mexico",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-11T00:48:54.763Z",
+      "method": "api-fallback"
+    },
+    {
+      "id": "api_match_250_1760143734763",
+      "text": "Ska-Khabarovsk-2 vs Rotor II Volgograd",
+      "teams": [
+        "Ska-Khabarovsk-2",
+        "Rotor II Volgograd"
+      ],
+      "homeTeam": "Ska-Khabarovsk-2",
+      "awayTeam": "Rotor II Volgograd",
+      "time": "2025-10-11 06:00:00",
+      "matchTime": "2025-10-11 06:00:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "Ska-Khabarovsk-2",
+              "odd_def": "{$competitor1}",
+              "odd_value": "1.99",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "3.55",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "Rotor II Volgograd",
+              "odd_def": "{$competitor2}",
+              "odd_value": "3.25",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "Russia",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-11T00:48:54.763Z",
+      "method": "api-fallback"
+    },
+    {
+      "id": "api_match_251_1760143734763",
+      "text": "Honda vs Tiamo Hirakata",
+      "teams": [
+        "Honda",
+        "Tiamo Hirakata"
+      ],
+      "homeTeam": "Honda",
+      "awayTeam": "Tiamo Hirakata",
+      "time": "2025-10-11 07:00:00",
+      "matchTime": "2025-10-11 07:00:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "Honda",
+              "odd_def": "{$competitor1}",
+              "odd_value": "1.63",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "3.75",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "Tiamo Hirakata",
+              "odd_def": "{$competitor2}",
+              "odd_value": "4.80",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "Japan",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-11T00:48:54.763Z",
+      "method": "api-fallback"
+    },
+    {
+      "id": "api_match_252_1760143734763",
+      "text": "Asuka FC vs Biwako K",
+      "teams": [
+        "Asuka FC",
+        "Biwako K"
+      ],
+      "homeTeam": "Asuka FC",
+      "awayTeam": "Biwako K",
+      "time": "2025-10-11 07:00:00",
+      "matchTime": "2025-10-11 07:00:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "Asuka FC",
+              "odd_def": "{$competitor1}",
+              "odd_value": "4.00",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "3.35",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "Biwako K",
+              "odd_def": "{$competitor2}",
+              "odd_value": "1.84",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "Japan",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-11T00:48:54.763Z",
+      "method": "api-fallback"
+    },
+    {
+      "id": "api_match_253_1760143734763",
+      "text": "Preston Lions FC vs NWS Spirit",
+      "teams": [
+        "Preston Lions FC",
+        "NWS Spirit"
+      ],
+      "homeTeam": "Preston Lions FC",
+      "awayTeam": "NWS Spirit",
+      "time": "2025-10-11 07:00:00",
+      "matchTime": "2025-10-11 07:00:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "Preston Lions FC",
+              "odd_def": "{$competitor1}",
+              "odd_value": "2.02",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "3.55",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "NWS Spirit",
+              "odd_def": "{$competitor2}",
+              "odd_value": "3.30",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "Australia",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-11T00:48:54.763Z",
+      "method": "api-fallback"
+    },
+    {
+      "id": "api_match_254_1760143734763",
+      "text": "Criacao Shinjuku vs YSCC Yokohama",
+      "teams": [
+        "Criacao Shinjuku",
+        "YSCC Yokohama"
+      ],
+      "homeTeam": "Criacao Shinjuku",
+      "awayTeam": "YSCC Yokohama",
+      "time": "2025-10-11 07:00:00",
+      "matchTime": "2025-10-11 07:00:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "Criacao Shinjuku",
+              "odd_def": "{$competitor1}",
+              "odd_value": "1.59",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "3.70",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "YSCC Yokohama",
+              "odd_def": "{$competitor2}",
+              "odd_value": "5.20",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "Japan",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-11T00:48:54.763Z",
+      "method": "api-fallback"
+    },
+    {
+      "id": "api_match_255_1760143734763",
+      "text": "Siheung Citizen FC vs Daejeon Korail",
+      "teams": [
+        "Siheung Citizen FC",
+        "Daejeon Korail"
+      ],
+      "homeTeam": "Siheung Citizen FC",
+      "awayTeam": "Daejeon Korail",
+      "time": "2025-10-11 08:00:00",
+      "matchTime": "2025-10-11 08:00:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "Siheung Citizen FC",
+              "odd_def": "{$competitor1}",
+              "odd_value": "1.83",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "3.50",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "Daejeon Korail",
+              "odd_def": "{$competitor2}",
+              "odd_value": "4.00",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "Republic of Korea",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-11T00:48:54.763Z",
+      "method": "api-fallback"
+    },
+    {
+      "id": "api_match_256_1760143734763",
+      "text": "RB Omiya Ardija vs Beleza Women",
+      "teams": [
+        "RB Omiya Ardija",
+        "Beleza Women"
+      ],
+      "homeTeam": "RB Omiya Ardija",
+      "awayTeam": "Beleza Women",
+      "time": "2025-10-11 08:00:00",
+      "matchTime": "2025-10-11 08:00:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "RB Omiya Ardija",
+              "odd_def": "{$competitor1}",
+              "odd_value": "11.00",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "5.60",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "Beleza Women",
+              "odd_def": "{$competitor2}",
+              "odd_value": "1.20",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "Japan",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-11T00:48:54.763Z",
+      "method": "api-fallback"
+    },
+    {
+      "id": "api_match_257_1760143734763",
+      "text": "Giravanz K vs Kagoshima Utd",
+      "teams": [
+        "Giravanz K",
+        "Kagoshima Utd"
+      ],
+      "homeTeam": "Giravanz K",
+      "awayTeam": "Kagoshima Utd",
+      "time": "2025-10-11 08:00:00",
+      "matchTime": "2025-10-11 08:00:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "Giravanz K",
+              "odd_def": "{$competitor1}",
+              "odd_value": "3.30",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "3.40",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "Kagoshima Utd",
+              "odd_def": "{$competitor2}",
+              "odd_value": "2.07",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "Japan",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-11T00:48:54.763Z",
+      "method": "api-fallback"
+    },
+    {
+      "id": "api_match_258_1760143734763",
+      "text": "Red Diamonds W vs Kanagawa Sagamihara Women",
+      "teams": [
+        "Red Diamonds W",
+        "Kanagawa Sagamihara Women"
+      ],
+      "homeTeam": "Red Diamonds W",
+      "awayTeam": "Kanagawa Sagamihara Women",
+      "time": "2025-10-11 08:00:00",
+      "matchTime": "2025-10-11 08:00:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "Red Diamonds W",
+              "odd_def": "{$competitor1}",
+              "odd_value": "1.26",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "5.20",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "Kanagawa Sagamihara Women",
+              "odd_def": "{$competitor2}",
+              "odd_value": "9.00",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "Japan",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-11T00:48:54.763Z",
+      "method": "api-fallback"
+    },
+    {
+      "id": "api_match_259_1760143734763",
+      "text": "Chuncheon FC vs Yeoju FC",
+      "teams": [
+        "Chuncheon FC",
+        "Yeoju FC"
+      ],
+      "homeTeam": "Chuncheon FC",
+      "awayTeam": "Yeoju FC",
+      "time": "2025-10-11 08:00:00",
+      "matchTime": "2025-10-11 08:00:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "Chuncheon FC",
+              "odd_def": "{$competitor1}",
+              "odd_value": "2.30",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "3.25",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "Yeoju FC",
+              "odd_def": "{$competitor2}",
+              "odd_value": "2.95",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "Republic of Korea",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-11T00:48:54.763Z",
+      "method": "api-fallback"
+    },
+    {
+      "id": "api_match_260_1760143734763",
+      "text": "Chuncheon FC vs Yeoju FC",
+      "teams": [
+        "Chuncheon FC",
+        "Yeoju FC"
+      ],
+      "homeTeam": "Chuncheon FC",
+      "awayTeam": "Yeoju FC",
+      "time": "2025-10-11 08:00:00",
+      "matchTime": "2025-10-11 08:00:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "Chuncheon FC",
+              "odd_def": "{$competitor1}",
+              "odd_value": "2.30",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "3.25",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "Yeoju FC",
+              "odd_def": "{$competitor2}",
+              "odd_value": "2.95",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "Republic of Korea",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-11T00:48:54.763Z",
+      "method": "api-fallback"
+    },
+    {
+      "id": "api_match_261_1760143734763",
+      "text": "Red Diamonds W vs Kanagawa Sagamihara Women",
+      "teams": [
+        "Red Diamonds W",
+        "Kanagawa Sagamihara Women"
+      ],
+      "homeTeam": "Red Diamonds W",
+      "awayTeam": "Kanagawa Sagamihara Women",
+      "time": "2025-10-11 08:00:00",
+      "matchTime": "2025-10-11 08:00:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "Red Diamonds W",
+              "odd_def": "{$competitor1}",
+              "odd_value": "1.26",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "5.20",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "Kanagawa Sagamihara Women",
+              "odd_def": "{$competitor2}",
+              "odd_value": "9.00",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "Japan",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-11T00:48:54.763Z",
+      "method": "api-fallback"
+    },
+    {
+      "id": "api_match_262_1760143734763",
+      "text": "RB Omiya Ardija vs Beleza Women",
+      "teams": [
+        "RB Omiya Ardija",
+        "Beleza Women"
+      ],
+      "homeTeam": "RB Omiya Ardija",
+      "awayTeam": "Beleza Women",
+      "time": "2025-10-11 08:00:00",
+      "matchTime": "2025-10-11 08:00:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "RB Omiya Ardija",
+              "odd_def": "{$competitor1}",
+              "odd_value": "11.00",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "5.60",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "Beleza Women",
+              "odd_def": "{$competitor2}",
+              "odd_value": "1.20",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "Japan",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-11T00:48:54.763Z",
+      "method": "api-fallback"
+    },
+    {
+      "id": "api_match_263_1760143734763",
+      "text": "Estonia Srl vs Italy",
+      "teams": [
+        "Estonia Srl",
+        "Italy"
+      ],
+      "homeTeam": "Estonia Srl",
+      "awayTeam": "Italy",
+      "time": "2025-10-11 10:00:00",
+      "matchTime": "2025-10-11 10:00:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "Estonia Srl",
+              "odd_def": "{$competitor1}",
+              "odd_value": "26.00",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "9.20",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "Italy",
+              "odd_def": "{$competitor2}",
+              "odd_value": "1.07",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "Simulated Reality League",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-11T00:48:54.763Z",
+      "method": "api-fallback"
+    },
+    {
+      "id": "api_match_264_1760143734763",
+      "text": "Hungary SRL vs Armenia Srl",
+      "teams": [
+        "Hungary SRL",
+        "Armenia Srl"
+      ],
+      "homeTeam": "Hungary SRL",
+      "awayTeam": "Armenia Srl",
+      "time": "2025-10-11 10:00:00",
+      "matchTime": "2025-10-11 10:00:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "Hungary SRL",
+              "odd_def": "{$competitor1}",
+              "odd_value": "1.32",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "4.90",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "Armenia Srl",
+              "odd_def": "{$competitor2}",
+              "odd_value": "8.80",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "Simulated Reality League",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-11T00:48:54.763Z",
+      "method": "api-fallback"
+    },
+    {
+      "id": "api_match_265_1760143734763",
+      "text": "Latvia Srl vs Andorra Srl",
+      "teams": [
+        "Latvia Srl",
+        "Andorra Srl"
+      ],
+      "homeTeam": "Latvia Srl",
+      "awayTeam": "Andorra Srl",
+      "time": "2025-10-11 10:00:00",
+      "matchTime": "2025-10-11 10:00:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "Latvia Srl",
+              "odd_def": "{$competitor1}",
+              "odd_value": "1.51",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "3.55",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "Andorra Srl",
+              "odd_def": "{$competitor2}",
+              "odd_value": "7.20",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "Simulated Reality League",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-11T00:48:54.763Z",
+      "method": "api-fallback"
+    },
+    {
+      "id": "api_match_266_1760143734763",
+      "text": "Norway Srl vs Israel Srl",
+      "teams": [
+        "Norway Srl",
+        "Israel Srl"
+      ],
+      "homeTeam": "Norway Srl",
+      "awayTeam": "Israel Srl",
+      "time": "2025-10-11 10:00:00",
+      "matchTime": "2025-10-11 10:00:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "Norway Srl",
+              "odd_def": "{$competitor1}",
+              "odd_value": "1.20",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "6.60",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "Israel Srl",
+              "odd_def": "{$competitor2}",
+              "odd_value": "11.00",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "Simulated Reality League",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-11T00:48:54.763Z",
+      "method": "api-fallback"
+    },
+    {
+      "id": "api_match_267_1760143734763",
+      "text": "Hwaseong FC vs Chungbuk Cheongju FC",
+      "teams": [
+        "Hwaseong FC",
+        "Chungbuk Cheongju FC"
+      ],
+      "homeTeam": "Hwaseong FC",
+      "awayTeam": "Chungbuk Cheongju FC",
+      "time": "2025-10-11 10:30:00",
+      "matchTime": "2025-10-11 10:30:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "Hwaseong FC",
+              "odd_def": "{$competitor1}",
+              "odd_value": "2.15",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "3.20",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "Chungbuk Cheongju FC",
+              "odd_def": "{$competitor2}",
+              "odd_value": "3.45",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "Republic of Korea",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-11T00:48:54.763Z",
+      "method": "api-fallback"
+    },
+    {
+      "id": "api_match_268_1760143734763",
+      "text": "FK Pribram B vs Mas Taborsko II",
+      "teams": [
+        "FK Pribram B",
+        "Mas Taborsko II"
+      ],
+      "homeTeam": "FK Pribram B",
+      "awayTeam": "Mas Taborsko II",
+      "time": "2025-10-11 11:00:00",
+      "matchTime": "2025-10-11 11:00:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "FK Pribram B",
+              "odd_def": "{$competitor1}",
+              "odd_value": "2.06",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "4.10",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "Mas Taborsko II",
+              "odd_def": "{$competitor2}",
+              "odd_value": "2.70",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "Czechia",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-11T00:48:54.763Z",
+      "method": "api-fallback"
+    },
+    {
+      "id": "api_match_269_1760143734763",
+      "text": "Ural-2 Yekaterinburg vs Dynamo Barnaul",
+      "teams": [
+        "Ural-2 Yekaterinburg",
+        "Dynamo Barnaul"
+      ],
+      "homeTeam": "Ural-2 Yekaterinburg",
+      "awayTeam": "Dynamo Barnaul",
+      "time": "2025-10-11 11:00:00",
+      "matchTime": "2025-10-11 11:00:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "Ural-2 Yekaterinburg",
+              "odd_def": "{$competitor1}",
+              "odd_value": "2.95",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "3.15",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "Dynamo Barnaul",
+              "odd_def": "{$competitor2}",
+              "odd_value": "2.30",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "Russia",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-11T00:48:54.763Z",
+      "method": "api-fallback"
+    },
+    {
+      "id": "api_match_270_1760143734763",
+      "text": "Sparta Kolin vs Sokol Brozany",
+      "teams": [
+        "Sparta Kolin",
+        "Sokol Brozany"
+      ],
+      "homeTeam": "Sparta Kolin",
+      "awayTeam": "Sokol Brozany",
+      "time": "2025-10-11 11:00:00",
+      "matchTime": "2025-10-11 11:00:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "Sparta Kolin",
+              "odd_def": "{$competitor1}",
+              "odd_value": "1.66",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "3.95",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "Sokol Brozany",
+              "odd_def": "{$competitor2}",
+              "odd_value": "4.10",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "Czechia",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-11T00:48:54.763Z",
+      "method": "api-fallback"
+    },
+    {
+      "id": "api_match_271_1760143734763",
+      "text": "TS Galaxy FC vs Stellenbosch FC",
+      "teams": [
+        "TS Galaxy FC",
+        "Stellenbosch FC"
+      ],
+      "homeTeam": "TS Galaxy FC",
+      "awayTeam": "Stellenbosch FC",
+      "time": "2025-10-11 11:00:00",
+      "matchTime": "2025-10-11 11:00:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "TS Galaxy FC",
+              "odd_def": "{$competitor1}",
+              "odd_value": "2.80",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "3.65",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "Stellenbosch FC",
+              "odd_def": "{$competitor2}",
+              "odd_value": "2.13",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "South Africa",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-11T00:48:54.763Z",
+      "method": "api-fallback"
+    },
+    {
+      "id": "api_match_272_1760143734763",
+      "text": "Spain SRL vs Georgia Srl",
+      "teams": [
+        "Spain SRL",
+        "Georgia Srl"
+      ],
+      "homeTeam": "Spain SRL",
+      "awayTeam": "Georgia Srl",
+      "time": "2025-10-11 11:00:00",
+      "matchTime": "2025-10-11 11:00:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "Spain SRL",
+              "odd_def": "{$competitor1}",
+              "odd_value": "1.12",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "7.80",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "Georgia Srl",
+              "odd_def": "{$competitor2}",
+              "odd_value": "17.00",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "Simulated Reality League",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-11T00:48:54.763Z",
+      "method": "api-fallback"
+    },
+    {
+      "id": "api_match_273_1760143734763",
+      "text": "Bulgaria Srl vs Turkiye",
+      "teams": [
+        "Bulgaria Srl",
+        "Turkiye"
+      ],
+      "homeTeam": "Bulgaria Srl",
+      "awayTeam": "Turkiye",
+      "time": "2025-10-11 11:00:00",
+      "matchTime": "2025-10-11 11:00:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "Bulgaria Srl",
+              "odd_def": "{$competitor1}",
+              "odd_value": "10.00",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "5.40",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "Turkiye",
+              "odd_def": "{$competitor2}",
+              "odd_value": "1.26",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "Simulated Reality League",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-11T00:48:54.763Z",
+      "method": "api-fallback"
+    },
+    {
+      "id": "api_match_274_1760143734763",
+      "text": "Ural-2 Yekaterinburg vs Dynamo Barnaul",
+      "teams": [
+        "Ural-2 Yekaterinburg",
+        "Dynamo Barnaul"
+      ],
+      "homeTeam": "Ural-2 Yekaterinburg",
+      "awayTeam": "Dynamo Barnaul",
+      "time": "2025-10-11 11:00:00",
+      "matchTime": "2025-10-11 11:00:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "Ural-2 Yekaterinburg",
+              "odd_def": "{$competitor1}",
+              "odd_value": "2.95",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "3.15",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "Dynamo Barnaul",
+              "odd_def": "{$competitor2}",
+              "odd_value": "2.30",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "Russia",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-11T00:48:54.763Z",
+      "method": "api-fallback"
+    },
+    {
+      "id": "api_match_275_1760143734763",
+      "text": "Chippa United FC vs Magesi FC",
+      "teams": [
+        "Chippa United FC",
+        "Magesi FC"
+      ],
+      "homeTeam": "Chippa United FC",
+      "awayTeam": "Magesi FC",
+      "time": "2025-10-11 11:00:00",
+      "matchTime": "2025-10-11 11:00:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "Chippa United FC",
+              "odd_def": "{$competitor1}",
+              "odd_value": "1.74",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "3.70",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "Magesi FC",
+              "odd_def": "{$competitor2}",
+              "odd_value": "3.95",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "South Africa",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-11T00:48:54.763Z",
+      "method": "api-fallback"
+    },
+    {
+      "id": "api_match_276_1760143734763",
+      "text": "FK Pribram B vs Mas Taborsko II",
+      "teams": [
+        "FK Pribram B",
+        "Mas Taborsko II"
+      ],
+      "homeTeam": "FK Pribram B",
+      "awayTeam": "Mas Taborsko II",
+      "time": "2025-10-11 11:00:00",
+      "matchTime": "2025-10-11 11:00:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "FK Pribram B",
+              "odd_def": "{$competitor1}",
+              "odd_value": "2.06",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "4.10",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "Mas Taborsko II",
+              "odd_def": "{$competitor2}",
+              "odd_value": "2.70",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "Czechia",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-11T00:48:54.763Z",
+      "method": "api-fallback"
+    }
+  ],
+  "filterCriteria": {
+    "timeRange": "5:00 AM to 11:00 AM",
+    "purpose": "ML Training Data"
+  },
+  "metadata": {
+    "extractionMethod": "enhanced_soccer_crawler",
+    "matchType": "filtered_matches",
+    "crawlerType": "soccer_matches",
+    "trainingData": true
+  }
+}

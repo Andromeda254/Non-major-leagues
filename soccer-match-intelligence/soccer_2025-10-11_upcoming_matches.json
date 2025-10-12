@@ -1,0 +1,12 @@
+{
+  "sessionId": "soccer_2025-10-11T00-25-04-983Z",
+  "timestamp": "2025-10-11T00:26:32.705Z",
+  "totalMatches": 0,
+  "matches": [],
+  "metadata": {
+    "extractionMethod": "enhanced_soccer_crawler",
+    "matchType": "upcoming_matches",
+    "crawlerType": "soccer_matches",
+    "trainingData": true
+  }
+}

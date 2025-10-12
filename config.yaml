@@ -1,0 +1,561 @@
+# Non-Major League ML Pipeline Configuration
+# ==========================================
+
+pipeline:
+  output_dir: "./pipeline_output"
+  temp_dir: "./temp"
+  log_level: "INFO"
+  parallel_processing: false
+  max_workers: 4
+
+# Phase 1: Data Collection & Preprocessing
+phase1:
+  enabled: true
+  leagues:
+    - "E1"  # Championship
+    - "E2"  # League 1
+    - "E3"  # League 2
+  seasons: 3
+  data_sources:
+    - "football-data"
+    - "odds-api"
+    - "api-football"
+  output_format: "parquet"
+  quality_thresholds:
+    min_matches_per_team: 10
+    min_seasons: 2
+    max_missing_percentage: 0.3
+    min_teams_per_league: 16
+
+# Phase 2: Model Development & Validation
+phase2:
+  enabled: true
+  models:
+    - "xgboost"
+    - "lightgbm"
+    - "random_forest"
+    - "logistic_regression"
+  ensemble_method: "weighted"
+  transfer_learning: true
+  hyperparameter_tuning: true
+  validation_method: "time_series_split"
+  conservative_settings: true
+
+# Phase 3: Backtesting & Strategy Validation
+phase3:
+  enabled: true
+  backtesting_period: "2_years"
+  initial_capital: 10000
+  kelly_fraction: 0.02
+  risk_management: true
+  live_testing: true
+  performance_metrics:
+    - "roi"
+    - "sharpe_ratio"
+    - "max_drawdown"
+    - "win_rate"
+    - "profit_factor"
+
+# Phase 4: Production Deployment & Monitoring
+phase4:
+  enabled: true
+  deployment_environment: "development"  # development, staging, production
+  monitoring: true
+  data_pipeline: true
+  model_serving: true
+  performance_tracking: true
+  health_checks: true
+  alerting: true
+
+# Data Source Configuration
+data_sources:
+  # Primary Football Data APIs
+  football_data:
+    api_key: "your_football_data_api_key_here"
+    base_url: "https://api.football-data.org/v4"
+    rate_limit: 10  # requests per minute
+    enabled: true
+    priority: 1
+    data_types: ["matches", "standings", "teams", "players"]
+    
+  odds_api:
+    api_key: "your_odds_api_key_here"
+    base_url: "https://api.the-odds-api.com/v4"
+    rate_limit: 500  # requests per month
+    enabled: true
+    priority: 2
+    data_types: ["odds", "live_odds", "historical_odds"]
+    
+  api_football:
+    api_key: "your_api_football_key_here"
+    base_url: "https://v3.football.api-sports.io"
+    rate_limit: 100  # requests per day
+    enabled: true
+    priority: 3
+    data_types: ["fixtures", "standings", "statistics", "predictions"]
+    
+  # Additional Data Sources
+  rapidapi_football:
+    api_key: "your_rapidapi_key_here"
+    base_url: "https://api-football-v1.p.rapidapi.com"
+    rate_limit: 1000  # requests per month
+    enabled: false
+    priority: 4
+    data_types: ["fixtures", "odds", "predictions", "statistics"]
+    
+  sportsdata_io:
+    api_key: "your_sportsdata_io_key_here"
+    base_url: "https://api.sportsdata.io/v3/soccer"
+    rate_limit: 1000  # requests per month
+    enabled: false
+    priority: 5
+    data_types: ["scores", "schedules", "standings", "news"]
+    
+  betfair_exchange:
+    api_key: "your_betfair_api_key_here"
+    app_key: "your_betfair_app_key_here"
+    base_url: "https://api.betfair.com/exchange/betting/json-rpc/v1"
+    rate_limit: 200  # requests per minute
+    enabled: false
+    priority: 6
+    data_types: ["odds", "market_data", "prices"]
+    
+  # Weather Data (for match conditions)
+  openweathermap:
+    api_key: "your_openweathermap_key_here"
+    base_url: "https://api.openweathermap.org/data/2.5"
+    rate_limit: 1000  # requests per day
+    enabled: false
+    priority: 7
+    data_types: ["weather", "forecast"]
+    
+  # News and Sentiment Data
+  newsapi:
+    api_key: "your_newsapi_key_here"
+    base_url: "https://newsapi.org/v2"
+    rate_limit: 1000  # requests per day
+    enabled: false
+    priority: 8
+    data_types: ["news", "headlines"]
+    
+  # Social Media Data
+  twitter_api:
+    bearer_token: "your_twitter_bearer_token_here"
+    base_url: "https://api.twitter.com/2"
+    rate_limit: 300  # requests per 15 minutes
+    enabled: false
+    priority: 9
+    data_types: ["tweets", "sentiment"]
+    
+  # Alternative Odds Providers
+  pinnacle:
+    api_key: "your_pinnacle_api_key_here"
+    base_url: "https://api.pinnacle.com/v1"
+    rate_limit: 100  # requests per minute
+    enabled: false
+    priority: 10
+    data_types: ["odds", "lines"]
+    
+  # Historical Data Providers
+  football_api_com:
+    api_key: "your_football_api_com_key_here"
+    base_url: "https://api.football-api.com/v1"
+    rate_limit: 100  # requests per day
+    enabled: false
+    priority: 11
+    data_types: ["historical_matches", "statistics"]
+    
+  # Live Score Providers
+  livescore:
+    api_key: "your_livescore_key_here"
+    base_url: "https://livescore-api.com/api-client"
+    rate_limit: 1000  # requests per month
+    enabled: false
+    priority: 12
+    data_types: ["live_scores", "fixtures"]
+    
+  # Backup Data Sources
+  football_api_net:
+    api_key: "your_football_api_net_key_here"
+    base_url: "https://api.football-api.net/v1"
+    rate_limit: 50  # requests per day
+    enabled: false
+    priority: 13
+    data_types: ["matches", "standings", "teams"]
+    
+  # Specialized Data Sources
+  fifa_data:
+    api_key: "your_fifa_data_key_here"
+    base_url: "https://api.fifa.com/v1"
+    rate_limit: 100  # requests per day
+    enabled: false
+    priority: 14
+    data_types: ["rankings", "statistics"]
+    
+  # Betting Exchange Data
+  smarkets:
+    api_key: "your_smarkets_key_here"
+    base_url: "https://api.smarkets.com/v3"
+    rate_limit: 1000  # requests per hour
+    enabled: false
+    priority: 15
+    data_types: ["odds", "market_data"]
+    
+  # Data Quality and Validation Sources
+  data_validation:
+    enabled: true
+    cross_reference_sources: 3
+    confidence_threshold: 0.8
+    validation_rules:
+      - "odds_consistency"
+      - "team_name_matching"
+      - "date_validation"
+      - "score_validation"
+    
+  # Fallback Configuration
+  fallback_strategy:
+    enabled: true
+    primary_source_timeout: 30  # seconds
+    fallback_sources: ["api_football", "rapidapi_football"]
+    retry_attempts: 3
+    retry_delay: 5  # seconds
+    
+  # Data Caching Configuration
+  caching:
+    enabled: true
+    cache_duration: 3600  # seconds (1 hour)
+    cache_types: ["odds", "fixtures", "standings"]
+    max_cache_size: "1GB"
+    
+  # Rate Limiting Configuration
+  rate_limiting:
+    global_limit: 1000  # requests per hour
+    per_source_limit: 100  # requests per hour per source
+    burst_limit: 50  # requests per minute
+    backoff_strategy: "exponential"
+    
+  # Data Quality Monitoring
+  quality_monitoring:
+    enabled: true
+    metrics:
+      - "response_time"
+      - "success_rate"
+      - "data_freshness"
+      - "completeness"
+    alerts:
+      - "low_success_rate"
+      - "high_response_time"
+      - "data_staleness"
+
+# Model Configuration
+model_config:
+  xgboost:
+    n_estimators: 100
+    max_depth: 6
+    learning_rate: 0.1
+    subsample: 0.8
+    colsample_bytree: 0.8
+    random_state: 42
+    
+  lightgbm:
+    n_estimators: 100
+    max_depth: 6
+    learning_rate: 0.1
+    subsample: 0.8
+    colsample_bytree: 0.8
+    random_state: 42
+    
+  random_forest:
+    n_estimators: 100
+    max_depth: 10
+    min_samples_split: 5
+    min_samples_leaf: 2
+    random_state: 42
+    
+  logistic_regression:
+    C: 1.0
+    max_iter: 1000
+    random_state: 42
+    
+  gradient_boosting:
+    n_estimators: 100
+    learning_rate: 0.05
+    max_depth: 5
+    random_state: 42
+    
+  extra_trees:
+    n_estimators: 100
+    max_depth: 8
+    min_samples_split: 10
+    random_state: 42
+
+# Class Imbalance Handling Configuration
+class_imbalance:
+  enabled: true
+  method: "class_weights"  # "class_weights", "smote", "cost_sensitive"
+  smote_threshold: 2.0
+  cost_matrix:
+    draw_misclassification_penalty: 1.5  # Draws harder to predict
+    home_away_confusion_penalty: 1.2
+
+# Ensemble Diversity Configuration
+ensemble_diversity:
+  feature_subsets: true
+  temporal_windows: true
+  algorithm_mix: true
+  stacking: true
+  dynamic_weighting: true
+  diversity_bonus: 0.05
+
+# Multi-Market Betting Configuration
+multi_market:
+  enabled: true
+  markets:
+    match_result:
+      enabled: true
+      weight: 0.25
+      min_odds: 1.5
+      max_odds: 10.0
+    both_teams_score:
+      enabled: true
+      weight: 0.15
+      min_odds: 1.3
+      max_odds: 3.0
+    over_under_25:
+      enabled: true
+      weight: 0.15
+      min_odds: 1.4
+      max_odds: 3.5
+    over_under_15:
+      enabled: true
+      weight: 0.10
+      min_odds: 1.2
+      max_odds: 2.5
+    half_time_result:
+      enabled: true
+      weight: 0.10
+      min_odds: 1.5
+      max_odds: 8.0
+    double_chance:
+      enabled: true
+      weight: 0.10
+      min_odds: 1.2
+      max_odds: 2.0
+    correct_score:
+      enabled: true
+      weight: 0.05
+      min_odds: 3.0
+      max_odds: 50.0
+    clean_sheet:
+      enabled: true
+      weight: 0.05
+      min_odds: 1.5
+      max_odds: 15.0
+    first_goal:
+      enabled: true
+      weight: 0.03
+      min_odds: 1.8
+      max_odds: 20.0
+    win_to_nil:
+      enabled: true
+      weight: 0.02
+      min_odds: 2.0
+      max_odds: 25.0
+  
+  portfolio_optimization:
+    max_markets_per_match: 3
+    correlation_threshold: 0.7
+    max_portfolio_risk: 0.15
+    diversification_bonus: 0.05
+  
+  data_requirements:
+    half_time_scores: true
+    goal_timings: true
+    team_statistics: true
+    player_data: false
+
+# Risk Management Configuration
+risk_management:
+  max_drawdown: 0.2
+  daily_loss_limit: 0.05
+  weekly_loss_limit: 0.10
+  monthly_loss_limit: 0.15
+  position_size_limit: 0.1
+  emergency_stop: 0.15
+  kelly_fraction: 0.02
+  confidence_threshold: 0.6
+  min_odds: 1.5
+  max_odds: 10.0
+  multi_market_limits:
+    max_concurrent_bets: 5
+    max_risk_per_market: 0.05
+    correlation_penalty: 0.1
+
+# Deployment Configuration
+deployment:
+  environments:
+    development:
+      base_url: "http://localhost:8000"
+      database_url: "sqlite:///dev.db"
+      log_level: "DEBUG"
+      debug: true
+      
+    staging:
+      base_url: "http://staging.example.com"
+      database_url: "postgresql://staging:password@staging-db:5432/staging"
+      log_level: "INFO"
+      debug: false
+      
+    production:
+      base_url: "https://api.example.com"
+      database_url: "postgresql://prod:password@prod-db:5432/production"
+      log_level: "WARNING"
+      debug: false
+
+# Monitoring Configuration
+monitoring:
+  enabled: true
+  metrics_collection: true
+  alerting: true
+  dashboard: true
+  log_retention_days: 30
+  metrics_retention_days: 90
+  
+  thresholds:
+    cpu_usage: 0.8
+    memory_usage: 0.8
+    disk_usage: 0.9
+    response_time: 2.0
+    error_rate: 0.05
+    prediction_accuracy: 0.45
+    betting_win_rate: 0.4
+    roi: 0.05
+    drawdown: 0.2
+
+# Alerting Configuration
+alerting:
+  enabled: true
+  channels:
+    email:
+      enabled: true
+      smtp_server: "smtp.gmail.com"
+      smtp_port: 587
+      username: "alerts@example.com"
+      password: "your_email_password"
+      recipients:
+        - "admin@example.com"
+        
+    slack:
+      enabled: false
+      webhook_url: "https://hooks.slack.com/services/..."
+      channel: "#alerts"
+      
+    webhook:
+      enabled: false
+      url: "https://api.example.com/alerts"
+      headers:
+        Authorization: "Bearer your_token_here"
+
+# Feature Engineering Configuration
+feature_engineering:
+  enabled: true
+  feature_categories:
+    - "basic_match_features"
+    - "team_form_features"
+    - "consistency_features"
+    - "market_features"
+    - "temporal_features"
+    - "seasonal_features"
+    - "fixture_congestion"
+    - "temporal_context"
+    - "momentum_features"
+    - "league_position"
+    - "league_specific_features"
+    - "advanced_statistical_features"
+    
+  rolling_windows:
+    - 3
+    - 5
+    - 10
+    - 20
+    
+  exponential_decay: 0.9
+  min_matches_for_features: 5
+  
+  # Advanced temporal features
+  seasonal_features:
+    enabled: true
+    phases: ["early", "mid", "late"]
+    month_encoding: "cyclical"
+    
+  fixture_congestion:
+    enabled: true
+    windows: [7, 14, 21]
+    fatigue_weights: [1.0, 0.8, 0.6]
+    
+  temporal_context:
+    enabled: true
+    day_of_week: true
+    match_time: true
+    special_matches: true
+    
+  momentum_features:
+    enabled: true
+    streak_threshold: 3
+    momentum_window: 10
+    
+  league_position:
+    enabled: true
+    update_frequency: "match"
+
+# Validation Configuration
+validation:
+  enabled: true
+  quality_thresholds:
+    min_matches_per_team: 10
+    min_seasons: 2
+    max_missing_percentage: 0.3
+    min_teams_per_league: 16
+    max_team_changes_per_season: 0.5
+    
+  statistical_tests:
+    normality_test: "shapiro"
+    correlation_threshold: 0.8
+    variance_threshold: 0.1
+    outlier_threshold: 3.0
+    
+  temporal_checks:
+    max_gap_days: 30
+    min_matches_per_month: 5
+    season_consistency: true
+
+# Performance Tracking Configuration
+performance_tracking:
+  enabled: true
+  real_time: true
+  reporting:
+    hourly: true
+    daily: true
+    weekly: true
+    monthly: true
+    
+  metrics:
+    prediction_accuracy:
+      enabled: true
+      threshold: 0.45
+      window: 24  # hours
+      
+    betting_performance:
+      enabled: true
+      win_rate_threshold: 0.4
+      roi_threshold: 0.05
+      drawdown_threshold: 0.2
+      window: 24  # hours
+      
+    model_performance:
+      enabled: true
+      response_time_threshold: 2.0
+      throughput_threshold: 100
+      error_rate_threshold: 0.05
+      window: 1  # hour
+
