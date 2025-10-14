@@ -99,7 +99,7 @@ data_sources:
     api_key: "your_rapidapi_key_here"
     base_url: "https://api-football-v1.p.rapidapi.com"
     rate_limit: 1000  # requests per month
-    enabled: false
+    enabled: false  # Disabled - subscription not active
     priority: 4
     data_types: ["fixtures", "odds", "predictions", "statistics"]
     
@@ -107,7 +107,7 @@ data_sources:
     api_key: "your_sportsdata_io_key_here"
     base_url: "https://api.sportsdata.io/v3/soccer"
     rate_limit: 1000  # requests per month
-    enabled: false
+    enabled: true
     priority: 5
     data_types: ["scores", "schedules", "standings", "news"]
     
@@ -125,7 +125,7 @@ data_sources:
     api_key: "your_openweathermap_key_here"
     base_url: "https://api.openweathermap.org/data/2.5"
     rate_limit: 1000  # requests per day
-    enabled: false
+    enabled: true
     priority: 7
     data_types: ["weather", "forecast"]
     
@@ -134,7 +134,7 @@ data_sources:
     api_key: "your_newsapi_key_here"
     base_url: "https://newsapi.org/v2"
     rate_limit: 1000  # requests per day
-    enabled: false
+    enabled: true
     priority: 8
     data_types: ["news", "headlines"]
     
@@ -165,12 +165,12 @@ data_sources:
     priority: 11
     data_types: ["historical_matches", "statistics"]
     
-  # Live Score Providers
+  # Live Score Providers (Note: This API may need alternative endpoint)
   livescore:
     api_key: "your_livescore_key_here"
     base_url: "https://livescore-api.com/api-client"
     rate_limit: 1000  # requests per month
-    enabled: false
+    enabled: false  # Disabled until correct endpoint is found
     priority: 12
     data_types: ["live_scores", "fixtures"]
     

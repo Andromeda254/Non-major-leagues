@@ -1,0 +1,118 @@
+{
+  "timestamp": "2025-10-14T04:00:40.286872",
+  "available_sources": [
+    "football_data",
+    "odds_api",
+    "api_football",
+    "rapidapi_football",
+    "sportsdata_io",
+    "openweathermap",
+    "newsapi",
+    "livescore"
+  ],
+  "source_info": {
+    "football_data": {
+      "name": "football_data",
+      "enabled": true,
+      "priority": 1,
+      "data_types": [
+        "matches",
+        "standings",
+        "teams",
+        "players"
+      ],
+      "rate_limit": 10,
+      "base_url": "https://api.football-data.org/v4"
+    },
+    "odds_api": {
+      "name": "odds_api",
+      "enabled": true,
+      "priority": 2,
+      "data_types": [
+        "odds",
+        "live_odds",
+        "historical_odds"
+      ],
+      "rate_limit": 500,
+      "base_url": "https://api.the-odds-api.com/v4"
+    },
+    "api_football": {
+      "name": "api_football",
+      "enabled": true,
+      "priority": 3,
+      "data_types": [
+        "fixtures",
+        "standings",
+        "statistics",
+        "predictions"
+      ],
+      "rate_limit": 100,
+      "base_url": "https://v3.football.api-sports.io"
+    },
+    "rapidapi_football": {
+      "name": "rapidapi_football",
+      "enabled": true,
+      "priority": 4,
+      "data_types": [
+        "fixtures",
+        "odds",
+        "predictions",
+        "statistics"
+      ],
+      "rate_limit": 1000,
+      "base_url": "https://api-football-v1.p.rapidapi.com"
+    },
+    "sportsdata_io": {
+      "name": "sportsdata_io",
+      "enabled": true,
+      "priority": 5,
+      "data_types": [
+        "scores",
+        "schedules",
+        "standings",
+        "news"
+      ],
+      "rate_limit": 1000,
+      "base_url": "https://api.sportsdata.io/v3/soccer"
+    },
+    "openweathermap": {
+      "name": "openweathermap",
+      "enabled": true,
+      "priority": 7,
+      "data_types": [
+        "weather",
+        "forecast"
+      ],
+      "rate_limit": 1000,
+      "base_url": "https://api.openweathermap.org/data/2.5"
+    },
+    "newsapi": {
+      "name": "newsapi",
+      "enabled": true,
+      "priority": 8,
+      "data_types": [
+        "news",
+        "headlines"
+      ],
+      "rate_limit": 1000,
+      "base_url": "https://newsapi.org/v2"
+    },
+    "livescore": {
+      "name": "livescore",
+      "enabled": true,
+      "priority": 12,
+      "data_types": [
+        "live_scores",
+        "fixtures"
+      ],
+      "rate_limit": 1000,
+      "base_url": "https://live-score-api.com/api/v1"
+    }
+  },
+  "cache_stats": {
+    "total_entries": 0,
+    "cache_size_mb": 0.0,
+    "oldest_entry": null,
+    "newest_entry": null
+  }
+}

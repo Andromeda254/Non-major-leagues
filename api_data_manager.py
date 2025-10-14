@@ -38,6 +38,7 @@ class DataSource:
     data_types: List[str]
     app_key: Optional[str] = None
     bearer_token: Optional[str] = None
+    api_secret: Optional[str] = None
 
 @dataclass
 class APIResponse:
@@ -113,6 +114,9 @@ class APIDataManager:
                 
             # Get API key from environment variables
             api_key = None
+            app_key = None
+            api_secret = None
+            
             if source_name == 'football_data':
                 api_key = env_vars.get('FOOTBALL_DATA_API_KEY')
             elif source_name == 'odds_api':
@@ -138,6 +142,7 @@ class APIDataManager:
                 api_key = env_vars.get('FOOTBALL_API_COM_KEY')
             elif source_name == 'livescore':
                 api_key = env_vars.get('LIVESCORE_KEY')
+                api_secret = env_vars.get('LIVESCORE_SECRET')
             elif source_name == 'football_api_net':
                 api_key = env_vars.get('FOOTBALL_API_NET_KEY')
             elif source_name == 'fifa_data':
@@ -155,7 +160,8 @@ class APIDataManager:
                     priority=source_config.get('priority', 999),
                     data_types=source_config.get('data_types', []),
                     app_key=app_key if source_name == 'betfair_exchange' else None,
-                    bearer_token=api_key if source_name == 'twitter_api' else None
+                    bearer_token=api_key if source_name == 'twitter_api' else None,
+                    api_secret=api_secret if source_name == 'livescore' else None
                 )
                 data_sources[source_name] = data_source
                 logger.info(f"Initialized data source: {source_name}")
@@ -221,6 +227,8 @@ class APIDataManager:
         url = f"{source.base_url}/{endpoint.lstrip('/')}"
         headers = {}
         
+        # No additional URL parameter authentication needed
+        
         # Set authentication headers
         if source.name == 'twitter_api':
             headers['Authorization'] = f"Bearer {source.bearer_token}"
@@ -230,6 +238,17 @@ class APIDataManager:
         elif source.name == 'betfair_exchange':
             headers['X-Application'] = source.app_key
             headers['X-Authentication'] = source.api_key
+        elif source.name == 'api_football':
+            # API Football uses X-RapidAPI-Key header (confirmed working)
+            headers['X-RapidAPI-Key'] = source.api_key
+        elif source.name == 'livescore':
+            # Livescore API uses different authentication format
+            headers['key'] = source.api_key
+            if source.api_secret:
+                headers['secret'] = source.api_secret
+        elif source.name == 'sportsdata_io':
+            # SportsData.io uses Ocp-Apim-Subscription-Key header (Microsoft Azure)
+            headers['Ocp-Apim-Subscription-Key'] = source.api_key
         else:
             headers['X-Auth-Token'] = source.api_key
         
@@ -240,7 +259,19 @@ class APIDataManager:
             response_time = time.time() - start_time
             
             if response.status_code == 200:
-                data = response.json()
+                try:
+                    data = response.json()
+                except json.JSONDecodeError as e:
+                    logger.error(f"JSON decode error for {source.name}:{endpoint} - {e}")
+                    return APIResponse(
+                        data=None,
+                        source=source.name,
+                        timestamp=datetime.now(),
+                        success=False,
+                        error=f"JSON decode error: {e}. Response content: {response.text[:200]}...",
+                        response_time=response_time
+                    )
+                
                 api_response = APIResponse(
                     data=data,
                     source=source.name,
@@ -258,13 +289,29 @@ class APIDataManager:
                 logger.info(f"Successfully fetched data from {source.name}:{endpoint}")
                 return api_response
             else:
+                # Enhanced error logging for subscription issues
+                error_msg = f"HTTP {response.status_code}: {response.text[:500]}"
+                if response.status_code == 403:
+                    if source.name in ['api_football', 'rapidapi_football']:
+                        error_msg += f" | Check subscription status and API key permissions for {source.name}"
+                elif response.status_code == 429:
+                    error_msg += f" | Rate limit exceeded for {source.name}. Check subscription limits."
+                elif response.status_code == 401:
+                    error_msg += f" | Authentication failed for {source.name}. Verify API key format."
+                elif response.status_code == 404:
+                    error_msg += f" | Endpoint not found for {source.name}. Check URL: {url}"
+                
                 logger.error(f"API request failed: {source.name}:{endpoint} - Status: {response.status_code}")
+                logger.debug(f"Request URL: {url}")
+                logger.debug(f"Request headers: {headers}")
+                logger.debug(f"Request params: {params}")
+                
                 return APIResponse(
                     data=None,
                     source=source.name,
                     timestamp=datetime.now(),
                     success=False,
-                    error=f"HTTP {response.status_code}: {response.text}",
+                    error=error_msg,
                     response_time=response_time
                 )
                 
@@ -295,9 +342,23 @@ class APIDataManager:
             if date:
                 params['date'] = date
             
-            # Source-specific endpoint mapping
+            # Source-specific endpoint mapping and parameter fixing
             if source.name == 'football_data':
                 endpoint = 'matches'
+                # Fix league codes for Football Data API
+                if 'league' in params:
+                    league_mapping = {
+                        'E1': '2016',  # EFL Championship
+                        'E2': '2017',  # EFL League One  
+                        'E3': '2018',  # EFL League Two
+                        'PL': '2021',  # Premier League
+                        'BL1': '2002',  # Bundesliga
+                        'FL1': '2015',  # Ligue 1
+                        'SA': '2019',  # Serie A
+                        'PD': '2014'   # La Liga
+                    }
+                    if params['league'] in league_mapping:
+                        params['league'] = league_mapping[params['league']]
             elif source.name == 'api_football':
                 endpoint = 'fixtures'
             elif source.name == 'rapidapi_football':
@@ -327,9 +388,30 @@ class APIDataManager:
             if league:
                 params['league'] = league
             
-            # Source-specific endpoint mapping
+            # Source-specific endpoint mapping and parameter fixing
             if source.name == 'odds_api':
-                endpoint = 'odds'
+                endpoint = 'sports/soccer_efl_champ/odds'  # Use proper sport endpoint
+                # Fix league parameters for Odds API
+                if 'league' in params:
+                    # The Odds API uses sport keys instead of league codes
+                    sport_mapping = {
+                        'E1': 'soccer_efl_champ',  # Championship
+                        'E2': 'soccer_league_one',  # League One
+                        'E3': 'soccer_league_two',  # League Two
+                        'PL': 'soccer_epl',        # Premier League
+                        'BL1': 'soccer_germany_bundesliga',  # Bundesliga
+                        'FL1': 'soccer_france_ligue_one',    # Ligue 1
+                        'SA': 'soccer_italy_serie_a',        # Serie A
+                        'PD': 'soccer_spain_la_liga'         # La Liga
+                    }
+                    if params['league'] in sport_mapping:
+                        sport_key = sport_mapping[params['league']]
+                        endpoint = f'sports/{sport_key}/odds'
+                        # Remove league param as it's now in the endpoint
+                        params = {k: v for k, v in params.items() if k != 'league'}
+                    # Add required parameters for Odds API
+                    params['regions'] = 'uk'
+                    params['markets'] = 'h2h'  # Head to head (1x2)
             elif source.name == 'betfair_exchange':
                 endpoint = 'odds'
             elif source.name == 'pinnacle':
@@ -355,9 +437,22 @@ class APIDataManager:
             
             params = {'league': league}
             
-            # Source-specific endpoint mapping
+            # Source-specific endpoint mapping and parameter fixing
             if source.name == 'football_data':
                 endpoint = 'standings'
+                # Fix league codes for Football Data API
+                league_mapping = {
+                    'E1': '2016',  # EFL Championship
+                    'E2': '2017',  # EFL League One  
+                    'E3': '2018',  # EFL League Two
+                    'PL': '2021',  # Premier League
+                    'BL1': '2002',  # Bundesliga
+                    'FL1': '2015',  # Ligue 1
+                    'SA': '2019',  # Serie A
+                    'PD': '2014'   # La Liga
+                }
+                if params['league'] in league_mapping:
+                    params['league'] = league_mapping[params['league']]
             elif source.name == 'api_football':
                 endpoint = 'standings'
             elif source.name == 'rapidapi_football':
