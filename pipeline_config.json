@@ -1,0 +1,52 @@
+{
+  "crawler_data": {
+    "matches_file": "soccer-match-intelligence/upcoming_matches.json",
+    "matches_csv": "soccer-match-intelligence/upcoming_matches.csv"
+  },
+  "output_dir": "predictions_output",
+  "markets": {
+    "1x2": {
+      "enabled": true,
+      "min_confidence": 0.75,
+      "min_odds": 1.5,
+      "max_odds": 5.0
+    },
+    "over_under_2.5": {
+      "enabled": true,
+      "min_confidence": 0.70,
+      "min_odds": 1.7,
+      "max_odds": 3.0
+    },
+    "over_under_1.5": {
+      "enabled": false,
+      "min_confidence": 0.70
+    },
+    "over_under_3.5": {
+      "enabled": false,
+      "min_confidence": 0.70
+    },
+    "btts": {
+      "enabled": true,
+      "min_confidence": 0.70,
+      "min_odds": 1.7,
+      "max_odds": 2.5
+    },
+    "first_half": {
+      "enabled": true,
+      "min_confidence": 0.65,
+      "min_odds": 2.0,
+      "max_odds": 5.0
+    }
+  },
+  "betting_strategy": {
+    "max_stake_per_bet": 50,
+    "max_bets_per_day": 5,
+    "min_expected_value": 0.1,
+    "kelly_fraction": 0.1
+  },
+  "api_settings": {
+    "use_api_football": true,
+    "use_football_data": true,
+    "fallback_to_dummy": true
+  }
+}

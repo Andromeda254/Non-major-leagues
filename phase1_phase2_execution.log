@@ -1,0 +1,136 @@
+2025-10-15 23:36:26,273 - INFO - NumExpr defaulting to 8 threads.
+2025-10-15 23:36:28,880 - INFO - Output directory: ./pipeline_output/phase1_output
+2025-10-15 23:36:28,880 - INFO - Running Phase 1 pipeline for Championship (E1)...
+2025-10-15 23:36:28,880 - INFO - Starting Phase 1 pipeline for E1, seasons: ['2324', '2223']
+2025-10-15 23:36:28,880 - INFO - Step 1: Data Collection
+2025-10-15 23:36:28,881 - INFO - Collecting data for E1, seasons: ['2324', '2223']
+2025-10-15 23:36:28,881 - INFO - Collecting historical data for E1, seasons: ['2324', '2223']
+2025-10-15 23:36:33,076 - INFO - Collected 552 matches for E1 2324
+2025-10-15 23:36:36,986 - INFO - Collected 552 matches for E1 2223
+2025-10-15 23:36:36,988 - INFO - Validating data quality for E1
+2025-10-15 23:36:37,014 - INFO - Removed 0 duplicate rows
+2025-10-15 23:36:37,029 - WARNING - Found 634 invalid dates
+2025-10-15 23:36:37,041 - INFO - Found 30 unique teams
+2025-10-15 23:36:37,061 - INFO - Data validation complete. Final dataset: 470 matches
+2025-10-15 23:36:37,061 - INFO - Total historical data collected: 470 matches
+2025-10-15 23:36:37,062 - INFO - Step 2: Data Preprocessing
+2025-10-15 23:36:37,062 - INFO - Preprocessing 470 rows of data
+2025-10-15 23:36:37,062 - INFO - Starting preprocessing pipeline
+2025-10-15 23:36:37,062 - INFO - Validating input data
+2025-10-15 23:36:37,078 - INFO - Found 30 unique teams
+2025-10-15 23:36:37,089 - INFO - Result distribution: {'H': 197, 'A': 152, 'D': 121}
+2025-10-15 23:36:37,089 - INFO - Data validation complete. Valid rows: 470
+2025-10-15 23:36:37,089 - INFO - Handling missing data
+2025-10-15 23:36:37,198 - INFO - Missing data handling complete. Remaining missing values: 0
+2025-10-15 23:36:37,198 - INFO - Detecting and treating outliers
+2025-10-15 23:36:37,204 - INFO - Found 14 outliers in HTHG
+2025-10-15 23:36:37,212 - INFO - Found 2 outliers in HTAG
+2025-10-15 23:36:37,218 - INFO - Found 8 outliers in HS
+2025-10-15 23:36:37,225 - INFO - Found 15 outliers in AS
+2025-10-15 23:36:37,232 - INFO - Found 7 outliers in HST
+2025-10-15 23:36:37,241 - INFO - Found 5 outliers in AST
+2025-10-15 23:36:37,249 - INFO - Found 4 outliers in HF
+2025-10-15 23:36:37,257 - INFO - Found 5 outliers in AF
+2025-10-15 23:36:37,264 - INFO - Found 3 outliers in HC
+2025-10-15 23:36:37,272 - INFO - Found 14 outliers in AC
+2025-10-15 23:36:37,280 - INFO - Found 33 outliers in HY
+2025-10-15 23:36:37,288 - INFO - Found 1 outliers in AY
+2025-10-15 23:36:37,297 - INFO - Found 18 outliers in HR
+2025-10-15 23:36:37,303 - INFO - Found 25 outliers in AR
+2025-10-15 23:36:37,309 - INFO - Found 19 outliers in B365H
+2025-10-15 23:36:37,318 - INFO - Found 30 outliers in B365D
+2025-10-15 23:36:37,326 - INFO - Found 32 outliers in B365A
+2025-10-15 23:36:37,333 - INFO - Found 19 outliers in BWH
+2025-10-15 23:36:37,340 - INFO - Found 43 outliers in BWD
+2025-10-15 23:36:37,346 - INFO - Found 34 outliers in BWA
+2025-10-15 23:36:37,353 - INFO - Found 17 outliers in IWH
+2025-10-15 23:36:37,361 - INFO - Found 48 outliers in IWD
+2025-10-15 23:36:37,370 - INFO - Found 41 outliers in IWA
+2025-10-15 23:36:37,376 - INFO - Found 18 outliers in PSH
+2025-10-15 23:36:37,383 - INFO - Found 36 outliers in PSD
+2025-10-15 23:36:37,390 - INFO - Found 33 outliers in PSA
+2025-10-15 23:36:37,396 - INFO - Found 19 outliers in WHH
+2025-10-15 23:36:37,403 - INFO - Found 50 outliers in WHD
+2025-10-15 23:36:37,410 - INFO - Found 29 outliers in WHA
+2025-10-15 23:36:37,418 - INFO - Found 20 outliers in VCH
+2025-10-15 23:36:37,425 - INFO - Found 52 outliers in VCD
+2025-10-15 23:36:37,433 - INFO - Found 29 outliers in VCA
+2025-10-15 23:36:37,442 - INFO - Found 19 outliers in MaxH
+2025-10-15 23:36:37,448 - INFO - Found 38 outliers in MaxD
+2025-10-15 23:36:37,456 - INFO - Found 34 outliers in MaxA
+2025-10-15 23:36:37,463 - INFO - Found 19 outliers in AvgH
+2025-10-15 23:36:37,470 - INFO - Found 40 outliers in AvgD
+2025-10-15 23:36:37,476 - INFO - Found 34 outliers in AvgA
+2025-10-15 23:36:37,483 - INFO - Found 4 outliers in B365>2.5
+2025-10-15 23:36:37,489 - INFO - Found 12 outliers in B365<2.5
+2025-10-15 23:36:37,499 - INFO - Found 18 outliers in P<2.5
+2025-10-15 23:36:37,509 - INFO - Found 19 outliers in Max<2.5
+2025-10-15 23:36:37,518 - INFO - Found 19 outliers in Avg<2.5
+2025-10-15 23:36:37,525 - INFO - Found 24 outliers in AHh
+2025-10-15 23:36:37,543 - INFO - Found 1 outliers in MaxAHH
+2025-10-15 23:36:37,559 - INFO - Found 21 outliers in B365CH
+2025-10-15 23:36:37,567 - INFO - Found 26 outliers in B365CD
+2025-10-15 23:36:37,573 - INFO - Found 28 outliers in B365CA
+2025-10-15 23:36:37,580 - INFO - Found 21 outliers in BWCH
+2025-10-15 23:36:37,588 - INFO - Found 38 outliers in BWCD
+2025-10-15 23:36:37,595 - INFO - Found 34 outliers in BWCA
+2025-10-15 23:36:37,602 - INFO - Found 13 outliers in IWCH
+2025-10-15 23:36:37,609 - INFO - Found 49 outliers in IWCD
+2025-10-15 23:36:37,616 - INFO - Found 32 outliers in IWCA
+2025-10-15 23:36:37,622 - INFO - Found 19 outliers in PSCH
+2025-10-15 23:36:37,629 - INFO - Found 39 outliers in PSCD
+2025-10-15 23:36:37,636 - INFO - Found 29 outliers in PSCA
+2025-10-15 23:36:37,644 - INFO - Found 18 outliers in WHCH
+2025-10-15 23:36:37,651 - INFO - Found 39 outliers in WHCD
+2025-10-15 23:36:37,658 - INFO - Found 35 outliers in WHCA
+2025-10-15 23:36:37,666 - INFO - Found 17 outliers in VCCH
+2025-10-15 23:36:37,675 - INFO - Found 40 outliers in VCCD
+2025-10-15 23:36:37,682 - INFO - Found 31 outliers in VCCA
+2025-10-15 23:36:37,690 - INFO - Found 19 outliers in MaxCH
+2025-10-15 23:36:37,698 - INFO - Found 41 outliers in MaxCD
+2025-10-15 23:36:37,706 - INFO - Found 34 outliers in MaxCA
+2025-10-15 23:36:37,714 - INFO - Found 17 outliers in AvgCH
+2025-10-15 23:36:37,724 - INFO - Found 38 outliers in AvgCD
+2025-10-15 23:36:37,733 - INFO - Found 34 outliers in AvgCA
+2025-10-15 23:36:37,740 - INFO - Found 1 outliers in B365C>2.5
+2025-10-15 23:36:37,746 - INFO - Found 21 outliers in B365C<2.5
+2025-10-15 23:36:37,754 - INFO - Found 1 outliers in PC>2.5
+2025-10-15 23:36:37,762 - INFO - Found 22 outliers in PC<2.5
+2025-10-15 23:36:37,772 - INFO - Found 21 outliers in MaxC<2.5
+2025-10-15 23:36:37,779 - INFO - Found 1 outliers in AvgC>2.5
+2025-10-15 23:36:37,788 - INFO - Found 25 outliers in AvgC<2.5
+2025-10-15 23:36:37,799 - INFO - Found 24 outliers in AHCh
+2025-10-15 23:36:37,814 - INFO - Found 1 outliers in MaxCAHH
+2025-10-15 23:36:37,827 - INFO - Engineering basic features
+2025-10-15 23:36:38,146 - INFO - Encoding categorical variables
+2025-10-15 23:36:38,154 - INFO - Scaling numerical features
+2025-10-15 23:36:38,190 - INFO - Augmenting data
+2025-10-15 23:36:38,209 - ERROR - Preprocessing failed: scale < 0
+2025-10-15 23:36:38,210 - ERROR - Phase 1 pipeline failed: scale < 0
+2025-10-15 23:36:38,210 - ERROR - ❌ Phase 1 failed: scale < 0
+Traceback (most recent call last):
+  File "/home/kali/Non-major-leagues/run_phase1_phase2.py", line 34, in <module>
+    phase1_results = phase1.run_phase1_pipeline(
+        league_code='E1',
+        seasons=['2324', '2223'],
+        collect_live_odds=False  # Skip live odds for now
+    )
+  File "/home/kali/Non-major-leagues/phase1_integration.py", line 112, in run_phase1_pipeline
+    preprocessed_data = self._preprocess_data(raw_data)
+  File "/home/kali/Non-major-leagues/phase1_integration.py", line 177, in _preprocess_data
+    preprocessed_data = self.preprocessor.preprocess_pipeline(raw_data)
+  File "/home/kali/Non-major-leagues/non_major_league_preprocessor.py", line 109, in preprocess_pipeline
+    df = self._augment_data(df)
+  File "/home/kali/Non-major-leagues/non_major_league_preprocessor.py", line 523, in _augment_data
+    noise = np.random.normal(0, noise_factor * base_row[col])
+  File "numpy/random/mtrand.pyx", line 1576, in numpy.random.mtrand.RandomState.normal
+  File "_common.pyx", line 637, in numpy.random._common.cont
+  File "_common.pyx", line 435, in numpy.random._common.check_constraint
+ValueError: scale < 0
+================================================================================
+RUNNING PHASE 1 & PHASE 2 PIPELINE
+================================================================================
+
+================================================================================
+PHASE 1: DATA COLLECTION & PREPROCESSING
+================================================================================

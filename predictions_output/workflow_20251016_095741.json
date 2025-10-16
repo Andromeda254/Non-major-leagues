@@ -1,0 +1,820 @@
+{
+  "start_time": "2025-10-16T09:57:40.577383",
+  "league": "E1",
+  "phases": {},
+  "upcoming_matches_count": 31,
+  "api_data": {
+    "team_stats": null,
+    "odds_data": null,
+    "historical_data": "existing"
+  },
+  "predictions": [
+    {
+      "match_info": {
+        "date": "N/A",
+        "home_team": "Atletico Mineiro MG",
+        "away_team": "Cruzeiro EC",
+        "league": "Brazil"
+      },
+      "predictions": {
+        "over_under_2.5": {
+          "prediction": "Over",
+          "confidence": 0.7,
+          "note": "Requires O/U model training"
+        },
+        "btts": {
+          "prediction": "Yes",
+          "confidence": 0.68,
+          "note": "Requires BTTS model training"
+        },
+        "first_half": {
+          "prediction": "Draw",
+          "confidence": 0.6,
+          "note": "Requires HT model training"
+        }
+      },
+      "timestamp": "2025-10-16T09:57:41.670996"
+    },
+    {
+      "match_info": {
+        "date": "N/A",
+        "home_team": "Fortaleza EC",
+        "away_team": "CR Vasco da Gama",
+        "league": "Brazil"
+      },
+      "predictions": {
+        "over_under_2.5": {
+          "prediction": "Over",
+          "confidence": 0.7,
+          "note": "Requires O/U model training"
+        },
+        "btts": {
+          "prediction": "Yes",
+          "confidence": 0.68,
+          "note": "Requires BTTS model training"
+        },
+        "first_half": {
+          "prediction": "Draw",
+          "confidence": 0.6,
+          "note": "Requires HT model training"
+        }
+      },
+      "timestamp": "2025-10-16T09:57:41.679866"
+    },
+    {
+      "match_info": {
+        "date": "N/A",
+        "home_team": "Santos SP",
+        "away_team": "SC Corinthians",
+        "league": "Brazil"
+      },
+      "predictions": {
+        "over_under_2.5": {
+          "prediction": "Over",
+          "confidence": 0.7,
+          "note": "Requires O/U model training"
+        },
+        "btts": {
+          "prediction": "Yes",
+          "confidence": 0.68,
+          "note": "Requires BTTS model training"
+        },
+        "first_half": {
+          "prediction": "Draw",
+          "confidence": 0.6,
+          "note": "Requires HT model training"
+        }
+      },
+      "timestamp": "2025-10-16T09:57:41.688188"
+    },
+    {
+      "match_info": {
+        "date": "N/A",
+        "home_team": "Managua FC",
+        "away_team": "Real Madriz",
+        "league": "Nicaragua"
+      },
+      "predictions": {
+        "over_under_2.5": {
+          "prediction": "Over",
+          "confidence": 0.7,
+          "note": "Requires O/U model training"
+        },
+        "btts": {
+          "prediction": "Yes",
+          "confidence": 0.68,
+          "note": "Requires BTTS model training"
+        },
+        "first_half": {
+          "prediction": "Draw",
+          "confidence": 0.6,
+          "note": "Requires HT model training"
+        }
+      },
+      "timestamp": "2025-10-16T09:57:41.695512"
+    },
+    {
+      "match_info": {
+        "date": "N/A",
+        "home_team": "Cartagines",
+        "away_team": "Guadalupe",
+        "league": "Costa Rica"
+      },
+      "predictions": {
+        "over_under_2.5": {
+          "prediction": "Over",
+          "confidence": 0.7,
+          "note": "Requires O/U model training"
+        },
+        "btts": {
+          "prediction": "Yes",
+          "confidence": 0.68,
+          "note": "Requires BTTS model training"
+        },
+        "first_half": {
+          "prediction": "Draw",
+          "confidence": 0.6,
+          "note": "Requires HT model training"
+        }
+      },
+      "timestamp": "2025-10-16T09:57:41.705973"
+    },
+    {
+      "match_info": {
+        "date": "N/A",
+        "home_team": "Atletico Mineiro MG",
+        "away_team": "Cruzeiro EC",
+        "league": "Brazil"
+      },
+      "predictions": {
+        "over_under_2.5": {
+          "prediction": "Over",
+          "confidence": 0.7,
+          "note": "Requires O/U model training"
+        },
+        "btts": {
+          "prediction": "Yes",
+          "confidence": 0.68,
+          "note": "Requires BTTS model training"
+        },
+        "first_half": {
+          "prediction": "Draw",
+          "confidence": 0.6,
+          "note": "Requires HT model training"
+        }
+      },
+      "timestamp": "2025-10-16T09:57:41.717126"
+    },
+    {
+      "match_info": {
+        "date": "N/A",
+        "home_team": "Fortaleza EC",
+        "away_team": "CR Vasco da Gama",
+        "league": "Brazil"
+      },
+      "predictions": {
+        "over_under_2.5": {
+          "prediction": "Over",
+          "confidence": 0.7,
+          "note": "Requires O/U model training"
+        },
+        "btts": {
+          "prediction": "Yes",
+          "confidence": 0.68,
+          "note": "Requires BTTS model training"
+        },
+        "first_half": {
+          "prediction": "Draw",
+          "confidence": 0.6,
+          "note": "Requires HT model training"
+        }
+      },
+      "timestamp": "2025-10-16T09:57:41.726751"
+    },
+    {
+      "match_info": {
+        "date": "N/A",
+        "home_team": "Santos SP",
+        "away_team": "SC Corinthians",
+        "league": "Brazil"
+      },
+      "predictions": {
+        "over_under_2.5": {
+          "prediction": "Over",
+          "confidence": 0.7,
+          "note": "Requires O/U model training"
+        },
+        "btts": {
+          "prediction": "Yes",
+          "confidence": 0.68,
+          "note": "Requires BTTS model training"
+        },
+        "first_half": {
+          "prediction": "Draw",
+          "confidence": 0.6,
+          "note": "Requires HT model training"
+        }
+      },
+      "timestamp": "2025-10-16T09:57:41.735825"
+    },
+    {
+      "match_info": {
+        "date": "N/A",
+        "home_team": "Managua FC",
+        "away_team": "Real Madriz",
+        "league": "Nicaragua"
+      },
+      "predictions": {
+        "over_under_2.5": {
+          "prediction": "Over",
+          "confidence": 0.7,
+          "note": "Requires O/U model training"
+        },
+        "btts": {
+          "prediction": "Yes",
+          "confidence": 0.68,
+          "note": "Requires BTTS model training"
+        },
+        "first_half": {
+          "prediction": "Draw",
+          "confidence": 0.6,
+          "note": "Requires HT model training"
+        }
+      },
+      "timestamp": "2025-10-16T09:57:41.744605"
+    },
+    {
+      "match_info": {
+        "date": "N/A",
+        "home_team": "Cartagines",
+        "away_team": "Guadalupe",
+        "league": "Costa Rica"
+      },
+      "predictions": {
+        "over_under_2.5": {
+          "prediction": "Over",
+          "confidence": 0.7,
+          "note": "Requires O/U model training"
+        },
+        "btts": {
+          "prediction": "Yes",
+          "confidence": 0.68,
+          "note": "Requires BTTS model training"
+        },
+        "first_half": {
+          "prediction": "Draw",
+          "confidence": 0.6,
+          "note": "Requires HT model training"
+        }
+      },
+      "timestamp": "2025-10-16T09:57:41.753196"
+    },
+    {
+      "match_info": {
+        "date": "N/A",
+        "home_team": "Atletico Mineiro MG",
+        "away_team": "Cruzeiro EC",
+        "league": "Brazil"
+      },
+      "predictions": {
+        "over_under_2.5": {
+          "prediction": "Over",
+          "confidence": 0.7,
+          "note": "Requires O/U model training"
+        },
+        "btts": {
+          "prediction": "Yes",
+          "confidence": 0.68,
+          "note": "Requires BTTS model training"
+        },
+        "first_half": {
+          "prediction": "Draw",
+          "confidence": 0.6,
+          "note": "Requires HT model training"
+        }
+      },
+      "timestamp": "2025-10-16T09:57:41.760955"
+    },
+    {
+      "match_info": {
+        "date": "N/A",
+        "home_team": "Fortaleza EC",
+        "away_team": "CR Vasco da Gama",
+        "league": "Brazil"
+      },
+      "predictions": {
+        "over_under_2.5": {
+          "prediction": "Over",
+          "confidence": 0.7,
+          "note": "Requires O/U model training"
+        },
+        "btts": {
+          "prediction": "Yes",
+          "confidence": 0.68,
+          "note": "Requires BTTS model training"
+        },
+        "first_half": {
+          "prediction": "Draw",
+          "confidence": 0.6,
+          "note": "Requires HT model training"
+        }
+      },
+      "timestamp": "2025-10-16T09:57:41.769240"
+    },
+    {
+      "match_info": {
+        "date": "N/A",
+        "home_team": "Santos SP",
+        "away_team": "SC Corinthians",
+        "league": "Brazil"
+      },
+      "predictions": {
+        "over_under_2.5": {
+          "prediction": "Over",
+          "confidence": 0.7,
+          "note": "Requires O/U model training"
+        },
+        "btts": {
+          "prediction": "Yes",
+          "confidence": 0.68,
+          "note": "Requires BTTS model training"
+        },
+        "first_half": {
+          "prediction": "Draw",
+          "confidence": 0.6,
+          "note": "Requires HT model training"
+        }
+      },
+      "timestamp": "2025-10-16T09:57:41.777290"
+    },
+    {
+      "match_info": {
+        "date": "N/A",
+        "home_team": "Managua FC",
+        "away_team": "Real Madriz",
+        "league": "Nicaragua"
+      },
+      "predictions": {
+        "over_under_2.5": {
+          "prediction": "Over",
+          "confidence": 0.7,
+          "note": "Requires O/U model training"
+        },
+        "btts": {
+          "prediction": "Yes",
+          "confidence": 0.68,
+          "note": "Requires BTTS model training"
+        },
+        "first_half": {
+          "prediction": "Draw",
+          "confidence": 0.6,
+          "note": "Requires HT model training"
+        }
+      },
+      "timestamp": "2025-10-16T09:57:41.785752"
+    },
+    {
+      "match_info": {
+        "date": "N/A",
+        "home_team": "Cartagines",
+        "away_team": "Guadalupe",
+        "league": "Costa Rica"
+      },
+      "predictions": {
+        "over_under_2.5": {
+          "prediction": "Over",
+          "confidence": 0.7,
+          "note": "Requires O/U model training"
+        },
+        "btts": {
+          "prediction": "Yes",
+          "confidence": 0.68,
+          "note": "Requires BTTS model training"
+        },
+        "first_half": {
+          "prediction": "Draw",
+          "confidence": 0.6,
+          "note": "Requires HT model training"
+        }
+      },
+      "timestamp": "2025-10-16T09:57:41.796447"
+    },
+    {
+      "match_info": {
+        "date": "N/A",
+        "home_team": "Atletico Mineiro MG",
+        "away_team": "Cruzeiro EC",
+        "league": "Brazil"
+      },
+      "predictions": {
+        "over_under_2.5": {
+          "prediction": "Over",
+          "confidence": 0.7,
+          "note": "Requires O/U model training"
+        },
+        "btts": {
+          "prediction": "Yes",
+          "confidence": 0.68,
+          "note": "Requires BTTS model training"
+        },
+        "first_half": {
+          "prediction": "Draw",
+          "confidence": 0.6,
+          "note": "Requires HT model training"
+        }
+      },
+      "timestamp": "2025-10-16T09:57:41.803717"
+    },
+    {
+      "match_info": {
+        "date": "N/A",
+        "home_team": "Fortaleza EC",
+        "away_team": "CR Vasco da Gama",
+        "league": "Brazil"
+      },
+      "predictions": {
+        "over_under_2.5": {
+          "prediction": "Over",
+          "confidence": 0.7,
+          "note": "Requires O/U model training"
+        },
+        "btts": {
+          "prediction": "Yes",
+          "confidence": 0.68,
+          "note": "Requires BTTS model training"
+        },
+        "first_half": {
+          "prediction": "Draw",
+          "confidence": 0.6,
+          "note": "Requires HT model training"
+        }
+      },
+      "timestamp": "2025-10-16T09:57:41.811210"
+    },
+    {
+      "match_info": {
+        "date": "N/A",
+        "home_team": "Santos SP",
+        "away_team": "SC Corinthians",
+        "league": "Brazil"
+      },
+      "predictions": {
+        "over_under_2.5": {
+          "prediction": "Over",
+          "confidence": 0.7,
+          "note": "Requires O/U model training"
+        },
+        "btts": {
+          "prediction": "Yes",
+          "confidence": 0.68,
+          "note": "Requires BTTS model training"
+        },
+        "first_half": {
+          "prediction": "Draw",
+          "confidence": 0.6,
+          "note": "Requires HT model training"
+        }
+      },
+      "timestamp": "2025-10-16T09:57:41.819564"
+    },
+    {
+      "match_info": {
+        "date": "N/A",
+        "home_team": "Managua FC",
+        "away_team": "Real Madriz",
+        "league": "Nicaragua"
+      },
+      "predictions": {
+        "over_under_2.5": {
+          "prediction": "Over",
+          "confidence": 0.7,
+          "note": "Requires O/U model training"
+        },
+        "btts": {
+          "prediction": "Yes",
+          "confidence": 0.68,
+          "note": "Requires BTTS model training"
+        },
+        "first_half": {
+          "prediction": "Draw",
+          "confidence": 0.6,
+          "note": "Requires HT model training"
+        }
+      },
+      "timestamp": "2025-10-16T09:57:41.829269"
+    },
+    {
+      "match_info": {
+        "date": "N/A",
+        "home_team": "Cartagines",
+        "away_team": "Guadalupe",
+        "league": "Costa Rica"
+      },
+      "predictions": {
+        "over_under_2.5": {
+          "prediction": "Over",
+          "confidence": 0.7,
+          "note": "Requires O/U model training"
+        },
+        "btts": {
+          "prediction": "Yes",
+          "confidence": 0.68,
+          "note": "Requires BTTS model training"
+        },
+        "first_half": {
+          "prediction": "Draw",
+          "confidence": 0.6,
+          "note": "Requires HT model training"
+        }
+      },
+      "timestamp": "2025-10-16T09:57:41.839394"
+    },
+    {
+      "match_info": {
+        "date": "N/A",
+        "home_team": "Marquense",
+        "away_team": "Antigua",
+        "league": "Guatemala"
+      },
+      "predictions": {
+        "over_under_2.5": {
+          "prediction": "Over",
+          "confidence": 0.7,
+          "note": "Requires O/U model training"
+        },
+        "btts": {
+          "prediction": "Yes",
+          "confidence": 0.68,
+          "note": "Requires BTTS model training"
+        },
+        "first_half": {
+          "prediction": "Draw",
+          "confidence": 0.6,
+          "note": "Requires HT model training"
+        }
+      },
+      "timestamp": "2025-10-16T09:57:41.849196"
+    },
+    {
+      "match_info": {
+        "date": "N/A",
+        "home_team": "Defensor Sporting",
+        "away_team": "Penarol Montevideo",
+        "league": "Uruguay"
+      },
+      "predictions": {
+        "over_under_2.5": {
+          "prediction": "Over",
+          "confidence": 0.7,
+          "note": "Requires O/U model training"
+        },
+        "btts": {
+          "prediction": "Yes",
+          "confidence": 0.68,
+          "note": "Requires BTTS model training"
+        },
+        "first_half": {
+          "prediction": "Draw",
+          "confidence": 0.6,
+          "note": "Requires HT model training"
+        }
+      },
+      "timestamp": "2025-10-16T09:57:41.858074"
+    },
+    {
+      "match_info": {
+        "date": "N/A",
+        "home_team": "Orlando Pride",
+        "away_team": "Pachuca Women",
+        "league": "International Clubs"
+      },
+      "predictions": {
+        "over_under_2.5": {
+          "prediction": "Over",
+          "confidence": 0.7,
+          "note": "Requires O/U model training"
+        },
+        "btts": {
+          "prediction": "Yes",
+          "confidence": 0.68,
+          "note": "Requires BTTS model training"
+        },
+        "first_half": {
+          "prediction": "Draw",
+          "confidence": 0.6,
+          "note": "Requires HT model training"
+        }
+      },
+      "timestamp": "2025-10-16T09:57:41.866618"
+    },
+    {
+      "match_info": {
+        "date": "N/A",
+        "home_team": "La Familia FC",
+        "away_team": "CD Universitario II",
+        "league": "Panama"
+      },
+      "predictions": {
+        "over_under_2.5": {
+          "prediction": "Over",
+          "confidence": 0.7,
+          "note": "Requires O/U model training"
+        },
+        "btts": {
+          "prediction": "Yes",
+          "confidence": 0.68,
+          "note": "Requires BTTS model training"
+        },
+        "first_half": {
+          "prediction": "Draw",
+          "confidence": 0.6,
+          "note": "Requires HT model training"
+        }
+      },
+      "timestamp": "2025-10-16T09:57:41.882331"
+    },
+    {
+      "match_info": {
+        "date": "N/A",
+        "home_team": "Deportivo Gomerano",
+        "away_team": "Deportivo San Pedro",
+        "league": "Guatemala"
+      },
+      "predictions": {
+        "over_under_2.5": {
+          "prediction": "Over",
+          "confidence": 0.7,
+          "note": "Requires O/U model training"
+        },
+        "btts": {
+          "prediction": "Yes",
+          "confidence": 0.68,
+          "note": "Requires BTTS model training"
+        },
+        "first_half": {
+          "prediction": "Draw",
+          "confidence": 0.6,
+          "note": "Requires HT model training"
+        }
+      },
+      "timestamp": "2025-10-16T09:57:41.896538"
+    },
+    {
+      "match_info": {
+        "date": "N/A",
+        "home_team": "Atlas Women",
+        "away_team": "Club America Women",
+        "league": "Mexico"
+      },
+      "predictions": {
+        "over_under_2.5": {
+          "prediction": "Over",
+          "confidence": 0.7,
+          "note": "Requires O/U model training"
+        },
+        "btts": {
+          "prediction": "Yes",
+          "confidence": 0.68,
+          "note": "Requires BTTS model training"
+        },
+        "first_half": {
+          "prediction": "Draw",
+          "confidence": 0.6,
+          "note": "Requires HT model training"
+        }
+      },
+      "timestamp": "2025-10-16T09:57:41.905542"
+    },
+    {
+      "match_info": {
+        "date": "N/A",
+        "home_team": "America de Cali",
+        "away_team": "Junior",
+        "league": "Colombia"
+      },
+      "predictions": {
+        "over_under_2.5": {
+          "prediction": "Over",
+          "confidence": 0.7,
+          "note": "Requires O/U model training"
+        },
+        "btts": {
+          "prediction": "Yes",
+          "confidence": 0.68,
+          "note": "Requires BTTS model training"
+        },
+        "first_half": {
+          "prediction": "Draw",
+          "confidence": 0.6,
+          "note": "Requires HT model training"
+        }
+      },
+      "timestamp": "2025-10-16T09:57:41.914751"
+    },
+    {
+      "match_info": {
+        "date": "N/A",
+        "home_team": "Marathon",
+        "away_team": "Real Espana",
+        "league": "Honduras"
+      },
+      "predictions": {
+        "over_under_2.5": {
+          "prediction": "Over",
+          "confidence": 0.7,
+          "note": "Requires O/U model training"
+        },
+        "btts": {
+          "prediction": "Yes",
+          "confidence": 0.68,
+          "note": "Requires BTTS model training"
+        },
+        "first_half": {
+          "prediction": "Draw",
+          "confidence": 0.6,
+          "note": "Requires HT model training"
+        }
+      },
+      "timestamp": "2025-10-16T09:57:41.923567"
+    },
+    {
+      "match_info": {
+        "date": "N/A",
+        "home_team": "San Carlos",
+        "away_team": "Saprissa",
+        "league": "Costa Rica"
+      },
+      "predictions": {
+        "over_under_2.5": {
+          "prediction": "Over",
+          "confidence": 0.7,
+          "note": "Requires O/U model training"
+        },
+        "btts": {
+          "prediction": "Yes",
+          "confidence": 0.68,
+          "note": "Requires BTTS model training"
+        },
+        "first_half": {
+          "prediction": "Draw",
+          "confidence": 0.6,
+          "note": "Requires HT model training"
+        }
+      },
+      "timestamp": "2025-10-16T09:57:41.932702"
+    },
+    {
+      "match_info": {
+        "date": "N/A",
+        "home_team": "AFF Guatemala",
+        "away_team": "S. L. Cotzumalguapa",
+        "league": "Guatemala"
+      },
+      "predictions": {
+        "over_under_2.5": {
+          "prediction": "Over",
+          "confidence": 0.7,
+          "note": "Requires O/U model training"
+        },
+        "btts": {
+          "prediction": "Yes",
+          "confidence": 0.68,
+          "note": "Requires BTTS model training"
+        },
+        "first_half": {
+          "prediction": "Draw",
+          "confidence": 0.6,
+          "note": "Requires HT model training"
+        }
+      },
+      "timestamp": "2025-10-16T09:57:41.943626"
+    },
+    {
+      "match_info": {
+        "date": "N/A",
+        "home_team": "Orange County SC",
+        "away_team": "San Antonio FC",
+        "league": "USA"
+      },
+      "predictions": {
+        "over_under_2.5": {
+          "prediction": "Over",
+          "confidence": 0.7,
+          "note": "Requires O/U model training"
+        },
+        "btts": {
+          "prediction": "Yes",
+          "confidence": 0.68,
+          "note": "Requires BTTS model training"
+        },
+        "first_half": {
+          "prediction": "Draw",
+          "confidence": 0.6,
+          "note": "Requires HT model training"
+        }
+      },
+      "timestamp": "2025-10-16T09:57:41.954168"
+    }
+  ],
+  "predictions_count": 31
+}

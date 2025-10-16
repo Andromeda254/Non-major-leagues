@@ -7,13 +7,14 @@ import json
 import os
 from typing import Dict, List, Optional, Tuple
 import logging
+from api_data_manager import APIDataManager
 
 class NonMajorLeagueDataCollector:
     """
     Comprehensive data collection system for non-major soccer leagues
     
     Key Features:
-    - Multi-source data aggregation
+    - Multi-source data aggregation via APIDataManager
     - Missing data handling
     - Data quality validation
     - Cross-league transfer learning support
@@ -29,6 +30,14 @@ class NonMajorLeagueDataCollector:
         """
         self.setup_logging()
         self.load_config(config_file)
+        
+        # Initialize API Data Manager
+        self.api_manager = APIDataManager(
+            config_path=config_file or 'config.yaml',
+            env_file='api_keys_template.env'
+        )
+        self.logger.info("Initialized APIDataManager with real API keys")
+        
         self.setup_data_sources()
         self.data_cache = {}
         
@@ -193,7 +202,7 @@ class NonMajorLeagueDataCollector:
     
     def collect_historical_data(self, league_code: str, seasons: List[str]) -> pd.DataFrame:
         """
-        Collect historical match data for non-major leagues
+        Collect historical match data for non-major leagues using API infrastructure
         
         Args:
             league_code: League identifier (e.g., 'E1' for Championship)
@@ -207,18 +216,47 @@ class NonMajorLeagueDataCollector:
         all_data = []
         
         for season in seasons:
-            try:
-                # Try multiple data sources
-                data = self._collect_from_football_data(league_code, season)
-                if data is not None and len(data) > 0:
-                    all_data.append(data)
-                    self.logger.info(f"Collected {len(data)} matches for {league_code} {season}")
-                else:
-                    self.logger.warning(f"No data found for {league_code} {season}")
+            season_data = []
+            
+            # Collect from ALL enabled APIs with valid keys (based on config.yaml)
+            # APIs that provide match/fixture data
+            sources = [
+                ('football-data API', lambda: self._collect_from_api_manager('football_data', league_code, season)),
+                ('api-football', lambda: self._collect_from_api_manager('api_football', league_code, season)),
+                ('odds-api', lambda: self._collect_from_api_manager('odds_api', league_code, season)),
+                ('sportmonks', lambda: self._collect_from_api_manager('sportmonks', league_code, season)),
+                ('sofascore', lambda: self._collect_from_api_manager('sofascore', league_code, season)),
+            ]
+            
+            for source_name, source_func in sources:
+                try:
+                    self.logger.info(f"Collecting from {source_name} for {league_code} {season}...")
+                    data = source_func()
                     
-            except Exception as e:
-                self.logger.error(f"Error collecting data for {league_code} {season}: {e}")
-                continue
+                    if data is not None and len(data) > 0:
+                        self.logger.info(f"✅ Collected {len(data)} matches from {source_name}")
+                        season_data.append(data)
+                    else:
+                        self.logger.info(f"⚠️ No data from {source_name}")
+                        
+                except Exception as e:
+                    self.logger.warning(f"❌ {source_name} failed: {e}")
+                    continue
+            
+            # Merge data from all sources for this season
+            if season_data:
+                if len(season_data) > 1:
+                    # Combine data from multiple sources
+                    merged = pd.concat(season_data, ignore_index=True)
+                    # Remove duplicates based on key columns
+                    if 'HomeTeam' in merged.columns and 'AwayTeam' in merged.columns and 'Date' in merged.columns:
+                        merged = merged.drop_duplicates(subset=['HomeTeam', 'AwayTeam', 'Date'], keep='first')
+                    self.logger.info(f"✅ Merged data from {len(season_data)} sources: {len(merged)} unique matches")
+                    all_data.append(merged)
+                else:
+                    all_data.append(season_data[0])
+            else:
+                self.logger.error(f"Failed to collect data for {league_code} {season} from any configured API")
         
         if not all_data:
             self.logger.error(f"No historical data collected for {league_code}")
@@ -233,18 +271,564 @@ class NonMajorLeagueDataCollector:
         self.logger.info(f"Total historical data collected: {len(combined_data)} matches")
         return combined_data
     
+    def _collect_from_api_manager(self, source_name: str, league_code: str, season: str) -> Optional[pd.DataFrame]:
+        """Collect data using APIDataManager"""
+        try:
+            # Check if API manager has this source enabled
+            if source_name not in self.api_manager.data_sources:
+                self.logger.info(f"{source_name} not available in API manager")
+                return None
+            
+            source = self.api_manager.data_sources[source_name]
+            if not source.enabled or not source.api_key or source.api_key.startswith('your_'):
+                self.logger.info(f"{source_name} not enabled or no valid API key")
+                return None
+            
+            # Use API manager to fetch data
+            if source_name == 'football_data':
+                return self._fetch_football_data_api(source, league_code, season)
+            elif source_name == 'api_football':
+                return self._fetch_api_football(source, league_code, season)
+            elif source_name == 'odds_api':
+                return self._fetch_odds_api(source, league_code, season)
+            elif source_name == 'sportmonks':
+                return self._fetch_sportmonks(source, league_code, season)
+            elif source_name == 'sofascore':
+                return self._fetch_sofascore(source, league_code, season)
+            elif source_name == 'sportsdata_io':
+                return self._fetch_sportsdata_io(source, league_code, season)
+            else:
+                self.logger.warning(f"No implementation for {source_name}")
+                return None
+                
+        except Exception as e:
+            self.logger.error(f"Error using API manager for {source_name}: {e}")
+            return None
+    
+    def _fetch_football_data_api(self, source, league_code: str, season: str) -> Optional[pd.DataFrame]:
+        """Fetch from football-data.org API"""
+        try:
+            # Map league codes to competition IDs
+            league_map = {
+                'E0': 2021,  # Premier League
+                'E1': 2016,  # Championship
+                'E2': 2017,  # League One
+                'E3': 2018,  # League Two
+            }
+            
+            competition_id = league_map.get(league_code)
+            if not competition_id:
+                return None
+            
+            headers = {'X-Auth-Token': source.api_key}
+            url = f"{source.base_url}/competitions/{competition_id}/matches"
+            
+            # Convert season format (2324 -> 2023)
+            year = f"20{season[:2]}"
+            params = {'season': year}
+            
+            response = self.api_manager.session.get(url, headers=headers, params=params, timeout=30)
+            
+            if response.status_code == 200:
+                data = response.json()
+                matches = data.get('matches', [])
+                
+                if not matches:
+                    return None
+                
+                # Convert to DataFrame
+                df = pd.DataFrame(matches)
+                df = self._standardize_api_response(df, 'football-data-api')
+                df['league'] = league_code
+                df['season'] = season
+                df['data_source'] = 'football-data-api'
+                
+                return df
+            else:
+                self.logger.warning(f"API returned status {response.status_code}")
+                return None
+                
+        except Exception as e:
+            self.logger.error(f"Error fetching from football-data.org API: {e}")
+            return None
+    
+    def _fetch_api_football(self, source, league_code: str, season: str) -> Optional[pd.DataFrame]:
+        """Fetch from api-football.com"""
+        try:
+            # Map league codes to API league IDs
+            league_map = {
+                'E0': 39,   # Premier League
+                'E1': 40,   # Championship
+                'E2': 41,   # League One
+                'E3': 42,   # League Two
+            }
+            
+            league_id = league_map.get(league_code)
+            if not league_id:
+                return None
+            
+            headers = {
+                'x-apisports-key': source.api_key
+            }
+            
+            url = "https://v3.football.api-sports.io/fixtures"
+            year = f"20{season[:2]}"
+            params = {'league': league_id, 'season': year}
+            
+            response = self.api_manager.session.get(url, headers=headers, params=params, timeout=30)
+            
+            if response.status_code == 200:
+                data = response.json()
+                fixtures = data.get('response', [])
+                
+                if not fixtures:
+                    return None
+                
+                # Convert to DataFrame
+                df = pd.DataFrame(fixtures)
+                df = self._standardize_api_response(df, 'api-football')
+                df['league'] = league_code
+                df['season'] = season
+                df['data_source'] = 'api-football'
+                
+                return df
+            else:
+                self.logger.warning(f"API returned status {response.status_code}")
+                return None
+                
+        except Exception as e:
+            self.logger.error(f"Error fetching from api-football: {e}")
+            return None
+    
+    def _fetch_odds_api(self, source, league_code: str, season: str) -> Optional[pd.DataFrame]:
+        """Fetch from the-odds-api.com"""
+        try:
+            # Map league codes to odds-api sport keys
+            league_map = {
+                'E0': 'soccer_epl',           # Premier League
+                'E1': 'soccer_efl_champ',     # Championship
+                'E2': 'soccer_england_league1', # League One
+                'E3': 'soccer_england_league2', # League Two
+            }
+            
+            sport_key = league_map.get(league_code)
+            if not sport_key:
+                return None
+            
+            # Get odds (which includes match data)
+            url = f"{source.base_url}/sports/{sport_key}/odds"
+            params = {
+                'apiKey': source.api_key,
+                'regions': 'uk',
+                'markets': 'h2h',
+                'oddsFormat': 'decimal'
+            }
+            
+            response = self.api_manager.session.get(url, params=params, timeout=30)
+            
+            if response.status_code == 200:
+                events = response.json()
+                
+                if not events:
+                    return None
+                
+                # Convert to DataFrame
+                matches = []
+                for event in events:
+                    match = {
+                        'home_team': event.get('home_team'),
+                        'away_team': event.get('away_team'),
+                        'commence_time': event.get('commence_time'),
+                        'sport_key': event.get('sport_key'),
+                        'id': event.get('id')
+                    }
+                    
+                    # Extract odds if available
+                    if event.get('bookmakers'):
+                        bookmaker = event['bookmakers'][0]
+                        markets = bookmaker.get('markets', [])
+                        if markets:
+                            outcomes = markets[0].get('outcomes', [])
+                            for outcome in outcomes:
+                                if outcome['name'] == match['home_team']:
+                                    match['home_odds'] = outcome['price']
+                                elif outcome['name'] == match['away_team']:
+                                    match['away_odds'] = outcome['price']
+                                else:
+                                    match['draw_odds'] = outcome['price']
+                    
+                    matches.append(match)
+                
+                df = pd.DataFrame(matches)
+                df = self._standardize_api_response(df, 'odds-api')
+                df['league'] = league_code
+                df['season'] = season
+                df['data_source'] = 'odds-api'
+                
+                self.logger.info(f"Collected {len(df)} events with odds from odds-api")
+                return df
+            else:
+                self.logger.warning(f"API returned status {response.status_code}")
+                return None
+                
+        except Exception as e:
+            self.logger.error(f"Error fetching from odds-api: {e}")
+            return None
+    
+    def _fetch_sportmonks(self, source, league_code: str, season: str) -> Optional[pd.DataFrame]:
+        """Fetch from SportMonks API"""
+        try:
+            # Map league codes to SportMonks league IDs
+            league_map = {
+                'E0': 8,     # Premier League
+                'E1': 2,     # Championship
+                'E2': 3,     # League One
+                'E3': 4,     # League Two
+            }
+            
+            league_id = league_map.get(league_code)
+            if not league_id:
+                return None
+            
+            headers = {
+                'Authorization': source.api_key
+            }
+            
+            # Get fixtures for the league
+            url = f"{source.base_url}/fixtures"
+            params = {'filters': f'leagueIds:{league_id}'}
+            
+            response = self.api_manager.session.get(url, headers=headers, params=params, timeout=30)
+            
+            if response.status_code == 200:
+                data = response.json()
+                fixtures = data.get('data', [])
+                
+                if not fixtures:
+                    return None
+                
+                # Convert to DataFrame
+                matches = []
+                for fixture in fixtures:
+                    # Parse team names from fixture name (e.g., "Team A vs Team B")
+                    name = fixture.get('name', '')
+                    if ' vs ' in name:
+                        teams = name.split(' vs ')
+                        if len(teams) == 2:
+                            match = {
+                                'home_team': teams[0].strip(),
+                                'away_team': teams[1].strip(),
+                                'starting_at': fixture.get('starting_at'),
+                                'fixture_id': fixture.get('id'),
+                                'league_id': fixture.get('league_id')
+                            }
+                            matches.append(match)
+                
+                df = pd.DataFrame(matches)
+                df = self._standardize_api_response(df, 'sportmonks')
+                df['league'] = league_code
+                df['season'] = season
+                df['data_source'] = 'sportmonks'
+                
+                self.logger.info(f"Collected {len(df)} fixtures from SportMonks")
+                return df
+            else:
+                self.logger.warning(f"API returned status {response.status_code}")
+                return None
+                
+        except Exception as e:
+            self.logger.error(f"Error fetching from SportMonks: {e}")
+            return None
+    
+    def _fetch_sofascore(self, source, league_code: str, season: str) -> Optional[pd.DataFrame]:
+        """Fetch from SofaScore API (unofficial)"""
+        try:
+            # Map league codes to SofaScore tournament IDs and seasons
+            league_map = {
+                'E0': {'tournament_id': 17, 'season_map': {'2324': 52367, '2425': 61961}},  # Premier League
+                'E1': {'tournament_id': 18, 'season_map': {'2324': 52367, '2425': 61961}},  # Championship
+            }
+            
+            league_info = league_map.get(league_code)
+            if not league_info:
+                return None
+            
+            tournament_id = league_info['tournament_id']
+            season_id = league_info['season_map'].get(season)
+            
+            if not season_id:
+                # Try to get current season
+                seasons_url = f"{source.base_url}/unique-tournament/{tournament_id}/seasons"
+                headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36'}
+                
+                response = self.api_manager.session.get(seasons_url, headers=headers, timeout=30)
+                if response.status_code == 200:
+                    seasons_data = response.json()
+                    seasons = seasons_data.get('seasons', [])
+                    if seasons:
+                        season_id = seasons[0]['id']  # Use most recent season
+            
+            if not season_id:
+                return None
+            
+            # Get events
+            url = f"{source.base_url}/unique-tournament/{tournament_id}/season/{season_id}/events/last/0"
+            headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36'}
+            
+            response = self.api_manager.session.get(url, headers=headers, timeout=30)
+            
+            if response.status_code == 200:
+                data = response.json()
+                events = data.get('events', [])
+                
+                if not events:
+                    return None
+                
+                # Convert to DataFrame
+                matches = []
+                for event in events:
+                    match = {
+                        'home_team': event['homeTeam']['name'],
+                        'away_team': event['awayTeam']['name'],
+                        'start_timestamp': event.get('startTimestamp'),
+                        'event_id': event.get('id')
+                    }
+                    
+                    # Extract scores if available
+                    if 'homeScore' in event and 'awayScore' in event:
+                        match['home_score'] = event['homeScore'].get('current')
+                        match['away_score'] = event['awayScore'].get('current')
+                    
+                    matches.append(match)
+                
+                df = pd.DataFrame(matches)
+                df = self._standardize_api_response(df, 'sofascore')
+                df['league'] = league_code
+                df['season'] = season
+                df['data_source'] = 'sofascore'
+                
+                self.logger.info(f"Collected {len(df)} events from SofaScore")
+                return df
+            else:
+                self.logger.warning(f"API returned status {response.status_code}")
+                return None
+                
+        except Exception as e:
+            self.logger.error(f"Error fetching from SofaScore: {e}")
+            return None
+    
+    def _fetch_sportsdata_io(self, source, league_code: str, season: str) -> Optional[pd.DataFrame]:
+        """Fetch from sportsdata.io API"""
+        try:
+            # Map league codes to sportsdata.io competition IDs
+            league_map = {
+                'E0': 'EPL',  # Premier League
+                'E1': 'ELC',  # Championship
+            }
+            
+            competition = league_map.get(league_code)
+            if not competition:
+                return None
+            
+            # sportsdata.io uses different URL structure
+            url = f"{source.base_url}/scores/json/GamesByDate/2023-08-01"
+            params = {'key': source.api_key}
+            
+            response = self.api_manager.session.get(url, params=params, timeout=30)
+            
+            if response.status_code == 200:
+                data = response.json()
+                
+                if not data:
+                    return None
+                
+                # Convert to DataFrame
+                df = pd.DataFrame(data)
+                df = self._standardize_api_response(df, 'sportsdata-io')
+                df['league'] = league_code
+                df['season'] = season
+                df['data_source'] = 'sportsdata-io'
+                
+                return df
+            else:
+                self.logger.warning(f"API returned status {response.status_code}")
+                return None
+                
+        except Exception as e:
+            self.logger.error(f"Error fetching from sportsdata.io: {e}")
+            return None
+    
+    def _standardize_api_response(self, df: pd.DataFrame, source: str) -> pd.DataFrame:
+        """Standardize API response to match expected format"""
+        try:
+            if source == 'football-data-api':
+                # Extract relevant fields from football-data.org API response
+                standardized = pd.DataFrame()
+                
+                if 'homeTeam' in df.columns:
+                    standardized['HomeTeam'] = df['homeTeam'].apply(lambda x: x.get('name', '') if isinstance(x, dict) else x)
+                if 'awayTeam' in df.columns:
+                    standardized['AwayTeam'] = df['awayTeam'].apply(lambda x: x.get('name', '') if isinstance(x, dict) else x)
+                if 'score' in df.columns:
+                    standardized['FTHG'] = df['score'].apply(lambda x: x.get('fullTime', {}).get('home') if isinstance(x, dict) else None)
+                    standardized['FTAG'] = df['score'].apply(lambda x: x.get('fullTime', {}).get('away') if isinstance(x, dict) else None)
+                    standardized['HTHG'] = df['score'].apply(lambda x: x.get('halfTime', {}).get('home') if isinstance(x, dict) else None)
+                    standardized['HTAG'] = df['score'].apply(lambda x: x.get('halfTime', {}).get('away') if isinstance(x, dict) else None)
+                if 'utcDate' in df.columns:
+                    standardized['Date'] = pd.to_datetime(df['utcDate']).dt.strftime('%d/%m/%Y')
+                
+                # Add result
+                if 'FTHG' in standardized.columns and 'FTAG' in standardized.columns:
+                    standardized['FTR'] = standardized.apply(
+                        lambda row: 'H' if row['FTHG'] > row['FTAG'] else ('A' if row['FTAG'] > row['FTHG'] else 'D'),
+                        axis=1
+                    )
+                    standardized['HTR'] = standardized.apply(
+                        lambda row: 'H' if row['HTHG'] > row['HTAG'] else ('A' if row['HTAG'] > row['HTHG'] else 'D'),
+                        axis=1
+                    )
+                
+                return standardized
+                
+            elif source == 'api-football':
+                # Extract relevant fields from api-football response
+                standardized = pd.DataFrame()
+                
+                if 'teams' in df.columns:
+                    standardized['HomeTeam'] = df['teams'].apply(lambda x: x.get('home', {}).get('name', '') if isinstance(x, dict) else '')
+                    standardized['AwayTeam'] = df['teams'].apply(lambda x: x.get('away', {}).get('name', '') if isinstance(x, dict) else '')
+                if 'goals' in df.columns:
+                    standardized['FTHG'] = df['goals'].apply(lambda x: x.get('home') if isinstance(x, dict) else None)
+                    standardized['FTAG'] = df['goals'].apply(lambda x: x.get('away') if isinstance(x, dict) else None)
+                if 'score' in df.columns:
+                    standardized['HTHG'] = df['score'].apply(lambda x: x.get('halftime', {}).get('home') if isinstance(x, dict) else None)
+                    standardized['HTAG'] = df['score'].apply(lambda x: x.get('halftime', {}).get('away') if isinstance(x, dict) else None)
+                if 'fixture' in df.columns:
+                    standardized['Date'] = df['fixture'].apply(lambda x: pd.to_datetime(x.get('date')).strftime('%d/%m/%Y') if isinstance(x, dict) and x.get('date') else None)
+                
+                # Add result
+                if 'FTHG' in standardized.columns and 'FTAG' in standardized.columns:
+                    standardized['FTR'] = standardized.apply(
+                        lambda row: 'H' if row['FTHG'] > row['FTAG'] else ('A' if row['FTAG'] > row['FTHG'] else 'D'),
+                        axis=1
+                    )
+                    standardized['HTR'] = standardized.apply(
+                        lambda row: 'H' if row['HTHG'] > row['HTAG'] else ('A' if row['HTAG'] > row['HTHG'] else 'D'),
+                        axis=1
+                    )
+                
+                return standardized
+            
+            elif source == 'odds-api':
+                # Extract relevant fields from odds-api response
+                standardized = pd.DataFrame()
+                
+                if 'home_team' in df.columns:
+                    standardized['HomeTeam'] = df['home_team']
+                if 'away_team' in df.columns:
+                    standardized['AwayTeam'] = df['away_team']
+                if 'commence_time' in df.columns:
+                    standardized['Date'] = pd.to_datetime(df['commence_time']).dt.strftime('%d/%m/%Y')
+                
+                # Add odds columns
+                if 'home_odds' in df.columns:
+                    standardized['B365H'] = df['home_odds']
+                if 'draw_odds' in df.columns:
+                    standardized['B365D'] = df['draw_odds']
+                if 'away_odds' in df.columns:
+                    standardized['B365A'] = df['away_odds']
+                
+                return standardized
+            
+            elif source == 'sportmonks':
+                # Extract relevant fields from SportMonks response
+                standardized = pd.DataFrame()
+                
+                if 'home_team' in df.columns:
+                    standardized['HomeTeam'] = df['home_team']
+                if 'away_team' in df.columns:
+                    standardized['AwayTeam'] = df['away_team']
+                if 'starting_at' in df.columns:
+                    standardized['Date'] = pd.to_datetime(df['starting_at']).dt.strftime('%d/%m/%Y')
+                
+                # Add scores if available
+                if 'home_score' in df.columns:
+                    standardized['FTHG'] = df['home_score']
+                if 'away_score' in df.columns:
+                    standardized['FTAG'] = df['away_score']
+                
+                # Add result if scores available
+                if 'FTHG' in standardized.columns and 'FTAG' in standardized.columns:
+                    standardized['FTR'] = standardized.apply(
+                        lambda row: 'H' if row['FTHG'] > row['FTAG'] else ('A' if row['FTAG'] > row['FTHG'] else 'D'),
+                        axis=1
+                    )
+                
+                return standardized
+            
+            elif source == 'sofascore':
+                # Extract relevant fields from SofaScore response
+                standardized = pd.DataFrame()
+                
+                if 'home_team' in df.columns:
+                    standardized['HomeTeam'] = df['home_team']
+                if 'away_team' in df.columns:
+                    standardized['AwayTeam'] = df['away_team']
+                if 'start_timestamp' in df.columns:
+                    standardized['Date'] = pd.to_datetime(df['start_timestamp'], unit='s').dt.strftime('%d/%m/%Y')
+                
+                # Add scores if available
+                if 'home_score' in df.columns:
+                    standardized['FTHG'] = df['home_score']
+                if 'away_score' in df.columns:
+                    standardized['FTAG'] = df['away_score']
+                
+                # Add result if scores available
+                if 'FTHG' in standardized.columns and 'FTAG' in standardized.columns:
+                    standardized['FTR'] = standardized.apply(
+                        lambda row: 'H' if pd.notna(row['FTHG']) and pd.notna(row['FTAG']) and row['FTHG'] > row['FTAG'] 
+                                    else ('A' if pd.notna(row['FTHG']) and pd.notna(row['FTAG']) and row['FTAG'] > row['FTHG'] 
+                                    else ('D' if pd.notna(row['FTHG']) and pd.notna(row['FTAG']) else None)),
+                        axis=1
+                    )
+                
+                return standardized
+            
+            return df
+            
+        except Exception as e:
+            self.logger.error(f"Error standardizing API response: {e}")
+            return df
+    
     def _collect_from_football_data(self, league_code: str, season: str) -> Optional[pd.DataFrame]:
-        """Collect data from football-data.co.uk"""
+        """Collect data from football-data.co.uk with retry logic"""
+        import io
+        from requests.adapters import HTTPAdapter
+        from urllib3.util.retry import Retry
+        
         try:
             # Construct URL for football-data.co.uk
             url = f"https://www.football-data.co.uk/mmz4281/{season}/{league_code}.csv"
             
-            # Download data
-            response = requests.get(url, timeout=30)
+            # Create session with retry logic
+            session = requests.Session()
+            retry_strategy = Retry(
+                total=3,
+                backoff_factor=1,
+                status_forcelist=[429, 500, 502, 503, 504],
+                allowed_methods=["HEAD", "GET", "OPTIONS"]
+            )
+            adapter = HTTPAdapter(max_retries=retry_strategy)
+            session.mount("http://", adapter)
+            session.mount("https://", adapter)
+            
+            # Download data with retries
+            self.logger.info(f"Fetching data from {url}")
+            response = session.get(url, timeout=30, verify=True)
             response.raise_for_status()
             
-            # Read CSV
-            data = pd.read_csv(url)
+            # Read CSV from response text
+            data = pd.read_csv(io.StringIO(response.text))
             
             # Standardize column names
             data = self._standardize_columns(data)
@@ -254,6 +838,7 @@ class NonMajorLeagueDataCollector:
             data['season'] = season
             data['data_source'] = 'football-data'
             
+            self.logger.info(f"Successfully collected {len(data)} matches from football-data.co.uk")
             return data
             
         except Exception as e:

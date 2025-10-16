@@ -1,0 +1,67 @@
+{
+  "league_code": "E1",
+  "pipeline_metrics": {
+    "total_rows_processed": 570,
+    "total_features_created": 254,
+    "data_quality_score": 0.5174670402729284,
+    "pipeline_success": true
+  },
+  "component_results": {
+    "data_collection": {
+      "historical_data_shape": [
+        470,
+        109
+      ],
+      "live_odds_shape": [
+        0,
+        0
+      ],
+      "additional_data_keys": [
+        "league_info",
+        "team_info",
+        "season_info"
+      ],
+      "success": true
+    },
+    "preprocessing": {
+      "input_shape": [
+        470,
+        109
+      ],
+      "output_shape": [
+        570,
+        132
+      ],
+      "columns_added": 23,
+      "success": true
+    },
+    "validation": {
+      "overall_score": 0.5174670402729284,
+      "data_quality_score": 0.0,
+      "statistical_score": 0.25300608457825563,
+      "recommendations_count": 1,
+      "success": true
+    },
+    "feature_engineering": {
+      "input_shape": [
+        570,
+        132
+      ],
+      "output_shape": [
+        570,
+        254
+      ],
+      "features_created": 122,
+      "top_features_count": 50,
+      "feature_importance_available": true,
+      "success": true
+    },
+    "overall": {
+      "total_rows_processed": 570,
+      "total_features_created": 254,
+      "data_quality_score": 0.5174670402729284,
+      "pipeline_success": true
+    }
+  },
+  "timestamp": "2025-10-15T23:40:46.884730"
+}

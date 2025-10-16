@@ -520,7 +520,11 @@ class NonMajorLeaguePreprocessor:
                 # Add noise to numerical features
                 for col in numerical_cols:
                     if col in base_row:
-                        noise = np.random.normal(0, noise_factor * base_row[col])
+                        # Use absolute value to ensure positive scale
+                        scale = noise_factor * abs(base_row[col])
+                        # Add small epsilon to avoid zero scale
+                        scale = max(scale, 0.01)
+                        noise = np.random.normal(0, scale)
                         base_row[col] += noise
                 
                 synthetic_data.append(base_row)

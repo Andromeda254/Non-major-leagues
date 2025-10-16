@@ -1,0 +1,253 @@
+================================================================================
+NON-MAJOR LEAGUE DATA VALIDATION REPORT
+================================================================================
+
+DATASET INFORMATION:
+  Total rows: 591
+  Total columns: 35
+  Memory usage: 363,647 bytes
+  Date range: 2023-01-10 00:00:00 to 2024-12-05 00:00:00
+  Span: 695 days
+  Teams: 63
+  Seasons: 2
+
+OVERALL VALIDATION SCORE: 0.59/1.00
+
+VALIDATION CATEGORIES:
+  Data Quality: 0.00/1.00
+  Statistical Validation: 0.54/1.00
+  Temporal Validation: 0.94/1.00
+  Team Validation: 0.77/1.00
+  Score Validation: 0.46/1.00
+
+RECOMMENDATIONS:
+  1. Data quality is below acceptable threshold. Consider data cleaning.
+  2. High outlier percentage in FTHG: 8.0%
+
+DETAILED RESULTS:
+----------------------------------------
+
+Dataset Info:
+  total_rows: 591
+  total_columns: 35
+  memory_usage: 363647
+  data_types:
+    float64: 24
+    object: 7
+    int64: 3
+    datetime64[ns]: 1
+  date_range:
+    start: 2023-01-10 00:00:00
+    end: 2024-12-05 00:00:00
+    span_days: 695
+  teams:
+    total: 63
+    home_teams: 58
+    away_teams: 55
+    team_list: ['Leeds United FC', 'Ipswich', 'Swansea', 'Blackburn', 'Ipswich Town', 'Leeds United', 'Stoke City FC', 'Birmingham City FC', 'Blackburn Rovers FC', 'Sheffield Wednesday', 'Cardiff', 'Swansea City AFC', 'Norwich City FC', 'Watford FC', 'Queens Park Rangers', 'Plymouth Argyle FC', 'West Bromwich Albion', 'Norwich', 'Huddersfield Town AFC', 'Ipswich Town FC', 'Rotherham United', 'Swansea City', 'Queens Park Rangers FC', 'West Brom', 'Southampton FC', 'Preston', 'QPR', 'Hull City AFC', 'Huddersfield', 'Preston North End FC', 'Millwall', 'Plymouth', 'Middlesbrough FC', 'Bristol City', 'Coventry City FC', 'Hull City', 'Sheffield Wednesday FC', 'Rotherham United FC', 'West Bromwich Albion FC', 'Huddersfield Town', 'Coventry', 'Bristol City FC', 'Blackburn Rovers', 'Leicester City FC', 'Birmingham City', 'Stoke City', 'Leeds', 'Southampton', 'Leicester City', 'Birmingham', 'Sunderland AFC', 'Cardiff City', 'Middlesbrough', 'Millwall FC', 'Norwich City', 'Preston North End', 'Plymouth Argyle', 'Cardiff City FC', 'Sunderland', 'Coventry City', 'Watford', 'Leicester', 'Rotherham']
+  seasons:
+    total: 2
+    years: [2023, 2024]
+
+Data Quality:
+  completeness:
+    missing_values: {'HomeTeam': 0, 'AwayTeam': 0, 'FTHG': 0, 'FTAG': 0, 'HTHG': 0, 'HTAG': 0, 'Date': 0, 'FTR': 0, 'HTR': 0, 'league': 0, 'season': 0, 'data_source': 0, 'home_win': 0, 'draw': 0, 'away_win': 0, 'goal_difference': 0, 'total_goals': 0, 'match_intensity': 0, 'home_advantage': 0, 'year': 0, 'month': 0, 'day_of_week': 0, 'is_weekend': 0, 'match_number': 0, 'home_goals_avg_5': 0, 'away_goals_avg_5': 0, 'home_conceded_avg_5': 0, 'away_conceded_avg_5': 0, 'league_avg_goals': 0, 'league_home_advantage': 0, 'league_goal_variance': 0, 'league_draw_rate': 0, 'home_team_encoded': 0, 'away_team_encoded': 0, 'result_encoded': 0}
+    missing_percentage: {'HomeTeam': 0.0, 'AwayTeam': 0.0, 'FTHG': 0.0, 'FTAG': 0.0, 'HTHG': 0.0, 'HTAG': 0.0, 'Date': 0.0, 'FTR': 0.0, 'HTR': 0.0, 'league': 0.0, 'season': 0.0, 'data_source': 0.0, 'home_win': 0.0, 'draw': 0.0, 'away_win': 0.0, 'goal_difference': 0.0, 'total_goals': 0.0, 'match_intensity': 0.0, 'home_advantage': 0.0, 'year': 0.0, 'month': 0.0, 'day_of_week': 0.0, 'is_weekend': 0.0, 'match_number': 0.0, 'home_goals_avg_5': 0.0, 'away_goals_avg_5': 0.0, 'home_conceded_avg_5': 0.0, 'away_conceded_avg_5': 0.0, 'league_avg_goals': 0.0, 'league_home_advantage': 0.0, 'league_goal_variance': 0.0, 'league_draw_rate': 0.0, 'home_team_encoded': 0.0, 'away_team_encoded': 0.0, 'result_encoded': 0.0}
+    complete_rows: 591
+    complete_percentage: 100.0
+    score: 1.0
+  consistency:
+    duplicate_rows: 0
+    inconsistent_results: 141
+    team_name_consistency: False
+    date_consistency: False
+    score: 0.25
+  accuracy:
+    valid_dates: 591
+    valid_scores: 77
+    valid_teams: 591
+    score: 0.7100958826847151
+  reliability:
+    team_coverage: 1.0
+    season_coverage: 1.0
+    match_frequency: 0.4
+    score: 0.7999999999999999
+
+Statistical Validation:
+  goal_distribution:
+    home_goals_mean: -0.003541901122215975
+    away_goals_mean: -0.02892491761967932
+    total_goals_mean: -0.032466818741895345
+    home_goals_std: 1.0044937404476544
+    away_goals_std: 0.979566775476424
+    total_goals_std: 1.3832798562598974
+    home_goals_skewness: 0.8363862044428956
+    away_goals_skewness: 0.8770538838524597
+    total_goals_skewness: 0.48923746985224126
+    score: 0.6666666666666666
+  result_distribution:
+    home_win_rate: 0.45685279187817257
+    draw_rate: 0.23857868020304568
+    away_win_rate: 0.30456852791878175
+    score: 1.0
+  home_advantage:
+    mean_home_advantage: 0.025383016497463325
+    std_home_advantage: 1.4225520460416214
+    positive_home_advantage_rate: 0.45854483925549916
+    score: 0.5
+  seasonal_patterns:
+    seasonal_goal_rates: {'Autumn': 0.11691334846871901, 'Spring': -0.15130106027670617, 'Summer': -0.08228979516227036, 'Winter': -0.013242231935833257}
+    seasonal_match_counts: {'Autumn': 136, 'Spring': 169, 'Summer': 83, 'Winter': 203}
+    score: 0.0
+
+Temporal Validation:
+  date_gaps:
+    large_gaps: 5
+    max_gap_days: 60.0
+    avg_gap_days: 1.1779661016949152
+    score: 0.9915397631133672
+  match_frequency:
+    monthly_counts: {Period('2024-01', 'M'): 60, Period('2023-02', 'M'): 55, Period('2024-10', 'M'): 44, Period('2024-04', 'M'): 42, Period('2023-04', 'M'): 41, Period('2024-06', 'M'): 40, Period('2023-12', 'M'): 39, Period('2024-09', 'M'): 37, Period('2023-07', 'M'): 29, Period('2024-03', 'M'): 29, Period('2024-02', 'M'): 28, Period('2023-11', 'M'): 27, Period('2023-09', 'M'): 23, Period('2023-03', 'M'): 20, Period('2023-05', 'M'): 20, Period('2024-05', 'M'): 17, Period('2024-12', 'M'): 15, Period('2023-06', 'M'): 10, Period('2023-01', 'M'): 6, Period('2023-10', 'M'): 3, Period('2023-08', 'M'): 2, Period('2024-08', 'M'): 2, Period('2024-11', 'M'): 2}
+    low_frequency_months: 4
+    avg_matches_per_month: 25.695652173913043
+    score: 0.8260869565217391
+  season_consistency:
+    yearly_counts: {2024: 316, 2023: 275}
+    low_season_years: 0
+    avg_matches_per_season: 295.5
+    score: 1.0
+
+Team Validation:
+  team_coverage:
+    total_teams: 63
+    min_required: 16
+    coverage_rate: 3.9375
+    score: 1.0
+  team_consistency:
+    home_teams: 58
+    away_teams: 55
+    teams_in_both: 50
+    consistency_score: 0.7936507936507936
+    score: 0.7936507936507936
+  team_changes:
+    total_changes: 15
+    total_teams: 63
+    change_rate: 0.23809523809523808
+    max_allowed_rate: 0.5
+    score: 0.5238095238095238
+
+Score Validation:
+  score_range:
+    home_min: -1.264046685885131
+    home_max: 2.903454185489477
+    away_min: -1.2693668369114994
+    away_max: 3.6426670434736628
+    home_invalid: 348
+    away_invalid: 390
+    score: 0.1302876480541455
+  score_distribution:
+    home_mean: -0.003541901122215975
+    away_mean: -0.02892491761967932
+    total_mean: -0.032466818741895345
+    home_std: 1.0044937404476544
+    away_std: 0.979566775476424
+    total_std: 1.3832798562598974
+    score: 0.5
+  score_consistency:
+    inconsistent_results: 141
+    total_matches: 591
+    consistency_rate: 0.7614213197969544
+    score: 0.7614213197969544
+
+Missing Data Analysis:
+  missing_by_column:
+    HomeTeam: 0
+    AwayTeam: 0
+    FTHG: 0
+    FTAG: 0
+    HTHG: 0
+    HTAG: 0
+    Date: 0
+    FTR: 0
+    HTR: 0
+    league: 0
+    season: 0
+    data_source: 0
+    home_win: 0
+    draw: 0
+    away_win: 0
+    goal_difference: 0
+    total_goals: 0
+    match_intensity: 0
+    home_advantage: 0
+    year: 0
+    month: 0
+    day_of_week: 0
+    is_weekend: 0
+    match_number: 0
+    home_goals_avg_5: 0
+    away_goals_avg_5: 0
+    home_conceded_avg_5: 0
+    away_conceded_avg_5: 0
+    league_avg_goals: 0
+    league_home_advantage: 0
+    league_goal_variance: 0
+    league_draw_rate: 0
+    home_team_encoded: 0
+    away_team_encoded: 0
+    result_encoded: 0
+  missing_percentage:
+    HomeTeam: 0.0
+    AwayTeam: 0.0
+    FTHG: 0.0
+    FTAG: 0.0
+    HTHG: 0.0
+    HTAG: 0.0
+    Date: 0.0
+    FTR: 0.0
+    HTR: 0.0
+    league: 0.0
+    season: 0.0
+    data_source: 0.0
+    home_win: 0.0
+    draw: 0.0
+    away_win: 0.0
+    goal_difference: 0.0
+    total_goals: 0.0
+    match_intensity: 0.0
+    home_advantage: 0.0
+    year: 0.0
+    month: 0.0
+    day_of_week: 0.0
+    is_weekend: 0.0
+    match_number: 0.0
+    home_goals_avg_5: 0.0
+    away_goals_avg_5: 0.0
+    home_conceded_avg_5: 0.0
+    away_conceded_avg_5: 0.0
+    league_avg_goals: 0.0
+    league_home_advantage: 0.0
+    league_goal_variance: 0.0
+    league_draw_rate: 0.0
+    home_team_encoded: 0.0
+    away_team_encoded: 0.0
+    result_encoded: 0.0
+  missing_patterns:
+    completely_missing_rows: 0
+    partially_missing_rows: 0
+    missing_by_date: {2023: 0, 2024: 0}
+    missing_by_team: {'Birmingham': 0, 'Birmingham City': 0, 'Birmingham City FC': 0, 'Blackburn': 0, 'Blackburn Rovers FC': 0, 'Bristol City': 0, 'Bristol City FC': 0, 'Cardiff': 0, 'Cardiff City FC': 0, 'Coventry': 0, 'Coventry City': 0, 'Coventry City FC': 0, 'Huddersfield': 0, 'Huddersfield Town AFC': 0, 'Hull City': 0, 'Hull City AFC': 0, 'Ipswich': 0, 'Ipswich Town': 0, 'Ipswich Town FC': 0, 'Leeds': 0, 'Leeds United': 0, 'Leeds United FC': 0, 'Leicester': 0, 'Leicester City': 0, 'Leicester City FC': 0, 'Middlesbrough': 0, 'Middlesbrough FC': 0, 'Millwall': 0, 'Millwall FC': 0, 'Norwich': 0, 'Norwich City': 0, 'Norwich City FC': 0, 'Plymouth': 0, 'Plymouth Argyle': 0, 'Plymouth Argyle FC': 0, 'Preston': 0, 'Preston North End FC': 0, 'QPR': 0, 'Queens Park Rangers FC': 0, 'Rotherham': 0, 'Rotherham United': 0, 'Rotherham United FC': 0, 'Sheffield Wednesday': 0, 'Sheffield Wednesday FC': 0, 'Southampton': 0, 'Southampton FC': 0, 'Stoke City': 0, 'Stoke City FC': 0, 'Sunderland': 0, 'Sunderland AFC': 0, 'Swansea': 0, 'Swansea City': 0, 'Swansea City AFC': 0, 'Watford': 0, 'Watford FC': 0, 'West Brom': 0, 'West Bromwich Albion': 0, 'West Bromwich Albion FC': 0}
+  recommendations: []
+
+Outlier Analysis:
+  numerical_outliers:
+    FTHG: {'count': np.int64(47), 'percentage': np.float64(7.952622673434856), 'indices': [22, 23, 48, 49, 108, 109, 112, 113, 128, 129, 156, 157, 194, 195, 204, 205, 214, 215, 238, 239, 308, 309, 348, 349, 350, 351, 352, 363, 364, 419, 420, 425, 426, 435, 436, 455, 456, 467, 468, 506, 516, 521, 524, 537, 552, 559, 564]}
+    FTAG: {'count': np.int64(0), 'percentage': np.float64(0.0), 'indices': []}
+  categorical_outliers:
+  recommendations: ['High outlier percentage in FTHG: 8.0%']
+
+Cross League Comparison:
+  message: Cross-league comparison not implemented
+  reference_leagues: ['EPL', 'LaLiga', 'Bundesliga']
+
+================================================================================

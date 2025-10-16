@@ -1,0 +1,228 @@
+🚀 Starting API Integration Tests
+⏰ Test started at: 2025-10-14 05:31:48
+============================================================
+Testing API Manager Initialization
+============================================================
+✅ API Manager initialized successfully
+📊 Available data sources: 6
+  - football_data: Priority 1, Types: ['matches', 'standings', 'teams', 'players']
+  - odds_api: Priority 2, Types: ['odds', 'live_odds', 'historical_odds']
+  - api_football: Priority 3, Types: ['fixtures', 'standings', 'statistics', 'predictions']
+  - sportsdata_io: Priority 5, Types: ['scores', 'schedules', 'standings', 'news']
+  - openweathermap: Priority 7, Types: ['weather', 'forecast']
+  - newsapi: Priority 8, Types: ['news', 'headlines']
+
+============================================================
+Testing Fixtures Retrieval
+============================================================
+
+🔍 Testing fixtures for league: E1
+  📡 Source: api_football
+     Success: True
+     Response time: 0.55s
+     Data keys: ['get', 'parameters', 'errors', 'results', 'paging', 'response']
+
+🔍 Testing fixtures for league: E2
+  📡 Source: api_football
+     Success: True
+     Response time: 0.15s
+     Data keys: ['get', 'parameters', 'errors', 'results', 'paging', 'response']
+
+🔍 Testing fixtures for league: E3
+  📡 Source: api_football
+     Success: True
+     Response time: 0.22s
+     Data keys: ['get', 'parameters', 'errors', 'results', 'paging', 'response']
+
+🔍 Testing fixtures for league: PL
+  📡 Source: api_football
+     Success: True
+     Response time: 0.20s
+     Data keys: ['get', 'parameters', 'errors', 'results', 'paging', 'response']
+
+🔍 Testing fixtures for league: BL1
+  📡 Source: api_football
+     Success: True
+     Response time: 0.15s
+     Data keys: ['get', 'parameters', 'errors', 'results', 'paging', 'response']
+
+============================================================
+Testing Odds Retrieval
+============================================================
+
+🎯 Testing odds for league: E1
+  📡 Source: odds_api
+     Success: True
+     Response time: 0.99s
+     Data keys: N/A
+
+🎯 Testing odds for league: E2
+  ⚠️ No odds data received
+
+🎯 Testing odds for league: E3
+  ⚠️ No odds data received
+
+============================================================
+Testing Standings Retrieval
+============================================================
+
+🏆 Testing standings for league: E1
+  📡 Source: football_data
+     Success: True
+     Response time: 1.29s
+     Data keys: ['filters', 'area', 'competition', 'season', 'standings']
+
+🏆 Testing standings for league: E2
+  📡 Source: football_data
+     Success: True
+     Response time: 0.24s
+     Data keys: ['filters', 'area', 'competition', 'season', 'standings']
+
+🏆 Testing standings for league: E3
+  📡 Source: football_data
+     Success: True
+     Response time: 0.20s
+     Data keys: ['filters', 'area', 'competition', 'season', 'standings']
+
+============================================================
+Testing Team Statistics Retrieval
+============================================================
+
+👥 Testing statistics for team ID: 1
+  📡 Source: api_football
+     Success: True
+     Response time: 0.21s
+     Data keys: ['get', 'parameters', 'errors', 'results', 'paging', 'response']
+
+👥 Testing statistics for team ID: 2
+  📡 Source: api_football
+     Success: True
+     Response time: 0.16s
+     Data keys: ['get', 'parameters', 'errors', 'results', 'paging', 'response']
+
+👥 Testing statistics for team ID: 3
+  📡 Source: api_football
+     Success: True
+     Response time: 0.35s
+     Data keys: ['get', 'parameters', 'errors', 'results', 'paging', 'response']
+
+👥 Testing statistics for team ID: 4
+  📡 Source: api_football
+     Success: True
+     Response time: 0.21s
+     Data keys: ['get', 'parameters', 'errors', 'results', 'paging', 'response']
+
+👥 Testing statistics for team ID: 5
+  📡 Source: api_football
+     Success: True
+     Response time: 0.15s
+     Data keys: ['get', 'parameters', 'errors', 'results', 'paging', 'response']
+
+============================================================
+Testing Weather Data Retrieval
+============================================================
+
+🌤️ Testing weather for city: London
+  📡 Source: openweathermap
+     Success: True
+     Response time: 2.17s
+     Data keys: ['coord', 'weather', 'base', 'main', 'visibility', 'wind', 'clouds', 'dt', 'sys', 'timezone', 'id', 'name', 'cod']
+
+🌤️ Testing weather for city: Manchester
+  📡 Source: openweathermap
+     Success: True
+     Response time: 0.66s
+     Data keys: ['coord', 'weather', 'base', 'main', 'visibility', 'wind', 'clouds', 'dt', 'sys', 'timezone', 'id', 'name', 'cod']
+
+🌤️ Testing weather for city: Birmingham
+  📡 Source: openweathermap
+     Success: True
+     Response time: 0.41s
+     Data keys: ['coord', 'weather', 'base', 'main', 'visibility', 'wind', 'clouds', 'dt', 'sys', 'timezone', 'id', 'name', 'cod']
+
+🌤️ Testing weather for city: Leeds
+  📡 Source: openweathermap
+     Success: True
+     Response time: 0.61s
+     Data keys: ['coord', 'weather', 'base', 'main', 'visibility', 'wind', 'clouds', 'dt', 'sys', 'timezone', 'id', 'name', 'cod']
+
+🌤️ Testing weather for city: Liverpool
+  📡 Source: openweathermap
+     Success: True
+     Response time: 0.40s
+     Data keys: ['coord', 'weather', 'base', 'main', 'visibility', 'wind', 'clouds', 'dt', 'sys', 'timezone', 'id', 'name', 'cod']
+
+============================================================
+Testing News Data Retrieval
+============================================================
+
+📰 Testing news for query: football
+  📡 Source: newsapi
+     Success: True
+     Response time: 1.85s
+     Data keys: ['status', 'totalResults', 'articles']
+
+📰 Testing news for query: soccer
+  📡 Source: newsapi
+     Success: True
+     Response time: 0.61s
+     Data keys: ['status', 'totalResults', 'articles']
+
+📰 Testing news for query: premier league
+  📡 Source: newsapi
+     Success: True
+     Response time: 0.42s
+     Data keys: ['status', 'totalResults', 'articles']
+
+📰 Testing news for query: championship
+  📡 Source: newsapi
+     Success: True
+     Response time: 0.40s
+     Data keys: ['status', 'totalResults', 'articles']
+
+============================================================
+Testing Data Quality Validation
+============================================================
+📊 Data Quality Validation Results:
+  Total sources: 2
+  Successful sources: 2
+  Average response time: 0.37s
+  Data consistency: True
+  ✅ No issues found
+
+============================================================
+Testing Cache Functionality
+============================================================
+📊 Cache stats before requests:
+  Total entries: 1
+  Cache size: 0.00 MB
+
+🔄 Making requests to populate cache...
+
+📊 Cache stats after requests:
+  Total entries: 3
+  Cache size: 0.11 MB
+
+🧹 Clearing cache...
+📊 Cache stats after clearing:
+  Total entries: 0
+  Cache size: 0.00 MB
+
+============================================================
+Testing Source Management
+============================================================
+📊 Available sources: ['football_data', 'odds_api', 'api_football', 'sportsdata_io', 'openweathermap', 'newsapi']
+
+🔧 Testing source management with: football_data
+  Disable football_data: True
+  Source enabled: False
+  Enable football_data: True
+  Source enabled: True
+
+============================================================
+Saving Test Results
+============================================================
+✅ Test results saved to: api_test_results.json
+
+🏁 Tests completed at: 2025-10-14 05:32:02
+============================================================

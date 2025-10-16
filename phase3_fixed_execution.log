@@ -1,0 +1,391 @@
+2025-10-16 00:28:55,335 - INFO - NumExpr defaulting to 8 threads.
+2025-10-16 00:28:55,698 - INFO - Output directory: ./pipeline_output/phase3_output
+2025-10-16 00:28:55,698 - INFO - Loading data from: ./pipeline_output/phase1_output/E1_features.csv
+2025-10-16 00:28:55,698 - INFO - Loading model from: ./pipeline_output/phase2_output/E1_ensemble.pkl
+2025-10-16 00:28:55,699 - INFO - League: E1
+2025-10-16 00:28:55,699 - INFO - 
+Starting Phase 3 backtesting...
+2025-10-16 00:28:55,699 - INFO - Starting Phase 3 pipeline for E1
+2025-10-16 00:28:55,699 - INFO - Step 1: Loading and preparing data
+2025-10-16 00:28:55,699 - INFO - Loading data from ./pipeline_output/phase1_output/E1_features.csv
+2025-10-16 00:28:55,771 - INFO - Loaded 570 records with 259 features
+2025-10-16 00:28:55,771 - INFO - Step 2: Comprehensive Backtesting
+2025-10-16 00:28:55,771 - INFO - Running comprehensive backtesting
+2025-10-16 00:28:55,771 - INFO - Running walk-forward backtesting
+2025-10-16 00:28:55,771 - INFO - Preparing backtest data
+2025-10-16 00:28:55,776 - INFO - Prepared 570 records for backtesting
+2025-10-16 00:28:55,785 - INFO - Bet 1: loss, Profit: -1.00, Capital: 999.00
+2025-10-16 00:28:55,785 - INFO - Bet 2: loss, Profit: -1.00, Capital: 998.00
+2025-10-16 00:28:55,786 - INFO - Bet 3: loss, Profit: -1.00, Capital: 997.00
+2025-10-16 00:28:55,786 - INFO - Bet 4: loss, Profit: -1.00, Capital: 996.00
+2025-10-16 00:28:55,786 - INFO - Bet 5: win, Profit: 2.85, Capital: 998.85
+2025-10-16 00:28:55,787 - INFO - Bet 6: loss, Profit: -1.00, Capital: 997.85
+2025-10-16 00:28:55,788 - INFO - Bet 7: loss, Profit: -1.00, Capital: 996.85
+2025-10-16 00:28:55,788 - INFO - Bet 8: loss, Profit: -1.00, Capital: 995.85
+2025-10-16 00:28:55,789 - INFO - Bet 9: win, Profit: 0.49, Capital: 996.33
+2025-10-16 00:28:55,789 - INFO - Bet 10: loss, Profit: -1.00, Capital: 995.33
+2025-10-16 00:28:55,789 - INFO - Bet 11: loss, Profit: -1.00, Capital: 994.33
+2025-10-16 00:28:55,790 - INFO - Bet 12: loss, Profit: -1.00, Capital: 993.33
+2025-10-16 00:28:55,791 - INFO - Bet 13: loss, Profit: -1.00, Capital: 992.33
+2025-10-16 00:28:55,791 - INFO - Bet 14: loss, Profit: -1.00, Capital: 991.33
+2025-10-16 00:28:55,791 - INFO - Bet 15: win, Profit: 1.66, Capital: 993.00
+2025-10-16 00:28:55,792 - INFO - Bet 16: win, Profit: 3.25, Capital: 996.25
+2025-10-16 00:28:55,792 - INFO - Bet 17: win, Profit: 2.21, Capital: 998.46
+2025-10-16 00:28:55,792 - INFO - Bet 18: loss, Profit: -1.00, Capital: 997.46
+2025-10-16 00:28:55,793 - INFO - Bet 19: loss, Profit: -1.00, Capital: 996.46
+2025-10-16 00:28:55,793 - INFO - Bet 20: loss, Profit: -1.00, Capital: 995.46
+2025-10-16 00:28:55,794 - INFO - Bet 21: win, Profit: 1.91, Capital: 997.37
+2025-10-16 00:28:55,794 - INFO - Bet 22: win, Profit: 3.25, Capital: 1000.62
+2025-10-16 00:28:55,794 - INFO - Bet 23: loss, Profit: -1.00, Capital: 999.62
+2025-10-16 00:28:55,795 - INFO - Bet 24: loss, Profit: -1.00, Capital: 998.62
+2025-10-16 00:28:55,795 - INFO - Bet 25: loss, Profit: -1.00, Capital: 997.62
+2025-10-16 00:28:55,796 - INFO - Bet 26: win, Profit: 1.83, Capital: 999.45
+2025-10-16 00:28:55,796 - INFO - Bet 27: win, Profit: 2.58, Capital: 1002.02
+2025-10-16 00:28:55,797 - INFO - Bet 28: loss, Profit: -1.00, Capital: 1001.02
+2025-10-16 00:28:55,797 - INFO - Bet 29: win, Profit: 1.04, Capital: 1002.06
+2025-10-16 00:28:55,797 - INFO - Bet 30: loss, Profit: -1.00, Capital: 1001.06
+2025-10-16 00:28:55,798 - INFO - Bet 31: loss, Profit: -1.00, Capital: 1000.06
+2025-10-16 00:28:55,798 - INFO - Bet 32: loss, Profit: -1.00, Capital: 999.06
+2025-10-16 00:28:55,799 - INFO - Bet 33: loss, Profit: -1.00, Capital: 998.06
+2025-10-16 00:28:55,799 - INFO - Bet 34: loss, Profit: -1.00, Capital: 997.06
+2025-10-16 00:28:55,799 - INFO - Bet 35: win, Profit: 2.10, Capital: 999.16
+2025-10-16 00:28:55,800 - INFO - Bet 36: win, Profit: 3.33, Capital: 1002.49
+2025-10-16 00:28:55,800 - INFO - Bet 37: loss, Profit: -1.00, Capital: 1001.49
+2025-10-16 00:28:55,801 - INFO - Bet 38: loss, Profit: -1.00, Capital: 1000.49
+2025-10-16 00:28:55,801 - INFO - Bet 39: win, Profit: 1.33, Capital: 1001.82
+2025-10-16 00:28:55,802 - INFO - Bet 40: win, Profit: 2.16, Capital: 1003.97
+2025-10-16 00:28:55,802 - INFO - Bet 41: loss, Profit: -1.00, Capital: 1002.97
+2025-10-16 00:28:55,802 - INFO - Bet 42: win, Profit: 1.80, Capital: 1004.78
+2025-10-16 00:28:55,803 - INFO - Bet 43: loss, Profit: -1.00, Capital: 1003.78
+2025-10-16 00:28:55,804 - INFO - Bet 44: loss, Profit: -1.00, Capital: 1002.78
+2025-10-16 00:28:55,804 - INFO - Bet 45: win, Profit: 1.81, Capital: 1004.59
+2025-10-16 00:28:55,804 - INFO - Bet 46: win, Profit: 2.80, Capital: 1007.39
+2025-10-16 00:28:55,805 - INFO - Bet 47: win, Profit: 2.36, Capital: 1009.75
+2025-10-16 00:28:55,805 - INFO - Bet 48: win, Profit: 1.15, Capital: 1010.90
+2025-10-16 00:28:55,806 - INFO - Bet 49: loss, Profit: -1.00, Capital: 1009.90
+2025-10-16 00:28:55,806 - INFO - Bet 50: win, Profit: 2.34, Capital: 1012.25
+2025-10-16 00:28:55,806 - INFO - Bet 51: loss, Profit: -1.00, Capital: 1011.25
+2025-10-16 00:28:55,807 - INFO - Bet 52: loss, Profit: -1.00, Capital: 1010.25
+2025-10-16 00:28:55,807 - INFO - Bet 53: loss, Profit: -1.00, Capital: 1009.25
+2025-10-16 00:28:55,808 - INFO - Bet 54: win, Profit: 1.11, Capital: 1010.35
+2025-10-16 00:28:55,808 - INFO - Bet 55: loss, Profit: -1.00, Capital: 1009.35
+2025-10-16 00:28:55,809 - INFO - Bet 56: loss, Profit: -1.00, Capital: 1008.35
+2025-10-16 00:28:55,809 - INFO - Bet 57: loss, Profit: -1.00, Capital: 1007.35
+2025-10-16 00:28:55,810 - INFO - Bet 58: win, Profit: 2.41, Capital: 1009.77
+2025-10-16 00:28:55,810 - INFO - Bet 59: loss, Profit: -1.00, Capital: 1008.77
+2025-10-16 00:28:55,811 - INFO - Bet 60: loss, Profit: -1.00, Capital: 1007.77
+2025-10-16 00:28:55,811 - INFO - Bet 61: loss, Profit: -1.00, Capital: 1006.77
+2025-10-16 00:28:55,811 - INFO - Bet 62: loss, Profit: -1.00, Capital: 1005.77
+2025-10-16 00:28:55,812 - INFO - Bet 63: win, Profit: 2.90, Capital: 1008.67
+2025-10-16 00:28:55,812 - INFO - Bet 64: loss, Profit: -1.00, Capital: 1007.67
+2025-10-16 00:28:55,813 - INFO - Bet 65: loss, Profit: -1.00, Capital: 1006.67
+2025-10-16 00:28:55,813 - INFO - Bet 66: loss, Profit: -1.00, Capital: 1005.67
+2025-10-16 00:28:55,814 - INFO - Bet 67: loss, Profit: -1.00, Capital: 1004.67
+2025-10-16 00:28:55,814 - INFO - Bet 68: loss, Profit: -1.00, Capital: 1003.67
+2025-10-16 00:28:55,815 - INFO - Bet 69: loss, Profit: -1.00, Capital: 1002.67
+2025-10-16 00:28:55,815 - INFO - Bet 70: win, Profit: 1.64, Capital: 1004.31
+2025-10-16 00:28:55,815 - INFO - Bet 71: loss, Profit: -1.00, Capital: 1003.31
+2025-10-16 00:28:55,816 - INFO - Bet 72: loss, Profit: -1.00, Capital: 1002.31
+2025-10-16 00:28:55,816 - INFO - Bet 73: win, Profit: 1.08, Capital: 1003.38
+2025-10-16 00:28:55,817 - INFO - Bet 74: loss, Profit: -1.00, Capital: 1002.38
+2025-10-16 00:28:55,817 - INFO - Bet 75: win, Profit: 2.34, Capital: 1004.72
+2025-10-16 00:28:55,818 - INFO - Bet 76: loss, Profit: -1.00, Capital: 1003.72
+2025-10-16 00:28:55,818 - INFO - Bet 77: win, Profit: 0.99, Capital: 1004.71
+2025-10-16 00:28:55,819 - INFO - Bet 78: loss, Profit: -1.00, Capital: 1003.71
+2025-10-16 00:28:55,819 - INFO - Bet 79: loss, Profit: -1.00, Capital: 1002.71
+2025-10-16 00:28:55,820 - INFO - Bet 80: loss, Profit: -1.00, Capital: 1001.71
+2025-10-16 00:28:55,820 - INFO - Bet 81: loss, Profit: -1.00, Capital: 1000.71
+2025-10-16 00:28:55,820 - INFO - Bet 82: loss, Profit: -1.00, Capital: 999.71
+2025-10-16 00:28:55,821 - INFO - Bet 83: win, Profit: 2.38, Capital: 1002.09
+2025-10-16 00:28:55,821 - INFO - Bet 84: win, Profit: 2.81, Capital: 1004.90
+2025-10-16 00:28:55,822 - INFO - Bet 85: win, Profit: 3.88, Capital: 1008.78
+2025-10-16 00:28:55,822 - INFO - Bet 86: loss, Profit: -1.00, Capital: 1007.78
+2025-10-16 00:28:55,823 - INFO - Bet 87: loss, Profit: -1.00, Capital: 1006.78
+2025-10-16 00:28:55,823 - INFO - Bet 88: win, Profit: 2.45, Capital: 1009.22
+2025-10-16 00:28:55,824 - INFO - Bet 89: win, Profit: 1.22, Capital: 1010.45
+2025-10-16 00:28:55,825 - INFO - Bet 90: loss, Profit: -1.00, Capital: 1009.45
+2025-10-16 00:28:55,825 - INFO - Bet 91: loss, Profit: -1.00, Capital: 1008.45
+2025-10-16 00:28:55,826 - INFO - Bet 92: loss, Profit: -1.00, Capital: 1007.45
+2025-10-16 00:28:55,826 - INFO - Bet 93: loss, Profit: -1.00, Capital: 1006.45
+2025-10-16 00:28:55,826 - INFO - Bet 94: loss, Profit: -1.00, Capital: 1005.45
+2025-10-16 00:28:55,827 - INFO - Bet 95: win, Profit: 2.30, Capital: 1007.75
+2025-10-16 00:28:55,827 - INFO - Bet 96: loss, Profit: -1.00, Capital: 1006.75
+2025-10-16 00:28:55,828 - INFO - Bet 97: loss, Profit: -1.00, Capital: 1005.75
+2025-10-16 00:28:55,828 - INFO - Bet 98: loss, Profit: -1.00, Capital: 1004.75
+2025-10-16 00:28:55,828 - INFO - Bet 99: loss, Profit: -1.00, Capital: 1003.75
+2025-10-16 00:28:55,829 - INFO - Bet 100: loss, Profit: -1.00, Capital: 1002.75
+2025-10-16 00:28:55,830 - INFO - Bet 101: loss, Profit: -1.00, Capital: 1001.75
+2025-10-16 00:28:55,830 - INFO - Bet 102: win, Profit: 3.09, Capital: 1004.84
+2025-10-16 00:28:55,831 - INFO - Bet 103: loss, Profit: -1.00, Capital: 1003.84
+2025-10-16 00:28:55,831 - INFO - Bet 104: loss, Profit: -1.00, Capital: 1002.84
+2025-10-16 00:28:55,832 - INFO - Bet 105: win, Profit: 2.05, Capital: 1004.89
+2025-10-16 00:28:55,832 - INFO - Bet 106: loss, Profit: -1.00, Capital: 1003.89
+2025-10-16 00:28:55,833 - INFO - Bet 107: win, Profit: 3.92, Capital: 1007.81
+2025-10-16 00:28:55,833 - INFO - Bet 108: loss, Profit: -1.00, Capital: 1006.81
+2025-10-16 00:28:55,834 - INFO - Bet 109: loss, Profit: -1.00, Capital: 1005.81
+2025-10-16 00:28:55,834 - INFO - Bet 110: win, Profit: 0.80, Capital: 1006.61
+2025-10-16 00:28:55,834 - INFO - Bet 111: loss, Profit: -1.00, Capital: 1005.61
+2025-10-16 00:28:55,835 - INFO - Bet 112: win, Profit: 1.81, Capital: 1007.42
+2025-10-16 00:28:55,835 - INFO - Bet 113: win, Profit: 3.86, Capital: 1011.28
+2025-10-16 00:28:55,836 - INFO - Bet 114: loss, Profit: -1.00, Capital: 1010.28
+2025-10-16 00:28:55,836 - INFO - Bet 115: loss, Profit: -1.00, Capital: 1009.28
+2025-10-16 00:28:55,837 - INFO - Bet 116: loss, Profit: -1.00, Capital: 1008.28
+2025-10-16 00:28:55,837 - INFO - Bet 117: loss, Profit: -1.00, Capital: 1007.28
+2025-10-16 00:28:55,838 - INFO - Bet 118: win, Profit: 1.90, Capital: 1009.17
+2025-10-16 00:28:55,838 - INFO - Bet 119: win, Profit: 3.74, Capital: 1012.92
+2025-10-16 00:28:55,839 - INFO - Bet 120: loss, Profit: -1.00, Capital: 1011.92
+2025-10-16 00:28:55,840 - INFO - Bet 121: win, Profit: 1.98, Capital: 1013.89
+2025-10-16 00:28:55,840 - INFO - Bet 122: win, Profit: 2.61, Capital: 1016.51
+2025-10-16 00:28:55,841 - INFO - Bet 123: win, Profit: 2.99, Capital: 1019.49
+2025-10-16 00:28:55,841 - INFO - Bet 124: loss, Profit: -1.00, Capital: 1018.49
+2025-10-16 00:28:55,842 - INFO - Bet 125: loss, Profit: -1.00, Capital: 1017.49
+2025-10-16 00:28:55,843 - INFO - Bet 126: loss, Profit: -1.00, Capital: 1016.49
+2025-10-16 00:28:55,843 - INFO - Bet 127: loss, Profit: -1.00, Capital: 1015.49
+2025-10-16 00:28:55,844 - INFO - Bet 128: loss, Profit: -1.00, Capital: 1014.49
+2025-10-16 00:28:55,844 - INFO - Bet 129: loss, Profit: -1.00, Capital: 1013.49
+2025-10-16 00:28:55,846 - INFO - Bet 130: loss, Profit: -1.00, Capital: 1012.49
+2025-10-16 00:28:55,846 - INFO - Bet 131: loss, Profit: -1.00, Capital: 1011.49
+2025-10-16 00:28:55,847 - INFO - Bet 132: loss, Profit: -1.00, Capital: 1010.49
+2025-10-16 00:28:55,848 - INFO - Bet 133: win, Profit: 3.04, Capital: 1013.54
+2025-10-16 00:28:55,848 - INFO - Bet 134: win, Profit: 2.81, Capital: 1016.34
+2025-10-16 00:28:55,849 - INFO - Bet 135: loss, Profit: -1.00, Capital: 1015.34
+2025-10-16 00:28:55,850 - INFO - Bet 136: loss, Profit: -1.00, Capital: 1014.34
+2025-10-16 00:28:55,851 - INFO - Bet 137: loss, Profit: -1.00, Capital: 1013.34
+2025-10-16 00:28:55,851 - INFO - Bet 138: loss, Profit: -1.00, Capital: 1012.34
+2025-10-16 00:28:55,852 - INFO - Bet 139: loss, Profit: -1.00, Capital: 1011.34
+2025-10-16 00:28:55,853 - INFO - Bet 140: win, Profit: 2.00, Capital: 1013.34
+2025-10-16 00:28:55,855 - INFO - Bet 141: loss, Profit: -1.00, Capital: 1012.34
+2025-10-16 00:28:55,856 - INFO - Bet 142: loss, Profit: -1.00, Capital: 1011.34
+2025-10-16 00:28:55,856 - INFO - Bet 143: loss, Profit: -1.00, Capital: 1010.34
+2025-10-16 00:28:55,857 - INFO - Bet 144: loss, Profit: -1.00, Capital: 1009.34
+2025-10-16 00:28:55,857 - INFO - Bet 145: loss, Profit: -1.00, Capital: 1008.34
+2025-10-16 00:28:55,858 - INFO - Bet 146: loss, Profit: -1.00, Capital: 1007.34
+2025-10-16 00:28:55,858 - INFO - Bet 147: loss, Profit: -1.00, Capital: 1006.34
+2025-10-16 00:28:55,858 - INFO - Bet 148: loss, Profit: -1.00, Capital: 1005.34
+2025-10-16 00:28:55,859 - INFO - Bet 149: win, Profit: 1.49, Capital: 1006.83
+2025-10-16 00:28:55,859 - INFO - Bet 150: win, Profit: 2.78, Capital: 1009.61
+2025-10-16 00:28:55,859 - INFO - Bet 151: win, Profit: 2.78, Capital: 1012.39
+2025-10-16 00:28:55,860 - INFO - Bet 152: loss, Profit: -1.00, Capital: 1011.39
+2025-10-16 00:28:55,860 - INFO - Bet 153: loss, Profit: -1.00, Capital: 1010.39
+2025-10-16 00:28:55,861 - INFO - Bet 154: win, Profit: 2.47, Capital: 1012.85
+2025-10-16 00:28:55,861 - INFO - Bet 155: win, Profit: 2.02, Capital: 1014.87
+2025-10-16 00:28:55,862 - INFO - Bet 156: win, Profit: 1.05, Capital: 1015.92
+2025-10-16 00:28:55,863 - INFO - Bet 157: loss, Profit: -1.00, Capital: 1014.92
+2025-10-16 00:28:55,863 - INFO - Bet 158: win, Profit: 1.69, Capital: 1016.61
+2025-10-16 00:28:55,863 - INFO - Bet 159: loss, Profit: -1.00, Capital: 1015.61
+2025-10-16 00:28:55,864 - INFO - Bet 160: loss, Profit: -1.00, Capital: 1014.61
+2025-10-16 00:28:55,865 - INFO - Bet 161: loss, Profit: -1.00, Capital: 1013.61
+2025-10-16 00:28:55,865 - INFO - Bet 162: win, Profit: 1.33, Capital: 1014.94
+2025-10-16 00:28:55,866 - INFO - Bet 163: loss, Profit: -1.00, Capital: 1013.94
+2025-10-16 00:28:55,866 - INFO - Bet 164: win, Profit: 0.53, Capital: 1014.46
+2025-10-16 00:28:55,867 - INFO - Bet 165: loss, Profit: -1.00, Capital: 1013.46
+2025-10-16 00:28:55,867 - INFO - Bet 166: loss, Profit: -1.00, Capital: 1012.46
+2025-10-16 00:28:55,869 - INFO - Bet 167: loss, Profit: -1.00, Capital: 1011.46
+2025-10-16 00:28:55,870 - INFO - Bet 168: loss, Profit: -1.00, Capital: 1010.46
+2025-10-16 00:28:55,870 - INFO - Bet 169: win, Profit: 1.47, Capital: 1011.93
+2025-10-16 00:28:55,871 - INFO - Bet 170: win, Profit: 1.06, Capital: 1012.99
+2025-10-16 00:28:55,871 - INFO - Bet 171: win, Profit: 2.61, Capital: 1015.59
+2025-10-16 00:28:55,871 - INFO - Bet 172: win, Profit: 2.27, Capital: 1017.87
+2025-10-16 00:28:55,873 - INFO - Bet 173: win, Profit: 1.88, Capital: 1019.75
+2025-10-16 00:28:55,873 - INFO - Bet 174: loss, Profit: -1.00, Capital: 1018.75
+2025-10-16 00:28:55,873 - INFO - Bet 175: loss, Profit: -1.00, Capital: 1017.75
+2025-10-16 00:28:55,874 - INFO - Bet 176: loss, Profit: -1.00, Capital: 1016.75
+2025-10-16 00:28:55,874 - INFO - Bet 177: loss, Profit: -1.00, Capital: 1015.75
+2025-10-16 00:28:55,875 - INFO - Bet 178: loss, Profit: -1.00, Capital: 1014.75
+2025-10-16 00:28:55,875 - INFO - Bet 179: loss, Profit: -1.00, Capital: 1013.75
+2025-10-16 00:28:55,877 - INFO - Bet 180: loss, Profit: -1.00, Capital: 1012.75
+2025-10-16 00:28:55,878 - INFO - Bet 181: win, Profit: 3.41, Capital: 1016.15
+2025-10-16 00:28:55,878 - INFO - Bet 182: win, Profit: 3.36, Capital: 1019.52
+2025-10-16 00:28:55,879 - INFO - Bet 183: win, Profit: 2.30, Capital: 1021.82
+2025-10-16 00:28:55,879 - INFO - Bet 184: loss, Profit: -1.00, Capital: 1020.82
+2025-10-16 00:28:55,880 - INFO - Bet 185: loss, Profit: -1.00, Capital: 1019.82
+2025-10-16 00:28:55,881 - INFO - Bet 186: win, Profit: 2.01, Capital: 1021.83
+2025-10-16 00:28:55,881 - INFO - Bet 187: loss, Profit: -1.00, Capital: 1020.83
+2025-10-16 00:28:55,881 - INFO - Bet 188: win, Profit: 3.75, Capital: 1024.58
+2025-10-16 00:28:55,882 - INFO - Bet 189: loss, Profit: -1.00, Capital: 1023.58
+2025-10-16 00:28:55,883 - INFO - Bet 190: win, Profit: 3.00, Capital: 1026.58
+2025-10-16 00:28:55,884 - INFO - Bet 191: win, Profit: 2.28, Capital: 1028.86
+2025-10-16 00:28:55,884 - INFO - Bet 192: win, Profit: 1.99, Capital: 1030.85
+2025-10-16 00:28:55,885 - INFO - Bet 193: win, Profit: 2.95, Capital: 1033.80
+2025-10-16 00:28:55,885 - INFO - Bet 194: loss, Profit: -1.00, Capital: 1032.80
+2025-10-16 00:28:55,887 - INFO - Bet 195: loss, Profit: -1.00, Capital: 1031.80
+2025-10-16 00:28:55,887 - INFO - Bet 196: win, Profit: 3.68, Capital: 1035.48
+2025-10-16 00:28:55,888 - INFO - Bet 197: win, Profit: 1.71, Capital: 1037.19
+2025-10-16 00:28:55,888 - INFO - Bet 198: win, Profit: 1.70, Capital: 1038.89
+2025-10-16 00:28:55,889 - INFO - Bet 199: loss, Profit: -1.00, Capital: 1037.89
+2025-10-16 00:28:55,889 - INFO - Bet 200: loss, Profit: -1.00, Capital: 1036.89
+2025-10-16 00:28:55,890 - INFO - Bet 201: win, Profit: 2.73, Capital: 1039.62
+2025-10-16 00:28:55,891 - INFO - Bet 202: win, Profit: 1.37, Capital: 1040.99
+2025-10-16 00:28:55,891 - INFO - Bet 203: win, Profit: 3.19, Capital: 1044.19
+2025-10-16 00:28:55,891 - INFO - Bet 204: win, Profit: 2.89, Capital: 1047.08
+2025-10-16 00:28:55,892 - INFO - Bet 205: win, Profit: 3.52, Capital: 1050.60
+2025-10-16 00:28:55,893 - INFO - Bet 206: win, Profit: 1.78, Capital: 1052.38
+2025-10-16 00:28:55,894 - INFO - Bet 207: win, Profit: 2.02, Capital: 1054.40
+2025-10-16 00:28:55,895 - INFO - Bet 208: loss, Profit: -1.00, Capital: 1053.40
+2025-10-16 00:28:55,896 - INFO - Bet 209: win, Profit: 1.06, Capital: 1054.46
+2025-10-16 00:28:55,896 - INFO - Bet 210: loss, Profit: -1.00, Capital: 1053.46
+2025-10-16 00:28:55,898 - INFO - Bet 211: loss, Profit: -1.00, Capital: 1052.46
+2025-10-16 00:28:55,898 - INFO - Bet 212: win, Profit: 2.30, Capital: 1054.76
+2025-10-16 00:28:55,898 - INFO - Bet 213: loss, Profit: -1.00, Capital: 1053.76
+2025-10-16 00:28:55,899 - INFO - Bet 214: loss, Profit: -1.00, Capital: 1052.76
+2025-10-16 00:28:55,899 - INFO - Bet 215: win, Profit: 2.66, Capital: 1055.42
+2025-10-16 00:28:55,900 - INFO - Bet 216: loss, Profit: -1.00, Capital: 1054.42
+2025-10-16 00:28:55,901 - INFO - Bet 217: win, Profit: 3.62, Capital: 1058.04
+2025-10-16 00:28:55,902 - INFO - Bet 218: win, Profit: 0.99, Capital: 1059.03
+2025-10-16 00:28:55,903 - INFO - Bet 219: loss, Profit: -1.00, Capital: 1058.03
+2025-10-16 00:28:55,903 - INFO - Bet 220: loss, Profit: -1.00, Capital: 1057.03
+2025-10-16 00:28:55,904 - INFO - Bet 221: win, Profit: 3.06, Capital: 1060.09
+2025-10-16 00:28:55,904 - INFO - Bet 222: loss, Profit: -1.00, Capital: 1059.09
+2025-10-16 00:28:55,905 - INFO - Bet 223: win, Profit: 2.31, Capital: 1061.40
+2025-10-16 00:28:55,905 - INFO - Bet 224: win, Profit: 1.63, Capital: 1063.03
+2025-10-16 00:28:55,905 - INFO - Bet 225: loss, Profit: -1.00, Capital: 1062.03
+2025-10-16 00:28:55,906 - INFO - Bet 226: loss, Profit: -1.00, Capital: 1061.03
+2025-10-16 00:28:55,906 - INFO - Bet 227: loss, Profit: -1.00, Capital: 1060.03
+2025-10-16 00:28:55,907 - INFO - Bet 228: loss, Profit: -1.00, Capital: 1059.03
+2025-10-16 00:28:55,907 - INFO - Bet 229: loss, Profit: -1.00, Capital: 1058.03
+2025-10-16 00:28:55,908 - INFO - Bet 230: win, Profit: 3.70, Capital: 1061.74
+2025-10-16 00:28:55,908 - INFO - Bet 231: loss, Profit: -1.00, Capital: 1060.74
+2025-10-16 00:28:55,908 - INFO - Bet 232: loss, Profit: -1.00, Capital: 1059.74
+2025-10-16 00:28:55,909 - INFO - Bet 233: loss, Profit: -1.00, Capital: 1058.74
+2025-10-16 00:28:55,910 - INFO - Bet 234: loss, Profit: -1.00, Capital: 1057.74
+2025-10-16 00:28:55,911 - INFO - Bet 235: loss, Profit: -1.00, Capital: 1056.74
+2025-10-16 00:28:55,911 - INFO - Bet 236: win, Profit: 3.29, Capital: 1060.03
+2025-10-16 00:28:55,911 - INFO - Bet 237: loss, Profit: -1.00, Capital: 1059.03
+2025-10-16 00:28:55,912 - INFO - Bet 238: win, Profit: 2.41, Capital: 1061.44
+2025-10-16 00:28:55,912 - INFO - Bet 239: win, Profit: 3.53, Capital: 1064.97
+2025-10-16 00:28:55,913 - INFO - Bet 240: win, Profit: 1.64, Capital: 1066.61
+2025-10-16 00:28:55,913 - INFO - Bet 241: win, Profit: 2.73, Capital: 1069.34
+2025-10-16 00:28:55,913 - INFO - Bet 242: loss, Profit: -1.00, Capital: 1068.34
+2025-10-16 00:28:55,914 - INFO - Bet 243: loss, Profit: -1.00, Capital: 1067.34
+2025-10-16 00:28:55,914 - INFO - Bet 244: loss, Profit: -1.00, Capital: 1066.34
+2025-10-16 00:28:55,915 - INFO - Bet 245: win, Profit: 1.50, Capital: 1067.84
+2025-10-16 00:28:55,915 - INFO - Bet 246: loss, Profit: -1.00, Capital: 1066.84
+2025-10-16 00:28:55,916 - INFO - Bet 247: loss, Profit: -1.00, Capital: 1065.84
+2025-10-16 00:28:55,916 - INFO - Bet 248: win, Profit: 1.02, Capital: 1066.86
+2025-10-16 00:28:55,917 - INFO - Bet 249: loss, Profit: -1.00, Capital: 1065.86
+2025-10-16 00:28:55,917 - INFO - Bet 250: win, Profit: 1.35, Capital: 1067.21
+2025-10-16 00:28:55,918 - INFO - Bet 251: win, Profit: 1.23, Capital: 1068.44
+2025-10-16 00:28:55,918 - INFO - Bet 252: loss, Profit: -1.00, Capital: 1067.44
+2025-10-16 00:28:55,919 - INFO - Bet 253: loss, Profit: -1.00, Capital: 1066.44
+2025-10-16 00:28:55,919 - INFO - Bet 254: loss, Profit: -1.00, Capital: 1065.44
+2025-10-16 00:28:55,920 - INFO - Bet 255: win, Profit: 2.15, Capital: 1067.59
+2025-10-16 00:28:55,920 - INFO - Bet 256: loss, Profit: -1.00, Capital: 1066.59
+2025-10-16 00:28:55,921 - INFO - Bet 257: loss, Profit: -1.00, Capital: 1065.59
+2025-10-16 00:28:55,921 - INFO - Bet 258: loss, Profit: -1.00, Capital: 1064.59
+2025-10-16 00:28:55,921 - INFO - Bet 259: loss, Profit: -1.00, Capital: 1063.59
+2025-10-16 00:28:55,922 - INFO - Bet 260: loss, Profit: -1.00, Capital: 1062.59
+2025-10-16 00:28:55,922 - INFO - Bet 261: loss, Profit: -1.00, Capital: 1061.59
+2025-10-16 00:28:55,923 - INFO - Bet 262: loss, Profit: -1.00, Capital: 1060.59
+2025-10-16 00:28:55,923 - INFO - Bet 263: loss, Profit: -1.00, Capital: 1059.59
+2025-10-16 00:28:55,923 - INFO - Bet 264: win, Profit: 0.57, Capital: 1060.17
+2025-10-16 00:28:55,924 - INFO - Bet 265: win, Profit: 1.91, Capital: 1062.08
+2025-10-16 00:28:55,925 - INFO - Bet 266: loss, Profit: -1.00, Capital: 1061.08
+2025-10-16 00:28:55,926 - INFO - Bet 267: loss, Profit: -1.00, Capital: 1060.08
+2025-10-16 00:28:55,926 - INFO - Bet 268: loss, Profit: -1.00, Capital: 1059.08
+2025-10-16 00:28:55,927 - INFO - Bet 269: loss, Profit: -1.00, Capital: 1058.08
+2025-10-16 00:28:55,927 - INFO - Bet 270: loss, Profit: -1.00, Capital: 1057.08
+2025-10-16 00:28:55,927 - INFO - Bet 271: loss, Profit: -1.00, Capital: 1056.08
+2025-10-16 00:28:55,928 - INFO - Bet 272: win, Profit: 2.68, Capital: 1058.76
+2025-10-16 00:28:55,929 - INFO - Bet 273: win, Profit: 0.72, Capital: 1059.48
+2025-10-16 00:28:55,930 - INFO - Bet 274: loss, Profit: -1.00, Capital: 1058.48
+2025-10-16 00:28:55,931 - INFO - Walk-forward backtest complete: 5.85% return, 274 bets, 1.39% max drawdown
+2025-10-16 00:28:55,935 - INFO - Calculating performance metrics
+2025-10-16 00:28:55,937 - INFO - Analyzing drawdowns
+2025-10-16 00:28:55,938 - ERROR - Error in backtesting: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+2025-10-16 00:28:55,938 - INFO - Step 3: Betting Strategy Implementation
+2025-10-16 00:28:55,938 - INFO - Implementing betting strategy
+2025-10-16 00:28:55,948 - ERROR - Error in betting strategy: division by zero
+2025-10-16 00:28:55,950 - INFO - Step 4: Performance Metrics Calculation
+2025-10-16 00:28:55,950 - INFO - Calculating performance metrics
+2025-10-16 00:28:55,950 - INFO - Calculating comprehensive performance metrics
+2025-10-16 00:28:55,950 - INFO - Calculating primary performance metrics
+2025-10-16 00:28:55,950 - INFO - Calculating secondary performance metrics
+2025-10-16 00:28:55,950 - INFO - Calculating risk metrics
+2025-10-16 00:28:55,950 - ERROR - Error in performance metrics: 'risk'
+2025-10-16 00:28:55,951 - INFO - Step 5: Risk Management Integration
+2025-10-16 00:28:55,951 - INFO - Integrating risk management
+2025-10-16 00:28:55,951 - INFO - Calculating current risk metrics
+2025-10-16 00:28:55,951 - INFO - Assessing risk level
+2025-10-16 00:28:55,951 - INFO - Performing stress testing
+2025-10-16 00:28:55,951 - INFO - Step 6: Live Testing Framework Setup
+2025-10-16 00:28:55,951 - INFO - Setting up live testing framework
+2025-10-16 00:28:55,951 - INFO - Starting live testing session
+2025-10-16 00:28:55,951 - INFO - Testing session started: phase3_session_20251016_002855
+2025-10-16 00:28:55,952 - INFO - Placing paper trade
+2025-10-16 00:28:55,953 - INFO - Placing paper trade
+2025-10-16 00:28:55,953 - INFO - Trade alert: Trade placed: ID=1, Size=$50.00
+2025-10-16 00:28:55,953 - INFO - Paper trade placed: ID=1, Size=$50.00
+2025-10-16 00:28:55,953 - INFO - Settling paper trade: ID=1
+2025-10-16 00:28:55,953 - INFO - Trade alert: Trade settled: ID=1, Size=$50.00
+2025-10-16 00:28:55,953 - INFO - Paper trade settled: ID=1, Outcome=LOSS, Profit=$-50.00
+2025-10-16 00:28:55,954 - INFO - Placing paper trade
+2025-10-16 00:28:55,954 - INFO - Trade alert: Trade placed: ID=2, Size=$50.00
+2025-10-16 00:28:55,954 - INFO - Paper trade placed: ID=2, Size=$50.00
+2025-10-16 00:28:55,954 - INFO - Settling paper trade: ID=2
+2025-10-16 00:28:55,954 - INFO - Trade alert: Trade settled: ID=2, Size=$50.00
+2025-10-16 00:28:55,954 - INFO - Paper trade settled: ID=2, Outcome=LOSS, Profit=$-50.00
+2025-10-16 00:28:55,954 - INFO - Placing paper trade
+2025-10-16 00:28:55,954 - INFO - Trade alert: Trade placed: ID=3, Size=$50.00
+2025-10-16 00:28:55,955 - INFO - Paper trade placed: ID=3, Size=$50.00
+2025-10-16 00:28:55,955 - INFO - Settling paper trade: ID=3
+2025-10-16 00:28:55,955 - INFO - Trade alert: Trade settled: ID=3, Size=$50.00
+2025-10-16 00:28:55,955 - INFO - Paper trade settled: ID=3, Outcome=LOSS, Profit=$-50.00
+2025-10-16 00:28:55,955 - INFO - Placing paper trade
+2025-10-16 00:28:55,956 - INFO - Trade alert: Trade placed: ID=4, Size=$50.00
+2025-10-16 00:28:55,956 - INFO - Paper trade placed: ID=4, Size=$50.00
+2025-10-16 00:28:55,956 - INFO - Settling paper trade: ID=4
+2025-10-16 00:28:55,956 - INFO - Trade alert: Trade settled: ID=4, Size=$50.00
+2025-10-16 00:28:55,956 - INFO - Paper trade settled: ID=4, Outcome=WIN, Profit=$118.67
+2025-10-16 00:28:55,956 - INFO - Placing paper trade
+2025-10-16 00:28:55,957 - INFO - Placing paper trade
+2025-10-16 00:28:55,957 - INFO - Trade alert: Trade placed: ID=5, Size=$50.00
+2025-10-16 00:28:55,957 - INFO - Paper trade placed: ID=5, Size=$50.00
+2025-10-16 00:28:55,957 - INFO - Settling paper trade: ID=5
+2025-10-16 00:28:55,957 - INFO - Trade alert: Trade settled: ID=5, Size=$50.00
+2025-10-16 00:28:55,957 - INFO - Paper trade settled: ID=5, Outcome=LOSS, Profit=$-50.00
+2025-10-16 00:28:55,957 - INFO - Placing paper trade
+2025-10-16 00:28:55,957 - INFO - Placing paper trade
+2025-10-16 00:28:55,958 - INFO - Trade alert: Trade placed: ID=6, Size=$50.00
+2025-10-16 00:28:55,958 - INFO - Paper trade placed: ID=6, Size=$50.00
+2025-10-16 00:28:55,958 - INFO - Settling paper trade: ID=6
+2025-10-16 00:28:55,958 - INFO - Trade alert: Trade settled: ID=6, Size=$50.00
+2025-10-16 00:28:55,958 - INFO - Paper trade settled: ID=6, Outcome=LOSS, Profit=$-50.00
+2025-10-16 00:28:55,958 - INFO - Placing paper trade
+2025-10-16 00:28:55,958 - INFO - Trade alert: Trade placed: ID=7, Size=$50.00
+2025-10-16 00:28:55,958 - INFO - Paper trade placed: ID=7, Size=$50.00
+2025-10-16 00:28:55,958 - INFO - Settling paper trade: ID=7
+2025-10-16 00:28:55,959 - INFO - Trade alert: Trade settled: ID=7, Size=$50.00
+2025-10-16 00:28:55,959 - INFO - Paper trade settled: ID=7, Outcome=WIN, Profit=$140.83
+2025-10-16 00:28:55,959 - INFO - Stopping live testing session
+2025-10-16 00:28:55,960 - INFO - Testing session stopped: phase3_session_20251016_002855
+2025-10-16 00:28:55,960 - INFO - Step 7: Final Integration and Validation
+2025-10-16 00:28:55,960 - INFO - Integrating and validating Phase 3 results
+2025-10-16 00:28:55,960 - INFO - Step 8: Saving Results
+2025-10-16 00:28:55,960 - INFO - Saving results for E1
+2025-10-16 00:28:55,960 - INFO - Saving risk state to ./pipeline_output/phase3_output/E1_risk_management.pkl
+2025-10-16 00:28:55,962 - INFO - Risk state saved successfully
+2025-10-16 00:28:55,962 - INFO - Saving testing session to ./pipeline_output/phase3_output/E1_live_testing.pkl
+2025-10-16 00:28:55,966 - INFO - Testing session saved successfully
+2025-10-16 00:28:55,969 - INFO - Phase 3 results saved successfully
+2025-10-16 00:28:55,970 - INFO - Phase 3 pipeline completed successfully
+2025-10-16 00:28:55,970 - INFO - ✅ Phase 3 completed successfully
+================================================================================
+PHASE 3: BACKTESTING & STRATEGY DEVELOPMENT
+================================================================================
+
+================================================================================
+✅ PHASE 3 COMPLETE
+================================================================================
+
+📁 Output directory: ./pipeline_output/phase3_output
+================================================================================
+
+================================================================================
+PHASE 3 EXECUTION COMPLETE
+================================================================================
+
+Next steps:
+  • Review backtesting results
+  • Analyze betting strategy performance
+  • Proceed to Phase 4 (Production Deployment)
+================================================================================

@@ -1,0 +1,36 @@
+2025-10-16 01:09:08,888 - INFO - Loading system components...
+2025-10-16 01:09:08,889 - INFO - ✅ All components loaded successfully
+2025-10-16 01:09:08,889 - INFO - Loading feature data...
+2025-10-16 01:09:08,948 - INFO - ✅ Loaded 570 matches
+2025-10-16 01:09:08,948 - INFO - Session: paper_trading_stage1_20251016_010908
+2025-10-16 01:09:08,948 - INFO - Initial Capital: $10,000.00
+2025-10-16 01:09:08,948 - INFO - Starting live testing session
+2025-10-16 01:09:08,948 - INFO - Testing session started: paper_trading_stage1_20251016_010908
+2025-10-16 01:09:08,949 - INFO - ✅ Paper trading session started
+2025-10-16 01:09:08,949 - INFO - Generating predictions...
+2025-10-16 01:09:08,950 - INFO - Generating confidence scores...
+2025-10-16 01:09:08,957 - INFO - ✅ Selected 50 matches for paper trading
+2025-10-16 01:09:08,958 - INFO - Confidence range: 0.935 - 0.950
+2025-10-16 01:09:08,959 - INFO - Placing paper trade
+2025-10-16 01:09:08,959 - INFO - Trade alert: Trade placed: ID=1, Size=$50.00
+2025-10-16 01:09:08,959 - INFO - Paper trade placed: ID=1, Size=$50.00
+================================================================================
+STAGE 1: PAPER TRADING DEPLOYMENT
+================================================================================
+
+================================================================================
+INITIALIZING PAPER TRADING SESSION
+================================================================================
+
+================================================================================
+PREPARING TEST DATA
+================================================================================
+
+================================================================================
+EXECUTING PAPER TRADES
+================================================================================
+Traceback (most recent call last):
+  File "/home/kali/Non-major-leagues/deploy_paper_trading_v2.py", line 143, in <module>
+    trade_id=trade_result['trade_id'],
+             ~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'trade_id'

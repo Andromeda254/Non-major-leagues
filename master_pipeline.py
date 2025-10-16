@@ -241,9 +241,19 @@ class MasterPipeline:
             phase1 = Phase1Integration()
             
             # Run Phase 1 pipeline
+            # Handle seasons config - convert int to list if needed
+            seasons_config = self.config['phase1'].get('seasons', 3)
+            if isinstance(seasons_config, int):
+                # Generate season list based on number (e.g., 3 -> ['2324', '2223', '2122'])
+                current_year = 23
+                seasons = [f"{current_year-i:02d}{current_year-i+1:02d}" for i in range(seasons_config)]
+            else:
+                seasons = seasons_config
+            
             result = phase1.run_phase1_pipeline(
-                league=league or self.config['phase1']['leagues'][0],
-                output_dir=self.config['pipeline']['output_dir'],
+                league_code=league or self.config['phase1']['leagues'][0],
+                seasons=seasons,
+                collect_live_odds=True,
                 config=self.config
             )
             
@@ -251,8 +261,22 @@ class MasterPipeline:
             phase1_output_dir = Path(self.config['pipeline']['output_dir']) / 'phase1_output'
             phase1_output_dir.mkdir(exist_ok=True)
             
+            # Convert result to JSON-serializable format
+            def make_serializable(obj):
+                """Convert non-serializable objects to strings"""
+                if isinstance(obj, dict):
+                    return {str(k): make_serializable(v) for k, v in obj.items()}
+                elif isinstance(obj, (list, tuple)):
+                    return [make_serializable(item) for item in obj]
+                elif hasattr(obj, '__dict__'):
+                    return str(obj)
+                else:
+                    return obj
+            
+            serializable_result = make_serializable(result)
+            
             with open(phase1_output_dir / 'phase1_results.json', 'w') as f:
-                json.dump(result, f, indent=2, default=str)
+                json.dump(serializable_result, f, indent=2, default=str)
                 
             duration = time.time() - start_time
             self.pipeline_state['phases_completed'].append('phase1')
@@ -298,9 +322,13 @@ class MasterPipeline:
             phase2 = Phase2Integration()
             
             # Run Phase 2 pipeline
+            # Use the features file from Phase 1
+            data_file = './data/E1_features.csv'  # From Phase 1 output
+            
             result = phase2.run_phase2_pipeline(
-                feature_data_path=str(input_dir / 'processed_features.parquet'),
-                output_dir=self.config['pipeline']['output_dir'],
+                data_file=data_file,
+                league_code='E1',
+                source_data_files=None,
                 config=self.config
             )
             
@@ -308,8 +336,22 @@ class MasterPipeline:
             phase2_output_dir = Path(self.config['pipeline']['output_dir']) / 'phase2_output'
             phase2_output_dir.mkdir(exist_ok=True)
             
+            # Convert result to JSON-serializable format
+            def make_serializable(obj):
+                """Convert non-serializable objects to strings"""
+                if isinstance(obj, dict):
+                    return {str(k): make_serializable(v) for k, v in obj.items()}
+                elif isinstance(obj, (list, tuple)):
+                    return [make_serializable(item) for item in obj]
+                elif hasattr(obj, '__dict__'):
+                    return str(obj)
+                else:
+                    return obj
+            
+            serializable_result = make_serializable(result)
+            
             with open(phase2_output_dir / 'phase2_results.json', 'w') as f:
-                json.dump(result, f, indent=2, default=str)
+                json.dump(serializable_result, f, indent=2, default=str)
                 
             duration = time.time() - start_time
             self.pipeline_state['phases_completed'].append('phase2')
@@ -355,11 +397,14 @@ class MasterPipeline:
             phase3 = Phase3Integration()
             
             # Run Phase 3 pipeline
+            # Use the features file from Phase 1
+            data_file = './data/E1_features.csv'  # From Phase 1 output
+            model_file = str(model_dir / 'ensemble_model.pkl')
+            
             result = phase3.run_phase3_pipeline(
-                feature_data_path=str(Path(self.config['pipeline']['output_dir']) / 'phase1_output' / 'processed_features.parquet'),
-                model_path=str(model_dir / 'ensemble_model.pkl'),
-                output_dir=self.config['pipeline']['output_dir'],
-                config=self.config
+                data_file=data_file,
+                league_code='E1',
+                model_file=model_file
             )
             
             # Store results

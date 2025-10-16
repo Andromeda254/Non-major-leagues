@@ -1,0 +1,7 @@
+2025-10-15 23:35:44,020 - __main__ - INFO - Master Pipeline initialized
+2025-10-15 23:35:44,021 - __main__ - INFO - Using default configuration
+2025-10-15 23:35:44,023 - __main__ - INFO - ================================================================================
+2025-10-15 23:35:44,023 - __main__ - INFO - STARTING PHASE 1: DATA COLLECTION & PREPROCESSING
+2025-10-15 23:35:44,023 - __main__ - INFO - ================================================================================
+2025-10-15 23:35:44,024 - phase1_integration - INFO - Output directory: ./data
+2025-10-15 23:35:44,025 - __main__ - ERROR - Phase 1 failed: Phase1Integration.run_phase1_pipeline() got an unexpected keyword argument 'league'

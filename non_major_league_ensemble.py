@@ -233,7 +233,6 @@ class NonMajorLeagueEnsemble:
                     model.fit(
                         X_train, y_train,
                         eval_set=[(X_val, y_val)],
-                        early_stopping_rounds=30,  # Conservative early stopping
                         verbose=False
                     )
                 elif name == 'lightgbm':

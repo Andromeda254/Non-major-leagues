@@ -1,0 +1,386 @@
+2025-10-16 01:10:10,344 - INFO - Loading system components...
+2025-10-16 01:10:10,345 - INFO - ✅ All components loaded successfully
+2025-10-16 01:10:10,345 - INFO - Loading feature data...
+2025-10-16 01:10:10,409 - INFO - ✅ Loaded 570 matches
+2025-10-16 01:10:10,409 - INFO - Session: paper_trading_stage1_20251016_011010
+2025-10-16 01:10:10,409 - INFO - Initial Capital: $10,000.00
+2025-10-16 01:10:10,409 - INFO - Starting live testing session
+2025-10-16 01:10:10,409 - INFO - Testing session started: paper_trading_stage1_20251016_011010
+2025-10-16 01:10:10,409 - INFO - ✅ Paper trading session started
+2025-10-16 01:10:10,410 - INFO - Generating predictions...
+2025-10-16 01:10:10,411 - INFO - Generating confidence scores...
+2025-10-16 01:10:10,422 - INFO - ✅ Selected 50 matches for paper trading
+2025-10-16 01:10:10,423 - INFO - Confidence range: 0.933 - 0.950
+2025-10-16 01:10:10,425 - INFO - Placing paper trade
+2025-10-16 01:10:10,425 - INFO - Trade alert: Trade placed: ID=1, Size=$50.00
+2025-10-16 01:10:10,425 - INFO - Paper trade placed: ID=1, Size=$50.00
+2025-10-16 01:10:10,425 - INFO - Settling paper trade: ID=1
+2025-10-16 01:10:10,425 - INFO - Trade alert: Trade settled: ID=1, Size=$50.00
+2025-10-16 01:10:10,425 - INFO - Paper trade settled: ID=1, Outcome=WIN, Profit=$88.65
+2025-10-16 01:10:10,426 - INFO - Placing paper trade
+2025-10-16 01:10:10,426 - INFO - Trade alert: Trade placed: ID=2, Size=$50.00
+2025-10-16 01:10:10,426 - INFO - Paper trade placed: ID=2, Size=$50.00
+2025-10-16 01:10:10,426 - INFO - Settling paper trade: ID=2
+2025-10-16 01:10:10,426 - INFO - Trade alert: Trade settled: ID=2, Size=$50.00
+2025-10-16 01:10:10,427 - INFO - Paper trade settled: ID=2, Outcome=WIN, Profit=$71.21
+2025-10-16 01:10:10,427 - INFO - Placing paper trade
+2025-10-16 01:10:10,427 - INFO - Trade alert: Trade placed: ID=3, Size=$50.00
+2025-10-16 01:10:10,427 - INFO - Paper trade placed: ID=3, Size=$50.00
+2025-10-16 01:10:10,427 - INFO - Settling paper trade: ID=3
+2025-10-16 01:10:10,427 - INFO - Trade alert: Trade settled: ID=3, Size=$50.00
+2025-10-16 01:10:10,428 - INFO - Paper trade settled: ID=3, Outcome=WIN, Profit=$56.90
+2025-10-16 01:10:10,428 - INFO - Placing paper trade
+2025-10-16 01:10:10,428 - INFO - Trade alert: Trade placed: ID=4, Size=$50.00
+2025-10-16 01:10:10,428 - INFO - Paper trade placed: ID=4, Size=$50.00
+2025-10-16 01:10:10,428 - INFO - Settling paper trade: ID=4
+2025-10-16 01:10:10,429 - INFO - Trade alert: Trade settled: ID=4, Size=$50.00
+2025-10-16 01:10:10,429 - INFO - Paper trade settled: ID=4, Outcome=WIN, Profit=$169.20
+2025-10-16 01:10:10,429 - INFO - Placing paper trade
+2025-10-16 01:10:10,429 - INFO - Trade alert: Trade placed: ID=5, Size=$50.00
+2025-10-16 01:10:10,429 - INFO - Paper trade placed: ID=5, Size=$50.00
+2025-10-16 01:10:10,429 - INFO - Settling paper trade: ID=5
+2025-10-16 01:10:10,429 - INFO - Trade alert: Trade settled: ID=5, Size=$50.00
+2025-10-16 01:10:10,430 - INFO - Paper trade settled: ID=5, Outcome=WIN, Profit=$104.84
+2025-10-16 01:10:10,430 - INFO - Placing paper trade
+2025-10-16 01:10:10,430 - INFO - Trade alert: Trade placed: ID=6, Size=$50.00
+2025-10-16 01:10:10,430 - INFO - Paper trade placed: ID=6, Size=$50.00
+2025-10-16 01:10:10,430 - INFO - Settling paper trade: ID=6
+2025-10-16 01:10:10,430 - INFO - Trade alert: Trade settled: ID=6, Size=$50.00
+2025-10-16 01:10:10,430 - INFO - Paper trade settled: ID=6, Outcome=WIN, Profit=$154.55
+2025-10-16 01:10:10,431 - INFO - Placing paper trade
+2025-10-16 01:10:10,431 - INFO - Trade alert: Trade placed: ID=7, Size=$50.00
+2025-10-16 01:10:10,431 - INFO - Paper trade placed: ID=7, Size=$50.00
+2025-10-16 01:10:10,431 - INFO - Settling paper trade: ID=7
+2025-10-16 01:10:10,431 - INFO - Trade alert: Trade settled: ID=7, Size=$50.00
+2025-10-16 01:10:10,431 - INFO - Paper trade settled: ID=7, Outcome=WIN, Profit=$77.57
+2025-10-16 01:10:10,432 - INFO - Placing paper trade
+2025-10-16 01:10:10,432 - INFO - Trade alert: Trade placed: ID=8, Size=$50.00
+2025-10-16 01:10:10,432 - INFO - Paper trade placed: ID=8, Size=$50.00
+2025-10-16 01:10:10,432 - INFO - Settling paper trade: ID=8
+2025-10-16 01:10:10,432 - INFO - Trade alert: Trade settled: ID=8, Size=$50.00
+2025-10-16 01:10:10,432 - INFO - Paper trade settled: ID=8, Outcome=WIN, Profit=$82.12
+2025-10-16 01:10:10,433 - INFO - Placing paper trade
+2025-10-16 01:10:10,433 - INFO - Trade alert: Trade placed: ID=9, Size=$50.00
+2025-10-16 01:10:10,433 - INFO - Paper trade placed: ID=9, Size=$50.00
+2025-10-16 01:10:10,433 - INFO - Settling paper trade: ID=9
+2025-10-16 01:10:10,433 - INFO - Trade alert: Trade settled: ID=9, Size=$50.00
+2025-10-16 01:10:10,433 - INFO - Paper trade settled: ID=9, Outcome=WIN, Profit=$104.68
+2025-10-16 01:10:10,434 - INFO - Placing paper trade
+2025-10-16 01:10:10,434 - INFO - Trade alert: Trade placed: ID=10, Size=$50.00
+2025-10-16 01:10:10,434 - INFO - Paper trade placed: ID=10, Size=$50.00
+2025-10-16 01:10:10,434 - INFO - Settling paper trade: ID=10
+2025-10-16 01:10:10,434 - INFO - Trade alert: Trade settled: ID=10, Size=$50.00
+2025-10-16 01:10:10,434 - INFO - Paper trade settled: ID=10, Outcome=WIN, Profit=$170.12
+2025-10-16 01:10:10,434 - INFO - Progress: 10 trades | Win Rate: 100.0% | ROI: +10.80%
+2025-10-16 01:10:10,435 - INFO - Placing paper trade
+2025-10-16 01:10:10,435 - INFO - Trade alert: Trade placed: ID=11, Size=$50.00
+2025-10-16 01:10:10,435 - INFO - Paper trade placed: ID=11, Size=$50.00
+2025-10-16 01:10:10,435 - INFO - Settling paper trade: ID=11
+2025-10-16 01:10:10,435 - INFO - Trade alert: Trade settled: ID=11, Size=$50.00
+2025-10-16 01:10:10,435 - INFO - Paper trade settled: ID=11, Outcome=WIN, Profit=$168.02
+2025-10-16 01:10:10,436 - INFO - Placing paper trade
+2025-10-16 01:10:10,436 - INFO - Trade alert: Trade placed: ID=12, Size=$50.00
+2025-10-16 01:10:10,436 - INFO - Paper trade placed: ID=12, Size=$50.00
+2025-10-16 01:10:10,436 - INFO - Settling paper trade: ID=12
+2025-10-16 01:10:10,436 - INFO - Trade alert: Trade settled: ID=12, Size=$50.00
+2025-10-16 01:10:10,436 - INFO - Paper trade settled: ID=12, Outcome=WIN, Profit=$120.98
+2025-10-16 01:10:10,437 - INFO - Placing paper trade
+2025-10-16 01:10:10,437 - INFO - Trade alert: Trade placed: ID=13, Size=$50.00
+2025-10-16 01:10:10,437 - INFO - Paper trade placed: ID=13, Size=$50.00
+2025-10-16 01:10:10,437 - INFO - Settling paper trade: ID=13
+2025-10-16 01:10:10,437 - INFO - Trade alert: Trade settled: ID=13, Size=$50.00
+2025-10-16 01:10:10,437 - INFO - Paper trade settled: ID=13, Outcome=WIN, Profit=$155.25
+2025-10-16 01:10:10,438 - INFO - Placing paper trade
+2025-10-16 01:10:10,438 - INFO - Trade alert: Trade placed: ID=14, Size=$50.00
+2025-10-16 01:10:10,438 - INFO - Paper trade placed: ID=14, Size=$50.00
+2025-10-16 01:10:10,438 - INFO - Settling paper trade: ID=14
+2025-10-16 01:10:10,438 - INFO - Trade alert: Trade settled: ID=14, Size=$50.00
+2025-10-16 01:10:10,438 - INFO - Paper trade settled: ID=14, Outcome=LOSS, Profit=$-50.00
+2025-10-16 01:10:10,439 - INFO - Placing paper trade
+2025-10-16 01:10:10,439 - INFO - Trade alert: Trade placed: ID=15, Size=$50.00
+2025-10-16 01:10:10,439 - INFO - Paper trade placed: ID=15, Size=$50.00
+2025-10-16 01:10:10,439 - INFO - Settling paper trade: ID=15
+2025-10-16 01:10:10,439 - INFO - Trade alert: Trade settled: ID=15, Size=$50.00
+2025-10-16 01:10:10,439 - INFO - Paper trade settled: ID=15, Outcome=WIN, Profit=$116.27
+2025-10-16 01:10:10,440 - INFO - Placing paper trade
+2025-10-16 01:10:10,440 - INFO - Trade alert: Trade placed: ID=16, Size=$50.00
+2025-10-16 01:10:10,440 - INFO - Paper trade placed: ID=16, Size=$50.00
+2025-10-16 01:10:10,440 - INFO - Settling paper trade: ID=16
+2025-10-16 01:10:10,440 - INFO - Trade alert: Trade settled: ID=16, Size=$50.00
+2025-10-16 01:10:10,440 - INFO - Paper trade settled: ID=16, Outcome=LOSS, Profit=$-50.00
+2025-10-16 01:10:10,441 - INFO - Placing paper trade
+2025-10-16 01:10:10,441 - INFO - Trade alert: Trade placed: ID=17, Size=$50.00
+2025-10-16 01:10:10,441 - INFO - Paper trade placed: ID=17, Size=$50.00
+2025-10-16 01:10:10,441 - INFO - Settling paper trade: ID=17
+2025-10-16 01:10:10,441 - INFO - Trade alert: Trade settled: ID=17, Size=$50.00
+2025-10-16 01:10:10,441 - INFO - Paper trade settled: ID=17, Outcome=WIN, Profit=$164.58
+2025-10-16 01:10:10,442 - INFO - Placing paper trade
+2025-10-16 01:10:10,442 - INFO - Trade alert: Trade placed: ID=18, Size=$50.00
+2025-10-16 01:10:10,442 - INFO - Paper trade placed: ID=18, Size=$50.00
+2025-10-16 01:10:10,442 - INFO - Settling paper trade: ID=18
+2025-10-16 01:10:10,442 - INFO - Trade alert: Trade settled: ID=18, Size=$50.00
+2025-10-16 01:10:10,442 - INFO - Paper trade settled: ID=18, Outcome=WIN, Profit=$47.08
+2025-10-16 01:10:10,443 - INFO - Placing paper trade
+2025-10-16 01:10:10,443 - INFO - Trade alert: Trade placed: ID=19, Size=$50.00
+2025-10-16 01:10:10,443 - INFO - Paper trade placed: ID=19, Size=$50.00
+2025-10-16 01:10:10,443 - INFO - Settling paper trade: ID=19
+2025-10-16 01:10:10,443 - INFO - Trade alert: Trade settled: ID=19, Size=$50.00
+2025-10-16 01:10:10,443 - INFO - Paper trade settled: ID=19, Outcome=WIN, Profit=$104.54
+2025-10-16 01:10:10,444 - INFO - Placing paper trade
+2025-10-16 01:10:10,444 - INFO - Trade alert: Trade placed: ID=20, Size=$50.00
+2025-10-16 01:10:10,444 - INFO - Paper trade placed: ID=20, Size=$50.00
+2025-10-16 01:10:10,444 - INFO - Settling paper trade: ID=20
+2025-10-16 01:10:10,444 - INFO - Trade alert: Trade settled: ID=20, Size=$50.00
+2025-10-16 01:10:10,444 - INFO - Paper trade settled: ID=20, Outcome=WIN, Profit=$108.79
+2025-10-16 01:10:10,444 - INFO - Progress: 20 trades | Win Rate: 90.0% | ROI: +19.65%
+2025-10-16 01:10:10,445 - INFO - Placing paper trade
+2025-10-16 01:10:10,445 - INFO - Trade alert: Trade placed: ID=21, Size=$50.00
+2025-10-16 01:10:10,445 - INFO - Paper trade placed: ID=21, Size=$50.00
+2025-10-16 01:10:10,445 - INFO - Settling paper trade: ID=21
+2025-10-16 01:10:10,445 - INFO - Trade alert: Trade settled: ID=21, Size=$50.00
+2025-10-16 01:10:10,445 - INFO - Paper trade settled: ID=21, Outcome=WIN, Profit=$153.91
+2025-10-16 01:10:10,445 - INFO - Placing paper trade
+2025-10-16 01:10:10,446 - INFO - Trade alert: Trade placed: ID=22, Size=$50.00
+2025-10-16 01:10:10,446 - INFO - Paper trade placed: ID=22, Size=$50.00
+2025-10-16 01:10:10,446 - INFO - Settling paper trade: ID=22
+2025-10-16 01:10:10,446 - INFO - Trade alert: Trade settled: ID=22, Size=$50.00
+2025-10-16 01:10:10,446 - INFO - Paper trade settled: ID=22, Outcome=WIN, Profit=$168.41
+2025-10-16 01:10:10,446 - INFO - Placing paper trade
+2025-10-16 01:10:10,447 - INFO - Trade alert: Trade placed: ID=23, Size=$50.00
+2025-10-16 01:10:10,447 - INFO - Paper trade placed: ID=23, Size=$50.00
+2025-10-16 01:10:10,447 - INFO - Settling paper trade: ID=23
+2025-10-16 01:10:10,447 - INFO - Trade alert: Trade settled: ID=23, Size=$50.00
+2025-10-16 01:10:10,447 - INFO - Paper trade settled: ID=23, Outcome=WIN, Profit=$111.74
+2025-10-16 01:10:10,447 - INFO - Placing paper trade
+2025-10-16 01:10:10,447 - INFO - Trade alert: Trade placed: ID=24, Size=$50.00
+2025-10-16 01:10:10,448 - INFO - Paper trade placed: ID=24, Size=$50.00
+2025-10-16 01:10:10,448 - INFO - Settling paper trade: ID=24
+2025-10-16 01:10:10,448 - INFO - Trade alert: Trade settled: ID=24, Size=$50.00
+2025-10-16 01:10:10,448 - INFO - Paper trade settled: ID=24, Outcome=WIN, Profit=$156.66
+2025-10-16 01:10:10,448 - INFO - Placing paper trade
+2025-10-16 01:10:10,448 - INFO - Trade alert: Trade placed: ID=25, Size=$50.00
+2025-10-16 01:10:10,449 - INFO - Paper trade placed: ID=25, Size=$50.00
+2025-10-16 01:10:10,449 - INFO - Settling paper trade: ID=25
+2025-10-16 01:10:10,449 - INFO - Trade alert: Trade settled: ID=25, Size=$50.00
+2025-10-16 01:10:10,449 - INFO - Paper trade settled: ID=25, Outcome=WIN, Profit=$105.02
+2025-10-16 01:10:10,449 - INFO - Placing paper trade
+2025-10-16 01:10:10,449 - INFO - Trade alert: Trade placed: ID=26, Size=$50.00
+2025-10-16 01:10:10,449 - INFO - Paper trade placed: ID=26, Size=$50.00
+2025-10-16 01:10:10,450 - INFO - Settling paper trade: ID=26
+2025-10-16 01:10:10,450 - INFO - Trade alert: Trade settled: ID=26, Size=$50.00
+2025-10-16 01:10:10,450 - INFO - Paper trade settled: ID=26, Outcome=WIN, Profit=$134.82
+2025-10-16 01:10:10,450 - INFO - Placing paper trade
+2025-10-16 01:10:10,450 - INFO - Trade alert: Trade placed: ID=27, Size=$50.00
+2025-10-16 01:10:10,450 - INFO - Paper trade placed: ID=27, Size=$50.00
+2025-10-16 01:10:10,450 - INFO - Settling paper trade: ID=27
+2025-10-16 01:10:10,451 - INFO - Trade alert: Trade settled: ID=27, Size=$50.00
+2025-10-16 01:10:10,451 - INFO - Paper trade settled: ID=27, Outcome=WIN, Profit=$62.91
+2025-10-16 01:10:10,451 - INFO - Placing paper trade
+2025-10-16 01:10:10,451 - INFO - Trade alert: Trade placed: ID=28, Size=$50.00
+2025-10-16 01:10:10,451 - INFO - Paper trade placed: ID=28, Size=$50.00
+2025-10-16 01:10:10,451 - INFO - Settling paper trade: ID=28
+2025-10-16 01:10:10,451 - INFO - Trade alert: Trade settled: ID=28, Size=$50.00
+2025-10-16 01:10:10,452 - INFO - Paper trade settled: ID=28, Outcome=WIN, Profit=$73.60
+2025-10-16 01:10:10,452 - INFO - Placing paper trade
+2025-10-16 01:10:10,452 - INFO - Trade alert: Trade placed: ID=29, Size=$50.00
+2025-10-16 01:10:10,452 - INFO - Paper trade placed: ID=29, Size=$50.00
+2025-10-16 01:10:10,452 - INFO - Settling paper trade: ID=29
+2025-10-16 01:10:10,452 - INFO - Trade alert: Trade settled: ID=29, Size=$50.00
+2025-10-16 01:10:10,453 - INFO - Paper trade settled: ID=29, Outcome=WIN, Profit=$133.79
+2025-10-16 01:10:10,453 - INFO - Placing paper trade
+2025-10-16 01:10:10,453 - INFO - Trade alert: Trade placed: ID=30, Size=$50.00
+2025-10-16 01:10:10,453 - INFO - Paper trade placed: ID=30, Size=$50.00
+2025-10-16 01:10:10,453 - INFO - Settling paper trade: ID=30
+2025-10-16 01:10:10,453 - INFO - Trade alert: Trade settled: ID=30, Size=$50.00
+2025-10-16 01:10:10,454 - INFO - Paper trade settled: ID=30, Outcome=WIN, Profit=$101.71
+2025-10-16 01:10:10,454 - INFO - Progress: 30 trades | Win Rate: 93.3% | ROI: +31.68%
+2025-10-16 01:10:10,454 - INFO - Placing paper trade
+2025-10-16 01:10:10,454 - INFO - Trade alert: Trade placed: ID=31, Size=$50.00
+2025-10-16 01:10:10,454 - INFO - Paper trade placed: ID=31, Size=$50.00
+2025-10-16 01:10:10,454 - INFO - Settling paper trade: ID=31
+2025-10-16 01:10:10,455 - INFO - Trade alert: Trade settled: ID=31, Size=$50.00
+2025-10-16 01:10:10,455 - INFO - Paper trade settled: ID=31, Outcome=WIN, Profit=$154.24
+2025-10-16 01:10:10,455 - INFO - Placing paper trade
+2025-10-16 01:10:10,455 - INFO - Trade alert: Trade placed: ID=32, Size=$50.00
+2025-10-16 01:10:10,455 - INFO - Paper trade placed: ID=32, Size=$50.00
+2025-10-16 01:10:10,455 - INFO - Settling paper trade: ID=32
+2025-10-16 01:10:10,456 - INFO - Trade alert: Trade settled: ID=32, Size=$50.00
+2025-10-16 01:10:10,456 - INFO - Paper trade settled: ID=32, Outcome=LOSS, Profit=$-50.00
+2025-10-16 01:10:10,456 - INFO - Placing paper trade
+2025-10-16 01:10:10,456 - INFO - Trade alert: Trade placed: ID=33, Size=$50.00
+2025-10-16 01:10:10,456 - INFO - Paper trade placed: ID=33, Size=$50.00
+2025-10-16 01:10:10,456 - INFO - Settling paper trade: ID=33
+2025-10-16 01:10:10,457 - INFO - Trade alert: Trade settled: ID=33, Size=$50.00
+2025-10-16 01:10:10,457 - INFO - Paper trade settled: ID=33, Outcome=WIN, Profit=$47.85
+2025-10-16 01:10:10,457 - INFO - Placing paper trade
+2025-10-16 01:10:10,457 - INFO - Trade alert: Trade placed: ID=34, Size=$50.00
+2025-10-16 01:10:10,457 - INFO - Paper trade placed: ID=34, Size=$50.00
+2025-10-16 01:10:10,457 - INFO - Settling paper trade: ID=34
+2025-10-16 01:10:10,457 - INFO - Trade alert: Trade settled: ID=34, Size=$50.00
+2025-10-16 01:10:10,458 - INFO - Paper trade settled: ID=34, Outcome=WIN, Profit=$85.76
+2025-10-16 01:10:10,458 - INFO - Placing paper trade
+2025-10-16 01:10:10,458 - INFO - Trade alert: Trade placed: ID=35, Size=$50.00
+2025-10-16 01:10:10,458 - INFO - Paper trade placed: ID=35, Size=$50.00
+2025-10-16 01:10:10,458 - INFO - Settling paper trade: ID=35
+2025-10-16 01:10:10,458 - INFO - Trade alert: Trade settled: ID=35, Size=$50.00
+2025-10-16 01:10:10,458 - INFO - Paper trade settled: ID=35, Outcome=WIN, Profit=$157.25
+2025-10-16 01:10:10,459 - INFO - Placing paper trade
+2025-10-16 01:10:10,459 - INFO - Trade alert: Trade placed: ID=36, Size=$50.00
+2025-10-16 01:10:10,459 - INFO - Paper trade placed: ID=36, Size=$50.00
+2025-10-16 01:10:10,459 - INFO - Settling paper trade: ID=36
+2025-10-16 01:10:10,459 - INFO - Trade alert: Trade settled: ID=36, Size=$50.00
+2025-10-16 01:10:10,459 - INFO - Paper trade settled: ID=36, Outcome=WIN, Profit=$140.98
+2025-10-16 01:10:10,460 - INFO - Placing paper trade
+2025-10-16 01:10:10,460 - INFO - Trade alert: Trade placed: ID=37, Size=$50.00
+2025-10-16 01:10:10,460 - INFO - Paper trade placed: ID=37, Size=$50.00
+2025-10-16 01:10:10,460 - INFO - Settling paper trade: ID=37
+2025-10-16 01:10:10,460 - INFO - Trade alert: Trade settled: ID=37, Size=$50.00
+2025-10-16 01:10:10,460 - INFO - Paper trade settled: ID=37, Outcome=WIN, Profit=$168.44
+2025-10-16 01:10:10,461 - INFO - Placing paper trade
+2025-10-16 01:10:10,461 - INFO - Trade alert: Trade placed: ID=38, Size=$50.00
+2025-10-16 01:10:10,461 - INFO - Paper trade placed: ID=38, Size=$50.00
+2025-10-16 01:10:10,461 - INFO - Settling paper trade: ID=38
+2025-10-16 01:10:10,461 - INFO - Trade alert: Trade settled: ID=38, Size=$50.00
+2025-10-16 01:10:10,461 - INFO - Paper trade settled: ID=38, Outcome=WIN, Profit=$157.46
+2025-10-16 01:10:10,461 - INFO - Placing paper trade
+2025-10-16 01:10:10,462 - INFO - Trade alert: Trade placed: ID=39, Size=$50.00
+2025-10-16 01:10:10,462 - INFO - Paper trade placed: ID=39, Size=$50.00
+2025-10-16 01:10:10,462 - INFO - Settling paper trade: ID=39
+2025-10-16 01:10:10,462 - INFO - Trade alert: Trade settled: ID=39, Size=$50.00
+2025-10-16 01:10:10,462 - INFO - Paper trade settled: ID=39, Outcome=WIN, Profit=$158.16
+2025-10-16 01:10:10,462 - INFO - Placing paper trade
+2025-10-16 01:10:10,463 - INFO - Trade alert: Trade placed: ID=40, Size=$50.00
+2025-10-16 01:10:10,463 - INFO - Paper trade placed: ID=40, Size=$50.00
+2025-10-16 01:10:10,463 - INFO - Settling paper trade: ID=40
+2025-10-16 01:10:10,463 - INFO - Trade alert: Trade settled: ID=40, Size=$50.00
+2025-10-16 01:10:10,463 - INFO - Paper trade settled: ID=40, Outcome=WIN, Profit=$148.40
+2025-10-16 01:10:10,463 - INFO - Progress: 40 trades | Win Rate: 92.5% | ROI: +43.36%
+2025-10-16 01:10:10,463 - INFO - Placing paper trade
+2025-10-16 01:10:10,464 - INFO - Trade alert: Trade placed: ID=41, Size=$50.00
+2025-10-16 01:10:10,464 - INFO - Paper trade placed: ID=41, Size=$50.00
+2025-10-16 01:10:10,464 - INFO - Settling paper trade: ID=41
+2025-10-16 01:10:10,464 - INFO - Trade alert: Trade settled: ID=41, Size=$50.00
+2025-10-16 01:10:10,464 - INFO - Paper trade settled: ID=41, Outcome=WIN, Profit=$166.63
+2025-10-16 01:10:10,465 - INFO - Placing paper trade
+2025-10-16 01:10:10,465 - INFO - Trade alert: Trade placed: ID=42, Size=$50.00
+2025-10-16 01:10:10,465 - INFO - Paper trade placed: ID=42, Size=$50.00
+2025-10-16 01:10:10,465 - INFO - Settling paper trade: ID=42
+2025-10-16 01:10:10,465 - INFO - Trade alert: Trade settled: ID=42, Size=$50.00
+2025-10-16 01:10:10,465 - INFO - Paper trade settled: ID=42, Outcome=WIN, Profit=$76.26
+2025-10-16 01:10:10,466 - INFO - Placing paper trade
+2025-10-16 01:10:10,466 - INFO - Trade alert: Trade placed: ID=43, Size=$50.00
+2025-10-16 01:10:10,466 - INFO - Paper trade placed: ID=43, Size=$50.00
+2025-10-16 01:10:10,466 - INFO - Settling paper trade: ID=43
+2025-10-16 01:10:10,466 - INFO - Trade alert: Trade settled: ID=43, Size=$50.00
+2025-10-16 01:10:10,466 - INFO - Paper trade settled: ID=43, Outcome=WIN, Profit=$70.30
+2025-10-16 01:10:10,466 - INFO - Placing paper trade
+2025-10-16 01:10:10,467 - INFO - Trade alert: Trade placed: ID=44, Size=$50.00
+2025-10-16 01:10:10,467 - INFO - Paper trade placed: ID=44, Size=$50.00
+2025-10-16 01:10:10,467 - INFO - Settling paper trade: ID=44
+2025-10-16 01:10:10,467 - INFO - Trade alert: Trade settled: ID=44, Size=$50.00
+2025-10-16 01:10:10,467 - INFO - Paper trade settled: ID=44, Outcome=WIN, Profit=$170.36
+2025-10-16 01:10:10,467 - INFO - Placing paper trade
+2025-10-16 01:10:10,468 - INFO - Trade alert: Trade placed: ID=45, Size=$50.00
+2025-10-16 01:10:10,468 - INFO - Paper trade placed: ID=45, Size=$50.00
+2025-10-16 01:10:10,468 - INFO - Settling paper trade: ID=45
+2025-10-16 01:10:10,468 - INFO - Trade alert: Trade settled: ID=45, Size=$50.00
+2025-10-16 01:10:10,468 - INFO - Paper trade settled: ID=45, Outcome=WIN, Profit=$156.64
+2025-10-16 01:10:10,468 - INFO - Placing paper trade
+2025-10-16 01:10:10,469 - INFO - Trade alert: Trade placed: ID=46, Size=$50.00
+2025-10-16 01:10:10,469 - INFO - Paper trade placed: ID=46, Size=$50.00
+2025-10-16 01:10:10,469 - INFO - Settling paper trade: ID=46
+2025-10-16 01:10:10,469 - INFO - Trade alert: Trade settled: ID=46, Size=$50.00
+2025-10-16 01:10:10,469 - INFO - Paper trade settled: ID=46, Outcome=WIN, Profit=$53.58
+2025-10-16 01:10:10,469 - INFO - Placing paper trade
+2025-10-16 01:10:10,470 - INFO - Trade alert: Trade placed: ID=47, Size=$50.00
+2025-10-16 01:10:10,470 - INFO - Paper trade placed: ID=47, Size=$50.00
+2025-10-16 01:10:10,470 - INFO - Settling paper trade: ID=47
+2025-10-16 01:10:10,470 - INFO - Trade alert: Trade settled: ID=47, Size=$50.00
+2025-10-16 01:10:10,470 - INFO - Paper trade settled: ID=47, Outcome=WIN, Profit=$115.76
+2025-10-16 01:10:10,470 - INFO - Placing paper trade
+2025-10-16 01:10:10,471 - INFO - Trade alert: Trade placed: ID=48, Size=$50.00
+2025-10-16 01:10:10,471 - INFO - Paper trade placed: ID=48, Size=$50.00
+2025-10-16 01:10:10,471 - INFO - Settling paper trade: ID=48
+2025-10-16 01:10:10,471 - INFO - Trade alert: Trade settled: ID=48, Size=$50.00
+2025-10-16 01:10:10,471 - INFO - Paper trade settled: ID=48, Outcome=WIN, Profit=$120.73
+2025-10-16 01:10:10,471 - INFO - Placing paper trade
+2025-10-16 01:10:10,472 - INFO - Trade alert: Trade placed: ID=49, Size=$50.00
+2025-10-16 01:10:10,472 - INFO - Paper trade placed: ID=49, Size=$50.00
+2025-10-16 01:10:10,472 - INFO - Settling paper trade: ID=49
+2025-10-16 01:10:10,472 - INFO - Trade alert: Trade settled: ID=49, Size=$50.00
+2025-10-16 01:10:10,472 - INFO - Paper trade settled: ID=49, Outcome=WIN, Profit=$146.30
+2025-10-16 01:10:10,472 - INFO - Placing paper trade
+2025-10-16 01:10:10,473 - INFO - Trade alert: Trade placed: ID=50, Size=$50.00
+2025-10-16 01:10:10,473 - INFO - Paper trade placed: ID=50, Size=$50.00
+2025-10-16 01:10:10,473 - INFO - Settling paper trade: ID=50
+2025-10-16 01:10:10,473 - INFO - Trade alert: Trade settled: ID=50, Size=$50.00
+2025-10-16 01:10:10,473 - INFO - Paper trade settled: ID=50, Outcome=WIN, Profit=$64.53
+2025-10-16 01:10:10,473 - INFO - Progress: 50 trades | Win Rate: 94.0% | ROI: +54.78%
+2025-10-16 01:10:10,473 - INFO - Stopping live testing session
+2025-10-16 01:10:10,474 - INFO - Testing session stopped: paper_trading_stage1_20251016_011010
+2025-10-16 01:10:10,477 - INFO - ✅ Results saved to pipeline_output/phase4_output/paper_trading_stage1_20251016_011010_results.json
+2025-10-16 01:10:10,478 - INFO - Paper trading deployment finished successfully
+================================================================================
+STAGE 1: PAPER TRADING DEPLOYMENT
+================================================================================
+
+================================================================================
+INITIALIZING PAPER TRADING SESSION
+================================================================================
+
+================================================================================
+PREPARING TEST DATA
+================================================================================
+
+================================================================================
+EXECUTING PAPER TRADES
+================================================================================
+
+================================================================================
+PAPER TRADING RESULTS
+================================================================================
+
+💰 Financial Performance:
+  • Initial Capital: $10,000.00
+  • Final Capital: $15,477.55
+  • Total Profit: $+5,477.55
+  • ROI: +54.78%
+
+📊 Trading Statistics:
+  • Total Trades: 50
+  • Winning Trades: 47
+  • Losing Trades: 3
+  • Win Rate: 94.00%
+
+🎯 Performance Assessment:
+  ✅ EXCELLENT - ROI exceeds 10% target
+  ✅ EXCELLENT - Win rate exceeds 55%
+  ✅ SUFFICIENT - Sample size is adequate
+
+================================================================================
+SAVING RESULTS
+================================================================================
+
+================================================================================
+RECOMMENDATIONS
+================================================================================
+
+✅ STAGE 1 COMPLETE - READY FOR STAGE 2
+
+Your paper trading results are excellent:
+  • Profitable strategy (ROI > 10%)
+  • Acceptable win rate (>50%)
+  • Sufficient sample size (50+ trades)
+
+Next Steps:
+  1. Review detailed results
+  2. Analyze trade patterns
+  3. Proceed to Stage 2: Small-Scale Live Deployment
+  
+Command to proceed:
+  python3 deploy_stage2.py
+
+
+================================================================================
+PAPER TRADING DEPLOYMENT COMPLETE
+================================================================================

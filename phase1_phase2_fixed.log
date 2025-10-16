@@ -1,0 +1,165 @@
+2025-10-15 23:39:38,723 - INFO - NumExpr defaulting to 8 threads.
+2025-10-15 23:39:41,400 - INFO - Output directory: ./pipeline_output/phase1_output
+2025-10-15 23:39:41,401 - INFO - Running Phase 1 pipeline for Championship (E1)...
+2025-10-15 23:39:41,401 - INFO - Starting Phase 1 pipeline for E1, seasons: ['2324', '2223']
+2025-10-15 23:39:41,401 - INFO - Step 1: Data Collection
+2025-10-15 23:39:41,401 - INFO - Collecting data for E1, seasons: ['2324', '2223']
+2025-10-15 23:39:41,401 - INFO - Collecting historical data for E1, seasons: ['2324', '2223']
+2025-10-15 23:39:44,890 - INFO - Collected 552 matches for E1 2324
+2025-10-15 23:39:48,005 - INFO - Collected 552 matches for E1 2223
+2025-10-15 23:39:48,008 - INFO - Validating data quality for E1
+2025-10-15 23:39:48,037 - INFO - Removed 0 duplicate rows
+2025-10-15 23:39:48,053 - WARNING - Found 634 invalid dates
+2025-10-15 23:39:48,063 - INFO - Found 30 unique teams
+2025-10-15 23:39:48,081 - INFO - Data validation complete. Final dataset: 470 matches
+2025-10-15 23:39:48,081 - INFO - Total historical data collected: 470 matches
+2025-10-15 23:39:48,081 - INFO - Step 2: Data Preprocessing
+2025-10-15 23:39:48,081 - INFO - Preprocessing 470 rows of data
+2025-10-15 23:39:48,081 - INFO - Starting preprocessing pipeline
+2025-10-15 23:39:48,081 - INFO - Validating input data
+2025-10-15 23:39:48,095 - INFO - Found 30 unique teams
+2025-10-15 23:39:48,105 - INFO - Result distribution: {'H': 197, 'A': 152, 'D': 121}
+2025-10-15 23:39:48,105 - INFO - Data validation complete. Valid rows: 470
+2025-10-15 23:39:48,105 - INFO - Handling missing data
+2025-10-15 23:39:48,197 - INFO - Missing data handling complete. Remaining missing values: 0
+2025-10-15 23:39:48,197 - INFO - Detecting and treating outliers
+2025-10-15 23:39:48,203 - INFO - Found 14 outliers in HTHG
+2025-10-15 23:39:48,211 - INFO - Found 2 outliers in HTAG
+2025-10-15 23:39:48,218 - INFO - Found 8 outliers in HS
+2025-10-15 23:39:48,225 - INFO - Found 15 outliers in AS
+2025-10-15 23:39:48,232 - INFO - Found 7 outliers in HST
+2025-10-15 23:39:48,239 - INFO - Found 5 outliers in AST
+2025-10-15 23:39:48,246 - INFO - Found 4 outliers in HF
+2025-10-15 23:39:48,253 - INFO - Found 5 outliers in AF
+2025-10-15 23:39:48,259 - INFO - Found 3 outliers in HC
+2025-10-15 23:39:48,268 - INFO - Found 14 outliers in AC
+2025-10-15 23:39:48,276 - INFO - Found 33 outliers in HY
+2025-10-15 23:39:48,283 - INFO - Found 1 outliers in AY
+2025-10-15 23:39:48,289 - INFO - Found 18 outliers in HR
+2025-10-15 23:39:48,295 - INFO - Found 25 outliers in AR
+2025-10-15 23:39:48,303 - INFO - Found 19 outliers in B365H
+2025-10-15 23:39:48,311 - INFO - Found 30 outliers in B365D
+2025-10-15 23:39:48,318 - INFO - Found 32 outliers in B365A
+2025-10-15 23:39:48,325 - INFO - Found 19 outliers in BWH
+2025-10-15 23:39:48,333 - INFO - Found 43 outliers in BWD
+2025-10-15 23:39:48,339 - INFO - Found 34 outliers in BWA
+2025-10-15 23:39:48,346 - INFO - Found 17 outliers in IWH
+2025-10-15 23:39:48,352 - INFO - Found 48 outliers in IWD
+2025-10-15 23:39:48,358 - INFO - Found 41 outliers in IWA
+2025-10-15 23:39:48,366 - INFO - Found 18 outliers in PSH
+2025-10-15 23:39:48,372 - INFO - Found 36 outliers in PSD
+2025-10-15 23:39:48,378 - INFO - Found 33 outliers in PSA
+2025-10-15 23:39:48,385 - INFO - Found 19 outliers in WHH
+2025-10-15 23:39:48,391 - INFO - Found 50 outliers in WHD
+2025-10-15 23:39:48,398 - INFO - Found 29 outliers in WHA
+2025-10-15 23:39:48,405 - INFO - Found 20 outliers in VCH
+2025-10-15 23:39:48,411 - INFO - Found 52 outliers in VCD
+2025-10-15 23:39:48,418 - INFO - Found 29 outliers in VCA
+2025-10-15 23:39:48,425 - INFO - Found 19 outliers in MaxH
+2025-10-15 23:39:48,430 - INFO - Found 38 outliers in MaxD
+2025-10-15 23:39:48,438 - INFO - Found 34 outliers in MaxA
+2025-10-15 23:39:48,445 - INFO - Found 19 outliers in AvgH
+2025-10-15 23:39:48,451 - INFO - Found 40 outliers in AvgD
+2025-10-15 23:39:48,457 - INFO - Found 34 outliers in AvgA
+2025-10-15 23:39:48,464 - INFO - Found 4 outliers in B365>2.5
+2025-10-15 23:39:48,471 - INFO - Found 12 outliers in B365<2.5
+2025-10-15 23:39:48,481 - INFO - Found 18 outliers in P<2.5
+2025-10-15 23:39:48,490 - INFO - Found 19 outliers in Max<2.5
+2025-10-15 23:39:48,500 - INFO - Found 19 outliers in Avg<2.5
+2025-10-15 23:39:48,505 - INFO - Found 24 outliers in AHh
+2025-10-15 23:39:48,522 - INFO - Found 1 outliers in MaxAHH
+2025-10-15 23:39:48,535 - INFO - Found 21 outliers in B365CH
+2025-10-15 23:39:48,542 - INFO - Found 26 outliers in B365CD
+2025-10-15 23:39:48,548 - INFO - Found 28 outliers in B365CA
+2025-10-15 23:39:48,554 - INFO - Found 21 outliers in BWCH
+2025-10-15 23:39:48,560 - INFO - Found 38 outliers in BWCD
+2025-10-15 23:39:48,568 - INFO - Found 34 outliers in BWCA
+2025-10-15 23:39:48,575 - INFO - Found 13 outliers in IWCH
+2025-10-15 23:39:48,581 - INFO - Found 49 outliers in IWCD
+2025-10-15 23:39:48,587 - INFO - Found 32 outliers in IWCA
+2025-10-15 23:39:48,594 - INFO - Found 19 outliers in PSCH
+2025-10-15 23:39:48,601 - INFO - Found 39 outliers in PSCD
+2025-10-15 23:39:48,606 - INFO - Found 29 outliers in PSCA
+2025-10-15 23:39:48,612 - INFO - Found 18 outliers in WHCH
+2025-10-15 23:39:48,620 - INFO - Found 39 outliers in WHCD
+2025-10-15 23:39:48,626 - INFO - Found 35 outliers in WHCA
+2025-10-15 23:39:48,633 - INFO - Found 17 outliers in VCCH
+2025-10-15 23:39:48,639 - INFO - Found 40 outliers in VCCD
+2025-10-15 23:39:48,646 - INFO - Found 31 outliers in VCCA
+2025-10-15 23:39:48,652 - INFO - Found 19 outliers in MaxCH
+2025-10-15 23:39:48,659 - INFO - Found 41 outliers in MaxCD
+2025-10-15 23:39:48,665 - INFO - Found 34 outliers in MaxCA
+2025-10-15 23:39:48,672 - INFO - Found 17 outliers in AvgCH
+2025-10-15 23:39:48,679 - INFO - Found 38 outliers in AvgCD
+2025-10-15 23:39:48,687 - INFO - Found 34 outliers in AvgCA
+2025-10-15 23:39:48,695 - INFO - Found 1 outliers in B365C>2.5
+2025-10-15 23:39:48,702 - INFO - Found 21 outliers in B365C<2.5
+2025-10-15 23:39:48,709 - INFO - Found 1 outliers in PC>2.5
+2025-10-15 23:39:48,715 - INFO - Found 22 outliers in PC<2.5
+2025-10-15 23:39:48,725 - INFO - Found 21 outliers in MaxC<2.5
+2025-10-15 23:39:48,734 - INFO - Found 1 outliers in AvgC>2.5
+2025-10-15 23:39:48,742 - INFO - Found 25 outliers in AvgC<2.5
+2025-10-15 23:39:48,752 - INFO - Found 24 outliers in AHCh
+2025-10-15 23:39:48,777 - INFO - Found 1 outliers in MaxCAHH
+2025-10-15 23:39:48,792 - INFO - Engineering basic features
+2025-10-15 23:39:49,115 - INFO - Encoding categorical variables
+2025-10-15 23:39:49,123 - INFO - Scaling numerical features
+2025-10-15 23:39:49,167 - INFO - Augmenting data
+2025-10-15 23:39:49,541 - INFO - Data augmentation complete. Added 100 synthetic samples
+2025-10-15 23:39:49,543 - INFO - Performing final validation
+2025-10-15 23:39:49,556 - INFO - Data types: {dtype('float64'): 118, dtype('O'): 10, dtype('int64'): 3, dtype('<M8[ns]'): 1}
+2025-10-15 23:39:49,556 - INFO - Final data shape: (570, 132)
+2025-10-15 23:39:49,556 - INFO - Preprocessing complete. Final dataset: 570 rows, 132 columns
+2025-10-15 23:39:49,556 - INFO - Step 3: Data Validation
+2025-10-15 23:39:49,556 - INFO - Validating 570 rows of data
+2025-10-15 23:39:49,556 - INFO - Starting comprehensive validation for dataset with 570 rows
+2025-10-15 23:39:50,022 - INFO - Step 4: Feature Engineering
+2025-10-15 23:39:50,022 - INFO - Engineering features for 570 rows of data
+2025-10-15 23:39:50,022 - INFO - Starting feature engineering for 570 matches
+2025-10-15 23:39:50,026 - INFO - Creating basic features
+2025-10-15 23:39:50,034 - INFO - Creating form features
+2025-10-15 23:40:05,877 - INFO - Creating consistency features
+2025-10-15 23:40:11,861 - INFO - Creating market features
+2025-10-15 23:40:11,909 - INFO - Creating temporal features
+2025-10-15 23:40:16,203 - INFO - Creating seasonal features
+2025-10-15 23:40:20,328 - INFO - Creating fixture congestion features
+2025-10-15 23:40:35,260 - INFO - Creating temporal context features
+2025-10-15 23:40:35,278 - INFO - Creating momentum features
+2025-10-15 23:40:45,208 - INFO - Creating league position features
+2025-10-15 23:40:45,555 - INFO - Creating league-specific features
+2025-10-15 23:40:45,555 - INFO - Creating cross-league features
+2025-10-15 23:40:45,557 - INFO - Creating advanced statistical features
+2025-10-15 23:40:45,567 - INFO - Creating team embedding features
+2025-10-15 23:40:46,097 - INFO - Finalizing features
+2025-10-15 23:40:46,561 - INFO - Feature engineering complete. Final features: 254
+2025-10-15 23:40:46,884 - INFO - Step 5: Final Integration
+2025-10-15 23:40:46,884 - INFO - Integrating Phase 1 results
+2025-10-15 23:40:46,884 - INFO - Step 6: Saving Results
+2025-10-15 23:40:46,884 - INFO - Saving results for E1
+2025-10-15 23:40:47,391 - INFO - Features data saved to ./pipeline_output/phase1_output/E1_features.csv
+2025-10-15 23:40:47,393 - INFO - Validation report saved to ./pipeline_output/phase1_output/E1_validation_report.txt
+2025-10-15 23:40:47,393 - INFO - Validation report saved to ./pipeline_output/phase1_output/E1_validation_report.txt
+2025-10-15 23:40:47,394 - INFO - Pipeline summary saved to ./pipeline_output/phase1_output/E1_phase1_summary.json
+2025-10-15 23:40:47,398 - INFO - Preprocessors saved to ./pipeline_output/phase1_output/E1_preprocessor.pkl
+2025-10-15 23:40:47,401 - INFO - Feature engineer state saved to ./pipeline_output/phase1_output/E1_feature_engineer.pkl
+2025-10-15 23:40:47,401 - INFO - Phase 1 results saved successfully
+2025-10-15 23:40:47,401 - INFO - Phase 1 pipeline completed successfully
+2025-10-15 23:40:47,401 - INFO - ✅ Phase 1 completed successfully
+2025-10-15 23:40:47,401 - INFO -    Data collected: 0 matches
+2025-10-15 23:40:47,693 - WARNING - Feature data not found at pipeline_output/phase1_output/processed_features.parquet
+2025-10-15 23:40:47,694 - INFO - Using alternative data source...
+2025-10-15 23:40:47,694 - ERROR - No processed features found. Phase 1 may not have completed properly.
+================================================================================
+RUNNING PHASE 1 & PHASE 2 PIPELINE
+================================================================================
+
+================================================================================
+PHASE 1: DATA COLLECTION & PREPROCESSING
+================================================================================
+
+✅ PHASE 1 COMPLETE
+   Output directory: pipeline_output/phase1_output
+
+================================================================================
+PHASE 2: MODEL TRAINING & VALIDATION
+================================================================================

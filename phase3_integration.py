@@ -229,6 +229,8 @@ class Phase3Integration:
             
         except Exception as e:
             self.logger.error(f"Error in backtesting: {e}")
+            import traceback
+            self.logger.error(f"Traceback: {traceback.format_exc()}")
             return {'success': False, 'error': str(e)}
     
     def _implement_betting_strategy(self, data: pd.DataFrame) -> dict:
@@ -291,6 +293,8 @@ class Phase3Integration:
             
         except Exception as e:
             self.logger.error(f"Error in betting strategy: {e}")
+            import traceback
+            self.logger.error(f"Traceback: {traceback.format_exc()}")
             return {'success': False, 'error': str(e)}
     
     def _calculate_performance_metrics(self, data: pd.DataFrame, 
@@ -331,6 +335,8 @@ class Phase3Integration:
             
         except Exception as e:
             self.logger.error(f"Error in performance metrics: {e}")
+            import traceback
+            self.logger.error(f"Traceback: {traceback.format_exc()}")
             return {'success': False, 'error': str(e)}
     
     def _integrate_risk_management(self, data: pd.DataFrame, 

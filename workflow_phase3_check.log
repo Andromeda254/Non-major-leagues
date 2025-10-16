@@ -1,0 +1,1205 @@
+INFO:master_pipeline:Master Pipeline initialized
+INFO:master_pipeline:Configuration loaded from config.yaml
+INFO:api_data_manager:Loaded configuration from config.yaml
+INFO:api_data_manager:Loaded 32 environment variables
+INFO:api_data_manager:Initialized data source: football_data
+INFO:api_data_manager:Initialized data source: odds_api
+INFO:api_data_manager:Initialized data source: api_football
+INFO:api_data_manager:Initialized data source: rapidapi_football
+INFO:api_data_manager:Initialized data source: sportsdata_io
+INFO:api_data_manager:Initialized data source: betfair_exchange
+INFO:api_data_manager:Initialized data source: openweathermap
+INFO:api_data_manager:Initialized data source: newsapi
+INFO:api_data_manager:Initialized data source: twitter_api
+INFO:api_data_manager:Initialized data source: pinnacle
+WARNING:api_data_manager:Skipping football_api_com - no valid API key found
+INFO:api_data_manager:Initialized data source: livescore
+WARNING:api_data_manager:Skipping football_api_net - no valid API key found
+WARNING:api_data_manager:Skipping fifa_data - no valid API key found
+WARNING:api_data_manager:Skipping smarkets - no valid API key found
+INFO:api_data_manager:Initialized APIDataManager with 11 data sources
+INFO:crawler_to_pipeline_bridge:Loaded configuration from config.yaml
+INFO:crawler_to_pipeline_bridge:Initialized Crawler-Pipeline Bridge
+INFO:__main__:✅ Complete Workflow Orchestrator initialized
+INFO:__main__:================================================================================
+INFO:__main__:COMPLETE WORKFLOW - ALL MARKETS PREDICTION
+INFO:__main__:================================================================================
+INFO:__main__:
+📥 STEP 1: Loading Crawler Data
+INFO:crawler_to_pipeline_bridge:Loaded 31 matches from crawler
+INFO:__main__:✅ Loaded 31 upcoming matches
+INFO:__main__:
+🌐 STEP 2: Fetching API Data
+INFO:__main__:  Fetching team statistics...
+WARNING:__main__:  ⚠️ Team stats fetch failed: 'HomeTeam'
+INFO:__main__:  Fetching odds (all markets)...
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+INFO:__main__:  ⚠️ Generating dummy odds for testing...
+WARNING:__main__:  ⚠️ Odds fetch failed: 'HomeTeam'
+INFO:__main__:  ✅ Using existing historical data: pipeline_output/phase1_output/E1_features.csv
+INFO:__main__:✅ API data fetched successfully
+INFO:__main__:
+📊 STEP 3: Phase 1 - Feature Engineering
+INFO:master_pipeline:================================================================================
+INFO:master_pipeline:STARTING PHASE 1: DATA COLLECTION & PREPROCESSING
+INFO:master_pipeline:================================================================================
+INFO:phase1_integration:Output directory: ./data
+INFO:phase1_integration:Starting Phase 1 pipeline for E1, seasons: ['2324', '2223', '2122']
+INFO:phase1_integration:Step 1: Data Collection
+INFO:phase1_integration:Collecting data for E1, seasons: ['2324', '2223', '2122']
+INFO:non_major_league_data_collector:Collecting historical data for E1, seasons: ['2324', '2223', '2122']
+INFO:non_major_league_data_collector:Collected 552 matches for E1 2324
+INFO:non_major_league_data_collector:Collected 552 matches for E1 2223
+INFO:non_major_league_data_collector:Collected 552 matches for E1 2122
+INFO:non_major_league_data_collector:Validating data quality for E1
+INFO:non_major_league_data_collector:Removed 0 duplicate rows
+WARNING:non_major_league_data_collector:Found 989 invalid dates
+INFO:non_major_league_data_collector:Found 36 unique teams
+INFO:non_major_league_data_collector:Data validation complete. Final dataset: 667 matches
+INFO:non_major_league_data_collector:Total historical data collected: 667 matches
+ERROR:non_major_league_data_collector:Error collecting live odds: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/soccer_efl_champ/odds/?apiKey=YOUR_ODDS_API_KEY&regions=uk%2Ceu&markets=h2h&oddsFormat=decimal
+INFO:phase1_integration:Step 2: Data Preprocessing
+INFO:phase1_integration:Preprocessing 667 rows of data
+INFO:non_major_league_preprocessor:Starting preprocessing pipeline
+INFO:non_major_league_preprocessor:Validating input data
+INFO:non_major_league_preprocessor:Found 36 unique teams
+INFO:non_major_league_preprocessor:Result distribution: {'H': 284, 'A': 208, 'D': 175}
+INFO:non_major_league_preprocessor:Data validation complete. Valid rows: 667
+INFO:non_major_league_preprocessor:Handling missing data
+INFO:non_major_league_preprocessor:Missing data handling complete. Remaining missing values: 0
+INFO:non_major_league_preprocessor:Detecting and treating outliers
+INFO:non_major_league_preprocessor:Found 16 outliers in HTHG
+INFO:non_major_league_preprocessor:Found 3 outliers in HTAG
+INFO:non_major_league_preprocessor:Found 11 outliers in HS
+INFO:non_major_league_preprocessor:Found 7 outliers in AS
+INFO:non_major_league_preprocessor:Found 11 outliers in HST
+INFO:non_major_league_preprocessor:Found 8 outliers in AST
+INFO:non_major_league_preprocessor:Found 5 outliers in HF
+INFO:non_major_league_preprocessor:Found 9 outliers in AF
+INFO:non_major_league_preprocessor:Found 20 outliers in HC
+INFO:non_major_league_preprocessor:Found 17 outliers in AC
+INFO:non_major_league_preprocessor:Found 52 outliers in HY
+INFO:non_major_league_preprocessor:Found 1 outliers in AY
+INFO:non_major_league_preprocessor:Found 30 outliers in HR
+INFO:non_major_league_preprocessor:Found 34 outliers in AR
+INFO:non_major_league_preprocessor:Found 37 outliers in B365H
+INFO:non_major_league_preprocessor:Found 64 outliers in B365D
+INFO:non_major_league_preprocessor:Found 41 outliers in B365A
+INFO:non_major_league_preprocessor:Found 32 outliers in BWH
+INFO:non_major_league_preprocessor:Found 56 outliers in BWD
+INFO:non_major_league_preprocessor:Found 47 outliers in BWA
+INFO:non_major_league_preprocessor:Found 29 outliers in IWH
+INFO:non_major_league_preprocessor:Found 64 outliers in IWD
+INFO:non_major_league_preprocessor:Found 43 outliers in IWA
+INFO:non_major_league_preprocessor:Found 30 outliers in PSH
+INFO:non_major_league_preprocessor:Found 45 outliers in PSD
+INFO:non_major_league_preprocessor:Found 44 outliers in PSA
+INFO:non_major_league_preprocessor:Found 31 outliers in WHH
+INFO:non_major_league_preprocessor:Found 65 outliers in WHD
+INFO:non_major_league_preprocessor:Found 36 outliers in WHA
+INFO:non_major_league_preprocessor:Found 32 outliers in VCH
+INFO:non_major_league_preprocessor:Found 65 outliers in VCD
+INFO:non_major_league_preprocessor:Found 47 outliers in VCA
+INFO:non_major_league_preprocessor:Found 31 outliers in MaxH
+INFO:non_major_league_preprocessor:Found 50 outliers in MaxD
+INFO:non_major_league_preprocessor:Found 42 outliers in MaxA
+INFO:non_major_league_preprocessor:Found 31 outliers in AvgH
+INFO:non_major_league_preprocessor:Found 52 outliers in AvgD
+INFO:non_major_league_preprocessor:Found 41 outliers in AvgA
+INFO:non_major_league_preprocessor:Found 2 outliers in B365>2.5
+INFO:non_major_league_preprocessor:Found 12 outliers in B365<2.5
+INFO:non_major_league_preprocessor:Found 2 outliers in P>2.5
+INFO:non_major_league_preprocessor:Found 25 outliers in P<2.5
+INFO:non_major_league_preprocessor:Found 2 outliers in Max>2.5
+INFO:non_major_league_preprocessor:Found 28 outliers in Max<2.5
+INFO:non_major_league_preprocessor:Found 2 outliers in Avg>2.5
+INFO:non_major_league_preprocessor:Found 31 outliers in Avg<2.5
+INFO:non_major_league_preprocessor:Found 30 outliers in AHh
+INFO:non_major_league_preprocessor:Found 1 outliers in MaxAHH
+INFO:non_major_league_preprocessor:Found 31 outliers in B365CH
+INFO:non_major_league_preprocessor:Found 34 outliers in B365CD
+INFO:non_major_league_preprocessor:Found 34 outliers in B365CA
+INFO:non_major_league_preprocessor:Found 34 outliers in BWCH
+INFO:non_major_league_preprocessor:Found 46 outliers in BWCD
+INFO:non_major_league_preprocessor:Found 39 outliers in BWCA
+INFO:non_major_league_preprocessor:Found 27 outliers in IWCH
+INFO:non_major_league_preprocessor:Found 65 outliers in IWCD
+INFO:non_major_league_preprocessor:Found 52 outliers in IWCA
+INFO:non_major_league_preprocessor:Found 30 outliers in PSCH
+INFO:non_major_league_preprocessor:Found 48 outliers in PSCD
+INFO:non_major_league_preprocessor:Found 40 outliers in PSCA
+INFO:non_major_league_preprocessor:Found 29 outliers in WHCH
+INFO:non_major_league_preprocessor:Found 53 outliers in WHCD
+INFO:non_major_league_preprocessor:Found 45 outliers in WHCA
+INFO:non_major_league_preprocessor:Found 28 outliers in VCCH
+INFO:non_major_league_preprocessor:Found 52 outliers in VCCD
+INFO:non_major_league_preprocessor:Found 52 outliers in VCCA
+INFO:non_major_league_preprocessor:Found 30 outliers in MaxCH
+INFO:non_major_league_preprocessor:Found 56 outliers in MaxCD
+INFO:non_major_league_preprocessor:Found 46 outliers in MaxCA
+INFO:non_major_league_preprocessor:Found 29 outliers in AvgCH
+INFO:non_major_league_preprocessor:Found 52 outliers in AvgCD
+INFO:non_major_league_preprocessor:Found 43 outliers in AvgCA
+INFO:non_major_league_preprocessor:Found 5 outliers in B365C>2.5
+INFO:non_major_league_preprocessor:Found 21 outliers in B365C<2.5
+INFO:non_major_league_preprocessor:Found 1 outliers in PC>2.5
+INFO:non_major_league_preprocessor:Found 29 outliers in PC<2.5
+INFO:non_major_league_preprocessor:Found 1 outliers in MaxC>2.5
+INFO:non_major_league_preprocessor:Found 27 outliers in MaxC<2.5
+INFO:non_major_league_preprocessor:Found 1 outliers in AvgC>2.5
+INFO:non_major_league_preprocessor:Found 34 outliers in AvgC<2.5
+INFO:non_major_league_preprocessor:Found 33 outliers in AHCh
+INFO:non_major_league_preprocessor:Found 1 outliers in MaxCAHH
+INFO:non_major_league_preprocessor:Engineering basic features
+INFO:non_major_league_preprocessor:Encoding categorical variables
+INFO:non_major_league_preprocessor:Scaling numerical features
+INFO:non_major_league_preprocessor:Augmenting data
+INFO:non_major_league_preprocessor:Data augmentation complete. Added 100 synthetic samples
+INFO:non_major_league_preprocessor:Performing final validation
+INFO:non_major_league_preprocessor:Data types: {dtype('float64'): 118, dtype('O'): 10, dtype('int64'): 3, dtype('<M8[ns]'): 1}
+INFO:non_major_league_preprocessor:Final data shape: (767, 132)
+INFO:non_major_league_preprocessor:Preprocessing complete. Final dataset: 767 rows, 132 columns
+INFO:phase1_integration:Step 3: Data Validation
+INFO:phase1_integration:Validating 767 rows of data
+INFO:non_major_league_validator:Starting comprehensive validation for dataset with 767 rows
+INFO:phase1_integration:Step 4: Feature Engineering
+INFO:phase1_integration:Engineering features for 767 rows of data
+INFO:non_major_league_feature_engineer:Starting feature engineering for 767 matches
+INFO:non_major_league_feature_engineer:Creating basic features
+INFO:non_major_league_feature_engineer:Creating form features
+INFO:non_major_league_feature_engineer:Creating consistency features
+INFO:non_major_league_feature_engineer:Creating market features
+INFO:non_major_league_feature_engineer:Creating temporal features
+INFO:non_major_league_feature_engineer:Creating seasonal features
+INFO:non_major_league_feature_engineer:Creating fixture congestion features
+INFO:non_major_league_feature_engineer:Creating temporal context features
+INFO:non_major_league_feature_engineer:Creating momentum features
+INFO:non_major_league_feature_engineer:Creating league position features
+INFO:non_major_league_feature_engineer:Creating league-specific features
+INFO:non_major_league_feature_engineer:Creating cross-league features
+INFO:non_major_league_feature_engineer:Creating advanced statistical features
+INFO:non_major_league_feature_engineer:Creating team embedding features
+INFO:non_major_league_feature_engineer:Finalizing features
+INFO:non_major_league_feature_engineer:Feature engineering complete. Final features: 254
+INFO:phase1_integration:Step 5: Final Integration
+INFO:phase1_integration:Integrating Phase 1 results
+INFO:phase1_integration:Step 6: Saving Results
+INFO:phase1_integration:Saving results for E1
+INFO:phase1_integration:Features data saved to ./data/E1_features.csv
+INFO:non_major_league_validator:Validation report saved to ./data/E1_validation_report.txt
+INFO:phase1_integration:Validation report saved to ./data/E1_validation_report.txt
+INFO:phase1_integration:Pipeline summary saved to ./data/E1_phase1_summary.json
+INFO:non_major_league_preprocessor:Preprocessors saved to ./data/E1_preprocessor.pkl
+INFO:non_major_league_feature_engineer:Feature engineer state saved to ./data/E1_feature_engineer.pkl
+INFO:phase1_integration:Phase 1 results saved successfully
+INFO:phase1_integration:Phase 1 pipeline completed successfully
+INFO:master_pipeline:Phase 1 completed successfully in 140.93 seconds
+INFO:__main__:✅ Phase 1 completed
+INFO:__main__:
+🤖 STEP 4: Phase 2 - Model Training (All Markets)
+INFO:master_pipeline:================================================================================
+INFO:master_pipeline:STARTING PHASE 2: MODEL DEVELOPMENT & VALIDATION
+INFO:master_pipeline:================================================================================
+INFO:phase2_integration:Output directory: ./models
+INFO:phase2_integration:Starting Phase 2 pipeline for E1
+INFO:phase2_integration:Step 1: Loading and preparing data
+INFO:phase2_integration:Loading data from ./data/E1_features.csv
+INFO:phase2_integration:Loaded 767 rows with 254 columns
+INFO:phase2_integration:Selected 241 numerical features from 254 total columns
+INFO:phase2_integration:Excluded columns: ['target', 'FTR', 'HTR', 'Date', 'Time', 'HomeTeam', 'AwayTeam', 'Referee', 'Div', 'league', 'season', 'data_source', 'season_phase']
+INFO:phase2_integration:Sanitized 241 feature names for XGBoost compatibility
+INFO:phase2_integration:Final dataset: 767 samples with 241 features
+INFO:phase2_integration:Target distribution: {2: 325, 0: 238, 1: 204}
+INFO:phase2_integration:Step 2: Model Architecture Design
+INFO:phase2_integration:Designing model architecture
+INFO:non_major_league_model_architecture:Creating base models for non-major leagues
+INFO:non_major_league_model_architecture:Created 4 base models
+INFO:non_major_league_model_architecture:Training base models
+INFO:non_major_league_model_architecture:Calculated class weights: {np.int64(0): np.float64(1.0705004470672759), np.int64(1): np.float64(1.1577871724547892), np.int64(2): np.float64(0.8370583370546805)}
+INFO:non_major_league_model_architecture:Training xgboost...
+INFO:non_major_league_model_architecture:xgboost - Train Acc: 1.0000, Val Acc: 1.0000
+INFO:non_major_league_model_architecture:Training lightgbm...
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[200]	valid_0's multi_logloss: 0.00128423
+INFO:non_major_league_model_architecture:lightgbm - Train Acc: 1.0000, Val Acc: 1.0000
+INFO:non_major_league_model_architecture:Training random_forest...
+INFO:non_major_league_model_architecture:random_forest - Train Acc: 1.0000, Val Acc: 1.0000
+INFO:non_major_league_model_architecture:Training logistic_regression...
+INFO:non_major_league_model_architecture:logistic_regression - Train Acc: 1.0000, Val Acc: 1.0000
+INFO:non_major_league_model_architecture:Creating ensemble model
+INFO:non_major_league_model_architecture:Training ensemble model
+INFO:non_major_league_model_architecture:Ensemble training complete
+INFO:non_major_league_model_architecture:Calibrating model probabilities
+INFO:non_major_league_model_architecture:Calibrated xgboost
+INFO:non_major_league_model_architecture:Calibrated lightgbm
+INFO:non_major_league_model_architecture:Calibrated random_forest
+INFO:non_major_league_model_architecture:Calibrated logistic_regression
+INFO:non_major_league_model_architecture:Calibrated ensemble model
+INFO:non_major_league_model_architecture:Evaluating models
+INFO:non_major_league_model_architecture:Calculating feature importance
+INFO:phase2_integration:Step 3: Transfer Learning Setup
+INFO:phase2_integration:Setting up transfer learning
+INFO:phase2_integration:No source data files provided, skipping transfer learning
+INFO:phase2_integration:Step 4: Hyperparameter Tuning
+INFO:phase2_integration:Optimizing hyperparameters
+INFO:non_major_league_hyperparameter_tuning:Optimizing hyperparameters for all models
+INFO:non_major_league_hyperparameter_tuning:Optimizing xgboost (priority: 1)
+INFO:non_major_league_hyperparameter_tuning:Optimizing hyperparameters for xgboost
+[I 2025-10-16 21:30:54,455] A new study created in memory with name: no-name-afb12fbc-6e03-4818-a77e-899f2448f6d6
+[I 2025-10-16 21:31:43,658] Trial 0 finished with value: 0.07282999553623612 and parameters: {'n_estimators': 95, 'max_depth': 4, 'learning_rate': 0.027890762766202844, 'subsample': 0.9064800043164057, 'colsample_bytree': 0.9709834658896536, 'min_child_weight': 9, 'reg_alpha': 0.8305525329254518, 'reg_lambda': 0.30685379387176903}. Best is trial 0 with value: 0.07282999553623612.
+[I 2025-10-16 21:33:42,062] Trial 1 finished with value: 0.025574526790366547 and parameters: {'n_estimators': 184, 'max_depth': 6, 'learning_rate': 0.024226010619565114, 'subsample': 0.9559076889476328, 'colsample_bytree': 0.746461188397037, 'min_child_weight': 5, 'reg_alpha': 0.3386638126577437, 'reg_lambda': 1.4818893446654005}. Best is trial 1 with value: 0.025574526790366547.
+[I 2025-10-16 21:34:14,774] Trial 2 finished with value: 0.08055183316243279 and parameters: {'n_estimators': 62, 'max_depth': 7, 'learning_rate': 0.03988613584810841, 'subsample': 0.6089959487469468, 'colsample_bytree': 0.9777341037081259, 'min_child_weight': 2, 'reg_alpha': 0.20020864950233141, 'reg_lambda': 0.7400786075345658}. Best is trial 1 with value: 0.025574526790366547.
+[I 2025-10-16 21:34:46,633] Trial 3 finished with value: 0.0379946617806595 and parameters: {'n_estimators': 66, 'max_depth': 5, 'learning_rate': 0.047545565777038265, 'subsample': 0.7195051079609401, 'colsample_bytree': 0.731958018501369, 'min_child_weight': 2, 'reg_alpha': 0.06620719179564971, 'reg_lambda': 0.11168821361361037}. Best is trial 1 with value: 0.025574526790366547.
+[I 2025-10-16 21:35:12,731] Trial 4 finished with value: 0.023861775871135613 and parameters: {'n_estimators': 56, 'max_depth': 8, 'learning_rate': 0.07206192494649204, 'subsample': 0.9719359798092965, 'colsample_bytree': 0.9202898024112874, 'min_child_weight': 4, 'reg_alpha': 0.23655895074430855, 'reg_lambda': 1.2386847787880222}. Best is trial 4 with value: 0.023861775871135613.
+[I 2025-10-16 21:37:28,118] Trial 5 finished with value: 0.009692271284843129 and parameters: {'n_estimators': 195, 'max_depth': 4, 'learning_rate': 0.05115482532350367, 'subsample': 0.9066616083395329, 'colsample_bytree': 0.6585030299991145, 'min_child_weight': 1, 'reg_alpha': 0.8900046343133844, 'reg_lambda': 0.7298424025031411}. Best is trial 5 with value: 0.009692271284843129.
+[I 2025-10-16 21:38:17,152] Trial 6 finished with value: 0.023734372960054262 and parameters: {'n_estimators': 84, 'max_depth': 7, 'learning_rate': 0.059946194562551715, 'subsample': 0.7834461192741382, 'colsample_bytree': 0.6099437403048152, 'min_child_weight': 4, 'reg_alpha': 0.17095055880305388, 'reg_lambda': 1.7390153230621581}. Best is trial 5 with value: 0.009692271284843129.
+[I 2025-10-16 21:38:46,959] Trial 7 finished with value: 0.07334689717255731 and parameters: {'n_estimators': 67, 'max_depth': 3, 'learning_rate': 0.09944189392367418, 'subsample': 0.6597746352395791, 'colsample_bytree': 0.6340293737738981, 'min_child_weight': 10, 'reg_alpha': 0.12308157509771533, 'reg_lambda': 0.01768428538708533}. Best is trial 5 with value: 0.009692271284843129.
+[I 2025-10-16 21:39:46,353] Trial 8 finished with value: 0.11023891777327734 and parameters: {'n_estimators': 86, 'max_depth': 4, 'learning_rate': 0.02574494362706884, 'subsample': 0.6582065531634248, 'colsample_bytree': 0.6712872978100473, 'min_child_weight': 3, 'reg_alpha': 0.3691534397247941, 'reg_lambda': 1.3693624052096738}. Best is trial 5 with value: 0.009692271284843129.
+[I 2025-10-16 21:40:47,410] Trial 9 finished with value: 0.0814404720922158 and parameters: {'n_estimators': 85, 'max_depth': 8, 'learning_rate': 0.030464613850916214, 'subsample': 0.8641261954758528, 'colsample_bytree': 0.8561394032656997, 'min_child_weight': 5, 'reg_alpha': 0.831481083203775, 'reg_lambda': 1.5485847745059125}. Best is trial 5 with value: 0.009692271284843129.
+[I 2025-10-16 21:42:18,233] Trial 10 finished with value: 0.03888228284964588 and parameters: {'n_estimators': 192, 'max_depth': 3, 'learning_rate': 0.07952580917795146, 'subsample': 0.8283929271604703, 'colsample_bytree': 0.8106463882813402, 'min_child_weight': 7, 'reg_alpha': 0.6249949443648737, 'reg_lambda': 0.7120557272465332}. Best is trial 5 with value: 0.009692271284843129.
+[I 2025-10-16 21:43:31,984] Trial 11 finished with value: 0.009262182602201498 and parameters: {'n_estimators': 142, 'max_depth': 6, 'learning_rate': 0.06173955220229781, 'subsample': 0.7667477276324002, 'colsample_bytree': 0.6119966222605361, 'min_child_weight': 1, 'reg_alpha': 0.5774204248811438, 'reg_lambda': 1.9432266113384034}. Best is trial 11 with value: 0.009262182602201498.
+[I 2025-10-16 21:44:46,245] Trial 12 finished with value: 0.012310134051443813 and parameters: {'n_estimators': 159, 'max_depth': 5, 'learning_rate': 0.06259756094192782, 'subsample': 0.7784643832496565, 'colsample_bytree': 0.6844805367381507, 'min_child_weight': 1, 'reg_alpha': 0.9855003107982403, 'reg_lambda': 0.8275325908364404}. Best is trial 11 with value: 0.009262182602201498.
+[I 2025-10-16 21:46:07,720] Trial 13 finished with value: 0.24117255768057322 and parameters: {'n_estimators': 138, 'max_depth': 6, 'learning_rate': 0.01007571115065889, 'subsample': 0.9041022759421056, 'colsample_bytree': 0.6111015092628083, 'min_child_weight': 1, 'reg_alpha': 0.6217776778326255, 'reg_lambda': 1.979602848954665}. Best is trial 11 with value: 0.009262182602201498.
+[I 2025-10-16 21:47:51,221] Trial 14 finished with value: 0.0065641647980704204 and parameters: {'n_estimators': 163, 'max_depth': 4, 'learning_rate': 0.08123625713013675, 'subsample': 0.8201478352318444, 'colsample_bytree': 0.7245905578886103, 'min_child_weight': 1, 'reg_alpha': 0.5560980908217743, 'reg_lambda': 1.0893264303796417}. Best is trial 14 with value: 0.0065641647980704204.
+[I 2025-10-16 21:48:33,664] Trial 15 finished with value: 0.044221790714640836 and parameters: {'n_estimators': 128, 'max_depth': 5, 'learning_rate': 0.0899747548434358, 'subsample': 0.7285807328551632, 'colsample_bytree': 0.7277754484773966, 'min_child_weight': 7, 'reg_alpha': 0.5468961459086973, 'reg_lambda': 1.1846176128118788}. Best is trial 14 with value: 0.0065641647980704204.
+[I 2025-10-16 21:49:09,027] Trial 16 finished with value: 0.018122193084639245 and parameters: {'n_estimators': 160, 'max_depth': 6, 'learning_rate': 0.07441310233193386, 'subsample': 0.7458821380062486, 'colsample_bytree': 0.8031885301040426, 'min_child_weight': 3, 'reg_alpha': 0.7152963561600041, 'reg_lambda': 1.9833168052331096}. Best is trial 14 with value: 0.0065641647980704204.
+[I 2025-10-16 21:49:17,649] Trial 17 finished with value: 0.039357698043230194 and parameters: {'n_estimators': 154, 'max_depth': 7, 'learning_rate': 0.08845040471307562, 'subsample': 0.8241895845249949, 'colsample_bytree': 0.7076340503928158, 'min_child_weight': 7, 'reg_alpha': 0.4121027690431912, 'reg_lambda': 0.994895758598755}. Best is trial 14 with value: 0.0065641647980704204.
+[I 2025-10-16 21:49:36,401] Trial 18 finished with value: 0.011252301191147208 and parameters: {'n_estimators': 110, 'max_depth': 4, 'learning_rate': 0.0670831824255458, 'subsample': 0.8103036735247513, 'colsample_bytree': 0.7697774675771119, 'min_child_weight': 2, 'reg_alpha': 0.5119359948652648, 'reg_lambda': 0.44150152840872814}. Best is trial 14 with value: 0.0065641647980704204.
+[I 2025-10-16 21:50:04,200] Trial 19 finished with value: 0.015886389127113595 and parameters: {'n_estimators': 174, 'max_depth': 3, 'learning_rate': 0.08323135700355366, 'subsample': 0.8587939889166578, 'colsample_bytree': 0.8593056378874517, 'min_child_weight': 3, 'reg_alpha': 0.6965349773378678, 'reg_lambda': 1.7262344345681435}. Best is trial 14 with value: 0.0065641647980704204.
+[I 2025-10-16 21:50:22,758] Trial 20 finished with value: 0.04106640467864673 and parameters: {'n_estimators': 131, 'max_depth': 5, 'learning_rate': 0.09980224557200466, 'subsample': 0.6692440693643302, 'colsample_bytree': 0.6458051078568526, 'min_child_weight': 6, 'reg_alpha': 0.42952449085277206, 'reg_lambda': 1.0964633983649954}. Best is trial 14 with value: 0.0065641647980704204.
+[I 2025-10-16 21:50:53,906] Trial 21 finished with value: 0.010236398263135013 and parameters: {'n_estimators': 199, 'max_depth': 4, 'learning_rate': 0.05186654375485718, 'subsample': 0.915647876484957, 'colsample_bytree': 0.6649003352264039, 'min_child_weight': 1, 'reg_alpha': 0.9656846157700953, 'reg_lambda': 0.4248732701586925}. Best is trial 14 with value: 0.0065641647980704204.
+[I 2025-10-16 21:51:19,827] Trial 22 finished with value: 0.00959946938486175 and parameters: {'n_estimators': 172, 'max_depth': 4, 'learning_rate': 0.04345524611419359, 'subsample': 0.9999920051912081, 'colsample_bytree': 0.600322481120179, 'min_child_weight': 1, 'reg_alpha': 0.8306139501575878, 'reg_lambda': 0.9057644349336955}. Best is trial 14 with value: 0.0065641647980704204.
+[I 2025-10-16 21:51:47,579] Trial 23 finished with value: 0.011145879028243011 and parameters: {'n_estimators': 144, 'max_depth': 6, 'learning_rate': 0.042455925369637756, 'subsample': 0.9988759999379502, 'colsample_bytree': 0.6215911542348673, 'min_child_weight': 2, 'reg_alpha': 0.737811710117775, 'reg_lambda': 0.9781910384149887}. Best is trial 14 with value: 0.0065641647980704204.
+[I 2025-10-16 21:52:18,213] Trial 24 finished with value: 0.007528444283577177 and parameters: {'n_estimators': 175, 'max_depth': 5, 'learning_rate': 0.058397557540142385, 'subsample': 0.7557689247199653, 'colsample_bytree': 0.6880408217928637, 'min_child_weight': 1, 'reg_alpha': 0.5803273462848924, 'reg_lambda': 0.5498795925733674}. Best is trial 14 with value: 0.0065641647980704204.
+[I 2025-10-16 21:52:54,872] Trial 25 finished with value: 0.018304523113290436 and parameters: {'n_estimators': 115, 'max_depth': 5, 'learning_rate': 0.05973760749796689, 'subsample': 0.7496357241675607, 'colsample_bytree': 0.6973423576211184, 'min_child_weight': 3, 'reg_alpha': 0.6120054167694471, 'reg_lambda': 0.4535417158529975}. Best is trial 14 with value: 0.0065641647980704204.
+[I 2025-10-16 21:53:54,891] Trial 26 finished with value: 0.012580564637408363 and parameters: {'n_estimators': 173, 'max_depth': 6, 'learning_rate': 0.06865791802311995, 'subsample': 0.697498366378885, 'colsample_bytree': 0.7751826301195891, 'min_child_weight': 2, 'reg_alpha': 0.45756994679755325, 'reg_lambda': 0.5669195930045213}. Best is trial 14 with value: 0.0065641647980704204.
+[I 2025-10-16 21:54:35,633] Trial 27 finished with value: 0.023338416779487035 and parameters: {'n_estimators': 149, 'max_depth': 5, 'learning_rate': 0.07866944481875968, 'subsample': 0.7708694494793531, 'colsample_bytree': 0.7102302112549141, 'min_child_weight': 4, 'reg_alpha': 0.553419742857658, 'reg_lambda': 0.19966826065892573}. Best is trial 14 with value: 0.0065641647980704204.
+[I 2025-10-16 21:55:48,069] Trial 28 finished with value: 0.005547336806435612 and parameters: {'n_estimators': 164, 'max_depth': 7, 'learning_rate': 0.057851896276800215, 'subsample': 0.8488952224751771, 'colsample_bytree': 0.7585587844283056, 'min_child_weight': 1, 'reg_alpha': 0.29582606665907113, 'reg_lambda': 1.7924190920469671}. Best is trial 28 with value: 0.005547336806435612.
+[I 2025-10-16 21:56:51,588] Trial 29 finished with value: 0.01053193556251536 and parameters: {'n_estimators': 166, 'max_depth': 7, 'learning_rate': 0.055241238689165494, 'subsample': 0.8602953649640392, 'colsample_bytree': 0.7671695731459944, 'min_child_weight': 2, 'reg_alpha': 0.30273957273866975, 'reg_lambda': 0.2680918996384942}. Best is trial 28 with value: 0.005547336806435612.
+INFO:non_major_league_hyperparameter_tuning:xgboost optimization complete
+INFO:non_major_league_hyperparameter_tuning:Best score: 0.0055
+INFO:non_major_league_hyperparameter_tuning:Best params: {'n_estimators': 164, 'max_depth': 7, 'learning_rate': 0.057851896276800215, 'subsample': 0.8488952224751771, 'colsample_bytree': 0.7585587844283056, 'min_child_weight': 1, 'reg_alpha': 0.29582606665907113, 'reg_lambda': 1.7924190920469671}
+INFO:non_major_league_hyperparameter_tuning:Optimizing lightgbm (priority: 2)
+INFO:non_major_league_hyperparameter_tuning:Optimizing hyperparameters for lightgbm
+[I 2025-10-16 21:56:51,594] A new study created in memory with name: no-name-ff1e7ad1-0261-42ad-8972-062066ca9458
+[I 2025-10-16 21:57:39,853] Trial 0 finished with value: 0.019483896939623224 and parameters: {'n_estimators': 199, 'max_depth': 8, 'learning_rate': 0.016352710946272372, 'num_leaves': 97, 'feature_fraction': 0.9640332896743942, 'bagging_fraction': 0.9914598793078117, 'bagging_freq': 10, 'lambda_l1': 0.7582436911261368, 'lambda_l2': 0.3321048492447376, 'min_data_in_leaf': 16}. Best is trial 0 with value: 0.019483896939623224.
+[I 2025-10-16 21:58:04,936] Trial 1 finished with value: 0.008247260803587826 and parameters: {'n_estimators': 186, 'max_depth': 7, 'learning_rate': 0.05024494781805807, 'num_leaves': 27, 'feature_fraction': 0.8421842536280094, 'bagging_fraction': 0.9673081978774121, 'bagging_freq': 5, 'lambda_l1': 0.8395250526850373, 'lambda_l2': 0.7701082440842428, 'min_data_in_leaf': 45}. Best is trial 1 with value: 0.008247260803587826.
+[I 2025-10-16 21:58:25,138] Trial 2 finished with value: 0.15798503929808258 and parameters: {'n_estimators': 69, 'max_depth': 4, 'learning_rate': 0.019906985081743406, 'num_leaves': 34, 'feature_fraction': 0.676677837149364, 'bagging_fraction': 0.834738717506732, 'bagging_freq': 4, 'lambda_l1': 0.682811691256981, 'lambda_l2': 1.5757651838536835, 'min_data_in_leaf': 14}. Best is trial 1 with value: 0.008247260803587826.
+[I 2025-10-16 21:58:56,262] Trial 3 finished with value: 0.009541383103136743 and parameters: {'n_estimators': 158, 'max_depth': 3, 'learning_rate': 0.09728092569671723, 'num_leaves': 24, 'feature_fraction': 0.889018171896957, 'bagging_fraction': 0.8995046759983875, 'bagging_freq': 1, 'lambda_l1': 0.9192785728158107, 'lambda_l2': 1.715852258435817, 'min_data_in_leaf': 6}. Best is trial 1 with value: 0.008247260803587826.
+[I 2025-10-16 21:59:27,350] Trial 4 finished with value: 0.00803252801955324 and parameters: {'n_estimators': 144, 'max_depth': 5, 'learning_rate': 0.06800032302819309, 'num_leaves': 50, 'feature_fraction': 0.9384033857192643, 'bagging_fraction': 0.9210405645168153, 'bagging_freq': 1, 'lambda_l1': 0.7474165089544533, 'lambda_l2': 1.7941371095556768, 'min_data_in_leaf': 41}. Best is trial 4 with value: 0.00803252801955324.
+[I 2025-10-16 21:59:41,995] Trial 5 finished with value: 0.029085114271939497 and parameters: {'n_estimators': 88, 'max_depth': 4, 'learning_rate': 0.03067107444683185, 'num_leaves': 53, 'feature_fraction': 0.9206960483513628, 'bagging_fraction': 0.9484153823186632, 'bagging_freq': 5, 'lambda_l1': 0.4903868405014207, 'lambda_l2': 0.307842921910382, 'min_data_in_leaf': 31}. Best is trial 4 with value: 0.00803252801955324.
+[I 2025-10-16 21:59:49,257] Trial 6 finished with value: 0.2602233749987211 and parameters: {'n_estimators': 53, 'max_depth': 4, 'learning_rate': 0.017861734653626275, 'num_leaves': 49, 'feature_fraction': 0.8112806211752915, 'bagging_fraction': 0.8281271547730211, 'bagging_freq': 2, 'lambda_l1': 0.848582178098131, 'lambda_l2': 0.41361171479073744, 'min_data_in_leaf': 48}. Best is trial 4 with value: 0.00803252801955324.
+[I 2025-10-16 22:00:02,198] Trial 7 finished with value: 0.009625891808294262 and parameters: {'n_estimators': 100, 'max_depth': 7, 'learning_rate': 0.04567850192569975, 'num_leaves': 77, 'feature_fraction': 0.9255740166426953, 'bagging_fraction': 0.6984813281270095, 'bagging_freq': 8, 'lambda_l1': 0.2362434946023524, 'lambda_l2': 1.050506406966039, 'min_data_in_leaf': 47}. Best is trial 4 with value: 0.00803252801955324.
+[I 2025-10-16 22:00:20,510] Trial 8 finished with value: 0.008428216731663262 and parameters: {'n_estimators': 97, 'max_depth': 6, 'learning_rate': 0.09550730392071013, 'num_leaves': 83, 'feature_fraction': 0.6174677984188142, 'bagging_fraction': 0.8987555139498262, 'bagging_freq': 5, 'lambda_l1': 0.8027916386148101, 'lambda_l2': 0.16553598016058402, 'min_data_in_leaf': 29}. Best is trial 4 with value: 0.00803252801955324.
+[I 2025-10-16 22:00:40,950] Trial 9 finished with value: 0.009125896164161743 and parameters: {'n_estimators': 91, 'max_depth': 6, 'learning_rate': 0.08789510450927979, 'num_leaves': 37, 'feature_fraction': 0.7575762224454579, 'bagging_fraction': 0.7761031265624188, 'bagging_freq': 6, 'lambda_l1': 0.7378714742896172, 'lambda_l2': 0.2013636409937294, 'min_data_in_leaf': 37}. Best is trial 4 with value: 0.00803252801955324.
+[I 2025-10-16 22:01:10,369] Trial 10 finished with value: 0.0019574487799442577 and parameters: {'n_estimators': 139, 'max_depth': 5, 'learning_rate': 0.07215984018920658, 'num_leaves': 10, 'feature_fraction': 0.9848089805656994, 'bagging_fraction': 0.6061625845442468, 'bagging_freq': 3, 'lambda_l1': 0.002709471828515664, 'lambda_l2': 1.385722600516019, 'min_data_in_leaf': 38}. Best is trial 10 with value: 0.0019574487799442577.
+[I 2025-10-16 22:01:44,514] Trial 11 finished with value: 0.0020401808325030634 and parameters: {'n_estimators': 137, 'max_depth': 5, 'learning_rate': 0.07136360802030373, 'num_leaves': 13, 'feature_fraction': 0.9942787392515332, 'bagging_fraction': 0.6060983107259755, 'bagging_freq': 2, 'lambda_l1': 0.00916620980317695, 'lambda_l2': 1.3398657378059493, 'min_data_in_leaf': 38}. Best is trial 10 with value: 0.0019574487799442577.
+[I 2025-10-16 22:02:13,043] Trial 12 finished with value: 0.002258967304281073 and parameters: {'n_estimators': 130, 'max_depth': 5, 'learning_rate': 0.07091920174031371, 'num_leaves': 11, 'feature_fraction': 0.9800589410929714, 'bagging_fraction': 0.6041321723057471, 'bagging_freq': 3, 'lambda_l1': 0.0163872118328205, 'lambda_l2': 1.2977417547623087, 'min_data_in_leaf': 35}. Best is trial 10 with value: 0.0019574487799442577.
+[I 2025-10-16 22:02:55,155] Trial 13 finished with value: 0.0015364842042959181 and parameters: {'n_estimators': 155, 'max_depth': 5, 'learning_rate': 0.07272518083323869, 'num_leaves': 11, 'feature_fraction': 0.98753597130142, 'bagging_fraction': 0.6085203507907333, 'bagging_freq': 3, 'lambda_l1': 0.00034830379716861357, 'lambda_l2': 1.304587947449738, 'min_data_in_leaf': 27}. Best is trial 13 with value: 0.0015364842042959181.
+[I 2025-10-16 22:03:30,258] Trial 14 finished with value: 0.003269783294888981 and parameters: {'n_estimators': 164, 'max_depth': 3, 'learning_rate': 0.06170121563912664, 'num_leaves': 11, 'feature_fraction': 0.8762775848234571, 'bagging_fraction': 0.6676522448902887, 'bagging_freq': 3, 'lambda_l1': 0.20177109956114703, 'lambda_l2': 0.8655335726513843, 'min_data_in_leaf': 22}. Best is trial 13 with value: 0.0015364842042959181.
+[I 2025-10-16 22:03:53,756] Trial 15 finished with value: 0.004596724505500271 and parameters: {'n_estimators': 114, 'max_depth': 6, 'learning_rate': 0.07989184126479687, 'num_leaves': 66, 'feature_fraction': 0.7687741610443901, 'bagging_fraction': 0.6839056356455706, 'bagging_freq': 7, 'lambda_l1': 0.19092493117799547, 'lambda_l2': 1.9520169843004407, 'min_data_in_leaf': 25}. Best is trial 13 with value: 0.0015364842042959181.
+[I 2025-10-16 22:04:19,298] Trial 16 finished with value: 0.00430147724966854 and parameters: {'n_estimators': 168, 'max_depth': 4, 'learning_rate': 0.08141165121512398, 'num_leaves': 21, 'feature_fraction': 0.9970011554546419, 'bagging_fraction': 0.742855605072027, 'bagging_freq': 3, 'lambda_l1': 0.32799250329967256, 'lambda_l2': 1.3318943892088362, 'min_data_in_leaf': 20}. Best is trial 13 with value: 0.0015364842042959181.
+[I 2025-10-16 22:04:36,688] Trial 17 finished with value: 0.006869886127768505 and parameters: {'n_estimators': 120, 'max_depth': 7, 'learning_rate': 0.04293461978945015, 'num_leaves': 40, 'feature_fraction': 0.7057093556133465, 'bagging_fraction': 0.6472479340865422, 'bagging_freq': 4, 'lambda_l1': 0.1031004762883453, 'lambda_l2': 1.119389259239233, 'min_data_in_leaf': 31}. Best is trial 13 with value: 0.0015364842042959181.
+[I 2025-10-16 22:04:39,557] Trial 18 finished with value: 0.006085729129826012 and parameters: {'n_estimators': 146, 'max_depth': 5, 'learning_rate': 0.05939531055538254, 'num_leaves': 20, 'feature_fraction': 0.8724216838987907, 'bagging_fraction': 0.7384192784963877, 'bagging_freq': 2, 'lambda_l1': 0.40308445741980337, 'lambda_l2': 1.5571594915735405, 'min_data_in_leaf': 42}. Best is trial 13 with value: 0.0015364842042959181.
+[I 2025-10-16 22:04:42,933] Trial 19 finished with value: 0.0017608368083360168 and parameters: {'n_estimators': 178, 'max_depth': 6, 'learning_rate': 0.08033878809730217, 'num_leaves': 65, 'feature_fraction': 0.9464974716365082, 'bagging_fraction': 0.6407198293035674, 'bagging_freq': 4, 'lambda_l1': 0.11013193796058138, 'lambda_l2': 0.677738260084718, 'min_data_in_leaf': 34}. Best is trial 13 with value: 0.0015364842042959181.
+[I 2025-10-16 22:04:46,825] Trial 20 finished with value: 0.008600985919126973 and parameters: {'n_estimators': 178, 'max_depth': 8, 'learning_rate': 0.08434832728723213, 'num_leaves': 65, 'feature_fraction': 0.8356122702850595, 'bagging_fraction': 0.641278985928032, 'bagging_freq': 7, 'lambda_l1': 0.6090644468280445, 'lambda_l2': 0.7245398112004695, 'min_data_in_leaf': 25}. Best is trial 13 with value: 0.0015364842042959181.
+[I 2025-10-16 22:04:49,803] Trial 21 finished with value: 0.0017398708785677003 and parameters: {'n_estimators': 152, 'max_depth': 6, 'learning_rate': 0.0748721514008004, 'num_leaves': 66, 'feature_fraction': 0.9518283211853964, 'bagging_fraction': 0.6009567167502106, 'bagging_freq': 4, 'lambda_l1': 0.09118588501992077, 'lambda_l2': 0.5806782315021108, 'min_data_in_leaf': 34}. Best is trial 13 with value: 0.0015364842042959181.
+[I 2025-10-16 22:04:51,387] Trial 22 finished with value: 0.0014458578171181594 and parameters: {'n_estimators': 154, 'max_depth': 6, 'learning_rate': 0.09125441493149962, 'num_leaves': 62, 'feature_fraction': 0.9440040913715334, 'bagging_fraction': 0.7037553678442445, 'bagging_freq': 4, 'lambda_l1': 0.0988184277709364, 'lambda_l2': 0.5799164301036048, 'min_data_in_leaf': 32}. Best is trial 22 with value: 0.0014458578171181594.
+[I 2025-10-16 22:04:52,913] Trial 23 finished with value: 0.0014263396283144757 and parameters: {'n_estimators': 153, 'max_depth': 7, 'learning_rate': 0.08941832689318531, 'num_leaves': 75, 'feature_fraction': 0.9135624477336423, 'bagging_fraction': 0.7234890251287415, 'bagging_freq': 6, 'lambda_l1': 0.10225074635561138, 'lambda_l2': 0.5182432636311218, 'min_data_in_leaf': 27}. Best is trial 23 with value: 0.0014263396283144757.
+[I 2025-10-16 22:04:55,398] Trial 24 finished with value: 0.003610012178889899 and parameters: {'n_estimators': 168, 'max_depth': 7, 'learning_rate': 0.09390190467907929, 'num_leaves': 78, 'feature_fraction': 0.9061829954853311, 'bagging_fraction': 0.7200380035355731, 'bagging_freq': 6, 'lambda_l1': 0.28267762917672146, 'lambda_l2': 0.5371838314903735, 'min_data_in_leaf': 27}. Best is trial 23 with value: 0.0014263396283144757.
+[I 2025-10-16 22:04:56,547] Trial 25 finished with value: 0.0019234297502873463 and parameters: {'n_estimators': 155, 'max_depth': 8, 'learning_rate': 0.08807702854443582, 'num_leaves': 89, 'feature_fraction': 0.8547901296765232, 'bagging_fraction': 0.7811213437737642, 'bagging_freq': 7, 'lambda_l1': 0.1413237736291713, 'lambda_l2': 0.9674173639875057, 'min_data_in_leaf': 20}. Best is trial 23 with value: 0.0014263396283144757.
+[I 2025-10-16 22:04:58,915] Trial 26 finished with value: 0.005144172550207946 and parameters: {'n_estimators': 124, 'max_depth': 7, 'learning_rate': 0.09074941148978183, 'num_leaves': 74, 'feature_fraction': 0.9069193432484648, 'bagging_fraction': 0.7097540979594499, 'bagging_freq': 9, 'lambda_l1': 0.38267057716373426, 'lambda_l2': 0.45257514355463435, 'min_data_in_leaf': 14}. Best is trial 23 with value: 0.0014263396283144757.
+[I 2025-10-16 22:05:01,527] Trial 27 finished with value: 0.0008304009674224011 and parameters: {'n_estimators': 200, 'max_depth': 6, 'learning_rate': 0.09863474011226384, 'num_leaves': 59, 'feature_fraction': 0.9602634207413071, 'bagging_fraction': 0.7467349255195834, 'bagging_freq': 6, 'lambda_l1': 0.07024405952403949, 'lambda_l2': 0.010697077348480244, 'min_data_in_leaf': 30}. Best is trial 27 with value: 0.0008304009674224011.
+[I 2025-10-16 22:05:04,395] Trial 28 finished with value: 0.0032307506338230835 and parameters: {'n_estimators': 200, 'max_depth': 7, 'learning_rate': 0.09878132479218944, 'num_leaves': 58, 'feature_fraction': 0.7999090231057845, 'bagging_fraction': 0.7492446120671298, 'bagging_freq': 6, 'lambda_l1': 0.27606742428863446, 'lambda_l2': 0.012897241612318644, 'min_data_in_leaf': 31}. Best is trial 27 with value: 0.0008304009674224011.
+[I 2025-10-16 22:05:06,918] Trial 29 finished with value: 0.0053548906271422185 and parameters: {'n_estimators': 190, 'max_depth': 8, 'learning_rate': 0.09018072892989087, 'num_leaves': 97, 'feature_fraction': 0.9617490835455558, 'bagging_fraction': 0.8196091713819516, 'bagging_freq': 10, 'lambda_l1': 0.4930390284964059, 'lambda_l2': 0.0013184374312641411, 'min_data_in_leaf': 9}. Best is trial 27 with value: 0.0008304009674224011.
+INFO:non_major_league_hyperparameter_tuning:lightgbm optimization complete
+INFO:non_major_league_hyperparameter_tuning:Best score: 0.0008
+INFO:non_major_league_hyperparameter_tuning:Best params: {'n_estimators': 200, 'max_depth': 6, 'learning_rate': 0.09863474011226384, 'num_leaves': 59, 'feature_fraction': 0.9602634207413071, 'bagging_fraction': 0.7467349255195834, 'bagging_freq': 6, 'lambda_l1': 0.07024405952403949, 'lambda_l2': 0.010697077348480244, 'min_data_in_leaf': 30}
+INFO:non_major_league_hyperparameter_tuning:Optimizing random_forest (priority: 3)
+INFO:non_major_league_hyperparameter_tuning:Optimizing hyperparameters for random_forest
+[I 2025-10-16 22:05:06,925] A new study created in memory with name: no-name-22f2ad56-b524-44c9-8fa9-68d81a6b9e1f
+[I 2025-10-16 22:05:09,105] Trial 0 finished with value: 2.2204460492503136e-16 and parameters: {'n_estimators': 89, 'max_depth': 11, 'min_samples_split': 14, 'min_samples_leaf': 5, 'max_features': None}. Best is trial 0 with value: 2.2204460492503136e-16.
+[I 2025-10-16 22:05:12,806] Trial 1 finished with value: 9.83214261497911e-06 and parameters: {'n_estimators': 178, 'max_depth': 10, 'min_samples_split': 3, 'min_samples_leaf': 6, 'max_features': None}. Best is trial 0 with value: 2.2204460492503136e-16.
+[I 2025-10-16 22:05:13,763] Trial 2 finished with value: 0.2602984612581612 and parameters: {'n_estimators': 140, 'max_depth': 14, 'min_samples_split': 9, 'min_samples_leaf': 5, 'max_features': 'log2'}. Best is trial 0 with value: 2.2204460492503136e-16.
+[I 2025-10-16 22:05:14,293] Trial 3 finished with value: 0.25673587499072853 and parameters: {'n_estimators': 67, 'max_depth': 12, 'min_samples_split': 9, 'min_samples_leaf': 4, 'max_features': 'log2'}. Best is trial 0 with value: 2.2204460492503136e-16.
+[I 2025-10-16 22:05:14,933] Trial 4 finished with value: 0.405368859170363 and parameters: {'n_estimators': 86, 'max_depth': 4, 'min_samples_split': 14, 'min_samples_leaf': 9, 'max_features': 'log2'}. Best is trial 0 with value: 2.2204460492503136e-16.
+[I 2025-10-16 22:05:19,639] Trial 5 finished with value: 1.0481717382790457e-05 and parameters: {'n_estimators': 167, 'max_depth': 7, 'min_samples_split': 4, 'min_samples_leaf': 4, 'max_features': None}. Best is trial 0 with value: 2.2204460492503136e-16.
+[I 2025-10-16 22:05:20,778] Trial 6 finished with value: 0.09078637818566317 and parameters: {'n_estimators': 129, 'max_depth': 5, 'min_samples_split': 18, 'min_samples_leaf': 2, 'max_features': 'sqrt'}. Best is trial 0 with value: 2.2204460492503136e-16.
+[I 2025-10-16 22:05:21,411] Trial 7 finished with value: 0.23548847844377221 and parameters: {'n_estimators': 74, 'max_depth': 3, 'min_samples_split': 13, 'min_samples_leaf': 1, 'max_features': 'sqrt'}. Best is trial 0 with value: 2.2204460492503136e-16.
+[I 2025-10-16 22:05:24,076] Trial 8 finished with value: 2.2204460492503136e-16 and parameters: {'n_estimators': 138, 'max_depth': 13, 'min_samples_split': 11, 'min_samples_leaf': 8, 'max_features': None}. Best is trial 0 with value: 2.2204460492503136e-16.
+[I 2025-10-16 22:05:25,970] Trial 9 finished with value: 2.2204460492503136e-16 and parameters: {'n_estimators': 103, 'max_depth': 3, 'min_samples_split': 16, 'min_samples_leaf': 8, 'max_features': None}. Best is trial 0 with value: 2.2204460492503136e-16.
+[I 2025-10-16 22:05:28,045] Trial 10 finished with value: 2.2204460492503136e-16 and parameters: {'n_estimators': 105, 'max_depth': 10, 'min_samples_split': 20, 'min_samples_leaf': 6, 'max_features': None}. Best is trial 0 with value: 2.2204460492503136e-16.
+[I 2025-10-16 22:05:30,863] Trial 11 finished with value: 2.2204460492503136e-16 and parameters: {'n_estimators': 151, 'max_depth': 15, 'min_samples_split': 10, 'min_samples_leaf': 8, 'max_features': None}. Best is trial 0 with value: 2.2204460492503136e-16.
+[I 2025-10-16 22:05:32,846] Trial 12 finished with value: 2.2204460492503136e-16 and parameters: {'n_estimators': 109, 'max_depth': 12, 'min_samples_split': 6, 'min_samples_leaf': 10, 'max_features': None}. Best is trial 0 with value: 2.2204460492503136e-16.
+[I 2025-10-16 22:05:36,436] Trial 13 finished with value: 8.881447657239621e-06 and parameters: {'n_estimators': 197, 'max_depth': 12, 'min_samples_split': 13, 'min_samples_leaf': 7, 'max_features': None}. Best is trial 0 with value: 2.2204460492503136e-16.
+[I 2025-10-16 22:05:39,261] Trial 14 finished with value: 2.2204460492503136e-16 and parameters: {'n_estimators': 118, 'max_depth': 8, 'min_samples_split': 7, 'min_samples_leaf': 3, 'max_features': None}. Best is trial 0 with value: 2.2204460492503136e-16.
+[I 2025-10-16 22:05:39,705] Trial 15 finished with value: 0.11350195400306319 and parameters: {'n_estimators': 54, 'max_depth': 14, 'min_samples_split': 15, 'min_samples_leaf': 7, 'max_features': 'sqrt'}. Best is trial 0 with value: 2.2204460492503136e-16.
+[I 2025-10-16 22:05:41,432] Trial 16 finished with value: 2.2204460492503136e-16 and parameters: {'n_estimators': 89, 'max_depth': 11, 'min_samples_split': 12, 'min_samples_leaf': 10, 'max_features': None}. Best is trial 0 with value: 2.2204460492503136e-16.
+[I 2025-10-16 22:05:44,403] Trial 17 finished with value: 1.1223194293922184e-05 and parameters: {'n_estimators': 156, 'max_depth': 7, 'min_samples_split': 16, 'min_samples_leaf': 5, 'max_features': None}. Best is trial 0 with value: 2.2204460492503136e-16.
+[I 2025-10-16 22:05:45,389] Trial 18 finished with value: 0.09866675215869646 and parameters: {'n_estimators': 130, 'max_depth': 13, 'min_samples_split': 7, 'min_samples_leaf': 7, 'max_features': 'sqrt'}. Best is trial 0 with value: 2.2204460492503136e-16.
+[I 2025-10-16 22:05:46,002] Trial 19 finished with value: 0.3136851199724701 and parameters: {'n_estimators': 91, 'max_depth': 9, 'min_samples_split': 18, 'min_samples_leaf': 8, 'max_features': 'log2'}. Best is trial 0 with value: 2.2204460492503136e-16.
+[I 2025-10-16 22:05:48,686] Trial 20 finished with value: 2.2204460492503136e-16 and parameters: {'n_estimators': 143, 'max_depth': 15, 'min_samples_split': 11, 'min_samples_leaf': 4, 'max_features': None}. Best is trial 0 with value: 2.2204460492503136e-16.
+[I 2025-10-16 22:05:50,847] Trial 21 finished with value: 2.2204460492503136e-16 and parameters: {'n_estimators': 104, 'max_depth': 6, 'min_samples_split': 16, 'min_samples_leaf': 8, 'max_features': None}. Best is trial 0 with value: 2.2204460492503136e-16.
+[I 2025-10-16 22:05:53,221] Trial 22 finished with value: 2.2204460492503136e-16 and parameters: {'n_estimators': 120, 'max_depth': 10, 'min_samples_split': 18, 'min_samples_leaf': 9, 'max_features': None}. Best is trial 0 with value: 2.2204460492503136e-16.
+[I 2025-10-16 22:05:54,977] Trial 23 finished with value: 2.2204460492503136e-16 and parameters: {'n_estimators': 95, 'max_depth': 13, 'min_samples_split': 16, 'min_samples_leaf': 9, 'max_features': None}. Best is trial 0 with value: 2.2204460492503136e-16.
+[I 2025-10-16 22:05:56,326] Trial 24 finished with value: 2.2204460492503136e-16 and parameters: {'n_estimators': 73, 'max_depth': 11, 'min_samples_split': 12, 'min_samples_leaf': 6, 'max_features': None}. Best is trial 0 with value: 2.2204460492503136e-16.
+[I 2025-10-16 22:05:58,404] Trial 25 finished with value: 2.2204460492503136e-16 and parameters: {'n_estimators': 115, 'max_depth': 3, 'min_samples_split': 14, 'min_samples_leaf': 7, 'max_features': None}. Best is trial 0 with value: 2.2204460492503136e-16.
+[I 2025-10-16 22:05:59,370] Trial 26 finished with value: 2.2204460492503136e-16 and parameters: {'n_estimators': 50, 'max_depth': 9, 'min_samples_split': 20, 'min_samples_leaf': 5, 'max_features': None}. Best is trial 0 with value: 2.2204460492503136e-16.
+[I 2025-10-16 22:06:01,959] Trial 27 finished with value: 2.2204460492503136e-16 and parameters: {'n_estimators': 134, 'max_depth': 13, 'min_samples_split': 11, 'min_samples_leaf': 8, 'max_features': None}. Best is trial 0 with value: 2.2204460492503136e-16.
+[I 2025-10-16 22:06:02,741] Trial 28 finished with value: 0.0812086642306858 and parameters: {'n_estimators': 99, 'max_depth': 11, 'min_samples_split': 17, 'min_samples_leaf': 3, 'max_features': 'sqrt'}. Best is trial 0 with value: 2.2204460492503136e-16.
+[I 2025-10-16 22:06:03,688] Trial 29 finished with value: 0.26942102830952597 and parameters: {'n_estimators': 156, 'max_depth': 10, 'min_samples_split': 14, 'min_samples_leaf': 6, 'max_features': 'log2'}. Best is trial 0 with value: 2.2204460492503136e-16.
+INFO:non_major_league_hyperparameter_tuning:random_forest optimization complete
+INFO:non_major_league_hyperparameter_tuning:Best score: 0.0000
+INFO:non_major_league_hyperparameter_tuning:Best params: {'n_estimators': 89, 'max_depth': 11, 'min_samples_split': 14, 'min_samples_leaf': 5, 'max_features': None}
+INFO:non_major_league_hyperparameter_tuning:Optimizing logistic_regression (priority: 4)
+INFO:non_major_league_hyperparameter_tuning:Optimizing hyperparameters for logistic_regression
+[I 2025-10-16 22:06:03,691] A new study created in memory with name: no-name-6dbf1f25-ddf9-4e09-99ec-ec6fba6912f7
+[I 2025-10-16 22:06:03,891] Trial 0 finished with value: 0.031331541092474345 and parameters: {'C': 4.650830766481546, 'max_iter': 959, 'solver': 'liblinear'}. Best is trial 0 with value: 0.031331541092474345.
+[I 2025-10-16 22:06:04,111] Trial 1 finished with value: 0.02359141887940648 and parameters: {'C': 9.178108225792595, 'max_iter': 956, 'solver': 'liblinear'}. Best is trial 1 with value: 0.02359141887940648.
+[I 2025-10-16 22:06:04,298] Trial 2 finished with value: 0.09640697748138481 and parameters: {'C': 0.38389583435181834, 'max_iter': 281, 'solver': 'liblinear'}. Best is trial 1 with value: 0.02359141887940648.
+[I 2025-10-16 22:06:04,445] Trial 3 finished with value: 0.03372761604903594 and parameters: {'C': 0.14848283535174012, 'max_iter': 289, 'solver': 'lbfgs'}. Best is trial 1 with value: 0.02359141887940648.
+[I 2025-10-16 22:06:04,687] Trial 4 finished with value: 0.024995487708080962 and parameters: {'C': 7.966401165996261, 'max_iter': 939, 'solver': 'liblinear'}. Best is trial 1 with value: 0.02359141887940648.
+[I 2025-10-16 22:06:04,924] Trial 5 finished with value: 0.02290584304462877 and parameters: {'C': 9.871895872134804, 'max_iter': 401, 'solver': 'liblinear'}. Best is trial 5 with value: 0.02290584304462877.
+[I 2025-10-16 22:06:05,158] Trial 6 finished with value: 0.024860475731153298 and parameters: {'C': 8.072810705145931, 'max_iter': 895, 'solver': 'liblinear'}. Best is trial 5 with value: 0.02290584304462877.
+[I 2025-10-16 22:06:05,379] Trial 7 finished with value: 0.036703257730666204 and parameters: {'C': 3.2261470160050165, 'max_iter': 818, 'solver': 'liblinear'}. Best is trial 5 with value: 0.02290584304462877.
+[I 2025-10-16 22:06:05,615] Trial 8 finished with value: 0.027143910419495803 and parameters: {'C': 6.521601573329848, 'max_iter': 267, 'solver': 'liblinear'}. Best is trial 5 with value: 0.02290584304462877.
+[I 2025-10-16 22:06:05,847] Trial 9 finished with value: 0.028673788063115834 and parameters: {'C': 5.7124231535549495, 'max_iter': 225, 'solver': 'liblinear'}. Best is trial 5 with value: 0.02290584304462877.
+[I 2025-10-16 22:06:05,954] Trial 10 finished with value: 0.0020682328223138196 and parameters: {'C': 9.41236926628891, 'max_iter': 531, 'solver': 'lbfgs'}. Best is trial 10 with value: 0.0020682328223138196.
+[I 2025-10-16 22:06:06,068] Trial 11 finished with value: 0.0020271312257819337 and parameters: {'C': 9.884424676580371, 'max_iter': 554, 'solver': 'lbfgs'}. Best is trial 11 with value: 0.0020271312257819337.
+[I 2025-10-16 22:06:06,181] Trial 12 finished with value: 0.0020155290870005342 and parameters: {'C': 9.9869737181758, 'max_iter': 624, 'solver': 'lbfgs'}. Best is trial 12 with value: 0.0020155290870005342.
+[I 2025-10-16 22:06:06,317] Trial 13 finished with value: 0.0020864875740783328 and parameters: {'C': 8.187060440998232, 'max_iter': 692, 'solver': 'lbfgs'}. Best is trial 12 with value: 0.0020155290870005342.
+[I 2025-10-16 22:06:06,467] Trial 14 finished with value: 0.00229490958567181 and parameters: {'C': 7.115966084911967, 'max_iter': 602, 'solver': 'lbfgs'}. Best is trial 12 with value: 0.0020155290870005342.
+[I 2025-10-16 22:06:06,635] Trial 15 finished with value: 0.003425129386789253 and parameters: {'C': 3.540729653143245, 'max_iter': 461, 'solver': 'lbfgs'}. Best is trial 12 with value: 0.0020155290870005342.
+[I 2025-10-16 22:06:06,749] Trial 16 finished with value: 0.0020442470738262558 and parameters: {'C': 9.736379790688186, 'max_iter': 696, 'solver': 'lbfgs'}. Best is trial 12 with value: 0.0020155290870005342.
+[I 2025-10-16 22:06:06,876] Trial 17 finished with value: 0.002205873127392057 and parameters: {'C': 8.387701825793185, 'max_iter': 100, 'solver': 'lbfgs'}. Best is trial 12 with value: 0.0020155290870005342.
+[I 2025-10-16 22:06:07,063] Trial 18 finished with value: 0.006244552517767788 and parameters: {'C': 1.5413084625287947, 'max_iter': 717, 'solver': 'lbfgs'}. Best is trial 12 with value: 0.0020155290870005342.
+[I 2025-10-16 22:06:07,194] Trial 19 finished with value: 0.0023681846062170906 and parameters: {'C': 6.878960121680178, 'max_iter': 580, 'solver': 'lbfgs'}. Best is trial 12 with value: 0.0020155290870005342.
+[I 2025-10-16 22:06:07,330] Trial 20 finished with value: 0.0026488355251892293 and parameters: {'C': 5.613940282441345, 'max_iter': 412, 'solver': 'lbfgs'}. Best is trial 12 with value: 0.0020155290870005342.
+[I 2025-10-16 22:06:07,452] Trial 21 finished with value: 0.002039111955714552 and parameters: {'C': 9.780397644376611, 'max_iter': 718, 'solver': 'lbfgs'}. Best is trial 12 with value: 0.0020155290870005342.
+[I 2025-10-16 22:06:07,584] Trial 22 finished with value: 0.0021376167833711593 and parameters: {'C': 8.870263106288931, 'max_iter': 780, 'solver': 'lbfgs'}. Best is trial 12 with value: 0.0020155290870005342.
+[I 2025-10-16 22:06:07,713] Trial 23 finished with value: 0.0022461507865100725 and parameters: {'C': 7.344824207180659, 'max_iter': 628, 'solver': 'lbfgs'}. Best is trial 12 with value: 0.0020155290870005342.
+[I 2025-10-16 22:06:07,843] Trial 24 finished with value: 0.0020161250561595546 and parameters: {'C': 9.981661987441484, 'max_iter': 504, 'solver': 'lbfgs'}. Best is trial 12 with value: 0.0020155290870005342.
+[I 2025-10-16 22:06:07,974] Trial 25 finished with value: 0.0021427342636955657 and parameters: {'C': 8.832419780949916, 'max_iter': 504, 'solver': 'lbfgs'}. Best is trial 12 with value: 0.0020155290870005342.
+[I 2025-10-16 22:06:08,105] Trial 26 finished with value: 0.002027294336309898 and parameters: {'C': 9.882995768831817, 'max_iter': 409, 'solver': 'lbfgs'}. Best is trial 12 with value: 0.0020155290870005342.
+[I 2025-10-16 22:06:08,245] Trial 27 finished with value: 0.0021515651430453636 and parameters: {'C': 8.767771798501611, 'max_iter': 505, 'solver': 'lbfgs'}. Best is trial 12 with value: 0.0020155290870005342.
+[I 2025-10-16 22:06:08,386] Trial 28 finished with value: 0.0021567838570862486 and parameters: {'C': 7.7973780906791506, 'max_iter': 608, 'solver': 'lbfgs'}. Best is trial 12 with value: 0.0020155290870005342.
+[I 2025-10-16 22:06:08,527] Trial 29 finished with value: 0.003232258043236692 and parameters: {'C': 3.8372835930947673, 'max_iter': 347, 'solver': 'lbfgs'}. Best is trial 12 with value: 0.0020155290870005342.
+INFO:non_major_league_hyperparameter_tuning:logistic_regression optimization complete
+INFO:non_major_league_hyperparameter_tuning:Best score: 0.0020
+INFO:non_major_league_hyperparameter_tuning:Best params: {'C': 9.9869737181758, 'max_iter': 624, 'solver': 'lbfgs'}
+INFO:non_major_league_hyperparameter_tuning:Validating optimized hyperparameters
+INFO:non_major_league_hyperparameter_tuning:Hyperparameter validation: PASSED
+INFO:non_major_league_hyperparameter_tuning:Comparing optimized models
+INFO:non_major_league_hyperparameter_tuning:Best model: random_forest
+INFO:non_major_league_hyperparameter_tuning:Best score: 0.0000
+INFO:non_major_league_hyperparameter_tuning:Evaluating optimized models
+INFO:non_major_league_hyperparameter_tuning:Creating optimized models
+INFO:non_major_league_hyperparameter_tuning:Created optimized xgboost model
+INFO:non_major_league_hyperparameter_tuning:Created optimized lightgbm model
+INFO:non_major_league_hyperparameter_tuning:Created optimized random_forest model
+INFO:non_major_league_hyperparameter_tuning:Created optimized logistic_regression model
+INFO:non_major_league_hyperparameter_tuning:Calculating hyperparameter importance
+INFO:phase2_integration:Step 5: Ensemble Modeling
+INFO:phase2_integration:Creating ensemble model
+INFO:non_major_league_ensemble:Creating base models with conservative parameters
+INFO:non_major_league_ensemble:Created 4 base models
+INFO:non_major_league_ensemble:Training base models with conservative validation
+INFO:non_major_league_ensemble:Training xgboost...
+INFO:non_major_league_ensemble:xgboost - Val Acc: 1.0000, Val LogLoss: 0.0190
+INFO:non_major_league_ensemble:Training lightgbm...
+Training until validation scores don't improve for 30 rounds
+Did not meet early stopping. Best iteration is:
+[150]	valid_0's multi_logloss: 0.00772959
+INFO:non_major_league_ensemble:lightgbm - Val Acc: 1.0000, Val LogLoss: 0.0077
+INFO:non_major_league_ensemble:Training random_forest...
+INFO:non_major_league_ensemble:random_forest - Val Acc: 1.0000, Val LogLoss: 0.0463
+INFO:non_major_league_ensemble:Training logistic_regression...
+INFO:non_major_league_ensemble:logistic_regression - Val Acc: 1.0000, Val LogLoss: 0.0265
+INFO:non_major_league_ensemble:Creating conservative ensemble
+INFO:non_major_league_ensemble:Created ensemble with 4 models
+INFO:non_major_league_ensemble:Model weights: {'xgboost': 0.4001754372983308, 'lightgbm': 0.3521543981896826, 'random_forest': 0.14800154084236178, 'logistic_regression': 0.09966862366962478}
+INFO:non_major_league_ensemble:Training ensemble model
+INFO:non_major_league_ensemble:Ensemble - Val Acc: 1.0000, Val LogLoss: 0.0196
+INFO:non_major_league_ensemble:Calibrating model probabilities
+INFO:non_major_league_ensemble:Calibrated xgboost
+INFO:non_major_league_ensemble:Calibrated lightgbm
+INFO:non_major_league_ensemble:Calibrated random_forest
+INFO:non_major_league_ensemble:Calibrated logistic_regression
+ERROR:non_major_league_ensemble:Error calibrating ensemble: The 'estimator' parameter of CalibratedClassifierCV must be an object implementing 'fit' and 'predict_proba', an object implementing 'fit' and 'decision_function' or None. Got <non_major_league_ensemble.NonMajorLeagueEnsemble.calibrate_models.<locals>.EnsembleWrapper object at 0x7fba69c1da90> instead.
+INFO:non_major_league_ensemble:Cross-validating ensemble
+INFO:non_major_league_ensemble:Cross-validation fold 1/3
+INFO:non_major_league_ensemble:Training base models with conservative validation
+INFO:non_major_league_ensemble:Training xgboost...
+INFO:non_major_league_ensemble:xgboost - Val Acc: 1.0000, Val LogLoss: 0.0782
+INFO:non_major_league_ensemble:Training lightgbm...
+Training until validation scores don't improve for 30 rounds
+Did not meet early stopping. Best iteration is:
+[150]	valid_0's multi_logloss: 0.0205198
+INFO:non_major_league_ensemble:lightgbm - Val Acc: 1.0000, Val LogLoss: 0.0205
+INFO:non_major_league_ensemble:Training random_forest...
+INFO:non_major_league_ensemble:random_forest - Val Acc: 1.0000, Val LogLoss: 0.2089
+INFO:non_major_league_ensemble:Training logistic_regression...
+INFO:non_major_league_ensemble:logistic_regression - Val Acc: 1.0000, Val LogLoss: 0.1272
+INFO:non_major_league_ensemble:Creating conservative ensemble
+INFO:non_major_league_ensemble:Created ensemble with 4 models
+INFO:non_major_league_ensemble:Model weights: {'xgboost': 0.40089981922316914, 'lightgbm': 0.36131663505152317, 'random_forest': 0.14011306061104517, 'logistic_regression': 0.0976704851142626}
+INFO:non_major_league_ensemble:Fold 1 - Acc: 1.0000, LogLoss: 0.0772
+INFO:non_major_league_ensemble:Cross-validation fold 2/3
+INFO:non_major_league_ensemble:Training base models with conservative validation
+INFO:non_major_league_ensemble:Training xgboost...
+INFO:non_major_league_ensemble:xgboost - Val Acc: 1.0000, Val LogLoss: 0.0383
+INFO:non_major_league_ensemble:Training lightgbm...
+Training until validation scores don't improve for 30 rounds
+Did not meet early stopping. Best iteration is:
+[150]	valid_0's multi_logloss: 0.0122501
+INFO:non_major_league_ensemble:lightgbm - Val Acc: 1.0000, Val LogLoss: 0.0123
+INFO:non_major_league_ensemble:Training random_forest...
+INFO:non_major_league_ensemble:random_forest - Val Acc: 1.0000, Val LogLoss: 0.0896
+INFO:non_major_league_ensemble:Training logistic_regression...
+INFO:non_major_league_ensemble:logistic_regression - Val Acc: 1.0000, Val LogLoss: 0.0544
+INFO:non_major_league_ensemble:Creating conservative ensemble
+INFO:non_major_league_ensemble:Created ensemble with 4 models
+INFO:non_major_league_ensemble:Model weights: {'xgboost': 0.4000386990961013, 'lightgbm': 0.35468407869256435, 'random_forest': 0.1460899493348922, 'logistic_regression': 0.09918727287644212}
+INFO:non_major_league_ensemble:Fold 2 - Acc: 1.0000, LogLoss: 0.0375
+INFO:non_major_league_ensemble:Cross-validation fold 3/3
+INFO:non_major_league_ensemble:Training base models with conservative validation
+INFO:non_major_league_ensemble:Training xgboost...
+INFO:non_major_league_ensemble:xgboost - Val Acc: 1.0000, Val LogLoss: 0.0259
+INFO:non_major_league_ensemble:Training lightgbm...
+Training until validation scores don't improve for 30 rounds
+Did not meet early stopping. Best iteration is:
+[150]	valid_0's multi_logloss: 0.00925354
+INFO:non_major_league_ensemble:lightgbm - Val Acc: 1.0000, Val LogLoss: 0.0093
+INFO:non_major_league_ensemble:Training random_forest...
+INFO:non_major_league_ensemble:random_forest - Val Acc: 1.0000, Val LogLoss: 0.0580
+INFO:non_major_league_ensemble:Training logistic_regression...
+INFO:non_major_league_ensemble:logistic_regression - Val Acc: 1.0000, Val LogLoss: 0.0359
+INFO:non_major_league_ensemble:Creating conservative ensemble
+INFO:non_major_league_ensemble:Created ensemble with 4 models
+INFO:non_major_league_ensemble:Model weights: {'xgboost': 0.39999541800813954, 'lightgbm': 0.352952990231923, 'random_forest': 0.14756013968577755, 'logistic_regression': 0.09949145207415994}
+INFO:non_major_league_ensemble:Fold 3 - Acc: 1.0000, LogLoss: 0.0255
+INFO:non_major_league_ensemble:CV Summary - Mean Acc: 1.0000 ± 0.0000
+INFO:non_major_league_ensemble:CV Summary - Mean LogLoss: 0.0467 ± 0.0221
+INFO:non_major_league_ensemble:Evaluating ensemble performance
+INFO:non_major_league_ensemble:Ensemble Evaluation - Acc: 1.0000, LogLoss: 0.0243
+INFO:non_major_league_ensemble:Mean Confidence: 0.9760
+INFO:non_major_league_ensemble:Making predictions with confidence filtering
+INFO:non_major_league_ensemble:High confidence predictions: 154/154
+INFO:non_major_league_ensemble:Calculating ensemble feature importance
+INFO:non_major_league_ensemble:Estimating prediction uncertainty
+INFO:non_major_league_ensemble:Uncertainty estimation complete
+INFO:phase2_integration:Step 6: Model Validation
+INFO:phase2_integration:Validating models
+INFO:non_major_league_model_validation:Performing comprehensive model validation
+INFO:non_major_league_model_validation:Performing time series cross-validation
+INFO:non_major_league_model_validation:Time series CV fold 1/3
+INFO:non_major_league_model_validation:Fold 1 - Val Acc: 1.0000, Overfitting: 0.0000
+INFO:non_major_league_model_validation:Time series CV fold 2/3
+INFO:non_major_league_model_validation:Fold 2 - Val Acc: 1.0000, Overfitting: 0.0000
+INFO:non_major_league_model_validation:Time series CV fold 3/3
+INFO:non_major_league_model_validation:Fold 3 - Val Acc: 1.0000, Overfitting: 0.0000
+INFO:non_major_league_model_validation:Time series CV complete: 3 successful folds
+INFO:non_major_league_model_validation:Performing walk-forward validation
+INFO:non_major_league_model_validation:Walk-forward CV fold 1/3
+INFO:non_major_league_model_validation:Fold 1 - Val Acc: 1.0000
+INFO:non_major_league_model_validation:Walk-forward CV fold 2/3
+INFO:non_major_league_model_validation:Fold 2 - Val Acc: 1.0000
+INFO:non_major_league_model_validation:Walk-forward CV fold 3/3
+INFO:non_major_league_model_validation:Fold 3 - Val Acc: 1.0000
+INFO:non_major_league_model_validation:Walk-forward CV complete: 3 successful folds
+INFO:non_major_league_model_validation:Performing bootstrap validation
+INFO:non_major_league_model_validation:Bootstrap 1/50
+INFO:non_major_league_model_validation:Bootstrap 2/50
+INFO:non_major_league_model_validation:Bootstrap 3/50
+INFO:non_major_league_model_validation:Bootstrap 4/50
+INFO:non_major_league_model_validation:Bootstrap 5/50
+INFO:non_major_league_model_validation:Bootstrap 6/50
+INFO:non_major_league_model_validation:Bootstrap 7/50
+INFO:non_major_league_model_validation:Bootstrap 8/50
+INFO:non_major_league_model_validation:Bootstrap 9/50
+INFO:non_major_league_model_validation:Bootstrap 10/50
+INFO:non_major_league_model_validation:Bootstrap 11/50
+INFO:non_major_league_model_validation:Bootstrap 12/50
+INFO:non_major_league_model_validation:Bootstrap 13/50
+INFO:non_major_league_model_validation:Bootstrap 14/50
+INFO:non_major_league_model_validation:Bootstrap 15/50
+INFO:non_major_league_model_validation:Bootstrap 16/50
+INFO:non_major_league_model_validation:Bootstrap 17/50
+INFO:non_major_league_model_validation:Bootstrap 18/50
+INFO:non_major_league_model_validation:Bootstrap 19/50
+INFO:non_major_league_model_validation:Bootstrap 20/50
+INFO:non_major_league_model_validation:Bootstrap 21/50
+INFO:non_major_league_model_validation:Bootstrap 22/50
+INFO:non_major_league_model_validation:Bootstrap 23/50
+INFO:non_major_league_model_validation:Bootstrap 24/50
+INFO:non_major_league_model_validation:Bootstrap 25/50
+INFO:non_major_league_model_validation:Bootstrap 26/50
+INFO:non_major_league_model_validation:Bootstrap 27/50
+INFO:non_major_league_model_validation:Bootstrap 28/50
+INFO:non_major_league_model_validation:Bootstrap 29/50
+INFO:non_major_league_model_validation:Bootstrap 30/50
+INFO:non_major_league_model_validation:Bootstrap 31/50
+INFO:non_major_league_model_validation:Bootstrap 32/50
+INFO:non_major_league_model_validation:Bootstrap 33/50
+INFO:non_major_league_model_validation:Bootstrap 34/50
+INFO:non_major_league_model_validation:Bootstrap 35/50
+INFO:non_major_league_model_validation:Bootstrap 36/50
+INFO:non_major_league_model_validation:Bootstrap 37/50
+INFO:non_major_league_model_validation:Bootstrap 38/50
+INFO:non_major_league_model_validation:Bootstrap 39/50
+INFO:non_major_league_model_validation:Bootstrap 40/50
+INFO:non_major_league_model_validation:Bootstrap 41/50
+INFO:non_major_league_model_validation:Bootstrap 42/50
+INFO:non_major_league_model_validation:Bootstrap 43/50
+INFO:non_major_league_model_validation:Bootstrap 44/50
+INFO:non_major_league_model_validation:Bootstrap 45/50
+INFO:non_major_league_model_validation:Bootstrap 46/50
+INFO:non_major_league_model_validation:Bootstrap 47/50
+INFO:non_major_league_model_validation:Bootstrap 48/50
+INFO:non_major_league_model_validation:Bootstrap 49/50
+INFO:non_major_league_model_validation:Bootstrap 50/50
+INFO:non_major_league_model_validation:Bootstrap validation complete: 50 successful bootstraps
+INFO:non_major_league_model_validation:Validating model calibration
+INFO:non_major_league_model_validation:Model calibration validation complete
+INFO:non_major_league_model_validation:Detecting overfitting
+INFO:non_major_league_model_validation:Overfitting detection: NOT DETECTED
+INFO:non_major_league_model_validation:Analyzing model stability
+INFO:non_major_league_model_validation:Stability analysis: STABLE
+INFO:non_major_league_model_validation:Comprehensive validation complete
+INFO:phase2_integration:Step 7: Final Integration
+INFO:phase2_integration:Integrating Phase 2 results
+INFO:phase2_integration:Step 8: Saving Results
+INFO:phase2_integration:Saving results for E1
+INFO:non_major_league_model_architecture:Saving models to ./models/E1_model_architecture.pkl
+INFO:non_major_league_model_architecture:Models saved successfully
+INFO:non_major_league_ensemble:Saving ensemble to ./models/E1_ensemble.pkl
+INFO:non_major_league_ensemble:Ensemble saved successfully
+INFO:non_major_league_hyperparameter_tuning:Saving hyperparameter tuning results to ./models/E1_hyperparameter_tuning.pkl
+INFO:non_major_league_hyperparameter_tuning:Hyperparameter tuning results saved successfully
+INFO:non_major_league_model_validation:Saving validation results to ./models/E1_validation_results.pkl
+INFO:non_major_league_model_validation:Validation results saved successfully
+INFO:phase2_integration:Phase 2 results saved successfully
+INFO:phase2_integration:Phase 2 pipeline completed successfully
+INFO:master_pipeline:Phase 2 completed successfully in 2632.24 seconds
+INFO:__main__:✅ Phase 2 completed
+INFO:__main__:
+📈 STEP 5: Phase 3 - Backtesting
+INFO:master_pipeline:================================================================================
+INFO:master_pipeline:STARTING PHASE 3: BACKTESTING & STRATEGY VALIDATION
+INFO:master_pipeline:================================================================================
+INFO:phase3_integration:Output directory: ./results
+INFO:phase3_integration:Starting Phase 3 pipeline for E1
+INFO:phase3_integration:Step 1: Loading and preparing data
+INFO:phase3_integration:Loading data from ./data/E1_features.csv
+INFO:phase3_integration:Loaded 767 records with 259 features
+INFO:phase3_integration:Step 2: Comprehensive Backtesting
+INFO:phase3_integration:Running comprehensive backtesting
+INFO:non_major_league_backtesting:Running walk-forward backtesting
+INFO:non_major_league_backtesting:Preparing backtest data
+INFO:non_major_league_backtesting:Prepared 767 records for backtesting
+INFO:non_major_league_backtesting:Bet 1: loss, Profit: -1.00, Capital: 999.00
+INFO:non_major_league_backtesting:Bet 2: loss, Profit: -1.00, Capital: 998.00
+INFO:non_major_league_backtesting:Bet 3: win, Profit: 1.57, Capital: 999.57
+INFO:non_major_league_backtesting:Bet 4: win, Profit: 3.29, Capital: 1002.86
+INFO:non_major_league_backtesting:Bet 5: loss, Profit: -1.00, Capital: 1001.86
+INFO:non_major_league_backtesting:Bet 6: win, Profit: 2.98, Capital: 1004.84
+INFO:non_major_league_backtesting:Bet 7: loss, Profit: -1.00, Capital: 1003.84
+INFO:non_major_league_backtesting:Bet 8: loss, Profit: -1.00, Capital: 1002.84
+INFO:non_major_league_backtesting:Bet 9: loss, Profit: -1.00, Capital: 1001.84
+INFO:non_major_league_backtesting:Bet 10: win, Profit: 1.91, Capital: 1003.75
+INFO:non_major_league_backtesting:Bet 11: loss, Profit: -1.00, Capital: 1002.75
+INFO:non_major_league_backtesting:Bet 12: loss, Profit: -1.00, Capital: 1001.75
+INFO:non_major_league_backtesting:Bet 13: loss, Profit: -1.00, Capital: 1000.75
+INFO:non_major_league_backtesting:Bet 14: loss, Profit: -1.00, Capital: 999.75
+INFO:non_major_league_backtesting:Bet 15: loss, Profit: -1.00, Capital: 998.75
+INFO:non_major_league_backtesting:Bet 16: loss, Profit: -1.00, Capital: 997.75
+INFO:non_major_league_backtesting:Bet 17: loss, Profit: -1.00, Capital: 996.75
+INFO:non_major_league_backtesting:Bet 18: loss, Profit: -1.00, Capital: 995.75
+INFO:non_major_league_backtesting:Bet 19: loss, Profit: -1.00, Capital: 994.75
+INFO:non_major_league_backtesting:Bet 20: win, Profit: 1.90, Capital: 996.64
+INFO:non_major_league_backtesting:Bet 21: win, Profit: 0.95, Capital: 997.59
+INFO:non_major_league_backtesting:Bet 22: loss, Profit: -1.00, Capital: 996.59
+INFO:non_major_league_backtesting:Bet 23: loss, Profit: -1.00, Capital: 995.59
+INFO:non_major_league_backtesting:Bet 24: loss, Profit: -1.00, Capital: 994.59
+INFO:non_major_league_backtesting:Bet 25: loss, Profit: -1.00, Capital: 993.59
+INFO:non_major_league_backtesting:Bet 26: loss, Profit: -1.00, Capital: 992.59
+INFO:non_major_league_backtesting:Bet 27: loss, Profit: -1.00, Capital: 991.59
+INFO:non_major_league_backtesting:Bet 28: win, Profit: 3.57, Capital: 995.16
+INFO:non_major_league_backtesting:Bet 29: win, Profit: 2.67, Capital: 997.83
+INFO:non_major_league_backtesting:Bet 30: loss, Profit: -1.00, Capital: 996.83
+INFO:non_major_league_backtesting:Bet 31: loss, Profit: -1.00, Capital: 995.83
+INFO:non_major_league_backtesting:Bet 32: loss, Profit: -1.00, Capital: 994.83
+INFO:non_major_league_backtesting:Bet 33: loss, Profit: -1.00, Capital: 993.83
+INFO:non_major_league_backtesting:Bet 34: loss, Profit: -1.00, Capital: 992.83
+INFO:non_major_league_backtesting:Bet 35: loss, Profit: -1.00, Capital: 991.83
+INFO:non_major_league_backtesting:Bet 36: loss, Profit: -1.00, Capital: 990.83
+INFO:non_major_league_backtesting:Bet 37: loss, Profit: -1.00, Capital: 989.83
+INFO:non_major_league_backtesting:Bet 38: win, Profit: 3.92, Capital: 993.75
+INFO:non_major_league_backtesting:Bet 39: loss, Profit: -1.00, Capital: 992.75
+INFO:non_major_league_backtesting:Bet 40: win, Profit: 1.89, Capital: 994.65
+INFO:non_major_league_backtesting:Bet 41: loss, Profit: -1.00, Capital: 993.65
+INFO:non_major_league_backtesting:Bet 42: loss, Profit: -1.00, Capital: 992.65
+INFO:non_major_league_backtesting:Bet 43: loss, Profit: -1.00, Capital: 991.65
+INFO:non_major_league_backtesting:Bet 44: loss, Profit: -1.00, Capital: 990.65
+INFO:non_major_league_backtesting:Bet 45: loss, Profit: -1.00, Capital: 989.65
+INFO:non_major_league_backtesting:Bet 46: win, Profit: 1.58, Capital: 991.22
+INFO:non_major_league_backtesting:Bet 47: win, Profit: 1.87, Capital: 993.10
+INFO:non_major_league_backtesting:Bet 48: loss, Profit: -1.00, Capital: 992.10
+INFO:non_major_league_backtesting:Bet 49: loss, Profit: -1.00, Capital: 991.10
+INFO:non_major_league_backtesting:Bet 50: loss, Profit: -1.00, Capital: 990.10
+INFO:non_major_league_backtesting:Bet 51: loss, Profit: -1.00, Capital: 989.10
+INFO:non_major_league_backtesting:Bet 52: win, Profit: 1.19, Capital: 990.29
+INFO:non_major_league_backtesting:Bet 53: win, Profit: 2.32, Capital: 992.61
+INFO:non_major_league_backtesting:Bet 54: win, Profit: 1.45, Capital: 994.05
+INFO:non_major_league_backtesting:Bet 55: loss, Profit: -1.00, Capital: 993.05
+INFO:non_major_league_backtesting:Bet 56: loss, Profit: -1.00, Capital: 992.05
+INFO:non_major_league_backtesting:Bet 57: win, Profit: 1.20, Capital: 993.25
+INFO:non_major_league_backtesting:Bet 58: loss, Profit: -1.00, Capital: 992.25
+INFO:non_major_league_backtesting:Bet 59: loss, Profit: -1.00, Capital: 991.25
+INFO:non_major_league_backtesting:Bet 60: win, Profit: 1.54, Capital: 992.79
+INFO:non_major_league_backtesting:Bet 61: loss, Profit: -1.00, Capital: 991.79
+INFO:non_major_league_backtesting:Bet 62: win, Profit: 0.59, Capital: 992.37
+INFO:non_major_league_backtesting:Bet 63: loss, Profit: -1.00, Capital: 991.37
+INFO:non_major_league_backtesting:Bet 64: win, Profit: 2.53, Capital: 993.91
+INFO:non_major_league_backtesting:Bet 65: loss, Profit: -1.00, Capital: 992.91
+INFO:non_major_league_backtesting:Bet 66: loss, Profit: -1.00, Capital: 991.91
+INFO:non_major_league_backtesting:Bet 67: loss, Profit: -1.00, Capital: 990.91
+INFO:non_major_league_backtesting:Bet 68: loss, Profit: -1.00, Capital: 989.91
+INFO:non_major_league_backtesting:Bet 69: loss, Profit: -1.00, Capital: 988.91
+INFO:non_major_league_backtesting:Bet 70: loss, Profit: -1.00, Capital: 987.91
+INFO:non_major_league_backtesting:Bet 71: loss, Profit: -1.00, Capital: 986.91
+INFO:non_major_league_backtesting:Bet 72: win, Profit: 2.19, Capital: 989.09
+INFO:non_major_league_backtesting:Bet 73: loss, Profit: -1.00, Capital: 988.09
+INFO:non_major_league_backtesting:Bet 74: win, Profit: 1.65, Capital: 989.74
+INFO:non_major_league_backtesting:Bet 75: loss, Profit: -1.00, Capital: 988.74
+INFO:non_major_league_backtesting:Bet 76: loss, Profit: -1.00, Capital: 987.74
+INFO:non_major_league_backtesting:Bet 77: loss, Profit: -1.00, Capital: 986.74
+INFO:non_major_league_backtesting:Bet 78: win, Profit: 1.48, Capital: 988.23
+INFO:non_major_league_backtesting:Bet 79: loss, Profit: -1.00, Capital: 987.23
+INFO:non_major_league_backtesting:Bet 80: win, Profit: 2.75, Capital: 989.98
+INFO:non_major_league_backtesting:Bet 81: loss, Profit: -1.00, Capital: 988.98
+INFO:non_major_league_backtesting:Bet 82: loss, Profit: -1.00, Capital: 987.98
+INFO:non_major_league_backtesting:Bet 83: loss, Profit: -1.00, Capital: 986.98
+INFO:non_major_league_backtesting:Bet 84: loss, Profit: -1.00, Capital: 985.98
+INFO:non_major_league_backtesting:Bet 85: loss, Profit: -1.00, Capital: 984.98
+INFO:non_major_league_backtesting:Bet 86: loss, Profit: -1.00, Capital: 983.98
+INFO:non_major_league_backtesting:Bet 87: win, Profit: 3.08, Capital: 987.06
+INFO:non_major_league_backtesting:Bet 88: loss, Profit: -1.00, Capital: 986.06
+INFO:non_major_league_backtesting:Bet 89: loss, Profit: -1.00, Capital: 985.06
+INFO:non_major_league_backtesting:Bet 90: win, Profit: 2.96, Capital: 988.02
+INFO:non_major_league_backtesting:Bet 91: loss, Profit: -1.00, Capital: 987.02
+INFO:non_major_league_backtesting:Bet 92: win, Profit: 2.92, Capital: 989.94
+INFO:non_major_league_backtesting:Bet 93: loss, Profit: -1.00, Capital: 988.94
+INFO:non_major_league_backtesting:Bet 94: win, Profit: 3.07, Capital: 992.00
+INFO:non_major_league_backtesting:Bet 95: loss, Profit: -1.00, Capital: 991.00
+INFO:non_major_league_backtesting:Bet 96: win, Profit: 1.86, Capital: 992.87
+INFO:non_major_league_backtesting:Bet 97: loss, Profit: -1.00, Capital: 991.87
+INFO:non_major_league_backtesting:Bet 98: loss, Profit: -1.00, Capital: 990.87
+INFO:non_major_league_backtesting:Bet 99: loss, Profit: -1.00, Capital: 989.87
+INFO:non_major_league_backtesting:Bet 100: loss, Profit: -1.00, Capital: 988.87
+INFO:non_major_league_backtesting:Bet 101: loss, Profit: -1.00, Capital: 987.87
+INFO:non_major_league_backtesting:Bet 102: loss, Profit: -1.00, Capital: 986.87
+INFO:non_major_league_backtesting:Bet 103: loss, Profit: -1.00, Capital: 985.87
+INFO:non_major_league_backtesting:Bet 104: loss, Profit: -1.00, Capital: 984.87
+INFO:non_major_league_backtesting:Bet 105: loss, Profit: -1.00, Capital: 983.87
+INFO:non_major_league_backtesting:Bet 106: win, Profit: 1.89, Capital: 985.76
+INFO:non_major_league_backtesting:Bet 107: loss, Profit: -1.00, Capital: 984.76
+INFO:non_major_league_backtesting:Bet 108: loss, Profit: -1.00, Capital: 983.76
+INFO:non_major_league_backtesting:Bet 109: loss, Profit: -1.00, Capital: 982.76
+INFO:non_major_league_backtesting:Bet 110: loss, Profit: -1.00, Capital: 981.76
+INFO:non_major_league_backtesting:Bet 111: loss, Profit: -1.00, Capital: 980.76
+INFO:non_major_league_backtesting:Bet 112: win, Profit: 2.23, Capital: 982.98
+INFO:non_major_league_backtesting:Bet 113: loss, Profit: -1.00, Capital: 981.98
+INFO:non_major_league_backtesting:Bet 114: loss, Profit: -1.00, Capital: 980.98
+INFO:non_major_league_backtesting:Bet 115: win, Profit: 0.96, Capital: 981.95
+INFO:non_major_league_backtesting:Bet 116: loss, Profit: -1.00, Capital: 980.95
+INFO:non_major_league_backtesting:Bet 117: loss, Profit: -1.00, Capital: 979.95
+INFO:non_major_league_backtesting:Bet 118: loss, Profit: -1.00, Capital: 978.95
+INFO:non_major_league_backtesting:Bet 119: loss, Profit: -1.00, Capital: 977.95
+INFO:non_major_league_backtesting:Bet 120: loss, Profit: -1.00, Capital: 976.95
+INFO:non_major_league_backtesting:Bet 121: loss, Profit: -1.00, Capital: 975.95
+INFO:non_major_league_backtesting:Bet 122: loss, Profit: -1.00, Capital: 974.95
+INFO:non_major_league_backtesting:Bet 123: win, Profit: 2.70, Capital: 977.64
+INFO:non_major_league_backtesting:Bet 124: loss, Profit: -1.00, Capital: 976.64
+INFO:non_major_league_backtesting:Bet 125: win, Profit: 1.39, Capital: 978.04
+INFO:non_major_league_backtesting:Bet 126: win, Profit: 3.49, Capital: 981.53
+INFO:non_major_league_backtesting:Bet 127: win, Profit: 1.85, Capital: 983.38
+INFO:non_major_league_backtesting:Bet 128: loss, Profit: -1.00, Capital: 982.38
+INFO:non_major_league_backtesting:Bet 129: loss, Profit: -1.00, Capital: 981.38
+INFO:non_major_league_backtesting:Bet 130: loss, Profit: -1.00, Capital: 980.38
+INFO:non_major_league_backtesting:Bet 131: loss, Profit: -1.00, Capital: 979.38
+INFO:non_major_league_backtesting:Bet 132: win, Profit: 2.96, Capital: 982.34
+INFO:non_major_league_backtesting:Bet 133: win, Profit: 0.57, Capital: 982.91
+INFO:non_major_league_backtesting:Bet 134: win, Profit: 1.77, Capital: 984.69
+INFO:non_major_league_backtesting:Bet 135: loss, Profit: -1.00, Capital: 983.69
+INFO:non_major_league_backtesting:Bet 136: win, Profit: 3.91, Capital: 987.59
+INFO:non_major_league_backtesting:Bet 137: loss, Profit: -1.00, Capital: 986.59
+INFO:non_major_league_backtesting:Bet 138: loss, Profit: -1.00, Capital: 985.59
+INFO:non_major_league_backtesting:Bet 139: loss, Profit: -1.00, Capital: 984.59
+INFO:non_major_league_backtesting:Bet 140: loss, Profit: -1.00, Capital: 983.59
+INFO:non_major_league_backtesting:Bet 141: loss, Profit: -1.00, Capital: 982.59
+INFO:non_major_league_backtesting:Bet 142: win, Profit: 3.92, Capital: 986.52
+INFO:non_major_league_backtesting:Bet 143: win, Profit: 3.33, Capital: 989.85
+INFO:non_major_league_backtesting:Bet 144: win, Profit: 3.76, Capital: 993.61
+INFO:non_major_league_backtesting:Bet 145: win, Profit: 2.03, Capital: 995.64
+INFO:non_major_league_backtesting:Bet 146: win, Profit: 1.80, Capital: 997.44
+INFO:non_major_league_backtesting:Bet 147: loss, Profit: -1.00, Capital: 996.44
+INFO:non_major_league_backtesting:Bet 148: win, Profit: 2.31, Capital: 998.75
+INFO:non_major_league_backtesting:Bet 149: loss, Profit: -1.00, Capital: 997.75
+INFO:non_major_league_backtesting:Bet 150: win, Profit: 0.59, Capital: 998.35
+INFO:non_major_league_backtesting:Bet 151: win, Profit: 2.51, Capital: 1000.86
+INFO:non_major_league_backtesting:Bet 152: loss, Profit: -1.00, Capital: 999.86
+INFO:non_major_league_backtesting:Bet 153: loss, Profit: -1.00, Capital: 998.86
+INFO:non_major_league_backtesting:Bet 154: win, Profit: 2.19, Capital: 1001.04
+INFO:non_major_league_backtesting:Bet 155: loss, Profit: -1.00, Capital: 1000.04
+INFO:non_major_league_backtesting:Bet 156: loss, Profit: -1.00, Capital: 999.04
+INFO:non_major_league_backtesting:Bet 157: loss, Profit: -1.00, Capital: 998.04
+INFO:non_major_league_backtesting:Bet 158: win, Profit: 0.70, Capital: 998.75
+INFO:non_major_league_backtesting:Bet 159: win, Profit: 2.18, Capital: 1000.92
+INFO:non_major_league_backtesting:Bet 160: win, Profit: 3.71, Capital: 1004.63
+INFO:non_major_league_backtesting:Bet 161: win, Profit: 3.51, Capital: 1008.14
+INFO:non_major_league_backtesting:Bet 162: loss, Profit: -1.00, Capital: 1007.14
+INFO:non_major_league_backtesting:Bet 163: loss, Profit: -1.00, Capital: 1006.14
+INFO:non_major_league_backtesting:Bet 164: loss, Profit: -1.00, Capital: 1005.14
+INFO:non_major_league_backtesting:Bet 165: win, Profit: 2.71, Capital: 1007.85
+INFO:non_major_league_backtesting:Bet 166: win, Profit: 2.96, Capital: 1010.81
+INFO:non_major_league_backtesting:Bet 167: win, Profit: 1.78, Capital: 1012.59
+INFO:non_major_league_backtesting:Bet 168: loss, Profit: -1.00, Capital: 1011.59
+INFO:non_major_league_backtesting:Bet 169: loss, Profit: -1.00, Capital: 1010.59
+INFO:non_major_league_backtesting:Bet 170: win, Profit: 1.16, Capital: 1011.75
+INFO:non_major_league_backtesting:Bet 171: loss, Profit: -1.00, Capital: 1010.75
+INFO:non_major_league_backtesting:Bet 172: win, Profit: 2.10, Capital: 1012.85
+INFO:non_major_league_backtesting:Bet 173: loss, Profit: -1.00, Capital: 1011.85
+INFO:non_major_league_backtesting:Bet 174: win, Profit: 3.59, Capital: 1015.44
+INFO:non_major_league_backtesting:Bet 175: loss, Profit: -1.00, Capital: 1014.44
+INFO:non_major_league_backtesting:Bet 176: loss, Profit: -1.00, Capital: 1013.44
+INFO:non_major_league_backtesting:Bet 177: win, Profit: 2.58, Capital: 1016.02
+INFO:non_major_league_backtesting:Bet 178: loss, Profit: -1.00, Capital: 1015.02
+INFO:non_major_league_backtesting:Bet 179: loss, Profit: -1.00, Capital: 1014.02
+INFO:non_major_league_backtesting:Bet 180: loss, Profit: -1.00, Capital: 1013.02
+INFO:non_major_league_backtesting:Bet 181: win, Profit: 1.78, Capital: 1014.80
+INFO:non_major_league_backtesting:Bet 182: loss, Profit: -1.00, Capital: 1013.80
+INFO:non_major_league_backtesting:Bet 183: loss, Profit: -1.00, Capital: 1012.80
+INFO:non_major_league_backtesting:Bet 184: loss, Profit: -1.00, Capital: 1011.80
+INFO:non_major_league_backtesting:Bet 185: loss, Profit: -1.00, Capital: 1010.80
+INFO:non_major_league_backtesting:Bet 186: loss, Profit: -1.00, Capital: 1009.80
+INFO:non_major_league_backtesting:Bet 187: loss, Profit: -1.00, Capital: 1008.80
+INFO:non_major_league_backtesting:Bet 188: loss, Profit: -1.00, Capital: 1007.80
+INFO:non_major_league_backtesting:Bet 189: loss, Profit: -1.00, Capital: 1006.80
+INFO:non_major_league_backtesting:Bet 190: win, Profit: 3.40, Capital: 1010.20
+INFO:non_major_league_backtesting:Bet 191: win, Profit: 1.45, Capital: 1011.65
+INFO:non_major_league_backtesting:Bet 192: win, Profit: 2.16, Capital: 1013.81
+INFO:non_major_league_backtesting:Bet 193: loss, Profit: -1.00, Capital: 1012.81
+INFO:non_major_league_backtesting:Bet 194: loss, Profit: -1.00, Capital: 1011.81
+INFO:non_major_league_backtesting:Bet 195: win, Profit: 2.24, Capital: 1014.05
+INFO:non_major_league_backtesting:Bet 196: win, Profit: 2.36, Capital: 1016.40
+INFO:non_major_league_backtesting:Bet 197: win, Profit: 0.57, Capital: 1016.98
+INFO:non_major_league_backtesting:Bet 198: win, Profit: 1.37, Capital: 1018.35
+INFO:non_major_league_backtesting:Bet 199: loss, Profit: -1.00, Capital: 1017.35
+INFO:non_major_league_backtesting:Bet 200: loss, Profit: -1.00, Capital: 1016.35
+INFO:non_major_league_backtesting:Bet 201: win, Profit: 3.88, Capital: 1020.23
+INFO:non_major_league_backtesting:Bet 202: win, Profit: 2.62, Capital: 1022.85
+INFO:non_major_league_backtesting:Bet 203: loss, Profit: -1.00, Capital: 1021.85
+INFO:non_major_league_backtesting:Bet 204: win, Profit: 1.82, Capital: 1023.67
+INFO:non_major_league_backtesting:Bet 205: loss, Profit: -1.00, Capital: 1022.67
+INFO:non_major_league_backtesting:Bet 206: loss, Profit: -1.00, Capital: 1021.67
+INFO:non_major_league_backtesting:Bet 207: win, Profit: 1.97, Capital: 1023.64
+INFO:non_major_league_backtesting:Bet 208: loss, Profit: -1.00, Capital: 1022.64
+INFO:non_major_league_backtesting:Bet 209: win, Profit: 2.50, Capital: 1025.14
+INFO:non_major_league_backtesting:Bet 210: loss, Profit: -1.00, Capital: 1024.14
+INFO:non_major_league_backtesting:Bet 211: loss, Profit: -1.00, Capital: 1023.14
+INFO:non_major_league_backtesting:Bet 212: loss, Profit: -1.00, Capital: 1022.14
+INFO:non_major_league_backtesting:Bet 213: loss, Profit: -1.00, Capital: 1021.14
+INFO:non_major_league_backtesting:Bet 214: loss, Profit: -1.00, Capital: 1020.14
+INFO:non_major_league_backtesting:Bet 215: loss, Profit: -1.00, Capital: 1019.14
+INFO:non_major_league_backtesting:Bet 216: loss, Profit: -1.00, Capital: 1018.14
+INFO:non_major_league_backtesting:Bet 217: loss, Profit: -1.00, Capital: 1017.14
+INFO:non_major_league_backtesting:Bet 218: loss, Profit: -1.00, Capital: 1016.14
+INFO:non_major_league_backtesting:Bet 219: win, Profit: 3.79, Capital: 1019.93
+INFO:non_major_league_backtesting:Bet 220: loss, Profit: -1.00, Capital: 1018.93
+INFO:non_major_league_backtesting:Bet 221: loss, Profit: -1.00, Capital: 1017.93
+INFO:non_major_league_backtesting:Bet 222: loss, Profit: -1.00, Capital: 1016.93
+INFO:non_major_league_backtesting:Bet 223: loss, Profit: -1.00, Capital: 1015.93
+INFO:non_major_league_backtesting:Bet 224: loss, Profit: -1.00, Capital: 1014.93
+INFO:non_major_league_backtesting:Bet 225: loss, Profit: -1.00, Capital: 1013.93
+INFO:non_major_league_backtesting:Bet 226: win, Profit: 1.77, Capital: 1015.69
+INFO:non_major_league_backtesting:Bet 227: loss, Profit: -1.00, Capital: 1014.69
+INFO:non_major_league_backtesting:Bet 228: loss, Profit: -1.00, Capital: 1013.69
+INFO:non_major_league_backtesting:Bet 229: loss, Profit: -1.00, Capital: 1012.69
+INFO:non_major_league_backtesting:Bet 230: loss, Profit: -1.00, Capital: 1011.69
+INFO:non_major_league_backtesting:Bet 231: win, Profit: 3.87, Capital: 1015.56
+INFO:non_major_league_backtesting:Bet 232: loss, Profit: -1.00, Capital: 1014.56
+INFO:non_major_league_backtesting:Bet 233: win, Profit: 1.65, Capital: 1016.22
+INFO:non_major_league_backtesting:Bet 234: win, Profit: 1.13, Capital: 1017.35
+INFO:non_major_league_backtesting:Bet 235: win, Profit: 1.00, Capital: 1018.35
+INFO:non_major_league_backtesting:Bet 236: win, Profit: 0.52, Capital: 1018.87
+INFO:non_major_league_backtesting:Bet 237: loss, Profit: -1.00, Capital: 1017.87
+INFO:non_major_league_backtesting:Bet 238: loss, Profit: -1.00, Capital: 1016.87
+INFO:non_major_league_backtesting:Bet 239: loss, Profit: -1.00, Capital: 1015.87
+INFO:non_major_league_backtesting:Bet 240: loss, Profit: -1.00, Capital: 1014.87
+INFO:non_major_league_backtesting:Bet 241: loss, Profit: -1.00, Capital: 1013.87
+INFO:non_major_league_backtesting:Bet 242: loss, Profit: -1.00, Capital: 1012.87
+INFO:non_major_league_backtesting:Bet 243: win, Profit: 2.34, Capital: 1015.22
+INFO:non_major_league_backtesting:Bet 244: loss, Profit: -1.00, Capital: 1014.22
+INFO:non_major_league_backtesting:Bet 245: loss, Profit: -1.00, Capital: 1013.22
+INFO:non_major_league_backtesting:Bet 246: loss, Profit: -1.00, Capital: 1012.22
+INFO:non_major_league_backtesting:Bet 247: loss, Profit: -1.00, Capital: 1011.22
+INFO:non_major_league_backtesting:Bet 248: loss, Profit: -1.00, Capital: 1010.22
+INFO:non_major_league_backtesting:Bet 249: win, Profit: 2.46, Capital: 1012.67
+INFO:non_major_league_backtesting:Bet 250: loss, Profit: -1.00, Capital: 1011.67
+INFO:non_major_league_backtesting:Bet 251: loss, Profit: -1.00, Capital: 1010.67
+INFO:non_major_league_backtesting:Bet 252: loss, Profit: -1.00, Capital: 1009.67
+INFO:non_major_league_backtesting:Bet 253: loss, Profit: -1.00, Capital: 1008.67
+INFO:non_major_league_backtesting:Bet 254: loss, Profit: -1.00, Capital: 1007.67
+INFO:non_major_league_backtesting:Bet 255: loss, Profit: -1.00, Capital: 1006.67
+INFO:non_major_league_backtesting:Bet 256: win, Profit: 2.75, Capital: 1009.42
+INFO:non_major_league_backtesting:Bet 257: loss, Profit: -1.00, Capital: 1008.42
+INFO:non_major_league_backtesting:Bet 258: win, Profit: 2.24, Capital: 1010.66
+INFO:non_major_league_backtesting:Bet 259: loss, Profit: -1.00, Capital: 1009.66
+INFO:non_major_league_backtesting:Bet 260: loss, Profit: -1.00, Capital: 1008.66
+INFO:non_major_league_backtesting:Bet 261: win, Profit: 1.20, Capital: 1009.87
+INFO:non_major_league_backtesting:Bet 262: win, Profit: 3.02, Capital: 1012.89
+INFO:non_major_league_backtesting:Bet 263: loss, Profit: -1.00, Capital: 1011.89
+INFO:non_major_league_backtesting:Bet 264: loss, Profit: -1.00, Capital: 1010.89
+INFO:non_major_league_backtesting:Bet 265: loss, Profit: -1.00, Capital: 1009.89
+INFO:non_major_league_backtesting:Bet 266: loss, Profit: -1.00, Capital: 1008.89
+INFO:non_major_league_backtesting:Bet 267: loss, Profit: -1.00, Capital: 1007.89
+INFO:non_major_league_backtesting:Bet 268: win, Profit: 3.36, Capital: 1011.25
+INFO:non_major_league_backtesting:Bet 269: loss, Profit: -1.00, Capital: 1010.25
+INFO:non_major_league_backtesting:Bet 270: win, Profit: 2.09, Capital: 1012.34
+INFO:non_major_league_backtesting:Bet 271: win, Profit: 3.58, Capital: 1015.91
+INFO:non_major_league_backtesting:Bet 272: win, Profit: 3.92, Capital: 1019.84
+INFO:non_major_league_backtesting:Bet 273: win, Profit: 2.81, Capital: 1022.64
+INFO:non_major_league_backtesting:Bet 274: win, Profit: 1.85, Capital: 1024.49
+INFO:non_major_league_backtesting:Bet 275: loss, Profit: -1.00, Capital: 1023.49
+INFO:non_major_league_backtesting:Bet 276: loss, Profit: -1.00, Capital: 1022.49
+INFO:non_major_league_backtesting:Bet 277: win, Profit: 1.74, Capital: 1024.23
+INFO:non_major_league_backtesting:Bet 278: loss, Profit: -1.00, Capital: 1023.23
+INFO:non_major_league_backtesting:Bet 279: win, Profit: 1.02, Capital: 1024.25
+INFO:non_major_league_backtesting:Bet 280: loss, Profit: -1.00, Capital: 1023.25
+INFO:non_major_league_backtesting:Bet 281: win, Profit: 2.52, Capital: 1025.77
+INFO:non_major_league_backtesting:Bet 282: loss, Profit: -1.00, Capital: 1024.77
+INFO:non_major_league_backtesting:Bet 283: loss, Profit: -1.00, Capital: 1023.77
+INFO:non_major_league_backtesting:Bet 284: win, Profit: 2.70, Capital: 1026.47
+INFO:non_major_league_backtesting:Bet 285: win, Profit: 1.61, Capital: 1028.08
+INFO:non_major_league_backtesting:Bet 286: loss, Profit: -1.00, Capital: 1027.08
+INFO:non_major_league_backtesting:Bet 287: win, Profit: 3.78, Capital: 1030.86
+INFO:non_major_league_backtesting:Bet 288: win, Profit: 1.34, Capital: 1032.20
+INFO:non_major_league_backtesting:Bet 289: win, Profit: 2.19, Capital: 1034.40
+INFO:non_major_league_backtesting:Bet 290: win, Profit: 2.98, Capital: 1037.38
+INFO:non_major_league_backtesting:Bet 291: win, Profit: 1.68, Capital: 1039.05
+INFO:non_major_league_backtesting:Bet 292: win, Profit: 2.60, Capital: 1041.65
+INFO:non_major_league_backtesting:Bet 293: loss, Profit: -1.00, Capital: 1040.65
+INFO:non_major_league_backtesting:Bet 294: loss, Profit: -1.00, Capital: 1039.65
+INFO:non_major_league_backtesting:Bet 295: loss, Profit: -1.00, Capital: 1038.65
+INFO:non_major_league_backtesting:Bet 296: win, Profit: 0.77, Capital: 1039.42
+INFO:non_major_league_backtesting:Bet 297: loss, Profit: -1.00, Capital: 1038.42
+INFO:non_major_league_backtesting:Bet 298: loss, Profit: -1.00, Capital: 1037.42
+INFO:non_major_league_backtesting:Bet 299: loss, Profit: -1.00, Capital: 1036.42
+INFO:non_major_league_backtesting:Bet 300: win, Profit: 1.80, Capital: 1038.22
+INFO:non_major_league_backtesting:Bet 301: loss, Profit: -1.00, Capital: 1037.22
+INFO:non_major_league_backtesting:Bet 302: loss, Profit: -1.00, Capital: 1036.22
+INFO:non_major_league_backtesting:Bet 303: win, Profit: 2.79, Capital: 1039.00
+INFO:non_major_league_backtesting:Bet 304: loss, Profit: -1.00, Capital: 1038.00
+INFO:non_major_league_backtesting:Bet 305: win, Profit: 2.56, Capital: 1040.57
+INFO:non_major_league_backtesting:Bet 306: loss, Profit: -1.00, Capital: 1039.57
+INFO:non_major_league_backtesting:Bet 307: win, Profit: 2.02, Capital: 1041.59
+INFO:non_major_league_backtesting:Bet 308: loss, Profit: -1.00, Capital: 1040.59
+INFO:non_major_league_backtesting:Bet 309: win, Profit: 1.12, Capital: 1041.71
+INFO:non_major_league_backtesting:Bet 310: loss, Profit: -1.00, Capital: 1040.71
+INFO:non_major_league_backtesting:Bet 311: win, Profit: 2.57, Capital: 1043.28
+INFO:non_major_league_backtesting:Bet 312: win, Profit: 3.08, Capital: 1046.36
+INFO:non_major_league_backtesting:Bet 313: loss, Profit: -1.00, Capital: 1045.36
+INFO:non_major_league_backtesting:Bet 314: loss, Profit: -1.00, Capital: 1044.36
+INFO:non_major_league_backtesting:Bet 315: win, Profit: 1.61, Capital: 1045.97
+INFO:non_major_league_backtesting:Bet 316: loss, Profit: -1.00, Capital: 1044.97
+INFO:non_major_league_backtesting:Bet 317: win, Profit: 2.72, Capital: 1047.68
+INFO:non_major_league_backtesting:Bet 318: loss, Profit: -1.00, Capital: 1046.68
+INFO:non_major_league_backtesting:Bet 319: win, Profit: 0.83, Capital: 1047.51
+INFO:non_major_league_backtesting:Bet 320: loss, Profit: -1.00, Capital: 1046.51
+INFO:non_major_league_backtesting:Bet 321: loss, Profit: -1.00, Capital: 1045.51
+INFO:non_major_league_backtesting:Bet 322: loss, Profit: -1.00, Capital: 1044.51
+INFO:non_major_league_backtesting:Bet 323: loss, Profit: -1.00, Capital: 1043.51
+INFO:non_major_league_backtesting:Bet 324: loss, Profit: -1.00, Capital: 1042.51
+INFO:non_major_league_backtesting:Bet 325: loss, Profit: -1.00, Capital: 1041.51
+INFO:non_major_league_backtesting:Bet 326: loss, Profit: -1.00, Capital: 1040.51
+INFO:non_major_league_backtesting:Bet 327: win, Profit: 1.58, Capital: 1042.09
+INFO:non_major_league_backtesting:Bet 328: loss, Profit: -1.00, Capital: 1041.09
+INFO:non_major_league_backtesting:Bet 329: win, Profit: 1.47, Capital: 1042.56
+INFO:non_major_league_backtesting:Bet 330: loss, Profit: -1.00, Capital: 1041.56
+INFO:non_major_league_backtesting:Bet 331: win, Profit: 0.46, Capital: 1042.02
+INFO:non_major_league_backtesting:Bet 332: loss, Profit: -1.00, Capital: 1041.02
+INFO:non_major_league_backtesting:Bet 333: loss, Profit: -1.00, Capital: 1040.02
+INFO:non_major_league_backtesting:Bet 334: loss, Profit: -1.00, Capital: 1039.02
+INFO:non_major_league_backtesting:Bet 335: loss, Profit: -1.00, Capital: 1038.02
+INFO:non_major_league_backtesting:Bet 336: loss, Profit: -1.00, Capital: 1037.02
+INFO:non_major_league_backtesting:Bet 337: loss, Profit: -1.00, Capital: 1036.02
+INFO:non_major_league_backtesting:Bet 338: win, Profit: 2.39, Capital: 1038.42
+INFO:non_major_league_backtesting:Bet 339: loss, Profit: -1.00, Capital: 1037.42
+INFO:non_major_league_backtesting:Bet 340: loss, Profit: -1.00, Capital: 1036.42
+INFO:non_major_league_backtesting:Bet 341: win, Profit: 2.93, Capital: 1039.35
+INFO:non_major_league_backtesting:Bet 342: loss, Profit: -1.00, Capital: 1038.35
+INFO:non_major_league_backtesting:Bet 343: win, Profit: 2.93, Capital: 1041.27
+INFO:non_major_league_backtesting:Bet 344: win, Profit: 1.19, Capital: 1042.46
+INFO:non_major_league_backtesting:Bet 345: loss, Profit: -1.00, Capital: 1041.46
+INFO:non_major_league_backtesting:Bet 346: win, Profit: 2.53, Capital: 1044.00
+INFO:non_major_league_backtesting:Bet 347: loss, Profit: -1.00, Capital: 1043.00
+INFO:non_major_league_backtesting:Bet 348: win, Profit: 1.85, Capital: 1044.85
+INFO:non_major_league_backtesting:Bet 349: loss, Profit: -1.00, Capital: 1043.85
+INFO:non_major_league_backtesting:Bet 350: loss, Profit: -1.00, Capital: 1042.85
+INFO:non_major_league_backtesting:Bet 351: win, Profit: 1.08, Capital: 1043.93
+INFO:non_major_league_backtesting:Bet 352: win, Profit: 2.80, Capital: 1046.73
+INFO:non_major_league_backtesting:Bet 353: loss, Profit: -1.00, Capital: 1045.73
+INFO:non_major_league_backtesting:Bet 354: win, Profit: 1.53, Capital: 1047.25
+INFO:non_major_league_backtesting:Bet 355: loss, Profit: -1.00, Capital: 1046.25
+INFO:non_major_league_backtesting:Bet 356: win, Profit: 2.92, Capital: 1049.17
+INFO:non_major_league_backtesting:Bet 357: win, Profit: 2.21, Capital: 1051.38
+INFO:non_major_league_backtesting:Bet 358: loss, Profit: -1.00, Capital: 1050.38
+INFO:non_major_league_backtesting:Bet 359: loss, Profit: -1.00, Capital: 1049.38
+INFO:non_major_league_backtesting:Bet 360: loss, Profit: -1.00, Capital: 1048.38
+INFO:non_major_league_backtesting:Bet 361: loss, Profit: -1.00, Capital: 1047.38
+INFO:non_major_league_backtesting:Bet 362: loss, Profit: -1.00, Capital: 1046.38
+INFO:non_major_league_backtesting:Bet 363: loss, Profit: -1.00, Capital: 1045.38
+INFO:non_major_league_backtesting:Bet 364: loss, Profit: -1.00, Capital: 1044.38
+INFO:non_major_league_backtesting:Bet 365: win, Profit: 1.65, Capital: 1046.03
+INFO:non_major_league_backtesting:Bet 366: loss, Profit: -1.00, Capital: 1045.03
+INFO:non_major_league_backtesting:Bet 367: win, Profit: 3.69, Capital: 1048.72
+INFO:non_major_league_backtesting:Bet 368: loss, Profit: -1.00, Capital: 1047.72
+INFO:non_major_league_backtesting:Bet 369: win, Profit: 2.77, Capital: 1050.49
+INFO:non_major_league_backtesting:Bet 370: loss, Profit: -1.00, Capital: 1049.49
+INFO:non_major_league_backtesting:Bet 371: win, Profit: 1.56, Capital: 1051.05
+INFO:non_major_league_backtesting:Bet 372: loss, Profit: -1.00, Capital: 1050.05
+INFO:non_major_league_backtesting:Bet 373: win, Profit: 2.07, Capital: 1052.12
+INFO:non_major_league_backtesting:Bet 374: win, Profit: 0.86, Capital: 1052.98
+INFO:non_major_league_backtesting:Bet 375: win, Profit: 2.51, Capital: 1055.49
+INFO:non_major_league_backtesting:Bet 376: loss, Profit: -1.00, Capital: 1054.49
+INFO:non_major_league_backtesting:Bet 377: loss, Profit: -1.00, Capital: 1053.49
+INFO:non_major_league_backtesting:Bet 378: loss, Profit: -1.00, Capital: 1052.49
+INFO:non_major_league_backtesting:Bet 379: loss, Profit: -1.00, Capital: 1051.49
+INFO:non_major_league_backtesting:Bet 380: loss, Profit: -1.00, Capital: 1050.49
+INFO:non_major_league_backtesting:Bet 381: win, Profit: 1.70, Capital: 1052.19
+INFO:non_major_league_backtesting:Bet 382: win, Profit: 3.51, Capital: 1055.70
+INFO:non_major_league_backtesting:Bet 383: loss, Profit: -1.00, Capital: 1054.70
+INFO:non_major_league_backtesting:Bet 384: win, Profit: 0.56, Capital: 1055.27
+INFO:non_major_league_backtesting:Bet 385: loss, Profit: -1.00, Capital: 1054.27
+INFO:non_major_league_backtesting:Bet 386: loss, Profit: -1.00, Capital: 1053.27
+INFO:non_major_league_backtesting:Bet 387: loss, Profit: -1.00, Capital: 1052.27
+INFO:non_major_league_backtesting:Bet 388: loss, Profit: -1.00, Capital: 1051.27
+INFO:non_major_league_backtesting:Bet 389: win, Profit: 2.84, Capital: 1054.10
+INFO:non_major_league_backtesting:Walk-forward backtest complete: 5.41% return, 389 bets, 2.97% max drawdown
+INFO:non_major_league_backtesting:Calculating performance metrics
+INFO:non_major_league_backtesting:Analyzing drawdowns
+INFO:non_major_league_backtesting:Validating backtest results
+INFO:non_major_league_backtesting:Backtest validation: FAILED
+INFO:phase3_integration:Step 3: Betting Strategy Implementation
+INFO:phase3_integration:Implementing betting strategy
+INFO:phase3_integration:Step 4: Performance Metrics Calculation
+INFO:phase3_integration:Calculating performance metrics
+INFO:non_major_league_performance_metrics:Calculating comprehensive performance metrics
+INFO:non_major_league_performance_metrics:Calculating primary performance metrics
+INFO:non_major_league_performance_metrics:Calculating secondary performance metrics
+INFO:non_major_league_performance_metrics:Calculating risk metrics
+INFO:non_major_league_performance_metrics:Calculating betting-specific metrics
+INFO:non_major_league_performance_metrics:Validating performance against conservative thresholds
+INFO:non_major_league_performance_metrics:Performance validation: FAILED
+INFO:phase3_integration:Step 5: Risk Management Integration
+INFO:phase3_integration:Integrating risk management
+INFO:non_major_league_risk_management:Calculating current risk metrics
+INFO:non_major_league_risk_management:Assessing risk level
+INFO:non_major_league_risk_management:Performing stress testing
+INFO:phase3_integration:Step 6: Live Testing Framework Setup
+INFO:phase3_integration:Setting up live testing framework
+INFO:non_major_league_live_testing:Starting live testing session
+INFO:non_major_league_live_testing:Testing session started: phase3_session_20251016_220712
+INFO:non_major_league_live_testing:Placing paper trade
+INFO:non_major_league_live_testing:Trade alert: Trade placed: ID=1, Size=$50.00
+INFO:non_major_league_live_testing:Paper trade placed: ID=1, Size=$50.00
+INFO:non_major_league_live_testing:Settling paper trade: ID=1
+INFO:non_major_league_live_testing:Trade alert: Trade settled: ID=1, Size=$50.00
+INFO:non_major_league_live_testing:Paper trade settled: ID=1, Outcome=LOSS, Profit=$-50.00
+INFO:non_major_league_live_testing:Placing paper trade
+INFO:non_major_league_live_testing:Trade alert: Trade placed: ID=2, Size=$50.00
+INFO:non_major_league_live_testing:Paper trade placed: ID=2, Size=$50.00
+INFO:non_major_league_live_testing:Settling paper trade: ID=2
+INFO:non_major_league_live_testing:Trade alert: Trade settled: ID=2, Size=$50.00
+INFO:non_major_league_live_testing:Paper trade settled: ID=2, Outcome=WIN, Profit=$134.29
+INFO:non_major_league_live_testing:Placing paper trade
+INFO:non_major_league_live_testing:Trade alert: Trade placed: ID=3, Size=$50.00
+INFO:non_major_league_live_testing:Paper trade placed: ID=3, Size=$50.00
+INFO:non_major_league_live_testing:Settling paper trade: ID=3
+INFO:non_major_league_live_testing:Trade alert: Trade settled: ID=3, Size=$50.00
+INFO:non_major_league_live_testing:Paper trade settled: ID=3, Outcome=WIN, Profit=$147.81
+INFO:non_major_league_live_testing:Placing paper trade
+INFO:non_major_league_live_testing:Trade alert: Trade placed: ID=4, Size=$50.00
+INFO:non_major_league_live_testing:Paper trade placed: ID=4, Size=$50.00
+INFO:non_major_league_live_testing:Settling paper trade: ID=4
+INFO:non_major_league_live_testing:Trade alert: Trade settled: ID=4, Size=$50.00
+INFO:non_major_league_live_testing:Paper trade settled: ID=4, Outcome=LOSS, Profit=$-50.00
+INFO:non_major_league_live_testing:Placing paper trade
+INFO:non_major_league_live_testing:Trade alert: Trade placed: ID=5, Size=$50.00
+INFO:non_major_league_live_testing:Paper trade placed: ID=5, Size=$50.00
+INFO:non_major_league_live_testing:Settling paper trade: ID=5
+INFO:non_major_league_live_testing:Trade alert: Trade settled: ID=5, Size=$50.00
+INFO:non_major_league_live_testing:Paper trade settled: ID=5, Outcome=WIN, Profit=$163.28
+INFO:non_major_league_live_testing:Placing paper trade
+INFO:non_major_league_live_testing:Placing paper trade
+INFO:non_major_league_live_testing:Trade alert: Trade placed: ID=6, Size=$50.00
+INFO:non_major_league_live_testing:Paper trade placed: ID=6, Size=$50.00
+INFO:non_major_league_live_testing:Settling paper trade: ID=6
+INFO:non_major_league_live_testing:Trade alert: Trade settled: ID=6, Size=$50.00
+INFO:non_major_league_live_testing:Paper trade settled: ID=6, Outcome=WIN, Profit=$76.47
+INFO:non_major_league_live_testing:Placing paper trade
+INFO:non_major_league_live_testing:Placing paper trade
+INFO:non_major_league_live_testing:Placing paper trade
+INFO:non_major_league_live_testing:Trade alert: Trade placed: ID=7, Size=$50.00
+INFO:non_major_league_live_testing:Paper trade placed: ID=7, Size=$50.00
+INFO:non_major_league_live_testing:Settling paper trade: ID=7
+INFO:non_major_league_live_testing:Trade alert: Trade settled: ID=7, Size=$50.00
+INFO:non_major_league_live_testing:Paper trade settled: ID=7, Outcome=WIN, Profit=$77.61
+INFO:non_major_league_live_testing:Stopping live testing session
+INFO:non_major_league_live_testing:Testing session stopped: phase3_session_20251016_220712
+INFO:phase3_integration:Step 7: Final Integration and Validation
+INFO:phase3_integration:Integrating and validating Phase 3 results
+INFO:phase3_integration:Step 8: Saving Results
+INFO:phase3_integration:Saving results for E1
+INFO:non_major_league_backtesting:Saving backtest results to ./results/E1_backtesting_results.pkl
+INFO:non_major_league_backtesting:Backtest results saved successfully
+INFO:non_major_league_betting_strategy:Strategy state saved to ./results/E1_betting_strategy.pkl
+INFO:non_major_league_performance_metrics:Saving performance metrics to ./results/E1_performance_metrics.pkl
+INFO:non_major_league_performance_metrics:Performance metrics saved successfully
+INFO:non_major_league_risk_management:Saving risk state to ./results/E1_risk_management.pkl
+INFO:non_major_league_risk_management:Risk state saved successfully
+INFO:non_major_league_live_testing:Saving testing session to ./results/E1_live_testing.pkl
+INFO:non_major_league_live_testing:Testing session saved successfully
+INFO:phase3_integration:Phase 3 results saved successfully
+INFO:phase3_integration:Phase 3 pipeline completed successfully
+INFO:master_pipeline:Phase 3 completed successfully in 0.74 seconds
+INFO:__main__:✅ Phase 3 completed
+INFO:__main__:
+🎯 STEP 6: Phase 4 - Generate Predictions (All Markets)
+INFO:__main__:✅ Loaded model: pipeline_output/phase2_output/E1_ensemble.pkl
+INFO:__main__:Generating predictions for 31 matches...
+WARNING:__main__:⚠️ Could not generate 1X2 prediction: 'dict' object has no attribute 'predict'
+WARNING:__main__:⚠️ Could not generate 1X2 prediction: 'dict' object has no attribute 'predict'
+WARNING:__main__:⚠️ Could not generate 1X2 prediction: 'dict' object has no attribute 'predict'
+WARNING:__main__:⚠️ Could not generate 1X2 prediction: 'dict' object has no attribute 'predict'
+WARNING:__main__:⚠️ Could not generate 1X2 prediction: 'dict' object has no attribute 'predict'
+WARNING:__main__:⚠️ Could not generate 1X2 prediction: 'dict' object has no attribute 'predict'
+WARNING:__main__:⚠️ Could not generate 1X2 prediction: 'dict' object has no attribute 'predict'
+WARNING:__main__:⚠️ Could not generate 1X2 prediction: 'dict' object has no attribute 'predict'
+WARNING:__main__:⚠️ Could not generate 1X2 prediction: 'dict' object has no attribute 'predict'
+WARNING:__main__:⚠️ Could not generate 1X2 prediction: 'dict' object has no attribute 'predict'
+WARNING:__main__:⚠️ Could not generate 1X2 prediction: 'dict' object has no attribute 'predict'
+WARNING:__main__:⚠️ Could not generate 1X2 prediction: 'dict' object has no attribute 'predict'
+WARNING:__main__:⚠️ Could not generate 1X2 prediction: 'dict' object has no attribute 'predict'
+WARNING:__main__:⚠️ Could not generate 1X2 prediction: 'dict' object has no attribute 'predict'
+WARNING:__main__:⚠️ Could not generate 1X2 prediction: 'dict' object has no attribute 'predict'
+WARNING:__main__:⚠️ Could not generate 1X2 prediction: 'dict' object has no attribute 'predict'
+WARNING:__main__:⚠️ Could not generate 1X2 prediction: 'dict' object has no attribute 'predict'
+WARNING:__main__:⚠️ Could not generate 1X2 prediction: 'dict' object has no attribute 'predict'
+WARNING:__main__:⚠️ Could not generate 1X2 prediction: 'dict' object has no attribute 'predict'
+WARNING:__main__:⚠️ Could not generate 1X2 prediction: 'dict' object has no attribute 'predict'
+WARNING:__main__:⚠️ Could not generate 1X2 prediction: 'dict' object has no attribute 'predict'
+WARNING:__main__:⚠️ Could not generate 1X2 prediction: 'dict' object has no attribute 'predict'
+WARNING:__main__:⚠️ Could not generate 1X2 prediction: 'dict' object has no attribute 'predict'
+WARNING:__main__:⚠️ Could not generate 1X2 prediction: 'dict' object has no attribute 'predict'
+WARNING:__main__:⚠️ Could not generate 1X2 prediction: 'dict' object has no attribute 'predict'
+WARNING:__main__:⚠️ Could not generate 1X2 prediction: 'dict' object has no attribute 'predict'
+WARNING:__main__:⚠️ Could not generate 1X2 prediction: 'dict' object has no attribute 'predict'
+WARNING:__main__:⚠️ Could not generate 1X2 prediction: 'dict' object has no attribute 'predict'
+WARNING:__main__:⚠️ Could not generate 1X2 prediction: 'dict' object has no attribute 'predict'
+WARNING:__main__:⚠️ Could not generate 1X2 prediction: 'dict' object has no attribute 'predict'
+WARNING:__main__:⚠️ Could not generate 1X2 prediction: 'dict' object has no attribute 'predict'
+INFO:__main__:✅ Generated predictions for 31 matches
+INFO:__main__:
+💾 STEP 7: Saving Results
+INFO:__main__:  ✅ Predictions: predictions_output/predictions_20251016_220713.json
+INFO:__main__:  ✅ CSV: predictions_output/predictions_20251016_220713.csv
+ERROR:__main__:❌ Workflow failed: keys must be str, int, float, bool or None, not Float64DType
+ERROR:__main__:Traceback (most recent call last):
+  File "/home/kali/Non-major-leagues/run_complete_workflow.py", line 139, in run_complete_workflow
+    self.save_results(predictions, workflow_results)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Non-major-leagues/run_complete_workflow.py", line 400, in save_results
+    json.dump(workflow_results, f, indent=2, default=str)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/json/__init__.py", line 179, in dump
+    for chunk in iterable:
+                 ^^^^^^^^
+  File "/usr/lib/python3.13/json/encoder.py", line 433, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/usr/lib/python3.13/json/encoder.py", line 407, in _iterencode_dict
+    yield from chunks
+  File "/usr/lib/python3.13/json/encoder.py", line 407, in _iterencode_dict
+    yield from chunks
+  File "/usr/lib/python3.13/json/encoder.py", line 407, in _iterencode_dict
+    yield from chunks
+  [Previous line repeated 2 more times]
+  File "/usr/lib/python3.13/json/encoder.py", line 376, in _iterencode_dict
+    raise TypeError(f'keys must be str, int, float, bool or None, '
+                    f'not {key.__class__.__name__}')
+TypeError: keys must be str, int, float, bool or None, not Float64DType
+
+Traceback (most recent call last):
+  File "/home/kali/Non-major-leagues/run_complete_workflow.py", line 484, in <module>
+    main()
+    ~~~~^^
+  File "/home/kali/Non-major-leagues/run_complete_workflow.py", line 469, in main
+    results = orchestrator.run_complete_workflow(
+        league=args.league,
+        crawler_file=args.crawler_file,
+        skip_training=args.skip_training
+    )
+  File "/home/kali/Non-major-leagues/run_complete_workflow.py", line 139, in run_complete_workflow
+    self.save_results(predictions, workflow_results)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Non-major-leagues/run_complete_workflow.py", line 400, in save_results
+    json.dump(workflow_results, f, indent=2, default=str)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/json/__init__.py", line 179, in dump
+    for chunk in iterable:
+                 ^^^^^^^^
+  File "/usr/lib/python3.13/json/encoder.py", line 433, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/usr/lib/python3.13/json/encoder.py", line 407, in _iterencode_dict
+    yield from chunks
+  File "/usr/lib/python3.13/json/encoder.py", line 407, in _iterencode_dict
+    yield from chunks
+  File "/usr/lib/python3.13/json/encoder.py", line 407, in _iterencode_dict
+    yield from chunks
+  [Previous line repeated 2 more times]
+  File "/usr/lib/python3.13/json/encoder.py", line 376, in _iterencode_dict
+    raise TypeError(f'keys must be str, int, float, bool or None, '
+                    f'not {key.__class__.__name__}')
+TypeError: keys must be str, int, float, bool or None, not Float64DType

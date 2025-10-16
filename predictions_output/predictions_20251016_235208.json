@@ -1,0 +1,1614 @@
+[
+  {
+    "match_info": {
+      "date": "N/A",
+      "home_team": "Atletico Mineiro MG",
+      "away_team": "Cruzeiro EC",
+      "league": "Brazil"
+    },
+    "predictions": {
+      "1x2": {
+        "prediction": 2,
+        "outcome": "Home Win",
+        "confidence": 0.9799087698856868,
+        "probabilities": {
+          "home_win": 0.9799087698856868,
+          "draw": 0.007245048996613112,
+          "away_win": 0.012846181117700136
+        },
+        "recommended": true
+      },
+      "over_under_2.5": {
+        "prediction": "Under",
+        "confidence": 0.5270129660334872,
+        "probabilities": {
+          "over": 0.4729870339665127,
+          "under": 0.5270129660334872
+        },
+        "expected_goals": 2.3918428240654492,
+        "recommended": false
+      },
+      "btts": {
+        "prediction": "No",
+        "confidence": 0.7597083589638438,
+        "probabilities": {
+          "yes": 0.24029164103615622,
+          "no": 0.7597083589638438
+        },
+        "recommended": true
+      },
+      "first_half": {
+        "prediction": 2,
+        "outcome": "Home Win",
+        "confidence": 0.973735851426511,
+        "probabilities": {
+          "home_win": 0.973735851426511,
+          "draw": 0.013498891753017819,
+          "away_win": 0.012765256820471308
+        },
+        "recommended": true
+      }
+    },
+    "timestamp": "2025-10-16T23:52:07.107534"
+  },
+  {
+    "match_info": {
+      "date": "N/A",
+      "home_team": "Fortaleza EC",
+      "away_team": "CR Vasco da Gama",
+      "league": "Brazil"
+    },
+    "predictions": {
+      "1x2": {
+        "prediction": 2,
+        "outcome": "Home Win",
+        "confidence": 0.9799087698856868,
+        "probabilities": {
+          "home_win": 0.9799087698856868,
+          "draw": 0.007245048996613112,
+          "away_win": 0.012846181117700136
+        },
+        "recommended": true
+      },
+      "over_under_2.5": {
+        "prediction": "Under",
+        "confidence": 0.5270129660334872,
+        "probabilities": {
+          "over": 0.4729870339665127,
+          "under": 0.5270129660334872
+        },
+        "expected_goals": 2.3918428240654492,
+        "recommended": false
+      },
+      "btts": {
+        "prediction": "No",
+        "confidence": 0.7597083589638438,
+        "probabilities": {
+          "yes": 0.24029164103615622,
+          "no": 0.7597083589638438
+        },
+        "recommended": true
+      },
+      "first_half": {
+        "prediction": 2,
+        "outcome": "Home Win",
+        "confidence": 0.973735851426511,
+        "probabilities": {
+          "home_win": 0.973735851426511,
+          "draw": 0.013498891753017819,
+          "away_win": 0.012765256820471308
+        },
+        "recommended": true
+      }
+    },
+    "timestamp": "2025-10-16T23:52:07.176388"
+  },
+  {
+    "match_info": {
+      "date": "N/A",
+      "home_team": "Santos SP",
+      "away_team": "SC Corinthians",
+      "league": "Brazil"
+    },
+    "predictions": {
+      "1x2": {
+        "prediction": 2,
+        "outcome": "Home Win",
+        "confidence": 0.9799087698856868,
+        "probabilities": {
+          "home_win": 0.9799087698856868,
+          "draw": 0.007245048996613112,
+          "away_win": 0.012846181117700136
+        },
+        "recommended": true
+      },
+      "over_under_2.5": {
+        "prediction": "Under",
+        "confidence": 0.5270129660334872,
+        "probabilities": {
+          "over": 0.4729870339665127,
+          "under": 0.5270129660334872
+        },
+        "expected_goals": 2.3918428240654492,
+        "recommended": false
+      },
+      "btts": {
+        "prediction": "No",
+        "confidence": 0.7597083589638438,
+        "probabilities": {
+          "yes": 0.24029164103615622,
+          "no": 0.7597083589638438
+        },
+        "recommended": true
+      },
+      "first_half": {
+        "prediction": 2,
+        "outcome": "Home Win",
+        "confidence": 0.973735851426511,
+        "probabilities": {
+          "home_win": 0.973735851426511,
+          "draw": 0.013498891753017819,
+          "away_win": 0.012765256820471308
+        },
+        "recommended": true
+      }
+    },
+    "timestamp": "2025-10-16T23:52:07.229294"
+  },
+  {
+    "match_info": {
+      "date": "N/A",
+      "home_team": "Managua FC",
+      "away_team": "Real Madriz",
+      "league": "Nicaragua"
+    },
+    "predictions": {
+      "1x2": {
+        "prediction": 2,
+        "outcome": "Home Win",
+        "confidence": 0.9799087698856868,
+        "probabilities": {
+          "home_win": 0.9799087698856868,
+          "draw": 0.007245048996613112,
+          "away_win": 0.012846181117700136
+        },
+        "recommended": true
+      },
+      "over_under_2.5": {
+        "prediction": "Under",
+        "confidence": 0.5270129660334872,
+        "probabilities": {
+          "over": 0.4729870339665127,
+          "under": 0.5270129660334872
+        },
+        "expected_goals": 2.3918428240654492,
+        "recommended": false
+      },
+      "btts": {
+        "prediction": "No",
+        "confidence": 0.7597083589638438,
+        "probabilities": {
+          "yes": 0.24029164103615622,
+          "no": 0.7597083589638438
+        },
+        "recommended": true
+      },
+      "first_half": {
+        "prediction": 2,
+        "outcome": "Home Win",
+        "confidence": 0.973735851426511,
+        "probabilities": {
+          "home_win": 0.973735851426511,
+          "draw": 0.013498891753017819,
+          "away_win": 0.012765256820471308
+        },
+        "recommended": true
+      }
+    },
+    "timestamp": "2025-10-16T23:52:07.279956"
+  },
+  {
+    "match_info": {
+      "date": "N/A",
+      "home_team": "Cartagines",
+      "away_team": "Guadalupe",
+      "league": "Costa Rica"
+    },
+    "predictions": {
+      "1x2": {
+        "prediction": 2,
+        "outcome": "Home Win",
+        "confidence": 0.9799087698856868,
+        "probabilities": {
+          "home_win": 0.9799087698856868,
+          "draw": 0.007245048996613112,
+          "away_win": 0.012846181117700136
+        },
+        "recommended": true
+      },
+      "over_under_2.5": {
+        "prediction": "Under",
+        "confidence": 0.5270129660334872,
+        "probabilities": {
+          "over": 0.4729870339665127,
+          "under": 0.5270129660334872
+        },
+        "expected_goals": 2.3918428240654492,
+        "recommended": false
+      },
+      "btts": {
+        "prediction": "No",
+        "confidence": 0.7597083589638438,
+        "probabilities": {
+          "yes": 0.24029164103615622,
+          "no": 0.7597083589638438
+        },
+        "recommended": true
+      },
+      "first_half": {
+        "prediction": 2,
+        "outcome": "Home Win",
+        "confidence": 0.973735851426511,
+        "probabilities": {
+          "home_win": 0.973735851426511,
+          "draw": 0.013498891753017819,
+          "away_win": 0.012765256820471308
+        },
+        "recommended": true
+      }
+    },
+    "timestamp": "2025-10-16T23:52:07.331477"
+  },
+  {
+    "match_info": {
+      "date": "N/A",
+      "home_team": "Atletico Mineiro MG",
+      "away_team": "Cruzeiro EC",
+      "league": "Brazil"
+    },
+    "predictions": {
+      "1x2": {
+        "prediction": 2,
+        "outcome": "Home Win",
+        "confidence": 0.9799087698856868,
+        "probabilities": {
+          "home_win": 0.9799087698856868,
+          "draw": 0.007245048996613112,
+          "away_win": 0.012846181117700136
+        },
+        "recommended": true
+      },
+      "over_under_2.5": {
+        "prediction": "Under",
+        "confidence": 0.5270129660334872,
+        "probabilities": {
+          "over": 0.4729870339665127,
+          "under": 0.5270129660334872
+        },
+        "expected_goals": 2.3918428240654492,
+        "recommended": false
+      },
+      "btts": {
+        "prediction": "No",
+        "confidence": 0.7597083589638438,
+        "probabilities": {
+          "yes": 0.24029164103615622,
+          "no": 0.7597083589638438
+        },
+        "recommended": true
+      },
+      "first_half": {
+        "prediction": 2,
+        "outcome": "Home Win",
+        "confidence": 0.973735851426511,
+        "probabilities": {
+          "home_win": 0.973735851426511,
+          "draw": 0.013498891753017819,
+          "away_win": 0.012765256820471308
+        },
+        "recommended": true
+      }
+    },
+    "timestamp": "2025-10-16T23:52:07.384314"
+  },
+  {
+    "match_info": {
+      "date": "N/A",
+      "home_team": "Fortaleza EC",
+      "away_team": "CR Vasco da Gama",
+      "league": "Brazil"
+    },
+    "predictions": {
+      "1x2": {
+        "prediction": 2,
+        "outcome": "Home Win",
+        "confidence": 0.9799087698856868,
+        "probabilities": {
+          "home_win": 0.9799087698856868,
+          "draw": 0.007245048996613112,
+          "away_win": 0.012846181117700136
+        },
+        "recommended": true
+      },
+      "over_under_2.5": {
+        "prediction": "Under",
+        "confidence": 0.5270129660334872,
+        "probabilities": {
+          "over": 0.4729870339665127,
+          "under": 0.5270129660334872
+        },
+        "expected_goals": 2.3918428240654492,
+        "recommended": false
+      },
+      "btts": {
+        "prediction": "No",
+        "confidence": 0.7597083589638438,
+        "probabilities": {
+          "yes": 0.24029164103615622,
+          "no": 0.7597083589638438
+        },
+        "recommended": true
+      },
+      "first_half": {
+        "prediction": 2,
+        "outcome": "Home Win",
+        "confidence": 0.973735851426511,
+        "probabilities": {
+          "home_win": 0.973735851426511,
+          "draw": 0.013498891753017819,
+          "away_win": 0.012765256820471308
+        },
+        "recommended": true
+      }
+    },
+    "timestamp": "2025-10-16T23:52:07.437891"
+  },
+  {
+    "match_info": {
+      "date": "N/A",
+      "home_team": "Santos SP",
+      "away_team": "SC Corinthians",
+      "league": "Brazil"
+    },
+    "predictions": {
+      "1x2": {
+        "prediction": 2,
+        "outcome": "Home Win",
+        "confidence": 0.9799087698856868,
+        "probabilities": {
+          "home_win": 0.9799087698856868,
+          "draw": 0.007245048996613112,
+          "away_win": 0.012846181117700136
+        },
+        "recommended": true
+      },
+      "over_under_2.5": {
+        "prediction": "Under",
+        "confidence": 0.5270129660334872,
+        "probabilities": {
+          "over": 0.4729870339665127,
+          "under": 0.5270129660334872
+        },
+        "expected_goals": 2.3918428240654492,
+        "recommended": false
+      },
+      "btts": {
+        "prediction": "No",
+        "confidence": 0.7597083589638438,
+        "probabilities": {
+          "yes": 0.24029164103615622,
+          "no": 0.7597083589638438
+        },
+        "recommended": true
+      },
+      "first_half": {
+        "prediction": 2,
+        "outcome": "Home Win",
+        "confidence": 0.973735851426511,
+        "probabilities": {
+          "home_win": 0.973735851426511,
+          "draw": 0.013498891753017819,
+          "away_win": 0.012765256820471308
+        },
+        "recommended": true
+      }
+    },
+    "timestamp": "2025-10-16T23:52:07.501429"
+  },
+  {
+    "match_info": {
+      "date": "N/A",
+      "home_team": "Managua FC",
+      "away_team": "Real Madriz",
+      "league": "Nicaragua"
+    },
+    "predictions": {
+      "1x2": {
+        "prediction": 2,
+        "outcome": "Home Win",
+        "confidence": 0.9799087698856868,
+        "probabilities": {
+          "home_win": 0.9799087698856868,
+          "draw": 0.007245048996613112,
+          "away_win": 0.012846181117700136
+        },
+        "recommended": true
+      },
+      "over_under_2.5": {
+        "prediction": "Under",
+        "confidence": 0.5270129660334872,
+        "probabilities": {
+          "over": 0.4729870339665127,
+          "under": 0.5270129660334872
+        },
+        "expected_goals": 2.3918428240654492,
+        "recommended": false
+      },
+      "btts": {
+        "prediction": "No",
+        "confidence": 0.7597083589638438,
+        "probabilities": {
+          "yes": 0.24029164103615622,
+          "no": 0.7597083589638438
+        },
+        "recommended": true
+      },
+      "first_half": {
+        "prediction": 2,
+        "outcome": "Home Win",
+        "confidence": 0.973735851426511,
+        "probabilities": {
+          "home_win": 0.973735851426511,
+          "draw": 0.013498891753017819,
+          "away_win": 0.012765256820471308
+        },
+        "recommended": true
+      }
+    },
+    "timestamp": "2025-10-16T23:52:07.557851"
+  },
+  {
+    "match_info": {
+      "date": "N/A",
+      "home_team": "Cartagines",
+      "away_team": "Guadalupe",
+      "league": "Costa Rica"
+    },
+    "predictions": {
+      "1x2": {
+        "prediction": 2,
+        "outcome": "Home Win",
+        "confidence": 0.9799087698856868,
+        "probabilities": {
+          "home_win": 0.9799087698856868,
+          "draw": 0.007245048996613112,
+          "away_win": 0.012846181117700136
+        },
+        "recommended": true
+      },
+      "over_under_2.5": {
+        "prediction": "Under",
+        "confidence": 0.5270129660334872,
+        "probabilities": {
+          "over": 0.4729870339665127,
+          "under": 0.5270129660334872
+        },
+        "expected_goals": 2.3918428240654492,
+        "recommended": false
+      },
+      "btts": {
+        "prediction": "No",
+        "confidence": 0.7597083589638438,
+        "probabilities": {
+          "yes": 0.24029164103615622,
+          "no": 0.7597083589638438
+        },
+        "recommended": true
+      },
+      "first_half": {
+        "prediction": 2,
+        "outcome": "Home Win",
+        "confidence": 0.973735851426511,
+        "probabilities": {
+          "home_win": 0.973735851426511,
+          "draw": 0.013498891753017819,
+          "away_win": 0.012765256820471308
+        },
+        "recommended": true
+      }
+    },
+    "timestamp": "2025-10-16T23:52:07.616397"
+  },
+  {
+    "match_info": {
+      "date": "N/A",
+      "home_team": "Atletico Mineiro MG",
+      "away_team": "Cruzeiro EC",
+      "league": "Brazil"
+    },
+    "predictions": {
+      "1x2": {
+        "prediction": 2,
+        "outcome": "Home Win",
+        "confidence": 0.9799087698856868,
+        "probabilities": {
+          "home_win": 0.9799087698856868,
+          "draw": 0.007245048996613112,
+          "away_win": 0.012846181117700136
+        },
+        "recommended": true
+      },
+      "over_under_2.5": {
+        "prediction": "Under",
+        "confidence": 0.5270129660334872,
+        "probabilities": {
+          "over": 0.4729870339665127,
+          "under": 0.5270129660334872
+        },
+        "expected_goals": 2.3918428240654492,
+        "recommended": false
+      },
+      "btts": {
+        "prediction": "No",
+        "confidence": 0.7597083589638438,
+        "probabilities": {
+          "yes": 0.24029164103615622,
+          "no": 0.7597083589638438
+        },
+        "recommended": true
+      },
+      "first_half": {
+        "prediction": 2,
+        "outcome": "Home Win",
+        "confidence": 0.973735851426511,
+        "probabilities": {
+          "home_win": 0.973735851426511,
+          "draw": 0.013498891753017819,
+          "away_win": 0.012765256820471308
+        },
+        "recommended": true
+      }
+    },
+    "timestamp": "2025-10-16T23:52:07.674446"
+  },
+  {
+    "match_info": {
+      "date": "N/A",
+      "home_team": "Fortaleza EC",
+      "away_team": "CR Vasco da Gama",
+      "league": "Brazil"
+    },
+    "predictions": {
+      "1x2": {
+        "prediction": 2,
+        "outcome": "Home Win",
+        "confidence": 0.9799087698856868,
+        "probabilities": {
+          "home_win": 0.9799087698856868,
+          "draw": 0.007245048996613112,
+          "away_win": 0.012846181117700136
+        },
+        "recommended": true
+      },
+      "over_under_2.5": {
+        "prediction": "Under",
+        "confidence": 0.5270129660334872,
+        "probabilities": {
+          "over": 0.4729870339665127,
+          "under": 0.5270129660334872
+        },
+        "expected_goals": 2.3918428240654492,
+        "recommended": false
+      },
+      "btts": {
+        "prediction": "No",
+        "confidence": 0.7597083589638438,
+        "probabilities": {
+          "yes": 0.24029164103615622,
+          "no": 0.7597083589638438
+        },
+        "recommended": true
+      },
+      "first_half": {
+        "prediction": 2,
+        "outcome": "Home Win",
+        "confidence": 0.973735851426511,
+        "probabilities": {
+          "home_win": 0.973735851426511,
+          "draw": 0.013498891753017819,
+          "away_win": 0.012765256820471308
+        },
+        "recommended": true
+      }
+    },
+    "timestamp": "2025-10-16T23:52:07.721033"
+  },
+  {
+    "match_info": {
+      "date": "N/A",
+      "home_team": "Santos SP",
+      "away_team": "SC Corinthians",
+      "league": "Brazil"
+    },
+    "predictions": {
+      "1x2": {
+        "prediction": 2,
+        "outcome": "Home Win",
+        "confidence": 0.9799087698856868,
+        "probabilities": {
+          "home_win": 0.9799087698856868,
+          "draw": 0.007245048996613112,
+          "away_win": 0.012846181117700136
+        },
+        "recommended": true
+      },
+      "over_under_2.5": {
+        "prediction": "Under",
+        "confidence": 0.5270129660334872,
+        "probabilities": {
+          "over": 0.4729870339665127,
+          "under": 0.5270129660334872
+        },
+        "expected_goals": 2.3918428240654492,
+        "recommended": false
+      },
+      "btts": {
+        "prediction": "No",
+        "confidence": 0.7597083589638438,
+        "probabilities": {
+          "yes": 0.24029164103615622,
+          "no": 0.7597083589638438
+        },
+        "recommended": true
+      },
+      "first_half": {
+        "prediction": 2,
+        "outcome": "Home Win",
+        "confidence": 0.973735851426511,
+        "probabilities": {
+          "home_win": 0.973735851426511,
+          "draw": 0.013498891753017819,
+          "away_win": 0.012765256820471308
+        },
+        "recommended": true
+      }
+    },
+    "timestamp": "2025-10-16T23:52:07.777393"
+  },
+  {
+    "match_info": {
+      "date": "N/A",
+      "home_team": "Managua FC",
+      "away_team": "Real Madriz",
+      "league": "Nicaragua"
+    },
+    "predictions": {
+      "1x2": {
+        "prediction": 2,
+        "outcome": "Home Win",
+        "confidence": 0.9799087698856868,
+        "probabilities": {
+          "home_win": 0.9799087698856868,
+          "draw": 0.007245048996613112,
+          "away_win": 0.012846181117700136
+        },
+        "recommended": true
+      },
+      "over_under_2.5": {
+        "prediction": "Under",
+        "confidence": 0.5270129660334872,
+        "probabilities": {
+          "over": 0.4729870339665127,
+          "under": 0.5270129660334872
+        },
+        "expected_goals": 2.3918428240654492,
+        "recommended": false
+      },
+      "btts": {
+        "prediction": "No",
+        "confidence": 0.7597083589638438,
+        "probabilities": {
+          "yes": 0.24029164103615622,
+          "no": 0.7597083589638438
+        },
+        "recommended": true
+      },
+      "first_half": {
+        "prediction": 2,
+        "outcome": "Home Win",
+        "confidence": 0.973735851426511,
+        "probabilities": {
+          "home_win": 0.973735851426511,
+          "draw": 0.013498891753017819,
+          "away_win": 0.012765256820471308
+        },
+        "recommended": true
+      }
+    },
+    "timestamp": "2025-10-16T23:52:07.839221"
+  },
+  {
+    "match_info": {
+      "date": "N/A",
+      "home_team": "Cartagines",
+      "away_team": "Guadalupe",
+      "league": "Costa Rica"
+    },
+    "predictions": {
+      "1x2": {
+        "prediction": 2,
+        "outcome": "Home Win",
+        "confidence": 0.9799087698856868,
+        "probabilities": {
+          "home_win": 0.9799087698856868,
+          "draw": 0.007245048996613112,
+          "away_win": 0.012846181117700136
+        },
+        "recommended": true
+      },
+      "over_under_2.5": {
+        "prediction": "Under",
+        "confidence": 0.5270129660334872,
+        "probabilities": {
+          "over": 0.4729870339665127,
+          "under": 0.5270129660334872
+        },
+        "expected_goals": 2.3918428240654492,
+        "recommended": false
+      },
+      "btts": {
+        "prediction": "No",
+        "confidence": 0.7597083589638438,
+        "probabilities": {
+          "yes": 0.24029164103615622,
+          "no": 0.7597083589638438
+        },
+        "recommended": true
+      },
+      "first_half": {
+        "prediction": 2,
+        "outcome": "Home Win",
+        "confidence": 0.973735851426511,
+        "probabilities": {
+          "home_win": 0.973735851426511,
+          "draw": 0.013498891753017819,
+          "away_win": 0.012765256820471308
+        },
+        "recommended": true
+      }
+    },
+    "timestamp": "2025-10-16T23:52:07.889239"
+  },
+  {
+    "match_info": {
+      "date": "N/A",
+      "home_team": "Atletico Mineiro MG",
+      "away_team": "Cruzeiro EC",
+      "league": "Brazil"
+    },
+    "predictions": {
+      "1x2": {
+        "prediction": 2,
+        "outcome": "Home Win",
+        "confidence": 0.9799087698856868,
+        "probabilities": {
+          "home_win": 0.9799087698856868,
+          "draw": 0.007245048996613112,
+          "away_win": 0.012846181117700136
+        },
+        "recommended": true
+      },
+      "over_under_2.5": {
+        "prediction": "Under",
+        "confidence": 0.5270129660334872,
+        "probabilities": {
+          "over": 0.4729870339665127,
+          "under": 0.5270129660334872
+        },
+        "expected_goals": 2.3918428240654492,
+        "recommended": false
+      },
+      "btts": {
+        "prediction": "No",
+        "confidence": 0.7597083589638438,
+        "probabilities": {
+          "yes": 0.24029164103615622,
+          "no": 0.7597083589638438
+        },
+        "recommended": true
+      },
+      "first_half": {
+        "prediction": 2,
+        "outcome": "Home Win",
+        "confidence": 0.973735851426511,
+        "probabilities": {
+          "home_win": 0.973735851426511,
+          "draw": 0.013498891753017819,
+          "away_win": 0.012765256820471308
+        },
+        "recommended": true
+      }
+    },
+    "timestamp": "2025-10-16T23:52:07.944551"
+  },
+  {
+    "match_info": {
+      "date": "N/A",
+      "home_team": "Fortaleza EC",
+      "away_team": "CR Vasco da Gama",
+      "league": "Brazil"
+    },
+    "predictions": {
+      "1x2": {
+        "prediction": 2,
+        "outcome": "Home Win",
+        "confidence": 0.9799087698856868,
+        "probabilities": {
+          "home_win": 0.9799087698856868,
+          "draw": 0.007245048996613112,
+          "away_win": 0.012846181117700136
+        },
+        "recommended": true
+      },
+      "over_under_2.5": {
+        "prediction": "Under",
+        "confidence": 0.5270129660334872,
+        "probabilities": {
+          "over": 0.4729870339665127,
+          "under": 0.5270129660334872
+        },
+        "expected_goals": 2.3918428240654492,
+        "recommended": false
+      },
+      "btts": {
+        "prediction": "No",
+        "confidence": 0.7597083589638438,
+        "probabilities": {
+          "yes": 0.24029164103615622,
+          "no": 0.7597083589638438
+        },
+        "recommended": true
+      },
+      "first_half": {
+        "prediction": 2,
+        "outcome": "Home Win",
+        "confidence": 0.973735851426511,
+        "probabilities": {
+          "home_win": 0.973735851426511,
+          "draw": 0.013498891753017819,
+          "away_win": 0.012765256820471308
+        },
+        "recommended": true
+      }
+    },
+    "timestamp": "2025-10-16T23:52:08.007950"
+  },
+  {
+    "match_info": {
+      "date": "N/A",
+      "home_team": "Santos SP",
+      "away_team": "SC Corinthians",
+      "league": "Brazil"
+    },
+    "predictions": {
+      "1x2": {
+        "prediction": 2,
+        "outcome": "Home Win",
+        "confidence": 0.9799087698856868,
+        "probabilities": {
+          "home_win": 0.9799087698856868,
+          "draw": 0.007245048996613112,
+          "away_win": 0.012846181117700136
+        },
+        "recommended": true
+      },
+      "over_under_2.5": {
+        "prediction": "Under",
+        "confidence": 0.5270129660334872,
+        "probabilities": {
+          "over": 0.4729870339665127,
+          "under": 0.5270129660334872
+        },
+        "expected_goals": 2.3918428240654492,
+        "recommended": false
+      },
+      "btts": {
+        "prediction": "No",
+        "confidence": 0.7597083589638438,
+        "probabilities": {
+          "yes": 0.24029164103615622,
+          "no": 0.7597083589638438
+        },
+        "recommended": true
+      },
+      "first_half": {
+        "prediction": 2,
+        "outcome": "Home Win",
+        "confidence": 0.973735851426511,
+        "probabilities": {
+          "home_win": 0.973735851426511,
+          "draw": 0.013498891753017819,
+          "away_win": 0.012765256820471308
+        },
+        "recommended": true
+      }
+    },
+    "timestamp": "2025-10-16T23:52:08.063251"
+  },
+  {
+    "match_info": {
+      "date": "N/A",
+      "home_team": "Managua FC",
+      "away_team": "Real Madriz",
+      "league": "Nicaragua"
+    },
+    "predictions": {
+      "1x2": {
+        "prediction": 2,
+        "outcome": "Home Win",
+        "confidence": 0.9799087698856868,
+        "probabilities": {
+          "home_win": 0.9799087698856868,
+          "draw": 0.007245048996613112,
+          "away_win": 0.012846181117700136
+        },
+        "recommended": true
+      },
+      "over_under_2.5": {
+        "prediction": "Under",
+        "confidence": 0.5270129660334872,
+        "probabilities": {
+          "over": 0.4729870339665127,
+          "under": 0.5270129660334872
+        },
+        "expected_goals": 2.3918428240654492,
+        "recommended": false
+      },
+      "btts": {
+        "prediction": "No",
+        "confidence": 0.7597083589638438,
+        "probabilities": {
+          "yes": 0.24029164103615622,
+          "no": 0.7597083589638438
+        },
+        "recommended": true
+      },
+      "first_half": {
+        "prediction": 2,
+        "outcome": "Home Win",
+        "confidence": 0.973735851426511,
+        "probabilities": {
+          "home_win": 0.973735851426511,
+          "draw": 0.013498891753017819,
+          "away_win": 0.012765256820471308
+        },
+        "recommended": true
+      }
+    },
+    "timestamp": "2025-10-16T23:52:08.117166"
+  },
+  {
+    "match_info": {
+      "date": "N/A",
+      "home_team": "Cartagines",
+      "away_team": "Guadalupe",
+      "league": "Costa Rica"
+    },
+    "predictions": {
+      "1x2": {
+        "prediction": 2,
+        "outcome": "Home Win",
+        "confidence": 0.9799087698856868,
+        "probabilities": {
+          "home_win": 0.9799087698856868,
+          "draw": 0.007245048996613112,
+          "away_win": 0.012846181117700136
+        },
+        "recommended": true
+      },
+      "over_under_2.5": {
+        "prediction": "Under",
+        "confidence": 0.5270129660334872,
+        "probabilities": {
+          "over": 0.4729870339665127,
+          "under": 0.5270129660334872
+        },
+        "expected_goals": 2.3918428240654492,
+        "recommended": false
+      },
+      "btts": {
+        "prediction": "No",
+        "confidence": 0.7597083589638438,
+        "probabilities": {
+          "yes": 0.24029164103615622,
+          "no": 0.7597083589638438
+        },
+        "recommended": true
+      },
+      "first_half": {
+        "prediction": 2,
+        "outcome": "Home Win",
+        "confidence": 0.973735851426511,
+        "probabilities": {
+          "home_win": 0.973735851426511,
+          "draw": 0.013498891753017819,
+          "away_win": 0.012765256820471308
+        },
+        "recommended": true
+      }
+    },
+    "timestamp": "2025-10-16T23:52:08.175942"
+  },
+  {
+    "match_info": {
+      "date": "N/A",
+      "home_team": "Marquense",
+      "away_team": "Antigua",
+      "league": "Guatemala"
+    },
+    "predictions": {
+      "1x2": {
+        "prediction": 2,
+        "outcome": "Home Win",
+        "confidence": 0.9799087698856868,
+        "probabilities": {
+          "home_win": 0.9799087698856868,
+          "draw": 0.007245048996613112,
+          "away_win": 0.012846181117700136
+        },
+        "recommended": true
+      },
+      "over_under_2.5": {
+        "prediction": "Under",
+        "confidence": 0.5270129660334872,
+        "probabilities": {
+          "over": 0.4729870339665127,
+          "under": 0.5270129660334872
+        },
+        "expected_goals": 2.3918428240654492,
+        "recommended": false
+      },
+      "btts": {
+        "prediction": "No",
+        "confidence": 0.7597083589638438,
+        "probabilities": {
+          "yes": 0.24029164103615622,
+          "no": 0.7597083589638438
+        },
+        "recommended": true
+      },
+      "first_half": {
+        "prediction": 2,
+        "outcome": "Home Win",
+        "confidence": 0.973735851426511,
+        "probabilities": {
+          "home_win": 0.973735851426511,
+          "draw": 0.013498891753017819,
+          "away_win": 0.012765256820471308
+        },
+        "recommended": true
+      }
+    },
+    "timestamp": "2025-10-16T23:52:08.229036"
+  },
+  {
+    "match_info": {
+      "date": "N/A",
+      "home_team": "Defensor Sporting",
+      "away_team": "Penarol Montevideo",
+      "league": "Uruguay"
+    },
+    "predictions": {
+      "1x2": {
+        "prediction": 2,
+        "outcome": "Home Win",
+        "confidence": 0.9799087698856868,
+        "probabilities": {
+          "home_win": 0.9799087698856868,
+          "draw": 0.007245048996613112,
+          "away_win": 0.012846181117700136
+        },
+        "recommended": true
+      },
+      "over_under_2.5": {
+        "prediction": "Under",
+        "confidence": 0.5270129660334872,
+        "probabilities": {
+          "over": 0.4729870339665127,
+          "under": 0.5270129660334872
+        },
+        "expected_goals": 2.3918428240654492,
+        "recommended": false
+      },
+      "btts": {
+        "prediction": "No",
+        "confidence": 0.7597083589638438,
+        "probabilities": {
+          "yes": 0.24029164103615622,
+          "no": 0.7597083589638438
+        },
+        "recommended": true
+      },
+      "first_half": {
+        "prediction": 2,
+        "outcome": "Home Win",
+        "confidence": 0.973735851426511,
+        "probabilities": {
+          "home_win": 0.973735851426511,
+          "draw": 0.013498891753017819,
+          "away_win": 0.012765256820471308
+        },
+        "recommended": true
+      }
+    },
+    "timestamp": "2025-10-16T23:52:08.288017"
+  },
+  {
+    "match_info": {
+      "date": "N/A",
+      "home_team": "Orlando Pride",
+      "away_team": "Pachuca Women",
+      "league": "International Clubs"
+    },
+    "predictions": {
+      "1x2": {
+        "prediction": 2,
+        "outcome": "Home Win",
+        "confidence": 0.9799087698856868,
+        "probabilities": {
+          "home_win": 0.9799087698856868,
+          "draw": 0.007245048996613112,
+          "away_win": 0.012846181117700136
+        },
+        "recommended": true
+      },
+      "over_under_2.5": {
+        "prediction": "Under",
+        "confidence": 0.5270129660334872,
+        "probabilities": {
+          "over": 0.4729870339665127,
+          "under": 0.5270129660334872
+        },
+        "expected_goals": 2.3918428240654492,
+        "recommended": false
+      },
+      "btts": {
+        "prediction": "No",
+        "confidence": 0.7597083589638438,
+        "probabilities": {
+          "yes": 0.24029164103615622,
+          "no": 0.7597083589638438
+        },
+        "recommended": true
+      },
+      "first_half": {
+        "prediction": 2,
+        "outcome": "Home Win",
+        "confidence": 0.973735851426511,
+        "probabilities": {
+          "home_win": 0.973735851426511,
+          "draw": 0.013498891753017819,
+          "away_win": 0.012765256820471308
+        },
+        "recommended": true
+      }
+    },
+    "timestamp": "2025-10-16T23:52:08.338391"
+  },
+  {
+    "match_info": {
+      "date": "N/A",
+      "home_team": "La Familia FC",
+      "away_team": "CD Universitario II",
+      "league": "Panama"
+    },
+    "predictions": {
+      "1x2": {
+        "prediction": 2,
+        "outcome": "Home Win",
+        "confidence": 0.9799087698856868,
+        "probabilities": {
+          "home_win": 0.9799087698856868,
+          "draw": 0.007245048996613112,
+          "away_win": 0.012846181117700136
+        },
+        "recommended": true
+      },
+      "over_under_2.5": {
+        "prediction": "Under",
+        "confidence": 0.5270129660334872,
+        "probabilities": {
+          "over": 0.4729870339665127,
+          "under": 0.5270129660334872
+        },
+        "expected_goals": 2.3918428240654492,
+        "recommended": false
+      },
+      "btts": {
+        "prediction": "No",
+        "confidence": 0.7597083589638438,
+        "probabilities": {
+          "yes": 0.24029164103615622,
+          "no": 0.7597083589638438
+        },
+        "recommended": true
+      },
+      "first_half": {
+        "prediction": 2,
+        "outcome": "Home Win",
+        "confidence": 0.973735851426511,
+        "probabilities": {
+          "home_win": 0.973735851426511,
+          "draw": 0.013498891753017819,
+          "away_win": 0.012765256820471308
+        },
+        "recommended": true
+      }
+    },
+    "timestamp": "2025-10-16T23:52:08.394282"
+  },
+  {
+    "match_info": {
+      "date": "N/A",
+      "home_team": "Deportivo Gomerano",
+      "away_team": "Deportivo San Pedro",
+      "league": "Guatemala"
+    },
+    "predictions": {
+      "1x2": {
+        "prediction": 2,
+        "outcome": "Home Win",
+        "confidence": 0.9799087698856868,
+        "probabilities": {
+          "home_win": 0.9799087698856868,
+          "draw": 0.007245048996613112,
+          "away_win": 0.012846181117700136
+        },
+        "recommended": true
+      },
+      "over_under_2.5": {
+        "prediction": "Under",
+        "confidence": 0.5270129660334872,
+        "probabilities": {
+          "over": 0.4729870339665127,
+          "under": 0.5270129660334872
+        },
+        "expected_goals": 2.3918428240654492,
+        "recommended": false
+      },
+      "btts": {
+        "prediction": "No",
+        "confidence": 0.7597083589638438,
+        "probabilities": {
+          "yes": 0.24029164103615622,
+          "no": 0.7597083589638438
+        },
+        "recommended": true
+      },
+      "first_half": {
+        "prediction": 2,
+        "outcome": "Home Win",
+        "confidence": 0.973735851426511,
+        "probabilities": {
+          "home_win": 0.973735851426511,
+          "draw": 0.013498891753017819,
+          "away_win": 0.012765256820471308
+        },
+        "recommended": true
+      }
+    },
+    "timestamp": "2025-10-16T23:52:08.455454"
+  },
+  {
+    "match_info": {
+      "date": "N/A",
+      "home_team": "Atlas Women",
+      "away_team": "Club America Women",
+      "league": "Mexico"
+    },
+    "predictions": {
+      "1x2": {
+        "prediction": 2,
+        "outcome": "Home Win",
+        "confidence": 0.9799087698856868,
+        "probabilities": {
+          "home_win": 0.9799087698856868,
+          "draw": 0.007245048996613112,
+          "away_win": 0.012846181117700136
+        },
+        "recommended": true
+      },
+      "over_under_2.5": {
+        "prediction": "Under",
+        "confidence": 0.5270129660334872,
+        "probabilities": {
+          "over": 0.4729870339665127,
+          "under": 0.5270129660334872
+        },
+        "expected_goals": 2.3918428240654492,
+        "recommended": false
+      },
+      "btts": {
+        "prediction": "No",
+        "confidence": 0.7597083589638438,
+        "probabilities": {
+          "yes": 0.24029164103615622,
+          "no": 0.7597083589638438
+        },
+        "recommended": true
+      },
+      "first_half": {
+        "prediction": 2,
+        "outcome": "Home Win",
+        "confidence": 0.973735851426511,
+        "probabilities": {
+          "home_win": 0.973735851426511,
+          "draw": 0.013498891753017819,
+          "away_win": 0.012765256820471308
+        },
+        "recommended": true
+      }
+    },
+    "timestamp": "2025-10-16T23:52:08.504637"
+  },
+  {
+    "match_info": {
+      "date": "N/A",
+      "home_team": "America de Cali",
+      "away_team": "Junior",
+      "league": "Colombia"
+    },
+    "predictions": {
+      "1x2": {
+        "prediction": 2,
+        "outcome": "Home Win",
+        "confidence": 0.9799087698856868,
+        "probabilities": {
+          "home_win": 0.9799087698856868,
+          "draw": 0.007245048996613112,
+          "away_win": 0.012846181117700136
+        },
+        "recommended": true
+      },
+      "over_under_2.5": {
+        "prediction": "Under",
+        "confidence": 0.5270129660334872,
+        "probabilities": {
+          "over": 0.4729870339665127,
+          "under": 0.5270129660334872
+        },
+        "expected_goals": 2.3918428240654492,
+        "recommended": false
+      },
+      "btts": {
+        "prediction": "No",
+        "confidence": 0.7597083589638438,
+        "probabilities": {
+          "yes": 0.24029164103615622,
+          "no": 0.7597083589638438
+        },
+        "recommended": true
+      },
+      "first_half": {
+        "prediction": 2,
+        "outcome": "Home Win",
+        "confidence": 0.973735851426511,
+        "probabilities": {
+          "home_win": 0.973735851426511,
+          "draw": 0.013498891753017819,
+          "away_win": 0.012765256820471308
+        },
+        "recommended": true
+      }
+    },
+    "timestamp": "2025-10-16T23:52:08.545620"
+  },
+  {
+    "match_info": {
+      "date": "N/A",
+      "home_team": "Marathon",
+      "away_team": "Real Espana",
+      "league": "Honduras"
+    },
+    "predictions": {
+      "1x2": {
+        "prediction": 2,
+        "outcome": "Home Win",
+        "confidence": 0.9799087698856868,
+        "probabilities": {
+          "home_win": 0.9799087698856868,
+          "draw": 0.007245048996613112,
+          "away_win": 0.012846181117700136
+        },
+        "recommended": true
+      },
+      "over_under_2.5": {
+        "prediction": "Under",
+        "confidence": 0.5270129660334872,
+        "probabilities": {
+          "over": 0.4729870339665127,
+          "under": 0.5270129660334872
+        },
+        "expected_goals": 2.3918428240654492,
+        "recommended": false
+      },
+      "btts": {
+        "prediction": "No",
+        "confidence": 0.7597083589638438,
+        "probabilities": {
+          "yes": 0.24029164103615622,
+          "no": 0.7597083589638438
+        },
+        "recommended": true
+      },
+      "first_half": {
+        "prediction": 2,
+        "outcome": "Home Win",
+        "confidence": 0.973735851426511,
+        "probabilities": {
+          "home_win": 0.973735851426511,
+          "draw": 0.013498891753017819,
+          "away_win": 0.012765256820471308
+        },
+        "recommended": true
+      }
+    },
+    "timestamp": "2025-10-16T23:52:08.588814"
+  },
+  {
+    "match_info": {
+      "date": "N/A",
+      "home_team": "San Carlos",
+      "away_team": "Saprissa",
+      "league": "Costa Rica"
+    },
+    "predictions": {
+      "1x2": {
+        "prediction": 2,
+        "outcome": "Home Win",
+        "confidence": 0.9799087698856868,
+        "probabilities": {
+          "home_win": 0.9799087698856868,
+          "draw": 0.007245048996613112,
+          "away_win": 0.012846181117700136
+        },
+        "recommended": true
+      },
+      "over_under_2.5": {
+        "prediction": "Under",
+        "confidence": 0.5270129660334872,
+        "probabilities": {
+          "over": 0.4729870339665127,
+          "under": 0.5270129660334872
+        },
+        "expected_goals": 2.3918428240654492,
+        "recommended": false
+      },
+      "btts": {
+        "prediction": "No",
+        "confidence": 0.7597083589638438,
+        "probabilities": {
+          "yes": 0.24029164103615622,
+          "no": 0.7597083589638438
+        },
+        "recommended": true
+      },
+      "first_half": {
+        "prediction": 2,
+        "outcome": "Home Win",
+        "confidence": 0.973735851426511,
+        "probabilities": {
+          "home_win": 0.973735851426511,
+          "draw": 0.013498891753017819,
+          "away_win": 0.012765256820471308
+        },
+        "recommended": true
+      }
+    },
+    "timestamp": "2025-10-16T23:52:08.632508"
+  },
+  {
+    "match_info": {
+      "date": "N/A",
+      "home_team": "AFF Guatemala",
+      "away_team": "S. L. Cotzumalguapa",
+      "league": "Guatemala"
+    },
+    "predictions": {
+      "1x2": {
+        "prediction": 2,
+        "outcome": "Home Win",
+        "confidence": 0.9799087698856868,
+        "probabilities": {
+          "home_win": 0.9799087698856868,
+          "draw": 0.007245048996613112,
+          "away_win": 0.012846181117700136
+        },
+        "recommended": true
+      },
+      "over_under_2.5": {
+        "prediction": "Under",
+        "confidence": 0.5270129660334872,
+        "probabilities": {
+          "over": 0.4729870339665127,
+          "under": 0.5270129660334872
+        },
+        "expected_goals": 2.3918428240654492,
+        "recommended": false
+      },
+      "btts": {
+        "prediction": "No",
+        "confidence": 0.7597083589638438,
+        "probabilities": {
+          "yes": 0.24029164103615622,
+          "no": 0.7597083589638438
+        },
+        "recommended": true
+      },
+      "first_half": {
+        "prediction": 2,
+        "outcome": "Home Win",
+        "confidence": 0.973735851426511,
+        "probabilities": {
+          "home_win": 0.973735851426511,
+          "draw": 0.013498891753017819,
+          "away_win": 0.012765256820471308
+        },
+        "recommended": true
+      }
+    },
+    "timestamp": "2025-10-16T23:52:08.684504"
+  },
+  {
+    "match_info": {
+      "date": "N/A",
+      "home_team": "Orange County SC",
+      "away_team": "San Antonio FC",
+      "league": "USA"
+    },
+    "predictions": {
+      "1x2": {
+        "prediction": 2,
+        "outcome": "Home Win",
+        "confidence": 0.9799087698856868,
+        "probabilities": {
+          "home_win": 0.9799087698856868,
+          "draw": 0.007245048996613112,
+          "away_win": 0.012846181117700136
+        },
+        "recommended": true
+      },
+      "over_under_2.5": {
+        "prediction": "Under",
+        "confidence": 0.5270129660334872,
+        "probabilities": {
+          "over": 0.4729870339665127,
+          "under": 0.5270129660334872
+        },
+        "expected_goals": 2.3918428240654492,
+        "recommended": false
+      },
+      "btts": {
+        "prediction": "No",
+        "confidence": 0.7597083589638438,
+        "probabilities": {
+          "yes": 0.24029164103615622,
+          "no": 0.7597083589638438
+        },
+        "recommended": true
+      },
+      "first_half": {
+        "prediction": 2,
+        "outcome": "Home Win",
+        "confidence": 0.973735851426511,
+        "probabilities": {
+          "home_win": 0.973735851426511,
+          "draw": 0.013498891753017819,
+          "away_win": 0.012765256820471308
+        },
+        "recommended": true
+      }
+    },
+    "timestamp": "2025-10-16T23:52:08.730356"
+  }
+]

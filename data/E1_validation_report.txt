@@ -1,0 +1,435 @@
+================================================================================
+NON-MAJOR LEAGUE DATA VALIDATION REPORT
+================================================================================
+
+DATASET INFORMATION:
+  Total rows: 338
+  Total columns: 126
+  Memory usage: 497,328 bytes
+  Date range: 2023-01-10 00:00:00 to 2024-12-04 00:00:00
+  Span: 694 days
+  Teams: 24
+  Seasons: 2
+
+OVERALL VALIDATION SCORE: 0.54/1.00
+
+VALIDATION CATEGORIES:
+  Data Quality: 0.00/1.00
+  Statistical Validation: 0.42/1.00
+  Temporal Validation: 0.57/1.00
+  Team Validation: 1.00/1.00
+  Score Validation: 0.46/1.00
+
+RECOMMENDATIONS:
+  1. Data quality is below acceptable threshold. Consider data cleaning.
+  2. High outlier percentage in FTHG: 7.4%
+
+DETAILED RESULTS:
+----------------------------------------
+
+Dataset Info:
+  total_rows: 338
+  total_columns: 126
+  memory_usage: 497328
+  data_types:
+    float64: 112
+    object: 10
+    int64: 3
+    datetime64[ns]: 1
+  date_range:
+    start: 2023-01-10 00:00:00
+    end: 2024-12-04 00:00:00
+    span_days: 694
+  teams:
+    total: 24
+    home_teams: 24
+    away_teams: 24
+    team_list: ['QPR', 'Leeds', 'Southampton', 'Cardiff', 'Rotherham', 'Coventry', 'Preston', 'Swansea', 'Hull', 'Middlesbrough', 'Sheffield Weds', 'Sunderland', 'Stoke', 'Huddersfield', 'Plymouth', 'Watford', 'Birmingham', 'Norwich', 'Leicester', 'Bristol City', 'Ipswich', 'West Brom', 'Blackburn', 'Millwall']
+  seasons:
+    total: 2
+    years: [2023, 2024]
+
+Data Quality:
+  completeness:
+    missing_values: {'Div': 0, 'Date': 0, 'Time': 0, 'HomeTeam': 0, 'AwayTeam': 0, 'FTHG': 0, 'FTAG': 0, 'FTR': 0, 'HTHG': 0, 'HTAG': 0, 'HTR': 0, 'Referee': 0, 'HS': 0, 'AS': 0, 'HST': 0, 'AST': 0, 'HF': 0, 'AF': 0, 'HC': 0, 'AC': 0, 'HY': 0, 'AY': 0, 'HR': 0, 'AR': 0, 'B365H': 0, 'B365D': 0, 'B365A': 0, 'BWH': 0, 'BWD': 0, 'BWA': 0, 'PSH': 0, 'PSD': 0, 'PSA': 0, 'WHH': 0, 'WHD': 0, 'WHA': 0, 'VCH': 0, 'VCD': 0, 'VCA': 0, 'MaxH': 0, 'MaxD': 0, 'MaxA': 0, 'AvgH': 0, 'AvgD': 0, 'AvgA': 0, 'B365>2.5': 0, 'B365<2.5': 0, 'P>2.5': 0, 'P<2.5': 0, 'Max>2.5': 0, 'Max<2.5': 0, 'Avg>2.5': 0, 'Avg<2.5': 0, 'AHh': 0, 'B365AHH': 0, 'B365AHA': 0, 'PAHH': 0, 'PAHA': 0, 'MaxAHH': 0, 'MaxAHA': 0, 'AvgAHH': 0, 'AvgAHA': 0, 'B365CH': 0, 'B365CD': 0, 'B365CA': 0, 'BWCH': 0, 'BWCD': 0, 'BWCA': 0, 'PSCH': 0, 'PSCD': 0, 'PSCA': 0, 'WHCH': 0, 'WHCD': 0, 'WHCA': 0, 'VCCH': 0, 'VCCD': 0, 'VCCA': 0, 'MaxCH': 0, 'MaxCD': 0, 'MaxCA': 0, 'AvgCH': 0, 'AvgCD': 0, 'AvgCA': 0, 'B365C>2.5': 0, 'B365C<2.5': 0, 'PC>2.5': 0, 'PC<2.5': 0, 'MaxC>2.5': 0, 'MaxC<2.5': 0, 'AvgC>2.5': 0, 'AvgC<2.5': 0, 'AHCh': 0, 'B365CAHH': 0, 'B365CAHA': 0, 'PCAHH': 0, 'PCAHA': 0, 'MaxCAHH': 0, 'MaxCAHA': 0, 'AvgCAHH': 0, 'AvgCAHA': 0, 'league': 0, 'season': 0, 'data_source': 0, 'home_win': 0, 'draw': 0, 'away_win': 0, 'goal_difference': 0, 'total_goals': 0, 'match_intensity': 0, 'home_advantage': 0, 'year': 0, 'month': 0, 'day_of_week': 0, 'is_weekend': 0, 'match_number': 0, 'home_goals_avg_5': 0, 'away_goals_avg_5': 0, 'home_conceded_avg_5': 0, 'away_conceded_avg_5': 0, 'league_avg_goals': 0, 'league_home_advantage': 0, 'league_goal_variance': 0, 'league_draw_rate': 0, 'home_team_encoded': 0, 'away_team_encoded': 0, 'result_encoded': 0}
+    missing_percentage: {'Div': 0.0, 'Date': 0.0, 'Time': 0.0, 'HomeTeam': 0.0, 'AwayTeam': 0.0, 'FTHG': 0.0, 'FTAG': 0.0, 'FTR': 0.0, 'HTHG': 0.0, 'HTAG': 0.0, 'HTR': 0.0, 'Referee': 0.0, 'HS': 0.0, 'AS': 0.0, 'HST': 0.0, 'AST': 0.0, 'HF': 0.0, 'AF': 0.0, 'HC': 0.0, 'AC': 0.0, 'HY': 0.0, 'AY': 0.0, 'HR': 0.0, 'AR': 0.0, 'B365H': 0.0, 'B365D': 0.0, 'B365A': 0.0, 'BWH': 0.0, 'BWD': 0.0, 'BWA': 0.0, 'PSH': 0.0, 'PSD': 0.0, 'PSA': 0.0, 'WHH': 0.0, 'WHD': 0.0, 'WHA': 0.0, 'VCH': 0.0, 'VCD': 0.0, 'VCA': 0.0, 'MaxH': 0.0, 'MaxD': 0.0, 'MaxA': 0.0, 'AvgH': 0.0, 'AvgD': 0.0, 'AvgA': 0.0, 'B365>2.5': 0.0, 'B365<2.5': 0.0, 'P>2.5': 0.0, 'P<2.5': 0.0, 'Max>2.5': 0.0, 'Max<2.5': 0.0, 'Avg>2.5': 0.0, 'Avg<2.5': 0.0, 'AHh': 0.0, 'B365AHH': 0.0, 'B365AHA': 0.0, 'PAHH': 0.0, 'PAHA': 0.0, 'MaxAHH': 0.0, 'MaxAHA': 0.0, 'AvgAHH': 0.0, 'AvgAHA': 0.0, 'B365CH': 0.0, 'B365CD': 0.0, 'B365CA': 0.0, 'BWCH': 0.0, 'BWCD': 0.0, 'BWCA': 0.0, 'PSCH': 0.0, 'PSCD': 0.0, 'PSCA': 0.0, 'WHCH': 0.0, 'WHCD': 0.0, 'WHCA': 0.0, 'VCCH': 0.0, 'VCCD': 0.0, 'VCCA': 0.0, 'MaxCH': 0.0, 'MaxCD': 0.0, 'MaxCA': 0.0, 'AvgCH': 0.0, 'AvgCD': 0.0, 'AvgCA': 0.0, 'B365C>2.5': 0.0, 'B365C<2.5': 0.0, 'PC>2.5': 0.0, 'PC<2.5': 0.0, 'MaxC>2.5': 0.0, 'MaxC<2.5': 0.0, 'AvgC>2.5': 0.0, 'AvgC<2.5': 0.0, 'AHCh': 0.0, 'B365CAHH': 0.0, 'B365CAHA': 0.0, 'PCAHH': 0.0, 'PCAHA': 0.0, 'MaxCAHH': 0.0, 'MaxCAHA': 0.0, 'AvgCAHH': 0.0, 'AvgCAHA': 0.0, 'league': 0.0, 'season': 0.0, 'data_source': 0.0, 'home_win': 0.0, 'draw': 0.0, 'away_win': 0.0, 'goal_difference': 0.0, 'total_goals': 0.0, 'match_intensity': 0.0, 'home_advantage': 0.0, 'year': 0.0, 'month': 0.0, 'day_of_week': 0.0, 'is_weekend': 0.0, 'match_number': 0.0, 'home_goals_avg_5': 0.0, 'away_goals_avg_5': 0.0, 'home_conceded_avg_5': 0.0, 'away_conceded_avg_5': 0.0, 'league_avg_goals': 0.0, 'league_home_advantage': 0.0, 'league_goal_variance': 0.0, 'league_draw_rate': 0.0, 'home_team_encoded': 0.0, 'away_team_encoded': 0.0, 'result_encoded': 0.0}
+    complete_rows: 338
+    complete_percentage: 100.0
+    score: 1.0
+  consistency:
+    duplicate_rows: 0
+    inconsistent_results: 83
+    team_name_consistency: True
+    date_consistency: False
+    score: 0.5
+  accuracy:
+    valid_dates: 338
+    valid_scores: 45
+    valid_teams: 338
+    score: 0.7110453648915187
+  reliability:
+    team_coverage: 1.0
+    season_coverage: 1.0
+    match_frequency: 0.2
+    score: 0.7333333333333334
+
+Statistical Validation:
+  goal_distribution:
+    home_goals_mean: -0.02874859147208686
+    away_goals_mean: 0.0004559799882879073
+    total_goals_mean: -0.02829261148379893
+    home_goals_std: 0.9791759472592547
+    away_goals_std: 1.013165406112496
+    total_goals_std: 1.357638465426819
+    home_goals_skewness: 0.8267492479044269
+    away_goals_skewness: 0.9382467255392024
+    total_goals_skewness: 0.5200094290940288
+    score: 0.6666666666666666
+  result_distribution:
+    home_win_rate: 0.44970414201183434
+    draw_rate: 0.2455621301775148
+    away_win_rate: 0.3047337278106509
+    score: 1.0
+  home_advantage:
+    mean_home_advantage: -0.029204571460374827
+    std_home_advantage: 1.4585599572392731
+    positive_home_advantage_rate: 0.44970414201183434
+    score: 0.0
+  seasonal_patterns:
+    seasonal_goal_rates: {'Autumn': 0.14808538506978863, 'Spring': -0.19950840889040888, 'Summer': -0.00026508422132295233, 'Winter': -0.02511586924606019}
+    seasonal_match_counts: {'Autumn': 83, 'Spring': 96, 'Summer': 52, 'Winter': 107}
+    score: 0.0
+
+Temporal Validation:
+  date_gaps:
+    large_gaps: 5
+    max_gap_days: 60.0
+    avg_gap_days: 2.059347181008902
+    score: 0.985207100591716
+  match_frequency:
+    monthly_counts: {Period('2024-01', 'M'): 35, Period('2024-10', 'M'): 28, Period('2023-04', 'M'): 28, Period('2023-02', 'M'): 26, Period('2024-06', 'M'): 26, Period('2023-12', 'M'): 25, Period('2024-09', 'M'): 22, Period('2024-04', 'M'): 20, Period('2023-07', 'M'): 19, Period('2024-03', 'M'): 17, Period('2023-09', 'M'): 16, Period('2024-02', 'M'): 16, Period('2023-11', 'M'): 14, Period('2024-05', 'M'): 11, Period('2023-05', 'M'): 11, Period('2023-03', 'M'): 9, Period('2023-06', 'M'): 5, Period('2024-12', 'M'): 3, Period('2023-01', 'M'): 2, Period('2024-11', 'M'): 2, Period('2023-10', 'M'): 1, Period('2023-08', 'M'): 1, Period('2024-08', 'M'): 1}
+    low_frequency_months: 6
+    avg_matches_per_month: 14.695652173913043
+    score: 0.7391304347826086
+  season_consistency:
+    yearly_counts: {2024: 181, 2023: 157}
+    low_season_years: 2
+    avg_matches_per_season: 169.0
+    score: 0.0
+
+Team Validation:
+  team_coverage:
+    total_teams: 24
+    min_required: 16
+    coverage_rate: 1.5
+    score: 1.0
+  team_consistency:
+    home_teams: 24
+    away_teams: 24
+    teams_in_both: 24
+    consistency_score: 1.0
+    score: 1.0
+  team_changes:
+    total_changes: 0
+    total_teams: 24
+    change_rate: 0.0
+    max_allowed_rate: 0.5
+    score: 1.0
+
+Score Validation:
+  score_range:
+    home_min: -1.292810545170927
+    home_max: 2.7476618203846317
+    away_min: -1.2221957827490948
+    away_max: 3.624471570120056
+    home_invalid: 197
+    away_invalid: 221
+    score: 0.13313609467455623
+  score_distribution:
+    home_mean: -0.02874859147208686
+    away_mean: 0.0004559799882879073
+    total_mean: -0.02829261148379893
+    home_std: 0.9791759472592547
+    away_std: 1.013165406112496
+    total_std: 1.357638465426819
+    score: 0.5
+  score_consistency:
+    inconsistent_results: 83
+    total_matches: 338
+    consistency_rate: 0.7544378698224852
+    score: 0.7544378698224852
+
+Missing Data Analysis:
+  missing_by_column:
+    Div: 0
+    Date: 0
+    Time: 0
+    HomeTeam: 0
+    AwayTeam: 0
+    FTHG: 0
+    FTAG: 0
+    FTR: 0
+    HTHG: 0
+    HTAG: 0
+    HTR: 0
+    Referee: 0
+    HS: 0
+    AS: 0
+    HST: 0
+    AST: 0
+    HF: 0
+    AF: 0
+    HC: 0
+    AC: 0
+    HY: 0
+    AY: 0
+    HR: 0
+    AR: 0
+    B365H: 0
+    B365D: 0
+    B365A: 0
+    BWH: 0
+    BWD: 0
+    BWA: 0
+    PSH: 0
+    PSD: 0
+    PSA: 0
+    WHH: 0
+    WHD: 0
+    WHA: 0
+    VCH: 0
+    VCD: 0
+    VCA: 0
+    MaxH: 0
+    MaxD: 0
+    MaxA: 0
+    AvgH: 0
+    AvgD: 0
+    AvgA: 0
+    B365>2.5: 0
+    B365<2.5: 0
+    P>2.5: 0
+    P<2.5: 0
+    Max>2.5: 0
+    Max<2.5: 0
+    Avg>2.5: 0
+    Avg<2.5: 0
+    AHh: 0
+    B365AHH: 0
+    B365AHA: 0
+    PAHH: 0
+    PAHA: 0
+    MaxAHH: 0
+    MaxAHA: 0
+    AvgAHH: 0
+    AvgAHA: 0
+    B365CH: 0
+    B365CD: 0
+    B365CA: 0
+    BWCH: 0
+    BWCD: 0
+    BWCA: 0
+    PSCH: 0
+    PSCD: 0
+    PSCA: 0
+    WHCH: 0
+    WHCD: 0
+    WHCA: 0
+    VCCH: 0
+    VCCD: 0
+    VCCA: 0
+    MaxCH: 0
+    MaxCD: 0
+    MaxCA: 0
+    AvgCH: 0
+    AvgCD: 0
+    AvgCA: 0
+    B365C>2.5: 0
+    B365C<2.5: 0
+    PC>2.5: 0
+    PC<2.5: 0
+    MaxC>2.5: 0
+    MaxC<2.5: 0
+    AvgC>2.5: 0
+    AvgC<2.5: 0
+    AHCh: 0
+    B365CAHH: 0
+    B365CAHA: 0
+    PCAHH: 0
+    PCAHA: 0
+    MaxCAHH: 0
+    MaxCAHA: 0
+    AvgCAHH: 0
+    AvgCAHA: 0
+    league: 0
+    season: 0
+    data_source: 0
+    home_win: 0
+    draw: 0
+    away_win: 0
+    goal_difference: 0
+    total_goals: 0
+    match_intensity: 0
+    home_advantage: 0
+    year: 0
+    month: 0
+    day_of_week: 0
+    is_weekend: 0
+    match_number: 0
+    home_goals_avg_5: 0
+    away_goals_avg_5: 0
+    home_conceded_avg_5: 0
+    away_conceded_avg_5: 0
+    league_avg_goals: 0
+    league_home_advantage: 0
+    league_goal_variance: 0
+    league_draw_rate: 0
+    home_team_encoded: 0
+    away_team_encoded: 0
+    result_encoded: 0
+  missing_percentage:
+    Div: 0.0
+    Date: 0.0
+    Time: 0.0
+    HomeTeam: 0.0
+    AwayTeam: 0.0
+    FTHG: 0.0
+    FTAG: 0.0
+    FTR: 0.0
+    HTHG: 0.0
+    HTAG: 0.0
+    HTR: 0.0
+    Referee: 0.0
+    HS: 0.0
+    AS: 0.0
+    HST: 0.0
+    AST: 0.0
+    HF: 0.0
+    AF: 0.0
+    HC: 0.0
+    AC: 0.0
+    HY: 0.0
+    AY: 0.0
+    HR: 0.0
+    AR: 0.0
+    B365H: 0.0
+    B365D: 0.0
+    B365A: 0.0
+    BWH: 0.0
+    BWD: 0.0
+    BWA: 0.0
+    PSH: 0.0
+    PSD: 0.0
+    PSA: 0.0
+    WHH: 0.0
+    WHD: 0.0
+    WHA: 0.0
+    VCH: 0.0
+    VCD: 0.0
+    VCA: 0.0
+    MaxH: 0.0
+    MaxD: 0.0
+    MaxA: 0.0
+    AvgH: 0.0
+    AvgD: 0.0
+    AvgA: 0.0
+    B365>2.5: 0.0
+    B365<2.5: 0.0
+    P>2.5: 0.0
+    P<2.5: 0.0
+    Max>2.5: 0.0
+    Max<2.5: 0.0
+    Avg>2.5: 0.0
+    Avg<2.5: 0.0
+    AHh: 0.0
+    B365AHH: 0.0
+    B365AHA: 0.0
+    PAHH: 0.0
+    PAHA: 0.0
+    MaxAHH: 0.0
+    MaxAHA: 0.0
+    AvgAHH: 0.0
+    AvgAHA: 0.0
+    B365CH: 0.0
+    B365CD: 0.0
+    B365CA: 0.0
+    BWCH: 0.0
+    BWCD: 0.0
+    BWCA: 0.0
+    PSCH: 0.0
+    PSCD: 0.0
+    PSCA: 0.0
+    WHCH: 0.0
+    WHCD: 0.0
+    WHCA: 0.0
+    VCCH: 0.0
+    VCCD: 0.0
+    VCCA: 0.0
+    MaxCH: 0.0
+    MaxCD: 0.0
+    MaxCA: 0.0
+    AvgCH: 0.0
+    AvgCD: 0.0
+    AvgCA: 0.0
+    B365C>2.5: 0.0
+    B365C<2.5: 0.0
+    PC>2.5: 0.0
+    PC<2.5: 0.0
+    MaxC>2.5: 0.0
+    MaxC<2.5: 0.0
+    AvgC>2.5: 0.0
+    AvgC<2.5: 0.0
+    AHCh: 0.0
+    B365CAHH: 0.0
+    B365CAHA: 0.0
+    PCAHH: 0.0
+    PCAHA: 0.0
+    MaxCAHH: 0.0
+    MaxCAHA: 0.0
+    AvgCAHH: 0.0
+    AvgCAHA: 0.0
+    league: 0.0
+    season: 0.0
+    data_source: 0.0
+    home_win: 0.0
+    draw: 0.0
+    away_win: 0.0
+    goal_difference: 0.0
+    total_goals: 0.0
+    match_intensity: 0.0
+    home_advantage: 0.0
+    year: 0.0
+    month: 0.0
+    day_of_week: 0.0
+    is_weekend: 0.0
+    match_number: 0.0
+    home_goals_avg_5: 0.0
+    away_goals_avg_5: 0.0
+    home_conceded_avg_5: 0.0
+    away_conceded_avg_5: 0.0
+    league_avg_goals: 0.0
+    league_home_advantage: 0.0
+    league_goal_variance: 0.0
+    league_draw_rate: 0.0
+    home_team_encoded: 0.0
+    away_team_encoded: 0.0
+    result_encoded: 0.0
+  missing_patterns:
+    completely_missing_rows: 0
+    partially_missing_rows: 0
+    missing_by_date: {2023: 0, 2024: 0}
+    missing_by_team: {'Birmingham': 0, 'Blackburn': 0, 'Bristol City': 0, 'Cardiff': 0, 'Coventry': 0, 'Huddersfield': 0, 'Hull': 0, 'Ipswich': 0, 'Leeds': 0, 'Leicester': 0, 'Middlesbrough': 0, 'Millwall': 0, 'Norwich': 0, 'Plymouth': 0, 'Preston': 0, 'QPR': 0, 'Rotherham': 0, 'Sheffield Weds': 0, 'Southampton': 0, 'Stoke': 0, 'Sunderland': 0, 'Swansea': 0, 'Watford': 0, 'West Brom': 0}
+  recommendations: []
+
+Outlier Analysis:
+  numerical_outliers:
+    FTHG: {'count': np.int64(25), 'percentage': np.float64(7.396449704142012), 'indices': [11, 24, 54, 56, 64, 78, 97, 102, 107, 119, 154, 171, 172, 177, 205, 208, 213, 223, 229, 258, 273, 278, 294, 312, 325]}
+    FTAG: {'count': np.int64(0), 'percentage': np.float64(0.0), 'indices': []}
+  categorical_outliers:
+  recommendations: ['High outlier percentage in FTHG: 7.4%']
+
+Cross League Comparison:
+  message: Cross-league comparison not implemented
+  reference_leagues: ['EPL', 'LaLiga', 'Bundesliga']
+
+================================================================================

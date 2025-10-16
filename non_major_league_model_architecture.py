@@ -245,14 +245,12 @@ class NonMajorLeagueModelArchitecture:
                             X_train, y_train,
                             sample_weight=sample_weights,
                             eval_set=[(X_val, y_val)],
-                            early_stopping_rounds=50,
                             verbose=False
                         )
                     else:
                         model.fit(
                             X_train, y_train,
                             eval_set=[(X_val, y_val)],
-                            early_stopping_rounds=50,
                             verbose=False
                         )
                 elif name == 'lightgbm':

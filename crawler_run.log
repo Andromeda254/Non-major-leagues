@@ -1,0 +1,2179 @@
+[dotenv@17.2.3] injecting env (2) from .env -- tip: ⚙️  override existing env vars with { override: true }
+⚽ Enhanced Soccer Match Crawler initialized
+📁 Session ID: soccer_2025-10-16T23-35-26-934Z
+🔐 SSL Keylog: ssl_keys/soccer_2025-10-16T23-35-26-934Z_ssl.log
+⏰ Current Time: 2025-10-16T23:35:26.935Z
+🎯 Target: Matches 3:00 AM - 5:00 AM (Current Date Only)
+📅 Current Date: 2025-10-16
+📱 Username: ✓ Loaded
+🔑 Password: ✓ Loaded
+🔥 Firecrawl Integration: ✗ Disabled
+🚀 STARTING ENHANCED SOCCER MATCH CRAWLER
+================================================================================
+
+🧹 STEP 0: PRE-CLEANUP OF OLD DATA
+🧹 Cleaning up old data files...
+📁 Pattern soccer-match-intelligence/*_match_data.json: 3 files (keeping all)
+📁 Pattern soccer-match-intelligence/*_filtered_matches.json: 3 files (keeping all)
+📁 Pattern soccer-match-intelligence/*_traffic.json: 0 files (keeping all)
+📁 Pattern soccer-match-intelligence/*_dashboard.json: 0 files (keeping all)
+📁 Pattern firecrawl-data/*_firecrawl.json: 0 files (keeping all)
+📁 Pattern firecrawl-data/temp_matches_*.json: 0 files (keeping all)
+📁 Pattern exports/soccer_matches_*.csv: 3 files (keeping all)
+📁 Pattern screenshots/*.png: 3 files (keeping all)
+📁 Pattern html-dumps/*.html: 3 files (keeping all)
+📁 Pattern ssl_keys/*_ssl.log: 3 files (keeping all)
+📁 Pattern traffic-data/*.pcap: 0 files (keeping all)
+✅ Cleanup completed: 0 files deleted, 0.00 MB freed
+🚀 Starting traffic capture process...
+✅ Traffic capture started
+🚀 Launching browser with enhanced soccer match capabilities...
+🖥️ Browser window set to 1920x1080 maximized
+🧠 Setting up intelligence capture for soccer matches with Vue.js optimizations...
+🕵️ Setting up anti-detection measures...
+✅ Anti-detection measures applied with 1920x1080 viewport
+✅ Browser launched with enhanced soccer match capabilities
+
+🔑 STEP 1: LOGIN PROCESS
+🔑 LOGIN PROCESS
+🌐 Navigating to https://betika.com...
+🎯 Captured request: GET https://api.betika.com/v1/sports (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/sports (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://live.betika.com/v1/uo/sports (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/sports (Vue API)
+⚽ Found 21 potential soccer matches in JSON data
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/sports
+📊 Vue API Analysis: object, 21 matches, pagination: false
+📥 Captured response: 200 https://api.betika.com/v1/sports (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/matches?page=1&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/sport?page=1&limit=1000&id=14 (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/matches?page=1&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&sort_id=1&period_id=-1&esports=false (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/matches?page=1&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&sort_id=1&period_id=-1&esports=false (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/sports (Vue API)
+⚽ Found 21 potential soccer matches in JSON data
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/sports
+📊 Vue API Analysis: object, 21 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/sports (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 200 https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://live.betika.com/v1/uo/sports (Vue API)
+⚽ Found 2 potential soccer matches in JSON data
+🔍 Analyzing Vue.js API data from https://live.betika.com/v1/uo/sports
+📊 Vue API Analysis: object, 10 matches, pagination: false
+📥 Captured response: 200 https://live.betika.com/v1/uo/sports (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/matches?page=1&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&sort_id=1&period_id=-1&esports=false (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/matches?page=1&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false (Vue API)
+⚽ Found 14 potential soccer matches in JSON data
+⚽ Added API match: Kenya Police FC vs AL Hilal
+⚽ Added API match: Oviedo vs Espanyol
+⚽ Added API match: UNION BERLIN vs Borussia (MG)
+⚽ Added API match: PSG vs Strasbourg
+⚽ Added API match: Middlesbrough vs Ipswich
+⚽ Added API match: GD Chaves vs Benfica
+⚽ Added API match: Fluminense FC vs EC Juventude
+⚽ Added API match: EC Vitoria vs EC Bahia
+⚽ Added API match: Real Esteli FC vs Rancho Santana FC
+⚽ Added API match: Quindio vs Tigres
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/matches?page=1&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false
+📊 Vue API Analysis: object, 10 matches, pagination: false
+📥 Captured response: 200 https://api.betika.com/v1/uo/matches?page=1&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false (Vue API)
+🎯 Captured request: GET https://dsp-media.eskimi.com/assets/js/e/gtr.min.js?_=0.0.0.3
+⚽ Soccer data detected from https://api.betika.com/v1/uo/sport?page=1&limit=1000&id=14 (Vue API)
+⚽ Found 6 potential soccer matches in JSON data
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/sport?page=1&limit=1000&id=14
+📊 Vue API Analysis: object, 101 matches, pagination: false
+📥 Captured response: 200 https://api.betika.com/v1/uo/sport?page=1&limit=1000&id=14 (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/matches?page=1&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&sort_id=1&period_id=-1&esports=false (Vue API)
+⚽ Found 14 potential soccer matches in JSON data
+⚽ Added API match: Kenya Police FC vs AL Hilal
+⚽ Added API match: Oviedo vs Espanyol
+⚽ Added API match: UNION BERLIN vs Borussia (MG)
+⚽ Added API match: PSG vs Strasbourg
+⚽ Added API match: Middlesbrough vs Ipswich
+⚽ Added API match: GD Chaves vs Benfica
+⚽ Added API match: Fluminense FC vs EC Juventude
+⚽ Added API match: EC Vitoria vs EC Bahia
+⚽ Added API match: Real Esteli FC vs Rancho Santana FC
+⚽ Added API match: Quindio vs Tigres
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/matches?page=1&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&sort_id=1&period_id=-1&esports=false
+📊 Vue API Analysis: object, 10 matches, pagination: false
+📥 Captured response: 200 https://api.betika.com/v1/uo/matches?page=1&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&sort_id=1&period_id=-1&esports=false (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/matches?page=2&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/matches?page=1&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&sort_id=1&period_id=-1&esports=false (Vue API)
+⚽ Found 14 potential soccer matches in JSON data
+⚽ Added API match: Kenya Police FC vs AL Hilal
+⚽ Added API match: Oviedo vs Espanyol
+⚽ Added API match: UNION BERLIN vs Borussia (MG)
+⚽ Added API match: PSG vs Strasbourg
+⚽ Added API match: Middlesbrough vs Ipswich
+⚽ Added API match: GD Chaves vs Benfica
+⚽ Added API match: Fluminense FC vs EC Juventude
+⚽ Added API match: EC Vitoria vs EC Bahia
+⚽ Added API match: Real Esteli FC vs Rancho Santana FC
+⚽ Added API match: Quindio vs Tigres
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/matches?page=1&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&sort_id=1&period_id=-1&esports=false
+📊 Vue API Analysis: object, 10 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/matches?page=1&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&sort_id=1&period_id=-1&esports=false (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/matches?page=2&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false (Vue API)
+⚽ Found 14 potential soccer matches in JSON data
+⚽ Added API match: Alianza Lima vs Sport Boys Association
+⚽ Added API match: Diriangen FC Diriamba vs CD Walter Ferretti
+⚽ Added API match: Qingdao Hainiu vs Shanghai Port
+⚽ Added API match: Kyzylzhar vs Kairat
+⚽ Added API match: APIA Leichhardt vs Sydney United
+⚽ Added API match: H. Nir Ramat Hasharon FC vs Kiiryat Gat
+⚽ Added API match: Monastir vs JS Kabylie
+⚽ Added API match: Chengdu Rongcheng vs Meizhou Hakka
+⚽ Added API match: Qingdao West Coast vs Shanghai Shenhua
+⚽ Added API match: FK Panevezys B vs FK Transinvest
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/matches?page=2&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false
+📊 Vue API Analysis: object, 10 matches, pagination: false
+📥 Captured response: 200 https://api.betika.com/v1/uo/matches?page=2&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false (Vue API)
+🎯 Captured request: GET https://dsp-trk.eskimi.com/tracking/cssession?tst&id=25605&url=https%3A%2F%2Fwww.betika.com%2Fen-ke%2F&t=1760657763306
+🎯 Captured request: GET https://dsp-ap.eskimi.com/v2/gtr?id=25605&url=https%3A%2F%2Fwww.betika.com%2Fen-ke%2F&t=1760657763308
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+📥 Captured response: 200 https://dsp-media.eskimi.com/assets/js/e/gtr.min.js?_=0.0.0.3
+🎯 Captured request: GET https://www.facebook.com/tr/?id=359321237745265&ev=PageView&dl=https%3A%2F%2Fwww.betika.com%2Fen-ke%2F&rl=&if=false&ts=1760657764338&sw=1920&sh=1080&v=2.9.236&r=stable&a=tmSimo-GTM-WebTemplate&ec=0&o=4126&fbp=fb.1.1760657763677.529565499343850665&ler=empty&pmd[title]=Soccer%20Betting%20%7C%20Football%20Betting%20Odds%20%7C%20Betika&pmd[keywords]=Betika%2C%20Jackpot%2C%20Todays%20games%2C%20this%20week%20jackpot.%20bingwa%2C%20bet%2C%20multibet&pmd[description]=Bet%20on%20soccer%20easily%20and%20securely%20with%20Betika%2C%20view%20soccer%20betting%20odds%20and%20place%20your%20soccer%20bets%20online.%20Instant%20cashback%20bonuses.&pmd[contents]=%5B%7B%22name%22%3A%22Soccer%20Betting%20%7C%20Football%20Betting%20Odds%20%7C%20Betika%22%2C%22description%22%3A%22Bet%20on%20soccer%20easily%20and%20securely%20with%20Betika%2C%20view%20soccer%20betting%20odds%20and%20place%20your%20soccer%20bets%20online.%20Instant%20cashback%20bonuses.%22%7D%5D&plt=5108.800000000745&hmd=7aac49162adecd2f08afda31&pl=https%3A%2F%2Fwww.betika.com%2Fen-ke%2F&eid=ob3_plugin-set_c0606e7472a88a14160bfd2cc22ce6327ebeea578aabf75d6673e307601b722b&it=1760657763293&coo=false&tm=1&cdl=&cf=1&expv2[0]=pl1&expv2[1]=el2&expv2[2]=bc1&rqm=GET
+🎯 Captured request: GET https://www.facebook.com/privacy_sandbox/pixel/register/trigger/?id=359321237745265&ev=PageView&dl=https%3A%2F%2Fwww.betika.com%2Fen-ke%2F&rl=&if=false&ts=1760657764338&sw=1920&sh=1080&v=2.9.236&r=stable&a=tmSimo-GTM-WebTemplate&ec=0&o=4126&fbp=fb.1.1760657763677.529565499343850665&ler=empty&pmd[title]=Soccer%20Betting%20%7C%20Football%20Betting%20Odds%20%7C%20Betika&pmd[keywords]=Betika%2C%20Jackpot%2C%20Todays%20games%2C%20this%20week%20jackpot.%20bingwa%2C%20bet%2C%20multibet&pmd[description]=Bet%20on%20soccer%20easily%20and%20securely%20with%20Betika%2C%20view%20soccer%20betting%20odds%20and%20place%20your%20soccer%20bets%20online.%20Instant%20cashback%20bonuses.&pmd[contents]=%5B%7B%22name%22%3A%22Soccer%20Betting%20%7C%20Football%20Betting%20Odds%20%7C%20Betika%22%2C%22description%22%3A%22Bet%20on%20soccer%20easily%20and%20securely%20with%20Betika%2C%20view%20soccer%20betting%20odds%20and%20place%20your%20soccer%20bets%20online.%20Instant%20cashback%20bonuses.%22%7D%5D&plt=5108.800000000745&hmd=7aac49162adecd2f08afda31&pl=https%3A%2F%2Fwww.betika.com%2Fen-ke%2F&eid=ob3_plugin-set_c0606e7472a88a14160bfd2cc22ce6327ebeea578aabf75d6673e307601b722b&it=1760657763293&coo=false&tm=1&cdl=&cf=1&expv2[0]=pl1&expv2[1]=el2&expv2[2]=bc1&rqm=FGET
+⚽ Soccer data detected from https://dsp-ap.eskimi.com/v2/gtr?id=25605&url=https%3A%2F%2Fwww.betika.com%2Fen-ke%2F&t=1760657763308
+📥 Captured response: 200 https://dsp-ap.eskimi.com/v2/gtr?id=25605&url=https%3A%2F%2Fwww.betika.com%2Fen-ke%2F&t=1760657763308
+📥 Captured response: 200 https://www.facebook.com/tr/?id=359321237745265&ev=PageView&dl=https%3A%2F%2Fwww.betika.com%2Fen-ke%2F&rl=&if=false&ts=1760657764338&sw=1920&sh=1080&v=2.9.236&r=stable&a=tmSimo-GTM-WebTemplate&ec=0&o=4126&fbp=fb.1.1760657763677.529565499343850665&ler=empty&pmd[title]=Soccer%20Betting%20%7C%20Football%20Betting%20Odds%20%7C%20Betika&pmd[keywords]=Betika%2C%20Jackpot%2C%20Todays%20games%2C%20this%20week%20jackpot.%20bingwa%2C%20bet%2C%20multibet&pmd[description]=Bet%20on%20soccer%20easily%20and%20securely%20with%20Betika%2C%20view%20soccer%20betting%20odds%20and%20place%20your%20soccer%20bets%20online.%20Instant%20cashback%20bonuses.&pmd[contents]=%5B%7B%22name%22%3A%22Soccer%20Betting%20%7C%20Football%20Betting%20Odds%20%7C%20Betika%22%2C%22description%22%3A%22Bet%20on%20soccer%20easily%20and%20securely%20with%20Betika%2C%20view%20soccer%20betting%20odds%20and%20place%20your%20soccer%20bets%20online.%20Instant%20cashback%20bonuses.%22%7D%5D&plt=5108.800000000745&hmd=7aac49162adecd2f08afda31&pl=https%3A%2F%2Fwww.betika.com%2Fen-ke%2F&eid=ob3_plugin-set_c0606e7472a88a14160bfd2cc22ce6327ebeea578aabf75d6673e307601b722b&it=1760657763293&coo=false&tm=1&cdl=&cf=1&expv2[0]=pl1&expv2[1]=el2&expv2[2]=bc1&rqm=GET
+📥 Captured response: 200 https://dsp-trk.eskimi.com/tracking/cssession?tst&id=25605&url=https%3A%2F%2Fwww.betika.com%2Fen-ke%2F&t=1760657763306
+📥 Captured response: 200 https://www.facebook.com/privacy_sandbox/pixel/register/trigger/?id=359321237745265&ev=PageView&dl=https%3A%2F%2Fwww.betika.com%2Fen-ke%2F&rl=&if=false&ts=1760657764338&sw=1920&sh=1080&v=2.9.236&r=stable&a=tmSimo-GTM-WebTemplate&ec=0&o=4126&fbp=fb.1.1760657763677.529565499343850665&ler=empty&pmd[title]=Soccer%20Betting%20%7C%20Football%20Betting%20Odds%20%7C%20Betika&pmd[keywords]=Betika%2C%20Jackpot%2C%20Todays%20games%2C%20this%20week%20jackpot.%20bingwa%2C%20bet%2C%20multibet&pmd[description]=Bet%20on%20soccer%20easily%20and%20securely%20with%20Betika%2C%20view%20soccer%20betting%20odds%20and%20place%20your%20soccer%20bets%20online.%20Instant%20cashback%20bonuses.&pmd[contents]=%5B%7B%22name%22%3A%22Soccer%20Betting%20%7C%20Football%20Betting%20Odds%20%7C%20Betika%22%2C%22description%22%3A%22Bet%20on%20soccer%20easily%20and%20securely%20with%20Betika%2C%20view%20soccer%20betting%20odds%20and%20place%20your%20soccer%20bets%20online.%20Instant%20cashback%20bonuses.%22%7D%5D&plt=5108.800000000745&hmd=7aac49162adecd2f08afda31&pl=https%3A%2F%2Fwww.betika.com%2Fen-ke%2F&eid=ob3_plugin-set_c0606e7472a88a14160bfd2cc22ce6327ebeea578aabf75d6673e307601b722b&it=1760657763293&coo=false&tm=1&cdl=&cf=1&expv2[0]=pl1&expv2[1]=el2&expv2[2]=bc1&rqm=FGET
+🎯 Captured request: GET https://dsp-trk.eskimi.com/pix?gdpr=0&gdpr_consent=1&google_error=3
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+📥 Captured response: 200 https://dsp-trk.eskimi.com/pix?gdpr=0&gdpr_consent=1&google_error=3
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 200 https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/matches?page=1&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&sort_id=1&period_id=-1&esports=false (Vue API)
+⚽ Found 14 potential soccer matches in JSON data
+⚽ Added API match: Kenya Police FC vs AL Hilal
+⚽ Added API match: Oviedo vs Espanyol
+⚽ Added API match: UNION BERLIN vs Borussia (MG)
+⚽ Added API match: PSG vs Strasbourg
+⚽ Added API match: Middlesbrough vs Ipswich
+⚽ Added API match: GD Chaves vs Benfica
+⚽ Added API match: Fluminense FC vs EC Juventude
+⚽ Added API match: EC Vitoria vs EC Bahia
+⚽ Added API match: Real Esteli FC vs Rancho Santana FC
+⚽ Added API match: Quindio vs Tigres
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/matches?page=1&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&sort_id=1&period_id=-1&esports=false
+📊 Vue API Analysis: object, 10 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/matches?page=1&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&sort_id=1&period_id=-1&esports=false (Vue API)
+🎯 Captured request: GET https://segment.prod.bidr.io/associate-segment?buzz_key=geniussportsmedia&segment_key=geniussportsmedia-2264&value=
+🎯 Captured request: GET https://match.prod.bidr.io/cookie-sync/geniussports
+🎯 Captured request: GET https://segment.prod.bidr.io/associate-segment?buzz_key=geniussportsmedia&segment_key=geniussportsmedia-2264&value=&_bee_ppp=1
+📥 Captured response: 303 https://segment.prod.bidr.io/associate-segment?buzz_key=geniussportsmedia&segment_key=geniussportsmedia-2264&value=
+🎯 Captured request: GET https://match.prod.bidr.io/cookie-sync/geniussports?_bee_ppp=1
+📥 Captured response: 303 https://match.prod.bidr.io/cookie-sync/geniussports
+📥 Captured response: 303 https://match.prod.bidr.io/cookie-sync/geniussports?_bee_ppp=1
+📥 Captured response: 200 https://segment.prod.bidr.io/associate-segment?buzz_key=geniussportsmedia&segment_key=geniussportsmedia-2264&value=&_bee_ppp=1
+⏳ Waiting 4 seconds...
+🎯 Captured request: GET https://dsp-trk.eskimi.com/tracking/cssession?id=25605&url=https%3A%2F%2Fwww.betika.com%2Fen-ke%2F&t=1760657773306
+📥 Captured response: 200 https://dsp-trk.eskimi.com/tracking/cssession?id=25605&url=https%3A%2F%2Fwww.betika.com%2Fen-ke%2F&t=1760657773306
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://live.betika.com/v1/uo/sports (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/matches?page=1&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false (Vue API)
+🎯 Captured request: GET https://live.betika.com/v1/uo/sports (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/sport?page=1&limit=1000&id=14 (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://live.betika.com/v1/uo/sports (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/matches?page=1&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/sport?page=1&limit=1000&id=14 (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/matches?page=1&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&sort_id=1&period_id=-1&esports=false (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/matches?page=1&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&sort_id=1&period_id=-1&esports=false (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/sport?page=1&limit=1000&id=14 (Vue API)
+⚽ Found 6 potential soccer matches in JSON data
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/sport?page=1&limit=1000&id=14
+📊 Vue API Analysis: object, 101 matches, pagination: false
+📥 Captured response: 200 https://api.betika.com/v1/uo/sport?page=1&limit=1000&id=14 (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/matches?page=1&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false (Vue API)
+⚽ Found 14 potential soccer matches in JSON data
+⚽ Added API match: Kenya Police FC vs AL Hilal
+⚽ Added API match: Oviedo vs Espanyol
+⚽ Added API match: UNION BERLIN vs Borussia (MG)
+⚽ Added API match: PSG vs Strasbourg
+⚽ Added API match: Middlesbrough vs Ipswich
+⚽ Added API match: GD Chaves vs Benfica
+⚽ Added API match: Fluminense FC vs EC Juventude
+⚽ Added API match: EC Vitoria vs EC Bahia
+⚽ Added API match: Real Esteli FC vs Rancho Santana FC
+⚽ Added API match: Quindio vs Tigres
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/matches?page=1&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false
+📊 Vue API Analysis: object, 10 matches, pagination: false
+📥 Captured response: 200 https://api.betika.com/v1/uo/matches?page=1&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false (Vue API)
+⚽ Soccer data detected from https://live.betika.com/v1/uo/sports (Vue API)
+⚽ Found 2 potential soccer matches in JSON data
+🔍 Analyzing Vue.js API data from https://live.betika.com/v1/uo/sports
+📊 Vue API Analysis: object, 10 matches, pagination: false
+📥 Captured response: 200 https://live.betika.com/v1/uo/sports (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/matches?page=1&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false (Vue API)
+⚽ Found 14 potential soccer matches in JSON data
+⚽ Added API match: Kenya Police FC vs AL Hilal
+⚽ Added API match: Oviedo vs Espanyol
+⚽ Added API match: UNION BERLIN vs Borussia (MG)
+⚽ Added API match: PSG vs Strasbourg
+⚽ Added API match: Middlesbrough vs Ipswich
+⚽ Added API match: GD Chaves vs Benfica
+⚽ Added API match: Fluminense FC vs EC Juventude
+⚽ Added API match: EC Vitoria vs EC Bahia
+⚽ Added API match: Real Esteli FC vs Rancho Santana FC
+⚽ Added API match: Quindio vs Tigres
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/matches?page=1&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false
+📊 Vue API Analysis: object, 10 matches, pagination: false
+📥 Captured response: 200 https://api.betika.com/v1/uo/matches?page=1&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false (Vue API)
+⚽ Soccer data detected from https://live.betika.com/v1/uo/sports (Vue API)
+⚽ Found 2 potential soccer matches in JSON data
+🔍 Analyzing Vue.js API data from https://live.betika.com/v1/uo/sports
+📊 Vue API Analysis: object, 10 matches, pagination: false
+📥 Captured response: 304 https://live.betika.com/v1/uo/sports (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/sport?page=1&limit=1000&id=14 (Vue API)
+⚽ Found 6 potential soccer matches in JSON data
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/sport?page=1&limit=1000&id=14
+📊 Vue API Analysis: object, 101 matches, pagination: false
+📥 Captured response: 200 https://api.betika.com/v1/uo/sport?page=1&limit=1000&id=14 (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://live.betika.com/v1/uo/sports (Vue API)
+⚽ Found 2 potential soccer matches in JSON data
+🔍 Analyzing Vue.js API data from https://live.betika.com/v1/uo/sports
+📊 Vue API Analysis: object, 10 matches, pagination: false
+📥 Captured response: 304 https://live.betika.com/v1/uo/sports (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/matches?page=1&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&sort_id=1&period_id=-1&esports=false (Vue API)
+⚽ Found 14 potential soccer matches in JSON data
+⚽ Added API match: Kenya Police FC vs AL Hilal
+⚽ Added API match: Oviedo vs Espanyol
+⚽ Added API match: UNION BERLIN vs Borussia (MG)
+⚽ Added API match: PSG vs Strasbourg
+⚽ Added API match: Middlesbrough vs Ipswich
+⚽ Added API match: GD Chaves vs Benfica
+⚽ Added API match: Fluminense FC vs EC Juventude
+⚽ Added API match: EC Vitoria vs EC Bahia
+⚽ Added API match: Real Esteli FC vs Rancho Santana FC
+⚽ Added API match: Quindio vs Tigres
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/matches?page=1&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&sort_id=1&period_id=-1&esports=false
+📊 Vue API Analysis: object, 10 matches, pagination: false
+📥 Captured response: 200 https://api.betika.com/v1/uo/matches?page=1&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&sort_id=1&period_id=-1&esports=false (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/matches?page=1&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&sort_id=1&period_id=-1&esports=false (Vue API)
+⚽ Found 14 potential soccer matches in JSON data
+⚽ Added API match: Kenya Police FC vs AL Hilal
+⚽ Added API match: Oviedo vs Espanyol
+⚽ Added API match: UNION BERLIN vs Borussia (MG)
+⚽ Added API match: PSG vs Strasbourg
+⚽ Added API match: Middlesbrough vs Ipswich
+⚽ Added API match: GD Chaves vs Benfica
+⚽ Added API match: Fluminense FC vs EC Juventude
+⚽ Added API match: EC Vitoria vs EC Bahia
+⚽ Added API match: Real Esteli FC vs Rancho Santana FC
+⚽ Added API match: Quindio vs Tigres
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/matches?page=1&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&sort_id=1&period_id=-1&esports=false
+📊 Vue API Analysis: object, 10 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/matches?page=1&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&sort_id=1&period_id=-1&esports=false (Vue API)
+💾 Page state saved: 01_homepage_2025-10-16T23-36-14-953Z
+✅ Login button clicked
+⏳ Waiting 6 seconds...
+🎯 Captured request: GET https://www.facebook.com/tr/?id=359321237745265&ev=SubscribedButtonClick&dl=https%3A%2F%2Fwww.betika.com%2Fen-ke%2F&rl=&if=false&ts=1760657777484&cd[buttonFeatures]=%7B%22classList%22%3A%22top-session-button%20button%20button__secondary%20outline%20link%22%2C%22destination%22%3A%22https%3A%2F%2Fwww.betika.com%2Fen-ke%2Flogin%3Fnext%3D%252F%22%2C%22id%22%3A%22%22%2C%22imageUrl%22%3A%22%22%2C%22innerText%22%3A%22Login%22%2C%22numChildButtons%22%3A0%2C%22tag%22%3A%22a%22%2C%22type%22%3Anull%2C%22name%22%3A%22%22%7D&cd[buttonText]=Login&cd[formFeatures]=%5B%5D&cd[pageFeatures]=%7B%22title%22%3A%22Soccer%20Betting%20%7C%20Football%20Betting%20Odds%20%7C%20Betika%22%7D&sw=1920&sh=1080&v=2.9.236&r=stable&a=tmSimo-GTM-WebTemplate&ec=1&o=4126&fbp=fb.1.1760657763677.529565499343850665&ler=empty&pmd[keywords]=Betika%2C%20Jackpot%2C%20Todays%20games%2C%20this%20week%20jackpot.%20bingwa%2C%20bet%2C%20multibet&pmd[description]=Bet%20on%20soccer%20easily%20and%20securely%20with%20Betika%2C%20view%20soccer%20betting%20odds%20and%20place%20your%20soccer%20bets%20online.%20Instant%20cashback%20bonuses.&pmd[contents]=%5B%7B%22name%22%3A%22Soccer%20Betting%20%7C%20Football%20Betting%20Odds%20%7C%20Betika%22%2C%22description%22%3A%22Bet%20on%20soccer%20easily%20and%20securely%20with%20Betika%2C%20view%20soccer%20betting%20odds%20and%20place%20your%20soccer%20bets%20online.%20Instant%20cashback%20bonuses.%22%7D%5D&plt=5108.800000000745&eid=ob3_plugin-set_a3e59df03be3bdb18d346c5a5d7ed7f9c91220bd01b43e8353da22c607bb7c72&it=1760657763293&coo=false&es=automatic&tm=3&cdl=&expv2[0]=pl1&expv2[1]=el3&expv2[2]=bc1&rqm=GET
+🎯 Captured request: GET https://www.facebook.com/privacy_sandbox/pixel/register/trigger/?id=359321237745265&ev=SubscribedButtonClick&dl=https%3A%2F%2Fwww.betika.com%2Fen-ke%2F&rl=&if=false&ts=1760657777484&cd[buttonFeatures]=%7B%22classList%22%3A%22top-session-button%20button%20button__secondary%20outline%20link%22%2C%22destination%22%3A%22https%3A%2F%2Fwww.betika.com%2Fen-ke%2Flogin%3Fnext%3D%252F%22%2C%22id%22%3A%22%22%2C%22imageUrl%22%3A%22%22%2C%22innerText%22%3A%22Login%22%2C%22numChildButtons%22%3A0%2C%22tag%22%3A%22a%22%2C%22type%22%3Anull%2C%22name%22%3A%22%22%7D&cd[buttonText]=Login&cd[formFeatures]=%5B%5D&cd[pageFeatures]=%7B%22title%22%3A%22Soccer%20Betting%20%7C%20Football%20Betting%20Odds%20%7C%20Betika%22%7D&sw=1920&sh=1080&v=2.9.236&r=stable&a=tmSimo-GTM-WebTemplate&ec=1&o=4126&fbp=fb.1.1760657763677.529565499343850665&ler=empty&pmd[keywords]=Betika%2C%20Jackpot%2C%20Todays%20games%2C%20this%20week%20jackpot.%20bingwa%2C%20bet%2C%20multibet&pmd[description]=Bet%20on%20soccer%20easily%20and%20securely%20with%20Betika%2C%20view%20soccer%20betting%20odds%20and%20place%20your%20soccer%20bets%20online.%20Instant%20cashback%20bonuses.&pmd[contents]=%5B%7B%22name%22%3A%22Soccer%20Betting%20%7C%20Football%20Betting%20Odds%20%7C%20Betika%22%2C%22description%22%3A%22Bet%20on%20soccer%20easily%20and%20securely%20with%20Betika%2C%20view%20soccer%20betting%20odds%20and%20place%20your%20soccer%20bets%20online.%20Instant%20cashback%20bonuses.%22%7D%5D&plt=5108.800000000745&eid=ob3_plugin-set_a3e59df03be3bdb18d346c5a5d7ed7f9c91220bd01b43e8353da22c607bb7c72&it=1760657763293&coo=false&es=automatic&tm=3&cdl=&expv2[0]=pl1&expv2[1]=el3&expv2[2]=bc1&rqm=FGET
+📥 Captured response: 200 https://www.facebook.com/tr/?id=359321237745265&ev=SubscribedButtonClick&dl=https%3A%2F%2Fwww.betika.com%2Fen-ke%2F&rl=&if=false&ts=1760657777484&cd[buttonFeatures]=%7B%22classList%22%3A%22top-session-button%20button%20button__secondary%20outline%20link%22%2C%22destination%22%3A%22https%3A%2F%2Fwww.betika.com%2Fen-ke%2Flogin%3Fnext%3D%252F%22%2C%22id%22%3A%22%22%2C%22imageUrl%22%3A%22%22%2C%22innerText%22%3A%22Login%22%2C%22numChildButtons%22%3A0%2C%22tag%22%3A%22a%22%2C%22type%22%3Anull%2C%22name%22%3A%22%22%7D&cd[buttonText]=Login&cd[formFeatures]=%5B%5D&cd[pageFeatures]=%7B%22title%22%3A%22Soccer%20Betting%20%7C%20Football%20Betting%20Odds%20%7C%20Betika%22%7D&sw=1920&sh=1080&v=2.9.236&r=stable&a=tmSimo-GTM-WebTemplate&ec=1&o=4126&fbp=fb.1.1760657763677.529565499343850665&ler=empty&pmd[keywords]=Betika%2C%20Jackpot%2C%20Todays%20games%2C%20this%20week%20jackpot.%20bingwa%2C%20bet%2C%20multibet&pmd[description]=Bet%20on%20soccer%20easily%20and%20securely%20with%20Betika%2C%20view%20soccer%20betting%20odds%20and%20place%20your%20soccer%20bets%20online.%20Instant%20cashback%20bonuses.&pmd[contents]=%5B%7B%22name%22%3A%22Soccer%20Betting%20%7C%20Football%20Betting%20Odds%20%7C%20Betika%22%2C%22description%22%3A%22Bet%20on%20soccer%20easily%20and%20securely%20with%20Betika%2C%20view%20soccer%20betting%20odds%20and%20place%20your%20soccer%20bets%20online.%20Instant%20cashback%20bonuses.%22%7D%5D&plt=5108.800000000745&eid=ob3_plugin-set_a3e59df03be3bdb18d346c5a5d7ed7f9c91220bd01b43e8353da22c607bb7c72&it=1760657763293&coo=false&es=automatic&tm=3&cdl=&expv2[0]=pl1&expv2[1]=el3&expv2[2]=bc1&rqm=GET
+📥 Captured response: 200 https://www.facebook.com/privacy_sandbox/pixel/register/trigger/?id=359321237745265&ev=SubscribedButtonClick&dl=https%3A%2F%2Fwww.betika.com%2Fen-ke%2F&rl=&if=false&ts=1760657777484&cd[buttonFeatures]=%7B%22classList%22%3A%22top-session-button%20button%20button__secondary%20outline%20link%22%2C%22destination%22%3A%22https%3A%2F%2Fwww.betika.com%2Fen-ke%2Flogin%3Fnext%3D%252F%22%2C%22id%22%3A%22%22%2C%22imageUrl%22%3A%22%22%2C%22innerText%22%3A%22Login%22%2C%22numChildButtons%22%3A0%2C%22tag%22%3A%22a%22%2C%22type%22%3Anull%2C%22name%22%3A%22%22%7D&cd[buttonText]=Login&cd[formFeatures]=%5B%5D&cd[pageFeatures]=%7B%22title%22%3A%22Soccer%20Betting%20%7C%20Football%20Betting%20Odds%20%7C%20Betika%22%7D&sw=1920&sh=1080&v=2.9.236&r=stable&a=tmSimo-GTM-WebTemplate&ec=1&o=4126&fbp=fb.1.1760657763677.529565499343850665&ler=empty&pmd[keywords]=Betika%2C%20Jackpot%2C%20Todays%20games%2C%20this%20week%20jackpot.%20bingwa%2C%20bet%2C%20multibet&pmd[description]=Bet%20on%20soccer%20easily%20and%20securely%20with%20Betika%2C%20view%20soccer%20betting%20odds%20and%20place%20your%20soccer%20bets%20online.%20Instant%20cashback%20bonuses.&pmd[contents]=%5B%7B%22name%22%3A%22Soccer%20Betting%20%7C%20Football%20Betting%20Odds%20%7C%20Betika%22%2C%22description%22%3A%22Bet%20on%20soccer%20easily%20and%20securely%20with%20Betika%2C%20view%20soccer%20betting%20odds%20and%20place%20your%20soccer%20bets%20online.%20Instant%20cashback%20bonuses.%22%7D%5D&plt=5108.800000000745&eid=ob3_plugin-set_a3e59df03be3bdb18d346c5a5d7ed7f9c91220bd01b43e8353da22c607bb7c72&it=1760657763293&coo=false&es=automatic&tm=3&cdl=&expv2[0]=pl1&expv2[1]=el3&expv2[2]=bc1&rqm=FGET
+📱 Filling phone number...
+🔑 Filling password...
+🚀 Submitting login form...
+⏳ Waiting 5 seconds...
+🎯 Captured request: POST https://api.betika.com/v1/login
+🎯 Captured request: GET https://api.betika.com/v2/cashout/whitelist?profile_id=26949036
+🎯 Captured request: POST https://api.betika.com/v1/balance
+✅ Successfully logged in
+
+⚽ STEP 2: NAVIGATING TO HIGHLIGHTS TAB IMMEDIATELY AFTER LOGIN
+⚽ NAVIGATING TO SOCCER SECTION AND HIGHLIGHTS TAB
+⏳ Waiting for page to stabilize after login (waiting 2s)
+📥 Captured response: 200 https://api.betika.com/v1/login
+🎯 Captured request: GET https://api.betika.com/v2/cashout/validations
+📥 Captured response: 200 https://api.betika.com/v2/cashout/whitelist?profile_id=26949036
+🎯 Captured request: GET https://match.prod.bidr.io/cookie-sync/geniussports
+🎯 Captured request: GET https://segment.prod.bidr.io/associate-segment?buzz_key=geniussportsmedia&segment_key=geniussportsmedia-2265&value=
+📥 Captured response: 200 https://api.betika.com/v1/balance
+📥 Captured response: 200 https://api.betika.com/v2/cashout/validations
+🎯 Captured request: GET https://match.prod.bidr.io/cookie-sync/geniussports?_bee_ppp=1
+📥 Captured response: 303 https://match.prod.bidr.io/cookie-sync/geniussports
+🎯 Captured request: GET https://segment.prod.bidr.io/associate-segment?buzz_key=geniussportsmedia&segment_key=geniussportsmedia-2265&value=&_bee_ppp=1
+📥 Captured response: 303 https://segment.prod.bidr.io/associate-segment?buzz_key=geniussportsmedia&segment_key=geniussportsmedia-2265&value=
+📥 Captured response: 303 https://match.prod.bidr.io/cookie-sync/geniussports?_bee_ppp=1
+📥 Captured response: 200 https://segment.prod.bidr.io/associate-segment?buzz_key=geniussportsmedia&segment_key=geniussportsmedia-2265&value=&_bee_ppp=1
+🔍 Step 1: Clicking on Soccer category in left sidebar...
+🔍 Trying text-based Soccer category search...
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+✅ Clicked element with text:        Notifications 0     My Bets   Profile 
+		De
+✅ Clicked Soccer category with text: Soccer
+⏳ Waiting for Soccer category to load (waiting 3s)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Step 2: Clicking on Highlights tab based on DevTools inspection...
+❌ Error navigating to Soccer section and Upcoming tab: upcomingSuccess is not defined
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://live.betika.com/v1/uo/sports (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/matches?page=1&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false (Vue API)
+🎯 Captured request: GET https://live.betika.com/v1/uo/sports (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/sport?page=1&limit=1000&id=14 (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: POST https://api.betika.com/v1/balance
+🎯 Captured request: GET https://live.betika.com/v1/uo/sports (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/matches?page=1&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/sport?page=1&limit=1000&id=14 (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/matches?page=1&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&sort_id=1&period_id=-1&esports=false (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://live.betika.com/v1/uo/sports (Vue API)
+⚽ Found 2 potential soccer matches in JSON data
+🔍 Analyzing Vue.js API data from https://live.betika.com/v1/uo/sports
+📊 Vue API Analysis: object, 10 matches, pagination: false
+📥 Captured response: 200 https://live.betika.com/v1/uo/sports (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/matches?page=1&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false (Vue API)
+⚽ Found 14 potential soccer matches in JSON data
+⚽ Added API match: Kenya Police FC vs AL Hilal
+⚽ Added API match: Oviedo vs Espanyol
+⚽ Added API match: UNION BERLIN vs Borussia (MG)
+⚽ Added API match: PSG vs Strasbourg
+⚽ Added API match: Middlesbrough vs Ipswich
+⚽ Added API match: GD Chaves vs Benfica
+⚽ Added API match: Fluminense FC vs EC Juventude
+⚽ Added API match: EC Vitoria vs EC Bahia
+⚽ Added API match: Real Esteli FC vs Rancho Santana FC
+⚽ Added API match: Quindio vs Tigres
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/matches?page=1&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false
+📊 Vue API Analysis: object, 10 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/matches?page=1&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/sport?page=1&limit=1000&id=14 (Vue API)
+⚽ Found 6 potential soccer matches in JSON data
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/sport?page=1&limit=1000&id=14
+📊 Vue API Analysis: object, 101 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/sport?page=1&limit=1000&id=14 (Vue API)
+⚽ Soccer data detected from https://live.betika.com/v1/uo/sports (Vue API)
+⚽ Found 2 potential soccer matches in JSON data
+🔍 Analyzing Vue.js API data from https://live.betika.com/v1/uo/sports
+📊 Vue API Analysis: object, 10 matches, pagination: false
+📥 Captured response: 304 https://live.betika.com/v1/uo/sports (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/matches?page=1&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&sort_id=1&period_id=-1&esports=false (Vue API)
+⚽ Soccer data detected from https://live.betika.com/v1/uo/sports (Vue API)
+⚽ Found 2 potential soccer matches in JSON data
+🔍 Analyzing Vue.js API data from https://live.betika.com/v1/uo/sports
+📊 Vue API Analysis: object, 10 matches, pagination: false
+📥 Captured response: 304 https://live.betika.com/v1/uo/sports (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/matches?page=1&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false (Vue API)
+⚽ Found 14 potential soccer matches in JSON data
+⚽ Added API match: Kenya Police FC vs AL Hilal
+⚽ Added API match: Oviedo vs Espanyol
+⚽ Added API match: UNION BERLIN vs Borussia (MG)
+⚽ Added API match: PSG vs Strasbourg
+⚽ Added API match: Middlesbrough vs Ipswich
+⚽ Added API match: GD Chaves vs Benfica
+⚽ Added API match: Fluminense FC vs EC Juventude
+⚽ Added API match: EC Vitoria vs EC Bahia
+⚽ Added API match: Real Esteli FC vs Rancho Santana FC
+⚽ Added API match: Quindio vs Tigres
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/matches?page=1&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false
+📊 Vue API Analysis: object, 10 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/matches?page=1&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/sport?page=1&limit=1000&id=14 (Vue API)
+⚽ Found 6 potential soccer matches in JSON data
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/sport?page=1&limit=1000&id=14
+📊 Vue API Analysis: object, 101 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/sport?page=1&limit=1000&id=14 (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/matches?page=1&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&sort_id=1&period_id=-1&esports=false (Vue API)
+⚽ Found 14 potential soccer matches in JSON data
+⚽ Added API match: Kenya Police FC vs AL Hilal
+⚽ Added API match: Oviedo vs Espanyol
+⚽ Added API match: UNION BERLIN vs Borussia (MG)
+⚽ Added API match: PSG vs Strasbourg
+⚽ Added API match: Middlesbrough vs Ipswich
+⚽ Added API match: GD Chaves vs Benfica
+⚽ Added API match: Fluminense FC vs EC Juventude
+⚽ Added API match: EC Vitoria vs EC Bahia
+⚽ Added API match: Real Esteli FC vs Rancho Santana FC
+⚽ Added API match: Quindio vs Tigres
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/matches?page=1&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&sort_id=1&period_id=-1&esports=false
+📊 Vue API Analysis: object, 10 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/matches?page=1&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&sort_id=1&period_id=-1&esports=false (Vue API)
+📥 Captured response: 200 https://api.betika.com/v1/balance
+💾 Page state saved: ERROR_soccer_upcoming_navigation_failed_2025-10-16T23-36-28-266Z
+⚠️ Could not navigate to highlights tab, but continuing...
+
+⏳ STEP 2.5: WAITING FOR PAGE TO STABILIZE
+⏳ Waiting for page to stabilize (waiting 2s)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/matches?page=1&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&sort_id=1&period_id=-1&esports=false (Vue API)
+⚽ Found 14 potential soccer matches in JSON data
+⚽ Added API match: Kenya Police FC vs AL Hilal
+⚽ Added API match: Oviedo vs Espanyol
+⚽ Added API match: UNION BERLIN vs Borussia (MG)
+⚽ Added API match: PSG vs Strasbourg
+⚽ Added API match: Middlesbrough vs Ipswich
+⚽ Added API match: GD Chaves vs Benfica
+⚽ Added API match: Fluminense FC vs EC Juventude
+⚽ Added API match: EC Vitoria vs EC Bahia
+⚽ Added API match: Real Esteli FC vs Rancho Santana FC
+⚽ Added API match: Quindio vs Tigres
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/matches?page=1&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&sort_id=1&period_id=-1&esports=false
+📊 Vue API Analysis: object, 10 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/matches?page=1&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&sort_id=1&period_id=-1&esports=false (Vue API)
+
+✅ STEP 2.6: READY FOR UPCOMING MATCHES EXTRACTION
+
+⚽ STEP 3: EXTRACTING HIGHLIGHTS SOCCER MATCHES
+⚽ EXTRACTING SOCCER MATCH DATA FROM UPCOMING TAB ONLY
+⏳ Waiting for Upcoming tab matches to load (waiting 3s)
+⚠️ Could not verify Upcoming tab via DOM, but API calls show tab=upcoming
+✅ Proceeding with extraction based on API evidence
+✅ Confirmed on Upcoming tab, starting extraction...
+🔒 Forcing Upcoming tab to stay active...
+⏳ Waiting for forced Upcoming tab activation (waiting 1s)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Verifying and maintaining Upcoming tab selection...
+📊 Current tab states: { found: true, tabs: {} }
+⚠️ Not on Upcoming tab, clicking Upcoming again...
+❌ Failed to re-click Upcoming tab
+⚠️ Upcoming tab verification failed, but continuing...
+❌ Not on Upcoming tab (current: null), forcing Upcoming tab...
+🔒 Forcing Upcoming tab to stay active...
+⏳ Waiting for forced Upcoming tab activation (waiting 1s)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+⏳ Waiting for tab switch (waiting 1s)
+📜 Scrolling to load all Upcoming matches...
+⏳ Waiting for content to load after scroll (waiting 1s)
+🎯 Captured request: GET https://api.betika.com/v1/uo/matches?page=2&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/matches?page=2&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false (Vue API)
+⚽ Found 14 potential soccer matches in JSON data
+⚽ Added API match: Alianza Lima vs Sport Boys Association
+⚽ Added API match: Diriangen FC Diriamba vs CD Walter Ferretti
+⚽ Added API match: Qingdao Hainiu vs Shanghai Port
+⚽ Added API match: Kyzylzhar vs Kairat
+⚽ Added API match: APIA Leichhardt vs Sydney United
+⚽ Added API match: H. Nir Ramat Hasharon FC vs Kiiryat Gat
+⚽ Added API match: Monastir vs JS Kabylie
+⚽ Added API match: Chengdu Rongcheng vs Meizhou Hakka
+⚽ Added API match: Qingdao West Coast vs Shanghai Shenhua
+⚽ Added API match: FK Panevezys B vs FK Transinvest
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/matches?page=2&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false
+📊 Vue API Analysis: object, 10 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/matches?page=2&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/matches?page=3&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Verifying and maintaining Upcoming tab selection...
+📊 Current tab states: { found: true, tabs: {} }
+⚠️ Not on Upcoming tab, clicking Upcoming again...
+❌ Failed to re-click Upcoming tab
+⚠️ Upcoming tab verification failed, but continuing...
+🔄 Scroll check: Tab switched to null, forcing Upcoming tab
+🔒 Forcing Upcoming tab to stay active...
+⏳ Waiting for forced Upcoming tab activation (waiting 1s)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/matches?page=3&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false (Vue API)
+⚽ Found 14 potential soccer matches in JSON data
+⚽ Added API match: PSBS Biak vs Persib Bandung
+⚽ Added API match: Proxy SC vs El Mansurah
+⚽ Added API match: Manjung City FC vs Selangor PKNS
+⚽ Added API match: Ekranas vs Tauras
+⚽ Added API match: AL Bataeh (UAE) vs Al Wahda FC (UAE)
+⚽ Added API match: Sharjah FC vs Al Dhafra
+⚽ Added API match: Lillestrom SK vs Lyn 1896 FK
+⚽ Added API match: Pafos vs Ethnikos Achnas
+⚽ Added API match: Turan Tovuz vs Qarabag FK
+⚽ Added API match: FC Brest vs FC Vitebsk
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/matches?page=3&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false
+📊 Vue API Analysis: object, 10 matches, pagination: false
+📥 Captured response: 200 https://api.betika.com/v1/uo/matches?page=3&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+📜 Scroll attempt 1: 3011 -> 5111
+⏳ Waiting for content to load after scroll (waiting 1s)
+🎯 Captured request: GET https://api.betika.com/v1/uo/matches?page=4&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/matches?page=4&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false (Vue API)
+⚽ Found 16 potential soccer matches in JSON data
+⚽ Added API match: FC Shirak Gyumri vs FC Alashkert Yerevan
+⚽ Added API match: Al-Fayha FC vs Al-Ittihad FC
+⚽ Added API match: Triglav Kranj vs NK Jesenice
+⚽ Added API match: Kauno Zalgiris vs FA Siauliai
+⚽ Added API match: Sama AL Sarhan SC vs Kfarsoum
+⚽ Added API match: Shabab AL Ordun vs Sahl Horan SC
+⚽ Added API match: Al Khaldiya SC vs Bahrain
+⚽ Added API match: Dukla Banska Bystrica vs FC Petrzalka
+⚽ Added API match: Vion Zlate Moravce - Vrable vs MSK Puchov
+⚽ Added API match: Silkeborg IF vs FC Copenhagen
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/matches?page=4&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false
+📊 Vue API Analysis: object, 10 matches, pagination: false
+📥 Captured response: 200 https://api.betika.com/v1/uo/matches?page=4&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false (Vue API)
+📜 Scroll attempt 2: 5111 -> 6161
+🎯 Captured request: GET https://api.betika.com/v1/uo/matches?page=5&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false (Vue API)
+⏳ Waiting for content to load after scroll (waiting 1s)
+🎯 Captured request: GET https://api.betika.com/v1/uo/matches?page=6&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/matches?page=5&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false (Vue API)
+⚽ Found 14 potential soccer matches in JSON data
+⚽ Added API match: Portadown FC vs Linfield FC
+⚽ Added API match: ADO Den Haag vs FC Dordrecht
+⚽ Added API match: Al-Ahli Saudi FC vs Al-Shabab FC (SA)
+⚽ Added API match: Pontypridd Town vs Cefn Cribwr FC
+⚽ Added API match: Shelbourne FC vs Sligo Rovers FC
+⚽ Added API match: Llandudno FC vs Flint Mountain
+⚽ Added API match: Ind. Medellin vs Fortaleza
+⚽ Added API match: The Strongest vs Independiente Petrolero
+⚽ Added API match: Santiago FC vs Club Deportivo de Futbol Zitacuaro
+⚽ Added API match: Argentinos Juniors vs Newells Old Boys
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/matches?page=5&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false
+📊 Vue API Analysis: object, 10 matches, pagination: false
+📥 Captured response: 200 https://api.betika.com/v1/uo/matches?page=5&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/matches?page=7&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false (Vue API)
+📜 Scroll attempt 3: 6161 -> 8261
+⚽ Soccer data detected from https://api.betika.com/v1/uo/matches?page=6&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false (Vue API)
+⚽ Found 14 potential soccer matches in JSON data
+⚽ Added API match: LKP Motor Lublin vs GKS Katowice
+⚽ Added API match: Widzew Lodz vs RKS Radomiak Radom
+⚽ Added API match: SC Poltava vs FC Obolon Kyiv
+⚽ Added API match: Adelaide United FC vs Sydney FC
+⚽ Added API match: Brisbane Roar FC vs Macarthur FC
+⚽ Added API match: Amazonas FC vs Novorizontino
+⚽ Added API match: Andorra vs Granada
+⚽ Added API match: Audax Italiano vs Union La Calera
+⚽ Added API match: Deportes Iquique vs O' Higgins
+⚽ Added API match: Hiroshima vs Tokyo
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/matches?page=6&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false
+📊 Vue API Analysis: object, 10 matches, pagination: false
+📥 Captured response: 200 https://api.betika.com/v1/uo/matches?page=6&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false (Vue API)
+⏳ Waiting for content to load after scroll (waiting 1s)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/matches?page=7&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false (Vue API)
+⚽ Found 14 potential soccer matches in JSON data
+⚽ Added API match: Vissel Kobe vs Kashima
+⚽ Added API match: Boston River vs Danubio
+⚽ Added API match: Orense SC vs Ind. Del Valle
+⚽ Added API match: Academia Puerto Cabello vs Deportivo La Guaira
+⚽ Added API match: Zamora FC vs Monagas SC
+⚽ Added API match: Virtus Entella vs Sampdoria
+⚽ Added API match: Hougang United vs Albirex Niigata (S)
+⚽ Added API match: Shamakhi FK vs FK Kapaz
+⚽ Added API match: FK Arsenal Dzerzhinsk vs FC Isloch
+⚽ Added API match: RKC Waalwijk vs Willem II Tilburg
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/matches?page=7&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false
+📊 Vue API Analysis: object, 10 matches, pagination: false
+📥 Captured response: 200 https://api.betika.com/v1/uo/matches?page=7&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/matches?page=8&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/matches?page=8&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false (Vue API)
+⚽ Found 24 potential soccer matches in JSON data
+⚽ Added API match: Helmond Sport vs Jong AZ Alkmaar
+⚽ Added API match: Jong Ajax Amsterdam vs Jong PSV Eindhoven
+⚽ Added API match: Roda JC vs FC Den Bosch
+⚽ Added API match: Jong FC Utrecht vs MVV Maastricht
+⚽ Added API match: Almere City FC vs SC Cambuur
+⚽ Added API match: VVV Venlo vs FC Emmen
+⚽ Added API match: FC Eindhoven vs Vitesse Arnhem
+⚽ Added API match: Young Violets Wien vs SV Stripfing
+⚽ Added API match: KSV 1919 vs SK Austria Klagenfurt
+⚽ Added API match: SKN St Polten vs SC Austria Lustenau
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/matches?page=8&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false
+📊 Vue API Analysis: object, 10 matches, pagination: false
+📥 Captured response: 200 https://api.betika.com/v1/uo/matches?page=8&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false (Vue API)
+🔍 Verifying and maintaining Upcoming tab selection...
+📊 Current tab states: { found: true, tabs: {} }
+⚠️ Not on Upcoming tab, clicking Upcoming again...
+❌ Failed to re-click Upcoming tab
+⚠️ Upcoming tab verification failed, but continuing...
+🎯 Captured request: GET https://api.betika.com/v1/uo/matches?page=9&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false (Vue API)
+🔄 Scroll check: Tab switched to null, forcing Upcoming tab
+🔒 Forcing Upcoming tab to stay active...
+⏳ Waiting for forced Upcoming tab activation (waiting 1s)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/matches?page=9&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false (Vue API)
+⚽ Found 14 potential soccer matches in JSON data
+⚽ Added API match: Wadi Degla SC vs Future FC
+⚽ Added API match: Al Mokawloon vs Enppi Club
+⚽ Added API match: Ghazl El Mahallah vs Kahrabaa Ismailia
+⚽ Added API match: Pamba Jiji SC vs Mashujaa FC
+⚽ Added API match: Fountain Gate FC vs Dodoma FC
+⚽ Added API match: Mbarara FC vs Bul FC
+⚽ Added API match: URA FC vs Express FC
+⚽ Added API match: CSM Politehnica Iasi vs CS Dinamo Bucuresti
+⚽ Added API match: Pumas Unam Women vs  Juarez Women
+⚽ Added API match: Racing Club Montevideo vs Plaza Colonia
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/matches?page=9&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false
+📊 Vue API Analysis: object, 10 matches, pagination: false
+📥 Captured response: 200 https://api.betika.com/v1/uo/matches?page=9&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false (Vue API)
+📜 Scroll attempt 4: 8261 -> 11409
+⏳ Waiting for content to load after scroll (waiting 1s)
+🎯 Captured request: GET https://api.betika.com/v1/uo/matches?page=10&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/matches?page=10&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false (Vue API)
+⚽ Found 16 potential soccer matches in JSON data
+⚽ Added API match: Olimpia vs Motagua
+⚽ Added API match: Herediano vs Alajuelense
+⚽ Added API match: Ska-Khabarovsk-2 vs FC Metallurg Lipetsk
+⚽ Added API match: Qingdao Hainiu FC Srl vs Shanghai Port SRL
+⚽ Added API match: Qingdao West Coast FC Srl vs Shanghai Shenhua SRL
+⚽ Added API match: Chengdu Rongcheng FC Srl vs Meizhou Hakka FC Srl
+⚽ Added API match: Real Oviedo Srl vs RCD Espanyol Barcelona SRL
+⚽ Added API match: M. Kiryat Ata-Bialik vs Maccabi Neve Shaanan Eldad
+⚽ Added API match: Ural Ekaterinburg Youth vs FC Fakel Voronezh Youth
+⚽ Added API match: Sriwijaya FC vs Persekat Kabupaten Tegal
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/matches?page=10&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false
+📊 Vue API Analysis: object, 10 matches, pagination: false
+📥 Captured response: 200 https://api.betika.com/v1/uo/matches?page=10&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+📜 Scroll attempt 5: 11409 -> 12459
+⏳ Waiting for content to load after scroll (waiting 1s)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/matches?page=11&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/matches?page=11&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false (Vue API)
+⚽ Found 16 potential soccer matches in JSON data
+⚽ Added API match: Persita Tangerang vs Yogyakarta
+⚽ Added API match: Sriwijaya FC vs Persekat Kabupaten Tegal
+⚽ Added API match: Ho Chi Minh City FC vs TP Ho Chi Minh
+⚽ Added API match: Zenit St Petersburg Youth vs Football Academy Of Konoplev
+⚽ Added API match: DH van Hien vs CS. Dong Thap
+⚽ Added API match: Hapoel Azor FC vs Ironi Ashdod FC
+⚽ Added API match: Achi Nazareth FC vs Baqa Al-Gharbiyye
+⚽ Added API match: Hapoel Marmorek FC vs Hapoel Herzelia FC
+⚽ Added API match: Karmiel S. vs MS Tira
+⚽ Added API match: Paris Saint-Germain SRL vs Strasbourg Alsace SRL
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/matches?page=11&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false
+📊 Vue API Analysis: object, 10 matches, pagination: false
+📥 Captured response: 200 https://api.betika.com/v1/uo/matches?page=11&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+📜 Scroll attempt 6: 12459 -> 13509
+⏳ Waiting for content to load after scroll (waiting 1s)
+🎯 Captured request: GET https://api.betika.com/v1/uo/matches?page=12&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/matches?page=12&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false (Vue API)
+⚽ Found 16 potential soccer matches in JSON data
+⚽ Added API match: Union Berlin SRL vs Borussia Monchengladbach SRL
+⚽ Added API match: Ironi Nesher vs H. Migdal Haemeq
+⚽ Added API match: Beit Shean Mesilot vs Hapoel Tirat Hacarmel
+⚽ Added API match: FCSB 2 vs SC Popesti Leordeni
+⚽ Added API match: FK Nizhny Novgorod vs Samara Kryliya Sovetov
+⚽ Added API match: Lokomotiv Moscow Youth vs Rubin Kazan Youth
+⚽ Added API match: CS Blejoi vs Csm Ramnicu Sarat
+⚽ Added API match: FC Voluntari II vs ACS Progresul Fundulea
+⚽ Added API match: Nakhon Pathom United FC vs Pattaya Dolphins United
+⚽ Added API match: ACS Petrolul 52 2 vs Cso Plopeni
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/matches?page=12&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false
+📊 Vue API Analysis: object, 10 matches, pagination: false
+📥 Captured response: 200 https://api.betika.com/v1/uo/matches?page=12&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false (Vue API)
+🔍 Verifying and maintaining Upcoming tab selection...
+📊 Current tab states: { found: true, tabs: {} }
+⚠️ Not on Upcoming tab, clicking Upcoming again...
+❌ Failed to re-click Upcoming tab
+⚠️ Upcoming tab verification failed, but continuing...
+🔄 Scroll check: Tab switched to null, forcing Upcoming tab
+🔒 Forcing Upcoming tab to stay active...
+⏳ Waiting for forced Upcoming tab activation (waiting 1s)
+🎯 Captured request: GET https://api.betika.com/v1/uo/matches?page=13&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/matches?page=13&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false (Vue API)
+⚽ Found 16 potential soccer matches in JSON data
+⚽ Added API match: CS Blejoi vs Csm Ramnicu Sarat
+⚽ Added API match: ACS Kids Tampa Brasov vs Csm Flacara Moreni
+⚽ Added API match: FC Krasnodar Youth vs FK Rostov Youth
+⚽ Added API match: Scm Ramnicu Valcea vs Minerul L
+⚽ Added API match: Acad Viitorul Cluj vs Olimpia Satu Mare
+⚽ Added API match: FC Voluntari II vs ACS Progresul Fundulea
+⚽ Added API match: Nakhon Pathom United FC vs Pattaya Dolphins United
+⚽ Added API match: ACS LPS HD Clinceni vs ACS Axi Arena
+⚽ Added API match: ACS Petrolul 52 2 vs Cso Plopeni
+⚽ Added API match: FC Zeirey Tamra vs Hapoel Ironi Arraba
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/matches?page=13&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false
+📊 Vue API Analysis: object, 10 matches, pagination: false
+📥 Captured response: 200 https://api.betika.com/v1/uo/matches?page=13&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+📜 Scroll attempt 7: 13509 -> 15609
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+⏳ Waiting for content to load after scroll (waiting 1s)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/matches?page=14&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false (Vue API)
+📜 Scroll attempt 8: 15609 -> 16659
+⚽ Soccer data detected from https://api.betika.com/v1/uo/matches?page=14&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false (Vue API)
+⚽ Found 14 potential soccer matches in JSON data
+⚽ Added API match: FC Zeirey Tamra vs Hapoel Ironi Arraba
+⚽ Added API match: La Viena FC vs AL Mehalla
+⚽ Added API match: Pulau Pinang vs Johor Darul Ta'zim
+⚽ Added API match: Kelantan The Real Warriors FC vs Sabah
+⚽ Added API match: Hapoel Ramat Gan Givatayim FC vs Maccabi Herzliya
+⚽ Added API match: NK Sesvete vs NK Hrvace
+⚽ Added API match: Hapoel Kfar Saba FC vs Hapoel Rishon Lezion FC
+⚽ Added API match: Bahla Club vs Dhofar SCSC
+⚽ Added API match: Gorilla FC vs Gicumbi
+⚽ Added API match: NK Dragovoljac vs Lucko
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/matches?page=14&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false
+📊 Vue API Analysis: object, 10 matches, pagination: false
+📥 Captured response: 200 https://api.betika.com/v1/uo/matches?page=14&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false (Vue API)
+⏳ Waiting for content to load after scroll (waiting 1s)
+🎯 Captured request: GET https://api.betika.com/v1/uo/matches?page=15&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false (Vue API)
+📜 Scroll attempt 9: 16659 -> 18839
+⏳ Waiting for content to load after scroll (waiting 1s)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/matches?page=15&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false (Vue API)
+⚽ Found 14 potential soccer matches in JSON data
+⚽ Added API match: Maccabi Kabilio Jaffa vs Hapoel Afula FC
+⚽ Added API match: NK Sesvete vs NK Hrvace
+⚽ Added API match: Kelantan The Real Warriors FC vs Sabah
+⚽ Added API match: Gol Gohar Sirjan FC vs Chador Malu Yazd
+⚽ Added API match: AL Nasr SC vs Al Seeb
+⚽ Added API match: Opatija vs Rudes
+⚽ Added API match: FC Andijon vs PFC Shurtan
+⚽ Added API match: Leicesterford City vs Highbury FC
+⚽ Added API match: Al-Muharraq SC vs Al Riffa
+⚽ Added API match: JS Djidjel vs MO Constantine
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/matches?page=15&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false
+📊 Vue API Analysis: object, 10 matches, pagination: false
+📥 Captured response: 200 https://api.betika.com/v1/uo/matches?page=15&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/matches?page=16&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false (Vue API)
+🔍 Verifying and maintaining Upcoming tab selection...
+📊 Current tab states: { found: true, tabs: {} }
+⚠️ Not on Upcoming tab, clicking Upcoming again...
+⚽ Soccer data detected from https://api.betika.com/v1/uo/matches?page=16&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false (Vue API)
+⚽ Found 14 potential soccer matches in JSON data
+⚽ Added API match: CA Batna vs CR Beni Thour
+⚽ Added API match: NA Hussein Dey vs ASM Oran
+⚽ Added API match: Crb Adrar vs RC Kouba
+⚽ Added API match: Bechar Djedid vs Wa Mostaganem
+⚽ Added API match: Js Bordj Menaiel vs MSP Batna
+⚽ Added API match: WA Tlemcen vs JSM Tiaret
+⚽ Added API match: NC Magra vs HB Chelghoum Laid
+⚽ Added API match: ESM Kolea vs GC Mascara
+⚽ Added API match: JS Djidjel vs MO Constantine
+⚽ Added API match: Js El Biar vs Saida
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/matches?page=16&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false
+📊 Vue API Analysis: object, 10 matches, pagination: false
+📥 Captured response: 200 https://api.betika.com/v1/uo/matches?page=16&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false (Vue API)
+❌ Failed to re-click Upcoming tab
+⚠️ Upcoming tab verification failed, but continuing...
+🔄 Scroll check: Tab switched to null, forcing Upcoming tab
+🔒 Forcing Upcoming tab to stay active...
+⏳ Waiting for forced Upcoming tab activation (waiting 1s)
+🎯 Captured request: GET https://api.betika.com/v1/uo/matches?page=17&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false (Vue API)
+📜 Scroll attempt 10: 18839 -> 19809
+✅ Finished scrolling after 10 attempts
+⏳ Waiting for lazy-loaded content (waiting 2s)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/matches?page=17&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false (Vue API)
+⚽ Found 14 potential soccer matches in JSON data
+⚽ Added API match: Bechar Djedid vs Wa Mostaganem
+⚽ Added API match: Crb Adrar vs RC Kouba
+⚽ Added API match: Js El Biar vs Saida
+⚽ Added API match: WA Tlemcen vs JSM Tiaret
+⚽ Added API match: JS Djidjel vs MO Constantine
+⚽ Added API match: RC Arbaa vs JS Tixeraine
+⚽ Added API match: ESM Kolea vs GC Mascara
+⚽ Added API match: PFC Sogdiana vs FK Termez Surkhon
+⚽ Added API match: Al Jahra vs Al Tadamon
+⚽ Added API match: Gareji Sagarejo vs FC Dila Gori
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/matches?page=17&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false
+📊 Vue API Analysis: object, 10 matches, pagination: false
+📥 Captured response: 200 https://api.betika.com/v1/uo/matches?page=17&limit=10&tab=&sub_type_id=1,186,340&sport_id=14&tag_id=&sort_id=1&period_id=-1&esports=false (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Extracted 0 soccer matches from Upcoming tab
+🔄 DOM extraction failed, using API data instead...
+✅ Using 290 matches from API data
+✅ Extracted 290 highlights soccer matches
+
+⚽ STEP 4: FILTERING MATCHES FOR 5:00 AM TO 10:00 AM (OCTOBER 17, 2025)
+⏰ FILTERING MATCHES BY TIME (5:00 AM TO 10:00 AM - OCTOBER 17, 2025)
+⚽ Filtering 290 matches for 5:00 AM to 10:00 AM on 2025-10-17
+⏭️  Match Kenya Police FC vs AL Hilal at 2025-10-17 15:00:00 (15:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Oviedo vs Espanyol at 2025-10-17 22:00:00 (22:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match UNION BERLIN vs Borussia (MG) at 2025-10-17 21:30:00 (21:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match PSG vs Strasbourg at 2025-10-17 21:45:00 (21:45) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Middlesbrough vs Ipswich at 2025-10-17 22:00:00 (22:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match GD Chaves vs Benfica at 2025-10-17 21:30:00 (21:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Fluminense FC vs EC Juventude at 2025-10-17 03:30:00 (3:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match EC Vitoria vs EC Bahia at 2025-10-17 03:30:00 (3:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Real Esteli FC vs Rancho Santana FC at 2025-10-17 03:00:00 (3:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Quindio vs Tigres at 2025-10-17 03:00:00 (3:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Kenya Police FC vs AL Hilal at 2025-10-17 15:00:00 (15:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Oviedo vs Espanyol at 2025-10-17 22:00:00 (22:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match UNION BERLIN vs Borussia (MG) at 2025-10-17 21:30:00 (21:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match PSG vs Strasbourg at 2025-10-17 21:45:00 (21:45) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Middlesbrough vs Ipswich at 2025-10-17 22:00:00 (22:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match GD Chaves vs Benfica at 2025-10-17 21:30:00 (21:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Fluminense FC vs EC Juventude at 2025-10-17 03:30:00 (3:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match EC Vitoria vs EC Bahia at 2025-10-17 03:30:00 (3:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Real Esteli FC vs Rancho Santana FC at 2025-10-17 03:00:00 (3:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Quindio vs Tigres at 2025-10-17 03:00:00 (3:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Kenya Police FC vs AL Hilal at 2025-10-17 15:00:00 (15:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Oviedo vs Espanyol at 2025-10-17 22:00:00 (22:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match UNION BERLIN vs Borussia (MG) at 2025-10-17 21:30:00 (21:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match PSG vs Strasbourg at 2025-10-17 21:45:00 (21:45) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Middlesbrough vs Ipswich at 2025-10-17 22:00:00 (22:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match GD Chaves vs Benfica at 2025-10-17 21:30:00 (21:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Fluminense FC vs EC Juventude at 2025-10-17 03:30:00 (3:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match EC Vitoria vs EC Bahia at 2025-10-17 03:30:00 (3:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Real Esteli FC vs Rancho Santana FC at 2025-10-17 03:00:00 (3:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Quindio vs Tigres at 2025-10-17 03:00:00 (3:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Alianza Lima vs Sport Boys Association at 2025-10-17 04:00:00 (4:00) - SKIPPED (outside 5AM-10AM range)
+✅ Match Diriangen FC Diriamba vs CD Walter Ferretti at 2025-10-17 05:00:00 (5:00) on 2025-10-17 - INCLUDED
+⏭️  Match Qingdao Hainiu vs Shanghai Port at 2025-10-17 13:00:00 (13:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Kyzylzhar vs Kairat at 2025-10-17 13:00:00 (13:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match APIA Leichhardt vs Sydney United at 2025-10-17 11:35:00 (11:35) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match H. Nir Ramat Hasharon FC vs Kiiryat Gat at 2025-10-17 12:40:00 (12:40) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Monastir vs JS Kabylie at 2025-10-17 17:00:00 (17:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Chengdu Rongcheng vs Meizhou Hakka at 2025-10-17 14:35:00 (14:35) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Qingdao West Coast vs Shanghai Shenhua at 2025-10-17 15:00:00 (15:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match FK Panevezys B vs FK Transinvest at 2025-10-17 14:30:00 (14:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Kenya Police FC vs AL Hilal at 2025-10-17 15:00:00 (15:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Oviedo vs Espanyol at 2025-10-17 22:00:00 (22:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match UNION BERLIN vs Borussia (MG) at 2025-10-17 21:30:00 (21:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match PSG vs Strasbourg at 2025-10-17 21:45:00 (21:45) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Middlesbrough vs Ipswich at 2025-10-17 22:00:00 (22:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match GD Chaves vs Benfica at 2025-10-17 21:30:00 (21:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Fluminense FC vs EC Juventude at 2025-10-17 03:30:00 (3:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match EC Vitoria vs EC Bahia at 2025-10-17 03:30:00 (3:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Real Esteli FC vs Rancho Santana FC at 2025-10-17 03:00:00 (3:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Quindio vs Tigres at 2025-10-17 03:00:00 (3:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Kenya Police FC vs AL Hilal at 2025-10-17 15:00:00 (15:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Oviedo vs Espanyol at 2025-10-17 22:00:00 (22:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match UNION BERLIN vs Borussia (MG) at 2025-10-17 21:30:00 (21:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match PSG vs Strasbourg at 2025-10-17 21:45:00 (21:45) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Middlesbrough vs Ipswich at 2025-10-17 22:00:00 (22:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match GD Chaves vs Benfica at 2025-10-17 21:30:00 (21:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Fluminense FC vs EC Juventude at 2025-10-17 03:30:00 (3:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match EC Vitoria vs EC Bahia at 2025-10-17 03:30:00 (3:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Real Esteli FC vs Rancho Santana FC at 2025-10-17 03:00:00 (3:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Quindio vs Tigres at 2025-10-17 03:00:00 (3:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Kenya Police FC vs AL Hilal at 2025-10-17 15:00:00 (15:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Oviedo vs Espanyol at 2025-10-17 22:00:00 (22:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match UNION BERLIN vs Borussia (MG) at 2025-10-17 21:30:00 (21:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match PSG vs Strasbourg at 2025-10-17 21:45:00 (21:45) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Middlesbrough vs Ipswich at 2025-10-17 22:00:00 (22:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match GD Chaves vs Benfica at 2025-10-17 21:30:00 (21:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Fluminense FC vs EC Juventude at 2025-10-17 03:30:00 (3:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match EC Vitoria vs EC Bahia at 2025-10-17 03:30:00 (3:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Real Esteli FC vs Rancho Santana FC at 2025-10-17 03:00:00 (3:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Quindio vs Tigres at 2025-10-17 03:00:00 (3:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Kenya Police FC vs AL Hilal at 2025-10-17 15:00:00 (15:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Oviedo vs Espanyol at 2025-10-17 22:00:00 (22:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match UNION BERLIN vs Borussia (MG) at 2025-10-17 21:30:00 (21:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match PSG vs Strasbourg at 2025-10-17 21:45:00 (21:45) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Middlesbrough vs Ipswich at 2025-10-17 22:00:00 (22:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match GD Chaves vs Benfica at 2025-10-17 21:30:00 (21:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Fluminense FC vs EC Juventude at 2025-10-17 03:30:00 (3:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match EC Vitoria vs EC Bahia at 2025-10-17 03:30:00 (3:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Real Esteli FC vs Rancho Santana FC at 2025-10-17 03:00:00 (3:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Quindio vs Tigres at 2025-10-17 03:00:00 (3:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Kenya Police FC vs AL Hilal at 2025-10-17 15:00:00 (15:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Oviedo vs Espanyol at 2025-10-17 22:00:00 (22:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match UNION BERLIN vs Borussia (MG) at 2025-10-17 21:30:00 (21:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match PSG vs Strasbourg at 2025-10-17 21:45:00 (21:45) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Middlesbrough vs Ipswich at 2025-10-17 22:00:00 (22:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match GD Chaves vs Benfica at 2025-10-17 21:30:00 (21:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Fluminense FC vs EC Juventude at 2025-10-17 03:30:00 (3:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match EC Vitoria vs EC Bahia at 2025-10-17 03:30:00 (3:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Real Esteli FC vs Rancho Santana FC at 2025-10-17 03:00:00 (3:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Quindio vs Tigres at 2025-10-17 03:00:00 (3:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Kenya Police FC vs AL Hilal at 2025-10-17 15:00:00 (15:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Oviedo vs Espanyol at 2025-10-17 22:00:00 (22:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match UNION BERLIN vs Borussia (MG) at 2025-10-17 21:30:00 (21:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match PSG vs Strasbourg at 2025-10-17 21:45:00 (21:45) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Middlesbrough vs Ipswich at 2025-10-17 22:00:00 (22:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match GD Chaves vs Benfica at 2025-10-17 21:30:00 (21:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Fluminense FC vs EC Juventude at 2025-10-17 03:30:00 (3:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match EC Vitoria vs EC Bahia at 2025-10-17 03:30:00 (3:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Real Esteli FC vs Rancho Santana FC at 2025-10-17 03:00:00 (3:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Quindio vs Tigres at 2025-10-17 03:00:00 (3:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Kenya Police FC vs AL Hilal at 2025-10-17 15:00:00 (15:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Oviedo vs Espanyol at 2025-10-17 22:00:00 (22:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match UNION BERLIN vs Borussia (MG) at 2025-10-17 21:30:00 (21:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match PSG vs Strasbourg at 2025-10-17 21:45:00 (21:45) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Middlesbrough vs Ipswich at 2025-10-17 22:00:00 (22:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match GD Chaves vs Benfica at 2025-10-17 21:30:00 (21:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Fluminense FC vs EC Juventude at 2025-10-17 03:30:00 (3:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match EC Vitoria vs EC Bahia at 2025-10-17 03:30:00 (3:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Real Esteli FC vs Rancho Santana FC at 2025-10-17 03:00:00 (3:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Quindio vs Tigres at 2025-10-17 03:00:00 (3:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Kenya Police FC vs AL Hilal at 2025-10-17 15:00:00 (15:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Oviedo vs Espanyol at 2025-10-17 22:00:00 (22:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match UNION BERLIN vs Borussia (MG) at 2025-10-17 21:30:00 (21:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match PSG vs Strasbourg at 2025-10-17 21:45:00 (21:45) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Middlesbrough vs Ipswich at 2025-10-17 22:00:00 (22:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match GD Chaves vs Benfica at 2025-10-17 21:30:00 (21:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Fluminense FC vs EC Juventude at 2025-10-17 03:30:00 (3:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match EC Vitoria vs EC Bahia at 2025-10-17 03:30:00 (3:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Real Esteli FC vs Rancho Santana FC at 2025-10-17 03:00:00 (3:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Quindio vs Tigres at 2025-10-17 03:00:00 (3:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Kenya Police FC vs AL Hilal at 2025-10-17 15:00:00 (15:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Oviedo vs Espanyol at 2025-10-17 22:00:00 (22:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match UNION BERLIN vs Borussia (MG) at 2025-10-17 21:30:00 (21:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match PSG vs Strasbourg at 2025-10-17 21:45:00 (21:45) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Middlesbrough vs Ipswich at 2025-10-17 22:00:00 (22:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match GD Chaves vs Benfica at 2025-10-17 21:30:00 (21:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Fluminense FC vs EC Juventude at 2025-10-17 03:30:00 (3:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match EC Vitoria vs EC Bahia at 2025-10-17 03:30:00 (3:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Real Esteli FC vs Rancho Santana FC at 2025-10-17 03:00:00 (3:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Quindio vs Tigres at 2025-10-17 03:00:00 (3:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Alianza Lima vs Sport Boys Association at 2025-10-17 04:00:00 (4:00) - SKIPPED (outside 5AM-10AM range)
+✅ Match Diriangen FC Diriamba vs CD Walter Ferretti at 2025-10-17 05:00:00 (5:00) on 2025-10-17 - INCLUDED
+⏭️  Match Qingdao Hainiu vs Shanghai Port at 2025-10-17 13:00:00 (13:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Kyzylzhar vs Kairat at 2025-10-17 13:00:00 (13:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match APIA Leichhardt vs Sydney United at 2025-10-17 11:35:00 (11:35) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match H. Nir Ramat Hasharon FC vs Kiiryat Gat at 2025-10-17 12:40:00 (12:40) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Monastir vs JS Kabylie at 2025-10-17 17:00:00 (17:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Chengdu Rongcheng vs Meizhou Hakka at 2025-10-17 14:35:00 (14:35) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Qingdao West Coast vs Shanghai Shenhua at 2025-10-17 15:00:00 (15:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match FK Panevezys B vs FK Transinvest at 2025-10-17 14:30:00 (14:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match PSBS Biak vs Persib Bandung at 2025-10-17 15:00:00 (15:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Proxy SC vs El Mansurah at 2025-10-17 15:30:00 (15:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Manjung City FC vs Selangor PKNS at 2025-10-17 15:45:00 (15:45) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Ekranas vs Tauras at 2025-10-17 16:00:00 (16:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match AL Bataeh (UAE) vs Al Wahda FC (UAE) at 2025-10-17 16:05:00 (16:05) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Sharjah FC vs Al Dhafra at 2025-10-17 16:05:00 (16:05) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Lillestrom SK vs Lyn 1896 FK at 2025-10-17 20:00:00 (20:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Pafos vs Ethnikos Achnas at 2025-10-17 19:00:00 (19:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Turan Tovuz vs Qarabag FK at 2025-10-17 18:00:00 (18:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match FC Brest vs FC Vitebsk at 2025-10-17 19:00:00 (19:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match FC Shirak Gyumri vs FC Alashkert Yerevan at 2025-10-17 18:00:00 (18:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Al-Fayha FC vs Al-Ittihad FC at 2025-10-17 18:05:00 (18:05) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Triglav Kranj vs NK Jesenice at 2025-10-17 19:00:00 (19:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Kauno Zalgiris vs FA Siauliai at 2025-10-17 19:00:00 (19:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Sama AL Sarhan SC vs Kfarsoum at 2025-10-17 19:00:00 (19:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Shabab AL Ordun vs Sahl Horan SC at 2025-10-17 19:00:00 (19:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Al Khaldiya SC vs Bahrain at 2025-10-17 19:00:00 (19:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Dukla Banska Bystrica vs FC Petrzalka at 2025-10-17 19:00:00 (19:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Vion Zlate Moravce - Vrable vs MSK Puchov at 2025-10-17 19:00:00 (19:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Silkeborg IF vs FC Copenhagen at 2025-10-17 20:00:00 (20:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Portadown FC vs Linfield FC at 2025-10-17 21:45:00 (21:45) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match ADO Den Haag vs FC Dordrecht at 2025-10-17 21:00:00 (21:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Al-Ahli Saudi FC vs Al-Shabab FC (SA) at 2025-10-17 21:00:00 (21:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Pontypridd Town vs Cefn Cribwr FC at 2025-10-17 21:30:00 (21:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Shelbourne FC vs Sligo Rovers FC at 2025-10-17 21:45:00 (21:45) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Llandudno FC vs Flint Mountain at 2025-10-17 22:00:00 (22:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match LKP Motor Lublin vs GKS Katowice at 2025-10-17 19:00:00 (19:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Widzew Lodz vs RKS Radomiak Radom at 2025-10-17 21:30:00 (21:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match SC Poltava vs FC Obolon Kyiv at 2025-10-17 15:30:00 (15:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Adelaide United FC vs Sydney FC at 2025-10-17 11:00:00 (11:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Brisbane Roar FC vs Macarthur FC at 2025-10-17 13:05:00 (13:05) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Andorra vs Granada at 2025-10-17 21:30:00 (21:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Hiroshima vs Tokyo at 2025-10-17 13:00:00 (13:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Vissel Kobe vs Kashima at 2025-10-17 13:00:00 (13:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Virtus Entella vs Sampdoria at 2025-10-17 21:30:00 (21:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Hougang United vs Albirex Niigata (S) at 2025-10-17 14:30:00 (14:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Shamakhi FK vs FK Kapaz at 2025-10-17 13:30:00 (13:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match FK Arsenal Dzerzhinsk vs FC Isloch at 2025-10-17 17:00:00 (17:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match RKC Waalwijk vs Willem II Tilburg at 2025-10-17 19:30:00 (19:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Helmond Sport vs Jong AZ Alkmaar at 2025-10-17 21:00:00 (21:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Jong Ajax Amsterdam vs Jong PSV Eindhoven at 2025-10-17 21:00:00 (21:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Roda JC vs FC Den Bosch at 2025-10-17 21:00:00 (21:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Jong FC Utrecht vs MVV Maastricht at 2025-10-17 21:00:00 (21:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Almere City FC vs SC Cambuur at 2025-10-17 21:00:00 (21:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match VVV Venlo vs FC Emmen at 2025-10-17 21:00:00 (21:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match FC Eindhoven vs Vitesse Arnhem at 2025-10-17 21:00:00 (21:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Young Violets Wien vs SV Stripfing at 2025-10-17 19:00:00 (19:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match KSV 1919 vs SK Austria Klagenfurt at 2025-10-17 19:00:00 (19:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match SKN St Polten vs SC Austria Lustenau at 2025-10-17 21:30:00 (21:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Wadi Degla SC vs Future FC at 2025-10-17 17:00:00 (17:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Al Mokawloon vs Enppi Club at 2025-10-17 20:00:00 (20:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Ghazl El Mahallah vs Kahrabaa Ismailia at 2025-10-17 20:00:00 (20:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Pamba Jiji SC vs Mashujaa FC at 2025-10-17 14:00:00 (14:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Fountain Gate FC vs Dodoma FC at 2025-10-17 16:15:00 (16:15) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Mbarara FC vs Bul FC at 2025-10-17 16:00:00 (16:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match URA FC vs Express FC at 2025-10-17 20:00:00 (20:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match CSM Politehnica Iasi vs CS Dinamo Bucuresti at 2025-10-17 17:30:00 (17:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Pumas Unam Women vs  Juarez Women at 2025-10-17 03:00:00 (3:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Racing Club Montevideo vs Plaza Colonia at 2025-10-17 03:00:00 (3:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Olimpia vs Motagua at 2025-10-17 04:30:00 (4:30) - SKIPPED (outside 5AM-10AM range)
+✅ Match Herediano vs Alajuelense at 2025-10-17 05:00:00 (5:00) on 2025-10-17 - INCLUDED
+✅ Match Ska-Khabarovsk-2 vs FC Metallurg Lipetsk at 2025-10-17 06:00:00 (6:00) on 2025-10-17 - INCLUDED
+✅ Match Qingdao Hainiu FC Srl vs Shanghai Port SRL at 2025-10-17 08:00:00 (8:00) on 2025-10-17 - INCLUDED
+✅ Match Qingdao West Coast FC Srl vs Shanghai Shenhua SRL at 2025-10-17 08:00:00 (8:00) on 2025-10-17 - INCLUDED
+✅ Match Chengdu Rongcheng FC Srl vs Meizhou Hakka FC Srl at 2025-10-17 08:00:00 (8:00) on 2025-10-17 - INCLUDED
+⏭️  Match Real Oviedo Srl vs RCD Espanyol Barcelona SRL at 2025-10-17 11:00:00 (11:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match M. Kiryat Ata-Bialik vs Maccabi Neve Shaanan Eldad at 2025-10-17 11:00:00 (11:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Ural Ekaterinburg Youth vs FC Fakel Voronezh Youth at 2025-10-17 11:00:00 (11:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Sriwijaya FC vs Persekat Kabupaten Tegal at 2025-10-17 11:30:00 (11:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Persita Tangerang vs Yogyakarta at 2025-10-17 11:30:00 (11:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Sriwijaya FC vs Persekat Kabupaten Tegal at 2025-10-17 11:30:00 (11:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Ho Chi Minh City FC vs TP Ho Chi Minh at 2025-10-17 12:00:00 (12:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Zenit St Petersburg Youth vs Football Academy Of Konoplev at 2025-10-17 12:00:00 (12:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match DH van Hien vs CS. Dong Thap at 2025-10-17 12:00:00 (12:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Hapoel Azor FC vs Ironi Ashdod FC at 2025-10-17 12:45:00 (12:45) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Achi Nazareth FC vs Baqa Al-Gharbiyye at 2025-10-17 12:50:00 (12:50) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Hapoel Marmorek FC vs Hapoel Herzelia FC at 2025-10-17 12:55:00 (12:55) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Karmiel S. vs MS Tira at 2025-10-17 13:00:00 (13:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Paris Saint-Germain SRL vs Strasbourg Alsace SRL at 2025-10-17 13:00:00 (13:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Union Berlin SRL vs Borussia Monchengladbach SRL at 2025-10-17 13:30:00 (13:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Ironi Nesher vs H. Migdal Haemeq at 2025-10-17 14:00:00 (14:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Beit Shean Mesilot vs Hapoel Tirat Hacarmel at 2025-10-17 14:15:00 (14:15) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match FCSB 2 vs SC Popesti Leordeni at 2025-10-17 15:00:00 (15:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match FK Nizhny Novgorod vs Samara Kryliya Sovetov at 2025-10-17 15:00:00 (15:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Lokomotiv Moscow Youth vs Rubin Kazan Youth at 2025-10-17 15:00:00 (15:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match CS Blejoi vs Csm Ramnicu Sarat at 2025-10-17 15:00:00 (15:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match FC Voluntari II vs ACS Progresul Fundulea at 2025-10-17 15:00:00 (15:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Nakhon Pathom United FC vs Pattaya Dolphins United at 2025-10-17 15:00:00 (15:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match ACS Petrolul 52 2 vs Cso Plopeni at 2025-10-17 15:00:00 (15:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match CS Blejoi vs Csm Ramnicu Sarat at 2025-10-17 15:00:00 (15:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match ACS Kids Tampa Brasov vs Csm Flacara Moreni at 2025-10-17 15:00:00 (15:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match FC Krasnodar Youth vs FK Rostov Youth at 2025-10-17 15:00:00 (15:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Scm Ramnicu Valcea vs Minerul L at 2025-10-17 15:00:00 (15:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Acad Viitorul Cluj vs Olimpia Satu Mare at 2025-10-17 15:00:00 (15:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match FC Voluntari II vs ACS Progresul Fundulea at 2025-10-17 15:00:00 (15:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Nakhon Pathom United FC vs Pattaya Dolphins United at 2025-10-17 15:00:00 (15:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match ACS LPS HD Clinceni vs ACS Axi Arena at 2025-10-17 15:00:00 (15:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match ACS Petrolul 52 2 vs Cso Plopeni at 2025-10-17 15:00:00 (15:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match FC Zeirey Tamra vs Hapoel Ironi Arraba at 2025-10-17 15:30:00 (15:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match FC Zeirey Tamra vs Hapoel Ironi Arraba at 2025-10-17 15:30:00 (15:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match La Viena FC vs AL Mehalla at 2025-10-17 15:30:00 (15:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Pulau Pinang vs Johor Darul Ta'zim at 2025-10-17 15:30:00 (15:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Kelantan The Real Warriors FC vs Sabah at 2025-10-17 16:00:00 (16:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Hapoel Ramat Gan Givatayim FC vs Maccabi Herzliya at 2025-10-17 16:00:00 (16:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match NK Sesvete vs NK Hrvace at 2025-10-17 16:00:00 (16:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Hapoel Kfar Saba FC vs Hapoel Rishon Lezion FC at 2025-10-17 16:00:00 (16:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Bahla Club vs Dhofar SCSC at 2025-10-17 16:00:00 (16:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Gorilla FC vs Gicumbi at 2025-10-17 16:00:00 (16:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match NK Dragovoljac vs Lucko at 2025-10-17 16:00:00 (16:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Maccabi Kabilio Jaffa vs Hapoel Afula FC at 2025-10-17 16:00:00 (16:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match NK Sesvete vs NK Hrvace at 2025-10-17 16:00:00 (16:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Kelantan The Real Warriors FC vs Sabah at 2025-10-17 16:00:00 (16:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Gol Gohar Sirjan FC vs Chador Malu Yazd at 2025-10-17 16:15:00 (16:15) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match AL Nasr SC vs Al Seeb at 2025-10-17 16:20:00 (16:20) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Opatija vs Rudes at 2025-10-17 16:30:00 (16:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match FC Andijon vs PFC Shurtan at 2025-10-17 16:30:00 (16:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Leicesterford City vs Highbury FC at 2025-10-17 16:30:00 (16:30) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Al-Muharraq SC vs Al Riffa at 2025-10-17 16:35:00 (16:35) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match JS Djidjel vs MO Constantine at 2025-10-17 17:00:00 (17:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match CA Batna vs CR Beni Thour at 2025-10-17 17:00:00 (17:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match NA Hussein Dey vs ASM Oran at 2025-10-17 17:00:00 (17:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Crb Adrar vs RC Kouba at 2025-10-17 17:00:00 (17:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Bechar Djedid vs Wa Mostaganem at 2025-10-17 17:00:00 (17:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Js Bordj Menaiel vs MSP Batna at 2025-10-17 17:00:00 (17:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match WA Tlemcen vs JSM Tiaret at 2025-10-17 17:00:00 (17:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match NC Magra vs HB Chelghoum Laid at 2025-10-17 17:00:00 (17:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match ESM Kolea vs GC Mascara at 2025-10-17 17:00:00 (17:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match JS Djidjel vs MO Constantine at 2025-10-17 17:00:00 (17:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Js El Biar vs Saida at 2025-10-17 17:00:00 (17:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Bechar Djedid vs Wa Mostaganem at 2025-10-17 17:00:00 (17:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Crb Adrar vs RC Kouba at 2025-10-17 17:00:00 (17:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Js El Biar vs Saida at 2025-10-17 17:00:00 (17:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match WA Tlemcen vs JSM Tiaret at 2025-10-17 17:00:00 (17:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match JS Djidjel vs MO Constantine at 2025-10-17 17:00:00 (17:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match RC Arbaa vs JS Tixeraine at 2025-10-17 17:00:00 (17:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match ESM Kolea vs GC Mascara at 2025-10-17 17:00:00 (17:00) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match PFC Sogdiana vs FK Termez Surkhon at 2025-10-17 17:15:00 (17:15) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Al Jahra vs Al Tadamon at 2025-10-17 17:40:00 (17:40) - SKIPPED (outside 5AM-10AM range)
+⏭️  Match Gareji Sagarejo vs FC Dila Gori at 2025-10-17 18:00:00 (18:00) - SKIPPED (outside 5AM-10AM range)
+✅ Filtered 7 matches for ML training (5AM-10AM, 2025-10-17)
+✅ Filtered 7 matches for ML training (5AM-10AM, Oct 17, 2025)
+
+💾 STEP 5: SAVING DATA IN MULTIPLE FORMATS
+💾 Match data saved to: soccer-match-intelligence/soccer_2025-10-16T23-35-26-934Z_match_data.json
+💾 Filtered match data saved to: soccer-match-intelligence/soccer_2025-10-16_filtered_matches.json
+📄 CSV export saved to: exports/soccer_matches_soccer_2025-10-16T23-35-26-934Z.csv
+
+✅ STEP 6: COMPLETING DATA PROCESSING
+✅ DATA PROCESSING COMPLETE
+✅ Successfully processed 7 upcoming matches for training
+📊 Final Statistics:
+  - Total upcoming matches: 7
+  - Session ID: soccer_2025-10-16T23-35-26-934Z
+  - Processing completed at: 2025-10-16T23:36:56.536Z
+
+🧹 STEP 7: CLEANING UP OLD DATA
+🧹 Cleaning up old data files...
+🗑️ Pattern soccer-match-intelligence/*_match_data.json: Deleting 1 old files, keeping 3 latest
+  🗑️ Deleted: soccer_2025-10-15T23-17-49-676Z_match_data.json (1054.6 KB)
+🗑️ Pattern soccer-match-intelligence/*_filtered_matches.json: Deleting 1 old files, keeping 3 latest
+  🗑️ Deleted: soccer_2025-10-10T22-32-26-507Z_filtered_matches.json (181.2 KB)
+📁 Pattern soccer-match-intelligence/*_traffic.json: 0 files (keeping all)
+📁 Pattern soccer-match-intelligence/*_dashboard.json: 0 files (keeping all)
+📁 Pattern firecrawl-data/*_firecrawl.json: 0 files (keeping all)
+📁 Pattern firecrawl-data/temp_matches_*.json: 0 files (keeping all)
+🗑️ Pattern exports/soccer_matches_*.csv: Deleting 1 old files, keeping 3 latest
+  🗑️ Deleted: soccer_matches_soccer_2025-10-10T23-23-52-856Z.csv (12.2 KB)
+🗑️ Pattern screenshots/*.png: Deleting 2 old files, keeping 3 latest
+  🗑️ Deleted: 01_homepage_2025-10-15T23-45-18-145Z.png (709.3 KB)
+  🗑️ Deleted: ERROR_soccer_upcoming_navigation_failed_2025-10-15T23-29-23-519Z.png (693.8 KB)
+🗑️ Pattern html-dumps/*.html: Deleting 2 old files, keeping 3 latest
+  🗑️ Deleted: 01_homepage_2025-10-15T23-45-18-145Z.html (830.7 KB)
+  🗑️ Deleted: ERROR_soccer_upcoming_navigation_failed_2025-10-15T23-29-23-519Z.html (846.0 KB)
+🗑️ Pattern ssl_keys/*_ssl.log: Deleting 1 old files, keeping 3 latest
+  🗑️ Deleted: soccer_2025-10-15T23-17-49-676Z_ssl.log (68.5 KB)
+📁 Pattern traffic-data/*.pcap: 0 files (keeping all)
+✅ Cleanup completed: 8 files deleted, 4.29 MB freed
+
+📊 STEP 8: STORAGE STATISTICS
+📊 Getting storage statistics...
+📊 Storage Stats: 22 files, 8.82 MB total
+  📁 soccer-match-intelligence: 10 files, 4.57 MB
+  📁 firecrawl-data: 0 files, 0.00 MB
+  📁 exports: 3 files, 0.02 MB
+  📁 screenshots: 3 files, 1.50 MB
+  📁 html-dumps: 3 files, 2.51 MB
+  📁 ssl_keys: 3 files, 0.22 MB
+  📁 traffic-data: 0 files, 0.00 MB
+
+🎆 ENHANCED SOCCER MATCH CRAWLER COMPLETED SUCCESSFULLY!
+================================================================================
+⚽ Total highlights soccer matches found: 290
+⚽ Filtered matches for ML training (5AM-11AM): 7
+📊 Traffic events captured: 178
+🔐 SSL keys logged: Yes
+📄 CSV export: exports/soccer_matches_soccer_2025-10-16T23-35-26-934Z.csv
+================================================================================
+
+🎆 BROWSER LEFT OPEN FOR INSPECTION
+🔍 You can now manually inspect the soccer section
+✨ The crawler has completed all automated actions
+
+⏹️ Press Ctrl+C to exit and close browser when ready
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 200 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 200 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 200 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 200 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 200 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 200 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 200 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 200 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 200 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 200 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 200 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 200 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 200 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 200 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 200 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 200 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 304 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 200 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 200 https://api.betika.com/v1/uo/totalMatches (Vue API)
+🎯 Captured request: GET https://api.betika.com/v1/uo/totalMatches (Vue API)
+⚽ Soccer data detected from https://api.betika.com/v1/uo/totalMatches (Vue API)
+🔍 Analyzing Vue.js API data from https://api.betika.com/v1/uo/totalMatches
+📊 Vue API Analysis: object, 0 matches, pagination: false
+📥 Captured response: 200 https://api.betika.com/v1/uo/totalMatches (Vue API)

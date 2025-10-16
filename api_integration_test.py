@@ -262,12 +262,14 @@ def test_data_quality_validation(manager):
         # Get multiple responses for comparison
         responses = []
         
-        # Test fixtures from multiple sources
-        fixtures1 = manager.get_fixtures(league="E1")
-        responses.extend(fixtures1)
+        # Compare like-for-like: same league fetched twice (should be consistent)
+        fixtures_run1 = manager.get_fixtures(league="E1")
+        responses.extend(fixtures_run1)
         
-        fixtures2 = manager.get_fixtures(league="E2")
-        responses.extend(fixtures2)
+        # Clear cache to avoid returning the exact cached object and test fresh fetch consistency
+        manager.clear_cache()
+        fixtures_run2 = manager.get_fixtures(league="E1")
+        responses.extend(fixtures_run2)
         
         # Validate data quality
         validation_results = manager.validate_data_quality(responses)

@@ -1,0 +1,891 @@
+2025-10-15 23:43:14,478 - phase2_integration - INFO - Output directory: ./pipeline_output/phase2_output
+2025-10-15 23:43:14,478 - phase2_integration - INFO - Starting Phase 2 pipeline for E1
+2025-10-15 23:43:14,479 - phase2_integration - INFO - Step 1: Loading and preparing data
+2025-10-15 23:43:14,479 - phase2_integration - INFO - Loading data from ./pipeline_output/phase1_output/E1_features.csv
+2025-10-15 23:43:14,609 - phase2_integration - INFO - Loaded 570 samples with 253 features
+2025-10-15 23:43:14,609 - phase2_integration - INFO - Step 2: Model Architecture Design
+2025-10-15 23:43:14,609 - phase2_integration - INFO - Designing model architecture
+2025-10-15 23:43:14,623 - non_major_league_model_architecture - INFO - Creating base models for non-major leagues
+2025-10-15 23:43:14,624 - non_major_league_model_architecture - INFO - Created 4 base models
+2025-10-15 23:43:14,624 - non_major_league_model_architecture - INFO - Training base models
+2025-10-15 23:43:14,627 - non_major_league_model_architecture - INFO - Calculated class weights: {np.int64(0): np.float64(1.036615532029404), np.int64(1): np.float64(1.176727620508443), np.int64(2): np.float64(0.8484672593300355)}
+2025-10-15 23:43:14,627 - non_major_league_model_architecture - INFO - Training xgboost...
+2025-10-15 23:43:14,627 - non_major_league_model_architecture - ERROR - Error training xgboost: XGBClassifier.fit() got an unexpected keyword argument 'early_stopping_rounds'
+2025-10-15 23:43:14,628 - non_major_league_model_architecture - INFO - Training lightgbm...
+2025-10-15 23:43:14,652 - non_major_league_model_architecture - ERROR - Error training lightgbm: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:14,652 - non_major_league_model_architecture - INFO - Training random_forest...
+2025-10-15 23:43:14,664 - non_major_league_model_architecture - ERROR - Error training random_forest: could not convert string to float: 'E1'
+2025-10-15 23:43:14,667 - non_major_league_model_architecture - INFO - Training logistic_regression...
+2025-10-15 23:43:14,680 - non_major_league_model_architecture - ERROR - Error training logistic_regression: could not convert string to float: 'E1'
+2025-10-15 23:43:14,683 - non_major_league_model_architecture - INFO - Creating ensemble model
+2025-10-15 23:43:14,683 - non_major_league_model_architecture - WARNING - Not enough successful models for ensemble
+2025-10-15 23:43:14,683 - non_major_league_model_architecture - INFO - Training ensemble model
+2025-10-15 23:43:14,684 - non_major_league_model_architecture - ERROR - No ensemble model created
+2025-10-15 23:43:14,684 - non_major_league_model_architecture - INFO - Calibrating model probabilities
+2025-10-15 23:43:14,697 - non_major_league_model_architecture - ERROR - Error calibrating xgboost: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:14,710 - non_major_league_model_architecture - ERROR - Error calibrating lightgbm: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:14,723 - non_major_league_model_architecture - ERROR - Error calibrating random_forest: could not convert string to float: 'E1'
+2025-10-15 23:43:14,738 - non_major_league_model_architecture - ERROR - Error calibrating logistic_regression: could not convert string to float: 'E1'
+2025-10-15 23:43:14,740 - non_major_league_model_architecture - INFO - Evaluating models
+2025-10-15 23:43:14,740 - non_major_league_model_architecture - ERROR - Error evaluating xgboost: need to call fit or load_model beforehand
+2025-10-15 23:43:14,741 - non_major_league_model_architecture - ERROR - Error evaluating lightgbm: Estimator not fitted, call fit before exploiting the model.
+2025-10-15 23:43:14,741 - non_major_league_model_architecture - ERROR - Error evaluating random_forest: 'RandomForestClassifier' object has no attribute 'estimators_'
+2025-10-15 23:43:14,746 - non_major_league_model_architecture - ERROR - Error evaluating logistic_regression: could not convert string to float: 'E1'
+2025-10-15 23:43:14,747 - non_major_league_model_architecture - INFO - Calculating feature importance
+2025-10-15 23:43:14,747 - phase2_integration - INFO - Step 3: Transfer Learning Setup
+2025-10-15 23:43:14,747 - phase2_integration - INFO - Setting up transfer learning
+2025-10-15 23:43:14,748 - phase2_integration - INFO - No source data files provided, skipping transfer learning
+2025-10-15 23:43:14,748 - phase2_integration - INFO - Step 4: Hyperparameter Tuning
+2025-10-15 23:43:14,748 - phase2_integration - INFO - Optimizing hyperparameters
+2025-10-15 23:43:14,748 - non_major_league_hyperparameter_tuning - INFO - Optimizing hyperparameters for all models
+2025-10-15 23:43:14,748 - non_major_league_hyperparameter_tuning - INFO - Optimizing xgboost (priority: 1)
+2025-10-15 23:43:14,749 - non_major_league_hyperparameter_tuning - INFO - Optimizing hyperparameters for xgboost
+[I 2025-10-15 23:43:14,749] A new study created in memory with name: no-name-7f7ff006-554c-4182-bacf-6ab3bd41c581
+2025-10-15 23:43:14,758 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:14,765 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:14,772 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+[I 2025-10-15 23:43:14,772] Trial 0 finished with value: inf and parameters: {'n_estimators': 147, 'max_depth': 6, 'learning_rate': 0.04329224561404604, 'subsample': 0.6252859146052442, 'colsample_bytree': 0.8219908317418846, 'min_child_weight': 10, 'reg_alpha': 0.7638353352557705, 'reg_lambda': 0.5737967482168251}. Best is trial 0 with value: inf.
+2025-10-15 23:43:14,780 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:14,785 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:14,791 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+[I 2025-10-15 23:43:14,791] Trial 1 finished with value: inf and parameters: {'n_estimators': 91, 'max_depth': 6, 'learning_rate': 0.07293912619922387, 'subsample': 0.9434023535985823, 'colsample_bytree': 0.9128888166067676, 'min_child_weight': 8, 'reg_alpha': 0.6150079596661722, 'reg_lambda': 1.9434139462712416}. Best is trial 0 with value: inf.
+2025-10-15 23:43:14,799 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:14,804 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:14,810 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+[I 2025-10-15 23:43:14,810] Trial 2 finished with value: inf and parameters: {'n_estimators': 72, 'max_depth': 4, 'learning_rate': 0.021225302012767733, 'subsample': 0.8468887709947197, 'colsample_bytree': 0.9859228675706444, 'min_child_weight': 6, 'reg_alpha': 0.8906923502094521, 'reg_lambda': 1.9831378594658882}. Best is trial 0 with value: inf.
+2025-10-15 23:43:14,818 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:14,824 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:14,830 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+[I 2025-10-15 23:43:14,831] Trial 3 finished with value: inf and parameters: {'n_estimators': 122, 'max_depth': 6, 'learning_rate': 0.09113721584976965, 'subsample': 0.976690521849288, 'colsample_bytree': 0.7413131211245696, 'min_child_weight': 2, 'reg_alpha': 0.943284558291469, 'reg_lambda': 1.3541800357449603}. Best is trial 0 with value: inf.
+2025-10-15 23:43:14,841 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:14,848 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:14,854 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+[I 2025-10-15 23:43:14,856] Trial 4 finished with value: inf and parameters: {'n_estimators': 105, 'max_depth': 4, 'learning_rate': 0.06945615060210301, 'subsample': 0.8774413429792975, 'colsample_bytree': 0.99362501702112, 'min_child_weight': 9, 'reg_alpha': 0.999132159970294, 'reg_lambda': 1.2141642984006527}. Best is trial 0 with value: inf.
+2025-10-15 23:43:14,864 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:14,869 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:14,874 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+[I 2025-10-15 23:43:14,875] Trial 5 finished with value: inf and parameters: {'n_estimators': 174, 'max_depth': 7, 'learning_rate': 0.05529890292275695, 'subsample': 0.9003820828132725, 'colsample_bytree': 0.880205388456095, 'min_child_weight': 6, 'reg_alpha': 0.28481551150150897, 'reg_lambda': 1.5073726941903378}. Best is trial 0 with value: inf.
+2025-10-15 23:43:14,884 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:14,891 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:14,896 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+[I 2025-10-15 23:43:14,897] Trial 6 finished with value: inf and parameters: {'n_estimators': 193, 'max_depth': 6, 'learning_rate': 0.0595973048375727, 'subsample': 0.8538324164698703, 'colsample_bytree': 0.8635560046083712, 'min_child_weight': 8, 'reg_alpha': 0.21911908495998833, 'reg_lambda': 0.7979476077573016}. Best is trial 0 with value: inf.
+2025-10-15 23:43:14,907 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:14,913 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:14,918 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+[I 2025-10-15 23:43:14,918] Trial 7 finished with value: inf and parameters: {'n_estimators': 86, 'max_depth': 5, 'learning_rate': 0.07402938634533741, 'subsample': 0.906603179551132, 'colsample_bytree': 0.6990666153627213, 'min_child_weight': 7, 'reg_alpha': 0.8131717858954387, 'reg_lambda': 0.33334836326003114}. Best is trial 0 with value: inf.
+2025-10-15 23:43:14,927 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:14,934 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:14,940 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+[I 2025-10-15 23:43:14,940] Trial 8 finished with value: inf and parameters: {'n_estimators': 71, 'max_depth': 8, 'learning_rate': 0.019631360930438622, 'subsample': 0.8776007595325908, 'colsample_bytree': 0.7176237257291972, 'min_child_weight': 3, 'reg_alpha': 0.6810899716204188, 'reg_lambda': 0.6091465742625453}. Best is trial 0 with value: inf.
+2025-10-15 23:43:14,950 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:14,956 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:14,962 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+[I 2025-10-15 23:43:14,962] Trial 9 finished with value: inf and parameters: {'n_estimators': 129, 'max_depth': 8, 'learning_rate': 0.09098089600772344, 'subsample': 0.864703954560385, 'colsample_bytree': 0.8363894943913549, 'min_child_weight': 10, 'reg_alpha': 0.07344194712393703, 'reg_lambda': 0.143868228487946}. Best is trial 0 with value: inf.
+2025-10-15 23:43:14,999 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:15,005 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:15,011 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+[I 2025-10-15 23:43:15,011] Trial 10 finished with value: inf and parameters: {'n_estimators': 157, 'max_depth': 3, 'learning_rate': 0.03677052624194036, 'subsample': 0.6040893935119667, 'colsample_bytree': 0.6000759163965814, 'min_child_weight': 4, 'reg_alpha': 0.41608797501771533, 'reg_lambda': 0.5179352732647509}. Best is trial 0 with value: inf.
+2025-10-15 23:43:15,045 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:15,051 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:15,059 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+[I 2025-10-15 23:43:15,059] Trial 11 finished with value: inf and parameters: {'n_estimators': 143, 'max_depth': 6, 'learning_rate': 0.040286430061455394, 'subsample': 0.6957574582965901, 'colsample_bytree': 0.9063589027121736, 'min_child_weight': 10, 'reg_alpha': 0.6384266746109211, 'reg_lambda': 0.9499892748787166}. Best is trial 0 with value: inf.
+2025-10-15 23:43:15,099 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:15,104 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:15,110 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+[I 2025-10-15 23:43:15,110] Trial 12 finished with value: inf and parameters: {'n_estimators': 100, 'max_depth': 7, 'learning_rate': 0.04161924290486682, 'subsample': 0.7558748743678284, 'colsample_bytree': 0.7892678481967887, 'min_child_weight': 8, 'reg_alpha': 0.5863202740370533, 'reg_lambda': 1.87054140608058}. Best is trial 0 with value: inf.
+2025-10-15 23:43:15,150 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:15,157 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:15,162 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+[I 2025-10-15 23:43:15,163] Trial 13 finished with value: inf and parameters: {'n_estimators': 54, 'max_depth': 5, 'learning_rate': 0.07827824666435554, 'subsample': 0.9909540588159635, 'colsample_bytree': 0.9380201239253396, 'min_child_weight': 8, 'reg_alpha': 0.7902800578257244, 'reg_lambda': 1.6129618266197598}. Best is trial 0 with value: inf.
+2025-10-15 23:43:15,200 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:15,206 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:15,211 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+[I 2025-10-15 23:43:15,211] Trial 14 finished with value: inf and parameters: {'n_estimators': 160, 'max_depth': 7, 'learning_rate': 0.047919877748371476, 'subsample': 0.6017102710921843, 'colsample_bytree': 0.7991173377724662, 'min_child_weight': 10, 'reg_alpha': 0.5415960650520345, 'reg_lambda': 0.0034357920352225957}. Best is trial 0 with value: inf.
+2025-10-15 23:43:15,251 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:15,257 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:15,262 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+[I 2025-10-15 23:43:15,263] Trial 15 finished with value: inf and parameters: {'n_estimators': 117, 'max_depth': 5, 'learning_rate': 0.03055731070043038, 'subsample': 0.6934575942490236, 'colsample_bytree': 0.9323977065975241, 'min_child_weight': 5, 'reg_alpha': 0.7272988281118788, 'reg_lambda': 1.0738760966716305}. Best is trial 0 with value: inf.
+2025-10-15 23:43:15,298 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:15,303 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:15,309 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+[I 2025-10-15 23:43:15,309] Trial 16 finished with value: inf and parameters: {'n_estimators': 139, 'max_depth': 7, 'learning_rate': 0.010149312943249153, 'subsample': 0.7380371262304511, 'colsample_bytree': 0.8256485557722243, 'min_child_weight': 9, 'reg_alpha': 0.43282633359548284, 'reg_lambda': 0.7267618893758687}. Best is trial 0 with value: inf.
+2025-10-15 23:43:15,348 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:15,357 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:15,363 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+[I 2025-10-15 23:43:15,363] Trial 17 finished with value: inf and parameters: {'n_estimators': 195, 'max_depth': 4, 'learning_rate': 0.09881766445675419, 'subsample': 0.8001218597974027, 'colsample_bytree': 0.7608881550908896, 'min_child_weight': 1, 'reg_alpha': 0.4425843514813357, 'reg_lambda': 0.3710920096101126}. Best is trial 0 with value: inf.
+2025-10-15 23:43:15,395 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:15,403 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:15,409 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+[I 2025-10-15 23:43:15,409] Trial 18 finished with value: inf and parameters: {'n_estimators': 97, 'max_depth': 6, 'learning_rate': 0.06288275352317685, 'subsample': 0.9310111662670584, 'colsample_bytree': 0.9400643868512153, 'min_child_weight': 7, 'reg_alpha': 0.800077137347809, 'reg_lambda': 1.6790547928110564}. Best is trial 0 with value: inf.
+2025-10-15 23:43:15,445 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:15,453 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:15,460 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+[I 2025-10-15 23:43:15,461] Trial 19 finished with value: inf and parameters: {'n_estimators': 168, 'max_depth': 5, 'learning_rate': 0.08058241950202587, 'subsample': 0.6610360575846176, 'colsample_bytree': 0.8624690759139974, 'min_child_weight': 9, 'reg_alpha': 0.3229965639850804, 'reg_lambda': 1.0412104376870917}. Best is trial 0 with value: inf.
+2025-10-15 23:43:15,500 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:15,507 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:15,513 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+[I 2025-10-15 23:43:15,513] Trial 20 finished with value: inf and parameters: {'n_estimators': 80, 'max_depth': 3, 'learning_rate': 0.04930824081944654, 'subsample': 0.7888460704952842, 'colsample_bytree': 0.6780438900108964, 'min_child_weight': 7, 'reg_alpha': 0.5393369857361809, 'reg_lambda': 1.3722515111518492}. Best is trial 0 with value: inf.
+2025-10-15 23:43:15,553 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:15,560 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:15,568 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+[I 2025-10-15 23:43:15,568] Trial 21 finished with value: inf and parameters: {'n_estimators': 50, 'max_depth': 4, 'learning_rate': 0.027128696865519376, 'subsample': 0.8280181942397594, 'colsample_bytree': 0.99913489357336, 'min_child_weight': 5, 'reg_alpha': 0.8734856532763489, 'reg_lambda': 1.9666126401233415}. Best is trial 0 with value: inf.
+2025-10-15 23:43:15,609 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:15,614 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:15,624 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+[I 2025-10-15 23:43:15,625] Trial 22 finished with value: inf and parameters: {'n_estimators': 62, 'max_depth': 4, 'learning_rate': 0.014522775268345674, 'subsample': 0.939201418656781, 'colsample_bytree': 0.9640718677082364, 'min_child_weight': 6, 'reg_alpha': 0.8792338576487807, 'reg_lambda': 1.8126039137871988}. Best is trial 0 with value: inf.
+2025-10-15 23:43:15,666 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:15,672 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:15,678 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+[I 2025-10-15 23:43:15,679] Trial 23 finished with value: inf and parameters: {'n_estimators': 83, 'max_depth': 6, 'learning_rate': 0.02212434126632631, 'subsample': 0.9545161457276621, 'colsample_bytree': 0.9030205337443813, 'min_child_weight': 8, 'reg_alpha': 0.6983313146429492, 'reg_lambda': 1.6650644190955481}. Best is trial 0 with value: inf.
+2025-10-15 23:43:15,718 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:15,724 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:15,730 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+[I 2025-10-15 23:43:15,731] Trial 24 finished with value: inf and parameters: {'n_estimators': 110, 'max_depth': 5, 'learning_rate': 0.06624271945281494, 'subsample': 0.8218511156493078, 'colsample_bytree': 0.9692806185872395, 'min_child_weight': 9, 'reg_alpha': 0.8955985025668318, 'reg_lambda': 1.908725055944069}. Best is trial 0 with value: inf.
+2025-10-15 23:43:15,769 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:15,777 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:15,783 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+[I 2025-10-15 23:43:15,783] Trial 25 finished with value: inf and parameters: {'n_estimators': 69, 'max_depth': 7, 'learning_rate': 0.033204559387493914, 'subsample': 0.6466568700954407, 'colsample_bytree': 0.9118500980468431, 'min_child_weight': 6, 'reg_alpha': 0.7522074216177252, 'reg_lambda': 1.989690131524884}. Best is trial 0 with value: inf.
+2025-10-15 23:43:15,820 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:15,827 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:15,835 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+[I 2025-10-15 23:43:15,836] Trial 26 finished with value: inf and parameters: {'n_estimators': 89, 'max_depth': 3, 'learning_rate': 0.04787262286745586, 'subsample': 0.7597894594190047, 'colsample_bytree': 0.9637144596813929, 'min_child_weight': 7, 'reg_alpha': 0.6073923264932918, 'reg_lambda': 1.4839821419729122}. Best is trial 0 with value: inf.
+2025-10-15 23:43:15,878 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:15,884 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:15,893 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+[I 2025-10-15 23:43:15,893] Trial 27 finished with value: inf and parameters: {'n_estimators': 134, 'max_depth': 6, 'learning_rate': 0.023500903449742656, 'subsample': 0.9140785704279548, 'colsample_bytree': 0.8405128729046147, 'min_child_weight': 4, 'reg_alpha': 0.9741306215906766, 'reg_lambda': 1.7503839392413432}. Best is trial 0 with value: inf.
+2025-10-15 23:43:15,932 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:15,938 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:15,944 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+[I 2025-10-15 23:43:15,945] Trial 28 finished with value: inf and parameters: {'n_estimators': 149, 'max_depth': 4, 'learning_rate': 0.05433043625485056, 'subsample': 0.7183486440716593, 'colsample_bytree': 0.8853715924158134, 'min_child_weight': 10, 'reg_alpha': 0.8350713754428287, 'reg_lambda': 0.8546448544269303}. Best is trial 0 with value: inf.
+2025-10-15 23:43:15,987 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:15,994 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:16,003 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+[I 2025-10-15 23:43:16,003] Trial 29 finished with value: inf and parameters: {'n_estimators': 120, 'max_depth': 6, 'learning_rate': 0.08871735662446602, 'subsample': 0.9750008388110005, 'colsample_bytree': 0.7471759215660132, 'min_child_weight': 9, 'reg_alpha': 0.9266021643399849, 'reg_lambda': 1.2783551166765168}. Best is trial 0 with value: inf.
+2025-10-15 23:43:16,018 - non_major_league_hyperparameter_tuning - INFO - xgboost optimization complete
+2025-10-15 23:43:16,018 - non_major_league_hyperparameter_tuning - INFO - Best score: inf
+2025-10-15 23:43:16,019 - non_major_league_hyperparameter_tuning - INFO - Best params: {'n_estimators': 147, 'max_depth': 6, 'learning_rate': 0.04329224561404604, 'subsample': 0.6252859146052442, 'colsample_bytree': 0.8219908317418846, 'min_child_weight': 10, 'reg_alpha': 0.7638353352557705, 'reg_lambda': 0.5737967482168251}
+2025-10-15 23:43:16,019 - non_major_league_hyperparameter_tuning - INFO - Optimizing lightgbm (priority: 2)
+2025-10-15 23:43:16,019 - non_major_league_hyperparameter_tuning - INFO - Optimizing hyperparameters for lightgbm
+[I 2025-10-15 23:43:16,020] A new study created in memory with name: no-name-65a6ceba-96a2-421f-8c3c-ead8c285d02a
+2025-10-15 23:43:16,032 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:16,039 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:16,045 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+[I 2025-10-15 23:43:16,045] Trial 0 finished with value: inf and parameters: {'n_estimators': 122, 'max_depth': 7, 'learning_rate': 0.03071760070595622, 'num_leaves': 57, 'feature_fraction': 0.7039271427999032, 'bagging_fraction': 0.6774972221358695, 'bagging_freq': 2, 'lambda_l1': 0.7696001860298304, 'lambda_l2': 1.6987715199118822, 'min_data_in_leaf': 11}. Best is trial 0 with value: inf.
+2025-10-15 23:43:16,053 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:16,061 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:16,068 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+[I 2025-10-15 23:43:16,069] Trial 1 finished with value: inf and parameters: {'n_estimators': 69, 'max_depth': 4, 'learning_rate': 0.04272396804352993, 'num_leaves': 23, 'feature_fraction': 0.6383594478392218, 'bagging_fraction': 0.8312148883238755, 'bagging_freq': 4, 'lambda_l1': 0.29942190489804876, 'lambda_l2': 0.10821818747189105, 'min_data_in_leaf': 19}. Best is trial 0 with value: inf.
+2025-10-15 23:43:16,078 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:16,084 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:16,094 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+[I 2025-10-15 23:43:16,095] Trial 2 finished with value: inf and parameters: {'n_estimators': 60, 'max_depth': 6, 'learning_rate': 0.0821179402128635, 'num_leaves': 50, 'feature_fraction': 0.9988646983357414, 'bagging_fraction': 0.6016428877271934, 'bagging_freq': 1, 'lambda_l1': 0.7869594674811641, 'lambda_l2': 0.4735035349386456, 'min_data_in_leaf': 17}. Best is trial 0 with value: inf.
+2025-10-15 23:43:16,104 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:16,112 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:16,121 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+[I 2025-10-15 23:43:16,121] Trial 3 finished with value: inf and parameters: {'n_estimators': 147, 'max_depth': 5, 'learning_rate': 0.05337676079666865, 'num_leaves': 97, 'feature_fraction': 0.6099780736839796, 'bagging_fraction': 0.8948463657736958, 'bagging_freq': 7, 'lambda_l1': 0.7263247672179061, 'lambda_l2': 1.4064073208684837, 'min_data_in_leaf': 33}. Best is trial 0 with value: inf.
+2025-10-15 23:43:16,130 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:16,136 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:16,143 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+[I 2025-10-15 23:43:16,144] Trial 4 finished with value: inf and parameters: {'n_estimators': 181, 'max_depth': 3, 'learning_rate': 0.04917358376256399, 'num_leaves': 13, 'feature_fraction': 0.8899242044815268, 'bagging_fraction': 0.6564550994696152, 'bagging_freq': 10, 'lambda_l1': 0.3069740461171341, 'lambda_l2': 0.8700083831106358, 'min_data_in_leaf': 25}. Best is trial 0 with value: inf.
+2025-10-15 23:43:16,154 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:16,161 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:16,167 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+[I 2025-10-15 23:43:16,168] Trial 5 finished with value: inf and parameters: {'n_estimators': 82, 'max_depth': 7, 'learning_rate': 0.07730917357837476, 'num_leaves': 67, 'feature_fraction': 0.6599501509991293, 'bagging_fraction': 0.7192273310959352, 'bagging_freq': 8, 'lambda_l1': 0.18689745781424605, 'lambda_l2': 1.8808890177733748, 'min_data_in_leaf': 13}. Best is trial 0 with value: inf.
+2025-10-15 23:43:16,179 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:16,186 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:16,192 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+[I 2025-10-15 23:43:16,193] Trial 6 finished with value: inf and parameters: {'n_estimators': 190, 'max_depth': 8, 'learning_rate': 0.0522082747306078, 'num_leaves': 42, 'feature_fraction': 0.8073382269193569, 'bagging_fraction': 0.9521937060331422, 'bagging_freq': 5, 'lambda_l1': 0.9882865208288341, 'lambda_l2': 0.5877198038635771, 'min_data_in_leaf': 9}. Best is trial 0 with value: inf.
+2025-10-15 23:43:16,204 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:16,212 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:16,219 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+[I 2025-10-15 23:43:16,220] Trial 7 finished with value: inf and parameters: {'n_estimators': 145, 'max_depth': 6, 'learning_rate': 0.06127388389601003, 'num_leaves': 49, 'feature_fraction': 0.8042111556162547, 'bagging_fraction': 0.8773085604260891, 'bagging_freq': 2, 'lambda_l1': 0.05855240959084962, 'lambda_l2': 0.5258682006969244, 'min_data_in_leaf': 26}. Best is trial 0 with value: inf.
+2025-10-15 23:43:16,228 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:16,236 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:16,243 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+[I 2025-10-15 23:43:16,244] Trial 8 finished with value: inf and parameters: {'n_estimators': 62, 'max_depth': 8, 'learning_rate': 0.05324087714416465, 'num_leaves': 56, 'feature_fraction': 0.8503311076817697, 'bagging_fraction': 0.9982822093663104, 'bagging_freq': 10, 'lambda_l1': 0.15062076311365102, 'lambda_l2': 0.9676094601098493, 'min_data_in_leaf': 26}. Best is trial 0 with value: inf.
+2025-10-15 23:43:16,253 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:16,259 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:16,266 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+[I 2025-10-15 23:43:16,267] Trial 9 finished with value: inf and parameters: {'n_estimators': 132, 'max_depth': 8, 'learning_rate': 0.05215953663520567, 'num_leaves': 60, 'feature_fraction': 0.8581977262470615, 'bagging_fraction': 0.7226878457940394, 'bagging_freq': 4, 'lambda_l1': 0.3279791267554615, 'lambda_l2': 1.54179805433177, 'min_data_in_leaf': 41}. Best is trial 0 with value: inf.
+2025-10-15 23:43:16,313 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:16,321 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:16,327 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+[I 2025-10-15 23:43:16,329] Trial 10 finished with value: inf and parameters: {'n_estimators': 102, 'max_depth': 5, 'learning_rate': 0.013669369478998637, 'num_leaves': 81, 'feature_fraction': 0.7127083616173363, 'bagging_fraction': 0.7523285801473101, 'bagging_freq': 2, 'lambda_l1': 0.5930969962499834, 'lambda_l2': 1.9896506279440598, 'min_data_in_leaf': 5}. Best is trial 0 with value: inf.
+2025-10-15 23:43:16,376 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:16,385 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:16,393 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+[I 2025-10-15 23:43:16,393] Trial 11 finished with value: inf and parameters: {'n_estimators': 102, 'max_depth': 3, 'learning_rate': 0.025710677764321573, 'num_leaves': 25, 'feature_fraction': 0.7097535170246182, 'bagging_fraction': 0.8255517301704465, 'bagging_freq': 4, 'lambda_l1': 0.47916046503378534, 'lambda_l2': 0.036590519499255736, 'min_data_in_leaf': 18}. Best is trial 0 with value: inf.
+2025-10-15 23:43:16,443 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:16,449 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:16,456 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+[I 2025-10-15 23:43:16,457] Trial 12 finished with value: inf and parameters: {'n_estimators': 108, 'max_depth': 4, 'learning_rate': 0.03160257758195466, 'num_leaves': 32, 'feature_fraction': 0.7203609605889151, 'bagging_fraction': 0.7921173153905909, 'bagging_freq': 3, 'lambda_l1': 0.9981293137622176, 'lambda_l2': 1.381729712970764, 'min_data_in_leaf': 50}. Best is trial 0 with value: inf.
+2025-10-15 23:43:16,511 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:16,519 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:16,526 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+[I 2025-10-15 23:43:16,527] Trial 13 finished with value: inf and parameters: {'n_estimators': 50, 'max_depth': 4, 'learning_rate': 0.03380248417573663, 'num_leaves': 71, 'feature_fraction': 0.6040061605487432, 'bagging_fraction': 0.6687930100139299, 'bagging_freq': 6, 'lambda_l1': 0.49692629042952585, 'lambda_l2': 0.03465432197118154, 'min_data_in_leaf': 18}. Best is trial 0 with value: inf.
+2025-10-15 23:43:16,583 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:16,591 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:16,598 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+[I 2025-10-15 23:43:16,598] Trial 14 finished with value: inf and parameters: {'n_estimators': 166, 'max_depth': 7, 'learning_rate': 0.01511527049843631, 'num_leaves': 10, 'feature_fraction': 0.6644493591987602, 'bagging_fraction': 0.8365513579262249, 'bagging_freq': 1, 'lambda_l1': 0.813143981584895, 'lambda_l2': 1.6889361179076183, 'min_data_in_leaf': 11}. Best is trial 0 with value: inf.
+2025-10-15 23:43:16,647 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:16,655 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:16,664 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+[I 2025-10-15 23:43:16,665] Trial 15 finished with value: inf and parameters: {'n_estimators': 81, 'max_depth': 4, 'learning_rate': 0.03897884946623989, 'num_leaves': 33, 'feature_fraction': 0.7621647925535473, 'bagging_fraction': 0.7757411370023688, 'bagging_freq': 3, 'lambda_l1': 0.6347825557802496, 'lambda_l2': 1.236196329648957, 'min_data_in_leaf': 34}. Best is trial 0 with value: inf.
+2025-10-15 23:43:16,719 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:16,725 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:16,731 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+[I 2025-10-15 23:43:16,732] Trial 16 finished with value: inf and parameters: {'n_estimators': 82, 'max_depth': 7, 'learning_rate': 0.07102840702514795, 'num_leaves': 84, 'feature_fraction': 0.6645467814965715, 'bagging_fraction': 0.8833930478859312, 'bagging_freq': 5, 'lambda_l1': 0.36606619226618536, 'lambda_l2': 0.794537188859937, 'min_data_in_leaf': 21}. Best is trial 0 with value: inf.
+2025-10-15 23:43:16,777 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:16,784 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:16,792 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+[I 2025-10-15 23:43:16,793] Trial 17 finished with value: inf and parameters: {'n_estimators': 117, 'max_depth': 5, 'learning_rate': 0.09257092291415284, 'num_leaves': 42, 'feature_fraction': 0.7536121665335398, 'bagging_fraction': 0.608926300725694, 'bagging_freq': 3, 'lambda_l1': 0.8829510851469983, 'lambda_l2': 0.2904581488665182, 'min_data_in_leaf': 6}. Best is trial 0 with value: inf.
+2025-10-15 23:43:16,842 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:16,851 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:16,859 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+[I 2025-10-15 23:43:16,860] Trial 18 finished with value: inf and parameters: {'n_estimators': 134, 'max_depth': 6, 'learning_rate': 0.04149801900028717, 'num_leaves': 23, 'feature_fraction': 0.6421929115867403, 'bagging_fraction': 0.671954885459553, 'bagging_freq': 6, 'lambda_l1': 0.6286242717596481, 'lambda_l2': 1.203145073195835, 'min_data_in_leaf': 14}. Best is trial 0 with value: inf.
+2025-10-15 23:43:16,905 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:16,913 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:16,920 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+[I 2025-10-15 23:43:16,921] Trial 19 finished with value: inf and parameters: {'n_estimators': 169, 'max_depth': 4, 'learning_rate': 0.023458700802973197, 'num_leaves': 67, 'feature_fraction': 0.692723478360084, 'bagging_fraction': 0.8377653367224561, 'bagging_freq': 4, 'lambda_l1': 0.4161838621625735, 'lambda_l2': 1.711808112325705, 'min_data_in_leaf': 33}. Best is trial 0 with value: inf.
+2025-10-15 23:43:16,970 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:16,977 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:16,985 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+[I 2025-10-15 23:43:16,986] Trial 20 finished with value: inf and parameters: {'n_estimators': 70, 'max_depth': 7, 'learning_rate': 0.06547764293575345, 'num_leaves': 37, 'feature_fraction': 0.7631882298718825, 'bagging_fraction': 0.7241514257899981, 'bagging_freq': 2, 'lambda_l1': 0.23187124235286044, 'lambda_l2': 0.2537273669903206, 'min_data_in_leaf': 21}. Best is trial 0 with value: inf.
+2025-10-15 23:43:17,044 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:17,051 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:17,058 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+[I 2025-10-15 23:43:17,059] Trial 21 finished with value: inf and parameters: {'n_estimators': 60, 'max_depth': 6, 'learning_rate': 0.09870981055786397, 'num_leaves': 50, 'feature_fraction': 0.9408949387558857, 'bagging_fraction': 0.6171397434651228, 'bagging_freq': 1, 'lambda_l1': 0.79663182738431, 'lambda_l2': 0.3693363415497811, 'min_data_in_leaf': 16}. Best is trial 0 with value: inf.
+2025-10-15 23:43:17,108 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:17,118 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:17,125 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+[I 2025-10-15 23:43:17,126] Trial 22 finished with value: inf and parameters: {'n_estimators': 94, 'max_depth': 6, 'learning_rate': 0.08020164854642028, 'num_leaves': 21, 'feature_fraction': 0.9861955494106338, 'bagging_fraction': 0.6014697360992212, 'bagging_freq': 1, 'lambda_l1': 0.694431020395764, 'lambda_l2': 0.5752788111484475, 'min_data_in_leaf': 21}. Best is trial 0 with value: inf.
+2025-10-15 23:43:17,181 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:17,189 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:17,198 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+[I 2025-10-15 23:43:17,199] Trial 23 finished with value: inf and parameters: {'n_estimators': 72, 'max_depth': 5, 'learning_rate': 0.04368089912880442, 'num_leaves': 49, 'feature_fraction': 0.9276167601305891, 'bagging_fraction': 0.6462514075304703, 'bagging_freq': 2, 'lambda_l1': 0.8560917727580328, 'lambda_l2': 0.1407299537884693, 'min_data_in_leaf': 9}. Best is trial 0 with value: inf.
+2025-10-15 23:43:17,256 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:17,263 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:17,271 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+[I 2025-10-15 23:43:17,272] Trial 24 finished with value: inf and parameters: {'n_estimators': 51, 'max_depth': 7, 'learning_rate': 0.08792466728653403, 'num_leaves': 78, 'feature_fraction': 0.9947363709752507, 'bagging_fraction': 0.6952633746772378, 'bagging_freq': 3, 'lambda_l1': 0.5650551696194782, 'lambda_l2': 0.6609425544805116, 'min_data_in_leaf': 14}. Best is trial 0 with value: inf.
+2025-10-15 23:43:17,334 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:17,345 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:17,357 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+[I 2025-10-15 23:43:17,358] Trial 25 finished with value: inf and parameters: {'n_estimators': 115, 'max_depth': 6, 'learning_rate': 0.06132545838995712, 'num_leaves': 61, 'feature_fraction': 0.6300714075409519, 'bagging_fraction': 0.6359565331873406, 'bagging_freq': 1, 'lambda_l1': 0.9074894685059349, 'lambda_l2': 0.42816741685534243, 'min_data_in_leaf': 30}. Best is trial 0 with value: inf.
+2025-10-15 23:43:17,418 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:17,424 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:17,430 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+[I 2025-10-15 23:43:17,431] Trial 26 finished with value: inf and parameters: {'n_estimators': 86, 'max_depth': 3, 'learning_rate': 0.022597462779448213, 'num_leaves': 98, 'feature_fraction': 0.747341764517134, 'bagging_fraction': 0.7461278397208119, 'bagging_freq': 4, 'lambda_l1': 0.7246535433401253, 'lambda_l2': 1.1155329170871504, 'min_data_in_leaf': 18}. Best is trial 0 with value: inf.
+2025-10-15 23:43:17,480 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:17,485 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:17,491 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+[I 2025-10-15 23:43:17,492] Trial 27 finished with value: inf and parameters: {'n_estimators': 68, 'max_depth': 5, 'learning_rate': 0.03397972258478201, 'num_leaves': 44, 'feature_fraction': 0.8376982568694904, 'bagging_fraction': 0.6923764318404506, 'bagging_freq': 2, 'lambda_l1': 0.021118877761903854, 'lambda_l2': 0.2046278895709055, 'min_data_in_leaf': 23}. Best is trial 0 with value: inf.
+2025-10-15 23:43:17,538 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:17,545 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:17,551 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+[I 2025-10-15 23:43:17,551] Trial 28 finished with value: inf and parameters: {'n_estimators': 94, 'max_depth': 7, 'learning_rate': 0.04578316928510169, 'num_leaves': 17, 'feature_fraction': 0.6817708332786868, 'bagging_fraction': 0.7645156172323688, 'bagging_freq': 3, 'lambda_l1': 0.4303324224238566, 'lambda_l2': 0.443120591315866, 'min_data_in_leaf': 9}. Best is trial 0 with value: inf.
+2025-10-15 23:43:17,604 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:17,612 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:17,620 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+[I 2025-10-15 23:43:17,621] Trial 29 finished with value: inf and parameters: {'n_estimators': 158, 'max_depth': 6, 'learning_rate': 0.05808093229806453, 'num_leaves': 29, 'feature_fraction': 0.6320996263814779, 'bagging_fraction': 0.8538418680841097, 'bagging_freq': 7, 'lambda_l1': 0.7634444381628196, 'lambda_l2': 0.7819147823812367, 'min_data_in_leaf': 30}. Best is trial 0 with value: inf.
+2025-10-15 23:43:17,629 - non_major_league_hyperparameter_tuning - INFO - lightgbm optimization complete
+2025-10-15 23:43:17,629 - non_major_league_hyperparameter_tuning - INFO - Best score: inf
+2025-10-15 23:43:17,630 - non_major_league_hyperparameter_tuning - INFO - Best params: {'n_estimators': 122, 'max_depth': 7, 'learning_rate': 0.03071760070595622, 'num_leaves': 57, 'feature_fraction': 0.7039271427999032, 'bagging_fraction': 0.6774972221358695, 'bagging_freq': 2, 'lambda_l1': 0.7696001860298304, 'lambda_l2': 1.6987715199118822, 'min_data_in_leaf': 11}
+2025-10-15 23:43:17,630 - non_major_league_hyperparameter_tuning - INFO - Optimizing random_forest (priority: 3)
+2025-10-15 23:43:17,630 - non_major_league_hyperparameter_tuning - INFO - Optimizing hyperparameters for random_forest
+[I 2025-10-15 23:43:17,630] A new study created in memory with name: no-name-4338f58c-a84b-45a6-8e09-950330e514e9
+2025-10-15 23:43:17,641 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:17,653 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:17,670 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+[I 2025-10-15 23:43:17,672] Trial 0 finished with value: inf and parameters: {'n_estimators': 80, 'max_depth': 5, 'min_samples_split': 19, 'min_samples_leaf': 2, 'max_features': None}. Best is trial 0 with value: inf.
+2025-10-15 23:43:17,684 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:17,694 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:17,708 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+[I 2025-10-15 23:43:17,711] Trial 1 finished with value: inf and parameters: {'n_estimators': 180, 'max_depth': 3, 'min_samples_split': 17, 'min_samples_leaf': 1, 'max_features': 'log2'}. Best is trial 0 with value: inf.
+2025-10-15 23:43:17,723 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:17,733 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:17,747 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+[I 2025-10-15 23:43:17,750] Trial 2 finished with value: inf and parameters: {'n_estimators': 146, 'max_depth': 3, 'min_samples_split': 17, 'min_samples_leaf': 3, 'max_features': None}. Best is trial 0 with value: inf.
+2025-10-15 23:43:17,760 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:17,771 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:17,786 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+[I 2025-10-15 23:43:17,789] Trial 3 finished with value: inf and parameters: {'n_estimators': 50, 'max_depth': 8, 'min_samples_split': 2, 'min_samples_leaf': 9, 'max_features': 'sqrt'}. Best is trial 0 with value: inf.
+2025-10-15 23:43:17,798 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:17,809 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:17,824 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+[I 2025-10-15 23:43:17,826] Trial 4 finished with value: inf and parameters: {'n_estimators': 154, 'max_depth': 7, 'min_samples_split': 20, 'min_samples_leaf': 9, 'max_features': 'log2'}. Best is trial 0 with value: inf.
+2025-10-15 23:43:17,840 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:17,852 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:17,864 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+[I 2025-10-15 23:43:17,867] Trial 5 finished with value: inf and parameters: {'n_estimators': 105, 'max_depth': 11, 'min_samples_split': 10, 'min_samples_leaf': 3, 'max_features': 'sqrt'}. Best is trial 0 with value: inf.
+2025-10-15 23:43:17,878 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:17,890 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:17,903 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+[I 2025-10-15 23:43:17,906] Trial 6 finished with value: inf and parameters: {'n_estimators': 102, 'max_depth': 11, 'min_samples_split': 10, 'min_samples_leaf': 9, 'max_features': 'log2'}. Best is trial 0 with value: inf.
+2025-10-15 23:43:17,917 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:17,929 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:17,942 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+[I 2025-10-15 23:43:17,944] Trial 7 finished with value: inf and parameters: {'n_estimators': 102, 'max_depth': 8, 'min_samples_split': 10, 'min_samples_leaf': 4, 'max_features': 'sqrt'}. Best is trial 0 with value: inf.
+2025-10-15 23:43:17,954 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:17,964 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:17,979 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+[I 2025-10-15 23:43:17,981] Trial 8 finished with value: inf and parameters: {'n_estimators': 97, 'max_depth': 6, 'min_samples_split': 18, 'min_samples_leaf': 7, 'max_features': 'log2'}. Best is trial 0 with value: inf.
+2025-10-15 23:43:17,993 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:18,004 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:18,016 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+[I 2025-10-15 23:43:18,020] Trial 9 finished with value: inf and parameters: {'n_estimators': 66, 'max_depth': 10, 'min_samples_split': 17, 'min_samples_leaf': 1, 'max_features': 'log2'}. Best is trial 0 with value: inf.
+2025-10-15 23:43:18,051 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:18,062 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:18,074 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+[I 2025-10-15 23:43:18,077] Trial 10 finished with value: inf and parameters: {'n_estimators': 200, 'max_depth': 15, 'min_samples_split': 5, 'min_samples_leaf': 6, 'max_features': None}. Best is trial 0 with value: inf.
+2025-10-15 23:43:18,109 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:18,121 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:18,133 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+[I 2025-10-15 23:43:18,135] Trial 11 finished with value: inf and parameters: {'n_estimators': 177, 'max_depth': 3, 'min_samples_split': 14, 'min_samples_leaf': 1, 'max_features': None}. Best is trial 0 with value: inf.
+2025-10-15 23:43:18,166 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:18,177 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:18,191 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+[I 2025-10-15 23:43:18,194] Trial 12 finished with value: inf and parameters: {'n_estimators': 136, 'max_depth': 5, 'min_samples_split': 14, 'min_samples_leaf': 1, 'max_features': None}. Best is trial 0 with value: inf.
+2025-10-15 23:43:18,219 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:18,231 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:18,243 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+[I 2025-10-15 23:43:18,245] Trial 13 finished with value: inf and parameters: {'n_estimators': 75, 'max_depth': 5, 'min_samples_split': 14, 'min_samples_leaf': 3, 'max_features': 'log2'}. Best is trial 0 with value: inf.
+2025-10-15 23:43:18,272 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:18,282 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:18,297 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+[I 2025-10-15 23:43:18,299] Trial 14 finished with value: inf and parameters: {'n_estimators': 178, 'max_depth': 3, 'min_samples_split': 20, 'min_samples_leaf': 5, 'max_features': None}. Best is trial 0 with value: inf.
+2025-10-15 23:43:18,325 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:18,337 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:18,352 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+[I 2025-10-15 23:43:18,355] Trial 15 finished with value: inf and parameters: {'n_estimators': 118, 'max_depth': 5, 'min_samples_split': 16, 'min_samples_leaf': 2, 'max_features': 'log2'}. Best is trial 0 with value: inf.
+2025-10-15 23:43:18,388 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:18,401 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:18,418 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+[I 2025-10-15 23:43:18,421] Trial 16 finished with value: inf and parameters: {'n_estimators': 168, 'max_depth': 13, 'min_samples_split': 12, 'min_samples_leaf': 2, 'max_features': None}. Best is trial 0 with value: inf.
+2025-10-15 23:43:18,448 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:18,460 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:18,475 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+[I 2025-10-15 23:43:18,478] Trial 17 finished with value: inf and parameters: {'n_estimators': 196, 'max_depth': 4, 'min_samples_split': 20, 'min_samples_leaf': 5, 'max_features': 'log2'}. Best is trial 0 with value: inf.
+2025-10-15 23:43:18,510 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:18,523 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:18,537 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+[I 2025-10-15 23:43:18,540] Trial 18 finished with value: inf and parameters: {'n_estimators': 124, 'max_depth': 7, 'min_samples_split': 7, 'min_samples_leaf': 7, 'max_features': None}. Best is trial 0 with value: inf.
+2025-10-15 23:43:18,575 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:18,588 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:18,602 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+[I 2025-10-15 23:43:18,604] Trial 19 finished with value: inf and parameters: {'n_estimators': 80, 'max_depth': 6, 'min_samples_split': 18, 'min_samples_leaf': 2, 'max_features': 'sqrt'}. Best is trial 0 with value: inf.
+2025-10-15 23:43:18,643 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:18,658 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:18,672 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+[I 2025-10-15 23:43:18,676] Trial 20 finished with value: inf and parameters: {'n_estimators': 159, 'max_depth': 4, 'min_samples_split': 15, 'min_samples_leaf': 4, 'max_features': None}. Best is trial 0 with value: inf.
+2025-10-15 23:43:18,709 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:18,721 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:18,734 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+[I 2025-10-15 23:43:18,738] Trial 21 finished with value: inf and parameters: {'n_estimators': 141, 'max_depth': 3, 'min_samples_split': 18, 'min_samples_leaf': 3, 'max_features': None}. Best is trial 0 with value: inf.
+2025-10-15 23:43:18,767 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:18,779 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:18,791 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+[I 2025-10-15 23:43:18,794] Trial 22 finished with value: inf and parameters: {'n_estimators': 147, 'max_depth': 4, 'min_samples_split': 12, 'min_samples_leaf': 2, 'max_features': None}. Best is trial 0 with value: inf.
+2025-10-15 23:43:18,823 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:18,834 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:18,850 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+[I 2025-10-15 23:43:18,853] Trial 23 finished with value: inf and parameters: {'n_estimators': 184, 'max_depth': 3, 'min_samples_split': 16, 'min_samples_leaf': 4, 'max_features': None}. Best is trial 0 with value: inf.
+2025-10-15 23:43:18,885 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:18,895 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:18,909 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+[I 2025-10-15 23:43:18,913] Trial 24 finished with value: inf and parameters: {'n_estimators': 131, 'max_depth': 6, 'min_samples_split': 19, 'min_samples_leaf': 1, 'max_features': None}. Best is trial 0 with value: inf.
+2025-10-15 23:43:18,946 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:18,957 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:18,972 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+[I 2025-10-15 23:43:18,975] Trial 25 finished with value: inf and parameters: {'n_estimators': 163, 'max_depth': 4, 'min_samples_split': 16, 'min_samples_leaf': 3, 'max_features': 'log2'}. Best is trial 0 with value: inf.
+2025-10-15 23:43:19,004 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:19,016 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:19,028 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+[I 2025-10-15 23:43:19,031] Trial 26 finished with value: inf and parameters: {'n_estimators': 115, 'max_depth': 5, 'min_samples_split': 17, 'min_samples_leaf': 2, 'max_features': None}. Best is trial 0 with value: inf.
+2025-10-15 23:43:19,061 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:19,074 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:19,087 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+[I 2025-10-15 23:43:19,090] Trial 27 finished with value: inf and parameters: {'n_estimators': 85, 'max_depth': 3, 'min_samples_split': 13, 'min_samples_leaf': 1, 'max_features': None}. Best is trial 0 with value: inf.
+2025-10-15 23:43:19,122 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:19,133 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:19,148 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+[I 2025-10-15 23:43:19,151] Trial 28 finished with value: inf and parameters: {'n_estimators': 189, 'max_depth': 9, 'min_samples_split': 19, 'min_samples_leaf': 4, 'max_features': 'sqrt'}. Best is trial 0 with value: inf.
+2025-10-15 23:43:19,179 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:19,188 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:19,203 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+[I 2025-10-15 23:43:19,205] Trial 29 finished with value: inf and parameters: {'n_estimators': 50, 'max_depth': 7, 'min_samples_split': 2, 'min_samples_leaf': 10, 'max_features': 'log2'}. Best is trial 0 with value: inf.
+2025-10-15 23:43:19,209 - non_major_league_hyperparameter_tuning - INFO - random_forest optimization complete
+2025-10-15 23:43:19,210 - non_major_league_hyperparameter_tuning - INFO - Best score: inf
+2025-10-15 23:43:19,210 - non_major_league_hyperparameter_tuning - INFO - Best params: {'n_estimators': 80, 'max_depth': 5, 'min_samples_split': 19, 'min_samples_leaf': 2, 'max_features': None}
+2025-10-15 23:43:19,210 - non_major_league_hyperparameter_tuning - INFO - Optimizing logistic_regression (priority: 4)
+2025-10-15 23:43:19,211 - non_major_league_hyperparameter_tuning - INFO - Optimizing hyperparameters for logistic_regression
+[I 2025-10-15 23:43:19,211] A new study created in memory with name: no-name-3604fbcd-e489-441c-a134-d5e64dddcf2d
+2025-10-15 23:43:19,222 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:19,233 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:19,246 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+[I 2025-10-15 23:43:19,250] Trial 0 finished with value: inf and parameters: {'C': 9.083269121888906, 'max_iter': 960, 'solver': 'liblinear'}. Best is trial 0 with value: inf.
+2025-10-15 23:43:19,259 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:19,268 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:19,281 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+[I 2025-10-15 23:43:19,284] Trial 1 finished with value: inf and parameters: {'C': 9.338091853170619, 'max_iter': 394, 'solver': 'liblinear'}. Best is trial 0 with value: inf.
+2025-10-15 23:43:19,293 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:19,303 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:19,318 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+[I 2025-10-15 23:43:19,320] Trial 2 finished with value: inf and parameters: {'C': 3.7795534073075503, 'max_iter': 297, 'solver': 'lbfgs'}. Best is trial 0 with value: inf.
+2025-10-15 23:43:19,328 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:19,340 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:19,355 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+[I 2025-10-15 23:43:19,359] Trial 3 finished with value: inf and parameters: {'C': 2.599585549084891, 'max_iter': 253, 'solver': 'lbfgs'}. Best is trial 0 with value: inf.
+2025-10-15 23:43:19,371 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:19,384 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:19,397 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+[I 2025-10-15 23:43:19,400] Trial 4 finished with value: inf and parameters: {'C': 8.682477334695985, 'max_iter': 921, 'solver': 'lbfgs'}. Best is trial 0 with value: inf.
+2025-10-15 23:43:19,410 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:19,422 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:19,437 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+[I 2025-10-15 23:43:19,441] Trial 5 finished with value: inf and parameters: {'C': 9.333230031475411, 'max_iter': 797, 'solver': 'lbfgs'}. Best is trial 0 with value: inf.
+2025-10-15 23:43:19,449 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:19,459 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:19,472 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+[I 2025-10-15 23:43:19,475] Trial 6 finished with value: inf and parameters: {'C': 5.030519242198295, 'max_iter': 279, 'solver': 'liblinear'}. Best is trial 0 with value: inf.
+2025-10-15 23:43:19,486 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:19,499 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:19,514 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+[I 2025-10-15 23:43:19,517] Trial 7 finished with value: inf and parameters: {'C': 0.4745509598125238, 'max_iter': 609, 'solver': 'lbfgs'}. Best is trial 0 with value: inf.
+2025-10-15 23:43:19,527 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:19,540 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:19,554 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+[I 2025-10-15 23:43:19,556] Trial 8 finished with value: inf and parameters: {'C': 7.832736615688854, 'max_iter': 624, 'solver': 'lbfgs'}. Best is trial 0 with value: inf.
+2025-10-15 23:43:19,567 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:19,579 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:19,592 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+[I 2025-10-15 23:43:19,595] Trial 9 finished with value: inf and parameters: {'C': 8.858529193499834, 'max_iter': 989, 'solver': 'lbfgs'}. Best is trial 0 with value: inf.
+2025-10-15 23:43:19,615 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:19,626 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:19,641 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+[I 2025-10-15 23:43:19,644] Trial 10 finished with value: inf and parameters: {'C': 6.063353072380708, 'max_iter': 757, 'solver': 'liblinear'}. Best is trial 0 with value: inf.
+2025-10-15 23:43:19,664 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:19,673 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:19,685 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+[I 2025-10-15 23:43:19,688] Trial 11 finished with value: inf and parameters: {'C': 7.006161052570976, 'max_iter': 459, 'solver': 'liblinear'}. Best is trial 0 with value: inf.
+2025-10-15 23:43:19,708 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:19,717 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:19,734 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+[I 2025-10-15 23:43:19,737] Trial 12 finished with value: inf and parameters: {'C': 9.631783145506086, 'max_iter': 452, 'solver': 'liblinear'}. Best is trial 0 with value: inf.
+2025-10-15 23:43:19,758 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:19,770 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:19,784 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+[I 2025-10-15 23:43:19,787] Trial 13 finished with value: inf and parameters: {'C': 7.404166936902891, 'max_iter': 131, 'solver': 'liblinear'}. Best is trial 0 with value: inf.
+2025-10-15 23:43:19,806 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:19,818 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:19,834 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+[I 2025-10-15 23:43:19,837] Trial 14 finished with value: inf and parameters: {'C': 6.089331732041717, 'max_iter': 456, 'solver': 'liblinear'}. Best is trial 0 with value: inf.
+2025-10-15 23:43:19,861 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:19,872 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:19,887 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+[I 2025-10-15 23:43:19,890] Trial 15 finished with value: inf and parameters: {'C': 9.664753365822095, 'max_iter': 734, 'solver': 'liblinear'}. Best is trial 0 with value: inf.
+2025-10-15 23:43:19,911 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:19,924 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:19,936 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+[I 2025-10-15 23:43:19,940] Trial 16 finished with value: inf and parameters: {'C': 8.115091597442982, 'max_iter': 377, 'solver': 'liblinear'}. Best is trial 0 with value: inf.
+2025-10-15 23:43:19,959 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:19,972 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:19,986 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+[I 2025-10-15 23:43:19,988] Trial 17 finished with value: inf and parameters: {'C': 9.94354897971254, 'max_iter': 876, 'solver': 'liblinear'}. Best is trial 0 with value: inf.
+2025-10-15 23:43:20,011 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:20,020 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:20,035 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+[I 2025-10-15 23:43:20,038] Trial 18 finished with value: inf and parameters: {'C': 2.8584313874066063, 'max_iter': 560, 'solver': 'liblinear'}. Best is trial 0 with value: inf.
+2025-10-15 23:43:20,056 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:20,069 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:20,087 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+[I 2025-10-15 23:43:20,090] Trial 19 finished with value: inf and parameters: {'C': 6.478892506208098, 'max_iter': 123, 'solver': 'liblinear'}. Best is trial 0 with value: inf.
+2025-10-15 23:43:20,114 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:20,125 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:20,142 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+[I 2025-10-15 23:43:20,144] Trial 20 finished with value: inf and parameters: {'C': 5.117224217190637, 'max_iter': 696, 'solver': 'liblinear'}. Best is trial 0 with value: inf.
+2025-10-15 23:43:20,163 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:20,174 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:20,187 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+[I 2025-10-15 23:43:20,189] Trial 21 finished with value: inf and parameters: {'C': 3.5000652664385368, 'max_iter': 306, 'solver': 'lbfgs'}. Best is trial 0 with value: inf.
+2025-10-15 23:43:20,212 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:20,226 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:20,242 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+[I 2025-10-15 23:43:20,244] Trial 22 finished with value: inf and parameters: {'C': 3.9941345395300694, 'max_iter': 201, 'solver': 'lbfgs'}. Best is trial 0 with value: inf.
+2025-10-15 23:43:20,262 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:20,274 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:20,291 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+[I 2025-10-15 23:43:20,294] Trial 23 finished with value: inf and parameters: {'C': 1.5079669071288988, 'max_iter': 339, 'solver': 'lbfgs'}. Best is trial 0 with value: inf.
+2025-10-15 23:43:20,315 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:20,325 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:20,337 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+[I 2025-10-15 23:43:20,340] Trial 24 finished with value: inf and parameters: {'C': 3.7745075015490603, 'max_iter': 395, 'solver': 'liblinear'}. Best is trial 0 with value: inf.
+2025-10-15 23:43:20,363 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:20,374 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:20,389 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+[I 2025-10-15 23:43:20,393] Trial 25 finished with value: inf and parameters: {'C': 8.492030268378596, 'max_iter': 508, 'solver': 'liblinear'}. Best is trial 0 with value: inf.
+2025-10-15 23:43:20,414 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:20,427 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:20,442 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+[I 2025-10-15 23:43:20,445] Trial 26 finished with value: inf and parameters: {'C': 4.6211618820207665, 'max_iter': 206, 'solver': 'lbfgs'}. Best is trial 0 with value: inf.
+2025-10-15 23:43:20,468 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:20,479 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:20,491 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+[I 2025-10-15 23:43:20,493] Trial 27 finished with value: inf and parameters: {'C': 1.922978669072445, 'max_iter': 383, 'solver': 'liblinear'}. Best is trial 0 with value: inf.
+2025-10-15 23:43:20,514 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:20,525 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:20,541 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+[I 2025-10-15 23:43:20,545] Trial 28 finished with value: inf and parameters: {'C': 5.6278464273510105, 'max_iter': 641, 'solver': 'lbfgs'}. Best is trial 0 with value: inf.
+2025-10-15 23:43:20,565 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:20,578 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+2025-10-15 23:43:20,594 - non_major_league_hyperparameter_tuning - WARNING - Error in fold: could not convert string to float: 'E1'
+[I 2025-10-15 23:43:20,597] Trial 29 finished with value: inf and parameters: {'C': 2.814287812210959, 'max_iter': 227, 'solver': 'lbfgs'}. Best is trial 0 with value: inf.
+2025-10-15 23:43:20,602 - non_major_league_hyperparameter_tuning - INFO - logistic_regression optimization complete
+2025-10-15 23:43:20,602 - non_major_league_hyperparameter_tuning - INFO - Best score: inf
+2025-10-15 23:43:20,603 - non_major_league_hyperparameter_tuning - INFO - Best params: {'C': 9.083269121888906, 'max_iter': 960, 'solver': 'liblinear'}
+2025-10-15 23:43:20,603 - non_major_league_hyperparameter_tuning - INFO - Validating optimized hyperparameters
+2025-10-15 23:43:20,603 - non_major_league_hyperparameter_tuning - INFO - Hyperparameter validation: FAILED
+2025-10-15 23:43:20,603 - non_major_league_hyperparameter_tuning - INFO - Comparing optimized models
+2025-10-15 23:43:20,603 - non_major_league_hyperparameter_tuning - INFO - Best model: None
+2025-10-15 23:43:20,604 - non_major_league_hyperparameter_tuning - INFO - Best score: inf
+2025-10-15 23:43:20,604 - non_major_league_hyperparameter_tuning - INFO - Evaluating optimized models
+2025-10-15 23:43:20,604 - non_major_league_hyperparameter_tuning - INFO - Creating optimized models
+2025-10-15 23:43:20,604 - non_major_league_hyperparameter_tuning - INFO - Created optimized xgboost model
+2025-10-15 23:43:20,605 - non_major_league_hyperparameter_tuning - INFO - Created optimized lightgbm model
+2025-10-15 23:43:20,605 - non_major_league_hyperparameter_tuning - INFO - Created optimized random_forest model
+2025-10-15 23:43:20,605 - non_major_league_hyperparameter_tuning - INFO - Created optimized logistic_regression model
+2025-10-15 23:43:20,613 - non_major_league_hyperparameter_tuning - ERROR - Error evaluating xgboost: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:20,621 - non_major_league_hyperparameter_tuning - ERROR - Error evaluating lightgbm: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:20,630 - non_major_league_hyperparameter_tuning - ERROR - Error evaluating random_forest: could not convert string to float: 'E1'
+2025-10-15 23:43:20,641 - non_major_league_hyperparameter_tuning - ERROR - Error evaluating logistic_regression: could not convert string to float: 'E1'
+2025-10-15 23:43:20,642 - non_major_league_hyperparameter_tuning - INFO - Calculating hyperparameter importance
+2025-10-15 23:43:20,649 - non_major_league_hyperparameter_tuning - ERROR - Error calculating importance for xgboost: tuple index out of range
+2025-10-15 23:43:20,650 - non_major_league_hyperparameter_tuning - ERROR - Error calculating importance for lightgbm: tuple index out of range
+2025-10-15 23:43:20,652 - non_major_league_hyperparameter_tuning - ERROR - Error calculating importance for random_forest: tuple index out of range
+2025-10-15 23:43:20,653 - non_major_league_hyperparameter_tuning - ERROR - Error calculating importance for logistic_regression: tuple index out of range
+2025-10-15 23:43:20,653 - phase2_integration - INFO - Step 5: Ensemble Modeling
+2025-10-15 23:43:20,653 - phase2_integration - INFO - Creating ensemble model
+2025-10-15 23:43:20,660 - non_major_league_ensemble - INFO - Creating base models with conservative parameters
+2025-10-15 23:43:20,660 - non_major_league_ensemble - INFO - Created 4 base models
+2025-10-15 23:43:20,661 - non_major_league_ensemble - INFO - Training base models with conservative validation
+2025-10-15 23:43:20,661 - non_major_league_ensemble - INFO - Training xgboost...
+2025-10-15 23:43:20,661 - non_major_league_ensemble - ERROR - Error training xgboost: XGBClassifier.fit() got an unexpected keyword argument 'early_stopping_rounds'
+2025-10-15 23:43:20,661 - non_major_league_ensemble - INFO - Training lightgbm...
+2025-10-15 23:43:20,668 - non_major_league_ensemble - ERROR - Error training lightgbm: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:20,668 - non_major_league_ensemble - INFO - Training random_forest...
+2025-10-15 23:43:20,679 - non_major_league_ensemble - ERROR - Error training random_forest: could not convert string to float: 'E1'
+2025-10-15 23:43:20,682 - non_major_league_ensemble - INFO - Training logistic_regression...
+2025-10-15 23:43:20,692 - non_major_league_ensemble - ERROR - Error training logistic_regression: could not convert string to float: 'E1'
+2025-10-15 23:43:20,694 - non_major_league_ensemble - INFO - Creating conservative ensemble
+2025-10-15 23:43:20,694 - non_major_league_ensemble - ERROR - Not enough successful models for ensemble
+2025-10-15 23:43:20,694 - non_major_league_ensemble - INFO - Training ensemble model
+2025-10-15 23:43:20,694 - non_major_league_ensemble - ERROR - No ensemble model created
+2025-10-15 23:43:20,694 - non_major_league_ensemble - INFO - Calibrating model probabilities
+2025-10-15 23:43:20,706 - non_major_league_ensemble - ERROR - Error calibrating xgboost: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:20,721 - non_major_league_ensemble - ERROR - Error calibrating lightgbm: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:20,735 - non_major_league_ensemble - ERROR - Error calibrating random_forest: could not convert string to float: 'E1'
+2025-10-15 23:43:20,751 - non_major_league_ensemble - ERROR - Error calibrating logistic_regression: could not convert string to float: 'E1'
+2025-10-15 23:43:20,753 - non_major_league_ensemble - INFO - Cross-validating ensemble
+2025-10-15 23:43:20,754 - non_major_league_ensemble - INFO - Cross-validation fold 1/3
+2025-10-15 23:43:20,757 - non_major_league_ensemble - INFO - Training base models with conservative validation
+2025-10-15 23:43:20,757 - non_major_league_ensemble - INFO - Training xgboost...
+2025-10-15 23:43:20,757 - non_major_league_ensemble - WARNING - Insufficient training samples for xgboost: 91
+2025-10-15 23:43:20,757 - non_major_league_ensemble - INFO - Training lightgbm...
+2025-10-15 23:43:20,758 - non_major_league_ensemble - WARNING - Insufficient training samples for lightgbm: 91
+2025-10-15 23:43:20,758 - non_major_league_ensemble - INFO - Training random_forest...
+2025-10-15 23:43:20,758 - non_major_league_ensemble - WARNING - Insufficient training samples for random_forest: 91
+2025-10-15 23:43:20,758 - non_major_league_ensemble - INFO - Training logistic_regression...
+2025-10-15 23:43:20,758 - non_major_league_ensemble - WARNING - Insufficient training samples for logistic_regression: 91
+2025-10-15 23:43:20,758 - non_major_league_ensemble - INFO - Creating conservative ensemble
+2025-10-15 23:43:20,758 - non_major_league_ensemble - ERROR - Not enough successful models for ensemble
+2025-10-15 23:43:20,759 - non_major_league_ensemble - INFO - Cross-validation fold 2/3
+2025-10-15 23:43:20,760 - non_major_league_ensemble - INFO - Training base models with conservative validation
+2025-10-15 23:43:20,761 - non_major_league_ensemble - INFO - Training xgboost...
+2025-10-15 23:43:20,761 - non_major_league_ensemble - ERROR - Error training xgboost: XGBClassifier.fit() got an unexpected keyword argument 'early_stopping_rounds'
+2025-10-15 23:43:20,761 - non_major_league_ensemble - INFO - Training lightgbm...
+2025-10-15 23:43:20,768 - non_major_league_ensemble - ERROR - Error training lightgbm: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:20,768 - non_major_league_ensemble - INFO - Training random_forest...
+2025-10-15 23:43:20,775 - non_major_league_ensemble - ERROR - Error training random_forest: could not convert string to float: 'E1'
+2025-10-15 23:43:20,777 - non_major_league_ensemble - INFO - Training logistic_regression...
+2025-10-15 23:43:20,784 - non_major_league_ensemble - ERROR - Error training logistic_regression: could not convert string to float: 'E1'
+2025-10-15 23:43:20,785 - non_major_league_ensemble - INFO - Creating conservative ensemble
+2025-10-15 23:43:20,785 - non_major_league_ensemble - ERROR - Not enough successful models for ensemble
+2025-10-15 23:43:20,785 - non_major_league_ensemble - INFO - Cross-validation fold 3/3
+2025-10-15 23:43:20,787 - non_major_league_ensemble - INFO - Training base models with conservative validation
+2025-10-15 23:43:20,787 - non_major_league_ensemble - INFO - Training xgboost...
+2025-10-15 23:43:20,788 - non_major_league_ensemble - ERROR - Error training xgboost: XGBClassifier.fit() got an unexpected keyword argument 'early_stopping_rounds'
+2025-10-15 23:43:20,788 - non_major_league_ensemble - INFO - Training lightgbm...
+2025-10-15 23:43:20,793 - non_major_league_ensemble - ERROR - Error training lightgbm: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Div: object, Date: object, Time: object, HomeTeam: object, AwayTeam: object, FTR: object, HTR: object, Referee: object, league: object, season: object, data_source: object, season_phase: object
+2025-10-15 23:43:20,794 - non_major_league_ensemble - INFO - Training random_forest...
+2025-10-15 23:43:20,803 - non_major_league_ensemble - ERROR - Error training random_forest: could not convert string to float: 'E1'
+2025-10-15 23:43:20,805 - non_major_league_ensemble - INFO - Training logistic_regression...
+2025-10-15 23:43:20,813 - non_major_league_ensemble - ERROR - Error training logistic_regression: could not convert string to float: 'E1'
+2025-10-15 23:43:20,814 - non_major_league_ensemble - INFO - Creating conservative ensemble
+2025-10-15 23:43:20,815 - non_major_league_ensemble - ERROR - Not enough successful models for ensemble
+2025-10-15 23:43:20,815 - non_major_league_ensemble - ERROR - No successful cross-validation folds
+2025-10-15 23:43:20,815 - non_major_league_ensemble - INFO - Evaluating ensemble performance
+2025-10-15 23:43:20,815 - non_major_league_ensemble - ERROR - No ensemble model to evaluate
+2025-10-15 23:43:20,815 - non_major_league_ensemble - INFO - Making predictions with confidence filtering
+2025-10-15 23:43:20,815 - non_major_league_ensemble - ERROR - No ensemble model for prediction
+2025-10-15 23:43:20,815 - non_major_league_ensemble - INFO - Calculating ensemble feature importance
+2025-10-15 23:43:20,816 - non_major_league_ensemble - INFO - Estimating prediction uncertainty
+2025-10-15 23:43:20,816 - non_major_league_ensemble - ERROR - No ensemble model for uncertainty estimation
+2025-10-15 23:43:20,816 - phase2_integration - INFO - Step 6: Model Validation
+2025-10-15 23:43:20,816 - phase2_integration - INFO - Validating models
+2025-10-15 23:43:20,816 - non_major_league_model_validation - INFO - Performing comprehensive model validation
+2025-10-15 23:43:20,816 - non_major_league_model_validation - INFO - Performing time series cross-validation
+2025-10-15 23:43:20,817 - non_major_league_model_validation - INFO - Time series CV fold 1/3
+2025-10-15 23:43:20,827 - non_major_league_model_validation - ERROR - Error in fold 1: could not convert string to float: 'E1'
+2025-10-15 23:43:20,828 - non_major_league_model_validation - INFO - Time series CV fold 2/3
+2025-10-15 23:43:20,842 - non_major_league_model_validation - ERROR - Error in fold 2: could not convert string to float: 'E1'
+2025-10-15 23:43:20,844 - non_major_league_model_validation - INFO - Time series CV fold 3/3
+2025-10-15 23:43:20,859 - non_major_league_model_validation - ERROR - Error in fold 3: could not convert string to float: 'E1'
+2025-10-15 23:43:20,861 - non_major_league_model_validation - INFO - Time series CV complete: 0 successful folds
+2025-10-15 23:43:20,861 - non_major_league_model_validation - INFO - Performing walk-forward validation
+2025-10-15 23:43:20,861 - non_major_league_model_validation - INFO - Walk-forward CV fold 1/3
+2025-10-15 23:43:20,869 - non_major_league_model_validation - ERROR - Error in fold 1: could not convert string to float: 'E1'
+2025-10-15 23:43:20,871 - non_major_league_model_validation - INFO - Walk-forward CV fold 2/3
+2025-10-15 23:43:20,881 - non_major_league_model_validation - ERROR - Error in fold 2: could not convert string to float: 'E1'
+2025-10-15 23:43:20,883 - non_major_league_model_validation - INFO - Walk-forward CV fold 3/3
+2025-10-15 23:43:20,894 - non_major_league_model_validation - ERROR - Error in fold 3: could not convert string to float: 'E1'
+2025-10-15 23:43:20,897 - non_major_league_model_validation - INFO - Walk-forward CV complete: 0 successful folds
+2025-10-15 23:43:20,897 - non_major_league_model_validation - INFO - Performing bootstrap validation
+2025-10-15 23:43:20,897 - non_major_league_model_validation - INFO - Bootstrap 1/50
+2025-10-15 23:43:20,909 - non_major_league_model_validation - ERROR - Error in bootstrap 1: could not convert string to float: 'E1'
+2025-10-15 23:43:20,912 - non_major_league_model_validation - INFO - Bootstrap 2/50
+2025-10-15 23:43:20,927 - non_major_league_model_validation - ERROR - Error in bootstrap 2: could not convert string to float: 'E1'
+2025-10-15 23:43:20,929 - non_major_league_model_validation - INFO - Bootstrap 3/50
+2025-10-15 23:43:20,943 - non_major_league_model_validation - ERROR - Error in bootstrap 3: could not convert string to float: 'E1'
+2025-10-15 23:43:20,947 - non_major_league_model_validation - INFO - Bootstrap 4/50
+2025-10-15 23:43:20,959 - non_major_league_model_validation - ERROR - Error in bootstrap 4: could not convert string to float: 'E1'
+2025-10-15 23:43:20,961 - non_major_league_model_validation - INFO - Bootstrap 5/50
+2025-10-15 23:43:20,973 - non_major_league_model_validation - ERROR - Error in bootstrap 5: could not convert string to float: 'E1'
+2025-10-15 23:43:20,976 - non_major_league_model_validation - INFO - Bootstrap 6/50
+2025-10-15 23:43:20,993 - non_major_league_model_validation - ERROR - Error in bootstrap 6: could not convert string to float: 'E1'
+2025-10-15 23:43:20,995 - non_major_league_model_validation - INFO - Bootstrap 7/50
+2025-10-15 23:43:21,007 - non_major_league_model_validation - ERROR - Error in bootstrap 7: could not convert string to float: 'E1'
+2025-10-15 23:43:21,010 - non_major_league_model_validation - INFO - Bootstrap 8/50
+2025-10-15 23:43:21,025 - non_major_league_model_validation - ERROR - Error in bootstrap 8: could not convert string to float: 'E1'
+2025-10-15 23:43:21,027 - non_major_league_model_validation - INFO - Bootstrap 9/50
+2025-10-15 23:43:21,040 - non_major_league_model_validation - ERROR - Error in bootstrap 9: could not convert string to float: 'E1'
+2025-10-15 23:43:21,044 - non_major_league_model_validation - INFO - Bootstrap 10/50
+2025-10-15 23:43:21,056 - non_major_league_model_validation - ERROR - Error in bootstrap 10: could not convert string to float: 'E1'
+2025-10-15 23:43:21,058 - non_major_league_model_validation - INFO - Bootstrap 11/50
+2025-10-15 23:43:21,072 - non_major_league_model_validation - ERROR - Error in bootstrap 11: could not convert string to float: 'E1'
+2025-10-15 23:43:21,074 - non_major_league_model_validation - INFO - Bootstrap 12/50
+2025-10-15 23:43:21,087 - non_major_league_model_validation - ERROR - Error in bootstrap 12: could not convert string to float: 'E1'
+2025-10-15 23:43:21,090 - non_major_league_model_validation - INFO - Bootstrap 13/50
+2025-10-15 23:43:21,106 - non_major_league_model_validation - ERROR - Error in bootstrap 13: could not convert string to float: 'E1'
+2025-10-15 23:43:21,110 - non_major_league_model_validation - INFO - Bootstrap 14/50
+2025-10-15 23:43:21,124 - non_major_league_model_validation - ERROR - Error in bootstrap 14: could not convert string to float: 'E1'
+2025-10-15 23:43:21,127 - non_major_league_model_validation - INFO - Bootstrap 15/50
+2025-10-15 23:43:21,142 - non_major_league_model_validation - ERROR - Error in bootstrap 15: could not convert string to float: 'E1'
+2025-10-15 23:43:21,145 - non_major_league_model_validation - INFO - Bootstrap 16/50
+2025-10-15 23:43:21,158 - non_major_league_model_validation - ERROR - Error in bootstrap 16: could not convert string to float: 'E1'
+2025-10-15 23:43:21,161 - non_major_league_model_validation - INFO - Bootstrap 17/50
+2025-10-15 23:43:21,177 - non_major_league_model_validation - ERROR - Error in bootstrap 17: could not convert string to float: 'E1'
+2025-10-15 23:43:21,179 - non_major_league_model_validation - INFO - Bootstrap 18/50
+2025-10-15 23:43:21,192 - non_major_league_model_validation - ERROR - Error in bootstrap 18: could not convert string to float: 'E1'
+2025-10-15 23:43:21,194 - non_major_league_model_validation - INFO - Bootstrap 19/50
+2025-10-15 23:43:21,207 - non_major_league_model_validation - ERROR - Error in bootstrap 19: could not convert string to float: 'E1'
+2025-10-15 23:43:21,211 - non_major_league_model_validation - INFO - Bootstrap 20/50
+2025-10-15 23:43:21,228 - non_major_league_model_validation - ERROR - Error in bootstrap 20: could not convert string to float: 'E1'
+2025-10-15 23:43:21,231 - non_major_league_model_validation - INFO - Bootstrap 21/50
+2025-10-15 23:43:21,246 - non_major_league_model_validation - ERROR - Error in bootstrap 21: could not convert string to float: 'E1'
+2025-10-15 23:43:21,249 - non_major_league_model_validation - INFO - Bootstrap 22/50
+2025-10-15 23:43:21,265 - non_major_league_model_validation - ERROR - Error in bootstrap 22: could not convert string to float: 'E1'
+2025-10-15 23:43:21,269 - non_major_league_model_validation - INFO - Bootstrap 23/50
+2025-10-15 23:43:21,283 - non_major_league_model_validation - ERROR - Error in bootstrap 23: could not convert string to float: 'E1'
+2025-10-15 23:43:21,286 - non_major_league_model_validation - INFO - Bootstrap 24/50
+2025-10-15 23:43:21,299 - non_major_league_model_validation - ERROR - Error in bootstrap 24: could not convert string to float: 'E1'
+2025-10-15 23:43:21,302 - non_major_league_model_validation - INFO - Bootstrap 25/50
+2025-10-15 23:43:21,315 - non_major_league_model_validation - ERROR - Error in bootstrap 25: could not convert string to float: 'E1'
+2025-10-15 23:43:21,318 - non_major_league_model_validation - INFO - Bootstrap 26/50
+2025-10-15 23:43:21,330 - non_major_league_model_validation - ERROR - Error in bootstrap 26: could not convert string to float: 'E1'
+2025-10-15 23:43:21,332 - non_major_league_model_validation - INFO - Bootstrap 27/50
+2025-10-15 23:43:21,345 - non_major_league_model_validation - ERROR - Error in bootstrap 27: could not convert string to float: 'E1'
+2025-10-15 23:43:21,348 - non_major_league_model_validation - INFO - Bootstrap 28/50
+2025-10-15 23:43:21,361 - non_major_league_model_validation - ERROR - Error in bootstrap 28: could not convert string to float: 'E1'
+2025-10-15 23:43:21,364 - non_major_league_model_validation - INFO - Bootstrap 29/50
+2025-10-15 23:43:21,376 - non_major_league_model_validation - ERROR - Error in bootstrap 29: could not convert string to float: 'E1'
+2025-10-15 23:43:21,379 - non_major_league_model_validation - INFO - Bootstrap 30/50
+2025-10-15 23:43:21,390 - non_major_league_model_validation - ERROR - Error in bootstrap 30: could not convert string to float: 'E1'
+2025-10-15 23:43:21,393 - non_major_league_model_validation - INFO - Bootstrap 31/50
+2025-10-15 23:43:21,403 - non_major_league_model_validation - ERROR - Error in bootstrap 31: could not convert string to float: 'E1'
+2025-10-15 23:43:21,406 - non_major_league_model_validation - INFO - Bootstrap 32/50
+2025-10-15 23:43:21,420 - non_major_league_model_validation - ERROR - Error in bootstrap 32: could not convert string to float: 'E1'
+2025-10-15 23:43:21,422 - non_major_league_model_validation - INFO - Bootstrap 33/50
+2025-10-15 23:43:21,435 - non_major_league_model_validation - ERROR - Error in bootstrap 33: could not convert string to float: 'E1'
+2025-10-15 23:43:21,438 - non_major_league_model_validation - INFO - Bootstrap 34/50
+2025-10-15 23:43:21,454 - non_major_league_model_validation - ERROR - Error in bootstrap 34: could not convert string to float: 'E1'
+2025-10-15 23:43:21,457 - non_major_league_model_validation - INFO - Bootstrap 35/50
+2025-10-15 23:43:21,469 - non_major_league_model_validation - ERROR - Error in bootstrap 35: could not convert string to float: 'E1'
+2025-10-15 23:43:21,471 - non_major_league_model_validation - INFO - Bootstrap 36/50
+2025-10-15 23:43:21,486 - non_major_league_model_validation - ERROR - Error in bootstrap 36: could not convert string to float: 'E1'
+2025-10-15 23:43:21,489 - non_major_league_model_validation - INFO - Bootstrap 37/50
+2025-10-15 23:43:21,503 - non_major_league_model_validation - ERROR - Error in bootstrap 37: could not convert string to float: 'E1'
+2025-10-15 23:43:21,505 - non_major_league_model_validation - INFO - Bootstrap 38/50
+2025-10-15 23:43:21,519 - non_major_league_model_validation - ERROR - Error in bootstrap 38: could not convert string to float: 'E1'
+2025-10-15 23:43:21,523 - non_major_league_model_validation - INFO - Bootstrap 39/50
+2025-10-15 23:43:21,536 - non_major_league_model_validation - ERROR - Error in bootstrap 39: could not convert string to float: 'E1'
+2025-10-15 23:43:21,539 - non_major_league_model_validation - INFO - Bootstrap 40/50
+2025-10-15 23:43:21,551 - non_major_league_model_validation - ERROR - Error in bootstrap 40: could not convert string to float: 'E1'
+2025-10-15 23:43:21,555 - non_major_league_model_validation - INFO - Bootstrap 41/50
+2025-10-15 23:43:21,569 - non_major_league_model_validation - ERROR - Error in bootstrap 41: could not convert string to float: 'E1'
+2025-10-15 23:43:21,572 - non_major_league_model_validation - INFO - Bootstrap 42/50
+2025-10-15 23:43:21,589 - non_major_league_model_validation - ERROR - Error in bootstrap 42: could not convert string to float: 'E1'
+2025-10-15 23:43:21,593 - non_major_league_model_validation - INFO - Bootstrap 43/50
+2025-10-15 23:43:21,609 - non_major_league_model_validation - ERROR - Error in bootstrap 43: could not convert string to float: 'E1'
+2025-10-15 23:43:21,611 - non_major_league_model_validation - INFO - Bootstrap 44/50
+2025-10-15 23:43:21,624 - non_major_league_model_validation - ERROR - Error in bootstrap 44: could not convert string to float: 'E1'
+2025-10-15 23:43:21,627 - non_major_league_model_validation - INFO - Bootstrap 45/50
+2025-10-15 23:43:21,638 - non_major_league_model_validation - ERROR - Error in bootstrap 45: could not convert string to float: 'E1'
+2025-10-15 23:43:21,641 - non_major_league_model_validation - INFO - Bootstrap 46/50
+2025-10-15 23:43:21,658 - non_major_league_model_validation - ERROR - Error in bootstrap 46: could not convert string to float: 'E1'
+2025-10-15 23:43:21,662 - non_major_league_model_validation - INFO - Bootstrap 47/50
+2025-10-15 23:43:21,677 - non_major_league_model_validation - ERROR - Error in bootstrap 47: could not convert string to float: 'E1'
+2025-10-15 23:43:21,679 - non_major_league_model_validation - INFO - Bootstrap 48/50
+2025-10-15 23:43:21,695 - non_major_league_model_validation - ERROR - Error in bootstrap 48: could not convert string to float: 'E1'
+2025-10-15 23:43:21,698 - non_major_league_model_validation - INFO - Bootstrap 49/50
+2025-10-15 23:43:21,713 - non_major_league_model_validation - ERROR - Error in bootstrap 49: could not convert string to float: 'E1'
+2025-10-15 23:43:21,716 - non_major_league_model_validation - INFO - Bootstrap 50/50
+2025-10-15 23:43:21,730 - non_major_league_model_validation - ERROR - Error in bootstrap 50: could not convert string to float: 'E1'
+2025-10-15 23:43:21,732 - non_major_league_model_validation - INFO - Bootstrap validation complete: 0 successful bootstraps
+2025-10-15 23:43:21,733 - non_major_league_model_validation - INFO - Validating model calibration
+2025-10-15 23:43:21,749 - non_major_league_model_validation - ERROR - Error validating calibration: could not convert string to float: 'E1'
+2025-10-15 23:43:21,751 - non_major_league_model_validation - INFO - Detecting overfitting
+2025-10-15 23:43:21,751 - non_major_league_model_validation - INFO - Overfitting detection: NOT DETECTED
+2025-10-15 23:43:21,751 - non_major_league_model_validation - INFO - Analyzing model stability
+2025-10-15 23:43:21,752 - non_major_league_model_validation - INFO - Stability analysis: STABLE
+2025-10-15 23:43:21,752 - non_major_league_model_validation - INFO - Comprehensive validation complete
+2025-10-15 23:43:21,752 - phase2_integration - INFO - Step 7: Final Integration
+2025-10-15 23:43:21,752 - phase2_integration - INFO - Integrating Phase 2 results
+2025-10-15 23:43:21,752 - phase2_integration - INFO - Step 8: Saving Results
+2025-10-15 23:43:21,752 - phase2_integration - INFO - Saving results for E1
+2025-10-15 23:43:21,753 - non_major_league_model_architecture - INFO - Saving models to ./pipeline_output/phase2_output/E1_model_architecture.pkl
+2025-10-15 23:43:21,757 - non_major_league_model_architecture - INFO - Models saved successfully
+2025-10-15 23:43:21,757 - non_major_league_ensemble - INFO - Saving ensemble to ./pipeline_output/phase2_output/E1_ensemble.pkl
+2025-10-15 23:43:21,761 - non_major_league_ensemble - INFO - Ensemble saved successfully
+2025-10-15 23:43:21,761 - non_major_league_hyperparameter_tuning - INFO - Saving hyperparameter tuning results to ./pipeline_output/phase2_output/E1_hyperparameter_tuning.pkl
+2025-10-15 23:43:21,827 - non_major_league_hyperparameter_tuning - INFO - Hyperparameter tuning results saved successfully
+2025-10-15 23:43:21,827 - non_major_league_model_validation - INFO - Saving validation results to ./pipeline_output/phase2_output/E1_validation_results.pkl
+2025-10-15 23:43:21,827 - phase2_integration - ERROR - Phase 2 pipeline failed: name 'joblib' is not defined
+Traceback (most recent call last):
+  File "<string>", line 18, in <module>
+    phase2_results = phase2.run_phase2_pipeline(
+        data_file=data_file,
+        league_code=league_code
+    )
+  File "/home/kali/Non-major-leagues/phase2_integration.py", line 144, in run_phase2_pipeline
+    self._save_results(final_results, league_code)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Non-major-leagues/phase2_integration.py", line 562, in _save_results
+    self.model_validation.save_validation_results(validation_file)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/kali/Non-major-leagues/non_major_league_model_validation.py", line 861, in save_validation_results
+    joblib.dump(validation_state, filepath)
+    ^^^^^^
+NameError: name 'joblib' is not defined
+================================================================================
+PHASE 2: MODEL TRAINING & VALIDATION
+================================================================================
+
+Loading features from: ./pipeline_output/phase1_output/E1_features.csv
+League: E1
+

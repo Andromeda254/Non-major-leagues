@@ -149,6 +149,10 @@ class APIDataManager:
                 api_key = env_vars.get('FIFA_DATA_KEY')
             elif source_name == 'smarkets':
                 api_key = env_vars.get('SMARKETS_KEY')
+            elif source_name == 'sportmonks':
+                api_key = env_vars.get('SPORTMONKS_KEY')
+            elif source_name == 'sofascore':
+                api_key = 'no_key_needed'  # Unofficial API
             
             if api_key and api_key != f"your_{source_name}_key_here":
                 data_source = DataSource(
@@ -241,6 +245,9 @@ class APIDataManager:
         elif source.name == 'api_football':
             # API Football uses X-RapidAPI-Key header (confirmed working)
             headers['X-RapidAPI-Key'] = source.api_key
+        elif source.name == 'odds_api':
+            # The Odds API requires apiKey as a query parameter, not a header
+            pass
         elif source.name == 'livescore':
             # Livescore API uses different authentication format
             headers['key'] = source.api_key
@@ -409,9 +416,11 @@ class APIDataManager:
                         endpoint = f'sports/{sport_key}/odds'
                         # Remove league param as it's now in the endpoint
                         params = {k: v for k, v in params.items() if k != 'league'}
-                    # Add required parameters for Odds API
-                    params['regions'] = 'uk'
-                    params['markets'] = 'h2h'  # Head to head (1x2)
+                # Add required parameters for Odds API
+                params['regions'] = 'uk'
+                params['markets'] = 'h2h'  # Head to head (1x2)
+                # Provide API key as query parameter per Odds API v4
+                params['apiKey'] = source.api_key
             elif source.name == 'betfair_exchange':
                 endpoint = 'odds'
             elif source.name == 'pinnacle':
@@ -439,8 +448,7 @@ class APIDataManager:
             
             # Source-specific endpoint mapping and parameter fixing
             if source.name == 'football_data':
-                endpoint = 'standings'
-                # Fix league codes for Football Data API
+                # Football-Data v4: GET /competitions/{id}/standings
                 league_mapping = {
                     'E1': '2016',  # EFL Championship
                     'E2': '2017',  # EFL League One  
@@ -451,8 +459,12 @@ class APIDataManager:
                     'SA': '2019',  # Serie A
                     'PD': '2014'   # La Liga
                 }
-                if params['league'] in league_mapping:
-                    params['league'] = league_mapping[params['league']]
+                competition_id = params.get('league')
+                if competition_id in league_mapping:
+                    competition_id = league_mapping[competition_id]
+                # Build endpoint path and remove query league param
+                endpoint = f"competitions/{competition_id}/standings"
+                params = {k: v for k, v in params.items() if k != 'league'}
             elif source.name == 'api_football':
                 endpoint = 'standings'
             elif source.name == 'rapidapi_football':

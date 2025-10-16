@@ -1,0 +1,82 @@
+[
+  {
+    "id": "match_001",
+    "teams": [
+      "Manchester United",
+      "Liverpool"
+    ],
+    "time": "2025-10-16 01:23:37",
+    "odds": {
+      "home": 2.5,
+      "draw": 3.2,
+      "away": 2.8
+    },
+    "league": "Premier League",
+    "source": "test_crawler",
+    "timestamp": "2025-10-15T23:23:37.996126"
+  },
+  {
+    "id": "match_002",
+    "teams": [
+      "Chelsea",
+      "Arsenal"
+    ],
+    "time": "2025-10-16 03:23:37",
+    "odds": {
+      "home": 2.1,
+      "draw": 3.4,
+      "away": 3.2
+    },
+    "league": "Premier League",
+    "source": "test_crawler",
+    "timestamp": "2025-10-15T23:23:37.996181"
+  },
+  {
+    "id": "match_003",
+    "teams": [
+      "Leeds United",
+      "Norwich City"
+    ],
+    "time": "2025-10-16 05:23:37",
+    "odds": {
+      "home": 1.8,
+      "draw": 3.6,
+      "away": 4.2
+    },
+    "league": "Championship",
+    "source": "test_crawler",
+    "timestamp": "2025-10-15T23:23:37.996210"
+  },
+  {
+    "id": "match_004",
+    "teams": [
+      "Sunderland",
+      "Ipswich Town"
+    ],
+    "time": "2025-10-16 07:23:37",
+    "odds": {
+      "home": 2.3,
+      "draw": 3.1,
+      "away": 3.0
+    },
+    "league": "Championship",
+    "source": "test_crawler",
+    "timestamp": "2025-10-15T23:23:37.996237"
+  },
+  {
+    "id": "match_005",
+    "teams": [
+      "Portsmouth",
+      "Bolton Wanderers"
+    ],
+    "time": "2025-10-16 09:23:37",
+    "odds": {
+      "home": 2.0,
+      "draw": 3.3,
+      "away": 3.5
+    },
+    "league": "League One",
+    "source": "test_crawler",
+    "timestamp": "2025-10-15T23:23:37.996261"
+  }
+]

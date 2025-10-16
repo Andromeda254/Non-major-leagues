@@ -1,0 +1,264 @@
+INFO:master_pipeline:Master Pipeline initialized
+INFO:master_pipeline:Configuration loaded from config.yaml
+INFO:api_data_manager:Loaded configuration from config.yaml
+INFO:api_data_manager:Loaded 32 environment variables
+INFO:api_data_manager:Initialized data source: football_data
+INFO:api_data_manager:Initialized data source: odds_api
+INFO:api_data_manager:Initialized data source: api_football
+INFO:api_data_manager:Initialized data source: rapidapi_football
+INFO:api_data_manager:Initialized data source: sportsdata_io
+INFO:api_data_manager:Initialized data source: betfair_exchange
+INFO:api_data_manager:Initialized data source: openweathermap
+INFO:api_data_manager:Initialized data source: newsapi
+INFO:api_data_manager:Initialized data source: twitter_api
+INFO:api_data_manager:Initialized data source: pinnacle
+WARNING:api_data_manager:Skipping football_api_com - no valid API key found
+INFO:api_data_manager:Initialized data source: livescore
+WARNING:api_data_manager:Skipping football_api_net - no valid API key found
+WARNING:api_data_manager:Skipping fifa_data - no valid API key found
+WARNING:api_data_manager:Skipping smarkets - no valid API key found
+INFO:api_data_manager:Initialized APIDataManager with 11 data sources
+INFO:crawler_to_pipeline_bridge:Loaded configuration from config.yaml
+INFO:crawler_to_pipeline_bridge:Initialized Crawler-Pipeline Bridge
+INFO:__main__:✅ Complete Workflow Orchestrator initialized
+INFO:__main__:================================================================================
+INFO:__main__:COMPLETE WORKFLOW - ALL MARKETS PREDICTION
+INFO:__main__:================================================================================
+INFO:__main__:
+📥 STEP 1: Loading Crawler Data
+INFO:crawler_to_pipeline_bridge:Loaded 31 matches from crawler
+INFO:__main__:✅ Loaded 31 upcoming matches
+INFO:__main__:
+🌐 STEP 2: Fetching API Data
+INFO:__main__:  Fetching team statistics...
+WARNING:__main__:  ⚠️ Team stats fetch failed: 'HomeTeam'
+INFO:__main__:  Fetching odds (all markets)...
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+INFO:__main__:  ⚠️ Generating dummy odds for testing...
+WARNING:__main__:  ⚠️ Odds fetch failed: 'HomeTeam'
+INFO:__main__:  ✅ Using existing historical data: pipeline_output/phase1_output/E1_features.csv
+INFO:__main__:✅ API data fetched successfully
+INFO:__main__:
+📊 STEP 3: Phase 1 - Feature Engineering
+INFO:master_pipeline:================================================================================
+INFO:master_pipeline:STARTING PHASE 1: DATA COLLECTION & PREPROCESSING
+INFO:master_pipeline:================================================================================
+INFO:phase1_integration:Output directory: ./data
+INFO:phase1_integration:Starting Phase 1 pipeline for E1, seasons: ['2324', '2223', '2122']
+INFO:phase1_integration:Step 1: Data Collection
+INFO:phase1_integration:Collecting data for E1, seasons: ['2324', '2223', '2122']
+INFO:non_major_league_data_collector:Collecting historical data for E1, seasons: ['2324', '2223', '2122']
+INFO:non_major_league_data_collector:Collected 552 matches for E1 2324
+INFO:non_major_league_data_collector:Collected 552 matches for E1 2223
+INFO:non_major_league_data_collector:Collected 552 matches for E1 2122
+INFO:non_major_league_data_collector:Validating data quality for E1
+INFO:non_major_league_data_collector:Removed 0 duplicate rows
+WARNING:non_major_league_data_collector:Found 989 invalid dates
+INFO:non_major_league_data_collector:Found 36 unique teams
+INFO:non_major_league_data_collector:Data validation complete. Final dataset: 667 matches
+INFO:non_major_league_data_collector:Total historical data collected: 667 matches
+ERROR:non_major_league_data_collector:Error collecting live odds: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/soccer_efl_champ/odds/?apiKey=YOUR_ODDS_API_KEY&regions=uk%2Ceu&markets=h2h&oddsFormat=decimal
+INFO:phase1_integration:Step 2: Data Preprocessing
+INFO:phase1_integration:Preprocessing 667 rows of data
+INFO:non_major_league_preprocessor:Starting preprocessing pipeline
+INFO:non_major_league_preprocessor:Validating input data
+INFO:non_major_league_preprocessor:Found 36 unique teams
+INFO:non_major_league_preprocessor:Result distribution: {'H': 284, 'A': 208, 'D': 175}
+INFO:non_major_league_preprocessor:Data validation complete. Valid rows: 667
+INFO:non_major_league_preprocessor:Handling missing data
+INFO:non_major_league_preprocessor:Missing data handling complete. Remaining missing values: 0
+INFO:non_major_league_preprocessor:Detecting and treating outliers
+INFO:non_major_league_preprocessor:Found 16 outliers in HTHG
+INFO:non_major_league_preprocessor:Found 3 outliers in HTAG
+INFO:non_major_league_preprocessor:Found 11 outliers in HS
+INFO:non_major_league_preprocessor:Found 7 outliers in AS
+INFO:non_major_league_preprocessor:Found 11 outliers in HST
+INFO:non_major_league_preprocessor:Found 8 outliers in AST
+INFO:non_major_league_preprocessor:Found 5 outliers in HF
+INFO:non_major_league_preprocessor:Found 9 outliers in AF
+INFO:non_major_league_preprocessor:Found 20 outliers in HC
+INFO:non_major_league_preprocessor:Found 17 outliers in AC
+INFO:non_major_league_preprocessor:Found 52 outliers in HY
+INFO:non_major_league_preprocessor:Found 1 outliers in AY
+INFO:non_major_league_preprocessor:Found 30 outliers in HR
+INFO:non_major_league_preprocessor:Found 34 outliers in AR
+INFO:non_major_league_preprocessor:Found 37 outliers in B365H
+INFO:non_major_league_preprocessor:Found 64 outliers in B365D
+INFO:non_major_league_preprocessor:Found 41 outliers in B365A
+INFO:non_major_league_preprocessor:Found 32 outliers in BWH
+INFO:non_major_league_preprocessor:Found 56 outliers in BWD
+INFO:non_major_league_preprocessor:Found 47 outliers in BWA
+INFO:non_major_league_preprocessor:Found 29 outliers in IWH
+INFO:non_major_league_preprocessor:Found 64 outliers in IWD
+INFO:non_major_league_preprocessor:Found 43 outliers in IWA
+INFO:non_major_league_preprocessor:Found 30 outliers in PSH
+INFO:non_major_league_preprocessor:Found 45 outliers in PSD
+INFO:non_major_league_preprocessor:Found 44 outliers in PSA
+INFO:non_major_league_preprocessor:Found 31 outliers in WHH
+INFO:non_major_league_preprocessor:Found 65 outliers in WHD
+INFO:non_major_league_preprocessor:Found 36 outliers in WHA
+INFO:non_major_league_preprocessor:Found 32 outliers in VCH
+INFO:non_major_league_preprocessor:Found 65 outliers in VCD
+INFO:non_major_league_preprocessor:Found 47 outliers in VCA
+INFO:non_major_league_preprocessor:Found 31 outliers in MaxH
+INFO:non_major_league_preprocessor:Found 50 outliers in MaxD
+INFO:non_major_league_preprocessor:Found 42 outliers in MaxA
+INFO:non_major_league_preprocessor:Found 31 outliers in AvgH
+INFO:non_major_league_preprocessor:Found 52 outliers in AvgD
+INFO:non_major_league_preprocessor:Found 41 outliers in AvgA
+INFO:non_major_league_preprocessor:Found 2 outliers in B365>2.5
+INFO:non_major_league_preprocessor:Found 12 outliers in B365<2.5
+INFO:non_major_league_preprocessor:Found 2 outliers in P>2.5
+INFO:non_major_league_preprocessor:Found 25 outliers in P<2.5
+INFO:non_major_league_preprocessor:Found 2 outliers in Max>2.5
+INFO:non_major_league_preprocessor:Found 28 outliers in Max<2.5
+INFO:non_major_league_preprocessor:Found 2 outliers in Avg>2.5
+INFO:non_major_league_preprocessor:Found 31 outliers in Avg<2.5
+INFO:non_major_league_preprocessor:Found 30 outliers in AHh
+INFO:non_major_league_preprocessor:Found 1 outliers in MaxAHH
+INFO:non_major_league_preprocessor:Found 31 outliers in B365CH
+INFO:non_major_league_preprocessor:Found 34 outliers in B365CD
+INFO:non_major_league_preprocessor:Found 34 outliers in B365CA
+INFO:non_major_league_preprocessor:Found 34 outliers in BWCH
+INFO:non_major_league_preprocessor:Found 46 outliers in BWCD
+INFO:non_major_league_preprocessor:Found 39 outliers in BWCA
+INFO:non_major_league_preprocessor:Found 27 outliers in IWCH
+INFO:non_major_league_preprocessor:Found 65 outliers in IWCD
+INFO:non_major_league_preprocessor:Found 52 outliers in IWCA
+INFO:non_major_league_preprocessor:Found 30 outliers in PSCH
+INFO:non_major_league_preprocessor:Found 48 outliers in PSCD
+INFO:non_major_league_preprocessor:Found 40 outliers in PSCA
+INFO:non_major_league_preprocessor:Found 29 outliers in WHCH
+INFO:non_major_league_preprocessor:Found 53 outliers in WHCD
+INFO:non_major_league_preprocessor:Found 45 outliers in WHCA
+INFO:non_major_league_preprocessor:Found 28 outliers in VCCH
+INFO:non_major_league_preprocessor:Found 52 outliers in VCCD
+INFO:non_major_league_preprocessor:Found 52 outliers in VCCA
+INFO:non_major_league_preprocessor:Found 30 outliers in MaxCH
+INFO:non_major_league_preprocessor:Found 56 outliers in MaxCD
+INFO:non_major_league_preprocessor:Found 46 outliers in MaxCA
+INFO:non_major_league_preprocessor:Found 29 outliers in AvgCH
+INFO:non_major_league_preprocessor:Found 52 outliers in AvgCD
+INFO:non_major_league_preprocessor:Found 43 outliers in AvgCA
+INFO:non_major_league_preprocessor:Found 5 outliers in B365C>2.5
+INFO:non_major_league_preprocessor:Found 21 outliers in B365C<2.5
+INFO:non_major_league_preprocessor:Found 1 outliers in PC>2.5
+INFO:non_major_league_preprocessor:Found 29 outliers in PC<2.5
+INFO:non_major_league_preprocessor:Found 1 outliers in MaxC>2.5
+INFO:non_major_league_preprocessor:Found 27 outliers in MaxC<2.5
+INFO:non_major_league_preprocessor:Found 1 outliers in AvgC>2.5
+INFO:non_major_league_preprocessor:Found 34 outliers in AvgC<2.5
+INFO:non_major_league_preprocessor:Found 33 outliers in AHCh
+INFO:non_major_league_preprocessor:Found 1 outliers in MaxCAHH
+INFO:non_major_league_preprocessor:Engineering basic features
+INFO:non_major_league_preprocessor:Encoding categorical variables
+INFO:non_major_league_preprocessor:Scaling numerical features
+INFO:non_major_league_preprocessor:Augmenting data
+INFO:non_major_league_preprocessor:Data augmentation complete. Added 100 synthetic samples
+INFO:non_major_league_preprocessor:Performing final validation
+INFO:non_major_league_preprocessor:Data types: {dtype('float64'): 118, dtype('O'): 10, dtype('int64'): 3, dtype('<M8[ns]'): 1}
+INFO:non_major_league_preprocessor:Final data shape: (767, 132)
+INFO:non_major_league_preprocessor:Preprocessing complete. Final dataset: 767 rows, 132 columns
+INFO:phase1_integration:Step 3: Data Validation
+INFO:phase1_integration:Validating 767 rows of data
+INFO:non_major_league_validator:Starting comprehensive validation for dataset with 767 rows
+INFO:phase1_integration:Step 4: Feature Engineering
+INFO:phase1_integration:Engineering features for 767 rows of data
+INFO:non_major_league_feature_engineer:Starting feature engineering for 767 matches
+INFO:non_major_league_feature_engineer:Creating basic features
+INFO:non_major_league_feature_engineer:Creating form features
+INFO:non_major_league_feature_engineer:Creating consistency features
+INFO:non_major_league_feature_engineer:Creating market features
+INFO:non_major_league_feature_engineer:Creating temporal features
+INFO:non_major_league_feature_engineer:Creating seasonal features
+INFO:non_major_league_feature_engineer:Creating fixture congestion features
+INFO:non_major_league_feature_engineer:Creating temporal context features
+INFO:non_major_league_feature_engineer:Creating momentum features
+INFO:non_major_league_feature_engineer:Creating league position features
+INFO:non_major_league_feature_engineer:Creating league-specific features
+INFO:non_major_league_feature_engineer:Creating cross-league features
+INFO:non_major_league_feature_engineer:Creating advanced statistical features
+INFO:non_major_league_feature_engineer:Creating team embedding features
+INFO:non_major_league_feature_engineer:Finalizing features
+INFO:non_major_league_feature_engineer:Feature engineering complete. Final features: 254
+INFO:phase1_integration:Step 5: Final Integration
+INFO:phase1_integration:Integrating Phase 1 results
+INFO:phase1_integration:Step 6: Saving Results
+INFO:phase1_integration:Saving results for E1
+INFO:phase1_integration:Features data saved to ./data/E1_features.csv
+INFO:non_major_league_validator:Validation report saved to ./data/E1_validation_report.txt
+INFO:phase1_integration:Validation report saved to ./data/E1_validation_report.txt
+INFO:phase1_integration:Pipeline summary saved to ./data/E1_phase1_summary.json
+INFO:non_major_league_preprocessor:Preprocessors saved to ./data/E1_preprocessor.pkl
+INFO:non_major_league_feature_engineer:Feature engineer state saved to ./data/E1_feature_engineer.pkl
+INFO:phase1_integration:Phase 1 results saved successfully
+INFO:phase1_integration:Phase 1 pipeline completed successfully
+INFO:master_pipeline:Phase 1 completed successfully in 115.31 seconds
+INFO:__main__:✅ Phase 1 completed
+INFO:__main__:
+🤖 STEP 4: Phase 2 - Model Training (All Markets)
+INFO:master_pipeline:================================================================================
+INFO:master_pipeline:STARTING PHASE 2: MODEL DEVELOPMENT & VALIDATION
+INFO:master_pipeline:================================================================================
+INFO:phase2_integration:Output directory: ./models
+INFO:phase2_integration:Starting Phase 2 pipeline for E1
+INFO:phase2_integration:Step 1: Loading and preparing data
+INFO:phase2_integration:Loading data from ./data/E1_features.csv
+INFO:phase2_integration:Loaded 767 rows with 254 columns
+INFO:phase2_integration:Selected 241 numerical features from 254 total columns
+INFO:phase2_integration:Excluded columns: ['target', 'FTR', 'HTR', 'Date', 'Time', 'HomeTeam', 'AwayTeam', 'Referee', 'Div', 'league', 'season', 'data_source', 'season_phase']
+INFO:phase2_integration:Sanitized 241 feature names for XGBoost compatibility
+INFO:phase2_integration:Final dataset: 767 samples with 241 features
+INFO:phase2_integration:Target distribution: {2: 328, 0: 237, 1: 202}
+INFO:phase2_integration:Step 2: Model Architecture Design
+INFO:phase2_integration:Designing model architecture
+INFO:non_major_league_model_architecture:Creating base models for non-major leagues
+INFO:non_major_league_model_architecture:Created 4 base models
+INFO:non_major_league_model_architecture:Training base models
+INFO:non_major_league_model_architecture:Calculated class weights: {np.int64(0): np.float64(1.1060375373792575), np.int64(1): np.float64(1.2712517506284247), np.int64(2): np.float64(0.7739516772659846)}
+INFO:non_major_league_model_architecture:Training xgboost...
+INFO:non_major_league_model_architecture:xgboost - Train Acc: 1.0000, Val Acc: 1.0000
+INFO:non_major_league_model_architecture:Training lightgbm...
+INFO:non_major_league_model_architecture:lightgbm - Train Acc: 1.0000, Val Acc: 1.0000
+INFO:non_major_league_model_architecture:Training random_forest...
+INFO:non_major_league_model_architecture:random_forest - Train Acc: 1.0000, Val Acc: 1.0000
+INFO:non_major_league_model_architecture:Training logistic_regression...
+INFO:non_major_league_model_architecture:logistic_regression - Train Acc: 1.0000, Val Acc: 1.0000
+INFO:non_major_league_model_architecture:Creating ensemble model
+INFO:non_major_league_model_architecture:Training ensemble model
+INFO:non_major_league_model_architecture:Ensemble training complete
+INFO:non_major_league_model_architecture:Calibrating model probabilities
+INFO:non_major_league_model_architecture:Calibrated xgboost
+INFO:non_major_league_model_architecture:Calibrated lightgbm
+INFO:non_major_league_model_architecture:Calibrated random_forest
+INFO:non_major_league_model_architecture:Calibrated logistic_regression

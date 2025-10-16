@@ -1,0 +1,725 @@
+INFO:master_pipeline:Master Pipeline initialized
+INFO:master_pipeline:Configuration loaded from config.yaml
+INFO:api_data_manager:Loaded configuration from config.yaml
+INFO:api_data_manager:Loaded 32 environment variables
+INFO:api_data_manager:Initialized data source: football_data
+INFO:api_data_manager:Initialized data source: odds_api
+INFO:api_data_manager:Initialized data source: api_football
+INFO:api_data_manager:Initialized data source: rapidapi_football
+INFO:api_data_manager:Initialized data source: sportsdata_io
+INFO:api_data_manager:Initialized data source: betfair_exchange
+INFO:api_data_manager:Initialized data source: openweathermap
+INFO:api_data_manager:Initialized data source: newsapi
+INFO:api_data_manager:Initialized data source: twitter_api
+INFO:api_data_manager:Initialized data source: pinnacle
+WARNING:api_data_manager:Skipping football_api_com - no valid API key found
+INFO:api_data_manager:Initialized data source: livescore
+WARNING:api_data_manager:Skipping football_api_net - no valid API key found
+WARNING:api_data_manager:Skipping fifa_data - no valid API key found
+WARNING:api_data_manager:Skipping smarkets - no valid API key found
+INFO:api_data_manager:Initialized APIDataManager with 11 data sources
+INFO:crawler_to_pipeline_bridge:Loaded configuration from config.yaml
+INFO:crawler_to_pipeline_bridge:Initialized Crawler-Pipeline Bridge
+INFO:__main__:✅ Complete Workflow Orchestrator initialized
+INFO:__main__:================================================================================
+INFO:__main__:COMPLETE WORKFLOW - ALL MARKETS PREDICTION
+INFO:__main__:================================================================================
+INFO:__main__:
+📥 STEP 1: Loading Crawler Data
+INFO:crawler_to_pipeline_bridge:Loaded 31 matches from crawler
+INFO:__main__:✅ Loaded 31 upcoming matches
+INFO:__main__:
+🌐 STEP 2: Fetching API Data
+INFO:__main__:  Fetching team statistics...
+WARNING:__main__:  ⚠️ Team stats fetch failed: 'HomeTeam'
+INFO:__main__:  Fetching odds (all markets)...
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+INFO:__main__:  ⚠️ Generating dummy odds for testing...
+WARNING:__main__:  ⚠️ Odds fetch failed: 'HomeTeam'
+INFO:__main__:  ✅ Using existing historical data: pipeline_output/phase1_output/E1_features.csv
+INFO:__main__:✅ API data fetched successfully
+INFO:__main__:
+📊 STEP 3: Phase 1 - Feature Engineering
+INFO:master_pipeline:================================================================================
+INFO:master_pipeline:STARTING PHASE 1: DATA COLLECTION & PREPROCESSING
+INFO:master_pipeline:================================================================================
+INFO:phase1_integration:Output directory: ./data
+INFO:phase1_integration:Starting Phase 1 pipeline for E1, seasons: ['2324', '2223', '2122']
+INFO:phase1_integration:Step 1: Data Collection
+INFO:phase1_integration:Collecting data for E1, seasons: ['2324', '2223', '2122']
+INFO:non_major_league_data_collector:Collecting historical data for E1, seasons: ['2324', '2223', '2122']
+INFO:non_major_league_data_collector:Collected 552 matches for E1 2324
+INFO:non_major_league_data_collector:Collected 552 matches for E1 2223
+INFO:non_major_league_data_collector:Collected 552 matches for E1 2122
+INFO:non_major_league_data_collector:Validating data quality for E1
+INFO:non_major_league_data_collector:Removed 0 duplicate rows
+WARNING:non_major_league_data_collector:Found 989 invalid dates
+INFO:non_major_league_data_collector:Found 36 unique teams
+INFO:non_major_league_data_collector:Data validation complete. Final dataset: 667 matches
+INFO:non_major_league_data_collector:Total historical data collected: 667 matches
+ERROR:non_major_league_data_collector:Error collecting live odds: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/soccer_efl_champ/odds/?apiKey=YOUR_ODDS_API_KEY&regions=uk%2Ceu&markets=h2h&oddsFormat=decimal
+INFO:phase1_integration:Step 2: Data Preprocessing
+INFO:phase1_integration:Preprocessing 667 rows of data
+INFO:non_major_league_preprocessor:Starting preprocessing pipeline
+INFO:non_major_league_preprocessor:Validating input data
+INFO:non_major_league_preprocessor:Found 36 unique teams
+INFO:non_major_league_preprocessor:Result distribution: {'H': 284, 'A': 208, 'D': 175}
+INFO:non_major_league_preprocessor:Data validation complete. Valid rows: 667
+INFO:non_major_league_preprocessor:Handling missing data
+INFO:non_major_league_preprocessor:Missing data handling complete. Remaining missing values: 0
+INFO:non_major_league_preprocessor:Detecting and treating outliers
+INFO:non_major_league_preprocessor:Found 16 outliers in HTHG
+INFO:non_major_league_preprocessor:Found 3 outliers in HTAG
+INFO:non_major_league_preprocessor:Found 11 outliers in HS
+INFO:non_major_league_preprocessor:Found 7 outliers in AS
+INFO:non_major_league_preprocessor:Found 11 outliers in HST
+INFO:non_major_league_preprocessor:Found 8 outliers in AST
+INFO:non_major_league_preprocessor:Found 5 outliers in HF
+INFO:non_major_league_preprocessor:Found 9 outliers in AF
+INFO:non_major_league_preprocessor:Found 20 outliers in HC
+INFO:non_major_league_preprocessor:Found 17 outliers in AC
+INFO:non_major_league_preprocessor:Found 52 outliers in HY
+INFO:non_major_league_preprocessor:Found 1 outliers in AY
+INFO:non_major_league_preprocessor:Found 30 outliers in HR
+INFO:non_major_league_preprocessor:Found 34 outliers in AR
+INFO:non_major_league_preprocessor:Found 37 outliers in B365H
+INFO:non_major_league_preprocessor:Found 64 outliers in B365D
+INFO:non_major_league_preprocessor:Found 41 outliers in B365A
+INFO:non_major_league_preprocessor:Found 32 outliers in BWH
+INFO:non_major_league_preprocessor:Found 56 outliers in BWD
+INFO:non_major_league_preprocessor:Found 47 outliers in BWA
+INFO:non_major_league_preprocessor:Found 29 outliers in IWH
+INFO:non_major_league_preprocessor:Found 64 outliers in IWD
+INFO:non_major_league_preprocessor:Found 43 outliers in IWA
+INFO:non_major_league_preprocessor:Found 30 outliers in PSH
+INFO:non_major_league_preprocessor:Found 45 outliers in PSD
+INFO:non_major_league_preprocessor:Found 44 outliers in PSA
+INFO:non_major_league_preprocessor:Found 31 outliers in WHH
+INFO:non_major_league_preprocessor:Found 65 outliers in WHD
+INFO:non_major_league_preprocessor:Found 36 outliers in WHA
+INFO:non_major_league_preprocessor:Found 32 outliers in VCH
+INFO:non_major_league_preprocessor:Found 65 outliers in VCD
+INFO:non_major_league_preprocessor:Found 47 outliers in VCA
+INFO:non_major_league_preprocessor:Found 31 outliers in MaxH
+INFO:non_major_league_preprocessor:Found 50 outliers in MaxD
+INFO:non_major_league_preprocessor:Found 42 outliers in MaxA
+INFO:non_major_league_preprocessor:Found 31 outliers in AvgH
+INFO:non_major_league_preprocessor:Found 52 outliers in AvgD
+INFO:non_major_league_preprocessor:Found 41 outliers in AvgA
+INFO:non_major_league_preprocessor:Found 2 outliers in B365>2.5
+INFO:non_major_league_preprocessor:Found 12 outliers in B365<2.5
+INFO:non_major_league_preprocessor:Found 2 outliers in P>2.5
+INFO:non_major_league_preprocessor:Found 25 outliers in P<2.5
+INFO:non_major_league_preprocessor:Found 2 outliers in Max>2.5
+INFO:non_major_league_preprocessor:Found 28 outliers in Max<2.5
+INFO:non_major_league_preprocessor:Found 2 outliers in Avg>2.5
+INFO:non_major_league_preprocessor:Found 31 outliers in Avg<2.5
+INFO:non_major_league_preprocessor:Found 30 outliers in AHh
+INFO:non_major_league_preprocessor:Found 1 outliers in MaxAHH
+INFO:non_major_league_preprocessor:Found 31 outliers in B365CH
+INFO:non_major_league_preprocessor:Found 34 outliers in B365CD
+INFO:non_major_league_preprocessor:Found 34 outliers in B365CA
+INFO:non_major_league_preprocessor:Found 34 outliers in BWCH
+INFO:non_major_league_preprocessor:Found 46 outliers in BWCD
+INFO:non_major_league_preprocessor:Found 39 outliers in BWCA
+INFO:non_major_league_preprocessor:Found 27 outliers in IWCH
+INFO:non_major_league_preprocessor:Found 65 outliers in IWCD
+INFO:non_major_league_preprocessor:Found 52 outliers in IWCA
+INFO:non_major_league_preprocessor:Found 30 outliers in PSCH
+INFO:non_major_league_preprocessor:Found 48 outliers in PSCD
+INFO:non_major_league_preprocessor:Found 40 outliers in PSCA
+INFO:non_major_league_preprocessor:Found 29 outliers in WHCH
+INFO:non_major_league_preprocessor:Found 53 outliers in WHCD
+INFO:non_major_league_preprocessor:Found 45 outliers in WHCA
+INFO:non_major_league_preprocessor:Found 28 outliers in VCCH
+INFO:non_major_league_preprocessor:Found 52 outliers in VCCD
+INFO:non_major_league_preprocessor:Found 52 outliers in VCCA
+INFO:non_major_league_preprocessor:Found 30 outliers in MaxCH
+INFO:non_major_league_preprocessor:Found 56 outliers in MaxCD
+INFO:non_major_league_preprocessor:Found 46 outliers in MaxCA
+INFO:non_major_league_preprocessor:Found 29 outliers in AvgCH
+INFO:non_major_league_preprocessor:Found 52 outliers in AvgCD
+INFO:non_major_league_preprocessor:Found 43 outliers in AvgCA
+INFO:non_major_league_preprocessor:Found 5 outliers in B365C>2.5
+INFO:non_major_league_preprocessor:Found 21 outliers in B365C<2.5
+INFO:non_major_league_preprocessor:Found 1 outliers in PC>2.5
+INFO:non_major_league_preprocessor:Found 29 outliers in PC<2.5
+INFO:non_major_league_preprocessor:Found 1 outliers in MaxC>2.5
+INFO:non_major_league_preprocessor:Found 27 outliers in MaxC<2.5
+INFO:non_major_league_preprocessor:Found 1 outliers in AvgC>2.5
+INFO:non_major_league_preprocessor:Found 34 outliers in AvgC<2.5
+INFO:non_major_league_preprocessor:Found 33 outliers in AHCh
+INFO:non_major_league_preprocessor:Found 1 outliers in MaxCAHH
+INFO:non_major_league_preprocessor:Engineering basic features
+INFO:non_major_league_preprocessor:Encoding categorical variables
+INFO:non_major_league_preprocessor:Scaling numerical features
+INFO:non_major_league_preprocessor:Augmenting data
+INFO:non_major_league_preprocessor:Data augmentation complete. Added 100 synthetic samples
+INFO:non_major_league_preprocessor:Performing final validation
+INFO:non_major_league_preprocessor:Data types: {dtype('float64'): 118, dtype('O'): 10, dtype('int64'): 3, dtype('<M8[ns]'): 1}
+INFO:non_major_league_preprocessor:Final data shape: (767, 132)
+INFO:non_major_league_preprocessor:Preprocessing complete. Final dataset: 767 rows, 132 columns
+INFO:phase1_integration:Step 3: Data Validation
+INFO:phase1_integration:Validating 767 rows of data
+INFO:non_major_league_validator:Starting comprehensive validation for dataset with 767 rows
+INFO:phase1_integration:Step 4: Feature Engineering
+INFO:phase1_integration:Engineering features for 767 rows of data
+INFO:non_major_league_feature_engineer:Starting feature engineering for 767 matches
+INFO:non_major_league_feature_engineer:Creating basic features
+INFO:non_major_league_feature_engineer:Creating form features
+INFO:non_major_league_feature_engineer:Creating consistency features
+INFO:non_major_league_feature_engineer:Creating market features
+INFO:non_major_league_feature_engineer:Creating temporal features
+INFO:non_major_league_feature_engineer:Creating seasonal features
+INFO:non_major_league_feature_engineer:Creating fixture congestion features
+INFO:non_major_league_feature_engineer:Creating temporal context features
+INFO:non_major_league_feature_engineer:Creating momentum features
+INFO:non_major_league_feature_engineer:Creating league position features
+INFO:non_major_league_feature_engineer:Creating league-specific features
+INFO:non_major_league_feature_engineer:Creating cross-league features
+INFO:non_major_league_feature_engineer:Creating advanced statistical features
+INFO:non_major_league_feature_engineer:Creating team embedding features
+INFO:non_major_league_feature_engineer:Finalizing features
+INFO:non_major_league_feature_engineer:Feature engineering complete. Final features: 254
+INFO:phase1_integration:Step 5: Final Integration
+INFO:phase1_integration:Integrating Phase 1 results
+INFO:phase1_integration:Step 6: Saving Results
+INFO:phase1_integration:Saving results for E1
+INFO:phase1_integration:Features data saved to ./data/E1_features.csv
+INFO:non_major_league_validator:Validation report saved to ./data/E1_validation_report.txt
+INFO:phase1_integration:Validation report saved to ./data/E1_validation_report.txt
+INFO:phase1_integration:Pipeline summary saved to ./data/E1_phase1_summary.json
+INFO:non_major_league_preprocessor:Preprocessors saved to ./data/E1_preprocessor.pkl
+INFO:non_major_league_feature_engineer:Feature engineer state saved to ./data/E1_feature_engineer.pkl
+INFO:phase1_integration:Phase 1 results saved successfully
+INFO:phase1_integration:Phase 1 pipeline completed successfully
+INFO:master_pipeline:Phase 1 completed successfully in 103.49 seconds
+INFO:__main__:✅ Phase 1 completed
+INFO:__main__:
+🤖 STEP 4: Phase 2 - Model Training (All Markets)
+INFO:master_pipeline:================================================================================
+INFO:master_pipeline:STARTING PHASE 2: MODEL DEVELOPMENT & VALIDATION
+INFO:master_pipeline:================================================================================
+INFO:phase2_integration:Output directory: ./models
+INFO:phase2_integration:Starting Phase 2 pipeline for E1
+INFO:phase2_integration:Step 1: Loading and preparing data
+INFO:phase2_integration:Loading data from ./data/E1_features.csv
+INFO:phase2_integration:Loaded 767 rows with 254 columns
+INFO:phase2_integration:Selected 241 numerical features from 254 total columns
+INFO:phase2_integration:Excluded columns: ['target', 'FTR', 'HTR', 'Date', 'Time', 'HomeTeam', 'AwayTeam', 'Referee', 'Div', 'league', 'season', 'data_source', 'season_phase']
+INFO:phase2_integration:Final dataset: 767 samples with 241 features
+INFO:phase2_integration:Target distribution: {2: 334, 0: 231, 1: 202}
+INFO:phase2_integration:Step 2: Model Architecture Design
+INFO:phase2_integration:Designing model architecture
+INFO:non_major_league_model_architecture:Creating base models for non-major leagues
+INFO:non_major_league_model_architecture:Created 4 base models
+INFO:non_major_league_model_architecture:Training base models
+INFO:non_major_league_model_architecture:Calculated class weights: {np.int64(0): np.float64(1.1122208450143691), np.int64(1): np.float64(1.2797197232239268), np.int64(2): np.float64(0.7684916879240636)}
+INFO:non_major_league_model_architecture:Training xgboost...
+ERROR:non_major_league_model_architecture:Error training xgboost: feature_names must be string, and may not contain [, ] or <
+INFO:non_major_league_model_architecture:Training lightgbm...
+INFO:non_major_league_model_architecture:lightgbm - Train Acc: 1.0000, Val Acc: 1.0000
+INFO:non_major_league_model_architecture:Training random_forest...
+INFO:non_major_league_model_architecture:random_forest - Train Acc: 1.0000, Val Acc: 1.0000
+INFO:non_major_league_model_architecture:Training logistic_regression...
+INFO:non_major_league_model_architecture:logistic_regression - Train Acc: 1.0000, Val Acc: 1.0000
+INFO:non_major_league_model_architecture:Creating ensemble model
+INFO:non_major_league_model_architecture:Training ensemble model
+INFO:non_major_league_model_architecture:Ensemble training complete
+INFO:non_major_league_model_architecture:Calibrating model probabilities
+ERROR:non_major_league_model_architecture:Error calibrating xgboost: feature_names must be string, and may not contain [, ] or <
+INFO:non_major_league_model_architecture:Calibrated lightgbm
+INFO:non_major_league_model_architecture:Calibrated random_forest
+INFO:non_major_league_model_architecture:Calibrated logistic_regression
+INFO:non_major_league_model_architecture:Calibrated ensemble model
+INFO:non_major_league_model_architecture:Evaluating models
+ERROR:non_major_league_model_architecture:Error evaluating xgboost: need to call fit or load_model beforehand
+INFO:non_major_league_model_architecture:Calculating feature importance
+INFO:phase2_integration:Step 3: Transfer Learning Setup
+INFO:phase2_integration:Setting up transfer learning
+INFO:phase2_integration:No source data files provided, skipping transfer learning
+INFO:phase2_integration:Step 4: Hyperparameter Tuning
+INFO:phase2_integration:Optimizing hyperparameters
+INFO:non_major_league_hyperparameter_tuning:Optimizing hyperparameters for all models
+INFO:non_major_league_hyperparameter_tuning:Optimizing xgboost (priority: 1)
+INFO:non_major_league_hyperparameter_tuning:Optimizing hyperparameters for xgboost
+[I 2025-10-16 03:25:11,766] A new study created in memory with name: no-name-0d7e00e5-b8ea-4b69-a683-1be1316a4b32
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+[I 2025-10-16 03:25:11,888] Trial 0 finished with value: inf and parameters: {'n_estimators': 118, 'max_depth': 5, 'learning_rate': 0.054079046641072444, 'subsample': 0.8475350485811274, 'colsample_bytree': 0.6881170951580878, 'min_child_weight': 7, 'reg_alpha': 0.3910627586703235, 'reg_lambda': 0.7795595893655498}. Best is trial 0 with value: inf.
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+[I 2025-10-16 03:25:12,015] Trial 1 finished with value: inf and parameters: {'n_estimators': 137, 'max_depth': 5, 'learning_rate': 0.045522624571449226, 'subsample': 0.7667946921994218, 'colsample_bytree': 0.8637652207048663, 'min_child_weight': 2, 'reg_alpha': 0.5502959561230394, 'reg_lambda': 1.9159112273609513}. Best is trial 0 with value: inf.
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+[I 2025-10-16 03:25:12,116] Trial 2 finished with value: inf and parameters: {'n_estimators': 82, 'max_depth': 4, 'learning_rate': 0.06710915738648685, 'subsample': 0.6281890887305596, 'colsample_bytree': 0.8452005241239122, 'min_child_weight': 7, 'reg_alpha': 0.6711686774351872, 'reg_lambda': 1.9220368970710813}. Best is trial 0 with value: inf.
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+[I 2025-10-16 03:25:12,260] Trial 3 finished with value: inf and parameters: {'n_estimators': 112, 'max_depth': 5, 'learning_rate': 0.021734156310568825, 'subsample': 0.7546635526510523, 'colsample_bytree': 0.8739308013731699, 'min_child_weight': 7, 'reg_alpha': 0.2567409247585236, 'reg_lambda': 1.1084251660160203}. Best is trial 0 with value: inf.
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+[I 2025-10-16 03:25:12,365] Trial 4 finished with value: inf and parameters: {'n_estimators': 76, 'max_depth': 5, 'learning_rate': 0.024735129068459663, 'subsample': 0.9041529202409941, 'colsample_bytree': 0.7379782791127655, 'min_child_weight': 2, 'reg_alpha': 0.6453772711730466, 'reg_lambda': 1.0074572255823002}. Best is trial 0 with value: inf.
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+[I 2025-10-16 03:25:12,493] Trial 5 finished with value: inf and parameters: {'n_estimators': 195, 'max_depth': 5, 'learning_rate': 0.08138268306795156, 'subsample': 0.9637948157036241, 'colsample_bytree': 0.9583275965851505, 'min_child_weight': 1, 'reg_alpha': 0.8836119409158574, 'reg_lambda': 1.7064881014992292}. Best is trial 0 with value: inf.
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+[I 2025-10-16 03:25:12,791] Trial 6 finished with value: inf and parameters: {'n_estimators': 119, 'max_depth': 7, 'learning_rate': 0.028125467793770398, 'subsample': 0.9430083265425973, 'colsample_bytree': 0.7085691271462258, 'min_child_weight': 7, 'reg_alpha': 0.5788536005257594, 'reg_lambda': 1.1230903797732807}. Best is trial 0 with value: inf.
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+[I 2025-10-16 03:25:12,895] Trial 7 finished with value: inf and parameters: {'n_estimators': 165, 'max_depth': 8, 'learning_rate': 0.06682450550540282, 'subsample': 0.7510644799210121, 'colsample_bytree': 0.6755329690955174, 'min_child_weight': 1, 'reg_alpha': 0.21333441280631982, 'reg_lambda': 1.3225702442813356}. Best is trial 0 with value: inf.
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+[I 2025-10-16 03:25:13,019] Trial 8 finished with value: inf and parameters: {'n_estimators': 132, 'max_depth': 8, 'learning_rate': 0.044261703424232836, 'subsample': 0.691047301668881, 'colsample_bytree': 0.7494163274307702, 'min_child_weight': 9, 'reg_alpha': 0.37810223018298694, 'reg_lambda': 0.9404878948166111}. Best is trial 0 with value: inf.
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+[I 2025-10-16 03:25:13,132] Trial 9 finished with value: inf and parameters: {'n_estimators': 98, 'max_depth': 4, 'learning_rate': 0.07141274626976621, 'subsample': 0.72549161294246, 'colsample_bytree': 0.7313462034498565, 'min_child_weight': 10, 'reg_alpha': 0.7411495724357348, 'reg_lambda': 0.28778087292931853}. Best is trial 0 with value: inf.
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+[I 2025-10-16 03:25:13,268] Trial 10 finished with value: inf and parameters: {'n_estimators': 163, 'max_depth': 3, 'learning_rate': 0.09746779841630028, 'subsample': 0.865401580868762, 'colsample_bytree': 0.600128724151504, 'min_child_weight': 4, 'reg_alpha': 0.013277154294151772, 'reg_lambda': 0.35638025793024897}. Best is trial 0 with value: inf.
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+[I 2025-10-16 03:25:13,403] Trial 11 finished with value: inf and parameters: {'n_estimators': 144, 'max_depth': 6, 'learning_rate': 0.04580266139396856, 'subsample': 0.8355660621489538, 'colsample_bytree': 0.9290959241207302, 'min_child_weight': 4, 'reg_alpha': 0.46884085640861284, 'reg_lambda': 0.7737284985809745}. Best is trial 0 with value: inf.
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+[I 2025-10-16 03:25:13,577] Trial 12 finished with value: inf and parameters: {'n_estimators': 153, 'max_depth': 6, 'learning_rate': 0.04786089554383772, 'subsample': 0.8062936521032396, 'colsample_bytree': 0.8177586746070288, 'min_child_weight': 5, 'reg_alpha': 0.38457110015980034, 'reg_lambda': 0.5700253907761919}. Best is trial 0 with value: inf.
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+[I 2025-10-16 03:25:13,705] Trial 13 finished with value: inf and parameters: {'n_estimators': 54, 'max_depth': 4, 'learning_rate': 0.03539322209977817, 'subsample': 0.8782162478110304, 'colsample_bytree': 0.6311054676674891, 'min_child_weight': 3, 'reg_alpha': 0.8543574103411516, 'reg_lambda': 1.6061574183277738}. Best is trial 0 with value: inf.
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+[I 2025-10-16 03:25:13,838] Trial 14 finished with value: inf and parameters: {'n_estimators': 190, 'max_depth': 3, 'learning_rate': 0.058939590155122276, 'subsample': 0.8026809803364564, 'colsample_bytree': 0.8996165638420587, 'min_child_weight': 6, 'reg_alpha': 0.1983034631813675, 'reg_lambda': 0.031845959769457255}. Best is trial 0 with value: inf.
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+[I 2025-10-16 03:25:13,979] Trial 15 finished with value: inf and parameters: {'n_estimators': 133, 'max_depth': 6, 'learning_rate': 0.05531020549456383, 'subsample': 0.6702786855377121, 'colsample_bytree': 0.7890607144838756, 'min_child_weight': 8, 'reg_alpha': 0.4824604792982306, 'reg_lambda': 1.5008617579506742}. Best is trial 0 with value: inf.
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+[I 2025-10-16 03:25:14,130] Trial 16 finished with value: inf and parameters: {'n_estimators': 103, 'max_depth': 7, 'learning_rate': 0.010556132897406485, 'subsample': 0.765662656614045, 'colsample_bytree': 0.9790705745008117, 'min_child_weight': 5, 'reg_alpha': 0.344793725978795, 'reg_lambda': 0.7409133773522931}. Best is trial 0 with value: inf.
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+[I 2025-10-16 03:25:14,267] Trial 17 finished with value: inf and parameters: {'n_estimators': 176, 'max_depth': 4, 'learning_rate': 0.08328879904261591, 'subsample': 0.9979496803637897, 'colsample_bytree': 0.6490826142570842, 'min_child_weight': 3, 'reg_alpha': 0.9972380592885925, 'reg_lambda': 1.8995818313069808}. Best is trial 0 with value: inf.
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+[I 2025-10-16 03:25:14,421] Trial 18 finished with value: inf and parameters: {'n_estimators': 87, 'max_depth': 5, 'learning_rate': 0.0393043844454344, 'subsample': 0.8364407443542278, 'colsample_bytree': 0.7970285265726159, 'min_child_weight': 9, 'reg_alpha': 0.06268283320919588, 'reg_lambda': 1.3722909235852199}. Best is trial 0 with value: inf.
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+[I 2025-10-16 03:25:14,571] Trial 19 finished with value: inf and parameters: {'n_estimators': 137, 'max_depth': 7, 'learning_rate': 0.05437274439508462, 'subsample': 0.8972222280953263, 'colsample_bytree': 0.8585119316215792, 'min_child_weight': 6, 'reg_alpha': 0.5739269670795132, 'reg_lambda': 0.4753007543168821}. Best is trial 0 with value: inf.
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+[I 2025-10-16 03:25:14,768] Trial 20 finished with value: inf and parameters: {'n_estimators': 119, 'max_depth': 6, 'learning_rate': 0.0783651115461633, 'subsample': 0.7064314718251095, 'colsample_bytree': 0.7694994504538339, 'min_child_weight': 3, 'reg_alpha': 0.7564618874001948, 'reg_lambda': 0.7810007152671501}. Best is trial 0 with value: inf.
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+[I 2025-10-16 03:25:14,931] Trial 21 finished with value: inf and parameters: {'n_estimators': 67, 'max_depth': 4, 'learning_rate': 0.06642830680700754, 'subsample': 0.6125218816314949, 'colsample_bytree': 0.831259505507345, 'min_child_weight': 7, 'reg_alpha': 0.6822385473847425, 'reg_lambda': 1.9305118096852008}. Best is trial 0 with value: inf.
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+[I 2025-10-16 03:25:15,074] Trial 22 finished with value: inf and parameters: {'n_estimators': 91, 'max_depth': 4, 'learning_rate': 0.05858291532264702, 'subsample': 0.6224818683759393, 'colsample_bytree': 0.8497641541743576, 'min_child_weight': 8, 'reg_alpha': 0.5249981297114491, 'reg_lambda': 1.7634149753239854}. Best is trial 0 with value: inf.
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+[I 2025-10-16 03:25:15,190] Trial 23 finished with value: inf and parameters: {'n_estimators': 77, 'max_depth': 3, 'learning_rate': 0.09268845008913462, 'subsample': 0.6530351014312797, 'colsample_bytree': 0.9028513529029998, 'min_child_weight': 8, 'reg_alpha': 0.6232845975707749, 'reg_lambda': 1.9626492554371024}. Best is trial 0 with value: inf.
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+[I 2025-10-16 03:25:15,331] Trial 24 finished with value: inf and parameters: {'n_estimators': 58, 'max_depth': 5, 'learning_rate': 0.07038674175802329, 'subsample': 0.7762986007380517, 'colsample_bytree': 0.6962992242201419, 'min_child_weight': 6, 'reg_alpha': 0.46312800983511304, 'reg_lambda': 1.3864288397258746}. Best is trial 0 with value: inf.
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+[I 2025-10-16 03:25:15,466] Trial 25 finished with value: inf and parameters: {'n_estimators': 106, 'max_depth': 4, 'learning_rate': 0.05059846188417519, 'subsample': 0.8400481650206651, 'colsample_bytree': 0.898123309380389, 'min_child_weight': 5, 'reg_alpha': 0.32578494273151826, 'reg_lambda': 1.7157394102261847}. Best is trial 0 with value: inf.
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+[I 2025-10-16 03:25:15,610] Trial 26 finished with value: inf and parameters: {'n_estimators': 148, 'max_depth': 5, 'learning_rate': 0.061727016213566896, 'subsample': 0.6449406127428254, 'colsample_bytree': 0.8225192570971583, 'min_child_weight': 7, 'reg_alpha': 0.7887412366392714, 'reg_lambda': 1.2079994760060555}. Best is trial 0 with value: inf.
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+[I 2025-10-16 03:25:15,802] Trial 27 finished with value: inf and parameters: {'n_estimators': 123, 'max_depth': 3, 'learning_rate': 0.03445210036317685, 'subsample': 0.6002899030334232, 'colsample_bytree': 0.7686583687636173, 'min_child_weight': 9, 'reg_alpha': 0.6868059323912864, 'reg_lambda': 1.5449927819615372}. Best is trial 0 with value: inf.
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+[I 2025-10-16 03:25:15,945] Trial 28 finished with value: inf and parameters: {'n_estimators': 84, 'max_depth': 4, 'learning_rate': 0.07559484680872898, 'subsample': 0.7236010497797116, 'colsample_bytree': 0.933247934985706, 'min_child_weight': 4, 'reg_alpha': 0.43500598415000025, 'reg_lambda': 1.8174497672280556}. Best is trial 0 with value: inf.
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+WARNING:non_major_league_hyperparameter_tuning:Error in fold: feature_names must be string, and may not contain [, ] or <
+[I 2025-10-16 03:25:16,093] Trial 29 finished with value: inf and parameters: {'n_estimators': 112, 'max_depth': 5, 'learning_rate': 0.08857824111934706, 'subsample': 0.7400861965354043, 'colsample_bytree': 0.8542541051937275, 'min_child_weight': 7, 'reg_alpha': 0.2673553359147097, 'reg_lambda': 0.9459893947221987}. Best is trial 0 with value: inf.
+INFO:non_major_league_hyperparameter_tuning:xgboost optimization complete
+INFO:non_major_league_hyperparameter_tuning:Best score: inf
+INFO:non_major_league_hyperparameter_tuning:Best params: {'n_estimators': 118, 'max_depth': 5, 'learning_rate': 0.054079046641072444, 'subsample': 0.8475350485811274, 'colsample_bytree': 0.6881170951580878, 'min_child_weight': 7, 'reg_alpha': 0.3910627586703235, 'reg_lambda': 0.7795595893655498}
+INFO:non_major_league_hyperparameter_tuning:Optimizing lightgbm (priority: 2)
+INFO:non_major_league_hyperparameter_tuning:Optimizing hyperparameters for lightgbm
+[I 2025-10-16 03:25:16,106] A new study created in memory with name: no-name-66f3bef2-14ef-4018-99ba-e7693956b5fa
+[I 2025-10-16 03:28:15,065] Trial 0 finished with value: 0.010186696544409098 and parameters: {'n_estimators': 124, 'max_depth': 5, 'learning_rate': 0.086442405845837, 'num_leaves': 55, 'feature_fraction': 0.8112270001152619, 'bagging_fraction': 0.6555324993474607, 'bagging_freq': 8, 'lambda_l1': 0.6690486722488288, 'lambda_l2': 1.7373975344592856, 'min_data_in_leaf': 23}. Best is trial 0 with value: 0.010186696544409098.
+[I 2025-10-16 03:32:46,394] Trial 1 finished with value: 0.005071582859403817 and parameters: {'n_estimators': 162, 'max_depth': 6, 'learning_rate': 0.04975088432603065, 'num_leaves': 14, 'feature_fraction': 0.8060011827416564, 'bagging_fraction': 0.9693229480774669, 'bagging_freq': 4, 'lambda_l1': 0.4942976765853708, 'lambda_l2': 0.6561045522890201, 'min_data_in_leaf': 10}. Best is trial 1 with value: 0.005071582859403817.
+[I 2025-10-16 03:34:57,518] Trial 2 finished with value: 0.010253678525090236 and parameters: {'n_estimators': 77, 'max_depth': 4, 'learning_rate': 0.08981659574867135, 'num_leaves': 22, 'feature_fraction': 0.7872362903690544, 'bagging_fraction': 0.8395894386497513, 'bagging_freq': 5, 'lambda_l1': 0.8327269591572211, 'lambda_l2': 1.015270776909287, 'min_data_in_leaf': 29}. Best is trial 1 with value: 0.005071582859403817.
+[I 2025-10-16 03:36:48,463] Trial 3 finished with value: 0.22409075352926242 and parameters: {'n_estimators': 69, 'max_depth': 6, 'learning_rate': 0.01579798694359177, 'num_leaves': 61, 'feature_fraction': 0.9941139781953205, 'bagging_fraction': 0.6839059856481977, 'bagging_freq': 9, 'lambda_l1': 0.16277898929607926, 'lambda_l2': 1.2920117081136309, 'min_data_in_leaf': 46}. Best is trial 1 with value: 0.005071582859403817.
+[I 2025-10-16 03:40:06,172] Trial 4 finished with value: 0.04051700825131838 and parameters: {'n_estimators': 111, 'max_depth': 5, 'learning_rate': 0.02233749584419721, 'num_leaves': 50, 'feature_fraction': 0.6766205966189164, 'bagging_fraction': 0.9004953431803019, 'bagging_freq': 1, 'lambda_l1': 0.9390062158614993, 'lambda_l2': 0.046027113348016124, 'min_data_in_leaf': 9}. Best is trial 1 with value: 0.005071582859403817.
+[I 2025-10-16 03:42:21,536] Trial 5 finished with value: 0.008987067374962614 and parameters: {'n_estimators': 105, 'max_depth': 7, 'learning_rate': 0.09501761448434157, 'num_leaves': 32, 'feature_fraction': 0.9727978370650907, 'bagging_fraction': 0.6649979020561276, 'bagging_freq': 8, 'lambda_l1': 0.6499764388388307, 'lambda_l2': 0.1944881441296511, 'min_data_in_leaf': 44}. Best is trial 1 with value: 0.005071582859403817.
+[I 2025-10-16 03:46:51,825] Trial 6 finished with value: 0.004036282802029957 and parameters: {'n_estimators': 199, 'max_depth': 8, 'learning_rate': 0.03828639548086915, 'num_leaves': 63, 'feature_fraction': 0.9083683833700449, 'bagging_fraction': 0.9415650373191451, 'bagging_freq': 6, 'lambda_l1': 0.22865245770535858, 'lambda_l2': 1.66627827374884, 'min_data_in_leaf': 31}. Best is trial 6 with value: 0.004036282802029957.
+[I 2025-10-16 03:49:44,799] Trial 7 finished with value: 0.010546803950820707 and parameters: {'n_estimators': 105, 'max_depth': 7, 'learning_rate': 0.06451566229753611, 'num_leaves': 72, 'feature_fraction': 0.965611772565711, 'bagging_fraction': 0.8328553130147253, 'bagging_freq': 3, 'lambda_l1': 0.894783985597958, 'lambda_l2': 0.566305801573652, 'min_data_in_leaf': 16}. Best is trial 6 with value: 0.004036282802029957.
+[I 2025-10-16 03:54:30,185] Trial 8 finished with value: 0.009137401434240007 and parameters: {'n_estimators': 188, 'max_depth': 5, 'learning_rate': 0.03603354185668789, 'num_leaves': 88, 'feature_fraction': 0.8134100428552453, 'bagging_fraction': 0.8498512068600187, 'bagging_freq': 1, 'lambda_l1': 0.7284289721838615, 'lambda_l2': 1.1126344215114004, 'min_data_in_leaf': 43}. Best is trial 6 with value: 0.004036282802029957.
+[I 2025-10-16 03:56:11,424] Trial 9 finished with value: 0.008809094724028575 and parameters: {'n_estimators': 93, 'max_depth': 6, 'learning_rate': 0.08468613014403328, 'num_leaves': 33, 'feature_fraction': 0.9545539722235885, 'bagging_fraction': 0.8182683834876823, 'bagging_freq': 3, 'lambda_l1': 0.7599196366691595, 'lambda_l2': 0.46542693158770887, 'min_data_in_leaf': 20}. Best is trial 6 with value: 0.004036282802029957.
+INFO:non_major_league_hyperparameter_tuning:lightgbm optimization complete
+INFO:non_major_league_hyperparameter_tuning:Best score: 0.0040
+INFO:non_major_league_hyperparameter_tuning:Best params: {'n_estimators': 199, 'max_depth': 8, 'learning_rate': 0.03828639548086915, 'num_leaves': 63, 'feature_fraction': 0.9083683833700449, 'bagging_fraction': 0.9415650373191451, 'bagging_freq': 6, 'lambda_l1': 0.22865245770535858, 'lambda_l2': 1.66627827374884, 'min_data_in_leaf': 31}
+INFO:non_major_league_hyperparameter_tuning:Optimizing random_forest (priority: 3)
+INFO:non_major_league_hyperparameter_tuning:Optimizing hyperparameters for random_forest
+[I 2025-10-16 03:56:11,434] A new study created in memory with name: no-name-607cfbc8-db71-4501-9ff9-907fc9d07b25
+[I 2025-10-16 03:56:14,866] Trial 0 finished with value: 0.2412011055662474 and parameters: {'n_estimators': 191, 'max_depth': 13, 'min_samples_split': 11, 'min_samples_leaf': 4, 'max_features': 'log2'}. Best is trial 0 with value: 0.2412011055662474.
+[I 2025-10-16 03:56:17,107] Trial 1 finished with value: 0.08359685643714147 and parameters: {'n_estimators': 153, 'max_depth': 13, 'min_samples_split': 3, 'min_samples_leaf': 5, 'max_features': 'sqrt'}. Best is trial 1 with value: 0.08359685643714147.
+[I 2025-10-16 03:56:19,599] Trial 2 finished with value: 0.22719839076939155 and parameters: {'n_estimators': 174, 'max_depth': 8, 'min_samples_split': 9, 'min_samples_leaf': 3, 'max_features': 'log2'}. Best is trial 1 with value: 0.08359685643714147.
+[I 2025-10-16 03:56:21,165] Trial 3 finished with value: 0.06112731156946396 and parameters: {'n_estimators': 113, 'max_depth': 13, 'min_samples_split': 7, 'min_samples_leaf': 3, 'max_features': 'sqrt'}. Best is trial 3 with value: 0.06112731156946396.
+[I 2025-10-16 03:56:23,291] Trial 4 finished with value: 0.11630376660393714 and parameters: {'n_estimators': 148, 'max_depth': 5, 'min_samples_split': 18, 'min_samples_leaf': 6, 'max_features': 'sqrt'}. Best is trial 3 with value: 0.06112731156946396.
+[I 2025-10-16 03:56:24,077] Trial 5 finished with value: 0.30328345982856697 and parameters: {'n_estimators': 60, 'max_depth': 7, 'min_samples_split': 6, 'min_samples_leaf': 6, 'max_features': 'log2'}. Best is trial 3 with value: 0.06112731156946396.
+[I 2025-10-16 03:56:28,640] Trial 6 finished with value: 2.2204460492503136e-16 and parameters: {'n_estimators': 120, 'max_depth': 7, 'min_samples_split': 19, 'min_samples_leaf': 9, 'max_features': None}. Best is trial 6 with value: 2.2204460492503136e-16.
+[I 2025-10-16 03:56:30,567] Trial 7 finished with value: 0.34393354126081604 and parameters: {'n_estimators': 127, 'max_depth': 9, 'min_samples_split': 3, 'min_samples_leaf': 10, 'max_features': 'log2'}. Best is trial 6 with value: 2.2204460492503136e-16.
+[I 2025-10-16 03:56:35,154] Trial 8 finished with value: 2.2204460492503136e-16 and parameters: {'n_estimators': 121, 'max_depth': 3, 'min_samples_split': 16, 'min_samples_leaf': 2, 'max_features': None}. Best is trial 6 with value: 2.2204460492503136e-16.
+[I 2025-10-16 03:56:36,477] Trial 9 finished with value: 0.33292194550854926 and parameters: {'n_estimators': 106, 'max_depth': 13, 'min_samples_split': 12, 'min_samples_leaf': 9, 'max_features': 'log2'}. Best is trial 6 with value: 2.2204460492503136e-16.
+[I 2025-10-16 03:56:39,013] Trial 10 finished with value: 2.2204460492503136e-16 and parameters: {'n_estimators': 74, 'max_depth': 6, 'min_samples_split': 20, 'min_samples_leaf': 8, 'max_features': None}. Best is trial 6 with value: 2.2204460492503136e-16.
+[I 2025-10-16 03:56:41,942] Trial 11 finished with value: 2.2204460492503136e-16 and parameters: {'n_estimators': 87, 'max_depth': 3, 'min_samples_split': 16, 'min_samples_leaf': 1, 'max_features': None}. Best is trial 6 with value: 2.2204460492503136e-16.
+[I 2025-10-16 03:56:45,550] Trial 12 finished with value: 2.2204460492503136e-16 and parameters: {'n_estimators': 137, 'max_depth': 3, 'min_samples_split': 15, 'min_samples_leaf': 8, 'max_features': None}. Best is trial 6 with value: 2.2204460492503136e-16.
+[I 2025-10-16 03:56:48,441] Trial 13 finished with value: 2.2204460492503136e-16 and parameters: {'n_estimators': 97, 'max_depth': 10, 'min_samples_split': 20, 'min_samples_leaf': 1, 'max_features': None}. Best is trial 6 with value: 2.2204460492503136e-16.
+[I 2025-10-16 03:56:51,776] Trial 14 finished with value: 2.2204460492503136e-16 and parameters: {'n_estimators': 120, 'max_depth': 5, 'min_samples_split': 15, 'min_samples_leaf': 7, 'max_features': None}. Best is trial 6 with value: 2.2204460492503136e-16.
+[I 2025-10-16 03:56:56,277] Trial 15 finished with value: 2.2204460492503136e-16 and parameters: {'n_estimators': 162, 'max_depth': 11, 'min_samples_split': 17, 'min_samples_leaf': 10, 'max_features': None}. Best is trial 6 with value: 2.2204460492503136e-16.
+[I 2025-10-16 03:56:59,738] Trial 16 finished with value: 2.2204460492503136e-16 and parameters: {'n_estimators': 131, 'max_depth': 4, 'min_samples_split': 13, 'min_samples_leaf': 2, 'max_features': None}. Best is trial 6 with value: 2.2204460492503136e-16.
+[I 2025-10-16 03:57:02,473] Trial 17 finished with value: 2.2204460492503136e-16 and parameters: {'n_estimators': 94, 'max_depth': 7, 'min_samples_split': 18, 'min_samples_leaf': 4, 'max_features': None}. Best is trial 6 with value: 2.2204460492503136e-16.
+[I 2025-10-16 03:57:04,183] Trial 18 finished with value: 2.2204460492503136e-16 and parameters: {'n_estimators': 66, 'max_depth': 15, 'min_samples_split': 14, 'min_samples_leaf': 7, 'max_features': None}. Best is trial 6 with value: 2.2204460492503136e-16.
+[I 2025-10-16 03:57:06,661] Trial 19 finished with value: 2.2204460492503136e-16 and parameters: {'n_estimators': 85, 'max_depth': 5, 'min_samples_split': 19, 'min_samples_leaf': 5, 'max_features': None}. Best is trial 6 with value: 2.2204460492503136e-16.
+[I 2025-10-16 03:57:07,338] Trial 20 finished with value: 0.09366804610402395 and parameters: {'n_estimators': 51, 'max_depth': 8, 'min_samples_split': 17, 'min_samples_leaf': 2, 'max_features': 'sqrt'}. Best is trial 6 with value: 2.2204460492503136e-16.
+[I 2025-10-16 03:57:09,494] Trial 21 finished with value: 2.2204460492503136e-16 and parameters: {'n_estimators': 73, 'max_depth': 6, 'min_samples_split': 20, 'min_samples_leaf': 8, 'max_features': None}. Best is trial 6 with value: 2.2204460492503136e-16.
+[I 2025-10-16 03:57:12,256] Trial 22 finished with value: 2.2204460492503136e-16 and parameters: {'n_estimators': 110, 'max_depth': 6, 'min_samples_split': 20, 'min_samples_leaf': 9, 'max_features': None}. Best is trial 6 with value: 2.2204460492503136e-16.
+[I 2025-10-16 03:57:13,921] Trial 23 finished with value: 2.2204460492503136e-16 and parameters: {'n_estimators': 77, 'max_depth': 4, 'min_samples_split': 18, 'min_samples_leaf': 8, 'max_features': None}. Best is trial 6 with value: 2.2204460492503136e-16.
+[I 2025-10-16 03:57:16,765] Trial 24 finished with value: 2.2204460492503136e-16 and parameters: {'n_estimators': 147, 'max_depth': 7, 'min_samples_split': 16, 'min_samples_leaf': 9, 'max_features': None}. Best is trial 6 with value: 2.2204460492503136e-16.
+[I 2025-10-16 03:57:19,204] Trial 25 finished with value: 2.2204460492503136e-16 and parameters: {'n_estimators': 100, 'max_depth': 4, 'min_samples_split': 19, 'min_samples_leaf': 7, 'max_features': None}. Best is trial 6 with value: 2.2204460492503136e-16.
+[I 2025-10-16 03:57:21,627] Trial 26 finished with value: 2.2204460492503136e-16 and parameters: {'n_estimators': 118, 'max_depth': 6, 'min_samples_split': 11, 'min_samples_leaf': 10, 'max_features': None}. Best is trial 6 with value: 2.2204460492503136e-16.
+[I 2025-10-16 03:57:24,250] Trial 27 finished with value: 2.2204460492503136e-16 and parameters: {'n_estimators': 139, 'max_depth': 9, 'min_samples_split': 16, 'min_samples_leaf': 9, 'max_features': None}. Best is trial 6 with value: 2.2204460492503136e-16.
+[I 2025-10-16 03:57:25,224] Trial 28 finished with value: 0.2337180953154855 and parameters: {'n_estimators': 166, 'max_depth': 3, 'min_samples_split': 14, 'min_samples_leaf': 8, 'max_features': 'sqrt'}. Best is trial 6 with value: 2.2204460492503136e-16.
+[I 2025-10-16 03:57:29,124] Trial 29 finished with value: 2.2204460492503136e-16 and parameters: {'n_estimators': 200, 'max_depth': 8, 'min_samples_split': 19, 'min_samples_leaf': 4, 'max_features': None}. Best is trial 6 with value: 2.2204460492503136e-16.
+INFO:non_major_league_hyperparameter_tuning:random_forest optimization complete
+INFO:non_major_league_hyperparameter_tuning:Best score: 0.0000
+INFO:non_major_league_hyperparameter_tuning:Best params: {'n_estimators': 120, 'max_depth': 7, 'min_samples_split': 19, 'min_samples_leaf': 9, 'max_features': None}
+INFO:non_major_league_hyperparameter_tuning:Optimizing logistic_regression (priority: 4)
+INFO:non_major_league_hyperparameter_tuning:Optimizing hyperparameters for logistic_regression
+[I 2025-10-16 03:57:29,128] A new study created in memory with name: no-name-05369531-9a19-4d28-9fbb-5dcf40cd3340
+[I 2025-10-16 03:57:29,189] Trial 0 finished with value: 0.0026011203820135516 and parameters: {'C': 9.680349272679015, 'max_iter': 263, 'solver': 'lbfgs'}. Best is trial 0 with value: 0.0026011203820135516.
+[I 2025-10-16 03:57:29,247] Trial 1 finished with value: 0.002617718041330155 and parameters: {'C': 9.553677820314634, 'max_iter': 930, 'solver': 'lbfgs'}. Best is trial 0 with value: 0.0026011203820135516.
+[I 2025-10-16 03:57:29,410] Trial 2 finished with value: 0.06018654394344466 and parameters: {'C': 1.2344223782974952, 'max_iter': 210, 'solver': 'liblinear'}. Best is trial 0 with value: 0.0026011203820135516.
+[I 2025-10-16 03:57:29,585] Trial 3 finished with value: 0.03571414986766977 and parameters: {'C': 4.23546963030322, 'max_iter': 981, 'solver': 'liblinear'}. Best is trial 0 with value: 0.0026011203820135516.
+[I 2025-10-16 03:57:29,765] Trial 4 finished with value: 0.026710382203660718 and parameters: {'C': 8.795535243166297, 'max_iter': 382, 'solver': 'liblinear'}. Best is trial 0 with value: 0.0026011203820135516.
+[I 2025-10-16 03:57:29,966] Trial 5 finished with value: 0.035449171165216266 and parameters: {'C': 4.3143345120153835, 'max_iter': 662, 'solver': 'liblinear'}. Best is trial 0 with value: 0.0026011203820135516.
+[I 2025-10-16 03:57:30,081] Trial 6 finished with value: 0.014271576228700908 and parameters: {'C': 0.5198867528174979, 'max_iter': 259, 'solver': 'lbfgs'}. Best is trial 0 with value: 0.0026011203820135516.
+[I 2025-10-16 03:57:30,170] Trial 7 finished with value: 0.003088261321917941 and parameters: {'C': 4.8472500314709865, 'max_iter': 551, 'solver': 'lbfgs'}. Best is trial 0 with value: 0.0026011203820135516.
+[I 2025-10-16 03:57:30,390] Trial 8 finished with value: 0.04261655957094662 and parameters: {'C': 2.7619611138786335, 'max_iter': 197, 'solver': 'liblinear'}. Best is trial 0 with value: 0.0026011203820135516.
+[I 2025-10-16 03:57:30,608] Trial 9 finished with value: 0.033711519439378335 and parameters: {'C': 4.877844364491265, 'max_iter': 940, 'solver': 'liblinear'}. Best is trial 0 with value: 0.0026011203820135516.
+[I 2025-10-16 03:57:30,701] Trial 10 finished with value: 0.0030400957110422503 and parameters: {'C': 7.170105625058854, 'max_iter': 395, 'solver': 'lbfgs'}. Best is trial 0 with value: 0.0026011203820135516.
+[I 2025-10-16 03:57:30,794] Trial 11 finished with value: 0.002561432092245496 and parameters: {'C': 9.994897663999, 'max_iter': 789, 'solver': 'lbfgs'}. Best is trial 11 with value: 0.002561432092245496.
+[I 2025-10-16 03:57:30,892] Trial 12 finished with value: 0.002948395165895167 and parameters: {'C': 7.620855800538487, 'max_iter': 722, 'solver': 'lbfgs'}. Best is trial 11 with value: 0.002561432092245496.
+[I 2025-10-16 03:57:30,986] Trial 13 finished with value: 0.0030730049095353796 and parameters: {'C': 7.018824234968011, 'max_iter': 726, 'solver': 'lbfgs'}. Best is trial 11 with value: 0.002561432092245496.
+[I 2025-10-16 03:57:31,082] Trial 14 finished with value: 0.0025695350349772537 and parameters: {'C': 9.929301712203467, 'max_iter': 417, 'solver': 'lbfgs'}. Best is trial 11 with value: 0.002561432092245496.
+[I 2025-10-16 03:57:31,195] Trial 15 finished with value: 0.002847136781195886 and parameters: {'C': 8.174437989359678, 'max_iter': 528, 'solver': 'lbfgs'}. Best is trial 11 with value: 0.002561432092245496.
+[I 2025-10-16 03:57:31,311] Trial 16 finished with value: 0.0029208179982521273 and parameters: {'C': 6.155358364586553, 'max_iter': 811, 'solver': 'lbfgs'}. Best is trial 11 with value: 0.002561432092245496.
+[I 2025-10-16 03:57:31,406] Trial 17 finished with value: 0.0025785637248241767 and parameters: {'C': 9.857055320846873, 'max_iter': 531, 'solver': 'lbfgs'}. Best is trial 11 with value: 0.002561432092245496.
+[I 2025-10-16 03:57:31,512] Trial 18 finished with value: 0.002822233766272141 and parameters: {'C': 6.404880243701136, 'max_iter': 402, 'solver': 'lbfgs'}. Best is trial 11 with value: 0.002561432092245496.
+[I 2025-10-16 03:57:31,617] Trial 19 finished with value: 0.002798815323487899 and parameters: {'C': 8.632632779907246, 'max_iter': 866, 'solver': 'lbfgs'}. Best is trial 11 with value: 0.002561432092245496.
+[I 2025-10-16 03:57:31,768] Trial 20 finished with value: 0.003995698645342898 and parameters: {'C': 2.896102444180133, 'max_iter': 652, 'solver': 'lbfgs'}. Best is trial 11 with value: 0.002561432092245496.
+[I 2025-10-16 03:57:31,876] Trial 21 finished with value: 0.0025846396496224523 and parameters: {'C': 9.808929813708568, 'max_iter': 524, 'solver': 'lbfgs'}. Best is trial 11 with value: 0.002561432092245496.
+[I 2025-10-16 03:57:31,973] Trial 22 finished with value: 0.0027456103851904966 and parameters: {'C': 8.978359714832797, 'max_iter': 459, 'solver': 'lbfgs'}. Best is trial 11 with value: 0.002561432092245496.
+[I 2025-10-16 03:57:32,078] Trial 23 finished with value: 0.0028449022778702965 and parameters: {'C': 8.18738313795716, 'max_iter': 592, 'solver': 'lbfgs'}. Best is trial 11 with value: 0.002561432092245496.
+[I 2025-10-16 03:57:32,174] Trial 24 finished with value: 0.002562094195195015 and parameters: {'C': 9.989510564344783, 'max_iter': 320, 'solver': 'lbfgs'}. Best is trial 11 with value: 0.002561432092245496.
+[I 2025-10-16 03:57:32,292] Trial 25 finished with value: 0.0027032818087991545 and parameters: {'C': 9.270729179389837, 'max_iter': 131, 'solver': 'lbfgs'}. Best is trial 11 with value: 0.002561432092245496.
+[I 2025-10-16 03:57:32,459] Trial 26 finished with value: 0.002862776871053042 and parameters: {'C': 8.084751188329584, 'max_iter': 314, 'solver': 'lbfgs'}. Best is trial 11 with value: 0.002561432092245496.
+[I 2025-10-16 03:57:32,596] Trial 27 finished with value: 0.002562537488385764 and parameters: {'C': 9.98590649067215, 'max_iter': 318, 'solver': 'lbfgs'}. Best is trial 11 with value: 0.002561432092245496.
+[I 2025-10-16 03:57:32,703] Trial 28 finished with value: 0.0028367550874651144 and parameters: {'C': 6.290742616237065, 'max_iter': 121, 'solver': 'lbfgs'}. Best is trial 11 with value: 0.002561432092245496.
+[I 2025-10-16 03:57:32,797] Trial 29 finished with value: 0.002728797499125591 and parameters: {'C': 9.092574036119444, 'max_iter': 285, 'solver': 'lbfgs'}. Best is trial 11 with value: 0.002561432092245496.
+INFO:non_major_league_hyperparameter_tuning:logistic_regression optimization complete
+INFO:non_major_league_hyperparameter_tuning:Best score: 0.0026
+INFO:non_major_league_hyperparameter_tuning:Best params: {'C': 9.994897663999, 'max_iter': 789, 'solver': 'lbfgs'}
+INFO:non_major_league_hyperparameter_tuning:Validating optimized hyperparameters
+INFO:non_major_league_hyperparameter_tuning:Hyperparameter validation: FAILED
+INFO:non_major_league_hyperparameter_tuning:Comparing optimized models
+INFO:non_major_league_hyperparameter_tuning:Best model: random_forest
+INFO:non_major_league_hyperparameter_tuning:Best score: 0.0000
+INFO:non_major_league_hyperparameter_tuning:Evaluating optimized models
+INFO:non_major_league_hyperparameter_tuning:Creating optimized models
+INFO:non_major_league_hyperparameter_tuning:Created optimized xgboost model
+INFO:non_major_league_hyperparameter_tuning:Created optimized lightgbm model
+INFO:non_major_league_hyperparameter_tuning:Created optimized random_forest model
+INFO:non_major_league_hyperparameter_tuning:Created optimized logistic_regression model
+ERROR:non_major_league_hyperparameter_tuning:Error evaluating xgboost: feature_names must be string, and may not contain [, ] or <
+INFO:non_major_league_hyperparameter_tuning:Calculating hyperparameter importance
+ERROR:non_major_league_hyperparameter_tuning:Error calculating importance for xgboost: tuple index out of range
+INFO:phase2_integration:Step 5: Ensemble Modeling
+INFO:phase2_integration:Creating ensemble model
+INFO:non_major_league_ensemble:Creating base models with conservative parameters
+INFO:non_major_league_ensemble:Created 4 base models
+INFO:non_major_league_ensemble:Training base models with conservative validation
+INFO:non_major_league_ensemble:Training xgboost...
+ERROR:non_major_league_ensemble:Error training xgboost: feature_names must be string, and may not contain [, ] or <
+INFO:non_major_league_ensemble:Training lightgbm...
+INFO:non_major_league_ensemble:lightgbm - Val Acc: 1.0000, Val LogLoss: 0.0078
+INFO:non_major_league_ensemble:Training random_forest...
+INFO:non_major_league_ensemble:random_forest - Val Acc: 1.0000, Val LogLoss: 0.0552
+INFO:non_major_league_ensemble:Training logistic_regression...
+INFO:non_major_league_ensemble:logistic_regression - Val Acc: 1.0000, Val LogLoss: 0.0283
+INFO:non_major_league_ensemble:Creating conservative ensemble
+INFO:non_major_league_ensemble:Created ensemble with 3 models
+INFO:non_major_league_ensemble:Model weights: {'lightgbm': 0.5878357904888996, 'random_forest': 0.24593839357863465, 'logistic_regression': 0.1662258159324659}
+INFO:non_major_league_ensemble:Training ensemble model
+INFO:non_major_league_ensemble:Ensemble - Val Acc: 1.0000, Val LogLoss: 0.0222
+INFO:non_major_league_ensemble:Calibrating model probabilities
+ERROR:non_major_league_ensemble:Error calibrating xgboost: feature_names must be string, and may not contain [, ] or <
+INFO:non_major_league_ensemble:Calibrated lightgbm
+INFO:non_major_league_ensemble:Calibrated random_forest
+INFO:non_major_league_ensemble:Calibrated logistic_regression
+ERROR:non_major_league_ensemble:Error calibrating ensemble: The 'estimator' parameter of CalibratedClassifierCV must be an object implementing 'fit' and 'predict_proba', an object implementing 'fit' and 'decision_function' or None. Got <non_major_league_ensemble.NonMajorLeagueEnsemble.calibrate_models.<locals>.EnsembleWrapper object at 0x7f00399dde80> instead.
+INFO:non_major_league_ensemble:Cross-validating ensemble
+INFO:non_major_league_ensemble:Cross-validation fold 1/3
+INFO:non_major_league_ensemble:Training base models with conservative validation
+INFO:non_major_league_ensemble:Training xgboost...
+ERROR:non_major_league_ensemble:Error training xgboost: feature_names must be string, and may not contain [, ] or <
+INFO:non_major_league_ensemble:Training lightgbm...
+INFO:non_major_league_ensemble:lightgbm - Val Acc: 1.0000, Val LogLoss: 0.0200
+INFO:non_major_league_ensemble:Training random_forest...
+INFO:non_major_league_ensemble:random_forest - Val Acc: 1.0000, Val LogLoss: 0.1957
+INFO:non_major_league_ensemble:Training logistic_regression...
+INFO:non_major_league_ensemble:logistic_regression - Val Acc: 1.0000, Val LogLoss: 0.0929
+INFO:non_major_league_ensemble:Creating conservative ensemble
+INFO:non_major_league_ensemble:Created ensemble with 3 models
+INFO:non_major_league_ensemble:Model weights: {'lightgbm': 0.6003368421274092, 'random_forest': 0.23445269787230455, 'logistic_regression': 0.16521046000028625}
+INFO:non_major_league_ensemble:Fold 1 - Acc: 1.0000, LogLoss: 0.0694
+INFO:non_major_league_ensemble:Cross-validation fold 2/3
+INFO:non_major_league_ensemble:Training base models with conservative validation
+INFO:non_major_league_ensemble:Training xgboost...
+ERROR:non_major_league_ensemble:Error training xgboost: feature_names must be string, and may not contain [, ] or <
+INFO:non_major_league_ensemble:Training lightgbm...
+INFO:non_major_league_ensemble:lightgbm - Val Acc: 1.0000, Val LogLoss: 0.0130
+INFO:non_major_league_ensemble:Training random_forest...
+INFO:non_major_league_ensemble:random_forest - Val Acc: 1.0000, Val LogLoss: 0.0954
+INFO:non_major_league_ensemble:Training logistic_regression...
+INFO:non_major_league_ensemble:logistic_regression - Val Acc: 1.0000, Val LogLoss: 0.0630
+INFO:non_major_league_ensemble:Creating conservative ensemble
+INFO:non_major_league_ensemble:Created ensemble with 3 models
+INFO:non_major_league_ensemble:Model weights: {'lightgbm': 0.5919494529142416, 'random_forest': 0.24317646024654685, 'logistic_regression': 0.16487408683921162}
+INFO:non_major_league_ensemble:Fold 2 - Acc: 1.0000, LogLoss: 0.0402
+INFO:non_major_league_ensemble:Cross-validation fold 3/3
+INFO:non_major_league_ensemble:Training base models with conservative validation
+INFO:non_major_league_ensemble:Training xgboost...
+ERROR:non_major_league_ensemble:Error training xgboost: feature_names must be string, and may not contain [, ] or <
+INFO:non_major_league_ensemble:Training lightgbm...
+INFO:non_major_league_ensemble:lightgbm - Val Acc: 1.0000, Val LogLoss: 0.0093
+INFO:non_major_league_ensemble:Training random_forest...
+INFO:non_major_league_ensemble:random_forest - Val Acc: 1.0000, Val LogLoss: 0.0649
+INFO:non_major_league_ensemble:Training logistic_regression...
+INFO:non_major_league_ensemble:logistic_regression - Val Acc: 1.0000, Val LogLoss: 0.0304
+INFO:non_major_league_ensemble:Creating conservative ensemble
+INFO:non_major_league_ensemble:Created ensemble with 3 models
+INFO:non_major_league_ensemble:Model weights: {'lightgbm': 0.5884826075174739, 'random_forest': 0.24516571905563903, 'logistic_regression': 0.16635167342688711}
+INFO:non_major_league_ensemble:Fold 3 - Acc: 1.0000, LogLoss: 0.0259
+INFO:non_major_league_ensemble:CV Summary - Mean Acc: 1.0000 ± 0.0000
+INFO:non_major_league_ensemble:CV Summary - Mean LogLoss: 0.0452 ± 0.0181
+INFO:non_major_league_ensemble:Evaluating ensemble performance
+INFO:non_major_league_ensemble:Ensemble Evaluation - Acc: 1.0000, LogLoss: 0.0278
+INFO:non_major_league_ensemble:Mean Confidence: 0.9727
+INFO:non_major_league_ensemble:Making predictions with confidence filtering
+INFO:non_major_league_ensemble:High confidence predictions: 154/154
+INFO:non_major_league_ensemble:Calculating ensemble feature importance
+INFO:non_major_league_ensemble:Estimating prediction uncertainty
+INFO:non_major_league_ensemble:Uncertainty estimation complete
+INFO:phase2_integration:Step 6: Model Validation
+INFO:phase2_integration:Validating models
+INFO:non_major_league_model_validation:Performing comprehensive model validation
+INFO:non_major_league_model_validation:Performing time series cross-validation
+INFO:non_major_league_model_validation:Time series CV fold 1/3
+INFO:non_major_league_model_validation:Fold 1 - Val Acc: 1.0000, Overfitting: 0.0000
+INFO:non_major_league_model_validation:Time series CV fold 2/3
+INFO:non_major_league_model_validation:Fold 2 - Val Acc: 1.0000, Overfitting: 0.0000
+INFO:non_major_league_model_validation:Time series CV fold 3/3
+INFO:non_major_league_model_validation:Fold 3 - Val Acc: 1.0000, Overfitting: 0.0000
+INFO:non_major_league_model_validation:Time series CV complete: 3 successful folds
+INFO:non_major_league_model_validation:Performing walk-forward validation
+INFO:non_major_league_model_validation:Walk-forward CV fold 1/3
+INFO:non_major_league_model_validation:Fold 1 - Val Acc: 1.0000
+INFO:non_major_league_model_validation:Walk-forward CV fold 2/3
+INFO:non_major_league_model_validation:Fold 2 - Val Acc: 1.0000
+INFO:non_major_league_model_validation:Walk-forward CV fold 3/3
+INFO:non_major_league_model_validation:Fold 3 - Val Acc: 1.0000
+INFO:non_major_league_model_validation:Walk-forward CV complete: 3 successful folds
+INFO:non_major_league_model_validation:Performing bootstrap validation
+INFO:non_major_league_model_validation:Bootstrap 1/50
+INFO:non_major_league_model_validation:Bootstrap 2/50
+INFO:non_major_league_model_validation:Bootstrap 3/50
+INFO:non_major_league_model_validation:Bootstrap 4/50
+INFO:non_major_league_model_validation:Bootstrap 5/50
+INFO:non_major_league_model_validation:Bootstrap 6/50
+INFO:non_major_league_model_validation:Bootstrap 7/50
+INFO:non_major_league_model_validation:Bootstrap 8/50
+INFO:non_major_league_model_validation:Bootstrap 9/50
+INFO:non_major_league_model_validation:Bootstrap 10/50
+INFO:non_major_league_model_validation:Bootstrap 11/50
+INFO:non_major_league_model_validation:Bootstrap 12/50
+INFO:non_major_league_model_validation:Bootstrap 13/50
+INFO:non_major_league_model_validation:Bootstrap 14/50
+INFO:non_major_league_model_validation:Bootstrap 15/50
+INFO:non_major_league_model_validation:Bootstrap 16/50
+INFO:non_major_league_model_validation:Bootstrap 17/50
+INFO:non_major_league_model_validation:Bootstrap 18/50
+INFO:non_major_league_model_validation:Bootstrap 19/50
+INFO:non_major_league_model_validation:Bootstrap 20/50
+INFO:non_major_league_model_validation:Bootstrap 21/50
+INFO:non_major_league_model_validation:Bootstrap 22/50
+INFO:non_major_league_model_validation:Bootstrap 23/50
+INFO:non_major_league_model_validation:Bootstrap 24/50
+INFO:non_major_league_model_validation:Bootstrap 25/50
+INFO:non_major_league_model_validation:Bootstrap 26/50
+INFO:non_major_league_model_validation:Bootstrap 27/50
+INFO:non_major_league_model_validation:Bootstrap 28/50
+INFO:non_major_league_model_validation:Bootstrap 29/50
+INFO:non_major_league_model_validation:Bootstrap 30/50
+INFO:non_major_league_model_validation:Bootstrap 31/50
+INFO:non_major_league_model_validation:Bootstrap 32/50
+INFO:non_major_league_model_validation:Bootstrap 33/50
+INFO:non_major_league_model_validation:Bootstrap 34/50
+INFO:non_major_league_model_validation:Bootstrap 35/50
+INFO:non_major_league_model_validation:Bootstrap 36/50
+INFO:non_major_league_model_validation:Bootstrap 37/50
+INFO:non_major_league_model_validation:Bootstrap 38/50
+INFO:non_major_league_model_validation:Bootstrap 39/50
+INFO:non_major_league_model_validation:Bootstrap 40/50
+INFO:non_major_league_model_validation:Bootstrap 41/50
+INFO:non_major_league_model_validation:Bootstrap 42/50
+INFO:non_major_league_model_validation:Bootstrap 43/50
+INFO:non_major_league_model_validation:Bootstrap 44/50
+INFO:non_major_league_model_validation:Bootstrap 45/50
+INFO:non_major_league_model_validation:Bootstrap 46/50
+INFO:non_major_league_model_validation:Bootstrap 47/50
+INFO:non_major_league_model_validation:Bootstrap 48/50
+INFO:non_major_league_model_validation:Bootstrap 49/50
+INFO:non_major_league_model_validation:Bootstrap 50/50
+INFO:non_major_league_model_validation:Bootstrap validation complete: 50 successful bootstraps
+INFO:non_major_league_model_validation:Validating model calibration
+INFO:non_major_league_model_validation:Model calibration validation complete
+INFO:non_major_league_model_validation:Detecting overfitting
+INFO:non_major_league_model_validation:Overfitting detection: NOT DETECTED
+INFO:non_major_league_model_validation:Analyzing model stability
+INFO:non_major_league_model_validation:Stability analysis: STABLE
+INFO:non_major_league_model_validation:Comprehensive validation complete
+INFO:phase2_integration:Step 7: Final Integration
+INFO:phase2_integration:Integrating Phase 2 results
+INFO:phase2_integration:Step 8: Saving Results
+INFO:phase2_integration:Saving results for E1
+INFO:non_major_league_model_architecture:Saving models to ./models/E1_model_architecture.pkl
+INFO:non_major_league_model_architecture:Models saved successfully
+INFO:non_major_league_ensemble:Saving ensemble to ./models/E1_ensemble.pkl
+INFO:non_major_league_ensemble:Ensemble saved successfully
+INFO:non_major_league_hyperparameter_tuning:Saving hyperparameter tuning results to ./models/E1_hyperparameter_tuning.pkl
+INFO:non_major_league_hyperparameter_tuning:Hyperparameter tuning results saved successfully
+INFO:non_major_league_model_validation:Saving validation results to ./models/E1_validation_results.pkl
+INFO:non_major_league_model_validation:Validation results saved successfully
+INFO:phase2_integration:Phase 2 results saved successfully
+INFO:phase2_integration:Phase 2 pipeline completed successfully
+INFO:master_pipeline:Phase 2 completed successfully in 3026.78 seconds
+INFO:__main__:✅ Phase 2 completed
+INFO:__main__:
+📈 STEP 5: Phase 3 - Backtesting
+INFO:master_pipeline:================================================================================
+INFO:master_pipeline:STARTING PHASE 3: BACKTESTING & STRATEGY VALIDATION
+INFO:master_pipeline:================================================================================
+INFO:phase3_integration:Output directory: ./results
+ERROR:master_pipeline:Phase 3 failed: Phase3Integration.run_phase3_pipeline() got an unexpected keyword argument 'feature_data_path'
+ERROR:__main__:❌ Workflow failed: Phase3Integration.run_phase3_pipeline() got an unexpected keyword argument 'feature_data_path'
+ERROR:__main__:Traceback (most recent call last):
+  File "/home/kali/Non-major-leagues/run_complete_workflow.py", line 124, in run_complete_workflow
+    phase3_result = self.master_pipeline.run_phase3()
+  File "/home/kali/Non-major-leagues/master_pipeline.py", line 400, in run_phase3
+    result = phase3.run_phase3_pipeline(
+        feature_data_path=str(Path(self.config['pipeline']['output_dir']) / 'phase1_output' / 'processed_features.parquet'),
+    ...<2 lines>...
+        config=self.config
+    )
+TypeError: Phase3Integration.run_phase3_pipeline() got an unexpected keyword argument 'feature_data_path'
+
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[200]	valid_0's multi_logloss: 0.00128628
+Training until validation scores don't improve for 30 rounds
+Did not meet early stopping. Best iteration is:
+[150]	valid_0's multi_logloss: 0.00777941
+Training until validation scores don't improve for 30 rounds
+Did not meet early stopping. Best iteration is:
+[150]	valid_0's multi_logloss: 0.0200135
+Training until validation scores don't improve for 30 rounds
+Did not meet early stopping. Best iteration is:
+[150]	valid_0's multi_logloss: 0.0130397
+Training until validation scores don't improve for 30 rounds
+Did not meet early stopping. Best iteration is:
+[150]	valid_0's multi_logloss: 0.00930076
+Traceback (most recent call last):
+  File "/home/kali/Non-major-leagues/run_complete_workflow.py", line 484, in <module>
+    main()
+    ~~~~^^
+  File "/home/kali/Non-major-leagues/run_complete_workflow.py", line 469, in main
+    results = orchestrator.run_complete_workflow(
+        league=args.league,
+        crawler_file=args.crawler_file,
+        skip_training=args.skip_training
+    )
+  File "/home/kali/Non-major-leagues/run_complete_workflow.py", line 124, in run_complete_workflow
+    phase3_result = self.master_pipeline.run_phase3()
+  File "/home/kali/Non-major-leagues/master_pipeline.py", line 400, in run_phase3
+    result = phase3.run_phase3_pipeline(
+        feature_data_path=str(Path(self.config['pipeline']['output_dir']) / 'phase1_output' / 'processed_features.parquet'),
+    ...<2 lines>...
+        config=self.config
+    )
+TypeError: Phase3Integration.run_phase3_pipeline() got an unexpected keyword argument 'feature_data_path'

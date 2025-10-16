@@ -1,0 +1,127 @@
+INFO:master_pipeline:Master Pipeline initialized
+INFO:master_pipeline:Configuration loaded from config.yaml
+INFO:api_data_manager:Loaded configuration from config.yaml
+INFO:api_data_manager:Loaded 32 environment variables
+INFO:api_data_manager:Initialized data source: football_data
+INFO:api_data_manager:Initialized data source: odds_api
+INFO:api_data_manager:Initialized data source: api_football
+INFO:api_data_manager:Initialized data source: rapidapi_football
+INFO:api_data_manager:Initialized data source: sportsdata_io
+INFO:api_data_manager:Initialized data source: betfair_exchange
+INFO:api_data_manager:Initialized data source: openweathermap
+INFO:api_data_manager:Initialized data source: newsapi
+INFO:api_data_manager:Initialized data source: twitter_api
+INFO:api_data_manager:Initialized data source: pinnacle
+WARNING:api_data_manager:Skipping football_api_com - no valid API key found
+INFO:api_data_manager:Initialized data source: livescore
+WARNING:api_data_manager:Skipping football_api_net - no valid API key found
+WARNING:api_data_manager:Skipping fifa_data - no valid API key found
+WARNING:api_data_manager:Skipping smarkets - no valid API key found
+INFO:api_data_manager:Initialized APIDataManager with 11 data sources
+INFO:crawler_to_pipeline_bridge:Loaded configuration from config.yaml
+INFO:crawler_to_pipeline_bridge:Initialized Crawler-Pipeline Bridge
+INFO:__main__:✅ Complete Workflow Orchestrator initialized
+INFO:__main__:================================================================================
+INFO:__main__:COMPLETE WORKFLOW - ALL MARKETS PREDICTION
+INFO:__main__:================================================================================
+INFO:__main__:
+📥 STEP 1: Loading Crawler Data
+INFO:crawler_to_pipeline_bridge:Loaded 31 matches from crawler
+INFO:__main__:✅ Loaded 31 upcoming matches
+INFO:__main__:
+🌐 STEP 2: Fetching API Data
+INFO:__main__:  Fetching team statistics...
+WARNING:__main__:  ⚠️ Team stats fetch failed: 'HomeTeam'
+INFO:__main__:  Fetching odds (all markets)...
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+INFO:__main__:  ⚠️ Generating dummy odds for testing...
+WARNING:__main__:  ⚠️ Odds fetch failed: 'HomeTeam'
+INFO:__main__:  ✅ Using existing historical data: pipeline_output/phase1_output/E1_features.csv
+INFO:__main__:✅ API data fetched successfully
+INFO:__main__:
+📊 STEP 3: Phase 1 - Feature Engineering
+INFO:master_pipeline:================================================================================
+INFO:master_pipeline:STARTING PHASE 1: DATA COLLECTION & PREPROCESSING
+INFO:master_pipeline:================================================================================
+INFO:phase1_integration:Output directory: ./data
+INFO:phase1_integration:Starting Phase 1 pipeline for E1, seasons: 3
+INFO:phase1_integration:Step 1: Data Collection
+INFO:phase1_integration:Collecting data for E1, seasons: 3
+INFO:non_major_league_data_collector:Collecting historical data for E1, seasons: 3
+ERROR:phase1_integration:Phase 1 pipeline failed: 'int' object is not iterable
+ERROR:master_pipeline:Phase 1 failed: 'int' object is not iterable
+ERROR:__main__:❌ Workflow failed: 'int' object is not iterable
+ERROR:__main__:Traceback (most recent call last):
+  File "/home/kali/Non-major-leagues/run_complete_workflow.py", line 112, in run_complete_workflow
+    phase1_result = self.master_pipeline.run_phase1(league=league)
+  File "/home/kali/Non-major-leagues/master_pipeline.py", line 244, in run_phase1
+    result = phase1.run_phase1_pipeline(
+        league_code=league or self.config['phase1']['leagues'][0],
+    ...<2 lines>...
+        config=self.config
+    )
+  File "/home/kali/Non-major-leagues/phase1_integration.py", line 104, in run_phase1_pipeline
+    raw_data = self._collect_data(league_code, seasons, collect_live_odds)
+  File "/home/kali/Non-major-leagues/phase1_integration.py", line 143, in _collect_data
+    historical_data = self.data_collector.collect_historical_data(league_code, seasons)
+  File "/home/kali/Non-major-leagues/non_major_league_data_collector.py", line 209, in collect_historical_data
+    for season in seasons:
+                  ^^^^^^^
+TypeError: 'int' object is not iterable
+
+Traceback (most recent call last):
+  File "/home/kali/Non-major-leagues/run_complete_workflow.py", line 484, in <module>
+    main()
+    ~~~~^^
+  File "/home/kali/Non-major-leagues/run_complete_workflow.py", line 469, in main
+    results = orchestrator.run_complete_workflow(
+        league=args.league,
+        crawler_file=args.crawler_file,
+        skip_training=args.skip_training
+    )
+  File "/home/kali/Non-major-leagues/run_complete_workflow.py", line 112, in run_complete_workflow
+    phase1_result = self.master_pipeline.run_phase1(league=league)
+  File "/home/kali/Non-major-leagues/master_pipeline.py", line 244, in run_phase1
+    result = phase1.run_phase1_pipeline(
+        league_code=league or self.config['phase1']['leagues'][0],
+    ...<2 lines>...
+        config=self.config
+    )
+  File "/home/kali/Non-major-leagues/phase1_integration.py", line 104, in run_phase1_pipeline
+    raw_data = self._collect_data(league_code, seasons, collect_live_odds)
+  File "/home/kali/Non-major-leagues/phase1_integration.py", line 143, in _collect_data
+    historical_data = self.data_collector.collect_historical_data(league_code, seasons)
+  File "/home/kali/Non-major-leagues/non_major_league_data_collector.py", line 209, in collect_historical_data
+    for season in seasons:
+                  ^^^^^^^
+TypeError: 'int' object is not iterable

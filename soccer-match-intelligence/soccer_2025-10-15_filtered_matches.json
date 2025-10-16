@@ -1,0 +1,17 @@
+{
+  "sessionId": "soccer_2025-10-15T23-44-59-277Z",
+  "timestamp": "2025-10-15T23:45:48.453Z",
+  "totalMatches": 0,
+  "matches": [],
+  "filterCriteria": {
+    "timeRange": "3:00 AM to 5:00 AM",
+    "dateFilter": "Current date only",
+    "purpose": "ML Training Data"
+  },
+  "metadata": {
+    "extractionMethod": "enhanced_soccer_crawler",
+    "matchType": "filtered_matches",
+    "crawlerType": "soccer_matches",
+    "trainingData": true
+  }
+}

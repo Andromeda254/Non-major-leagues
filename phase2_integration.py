@@ -156,31 +156,89 @@ class Phase2Integration:
         
         try:
             data = pd.read_csv(data_file)
+            self.logger.info(f"Loaded {len(data)} rows with {len(data.columns)} columns")
             
-            # Check for target column
+            # Create target variable if not present
             if 'target' not in data.columns:
-                self.logger.error("Target column not found in data")
-                return pd.DataFrame()
+                if 'FTR' in data.columns:
+                    self.logger.info("Creating target from FTR column")
+                    from sklearn.preprocessing import LabelEncoder
+                    le = LabelEncoder()
+                    data['target'] = le.fit_transform(data['FTR'])
+                    self.label_encoder = le
+                    self.logger.info(f"Target classes: {le.classes_}")
+                else:
+                    self.logger.error("No target column (FTR or target) found in data")
+                    return pd.DataFrame()
             
             # Remove rows with missing target
             data = data.dropna(subset=['target'])
             
-            # Separate features and target
-            feature_columns = [col for col in data.columns if col != 'target']
-            X = data[feature_columns]
+            # Identify and filter out categorical/non-numeric columns
+            # Columns to exclude from features
+            exclude_cols = [
+                'target', 'FTR', 'HTR',  # Target and result columns
+                'Date', 'Time',  # Date/time columns
+                'HomeTeam', 'AwayTeam',  # Team names
+                'Referee',  # Referee name
+                'Div', 'league', 'season', 'data_source',  # Metadata
+                'season_phase'  # Temporal metadata
+            ]
+            
+            # Get all column names
+            all_columns = data.columns.tolist()
+            
+            # Select only numerical columns
+            numerical_data = data.select_dtypes(include=[np.number])
+            numerical_cols = numerical_data.columns.tolist()
+            
+            # Remove target from features if present
+            feature_columns = [col for col in numerical_cols if col not in ['target']]
+            
+            self.logger.info(f"Selected {len(feature_columns)} numerical features from {len(all_columns)} total columns")
+            self.logger.info(f"Excluded columns: {[col for col in exclude_cols if col in all_columns]}")
+            
+            # Handle any remaining NaN values in features
+            X = data[feature_columns].fillna(0)
             y = data['target']
             
-            self.logger.info(f"Loaded {len(data)} samples with {len(feature_columns)} features")
+            # Sanitize feature names for XGBoost compatibility
+            # XGBoost doesn't allow [, ], <, > in feature names
+            def sanitize_feature_name(name):
+                """Sanitize feature names to be XGBoost compatible"""
+                name = str(name)
+                name = name.replace('[', '_').replace(']', '_')
+                name = name.replace('<', 'lt').replace('>', 'gt')
+                name = name.replace(' ', '_').replace('(', '_').replace(')', '_')
+                return name
+            
+            # Apply sanitization
+            original_columns = X.columns.tolist()
+            sanitized_columns = [sanitize_feature_name(col) for col in original_columns]
+            X.columns = sanitized_columns
+            self.feature_columns = sanitized_columns
+            self.logger.info(f"Sanitized {len(original_columns)} feature names for XGBoost compatibility")
+            
+            # Check for infinite values
+            if np.isinf(X.values).any():
+                self.logger.warning("Found infinite values in features, replacing with 0")
+                X = X.replace([np.inf, -np.inf], 0)
+            
+            self.logger.info(f"Final dataset: {len(data)} samples with {len(feature_columns)} features")
+            self.logger.info(f"Target distribution: {y.value_counts().to_dict()}")
             
             # Store data for later use
             self.data = data
             self.X = X
             self.y = y
+            self.feature_columns = feature_columns
             
             return data
             
         except Exception as e:
             self.logger.error(f"Error loading data: {e}")
+            import traceback
+            traceback.print_exc()
             return pd.DataFrame()
     
     def _design_model_architecture(self, data: pd.DataFrame) -> dict:

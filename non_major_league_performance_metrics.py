@@ -523,9 +523,10 @@ class NonMajorLeaguePerformanceMetrics:
                 total_weight += metric_config['weight']
         
         # Risk metrics
-        for metric_name, metric_config in self.config['metrics']['risk'].items():
-            if metric_config['enabled'] and metric_name in metrics['risk']:
-                value = metrics['risk'][metric_name]
+        if 'risk' in metrics and 'risk' in self.config.get('metrics', {}):
+            for metric_name, metric_config in self.config['metrics']['risk'].items():
+                if metric_config['enabled'] and metric_name in metrics['risk']:
+                    value = metrics['risk'][metric_name]
                 
                 # Normalize value (lower is better for risk metrics)
                 if metric_name == 'volatility':
@@ -561,7 +562,7 @@ class NonMajorLeaguePerformanceMetrics:
             }
         
         # Volatility comparison
-        if 'volatility' in metrics['risk']:
+        if 'risk' in metrics and 'volatility' in metrics['risk']:
             volatility = metrics['risk']['volatility']
             benchmark_volatility = self.config['benchmarks']['benchmark_volatility']
             benchmark_comparison['volatility'] = {
@@ -728,7 +729,7 @@ class NonMajorLeaguePerformanceMetrics:
             report.append("")
         
         # Risk metrics
-        if 'risk' in metrics:
+        if 'risk' in metrics and metrics['risk']:
             report.append("RISK METRICS:")
             for metric, value in metrics['risk'].items():
                 if isinstance(value, float):
@@ -743,10 +744,18 @@ class NonMajorLeaguePerformanceMetrics:
             report.append("BENCHMARK COMPARISON:")
             for metric, comparison in metrics['benchmark_comparison'].items():
                 report.append(f"  {metric.replace('_', ' ').title()}:")
-                report.append(f"    Value: {comparison['value']:.4f}")
-                report.append(f"    Benchmark: {comparison['benchmark']:.4f}")
-                report.append(f"    Outperformance: {comparison['outperformance']:+.4f}")
-                report.append(f"    Outperformance %: {comparison['outperformance_pct']:+.2f}%")
+                if 'value' in comparison:
+                    report.append(f"    Value: {comparison['value']:.4f}")
+                if 'benchmark' in comparison:
+                    report.append(f"    Benchmark: {comparison['benchmark']:.4f}")
+                if 'outperformance' in comparison:
+                    report.append(f"    Outperformance: {comparison['outperformance']:+.4f}")
+                if 'outperformance_pct' in comparison:
+                    report.append(f"    Outperformance %: {comparison['outperformance_pct']:+.2f}%")
+                if 'difference' in comparison:
+                    report.append(f"    Difference: {comparison['difference']:+.4f}")
+                if 'difference_pct' in comparison:
+                    report.append(f"    Difference %: {comparison['difference_pct']:+.2f}%")
             report.append("")
         
         # Statistical tests

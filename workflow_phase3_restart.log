@@ -1,0 +1,126 @@
+INFO:master_pipeline:Master Pipeline initialized
+INFO:master_pipeline:Configuration loaded from config.yaml
+INFO:api_data_manager:Loaded configuration from config.yaml
+INFO:api_data_manager:Loaded 32 environment variables
+INFO:api_data_manager:Initialized data source: football_data
+INFO:api_data_manager:Initialized data source: odds_api
+INFO:api_data_manager:Initialized data source: api_football
+INFO:api_data_manager:Initialized data source: rapidapi_football
+INFO:api_data_manager:Initialized data source: sportsdata_io
+INFO:api_data_manager:Initialized data source: betfair_exchange
+INFO:api_data_manager:Initialized data source: openweathermap
+INFO:api_data_manager:Initialized data source: newsapi
+INFO:api_data_manager:Initialized data source: twitter_api
+INFO:api_data_manager:Initialized data source: pinnacle
+WARNING:api_data_manager:Skipping football_api_com - no valid API key found
+INFO:api_data_manager:Initialized data source: livescore
+WARNING:api_data_manager:Skipping football_api_net - no valid API key found
+WARNING:api_data_manager:Skipping fifa_data - no valid API key found
+WARNING:api_data_manager:Skipping smarkets - no valid API key found
+INFO:api_data_manager:Initialized APIDataManager with 11 data sources
+INFO:crawler_to_pipeline_bridge:Loaded configuration from config.yaml
+INFO:crawler_to_pipeline_bridge:Initialized Crawler-Pipeline Bridge
+INFO:__main__:✅ Complete Workflow Orchestrator initialized
+INFO:__main__:================================================================================
+INFO:__main__:COMPLETE WORKFLOW - ALL MARKETS PREDICTION
+INFO:__main__:================================================================================
+INFO:__main__:
+📥 STEP 1: Loading Crawler Data
+INFO:crawler_to_pipeline_bridge:Loaded 31 matches from crawler
+INFO:__main__:✅ Loaded 31 upcoming matches
+INFO:__main__:
+🌐 STEP 2: Fetching API Data
+INFO:__main__:  Fetching team statistics...
+WARNING:__main__:  ⚠️ Team stats fetch failed: 'HomeTeam'
+INFO:__main__:  Fetching odds (all markets)...
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+INFO:__main__:  ⚠️ Generating dummy odds for testing...
+WARNING:__main__:  ⚠️ Odds fetch failed: 'HomeTeam'
+INFO:__main__:  ✅ Using existing historical data: pipeline_output/phase1_output/E1_features.csv
+INFO:__main__:✅ API data fetched successfully
+INFO:__main__:
+⏭️ Skipping training phases (using existing models)
+INFO:__main__:
+🎯 STEP 6: Phase 4 - Generate Predictions (All Markets)
+INFO:__main__:✅ Loaded model: pipeline_output/phase2_output/E1_ensemble.pkl
+INFO:__main__:Generating predictions for 31 matches...
+WARNING:__main__:⚠️ Could not generate 1X2 prediction: 'dict' object has no attribute 'predict'
+WARNING:__main__:⚠️ Could not generate 1X2 prediction: 'dict' object has no attribute 'predict'
+WARNING:__main__:⚠️ Could not generate 1X2 prediction: 'dict' object has no attribute 'predict'
+WARNING:__main__:⚠️ Could not generate 1X2 prediction: 'dict' object has no attribute 'predict'
+WARNING:__main__:⚠️ Could not generate 1X2 prediction: 'dict' object has no attribute 'predict'
+WARNING:__main__:⚠️ Could not generate 1X2 prediction: 'dict' object has no attribute 'predict'
+WARNING:__main__:⚠️ Could not generate 1X2 prediction: 'dict' object has no attribute 'predict'
+WARNING:__main__:⚠️ Could not generate 1X2 prediction: 'dict' object has no attribute 'predict'
+WARNING:__main__:⚠️ Could not generate 1X2 prediction: 'dict' object has no attribute 'predict'
+WARNING:__main__:⚠️ Could not generate 1X2 prediction: 'dict' object has no attribute 'predict'
+WARNING:__main__:⚠️ Could not generate 1X2 prediction: 'dict' object has no attribute 'predict'
+WARNING:__main__:⚠️ Could not generate 1X2 prediction: 'dict' object has no attribute 'predict'
+WARNING:__main__:⚠️ Could not generate 1X2 prediction: 'dict' object has no attribute 'predict'
+WARNING:__main__:⚠️ Could not generate 1X2 prediction: 'dict' object has no attribute 'predict'
+WARNING:__main__:⚠️ Could not generate 1X2 prediction: 'dict' object has no attribute 'predict'
+WARNING:__main__:⚠️ Could not generate 1X2 prediction: 'dict' object has no attribute 'predict'
+WARNING:__main__:⚠️ Could not generate 1X2 prediction: 'dict' object has no attribute 'predict'
+WARNING:__main__:⚠️ Could not generate 1X2 prediction: 'dict' object has no attribute 'predict'
+WARNING:__main__:⚠️ Could not generate 1X2 prediction: 'dict' object has no attribute 'predict'
+WARNING:__main__:⚠️ Could not generate 1X2 prediction: 'dict' object has no attribute 'predict'
+WARNING:__main__:⚠️ Could not generate 1X2 prediction: 'dict' object has no attribute 'predict'
+WARNING:__main__:⚠️ Could not generate 1X2 prediction: 'dict' object has no attribute 'predict'
+WARNING:__main__:⚠️ Could not generate 1X2 prediction: 'dict' object has no attribute 'predict'
+WARNING:__main__:⚠️ Could not generate 1X2 prediction: 'dict' object has no attribute 'predict'
+WARNING:__main__:⚠️ Could not generate 1X2 prediction: 'dict' object has no attribute 'predict'
+WARNING:__main__:⚠️ Could not generate 1X2 prediction: 'dict' object has no attribute 'predict'
+WARNING:__main__:⚠️ Could not generate 1X2 prediction: 'dict' object has no attribute 'predict'
+WARNING:__main__:⚠️ Could not generate 1X2 prediction: 'dict' object has no attribute 'predict'
+WARNING:__main__:⚠️ Could not generate 1X2 prediction: 'dict' object has no attribute 'predict'
+WARNING:__main__:⚠️ Could not generate 1X2 prediction: 'dict' object has no attribute 'predict'
+WARNING:__main__:⚠️ Could not generate 1X2 prediction: 'dict' object has no attribute 'predict'
+INFO:__main__:✅ Generated predictions for 31 matches
+INFO:__main__:
+💾 STEP 7: Saving Results
+INFO:__main__:  ✅ Predictions: predictions_output/predictions_20251016_095741.json
+INFO:__main__:  ✅ CSV: predictions_output/predictions_20251016_095741.csv
+INFO:__main__:  ✅ Workflow: predictions_output/workflow_20251016_095741.json
+INFO:__main__:  ✅ Summary: predictions_output/summary_20251016_095741.txt
+INFO:__main__:✅ Results saved successfully
+INFO:__main__:
+================================================================================
+INFO:__main__:✅ WORKFLOW COMPLETED SUCCESSFULLY
+INFO:__main__:================================================================================
+
+================================================================================
+✅ WORKFLOW COMPLETE
+   Matches: 31
+   Predictions: 31
+   Status: success
+================================================================================

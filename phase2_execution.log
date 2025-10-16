@@ -1,0 +1,13 @@
+2025-10-15 23:42:45,871 - phase2_integration - INFO - Output directory: ./models
+Traceback (most recent call last):
+  File "<string>", line 16, in <module>
+    phase2_results = phase2.run_phase2_pipeline(
+        feature_data_path=feature_data_path,
+        output_dir='./pipeline_output'
+    )
+TypeError: Phase2Integration.run_phase2_pipeline() got an unexpected keyword argument 'feature_data_path'
+================================================================================
+PHASE 2: MODEL TRAINING & VALIDATION
+================================================================================
+
+Loading features from: ./pipeline_output/phase1_output/E1_features.csv

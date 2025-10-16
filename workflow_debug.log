@@ -1,0 +1,648 @@
+INFO:master_pipeline:Master Pipeline initialized
+INFO:master_pipeline:Configuration loaded from config.yaml
+INFO:api_data_manager:Loaded configuration from config.yaml
+INFO:api_data_manager:Loaded 32 environment variables
+INFO:api_data_manager:Initialized data source: football_data
+INFO:api_data_manager:Initialized data source: odds_api
+INFO:api_data_manager:Initialized data source: api_football
+INFO:api_data_manager:Initialized data source: rapidapi_football
+INFO:api_data_manager:Initialized data source: sportsdata_io
+INFO:api_data_manager:Initialized data source: betfair_exchange
+INFO:api_data_manager:Initialized data source: openweathermap
+INFO:api_data_manager:Initialized data source: newsapi
+INFO:api_data_manager:Initialized data source: twitter_api
+INFO:api_data_manager:Initialized data source: pinnacle
+WARNING:api_data_manager:Skipping football_api_com - no valid API key found
+INFO:api_data_manager:Initialized data source: livescore
+WARNING:api_data_manager:Skipping football_api_net - no valid API key found
+WARNING:api_data_manager:Skipping fifa_data - no valid API key found
+WARNING:api_data_manager:Skipping smarkets - no valid API key found
+INFO:api_data_manager:Initialized APIDataManager with 11 data sources
+INFO:crawler_to_pipeline_bridge:Loaded configuration from config.yaml
+INFO:crawler_to_pipeline_bridge:Initialized Crawler-Pipeline Bridge
+INFO:__main__:✅ Complete Workflow Orchestrator initialized
+INFO:__main__:================================================================================
+INFO:__main__:COMPLETE WORKFLOW - ALL MARKETS PREDICTION
+INFO:__main__:================================================================================
+INFO:__main__:
+📥 STEP 1: Loading Crawler Data
+INFO:crawler_to_pipeline_bridge:Loaded 31 matches from crawler
+INFO:__main__:✅ Loaded 31 upcoming matches
+INFO:__main__:
+🌐 STEP 2: Fetching API Data
+INFO:__main__:  Fetching team statistics...
+WARNING:__main__:  ⚠️ Team stats fetch failed: 'HomeTeam'
+INFO:__main__:  Fetching odds (all markets)...
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+WARNING:__main__:  Could not fetch odds for match: 'APIDataManager' object has no attribute 'get_match_odds'
+INFO:__main__:  ⚠️ Generating dummy odds for testing...
+WARNING:__main__:  ⚠️ Odds fetch failed: 'HomeTeam'
+INFO:__main__:  ✅ Using existing historical data: pipeline_output/phase1_output/E1_features.csv
+INFO:__main__:✅ API data fetched successfully
+INFO:__main__:
+📊 STEP 3: Phase 1 - Feature Engineering
+INFO:master_pipeline:================================================================================
+INFO:master_pipeline:STARTING PHASE 1: DATA COLLECTION & PREPROCESSING
+INFO:master_pipeline:================================================================================
+INFO:phase1_integration:Output directory: ./data
+INFO:phase1_integration:Starting Phase 1 pipeline for E1, seasons: ['2324', '2223', '2122']
+INFO:phase1_integration:Step 1: Data Collection
+INFO:phase1_integration:Collecting data for E1, seasons: ['2324', '2223', '2122']
+INFO:non_major_league_data_collector:Collecting historical data for E1, seasons: ['2324', '2223', '2122']
+INFO:non_major_league_data_collector:Collected 552 matches for E1 2324
+INFO:non_major_league_data_collector:Collected 552 matches for E1 2223
+INFO:non_major_league_data_collector:Collected 552 matches for E1 2122
+INFO:non_major_league_data_collector:Validating data quality for E1
+INFO:non_major_league_data_collector:Removed 0 duplicate rows
+WARNING:non_major_league_data_collector:Found 989 invalid dates
+INFO:non_major_league_data_collector:Found 36 unique teams
+INFO:non_major_league_data_collector:Data validation complete. Final dataset: 667 matches
+INFO:non_major_league_data_collector:Total historical data collected: 667 matches
+ERROR:non_major_league_data_collector:Error collecting live odds: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/soccer_efl_champ/odds/?apiKey=YOUR_ODDS_API_KEY&regions=uk%2Ceu&markets=h2h&oddsFormat=decimal
+INFO:phase1_integration:Step 2: Data Preprocessing
+INFO:phase1_integration:Preprocessing 667 rows of data
+INFO:non_major_league_preprocessor:Starting preprocessing pipeline
+INFO:non_major_league_preprocessor:Validating input data
+INFO:non_major_league_preprocessor:Found 36 unique teams
+INFO:non_major_league_preprocessor:Result distribution: {'H': 284, 'A': 208, 'D': 175}
+INFO:non_major_league_preprocessor:Data validation complete. Valid rows: 667
+INFO:non_major_league_preprocessor:Handling missing data
+INFO:non_major_league_preprocessor:Missing data handling complete. Remaining missing values: 0
+INFO:non_major_league_preprocessor:Detecting and treating outliers
+INFO:non_major_league_preprocessor:Found 16 outliers in HTHG
+INFO:non_major_league_preprocessor:Found 3 outliers in HTAG
+INFO:non_major_league_preprocessor:Found 11 outliers in HS
+INFO:non_major_league_preprocessor:Found 7 outliers in AS
+INFO:non_major_league_preprocessor:Found 11 outliers in HST
+INFO:non_major_league_preprocessor:Found 8 outliers in AST
+INFO:non_major_league_preprocessor:Found 5 outliers in HF
+INFO:non_major_league_preprocessor:Found 9 outliers in AF
+INFO:non_major_league_preprocessor:Found 20 outliers in HC
+INFO:non_major_league_preprocessor:Found 17 outliers in AC
+INFO:non_major_league_preprocessor:Found 52 outliers in HY
+INFO:non_major_league_preprocessor:Found 1 outliers in AY
+INFO:non_major_league_preprocessor:Found 30 outliers in HR
+INFO:non_major_league_preprocessor:Found 34 outliers in AR
+INFO:non_major_league_preprocessor:Found 37 outliers in B365H
+INFO:non_major_league_preprocessor:Found 64 outliers in B365D
+INFO:non_major_league_preprocessor:Found 41 outliers in B365A
+INFO:non_major_league_preprocessor:Found 32 outliers in BWH
+INFO:non_major_league_preprocessor:Found 56 outliers in BWD
+INFO:non_major_league_preprocessor:Found 47 outliers in BWA
+INFO:non_major_league_preprocessor:Found 29 outliers in IWH
+INFO:non_major_league_preprocessor:Found 64 outliers in IWD
+INFO:non_major_league_preprocessor:Found 43 outliers in IWA
+INFO:non_major_league_preprocessor:Found 30 outliers in PSH
+INFO:non_major_league_preprocessor:Found 45 outliers in PSD
+INFO:non_major_league_preprocessor:Found 44 outliers in PSA
+INFO:non_major_league_preprocessor:Found 31 outliers in WHH
+INFO:non_major_league_preprocessor:Found 65 outliers in WHD
+INFO:non_major_league_preprocessor:Found 36 outliers in WHA
+INFO:non_major_league_preprocessor:Found 32 outliers in VCH
+INFO:non_major_league_preprocessor:Found 65 outliers in VCD
+INFO:non_major_league_preprocessor:Found 47 outliers in VCA
+INFO:non_major_league_preprocessor:Found 31 outliers in MaxH
+INFO:non_major_league_preprocessor:Found 50 outliers in MaxD
+INFO:non_major_league_preprocessor:Found 42 outliers in MaxA
+INFO:non_major_league_preprocessor:Found 31 outliers in AvgH
+INFO:non_major_league_preprocessor:Found 52 outliers in AvgD
+INFO:non_major_league_preprocessor:Found 41 outliers in AvgA
+INFO:non_major_league_preprocessor:Found 2 outliers in B365>2.5
+INFO:non_major_league_preprocessor:Found 12 outliers in B365<2.5
+INFO:non_major_league_preprocessor:Found 2 outliers in P>2.5
+INFO:non_major_league_preprocessor:Found 25 outliers in P<2.5
+INFO:non_major_league_preprocessor:Found 2 outliers in Max>2.5
+INFO:non_major_league_preprocessor:Found 28 outliers in Max<2.5
+INFO:non_major_league_preprocessor:Found 2 outliers in Avg>2.5
+INFO:non_major_league_preprocessor:Found 31 outliers in Avg<2.5
+INFO:non_major_league_preprocessor:Found 30 outliers in AHh
+INFO:non_major_league_preprocessor:Found 1 outliers in MaxAHH
+INFO:non_major_league_preprocessor:Found 31 outliers in B365CH
+INFO:non_major_league_preprocessor:Found 34 outliers in B365CD
+INFO:non_major_league_preprocessor:Found 34 outliers in B365CA
+INFO:non_major_league_preprocessor:Found 34 outliers in BWCH
+INFO:non_major_league_preprocessor:Found 46 outliers in BWCD
+INFO:non_major_league_preprocessor:Found 39 outliers in BWCA
+INFO:non_major_league_preprocessor:Found 27 outliers in IWCH
+INFO:non_major_league_preprocessor:Found 65 outliers in IWCD
+INFO:non_major_league_preprocessor:Found 52 outliers in IWCA
+INFO:non_major_league_preprocessor:Found 30 outliers in PSCH
+INFO:non_major_league_preprocessor:Found 48 outliers in PSCD
+INFO:non_major_league_preprocessor:Found 40 outliers in PSCA
+INFO:non_major_league_preprocessor:Found 29 outliers in WHCH
+INFO:non_major_league_preprocessor:Found 53 outliers in WHCD
+INFO:non_major_league_preprocessor:Found 45 outliers in WHCA
+INFO:non_major_league_preprocessor:Found 28 outliers in VCCH
+INFO:non_major_league_preprocessor:Found 52 outliers in VCCD
+INFO:non_major_league_preprocessor:Found 52 outliers in VCCA
+INFO:non_major_league_preprocessor:Found 30 outliers in MaxCH
+INFO:non_major_league_preprocessor:Found 56 outliers in MaxCD
+INFO:non_major_league_preprocessor:Found 46 outliers in MaxCA
+INFO:non_major_league_preprocessor:Found 29 outliers in AvgCH
+INFO:non_major_league_preprocessor:Found 52 outliers in AvgCD
+INFO:non_major_league_preprocessor:Found 43 outliers in AvgCA
+INFO:non_major_league_preprocessor:Found 5 outliers in B365C>2.5
+INFO:non_major_league_preprocessor:Found 21 outliers in B365C<2.5
+INFO:non_major_league_preprocessor:Found 1 outliers in PC>2.5
+INFO:non_major_league_preprocessor:Found 29 outliers in PC<2.5
+INFO:non_major_league_preprocessor:Found 1 outliers in MaxC>2.5
+INFO:non_major_league_preprocessor:Found 27 outliers in MaxC<2.5
+INFO:non_major_league_preprocessor:Found 1 outliers in AvgC>2.5
+INFO:non_major_league_preprocessor:Found 34 outliers in AvgC<2.5
+INFO:non_major_league_preprocessor:Found 33 outliers in AHCh
+INFO:non_major_league_preprocessor:Found 1 outliers in MaxCAHH
+INFO:non_major_league_preprocessor:Engineering basic features
+INFO:non_major_league_preprocessor:Encoding categorical variables
+INFO:non_major_league_preprocessor:Scaling numerical features
+INFO:non_major_league_preprocessor:Augmenting data
+INFO:non_major_league_preprocessor:Data augmentation complete. Added 100 synthetic samples
+INFO:non_major_league_preprocessor:Performing final validation
+INFO:non_major_league_preprocessor:Data types: {dtype('float64'): 118, dtype('O'): 10, dtype('int64'): 3, dtype('<M8[ns]'): 1}
+INFO:non_major_league_preprocessor:Final data shape: (767, 132)
+INFO:non_major_league_preprocessor:Preprocessing complete. Final dataset: 767 rows, 132 columns
+INFO:phase1_integration:Step 3: Data Validation
+INFO:phase1_integration:Validating 767 rows of data
+INFO:non_major_league_validator:Starting comprehensive validation for dataset with 767 rows
+INFO:phase1_integration:Step 4: Feature Engineering
+INFO:phase1_integration:Engineering features for 767 rows of data
+INFO:non_major_league_feature_engineer:Starting feature engineering for 767 matches
+INFO:non_major_league_feature_engineer:Creating basic features
+INFO:non_major_league_feature_engineer:Creating form features
+INFO:non_major_league_feature_engineer:Creating consistency features
+INFO:non_major_league_feature_engineer:Creating market features
+INFO:non_major_league_feature_engineer:Creating temporal features
+INFO:non_major_league_feature_engineer:Creating seasonal features
+INFO:non_major_league_feature_engineer:Creating fixture congestion features
+INFO:non_major_league_feature_engineer:Creating temporal context features
+INFO:non_major_league_feature_engineer:Creating momentum features
+INFO:non_major_league_feature_engineer:Creating league position features
+INFO:non_major_league_feature_engineer:Creating league-specific features
+INFO:non_major_league_feature_engineer:Creating cross-league features
+INFO:non_major_league_feature_engineer:Creating advanced statistical features
+INFO:non_major_league_feature_engineer:Creating team embedding features
+INFO:non_major_league_feature_engineer:Finalizing features
+INFO:non_major_league_feature_engineer:Feature engineering complete. Final features: 254
+INFO:phase1_integration:Step 5: Final Integration
+INFO:phase1_integration:Integrating Phase 1 results
+INFO:phase1_integration:Step 6: Saving Results
+INFO:phase1_integration:Saving results for E1
+INFO:phase1_integration:Features data saved to ./data/E1_features.csv
+INFO:non_major_league_validator:Validation report saved to ./data/E1_validation_report.txt
+INFO:phase1_integration:Validation report saved to ./data/E1_validation_report.txt
+INFO:phase1_integration:Pipeline summary saved to ./data/E1_phase1_summary.json
+INFO:non_major_league_preprocessor:Preprocessors saved to ./data/E1_preprocessor.pkl
+INFO:non_major_league_feature_engineer:Feature engineer state saved to ./data/E1_feature_engineer.pkl
+INFO:phase1_integration:Phase 1 results saved successfully
+INFO:phase1_integration:Phase 1 pipeline completed successfully
+INFO:master_pipeline:Phase 1 completed successfully in 99.27 seconds
+INFO:__main__:✅ Phase 1 completed
+INFO:__main__:
+🤖 STEP 4: Phase 2 - Model Training (All Markets)
+INFO:master_pipeline:================================================================================
+INFO:master_pipeline:STARTING PHASE 2: MODEL DEVELOPMENT & VALIDATION
+INFO:master_pipeline:================================================================================
+INFO:phase2_integration:Output directory: ./models
+INFO:phase2_integration:Starting Phase 2 pipeline for E1
+INFO:phase2_integration:Step 1: Loading and preparing data
+INFO:phase2_integration:Loading data from ./data/E1_features.csv
+INFO:phase2_integration:Loaded 767 rows with 254 columns
+INFO:phase2_integration:Selected 241 numerical features from 254 total columns
+INFO:phase2_integration:Excluded columns: ['target', 'FTR', 'HTR', 'Date', 'Time', 'HomeTeam', 'AwayTeam', 'Referee', 'Div', 'league', 'season', 'data_source', 'season_phase']
+INFO:phase2_integration:Sanitized 241 feature names for XGBoost compatibility
+INFO:phase2_integration:Final dataset: 767 samples with 241 features
+INFO:phase2_integration:Target distribution: {2: 321, 0: 235, 1: 211}
+INFO:phase2_integration:Step 2: Model Architecture Design
+INFO:phase2_integration:Designing model architecture
+INFO:non_major_league_model_architecture:Creating base models for non-major leagues
+INFO:non_major_league_model_architecture:Created 4 base models
+INFO:non_major_league_model_architecture:Training base models
+INFO:non_major_league_model_architecture:Calculated class weights: {np.int64(0): np.float64(1.0999310411909105), np.int64(1): np.float64(1.118482477626991), np.int64(2): np.float64(0.8403554673141971)}
+INFO:non_major_league_model_architecture:Training xgboost...
+INFO:non_major_league_model_architecture:xgboost - Train Acc: 1.0000, Val Acc: 1.0000
+INFO:non_major_league_model_architecture:Training lightgbm...
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[200]	valid_0's multi_logloss: 0.00130625
+INFO:non_major_league_model_architecture:lightgbm - Train Acc: 1.0000, Val Acc: 1.0000
+INFO:non_major_league_model_architecture:Training random_forest...
+INFO:non_major_league_model_architecture:random_forest - Train Acc: 1.0000, Val Acc: 1.0000
+INFO:non_major_league_model_architecture:Training logistic_regression...
+INFO:non_major_league_model_architecture:logistic_regression - Train Acc: 1.0000, Val Acc: 1.0000
+INFO:non_major_league_model_architecture:Creating ensemble model
+INFO:non_major_league_model_architecture:Training ensemble model
+INFO:non_major_league_model_architecture:Ensemble training complete
+INFO:non_major_league_model_architecture:Calibrating model probabilities
+INFO:non_major_league_model_architecture:Calibrated xgboost
+INFO:non_major_league_model_architecture:Calibrated lightgbm
+INFO:non_major_league_model_architecture:Calibrated random_forest
+INFO:non_major_league_model_architecture:Calibrated logistic_regression
+INFO:non_major_league_model_architecture:Calibrated ensemble model
+INFO:non_major_league_model_architecture:Evaluating models
+INFO:non_major_league_model_architecture:Calculating feature importance
+INFO:phase2_integration:Step 3: Transfer Learning Setup
+INFO:phase2_integration:Setting up transfer learning
+INFO:phase2_integration:No source data files provided, skipping transfer learning
+INFO:phase2_integration:Step 4: Hyperparameter Tuning
+INFO:phase2_integration:Optimizing hyperparameters
+INFO:non_major_league_hyperparameter_tuning:Optimizing hyperparameters for all models
+INFO:non_major_league_hyperparameter_tuning:Optimizing xgboost (priority: 1)
+INFO:non_major_league_hyperparameter_tuning:Optimizing hyperparameters for xgboost
+[I 2025-10-16 04:11:25,521] A new study created in memory with name: no-name-1103d4fe-2fad-48b6-b617-583a4bb24469
+[I 2025-10-16 04:12:42,762] Trial 0 finished with value: 0.040867228759781694 and parameters: {'n_estimators': 136, 'max_depth': 6, 'learning_rate': 0.08189556465577738, 'subsample': 0.7918769989889703, 'colsample_bytree': 0.7765365414924951, 'min_child_weight': 7, 'reg_alpha': 0.5696022514556284, 'reg_lambda': 0.8589117048152572}. Best is trial 0 with value: 0.040867228759781694.
+[I 2025-10-16 04:13:26,357] Trial 1 finished with value: 0.011869290767484114 and parameters: {'n_estimators': 75, 'max_depth': 7, 'learning_rate': 0.09802749596627035, 'subsample': 0.7417360878885713, 'colsample_bytree': 0.9023904666457274, 'min_child_weight': 2, 'reg_alpha': 0.006351743351458383, 'reg_lambda': 0.7028728704953537}. Best is trial 1 with value: 0.011869290767484114.
+[I 2025-10-16 04:14:55,988] Trial 2 finished with value: 0.14275525134216052 and parameters: {'n_estimators': 127, 'max_depth': 4, 'learning_rate': 0.014520281373000116, 'subsample': 0.8881534585573829, 'colsample_bytree': 0.6191618350991636, 'min_child_weight': 8, 'reg_alpha': 0.12603424799633767, 'reg_lambda': 0.5373108356546212}. Best is trial 1 with value: 0.011869290767484114.
+[I 2025-10-16 04:16:32,335] Trial 3 finished with value: 0.0804179357515746 and parameters: {'n_estimators': 142, 'max_depth': 4, 'learning_rate': 0.01738794648113304, 'subsample': 0.7123825486202054, 'colsample_bytree': 0.9176419915431724, 'min_child_weight': 7, 'reg_alpha': 0.5592189842881594, 'reg_lambda': 0.024069250630762706}. Best is trial 1 with value: 0.011869290767484114.
+[I 2025-10-16 04:18:24,817] Trial 4 finished with value: 0.06084340112915215 and parameters: {'n_estimators': 165, 'max_depth': 8, 'learning_rate': 0.01812602030652326, 'subsample': 0.9562796876802673, 'colsample_bytree': 0.6262121577448859, 'min_child_weight': 3, 'reg_alpha': 0.9002989092799487, 'reg_lambda': 1.8459769831646222}. Best is trial 1 with value: 0.011869290767484114.
+[I 2025-10-16 04:19:21,050] Trial 5 finished with value: 0.030893423645164213 and parameters: {'n_estimators': 101, 'max_depth': 5, 'learning_rate': 0.06120257645336779, 'subsample': 0.7470136050869909, 'colsample_bytree': 0.8114964012793562, 'min_child_weight': 5, 'reg_alpha': 0.8963331549934491, 'reg_lambda': 0.7780268439893527}. Best is trial 1 with value: 0.011869290767484114.
+[I 2025-10-16 04:20:41,039] Trial 6 finished with value: 0.0570369220639573 and parameters: {'n_estimators': 199, 'max_depth': 4, 'learning_rate': 0.07311040455102422, 'subsample': 0.6364166920869784, 'colsample_bytree': 0.9239921200938717, 'min_child_weight': 8, 'reg_alpha': 0.7741661626930646, 'reg_lambda': 1.7839006862813815}. Best is trial 1 with value: 0.011869290767484114.
+[I 2025-10-16 04:21:55,933] Trial 7 finished with value: 0.015484754203877418 and parameters: {'n_estimators': 147, 'max_depth': 6, 'learning_rate': 0.07718066396731768, 'subsample': 0.8623138543844354, 'colsample_bytree': 0.8509971936786487, 'min_child_weight': 3, 'reg_alpha': 0.14394710611175532, 'reg_lambda': 0.7784467831330488}. Best is trial 1 with value: 0.011869290767484114.
+[I 2025-10-16 04:23:01,980] Trial 8 finished with value: 0.030375805789076737 and parameters: {'n_estimators': 134, 'max_depth': 8, 'learning_rate': 0.09616344861618699, 'subsample': 0.7635739298573474, 'colsample_bytree': 0.6260047303648557, 'min_child_weight': 5, 'reg_alpha': 0.7285552030328791, 'reg_lambda': 1.2702493709322877}. Best is trial 1 with value: 0.011869290767484114.
+[I 2025-10-16 04:25:10,634] Trial 9 finished with value: 0.11857801664307056 and parameters: {'n_estimators': 187, 'max_depth': 4, 'learning_rate': 0.011382665959029304, 'subsample': 0.688472548742933, 'colsample_bytree': 0.6062469549128747, 'min_child_weight': 4, 'reg_alpha': 0.6220478003590704, 'reg_lambda': 0.8356503282877987}. Best is trial 1 with value: 0.011869290767484114.
+[I 2025-10-16 04:25:50,249] Trial 10 finished with value: 0.10789501440276554 and parameters: {'n_estimators': 56, 'max_depth': 7, 'learning_rate': 0.03798831489827631, 'subsample': 0.6001199665492237, 'colsample_bytree': 0.9729638484575113, 'min_child_weight': 1, 'reg_alpha': 0.31620129556279464, 'reg_lambda': 0.19009901972734877}. Best is trial 1 with value: 0.011869290767484114.
+[I 2025-10-16 04:26:29,078] Trial 11 finished with value: 0.005273387294557217 and parameters: {'n_estimators': 81, 'max_depth': 6, 'learning_rate': 0.0995949014906953, 'subsample': 0.8616252194472536, 'colsample_bytree': 0.8269060908766852, 'min_child_weight': 1, 'reg_alpha': 0.002488334011142679, 'reg_lambda': 1.2980968708671097}. Best is trial 11 with value: 0.005273387294557217.
+[I 2025-10-16 04:27:12,130] Trial 12 finished with value: 0.005362017370982976 and parameters: {'n_estimators': 81, 'max_depth': 7, 'learning_rate': 0.0994784941424601, 'subsample': 0.8480388913777857, 'colsample_bytree': 0.7375850101042217, 'min_child_weight': 1, 'reg_alpha': 0.002304330999552866, 'reg_lambda': 1.3191900313381228}. Best is trial 11 with value: 0.005273387294557217.
+[I 2025-10-16 04:27:49,864] Trial 13 finished with value: 0.056778019026768704 and parameters: {'n_estimators': 92, 'max_depth': 7, 'learning_rate': 0.09054587658527194, 'subsample': 0.8607175681542497, 'colsample_bytree': 0.7285746419581253, 'min_child_weight': 10, 'reg_alpha': 0.3419864298838884, 'reg_lambda': 1.3608399121427222}. Best is trial 11 with value: 0.005273387294557217.
+[I 2025-10-16 04:28:52,518] Trial 14 finished with value: 0.00681149220673979 and parameters: {'n_estimators': 103, 'max_depth': 6, 'learning_rate': 0.05607929908610919, 'subsample': 0.9948931909614832, 'colsample_bytree': 0.7115345773012454, 'min_child_weight': 1, 'reg_alpha': 0.010837958093574174, 'reg_lambda': 1.3328835644443777}. Best is trial 11 with value: 0.005273387294557217.
+[I 2025-10-16 04:29:26,662] Trial 15 finished with value: 0.10820838361380257 and parameters: {'n_estimators': 50, 'max_depth': 5, 'learning_rate': 0.043612526431186814, 'subsample': 0.9162755403041772, 'colsample_bytree': 0.7099417484601986, 'min_child_weight': 1, 'reg_alpha': 0.27919093628524544, 'reg_lambda': 1.5712922376241882}. Best is trial 11 with value: 0.005273387294557217.
+[I 2025-10-16 04:30:01,787] Trial 16 finished with value: 0.016489359894561448 and parameters: {'n_estimators': 79, 'max_depth': 3, 'learning_rate': 0.08707615553962343, 'subsample': 0.8293457783713646, 'colsample_bytree': 0.803027004187543, 'min_child_weight': 3, 'reg_alpha': 0.17761882818975838, 'reg_lambda': 1.111670616791524}. Best is trial 11 with value: 0.005273387294557217.
+[I 2025-10-16 04:31:15,825] Trial 17 finished with value: 0.01104828278163931 and parameters: {'n_estimators': 115, 'max_depth': 7, 'learning_rate': 0.07043872649434449, 'subsample': 0.8273479237129414, 'colsample_bytree': 0.7546295792898335, 'min_child_weight': 2, 'reg_alpha': 0.45661201103384497, 'reg_lambda': 1.5759151068511228}. Best is trial 11 with value: 0.005273387294557217.
+[I 2025-10-16 04:32:09,237] Trial 18 finished with value: 0.013915523789917826 and parameters: {'n_estimators': 76, 'max_depth': 8, 'learning_rate': 0.0654553654561376, 'subsample': 0.9261965350919769, 'colsample_bytree': 0.6725443892640273, 'min_child_weight': 2, 'reg_alpha': 0.42687814165540633, 'reg_lambda': 1.0818691198802461}. Best is trial 11 with value: 0.005273387294557217.
+[I 2025-10-16 04:32:48,939] Trial 19 finished with value: 0.0613366178431708 and parameters: {'n_estimators': 64, 'max_depth': 6, 'learning_rate': 0.043978614574503326, 'subsample': 0.8081962473673073, 'colsample_bytree': 0.8440516726848825, 'min_child_weight': 4, 'reg_alpha': 0.08293466364195491, 'reg_lambda': 1.6848462510810684}. Best is trial 11 with value: 0.005273387294557217.
+[I 2025-10-16 04:33:38,571] Trial 20 finished with value: 0.05523893192203303 and parameters: {'n_estimators': 94, 'max_depth': 5, 'learning_rate': 0.09971697674912096, 'subsample': 0.8698587576240452, 'colsample_bytree': 0.8487019351429257, 'min_child_weight': 10, 'reg_alpha': 0.22198409209165948, 'reg_lambda': 1.960754941503391}. Best is trial 11 with value: 0.005273387294557217.
+[I 2025-10-16 04:34:57,746] Trial 21 finished with value: 0.005906088521451581 and parameters: {'n_estimators': 113, 'max_depth': 6, 'learning_rate': 0.05435533301281592, 'subsample': 0.9990636975053301, 'colsample_bytree': 0.6860422881234024, 'min_child_weight': 1, 'reg_alpha': 0.020394014893660113, 'reg_lambda': 1.3500516742525377}. Best is trial 11 with value: 0.005273387294557217.
+[I 2025-10-16 04:36:19,866] Trial 22 finished with value: 0.028858870488227346 and parameters: {'n_estimators': 115, 'max_depth': 7, 'learning_rate': 0.03186383535836686, 'subsample': 0.9980021530681942, 'colsample_bytree': 0.6723862668742767, 'min_child_weight': 1, 'reg_alpha': 0.05605524647759269, 'reg_lambda': 1.4855122679306558}. Best is trial 11 with value: 0.005273387294557217.
+[I 2025-10-16 04:37:29,757] Trial 23 finished with value: 0.010536777577803696 and parameters: {'n_estimators': 114, 'max_depth': 6, 'learning_rate': 0.04877735822256051, 'subsample': 0.9521386927810689, 'colsample_bytree': 0.6751111713958583, 'min_child_weight': 2, 'reg_alpha': 0.21976968964938004, 'reg_lambda': 1.150728689240287}. Best is trial 11 with value: 0.005273387294557217.
+[I 2025-10-16 04:38:27,141] Trial 24 finished with value: 0.0052697575835118455 and parameters: {'n_estimators': 84, 'max_depth': 5, 'learning_rate': 0.08711757132013863, 'subsample': 0.8928432538933548, 'colsample_bytree': 0.7554143050388417, 'min_child_weight': 1, 'reg_alpha': 0.0930671327265733, 'reg_lambda': 1.4304459770974103}. Best is trial 24 with value: 0.0052697575835118455.
+[I 2025-10-16 04:39:08,755] Trial 25 finished with value: 0.02057520051067625 and parameters: {'n_estimators': 86, 'max_depth': 5, 'learning_rate': 0.08828724421110717, 'subsample': 0.9084826683681615, 'colsample_bytree': 0.7712615566746828, 'min_child_weight': 4, 'reg_alpha': 0.09555117206405946, 'reg_lambda': 0.9675952938791867}. Best is trial 24 with value: 0.0052697575835118455.
+[I 2025-10-16 04:39:47,866] Trial 26 finished with value: 0.011336169518945003 and parameters: {'n_estimators': 66, 'max_depth': 3, 'learning_rate': 0.09218415174574073, 'subsample': 0.840625247653681, 'colsample_bytree': 0.8183088329611227, 'min_child_weight': 2, 'reg_alpha': 0.3956277293524988, 'reg_lambda': 1.4868380336989788}. Best is trial 24 with value: 0.0052697575835118455.
+[I 2025-10-16 04:40:30,091] Trial 27 finished with value: 0.017498811849152536 and parameters: {'n_estimators': 66, 'max_depth': 5, 'learning_rate': 0.0800590074987945, 'subsample': 0.791265698228929, 'colsample_bytree': 0.7466744700715175, 'min_child_weight': 3, 'reg_alpha': 0.242172588136999, 'reg_lambda': 1.1968924926766946}. Best is trial 24 with value: 0.0052697575835118455.
+[I 2025-10-16 04:41:26,235] Trial 28 finished with value: 0.005269756674577339 and parameters: {'n_estimators': 84, 'max_depth': 7, 'learning_rate': 0.08441505692293354, 'subsample': 0.8906075704966405, 'colsample_bytree': 0.8705883372895993, 'min_child_weight': 1, 'reg_alpha': 0.16530665855070928, 'reg_lambda': 1.011113204855314}. Best is trial 28 with value: 0.005269756674577339.
+INFO:non_major_league_hyperparameter_tuning:xgboost optimization complete
+INFO:non_major_league_hyperparameter_tuning:Best score: 0.0053
+INFO:non_major_league_hyperparameter_tuning:Best params: {'n_estimators': 84, 'max_depth': 7, 'learning_rate': 0.08441505692293354, 'subsample': 0.8906075704966405, 'colsample_bytree': 0.8705883372895993, 'min_child_weight': 1, 'reg_alpha': 0.16530665855070928, 'reg_lambda': 1.011113204855314}
+INFO:non_major_league_hyperparameter_tuning:Optimizing lightgbm (priority: 2)
+INFO:non_major_league_hyperparameter_tuning:Optimizing hyperparameters for lightgbm
+[I 2025-10-16 04:41:26,243] A new study created in memory with name: no-name-26b0b3eb-23a0-444d-9a0d-20d4da37c782
+[I 2025-10-16 04:42:21,446] Trial 0 finished with value: 0.007809420380043058 and parameters: {'n_estimators': 179, 'max_depth': 5, 'learning_rate': 0.08234766349142886, 'num_leaves': 26, 'feature_fraction': 0.9574055909621785, 'bagging_fraction': 0.8085092838907679, 'bagging_freq': 7, 'lambda_l1': 0.6869219667911798, 'lambda_l2': 0.8840034517824233, 'min_data_in_leaf': 21}. Best is trial 0 with value: 0.007809420380043058.
+[I 2025-10-16 04:42:58,370] Trial 1 finished with value: 0.019495698128494606 and parameters: {'n_estimators': 91, 'max_depth': 7, 'learning_rate': 0.035864492560913785, 'num_leaves': 47, 'feature_fraction': 0.8870128977225271, 'bagging_fraction': 0.9657410348849602, 'bagging_freq': 8, 'lambda_l1': 0.580964343801047, 'lambda_l2': 0.6544704020140544, 'min_data_in_leaf': 15}. Best is trial 0 with value: 0.007809420380043058.
+[I 2025-10-16 04:43:45,834] Trial 2 finished with value: 0.007110881485516776 and parameters: {'n_estimators': 150, 'max_depth': 7, 'learning_rate': 0.037501494416731625, 'num_leaves': 70, 'feature_fraction': 0.6571085986396089, 'bagging_fraction': 0.7985142228380948, 'bagging_freq': 4, 'lambda_l1': 0.22882650985096453, 'lambda_l2': 1.4934060924962627, 'min_data_in_leaf': 28}. Best is trial 2 with value: 0.007110881485516776.
+[I 2025-10-16 04:45:22,891] Trial 3 finished with value: 0.0008347850075579121 and parameters: {'n_estimators': 200, 'max_depth': 6, 'learning_rate': 0.07427108331687533, 'num_leaves': 64, 'feature_fraction': 0.8817471117280931, 'bagging_fraction': 0.9074855034253767, 'bagging_freq': 8, 'lambda_l1': 0.04322934157990732, 'lambda_l2': 1.0167218036753425, 'min_data_in_leaf': 7}. Best is trial 3 with value: 0.0008347850075579121.
+[I 2025-10-16 04:46:43,714] Trial 4 finished with value: 0.0007817027026609456 and parameters: {'n_estimators': 130, 'max_depth': 8, 'learning_rate': 0.0799214094818689, 'num_leaves': 41, 'feature_fraction': 0.8333621150515709, 'bagging_fraction': 0.9302634363825183, 'bagging_freq': 1, 'lambda_l1': 0.07049464919292203, 'lambda_l2': 0.18136906613249248, 'min_data_in_leaf': 14}. Best is trial 4 with value: 0.0007817027026609456.
+[I 2025-10-16 04:47:58,433] Trial 5 finished with value: 0.006911330234068535 and parameters: {'n_estimators': 133, 'max_depth': 3, 'learning_rate': 0.0944530250729392, 'num_leaves': 89, 'feature_fraction': 0.7789147925745111, 'bagging_fraction': 0.756725585136357, 'bagging_freq': 9, 'lambda_l1': 0.518491052866478, 'lambda_l2': 1.5305667092784614, 'min_data_in_leaf': 11}. Best is trial 4 with value: 0.0007817027026609456.
+[I 2025-10-16 04:49:08,987] Trial 6 finished with value: 0.010690655052837679 and parameters: {'n_estimators': 106, 'max_depth': 8, 'learning_rate': 0.05917494206406488, 'num_leaves': 40, 'feature_fraction': 0.6126946884251745, 'bagging_fraction': 0.874892921530364, 'bagging_freq': 9, 'lambda_l1': 0.8067892177040247, 'lambda_l2': 1.2274349003630434, 'min_data_in_leaf': 20}. Best is trial 4 with value: 0.0007817027026609456.
+[I 2025-10-16 04:50:08,834] Trial 7 finished with value: 0.012493397248408181 and parameters: {'n_estimators': 142, 'max_depth': 6, 'learning_rate': 0.06670763839581233, 'num_leaves': 12, 'feature_fraction': 0.718968764746248, 'bagging_fraction': 0.6657060961742183, 'bagging_freq': 9, 'lambda_l1': 0.8006142311095491, 'lambda_l2': 1.7914480486995028, 'min_data_in_leaf': 23}. Best is trial 4 with value: 0.0007817027026609456.
+[I 2025-10-16 04:51:37,771] Trial 8 finished with value: 0.0054688532373438625 and parameters: {'n_estimators': 196, 'max_depth': 7, 'learning_rate': 0.06781476251988446, 'num_leaves': 24, 'feature_fraction': 0.7479722632324126, 'bagging_fraction': 0.7059079371181735, 'bagging_freq': 6, 'lambda_l1': 0.37755220886584306, 'lambda_l2': 1.7034348487446391, 'min_data_in_leaf': 17}. Best is trial 4 with value: 0.0007817027026609456.
+[I 2025-10-16 04:52:22,425] Trial 9 finished with value: 0.031154167000201016 and parameters: {'n_estimators': 78, 'max_depth': 3, 'learning_rate': 0.04220643261969435, 'num_leaves': 32, 'feature_fraction': 0.7298105754561427, 'bagging_fraction': 0.6702615488651152, 'bagging_freq': 6, 'lambda_l1': 0.6915849810468545, 'lambda_l2': 1.7645418744364922, 'min_data_in_leaf': 18}. Best is trial 4 with value: 0.0007817027026609456.
+[I 2025-10-16 04:52:53,035] Trial 10 finished with value: 0.42377475222292027 and parameters: {'n_estimators': 56, 'max_depth': 8, 'learning_rate': 0.010332165495507667, 'num_leaves': 91, 'feature_fraction': 0.8510706572843401, 'bagging_fraction': 0.9892889977565744, 'bagging_freq': 1, 'lambda_l1': 0.014185481723163168, 'lambda_l2': 0.0018610385907048, 'min_data_in_leaf': 40}. Best is trial 4 with value: 0.0007817027026609456.
+[I 2025-10-16 04:54:22,329] Trial 11 finished with value: 0.00027002920971125956 and parameters: {'n_estimators': 168, 'max_depth': 5, 'learning_rate': 0.0858008935544337, 'num_leaves': 64, 'feature_fraction': 0.8754298329697978, 'bagging_fraction': 0.9074760851469835, 'bagging_freq': 1, 'lambda_l1': 0.003332707790443701, 'lambda_l2': 0.4074229926557874, 'min_data_in_leaf': 5}. Best is trial 11 with value: 0.00027002920971125956.
+[I 2025-10-16 04:55:17,833] Trial 12 finished with value: 0.0023133176060039897 and parameters: {'n_estimators': 164, 'max_depth': 5, 'learning_rate': 0.09873902007458069, 'num_leaves': 58, 'feature_fraction': 0.9798013664995427, 'bagging_fraction': 0.8898243941662448, 'bagging_freq': 1, 'lambda_l1': 0.22434353433127485, 'lambda_l2': 0.18541392150482505, 'min_data_in_leaf': 5}. Best is trial 11 with value: 0.00027002920971125956.
+[I 2025-10-16 04:56:32,453] Trial 13 finished with value: 0.0017989673226061062 and parameters: {'n_estimators': 126, 'max_depth': 4, 'learning_rate': 0.08839763394714525, 'num_leaves': 74, 'feature_fraction': 0.8287636088172764, 'bagging_fraction': 0.9345453649975783, 'bagging_freq': 3, 'lambda_l1': 0.17106701295576282, 'lambda_l2': 0.3974029130513367, 'min_data_in_leaf': 32}. Best is trial 11 with value: 0.00027002920971125956.
+[I 2025-10-16 04:57:54,070] Trial 14 finished with value: 0.010823988513774169 and parameters: {'n_estimators': 166, 'max_depth': 4, 'learning_rate': 0.0803338903686848, 'num_leaves': 50, 'feature_fraction': 0.9239817132744168, 'bagging_fraction': 0.8295182138928962, 'bagging_freq': 3, 'lambda_l1': 0.9841145302130907, 'lambda_l2': 0.45973581245336503, 'min_data_in_leaf': 49}. Best is trial 11 with value: 0.00027002920971125956.
+[I 2025-10-16 04:58:50,204] Trial 15 finished with value: 0.004975967518145272 and parameters: {'n_estimators': 108, 'max_depth': 5, 'learning_rate': 0.05292112775947079, 'num_leaves': 81, 'feature_fraction': 0.8106277302512371, 'bagging_fraction': 0.8557799964900827, 'bagging_freq': 2, 'lambda_l1': 0.3631186078839496, 'lambda_l2': 0.2590984731899889, 'min_data_in_leaf': 11}. Best is trial 11 with value: 0.00027002920971125956.
+[I 2025-10-16 05:00:16,954] Trial 16 finished with value: 0.0013600670978336957 and parameters: {'n_estimators': 154, 'max_depth': 4, 'learning_rate': 0.08540939102282998, 'num_leaves': 39, 'feature_fraction': 0.9111376666196221, 'bagging_fraction': 0.9394586510229727, 'bagging_freq': 4, 'lambda_l1': 0.11927810029586378, 'lambda_l2': 0.7348474650566882, 'min_data_in_leaf': 11}. Best is trial 11 with value: 0.00027002920971125956.
+[I 2025-10-16 05:01:20,754] Trial 17 finished with value: 0.0031298231676180122 and parameters: {'n_estimators': 178, 'max_depth': 6, 'learning_rate': 0.07485637725577568, 'num_leaves': 100, 'feature_fraction': 0.8545986931524824, 'bagging_fraction': 0.9994491440957416, 'bagging_freq': 1, 'lambda_l1': 0.3339053192330017, 'lambda_l2': 0.005312789051807265, 'min_data_in_leaf': 34}. Best is trial 11 with value: 0.00027002920971125956.
+[I 2025-10-16 05:02:07,217] Trial 18 finished with value: 0.0024505424072783044 and parameters: {'n_estimators': 117, 'max_depth': 8, 'learning_rate': 0.0535117954169858, 'num_leaves': 58, 'feature_fraction': 0.9457279165610455, 'bagging_fraction': 0.6079216816828402, 'bagging_freq': 4, 'lambda_l1': 0.010670620467958171, 'lambda_l2': 0.5705173957123106, 'min_data_in_leaf': 8}. Best is trial 11 with value: 0.00027002920971125956.
+[I 2025-10-16 05:03:18,226] Trial 19 finished with value: 0.0013022413250224924 and parameters: {'n_estimators': 138, 'max_depth': 7, 'learning_rate': 0.0922436726006427, 'num_leaves': 10, 'feature_fraction': 0.7875682615946137, 'bagging_fraction': 0.9235211122495217, 'bagging_freq': 2, 'lambda_l1': 0.12323413124733902, 'lambda_l2': 0.3072637369563641, 'min_data_in_leaf': 25}. Best is trial 11 with value: 0.00027002920971125956.
+[I 2025-10-16 05:04:50,566] Trial 20 finished with value: 0.019134471466511958 and parameters: {'n_estimators': 171, 'max_depth': 6, 'learning_rate': 0.02007814653203866, 'num_leaves': 44, 'feature_fraction': 0.6895326156409218, 'bagging_fraction': 0.7667148172723841, 'bagging_freq': 2, 'lambda_l1': 0.3047468810988001, 'lambda_l2': 1.0727070423469345, 'min_data_in_leaf': 14}. Best is trial 11 with value: 0.00027002920971125956.
+[I 2025-10-16 05:06:08,341] Trial 21 finished with value: 0.001058173789216369 and parameters: {'n_estimators': 197, 'max_depth': 6, 'learning_rate': 0.074646615971502, 'num_leaves': 66, 'feature_fraction': 0.8816598543753198, 'bagging_fraction': 0.901521969919141, 'bagging_freq': 10, 'lambda_l1': 0.06226908043186716, 'lambda_l2': 1.1606160668661487, 'min_data_in_leaf': 6}. Best is trial 11 with value: 0.00027002920971125956.
+[I 2025-10-16 05:07:43,572] Trial 22 finished with value: 0.0011673295782317946 and parameters: {'n_estimators': 191, 'max_depth': 5, 'learning_rate': 0.06930278553628157, 'num_leaves': 63, 'feature_fraction': 0.8755052914879681, 'bagging_fraction': 0.9569832956873671, 'bagging_freq': 5, 'lambda_l1': 0.09752491437463734, 'lambda_l2': 0.7939476330930705, 'min_data_in_leaf': 5}. Best is trial 11 with value: 0.00027002920971125956.
+[I 2025-10-16 05:09:14,661] Trial 23 finished with value: 0.002428584357589555 and parameters: {'n_estimators': 182, 'max_depth': 4, 'learning_rate': 0.0773098205910937, 'num_leaves': 78, 'feature_fraction': 0.998703386669172, 'bagging_fraction': 0.8423261160197849, 'bagging_freq': 7, 'lambda_l1': 0.20994351028346064, 'lambda_l2': 0.8872530053596017, 'min_data_in_leaf': 10}. Best is trial 11 with value: 0.00027002920971125956.
+[I 2025-10-16 05:10:42,160] Trial 24 finished with value: 0.0016169411062724954 and parameters: {'n_estimators': 157, 'max_depth': 7, 'learning_rate': 0.059492486511836085, 'num_leaves': 51, 'feature_fraction': 0.8274245269607491, 'bagging_fraction': 0.8923682862461052, 'bagging_freq': 3, 'lambda_l1': 0.011416896720445206, 'lambda_l2': 1.3487480455654857, 'min_data_in_leaf': 14}. Best is trial 11 with value: 0.00027002920971125956.
+[I 2025-10-16 05:11:57,766] Trial 25 finished with value: 0.002841049336375169 and parameters: {'n_estimators': 188, 'max_depth': 8, 'learning_rate': 0.08769802225739703, 'num_leaves': 65, 'feature_fraction': 0.9090501440133303, 'bagging_fraction': 0.866428978660233, 'bagging_freq': 7, 'lambda_l1': 0.2643382986423628, 'lambda_l2': 0.5255586324487936, 'min_data_in_leaf': 8}. Best is trial 11 with value: 0.00027002920971125956.
+INFO:non_major_league_hyperparameter_tuning:lightgbm optimization complete
+INFO:non_major_league_hyperparameter_tuning:Best score: 0.0003
+INFO:non_major_league_hyperparameter_tuning:Best params: {'n_estimators': 168, 'max_depth': 5, 'learning_rate': 0.0858008935544337, 'num_leaves': 64, 'feature_fraction': 0.8754298329697978, 'bagging_fraction': 0.9074760851469835, 'bagging_freq': 1, 'lambda_l1': 0.003332707790443701, 'lambda_l2': 0.4074229926557874, 'min_data_in_leaf': 5}
+INFO:non_major_league_hyperparameter_tuning:Optimizing random_forest (priority: 3)
+INFO:non_major_league_hyperparameter_tuning:Optimizing hyperparameters for random_forest
+[I 2025-10-16 05:11:57,773] A new study created in memory with name: no-name-a9a1ebe7-b899-4b6c-a5a1-41c9e10d5a95
+[I 2025-10-16 05:11:59,619] Trial 0 finished with value: 0.4730717472058759 and parameters: {'n_estimators': 199, 'max_depth': 3, 'min_samples_split': 18, 'min_samples_leaf': 4, 'max_features': 'log2'}. Best is trial 0 with value: 0.4730717472058759.
+[I 2025-10-16 05:12:02,722] Trial 1 finished with value: 2.2204460492503136e-16 and parameters: {'n_estimators': 100, 'max_depth': 9, 'min_samples_split': 15, 'min_samples_leaf': 8, 'max_features': None}. Best is trial 1 with value: 2.2204460492503136e-16.
+[I 2025-10-16 05:12:07,141] Trial 2 finished with value: 2.2204460492503136e-16 and parameters: {'n_estimators': 143, 'max_depth': 7, 'min_samples_split': 15, 'min_samples_leaf': 6, 'max_features': None}. Best is trial 1 with value: 2.2204460492503136e-16.
+[I 2025-10-16 05:12:12,744] Trial 3 finished with value: 2.2204460492503136e-16 and parameters: {'n_estimators': 175, 'max_depth': 4, 'min_samples_split': 17, 'min_samples_leaf': 4, 'max_features': None}. Best is trial 1 with value: 2.2204460492503136e-16.
+[I 2025-10-16 05:12:17,621] Trial 4 finished with value: 2.2204460492503136e-16 and parameters: {'n_estimators': 144, 'max_depth': 11, 'min_samples_split': 7, 'min_samples_leaf': 4, 'max_features': None}. Best is trial 1 with value: 2.2204460492503136e-16.
+[I 2025-10-16 05:12:19,631] Trial 5 finished with value: 2.2204460492503136e-16 and parameters: {'n_estimators': 60, 'max_depth': 6, 'min_samples_split': 5, 'min_samples_leaf': 10, 'max_features': None}. Best is trial 1 with value: 2.2204460492503136e-16.
+[I 2025-10-16 05:12:20,867] Trial 6 finished with value: 0.30421988400964445 and parameters: {'n_estimators': 93, 'max_depth': 10, 'min_samples_split': 11, 'min_samples_leaf': 8, 'max_features': 'log2'}. Best is trial 1 with value: 2.2204460492503136e-16.
+[I 2025-10-16 05:12:22,291] Trial 7 finished with value: 0.08288342463468776 and parameters: {'n_estimators': 98, 'max_depth': 7, 'min_samples_split': 3, 'min_samples_leaf': 5, 'max_features': 'sqrt'}. Best is trial 1 with value: 2.2204460492503136e-16.
+[I 2025-10-16 05:12:24,991] Trial 8 finished with value: 0.05108048984900262 and parameters: {'n_estimators': 190, 'max_depth': 15, 'min_samples_split': 6, 'min_samples_leaf': 2, 'max_features': 'sqrt'}. Best is trial 1 with value: 2.2204460492503136e-16.
+[I 2025-10-16 05:12:30,224] Trial 9 finished with value: 2.2204460492503136e-16 and parameters: {'n_estimators': 134, 'max_depth': 3, 'min_samples_split': 10, 'min_samples_leaf': 4, 'max_features': None}. Best is trial 1 with value: 2.2204460492503136e-16.
+[I 2025-10-16 05:12:31,133] Trial 10 finished with value: 0.36891692323932523 and parameters: {'n_estimators': 52, 'max_depth': 13, 'min_samples_split': 14, 'min_samples_leaf': 10, 'max_features': 'log2'}. Best is trial 1 with value: 2.2204460492503136e-16.
+[I 2025-10-16 05:12:35,075] Trial 11 finished with value: 2.2204460492503136e-16 and parameters: {'n_estimators': 111, 'max_depth': 8, 'min_samples_split': 15, 'min_samples_leaf': 7, 'max_features': None}. Best is trial 1 with value: 2.2204460492503136e-16.
+[I 2025-10-16 05:12:40,715] Trial 12 finished with value: 2.2204460492503136e-16 and parameters: {'n_estimators': 156, 'max_depth': 6, 'min_samples_split': 20, 'min_samples_leaf': 7, 'max_features': None}. Best is trial 1 with value: 2.2204460492503136e-16.
+[I 2025-10-16 05:12:43,516] Trial 13 finished with value: 2.2204460492503136e-16 and parameters: {'n_estimators': 78, 'max_depth': 9, 'min_samples_split': 13, 'min_samples_leaf': 8, 'max_features': None}. Best is trial 1 with value: 2.2204460492503136e-16.
+[I 2025-10-16 05:12:47,968] Trial 14 finished with value: 2.2204460492503136e-16 and parameters: {'n_estimators': 122, 'max_depth': 12, 'min_samples_split': 16, 'min_samples_leaf': 6, 'max_features': None}. Best is trial 1 with value: 2.2204460492503136e-16.
+[I 2025-10-16 05:12:50,520] Trial 15 finished with value: 0.05058580438284793 and parameters: {'n_estimators': 155, 'max_depth': 9, 'min_samples_split': 9, 'min_samples_leaf': 1, 'max_features': 'sqrt'}. Best is trial 1 with value: 2.2204460492503136e-16.
+[I 2025-10-16 05:12:54,693] Trial 16 finished with value: 2.2204460492503136e-16 and parameters: {'n_estimators': 113, 'max_depth': 5, 'min_samples_split': 13, 'min_samples_leaf': 9, 'max_features': None}. Best is trial 1 with value: 2.2204460492503136e-16.
+[I 2025-10-16 05:12:57,963] Trial 17 finished with value: 2.2204460492503136e-16 and parameters: {'n_estimators': 79, 'max_depth': 8, 'min_samples_split': 20, 'min_samples_leaf': 6, 'max_features': None}. Best is trial 1 with value: 2.2204460492503136e-16.
+[I 2025-10-16 05:12:59,794] Trial 18 finished with value: 0.30903388924270564 and parameters: {'n_estimators': 135, 'max_depth': 11, 'min_samples_split': 18, 'min_samples_leaf': 8, 'max_features': 'log2'}. Best is trial 1 with value: 2.2204460492503136e-16.
+[I 2025-10-16 05:13:02,001] Trial 19 finished with value: 0.10193500632525716 and parameters: {'n_estimators': 160, 'max_depth': 7, 'min_samples_split': 12, 'min_samples_leaf': 7, 'max_features': 'sqrt'}. Best is trial 1 with value: 2.2204460492503136e-16.
+[I 2025-10-16 05:13:05,208] Trial 20 finished with value: 2.2204460492503136e-16 and parameters: {'n_estimators': 91, 'max_depth': 14, 'min_samples_split': 15, 'min_samples_leaf': 9, 'max_features': None}. Best is trial 1 with value: 2.2204460492503136e-16.
+[I 2025-10-16 05:13:11,387] Trial 21 finished with value: 2.2204460492503136e-16 and parameters: {'n_estimators': 176, 'max_depth': 4, 'min_samples_split': 17, 'min_samples_leaf': 3, 'max_features': None}. Best is trial 1 with value: 2.2204460492503136e-16.
+[I 2025-10-16 05:13:17,417] Trial 22 finished with value: 2.2204460492503136e-16 and parameters: {'n_estimators': 170, 'max_depth': 5, 'min_samples_split': 18, 'min_samples_leaf': 5, 'max_features': None}. Best is trial 1 with value: 2.2204460492503136e-16.
+[I 2025-10-16 05:13:23,902] Trial 23 finished with value: 2.2204460492503136e-16 and parameters: {'n_estimators': 184, 'max_depth': 5, 'min_samples_split': 16, 'min_samples_leaf': 3, 'max_features': None}. Best is trial 1 with value: 2.2204460492503136e-16.
+[I 2025-10-16 05:13:29,529] Trial 24 finished with value: 2.2204460492503136e-16 and parameters: {'n_estimators': 146, 'max_depth': 7, 'min_samples_split': 14, 'min_samples_leaf': 6, 'max_features': None}. Best is trial 1 with value: 2.2204460492503136e-16.
+[I 2025-10-16 05:13:34,132] Trial 25 finished with value: 2.2204460492503136e-16 and parameters: {'n_estimators': 121, 'max_depth': 9, 'min_samples_split': 19, 'min_samples_leaf': 5, 'max_features': None}. Best is trial 1 with value: 2.2204460492503136e-16.
+[I 2025-10-16 05:13:40,353] Trial 26 finished with value: 2.2204460492503136e-16 and parameters: {'n_estimators': 169, 'max_depth': 4, 'min_samples_split': 16, 'min_samples_leaf': 3, 'max_features': None}. Best is trial 1 with value: 2.2204460492503136e-16.
+[I 2025-10-16 05:13:44,110] Trial 27 finished with value: 2.2204460492503136e-16 and parameters: {'n_estimators': 106, 'max_depth': 10, 'min_samples_split': 12, 'min_samples_leaf': 7, 'max_features': None}. Best is trial 1 with value: 2.2204460492503136e-16.
+[I 2025-10-16 05:13:46,106] Trial 28 finished with value: 0.31788631538557505 and parameters: {'n_estimators': 133, 'max_depth': 8, 'min_samples_split': 9, 'min_samples_leaf': 9, 'max_features': 'log2'}. Best is trial 1 with value: 2.2204460492503136e-16.
+[I 2025-10-16 05:13:49,019] Trial 29 finished with value: 0.23580614295457805 and parameters: {'n_estimators': 200, 'max_depth': 3, 'min_samples_split': 18, 'min_samples_leaf': 4, 'max_features': 'sqrt'}. Best is trial 1 with value: 2.2204460492503136e-16.
+INFO:non_major_league_hyperparameter_tuning:random_forest optimization complete
+INFO:non_major_league_hyperparameter_tuning:Best score: 0.0000
+INFO:non_major_league_hyperparameter_tuning:Best params: {'n_estimators': 100, 'max_depth': 9, 'min_samples_split': 15, 'min_samples_leaf': 8, 'max_features': None}
+INFO:non_major_league_hyperparameter_tuning:Optimizing logistic_regression (priority: 4)
+INFO:non_major_league_hyperparameter_tuning:Optimizing hyperparameters for logistic_regression
+[I 2025-10-16 05:13:49,026] A new study created in memory with name: no-name-d272eb72-c0e8-4ce9-bab7-d1c58aee32da
+[I 2025-10-16 05:13:49,203] Trial 0 finished with value: 0.001965534777930812 and parameters: {'C': 7.739308291366375, 'max_iter': 721, 'solver': 'lbfgs'}. Best is trial 0 with value: 0.001965534777930812.
+[I 2025-10-16 05:13:49,381] Trial 1 finished with value: 0.0023973120902533395 and parameters: {'C': 5.826067931751618, 'max_iter': 922, 'solver': 'lbfgs'}. Best is trial 0 with value: 0.001965534777930812.
+[I 2025-10-16 05:13:49,743] Trial 2 finished with value: 0.03357515535338972 and parameters: {'C': 3.136703932211419, 'max_iter': 148, 'solver': 'liblinear'}. Best is trial 0 with value: 0.001965534777930812.
+[I 2025-10-16 05:13:49,976] Trial 3 finished with value: 0.005183178935752981 and parameters: {'C': 1.7684654014607446, 'max_iter': 632, 'solver': 'lbfgs'}. Best is trial 0 with value: 0.001965534777930812.
+[I 2025-10-16 05:13:50,193] Trial 4 finished with value: 0.003358370025586393 and parameters: {'C': 3.184034273919957, 'max_iter': 690, 'solver': 'lbfgs'}. Best is trial 0 with value: 0.001965534777930812.
+[I 2025-10-16 05:13:50,543] Trial 5 finished with value: 0.030412439524055302 and parameters: {'C': 3.8590692918276233, 'max_iter': 562, 'solver': 'liblinear'}. Best is trial 0 with value: 0.001965534777930812.
+[I 2025-10-16 05:13:50,893] Trial 6 finished with value: 0.030766356635947626 and parameters: {'C': 3.765995655332485, 'max_iter': 253, 'solver': 'liblinear'}. Best is trial 0 with value: 0.001965534777930812.
+[I 2025-10-16 05:13:51,296] Trial 7 finished with value: 0.019635668395444207 and parameters: {'C': 9.790533552409682, 'max_iter': 376, 'solver': 'liblinear'}. Best is trial 0 with value: 0.001965534777930812.
+[I 2025-10-16 05:13:51,475] Trial 8 finished with value: 0.00833341641022671 and parameters: {'C': 0.9421358422367517, 'max_iter': 632, 'solver': 'lbfgs'}. Best is trial 0 with value: 0.001965534777930812.
+[I 2025-10-16 05:13:51,833] Trial 9 finished with value: 0.02030480685662168 and parameters: {'C': 9.101468018853916, 'max_iter': 940, 'solver': 'liblinear'}. Best is trial 0 with value: 0.001965534777930812.
+[I 2025-10-16 05:13:51,985] Trial 10 finished with value: 0.0021778883049769137 and parameters: {'C': 6.916444002743161, 'max_iter': 798, 'solver': 'lbfgs'}. Best is trial 0 with value: 0.001965534777930812.
+[I 2025-10-16 05:13:52,149] Trial 11 finished with value: 0.0021444765695641994 and parameters: {'C': 7.070368106111868, 'max_iter': 790, 'solver': 'lbfgs'}. Best is trial 0 with value: 0.001965534777930812.
+[I 2025-10-16 05:13:52,289] Trial 12 finished with value: 0.0020186338596076565 and parameters: {'C': 7.486352976431942, 'max_iter': 801, 'solver': 'lbfgs'}. Best is trial 0 with value: 0.001965534777930812.
+[I 2025-10-16 05:13:52,475] Trial 13 finished with value: 0.0018706311535826913 and parameters: {'C': 8.252656353230911, 'max_iter': 457, 'solver': 'lbfgs'}. Best is trial 13 with value: 0.0018706311535826913.
+[I 2025-10-16 05:13:52,664] Trial 14 finished with value: 0.0018727162811402562 and parameters: {'C': 8.239815694317342, 'max_iter': 435, 'solver': 'lbfgs'}. Best is trial 13 with value: 0.0018706311535826913.
+[I 2025-10-16 05:13:52,838] Trial 15 finished with value: 0.002025530246353947 and parameters: {'C': 8.71737034506461, 'max_iter': 411, 'solver': 'lbfgs'}. Best is trial 13 with value: 0.0018706311535826913.
+[I 2025-10-16 05:13:53,008] Trial 16 finished with value: 0.0024703368985915827 and parameters: {'C': 5.584321448319306, 'max_iter': 441, 'solver': 'lbfgs'}. Best is trial 13 with value: 0.0018706311535826913.
+[I 2025-10-16 05:13:53,115] Trial 17 finished with value: 0.00206145024809012 and parameters: {'C': 8.44906381214592, 'max_iter': 288, 'solver': 'lbfgs'}. Best is trial 13 with value: 0.0018706311535826913.
+[I 2025-10-16 05:13:53,258] Trial 18 finished with value: 0.0018975595091441748 and parameters: {'C': 9.99667372367043, 'max_iter': 507, 'solver': 'lbfgs'}. Best is trial 13 with value: 0.0018706311535826913.
+[I 2025-10-16 05:13:53,421] Trial 19 finished with value: 0.002335343309284296 and parameters: {'C': 6.2708564455434885, 'max_iter': 100, 'solver': 'lbfgs'}. Best is trial 13 with value: 0.0018706311535826913.
+[I 2025-10-16 05:13:53,552] Trial 20 finished with value: 0.0025981420467873486 and parameters: {'C': 4.711260308037265, 'max_iter': 283, 'solver': 'lbfgs'}. Best is trial 13 with value: 0.0018706311535826913.
+[I 2025-10-16 05:13:53,692] Trial 21 finished with value: 0.0019137422390415818 and parameters: {'C': 9.845144621535514, 'max_iter': 497, 'solver': 'lbfgs'}. Best is trial 13 with value: 0.0018706311535826913.
+[I 2025-10-16 05:13:53,845] Trial 22 finished with value: 0.0019030565993127591 and parameters: {'C': 8.063861227199553, 'max_iter': 548, 'solver': 'lbfgs'}. Best is trial 13 with value: 0.0018706311535826913.
+[I 2025-10-16 05:13:54,001] Trial 23 finished with value: 0.0019450486846170733 and parameters: {'C': 9.372809098323616, 'max_iter': 358, 'solver': 'lbfgs'}. Best is trial 13 with value: 0.0018706311535826913.
+[I 2025-10-16 05:13:54,158] Trial 24 finished with value: 0.0020461930990032583 and parameters: {'C': 8.561310151551748, 'max_iter': 483, 'solver': 'lbfgs'}. Best is trial 13 with value: 0.0018706311535826913.
+[I 2025-10-16 05:13:54,290] Trial 25 finished with value: 0.0019050953230619328 and parameters: {'C': 9.925651712738329, 'max_iter': 551, 'solver': 'lbfgs'}. Best is trial 13 with value: 0.0018706311535826913.
+[I 2025-10-16 05:13:54,609] Trial 26 finished with value: 0.02355964845593685 and parameters: {'C': 6.616346587806266, 'max_iter': 337, 'solver': 'liblinear'}. Best is trial 13 with value: 0.0018706311535826913.
+[I 2025-10-16 05:13:54,739] Trial 27 finished with value: 0.001998262710383621 and parameters: {'C': 8.930707169670825, 'max_iter': 220, 'solver': 'lbfgs'}. Best is trial 13 with value: 0.0018706311535826913.
+[I 2025-10-16 05:13:54,850] Trial 28 finished with value: 0.0019542191679987396 and parameters: {'C': 7.795513977869133, 'max_iter': 457, 'solver': 'lbfgs'}. Best is trial 13 with value: 0.0018706311535826913.
+[I 2025-10-16 05:13:55,026] Trial 29 finished with value: 0.0020053307434965105 and parameters: {'C': 7.54825714143097, 'max_iter': 619, 'solver': 'lbfgs'}. Best is trial 13 with value: 0.0018706311535826913.
+INFO:non_major_league_hyperparameter_tuning:logistic_regression optimization complete
+INFO:non_major_league_hyperparameter_tuning:Best score: 0.0019
+INFO:non_major_league_hyperparameter_tuning:Best params: {'C': 8.252656353230911, 'max_iter': 457, 'solver': 'lbfgs'}
+INFO:non_major_league_hyperparameter_tuning:Validating optimized hyperparameters
+INFO:non_major_league_hyperparameter_tuning:Hyperparameter validation: PASSED
+INFO:non_major_league_hyperparameter_tuning:Comparing optimized models
+INFO:non_major_league_hyperparameter_tuning:Best model: random_forest
+INFO:non_major_league_hyperparameter_tuning:Best score: 0.0000
+INFO:non_major_league_hyperparameter_tuning:Evaluating optimized models
+INFO:non_major_league_hyperparameter_tuning:Creating optimized models
+INFO:non_major_league_hyperparameter_tuning:Created optimized xgboost model
+INFO:non_major_league_hyperparameter_tuning:Created optimized lightgbm model
+INFO:non_major_league_hyperparameter_tuning:Created optimized random_forest model
+INFO:non_major_league_hyperparameter_tuning:Created optimized logistic_regression model
+INFO:non_major_league_hyperparameter_tuning:Calculating hyperparameter importance
+INFO:phase2_integration:Step 5: Ensemble Modeling
+INFO:phase2_integration:Creating ensemble model
+INFO:non_major_league_ensemble:Creating base models with conservative parameters
+INFO:non_major_league_ensemble:Created 4 base models
+INFO:non_major_league_ensemble:Training base models with conservative validation
+INFO:non_major_league_ensemble:Training xgboost...
+INFO:non_major_league_ensemble:xgboost - Val Acc: 1.0000, Val LogLoss: 0.0195
+INFO:non_major_league_ensemble:Training lightgbm...
+Training until validation scores don't improve for 30 rounds
+Did not meet early stopping. Best iteration is:
+[150]	valid_0's multi_logloss: 0.00785181
+INFO:non_major_league_ensemble:lightgbm - Val Acc: 1.0000, Val LogLoss: 0.0079
+INFO:non_major_league_ensemble:Training random_forest...
+INFO:non_major_league_ensemble:random_forest - Val Acc: 1.0000, Val LogLoss: 0.0521
+INFO:non_major_league_ensemble:Training logistic_regression...
+INFO:non_major_league_ensemble:logistic_regression - Val Acc: 1.0000, Val LogLoss: 0.0289
+INFO:non_major_league_ensemble:Creating conservative ensemble
+INFO:non_major_league_ensemble:Created ensemble with 4 models
+INFO:non_major_league_ensemble:Model weights: {'xgboost': 0.4003513200707174, 'lightgbm': 0.3523697165788718, 'random_forest': 0.14766497268929604, 'logistic_regression': 0.09961399066111475}
+INFO:non_major_league_ensemble:Training ensemble model
+INFO:non_major_league_ensemble:Ensemble - Val Acc: 1.0000, Val LogLoss: 0.0209
+INFO:non_major_league_ensemble:Calibrating model probabilities
+INFO:non_major_league_ensemble:Calibrated xgboost
+INFO:non_major_league_ensemble:Calibrated lightgbm
+INFO:non_major_league_ensemble:Calibrated random_forest
+INFO:non_major_league_ensemble:Calibrated logistic_regression
+ERROR:non_major_league_ensemble:Error calibrating ensemble: The 'estimator' parameter of CalibratedClassifierCV must be an object implementing 'fit' and 'predict_proba', an object implementing 'fit' and 'decision_function' or None. Got <non_major_league_ensemble.NonMajorLeagueEnsemble.calibrate_models.<locals>.EnsembleWrapper object at 0x7fe76d429a90> instead.
+INFO:non_major_league_ensemble:Cross-validating ensemble
+INFO:non_major_league_ensemble:Cross-validation fold 1/3
+INFO:non_major_league_ensemble:Training base models with conservative validation
+INFO:non_major_league_ensemble:Training xgboost...
+INFO:non_major_league_ensemble:xgboost - Val Acc: 1.0000, Val LogLoss: 0.0777
+INFO:non_major_league_ensemble:Training lightgbm...
+Training until validation scores don't improve for 30 rounds
+Did not meet early stopping. Best iteration is:
+[150]	valid_0's multi_logloss: 0.0209091
+INFO:non_major_league_ensemble:lightgbm - Val Acc: 1.0000, Val LogLoss: 0.0209
+INFO:non_major_league_ensemble:Training random_forest...
+INFO:non_major_league_ensemble:random_forest - Val Acc: 1.0000, Val LogLoss: 0.2023
+INFO:non_major_league_ensemble:Training logistic_regression...
+INFO:non_major_league_ensemble:logistic_regression - Val Acc: 1.0000, Val LogLoss: 0.1181
+INFO:non_major_league_ensemble:Creating conservative ensemble
+INFO:non_major_league_ensemble:Created ensemble with 4 models
+INFO:non_major_league_ensemble:Model weights: {'xgboost': 0.4005931451117126, 'lightgbm': 0.36087932232139086, 'random_forest': 0.14048500209764386, 'logistic_regression': 0.09804253046925272}
+INFO:non_major_league_ensemble:Fold 1 - Acc: 1.0000, LogLoss: 0.0757
+INFO:non_major_league_ensemble:Cross-validation fold 2/3
+INFO:non_major_league_ensemble:Training base models with conservative validation
+INFO:non_major_league_ensemble:Training xgboost...
+INFO:non_major_league_ensemble:xgboost - Val Acc: 1.0000, Val LogLoss: 0.0377
+INFO:non_major_league_ensemble:Training lightgbm...
+Training until validation scores don't improve for 30 rounds
+Did not meet early stopping. Best iteration is:
+[150]	valid_0's multi_logloss: 0.0122809
+INFO:non_major_league_ensemble:lightgbm - Val Acc: 1.0000, Val LogLoss: 0.0123
+INFO:non_major_league_ensemble:Training random_forest...
+INFO:non_major_league_ensemble:random_forest - Val Acc: 1.0000, Val LogLoss: 0.1126
+INFO:non_major_league_ensemble:Training logistic_regression...
+INFO:non_major_league_ensemble:logistic_regression - Val Acc: 1.0000, Val LogLoss: 0.0599
+INFO:non_major_league_ensemble:Creating conservative ensemble
+INFO:non_major_league_ensemble:Created ensemble with 4 models
+INFO:non_major_league_ensemble:Model weights: {'xgboost': 0.4009302919523357, 'lightgbm': 0.355360077632814, 'random_forest': 0.14461134398902528, 'logistic_regression': 0.09909828642582488}
+INFO:non_major_league_ensemble:Fold 2 - Acc: 1.0000, LogLoss: 0.0405
+INFO:non_major_league_ensemble:Cross-validation fold 3/3
+INFO:non_major_league_ensemble:Training base models with conservative validation
+INFO:non_major_league_ensemble:Training xgboost...
+INFO:non_major_league_ensemble:xgboost - Val Acc: 1.0000, Val LogLoss: 0.0255
+INFO:non_major_league_ensemble:Training lightgbm...
+Training until validation scores don't improve for 30 rounds
+Did not meet early stopping. Best iteration is:
+[150]	valid_0's multi_logloss: 0.00932726
+INFO:non_major_league_ensemble:lightgbm - Val Acc: 1.0000, Val LogLoss: 0.0093
+INFO:non_major_league_ensemble:Training random_forest...
+INFO:non_major_league_ensemble:random_forest - Val Acc: 1.0000, Val LogLoss: 0.0716
+INFO:non_major_league_ensemble:Training logistic_regression...
+INFO:non_major_league_ensemble:logistic_regression - Val Acc: 1.0000, Val LogLoss: 0.0350
+INFO:non_major_league_ensemble:Creating conservative ensemble
+INFO:non_major_league_ensemble:Created ensemble with 4 models
+INFO:non_major_league_ensemble:Model weights: {'xgboost': 0.40044253588455253, 'lightgbm': 0.35326403229502334, 'random_forest': 0.1466646829007119, 'logistic_regression': 0.09962874891971212}
+INFO:non_major_league_ensemble:Fold 3 - Acc: 1.0000, LogLoss: 0.0270
+INFO:non_major_league_ensemble:CV Summary - Mean Acc: 1.0000 ± 0.0000
+INFO:non_major_league_ensemble:CV Summary - Mean LogLoss: 0.0478 ± 0.0205
+INFO:non_major_league_ensemble:Evaluating ensemble performance
+INFO:non_major_league_ensemble:Ensemble Evaluation - Acc: 1.0000, LogLoss: 0.0278
+INFO:non_major_league_ensemble:Mean Confidence: 0.9727
+INFO:non_major_league_ensemble:Making predictions with confidence filtering
+INFO:non_major_league_ensemble:High confidence predictions: 154/154
+INFO:non_major_league_ensemble:Calculating ensemble feature importance
+INFO:non_major_league_ensemble:Estimating prediction uncertainty
+INFO:non_major_league_ensemble:Uncertainty estimation complete
+INFO:phase2_integration:Step 6: Model Validation
+INFO:phase2_integration:Validating models
+INFO:non_major_league_model_validation:Performing comprehensive model validation
+INFO:non_major_league_model_validation:Performing time series cross-validation
+INFO:non_major_league_model_validation:Time series CV fold 1/3
+INFO:non_major_league_model_validation:Fold 1 - Val Acc: 1.0000, Overfitting: 0.0000
+INFO:non_major_league_model_validation:Time series CV fold 2/3
+INFO:non_major_league_model_validation:Fold 2 - Val Acc: 1.0000, Overfitting: 0.0000
+INFO:non_major_league_model_validation:Time series CV fold 3/3
+INFO:non_major_league_model_validation:Fold 3 - Val Acc: 1.0000, Overfitting: 0.0000
+INFO:non_major_league_model_validation:Time series CV complete: 3 successful folds
+INFO:non_major_league_model_validation:Performing walk-forward validation
+INFO:non_major_league_model_validation:Walk-forward CV fold 1/3
+INFO:non_major_league_model_validation:Fold 1 - Val Acc: 1.0000
+INFO:non_major_league_model_validation:Walk-forward CV fold 2/3
+INFO:non_major_league_model_validation:Fold 2 - Val Acc: 1.0000
+INFO:non_major_league_model_validation:Walk-forward CV fold 3/3
+INFO:non_major_league_model_validation:Fold 3 - Val Acc: 1.0000
+INFO:non_major_league_model_validation:Walk-forward CV complete: 3 successful folds
+INFO:non_major_league_model_validation:Performing bootstrap validation
+INFO:non_major_league_model_validation:Bootstrap 1/50
+INFO:non_major_league_model_validation:Bootstrap 2/50
+INFO:non_major_league_model_validation:Bootstrap 3/50
+INFO:non_major_league_model_validation:Bootstrap 4/50
+INFO:non_major_league_model_validation:Bootstrap 5/50
+INFO:non_major_league_model_validation:Bootstrap 6/50
+INFO:non_major_league_model_validation:Bootstrap 7/50
+INFO:non_major_league_model_validation:Bootstrap 8/50
+INFO:non_major_league_model_validation:Bootstrap 9/50
+INFO:non_major_league_model_validation:Bootstrap 10/50
+INFO:non_major_league_model_validation:Bootstrap 11/50
+INFO:non_major_league_model_validation:Bootstrap 12/50
+INFO:non_major_league_model_validation:Bootstrap 13/50
+INFO:non_major_league_model_validation:Bootstrap 14/50
+INFO:non_major_league_model_validation:Bootstrap 15/50
+INFO:non_major_league_model_validation:Bootstrap 16/50
+INFO:non_major_league_model_validation:Bootstrap 17/50
+INFO:non_major_league_model_validation:Bootstrap 18/50
+INFO:non_major_league_model_validation:Bootstrap 19/50
+INFO:non_major_league_model_validation:Bootstrap 20/50
+INFO:non_major_league_model_validation:Bootstrap 21/50
+INFO:non_major_league_model_validation:Bootstrap 22/50
+INFO:non_major_league_model_validation:Bootstrap 23/50
+INFO:non_major_league_model_validation:Bootstrap 24/50
+INFO:non_major_league_model_validation:Bootstrap 25/50
+INFO:non_major_league_model_validation:Bootstrap 26/50
+INFO:non_major_league_model_validation:Bootstrap 27/50
+INFO:non_major_league_model_validation:Bootstrap 28/50
+INFO:non_major_league_model_validation:Bootstrap 29/50
+INFO:non_major_league_model_validation:Bootstrap 30/50
+INFO:non_major_league_model_validation:Bootstrap 31/50
+INFO:non_major_league_model_validation:Bootstrap 32/50
+INFO:non_major_league_model_validation:Bootstrap 33/50
+INFO:non_major_league_model_validation:Bootstrap 34/50
+INFO:non_major_league_model_validation:Bootstrap 35/50
+INFO:non_major_league_model_validation:Bootstrap 36/50
+INFO:non_major_league_model_validation:Bootstrap 37/50
+INFO:non_major_league_model_validation:Bootstrap 38/50
+INFO:non_major_league_model_validation:Bootstrap 39/50
+INFO:non_major_league_model_validation:Bootstrap 40/50
+INFO:non_major_league_model_validation:Bootstrap 41/50
+INFO:non_major_league_model_validation:Bootstrap 42/50
+INFO:non_major_league_model_validation:Bootstrap 43/50
+INFO:non_major_league_model_validation:Bootstrap 44/50
+INFO:non_major_league_model_validation:Bootstrap 45/50
+INFO:non_major_league_model_validation:Bootstrap 46/50
+INFO:non_major_league_model_validation:Bootstrap 47/50
+INFO:non_major_league_model_validation:Bootstrap 48/50
+INFO:non_major_league_model_validation:Bootstrap 49/50
+INFO:non_major_league_model_validation:Bootstrap 50/50
+INFO:non_major_league_model_validation:Bootstrap validation complete: 50 successful bootstraps
+INFO:non_major_league_model_validation:Validating model calibration
+INFO:non_major_league_model_validation:Model calibration validation complete
+INFO:non_major_league_model_validation:Detecting overfitting
+INFO:non_major_league_model_validation:Overfitting detection: NOT DETECTED
+INFO:non_major_league_model_validation:Analyzing model stability
+INFO:non_major_league_model_validation:Stability analysis: STABLE
+INFO:non_major_league_model_validation:Comprehensive validation complete
+INFO:phase2_integration:Step 7: Final Integration
+INFO:phase2_integration:Integrating Phase 2 results
+INFO:phase2_integration:Step 8: Saving Results
+INFO:phase2_integration:Saving results for E1
+INFO:non_major_league_model_architecture:Saving models to ./models/E1_model_architecture.pkl
+INFO:non_major_league_model_architecture:Models saved successfully
+INFO:non_major_league_ensemble:Saving ensemble to ./models/E1_ensemble.pkl
+INFO:non_major_league_ensemble:Ensemble saved successfully
+INFO:non_major_league_hyperparameter_tuning:Saving hyperparameter tuning results to ./models/E1_hyperparameter_tuning.pkl
+INFO:non_major_league_hyperparameter_tuning:Hyperparameter tuning results saved successfully
+INFO:non_major_league_model_validation:Saving validation results to ./models/E1_validation_results.pkl
+INFO:non_major_league_model_validation:Validation results saved successfully
+INFO:phase2_integration:Phase 2 results saved successfully
+INFO:phase2_integration:Phase 2 pipeline completed successfully
+INFO:master_pipeline:Phase 2 completed successfully in 5087.37 seconds
+INFO:__main__:✅ Phase 2 completed
+INFO:__main__:
+📈 STEP 5: Phase 3 - Backtesting
+INFO:master_pipeline:================================================================================
+INFO:master_pipeline:STARTING PHASE 3: BACKTESTING & STRATEGY VALIDATION
+INFO:master_pipeline:================================================================================
+INFO:phase3_integration:Output directory: ./results
+ERROR:master_pipeline:Phase 3 failed: Phase3Integration.run_phase3_pipeline() got an unexpected keyword argument 'feature_data_path'
+ERROR:__main__:❌ Workflow failed: Phase3Integration.run_phase3_pipeline() got an unexpected keyword argument 'feature_data_path'
+ERROR:__main__:Traceback (most recent call last):
+  File "/home/kali/Non-major-leagues/run_complete_workflow.py", line 124, in run_complete_workflow
+    phase3_result = self.master_pipeline.run_phase3()
+  File "/home/kali/Non-major-leagues/master_pipeline.py", line 400, in run_phase3
+    result = phase3.run_phase3_pipeline(
+        feature_data_path=str(Path(self.config['pipeline']['output_dir']) / 'phase1_output' / 'processed_features.parquet'),
+    ...<2 lines>...
+        config=self.config
+    )
+TypeError: Phase3Integration.run_phase3_pipeline() got an unexpected keyword argument 'feature_data_path'
+
+Traceback (most recent call last):
+  File "/home/kali/Non-major-leagues/run_complete_workflow.py", line 484, in <module>
+    main()
+    ~~~~^^
+  File "/home/kali/Non-major-leagues/run_complete_workflow.py", line 469, in main
+    results = orchestrator.run_complete_workflow(
+        league=args.league,
+        crawler_file=args.crawler_file,
+        skip_training=args.skip_training
+    )
+  File "/home/kali/Non-major-leagues/run_complete_workflow.py", line 124, in run_complete_workflow
+    phase3_result = self.master_pipeline.run_phase3()
+  File "/home/kali/Non-major-leagues/master_pipeline.py", line 400, in run_phase3
+    result = phase3.run_phase3_pipeline(
+        feature_data_path=str(Path(self.config['pipeline']['output_dir']) / 'phase1_output' / 'processed_features.parquet'),
+    ...<2 lines>...
+        config=self.config
+    )
+TypeError: Phase3Integration.run_phase3_pipeline() got an unexpected keyword argument 'feature_data_path'

@@ -1,0 +1,438 @@
+{
+  "sessionId": "soccer_2025-10-16T23-35-26-934Z",
+  "timestamp": "2025-10-16T23:36:56.533Z",
+  "totalMatches": 7,
+  "matches": [
+    {
+      "id": "api_match_31_1760657816444",
+      "text": "Diriangen FC Diriamba vs CD Walter Ferretti",
+      "teams": [
+        "Diriangen FC Diriamba",
+        "CD Walter Ferretti"
+      ],
+      "homeTeam": "Diriangen FC Diriamba",
+      "awayTeam": "CD Walter Ferretti",
+      "time": "2025-10-17 05:00:00",
+      "matchTime": "2025-10-17 05:00:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "Diriangen FC Diriamba",
+              "odd_def": "{$competitor1}",
+              "odd_value": "1.39",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "4.70",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "CD Walter Ferretti",
+              "odd_def": "{$competitor2}",
+              "odd_value": "6.40",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "Nicaragua",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-16T23:36:56.444Z",
+      "method": "api-fallback"
+    },
+    {
+      "id": "api_match_131_1760657816444",
+      "text": "Diriangen FC Diriamba vs CD Walter Ferretti",
+      "teams": [
+        "Diriangen FC Diriamba",
+        "CD Walter Ferretti"
+      ],
+      "homeTeam": "Diriangen FC Diriamba",
+      "awayTeam": "CD Walter Ferretti",
+      "time": "2025-10-17 05:00:00",
+      "matchTime": "2025-10-17 05:00:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "Diriangen FC Diriamba",
+              "odd_def": "{$competitor1}",
+              "odd_value": "1.39",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "4.70",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "CD Walter Ferretti",
+              "odd_def": "{$competitor2}",
+              "odd_value": "6.40",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "Nicaragua",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-16T23:36:56.444Z",
+      "method": "api-fallback"
+    },
+    {
+      "id": "api_match_211_1760657816444",
+      "text": "Herediano vs Alajuelense",
+      "teams": [
+        "Herediano",
+        "Alajuelense"
+      ],
+      "homeTeam": "Herediano",
+      "awayTeam": "Alajuelense",
+      "time": "2025-10-17 05:00:00",
+      "matchTime": "2025-10-17 05:00:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "Herediano",
+              "odd_def": "{$competitor1}",
+              "odd_value": "2.65",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "2.95",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "Alajuelense",
+              "odd_def": "{$competitor2}",
+              "odd_value": "2.75",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "Costa Rica",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-16T23:36:56.444Z",
+      "method": "api-fallback"
+    },
+    {
+      "id": "api_match_212_1760657816444",
+      "text": "Ska-Khabarovsk-2 vs FC Metallurg Lipetsk",
+      "teams": [
+        "Ska-Khabarovsk-2",
+        "FC Metallurg Lipetsk"
+      ],
+      "homeTeam": "Ska-Khabarovsk-2",
+      "awayTeam": "FC Metallurg Lipetsk",
+      "time": "2025-10-17 06:00:00",
+      "matchTime": "2025-10-17 06:00:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "Ska-Khabarovsk-2",
+              "odd_def": "{$competitor1}",
+              "odd_value": "3.20",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "3.60",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "FC Metallurg Lipetsk",
+              "odd_def": "{$competitor2}",
+              "odd_value": "2.00",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "Russia",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-16T23:36:56.444Z",
+      "method": "api-fallback"
+    },
+    {
+      "id": "api_match_213_1760657816444",
+      "text": "Qingdao Hainiu FC Srl vs Shanghai Port SRL",
+      "teams": [
+        "Qingdao Hainiu FC Srl",
+        "Shanghai Port SRL"
+      ],
+      "homeTeam": "Qingdao Hainiu FC Srl",
+      "awayTeam": "Shanghai Port SRL",
+      "time": "2025-10-17 08:00:00",
+      "matchTime": "2025-10-17 08:00:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "Qingdao Hainiu FC Srl",
+              "odd_def": "{$competitor1}",
+              "odd_value": "5.20",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "4.70",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "Shanghai Port SRL",
+              "odd_def": "{$competitor2}",
+              "odd_value": "1.48",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "Simulated Reality League",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-16T23:36:56.444Z",
+      "method": "api-fallback"
+    },
+    {
+      "id": "api_match_214_1760657816444",
+      "text": "Qingdao West Coast FC Srl vs Shanghai Shenhua SRL",
+      "teams": [
+        "Qingdao West Coast FC Srl",
+        "Shanghai Shenhua SRL"
+      ],
+      "homeTeam": "Qingdao West Coast FC Srl",
+      "awayTeam": "Shanghai Shenhua SRL",
+      "time": "2025-10-17 08:00:00",
+      "matchTime": "2025-10-17 08:00:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "Qingdao West Coast FC Srl",
+              "odd_def": "{$competitor1}",
+              "odd_value": "6.00",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "4.50",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "Shanghai Shenhua SRL",
+              "odd_def": "{$competitor2}",
+              "odd_value": "1.45",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "Simulated Reality League",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-16T23:36:56.444Z",
+      "method": "api-fallback"
+    },
+    {
+      "id": "api_match_215_1760657816444",
+      "text": "Chengdu Rongcheng FC Srl vs Meizhou Hakka FC Srl",
+      "teams": [
+        "Chengdu Rongcheng FC Srl",
+        "Meizhou Hakka FC Srl"
+      ],
+      "homeTeam": "Chengdu Rongcheng FC Srl",
+      "awayTeam": "Meizhou Hakka FC Srl",
+      "time": "2025-10-17 08:00:00",
+      "matchTime": "2025-10-17 08:00:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "Chengdu Rongcheng FC Srl",
+              "odd_def": "{$competitor1}",
+              "odd_value": "1.10",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "8.80",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "Meizhou Hakka FC Srl",
+              "odd_def": "{$competitor2}",
+              "odd_value": "17.00",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "Simulated Reality League",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-16T23:36:56.444Z",
+      "method": "api-fallback"
+    }
+  ],
+  "filterCriteria": {
+    "timeRange": "3:00 AM to 5:00 AM",
+    "dateFilter": "Current date only",
+    "purpose": "ML Training Data"
+  },
+  "metadata": {
+    "extractionMethod": "enhanced_soccer_crawler",
+    "matchType": "filtered_matches",
+    "crawlerType": "soccer_matches",
+    "trainingData": true
+  }
+}

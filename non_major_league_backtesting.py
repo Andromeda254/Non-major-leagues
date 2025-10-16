@@ -457,18 +457,21 @@ class NonMajorLeagueBacktesting:
         start_idx = 0
         
         for i, dd in enumerate(drawdowns):
-            if dd > 0 and not in_drawdown:
+            # Convert to scalar for comparison
+            dd_value = float(dd) if isinstance(dd, np.ndarray) else dd
+            
+            if dd_value > 0 and not in_drawdown:
                 # Start of drawdown
                 in_drawdown = True
                 start_idx = i
-            elif dd == 0 and in_drawdown:
+            elif dd_value == 0 and in_drawdown:
                 # End of drawdown
                 in_drawdown = False
                 drawdown_periods.append({
                     'start_idx': start_idx,
                     'end_idx': i,
                     'duration': i - start_idx,
-                    'max_drawdown': max(drawdowns[start_idx:i+1]),
+                    'max_drawdown': float(max(drawdowns[start_idx:i+1])),
                     'recovery_time': i - start_idx
                 })
         
@@ -496,7 +499,7 @@ class NonMajorLeagueBacktesting:
             'total_drawdown_time': total_drawdown_time,
             'drawdown_frequency': drawdown_frequency,
             'drawdown_periods': drawdown_periods,
-            'current_drawdown': drawdowns[-1] if drawdowns else 0
+            'current_drawdown': float(drawdowns[-1]) if len(drawdowns) > 0 else 0
         }
         
         return drawdown_analysis
@@ -519,13 +522,17 @@ class NonMajorLeagueBacktesting:
         
         # Check trading days
         if backtest_results['betting_history']:
-            first_date = min([bet['date'] for bet in backtest_results['betting_history']])
-            last_date = max([bet['date'] for bet in backtest_results['betting_history']])
-            trading_days = (last_date - first_date).days + 1
-            
-            if trading_days < min_trading_days:
-                validation_results['validation_passed'] = False
-                validation_results['issues'].append(f"Insufficient trading days: {trading_days} < {min_trading_days}")
+            try:
+                dates = [bet['date'] for bet in backtest_results['betting_history']]
+                first_date = min(dates)
+                last_date = max(dates)
+                trading_days = (last_date - first_date).days + 1
+                
+                if trading_days < min_trading_days:
+                    validation_results['validation_passed'] = False
+                    validation_results['issues'].append(f"Insufficient trading days: {trading_days} < {min_trading_days}")
+            except (KeyError, TypeError, ValueError) as e:
+                self.logger.warning(f"Could not calculate trading days: {e}")
         else:
             validation_results['validation_passed'] = False
             validation_results['issues'].append("No betting history available")

@@ -1,0 +1,1870 @@
+{
+  "source_file": "soccer-match-intelligence/soccer_2025-10-15T23-44-59-277Z_match_data.json",
+  "source_session": "soccer_2025-10-15T23-44-59-277Z",
+  "crawl_timestamp": "2025-10-15T23:45:48.440Z",
+  "filter_date": "2025-10-16",
+  "filter_time_range": "3:00 AM - 5:00 AM",
+  "total_filtered_matches": 31,
+  "matches": [
+    {
+      "id": "api_match_0_1760571948436",
+      "text": "Atletico Mineiro MG vs Cruzeiro EC",
+      "teams": [
+        "Atletico Mineiro MG",
+        "Cruzeiro EC"
+      ],
+      "homeTeam": "Atletico Mineiro MG",
+      "awayTeam": "Cruzeiro EC",
+      "time": "2025-10-16 03:30:00",
+      "matchTime": "2025-10-16 03:30:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "Atletico Mineiro MG",
+              "odd_def": "{$competitor1}",
+              "odd_value": "3.30",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "3.05",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "Cruzeiro EC",
+              "odd_def": "{$competitor2}",
+              "odd_value": "2.44",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "Brazil",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-15T23:45:48.436Z",
+      "method": "api-fallback"
+    },
+    {
+      "id": "api_match_1_1760571948436",
+      "text": "Fortaleza EC vs CR Vasco da Gama",
+      "teams": [
+        "Fortaleza EC",
+        "CR Vasco da Gama"
+      ],
+      "homeTeam": "Fortaleza EC",
+      "awayTeam": "CR Vasco da Gama",
+      "time": "2025-10-16 03:30:00",
+      "matchTime": "2025-10-16 03:30:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "Fortaleza EC",
+              "odd_def": "{$competitor1}",
+              "odd_value": "2.40",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "3.30",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "CR Vasco da Gama",
+              "odd_def": "{$competitor2}",
+              "odd_value": "3.15",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "Brazil",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-15T23:45:48.436Z",
+      "method": "api-fallback"
+    },
+    {
+      "id": "api_match_2_1760571948436",
+      "text": "Santos SP vs SC Corinthians",
+      "teams": [
+        "Santos SP",
+        "SC Corinthians"
+      ],
+      "homeTeam": "Santos SP",
+      "awayTeam": "SC Corinthians",
+      "time": "2025-10-16 03:30:00",
+      "matchTime": "2025-10-16 03:30:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "Santos SP",
+              "odd_def": "{$competitor1}",
+              "odd_value": "2.21",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "3.10",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "SC Corinthians",
+              "odd_def": "{$competitor2}",
+              "odd_value": "3.80",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "Brazil",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-15T23:45:48.436Z",
+      "method": "api-fallback"
+    },
+    {
+      "id": "api_match_3_1760571948436",
+      "text": "Managua FC vs Real Madriz",
+      "teams": [
+        "Managua FC",
+        "Real Madriz"
+      ],
+      "homeTeam": "Managua FC",
+      "awayTeam": "Real Madriz",
+      "time": "2025-10-16 03:00:00",
+      "matchTime": "2025-10-16 03:00:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "Managua FC",
+              "odd_def": "{$competitor1}",
+              "odd_value": "1.24",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "5.80",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "Real Madriz",
+              "odd_def": "{$competitor2}",
+              "odd_value": "8.80",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "Nicaragua",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-15T23:45:48.436Z",
+      "method": "api-fallback"
+    },
+    {
+      "id": "api_match_4_1760571948436",
+      "text": "Cartagines vs Guadalupe",
+      "teams": [
+        "Cartagines",
+        "Guadalupe"
+      ],
+      "homeTeam": "Cartagines",
+      "awayTeam": "Guadalupe",
+      "time": "2025-10-16 05:00:00",
+      "matchTime": "2025-10-16 05:00:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "Cartagines",
+              "odd_def": "{$competitor1}",
+              "odd_value": "1.58",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "4.00",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "Guadalupe",
+              "odd_def": "{$competitor2}",
+              "odd_value": "5.00",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "Costa Rica",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-15T23:45:48.436Z",
+      "method": "api-fallback"
+    },
+    {
+      "id": "api_match_10_1760571948436",
+      "text": "Atletico Mineiro MG vs Cruzeiro EC",
+      "teams": [
+        "Atletico Mineiro MG",
+        "Cruzeiro EC"
+      ],
+      "homeTeam": "Atletico Mineiro MG",
+      "awayTeam": "Cruzeiro EC",
+      "time": "2025-10-16 03:30:00",
+      "matchTime": "2025-10-16 03:30:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "Atletico Mineiro MG",
+              "odd_def": "{$competitor1}",
+              "odd_value": "3.30",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "3.05",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "Cruzeiro EC",
+              "odd_def": "{$competitor2}",
+              "odd_value": "2.44",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "Brazil",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-15T23:45:48.436Z",
+      "method": "api-fallback"
+    },
+    {
+      "id": "api_match_11_1760571948436",
+      "text": "Fortaleza EC vs CR Vasco da Gama",
+      "teams": [
+        "Fortaleza EC",
+        "CR Vasco da Gama"
+      ],
+      "homeTeam": "Fortaleza EC",
+      "awayTeam": "CR Vasco da Gama",
+      "time": "2025-10-16 03:30:00",
+      "matchTime": "2025-10-16 03:30:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "Fortaleza EC",
+              "odd_def": "{$competitor1}",
+              "odd_value": "2.40",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "3.30",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "CR Vasco da Gama",
+              "odd_def": "{$competitor2}",
+              "odd_value": "3.15",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "Brazil",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-15T23:45:48.436Z",
+      "method": "api-fallback"
+    },
+    {
+      "id": "api_match_12_1760571948436",
+      "text": "Santos SP vs SC Corinthians",
+      "teams": [
+        "Santos SP",
+        "SC Corinthians"
+      ],
+      "homeTeam": "Santos SP",
+      "awayTeam": "SC Corinthians",
+      "time": "2025-10-16 03:30:00",
+      "matchTime": "2025-10-16 03:30:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "Santos SP",
+              "odd_def": "{$competitor1}",
+              "odd_value": "2.21",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "3.10",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "SC Corinthians",
+              "odd_def": "{$competitor2}",
+              "odd_value": "3.80",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "Brazil",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-15T23:45:48.436Z",
+      "method": "api-fallback"
+    },
+    {
+      "id": "api_match_13_1760571948436",
+      "text": "Managua FC vs Real Madriz",
+      "teams": [
+        "Managua FC",
+        "Real Madriz"
+      ],
+      "homeTeam": "Managua FC",
+      "awayTeam": "Real Madriz",
+      "time": "2025-10-16 03:00:00",
+      "matchTime": "2025-10-16 03:00:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "Managua FC",
+              "odd_def": "{$competitor1}",
+              "odd_value": "1.24",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "5.80",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "Real Madriz",
+              "odd_def": "{$competitor2}",
+              "odd_value": "8.80",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "Nicaragua",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-15T23:45:48.436Z",
+      "method": "api-fallback"
+    },
+    {
+      "id": "api_match_14_1760571948436",
+      "text": "Cartagines vs Guadalupe",
+      "teams": [
+        "Cartagines",
+        "Guadalupe"
+      ],
+      "homeTeam": "Cartagines",
+      "awayTeam": "Guadalupe",
+      "time": "2025-10-16 05:00:00",
+      "matchTime": "2025-10-16 05:00:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "Cartagines",
+              "odd_def": "{$competitor1}",
+              "odd_value": "1.58",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "4.00",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "Guadalupe",
+              "odd_def": "{$competitor2}",
+              "odd_value": "5.00",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "Costa Rica",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-15T23:45:48.436Z",
+      "method": "api-fallback"
+    },
+    {
+      "id": "api_match_20_1760571948436",
+      "text": "Atletico Mineiro MG vs Cruzeiro EC",
+      "teams": [
+        "Atletico Mineiro MG",
+        "Cruzeiro EC"
+      ],
+      "homeTeam": "Atletico Mineiro MG",
+      "awayTeam": "Cruzeiro EC",
+      "time": "2025-10-16 03:30:00",
+      "matchTime": "2025-10-16 03:30:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "Atletico Mineiro MG",
+              "odd_def": "{$competitor1}",
+              "odd_value": "3.30",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "3.05",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "Cruzeiro EC",
+              "odd_def": "{$competitor2}",
+              "odd_value": "2.44",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "Brazil",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-15T23:45:48.436Z",
+      "method": "api-fallback"
+    },
+    {
+      "id": "api_match_21_1760571948437",
+      "text": "Fortaleza EC vs CR Vasco da Gama",
+      "teams": [
+        "Fortaleza EC",
+        "CR Vasco da Gama"
+      ],
+      "homeTeam": "Fortaleza EC",
+      "awayTeam": "CR Vasco da Gama",
+      "time": "2025-10-16 03:30:00",
+      "matchTime": "2025-10-16 03:30:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "Fortaleza EC",
+              "odd_def": "{$competitor1}",
+              "odd_value": "2.40",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "3.30",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "CR Vasco da Gama",
+              "odd_def": "{$competitor2}",
+              "odd_value": "3.15",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "Brazil",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-15T23:45:48.437Z",
+      "method": "api-fallback"
+    },
+    {
+      "id": "api_match_22_1760571948437",
+      "text": "Santos SP vs SC Corinthians",
+      "teams": [
+        "Santos SP",
+        "SC Corinthians"
+      ],
+      "homeTeam": "Santos SP",
+      "awayTeam": "SC Corinthians",
+      "time": "2025-10-16 03:30:00",
+      "matchTime": "2025-10-16 03:30:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "Santos SP",
+              "odd_def": "{$competitor1}",
+              "odd_value": "2.21",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "3.10",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "SC Corinthians",
+              "odd_def": "{$competitor2}",
+              "odd_value": "3.80",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "Brazil",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-15T23:45:48.437Z",
+      "method": "api-fallback"
+    },
+    {
+      "id": "api_match_23_1760571948437",
+      "text": "Managua FC vs Real Madriz",
+      "teams": [
+        "Managua FC",
+        "Real Madriz"
+      ],
+      "homeTeam": "Managua FC",
+      "awayTeam": "Real Madriz",
+      "time": "2025-10-16 03:00:00",
+      "matchTime": "2025-10-16 03:00:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "Managua FC",
+              "odd_def": "{$competitor1}",
+              "odd_value": "1.24",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "5.80",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "Real Madriz",
+              "odd_def": "{$competitor2}",
+              "odd_value": "8.80",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "Nicaragua",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-15T23:45:48.437Z",
+      "method": "api-fallback"
+    },
+    {
+      "id": "api_match_24_1760571948437",
+      "text": "Cartagines vs Guadalupe",
+      "teams": [
+        "Cartagines",
+        "Guadalupe"
+      ],
+      "homeTeam": "Cartagines",
+      "awayTeam": "Guadalupe",
+      "time": "2025-10-16 05:00:00",
+      "matchTime": "2025-10-16 05:00:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "Cartagines",
+              "odd_def": "{$competitor1}",
+              "odd_value": "1.58",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "4.00",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "Guadalupe",
+              "odd_def": "{$competitor2}",
+              "odd_value": "5.00",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "Costa Rica",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-15T23:45:48.437Z",
+      "method": "api-fallback"
+    },
+    {
+      "id": "api_match_30_1760571948437",
+      "text": "Atletico Mineiro MG vs Cruzeiro EC",
+      "teams": [
+        "Atletico Mineiro MG",
+        "Cruzeiro EC"
+      ],
+      "homeTeam": "Atletico Mineiro MG",
+      "awayTeam": "Cruzeiro EC",
+      "time": "2025-10-16 03:30:00",
+      "matchTime": "2025-10-16 03:30:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "Atletico Mineiro MG",
+              "odd_def": "{$competitor1}",
+              "odd_value": "3.30",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "3.05",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "Cruzeiro EC",
+              "odd_def": "{$competitor2}",
+              "odd_value": "2.44",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "Brazil",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-15T23:45:48.437Z",
+      "method": "api-fallback"
+    },
+    {
+      "id": "api_match_31_1760571948437",
+      "text": "Fortaleza EC vs CR Vasco da Gama",
+      "teams": [
+        "Fortaleza EC",
+        "CR Vasco da Gama"
+      ],
+      "homeTeam": "Fortaleza EC",
+      "awayTeam": "CR Vasco da Gama",
+      "time": "2025-10-16 03:30:00",
+      "matchTime": "2025-10-16 03:30:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "Fortaleza EC",
+              "odd_def": "{$competitor1}",
+              "odd_value": "2.40",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "3.30",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "CR Vasco da Gama",
+              "odd_def": "{$competitor2}",
+              "odd_value": "3.15",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "Brazil",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-15T23:45:48.437Z",
+      "method": "api-fallback"
+    },
+    {
+      "id": "api_match_32_1760571948437",
+      "text": "Santos SP vs SC Corinthians",
+      "teams": [
+        "Santos SP",
+        "SC Corinthians"
+      ],
+      "homeTeam": "Santos SP",
+      "awayTeam": "SC Corinthians",
+      "time": "2025-10-16 03:30:00",
+      "matchTime": "2025-10-16 03:30:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "Santos SP",
+              "odd_def": "{$competitor1}",
+              "odd_value": "2.21",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "3.10",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "SC Corinthians",
+              "odd_def": "{$competitor2}",
+              "odd_value": "3.80",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "Brazil",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-15T23:45:48.437Z",
+      "method": "api-fallback"
+    },
+    {
+      "id": "api_match_33_1760571948437",
+      "text": "Managua FC vs Real Madriz",
+      "teams": [
+        "Managua FC",
+        "Real Madriz"
+      ],
+      "homeTeam": "Managua FC",
+      "awayTeam": "Real Madriz",
+      "time": "2025-10-16 03:00:00",
+      "matchTime": "2025-10-16 03:00:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "Managua FC",
+              "odd_def": "{$competitor1}",
+              "odd_value": "1.24",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "5.80",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "Real Madriz",
+              "odd_def": "{$competitor2}",
+              "odd_value": "8.80",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "Nicaragua",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-15T23:45:48.437Z",
+      "method": "api-fallback"
+    },
+    {
+      "id": "api_match_34_1760571948437",
+      "text": "Cartagines vs Guadalupe",
+      "teams": [
+        "Cartagines",
+        "Guadalupe"
+      ],
+      "homeTeam": "Cartagines",
+      "awayTeam": "Guadalupe",
+      "time": "2025-10-16 05:00:00",
+      "matchTime": "2025-10-16 05:00:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "Cartagines",
+              "odd_def": "{$competitor1}",
+              "odd_value": "1.58",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "4.00",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "Guadalupe",
+              "odd_def": "{$competitor2}",
+              "odd_value": "5.00",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "Costa Rica",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-15T23:45:48.437Z",
+      "method": "api-fallback"
+    },
+    {
+      "id": "api_match_51_1760571948437",
+      "text": "Marquense vs Antigua",
+      "teams": [
+        "Marquense",
+        "Antigua"
+      ],
+      "homeTeam": "Marquense",
+      "awayTeam": "Antigua",
+      "time": "2025-10-16 03:00:00",
+      "matchTime": "2025-10-16 03:00:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "Marquense",
+              "odd_def": "{$competitor1}",
+              "odd_value": "2.75",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "3.20",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "Antigua",
+              "odd_def": "{$competitor2}",
+              "odd_value": "2.43",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "Guatemala",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-15T23:45:48.437Z",
+      "method": "api-fallback"
+    },
+    {
+      "id": "api_match_52_1760571948437",
+      "text": "Defensor Sporting vs Penarol Montevideo",
+      "teams": [
+        "Defensor Sporting",
+        "Penarol Montevideo"
+      ],
+      "homeTeam": "Defensor Sporting",
+      "awayTeam": "Penarol Montevideo",
+      "time": "2025-10-16 03:00:00",
+      "matchTime": "2025-10-16 03:00:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "Defensor Sporting",
+              "odd_def": "{$competitor1}",
+              "odd_value": "4.80",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "3.10",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "Penarol Montevideo",
+              "odd_def": "{$competitor2}",
+              "odd_value": "1.82",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "Uruguay",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-15T23:45:48.437Z",
+      "method": "api-fallback"
+    },
+    {
+      "id": "api_match_53_1760571948437",
+      "text": "Orlando Pride vs Pachuca Women",
+      "teams": [
+        "Orlando Pride",
+        "Pachuca Women"
+      ],
+      "homeTeam": "Orlando Pride",
+      "awayTeam": "Pachuca Women",
+      "time": "2025-10-16 03:15:00",
+      "matchTime": "2025-10-16 03:15:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "Orlando Pride",
+              "odd_def": "{$competitor1}",
+              "odd_value": "1.70",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "3.90",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "Pachuca Women",
+              "odd_def": "{$competitor2}",
+              "odd_value": "3.80",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "International Clubs",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-15T23:45:48.437Z",
+      "method": "api-fallback"
+    },
+    {
+      "id": "api_match_54_1760571948437",
+      "text": "La Familia FC vs CD Universitario II",
+      "teams": [
+        "La Familia FC",
+        "CD Universitario II"
+      ],
+      "homeTeam": "La Familia FC",
+      "awayTeam": "CD Universitario II",
+      "time": "2025-10-16 04:00:00",
+      "matchTime": "2025-10-16 04:00:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "La Familia FC",
+              "odd_def": "{$competitor1}",
+              "odd_value": "10.00",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "5.80",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "CD Universitario II",
+              "odd_def": "{$competitor2}",
+              "odd_value": "1.21",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "Panama",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-15T23:45:48.437Z",
+      "method": "api-fallback"
+    },
+    {
+      "id": "api_match_55_1760571948437",
+      "text": "Deportivo Gomerano vs Deportivo San Pedro",
+      "teams": [
+        "Deportivo Gomerano",
+        "Deportivo San Pedro"
+      ],
+      "homeTeam": "Deportivo Gomerano",
+      "awayTeam": "Deportivo San Pedro",
+      "time": "2025-10-16 04:00:00",
+      "matchTime": "2025-10-16 04:00:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "Deportivo Gomerano",
+              "odd_def": "{$competitor1}",
+              "odd_value": "1.61",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "4.00",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "Deportivo San Pedro",
+              "odd_def": "{$competitor2}",
+              "odd_value": "4.50",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "Guatemala",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-15T23:45:48.437Z",
+      "method": "api-fallback"
+    },
+    {
+      "id": "api_match_56_1760571948437",
+      "text": "Atlas Women vs Club America Women",
+      "teams": [
+        "Atlas Women",
+        "Club America Women"
+      ],
+      "homeTeam": "Atlas Women",
+      "awayTeam": "Club America Women",
+      "time": "2025-10-16 04:00:00",
+      "matchTime": "2025-10-16 04:00:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "Atlas Women",
+              "odd_def": "{$competitor1}",
+              "odd_value": "9.60",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "6.40",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "Club America Women",
+              "odd_def": "{$competitor2}",
+              "odd_value": "1.21",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "Mexico",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-15T23:45:48.437Z",
+      "method": "api-fallback"
+    },
+    {
+      "id": "api_match_57_1760571948437",
+      "text": "America de Cali vs Junior",
+      "teams": [
+        "America de Cali",
+        "Junior"
+      ],
+      "homeTeam": "America de Cali",
+      "awayTeam": "Junior",
+      "time": "2025-10-16 04:20:00",
+      "matchTime": "2025-10-16 04:20:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "America de Cali",
+              "odd_def": "{$competitor1}",
+              "odd_value": "2.35",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "3.10",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "Junior",
+              "odd_def": "{$competitor2}",
+              "odd_value": "3.15",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "Colombia",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-15T23:45:48.437Z",
+      "method": "api-fallback"
+    },
+    {
+      "id": "api_match_58_1760571948437",
+      "text": "Marathon vs Real Espana",
+      "teams": [
+        "Marathon",
+        "Real Espana"
+      ],
+      "homeTeam": "Marathon",
+      "awayTeam": "Real Espana",
+      "time": "2025-10-16 04:30:00",
+      "matchTime": "2025-10-16 04:30:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "Marathon",
+              "odd_def": "{$competitor1}",
+              "odd_value": "2.21",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "3.25",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "Real Espana",
+              "odd_def": "{$competitor2}",
+              "odd_value": "3.10",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "Honduras",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-15T23:45:48.437Z",
+      "method": "api-fallback"
+    },
+    {
+      "id": "api_match_59_1760571948437",
+      "text": "San Carlos vs Saprissa",
+      "teams": [
+        "San Carlos",
+        "Saprissa"
+      ],
+      "homeTeam": "San Carlos",
+      "awayTeam": "Saprissa",
+      "time": "2025-10-16 04:30:00",
+      "matchTime": "2025-10-16 04:30:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "San Carlos",
+              "odd_def": "{$competitor1}",
+              "odd_value": "4.20",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "3.60",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "Saprissa",
+              "odd_def": "{$competitor2}",
+              "odd_value": "1.77",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "Costa Rica",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-15T23:45:48.437Z",
+      "method": "api-fallback"
+    },
+    {
+      "id": "api_match_60_1760571948437",
+      "text": "AFF Guatemala vs S. L. Cotzumalguapa",
+      "teams": [
+        "AFF Guatemala",
+        "S. L. Cotzumalguapa"
+      ],
+      "homeTeam": "AFF Guatemala",
+      "awayTeam": "S. L. Cotzumalguapa",
+      "time": "2025-10-16 05:00:00",
+      "matchTime": "2025-10-16 05:00:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "AFF Guatemala",
+              "odd_def": "{$competitor1}",
+              "odd_value": "1.95",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "3.10",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "S. L. Cotzumalguapa",
+              "odd_def": "{$competitor2}",
+              "odd_value": "3.95",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "Guatemala",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-15T23:45:48.437Z",
+      "method": "api-fallback"
+    },
+    {
+      "id": "api_match_61_1760571948437",
+      "text": "Orange County SC vs San Antonio FC",
+      "teams": [
+        "Orange County SC",
+        "San Antonio FC"
+      ],
+      "homeTeam": "Orange County SC",
+      "awayTeam": "San Antonio FC",
+      "time": "2025-10-16 05:00:00",
+      "matchTime": "2025-10-16 05:00:00",
+      "odds": [
+        {
+          "sub_type_id": "1",
+          "name": "1X2",
+          "odds": [
+            {
+              "display": "1",
+              "odd_key": "Orange County SC",
+              "odd_def": "{$competitor1}",
+              "odd_value": "2.25",
+              "special_bet_value": "",
+              "outcome_id": "1",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "X",
+              "odd_key": "draw",
+              "odd_def": "draw",
+              "odd_value": "3.35",
+              "special_bet_value": "",
+              "outcome_id": "2",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            },
+            {
+              "display": "2",
+              "odd_key": "San Antonio FC",
+              "odd_def": "{$competitor2}",
+              "odd_value": "2.95",
+              "special_bet_value": "",
+              "outcome_id": "3",
+              "parsed_special_bet_value": {
+                "": ""
+              }
+            }
+          ]
+        }
+      ],
+      "league": "USA",
+      "source": "api_fallback",
+      "datetime": null,
+      "selector": "api-extraction",
+      "html": "",
+      "timestamp": "2025-10-15T23:45:48.437Z",
+      "method": "api-fallback"
+    }
+  ]
+}

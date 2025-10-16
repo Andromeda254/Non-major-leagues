@@ -1,0 +1,30 @@
+{
+  "session_name": "paper_trading_stage1_20251016_010736",
+  "stage": "Stage 1 - Paper Trading",
+  "timestamp": "2025-10-16T01:07:37.015447",
+  "initial_capital": 10000,
+  "final_capital": 10000,
+  "total_profit": 0,
+  "roi": 0.0,
+  "trades_executed": 0,
+  "trades_won": 0,
+  "trades_lost": 0,
+  "win_rate": 0,
+  "session_data": {
+    "session_name": "paper_trading_stage1_20251016_010736",
+    "start_time": "2025-10-16 01:07:36.994897",
+    "initial_capital": 10000,
+    "current_capital": 10000,
+    "peak_capital": 1000,
+    "status": "stopped",
+    "trades": [],
+    "performance_metrics": {},
+    "alerts": [],
+    "last_update": "2025-10-16 01:07:36.994904",
+    "end_time": "2025-10-16 01:07:37.015007",
+    "duration": 0.02011,
+    "final_metrics": {
+      "no_settled_trades": true
+    }
+  }
+}

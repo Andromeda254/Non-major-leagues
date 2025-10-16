@@ -111,6 +111,22 @@ data_sources:
     priority: 5
     data_types: ["scores", "schedules", "standings", "news"]
     
+  sportmonks:
+    api_key: "your_sportmonks_key_here"
+    base_url: "https://api.sportmonks.com/v3/football"
+    rate_limit: 3000  # requests per day
+    enabled: true
+    priority: 4
+    data_types: ["fixtures", "standings", "statistics", "lineups"]
+    
+  sofascore:
+    api_key: "no_key_needed"  # Unofficial API, no key required
+    base_url: "https://api.sofascore.com/api/v1"
+    rate_limit: 60  # requests per minute (be conservative)
+    enabled: true
+    priority: 5
+    data_types: ["fixtures", "scores", "statistics", "lineups"]
+    
   betfair_exchange:
     api_key: "your_betfair_api_key_here"
     app_key: "your_betfair_app_key_here"

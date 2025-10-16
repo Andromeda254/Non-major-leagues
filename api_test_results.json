@@ -1,14 +1,12 @@
 {
-  "timestamp": "2025-10-14T04:00:40.286872",
+  "timestamp": "2025-10-15T23:19:30.056137",
   "available_sources": [
     "football_data",
     "odds_api",
     "api_football",
-    "rapidapi_football",
     "sportsdata_io",
     "openweathermap",
-    "newsapi",
-    "livescore"
+    "newsapi"
   ],
   "source_info": {
     "football_data": {
@@ -49,19 +47,6 @@
       "rate_limit": 100,
       "base_url": "https://v3.football.api-sports.io"
     },
-    "rapidapi_football": {
-      "name": "rapidapi_football",
-      "enabled": true,
-      "priority": 4,
-      "data_types": [
-        "fixtures",
-        "odds",
-        "predictions",
-        "statistics"
-      ],
-      "rate_limit": 1000,
-      "base_url": "https://api-football-v1.p.rapidapi.com"
-    },
     "sportsdata_io": {
       "name": "sportsdata_io",
       "enabled": true,
@@ -96,17 +81,6 @@
       ],
       "rate_limit": 1000,
       "base_url": "https://newsapi.org/v2"
-    },
-    "livescore": {
-      "name": "livescore",
-      "enabled": true,
-      "priority": 12,
-      "data_types": [
-        "live_scores",
-        "fixtures"
-      ],
-      "rate_limit": 1000,
-      "base_url": "https://live-score-api.com/api/v1"
     }
   },
   "cache_stats": {

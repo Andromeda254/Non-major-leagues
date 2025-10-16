@@ -49,9 +49,9 @@ class NonMajorLeagueBettingStrategy:
                 'capital_management': {
                     'initial_capital': 1000,
                     'min_capital': 100,
-                    'max_position_size': 0.1,  # 10% of capital
+                    'max_position_size': 0.05,  # Reduced from 10% to 5% for safety
                     'min_position_size': 0.01,  # 1% of capital
-                    'reserve_capital': 0.2      # 20% reserve
+                    'reserve_capital': 0.3      # Increased from 20% to 30% reserve
                 },
                 'kelly_criterion': {
                     'enabled': True,
@@ -62,16 +62,16 @@ class NonMajorLeagueBettingStrategy:
                     'kelly_recovery': 1.05     # Kelly recovery factor
                 },
                 'confidence_filtering': {
-                    'min_confidence': 0.6,
+                    'min_confidence': 0.75,  # Increased from 0.6 to filter low-confidence bets
                     'max_confidence': 0.95,
-                    'confidence_threshold': 0.7,
+                    'confidence_threshold': 0.8,  # Increased from 0.7 for better accuracy
                     'confidence_decay': 0.98,
                     'confidence_recovery': 1.02
                 },
                 'odds_filtering': {
-                    'min_odds': 1.5,
-                    'max_odds': 10.0,
-                    'preferred_odds_range': [2.0, 5.0],
+                    'min_odds': 2.0,  # Increased from 1.5 to avoid low-value bets
+                    'max_odds': 5.0,  # Decreased from 10.0 to avoid high-risk bets
+                    'preferred_odds_range': [2.0, 4.0],  # Tightened range
                     'odds_weight': 0.3
                 },
                 'risk_management': {
@@ -124,6 +124,10 @@ class NonMajorLeagueBettingStrategy:
         b = odds - 1
         p = probability
         q = 1 - p
+        
+        # Avoid division by zero
+        if b == 0:
+            return 0
         
         kelly_optimal = (b * p - q) / b
         
@@ -179,7 +183,10 @@ class NonMajorLeagueBettingStrategy:
     def _apply_risk_management(self, position_size: float, available_capital: float) -> float:
         """Apply risk management constraints to position size"""
         # Check drawdown limits
-        current_drawdown = (self.peak_capital - self.current_capital) / self.peak_capital
+        if self.peak_capital == 0:
+            current_drawdown = 0
+        else:
+            current_drawdown = (self.peak_capital - self.current_capital) / self.peak_capital
         
         if current_drawdown > self.config['risk_management']['max_drawdown']:
             self.logger.warning(f"Maximum drawdown exceeded: {current_drawdown:.2%}")
@@ -278,6 +285,9 @@ class NonMajorLeagueBettingStrategy:
         max_impact = self.config['market_impact']['max_impact']
         
         # Impact increases with position size relative to capital
+        if available_capital == 0:
+            return 0
+        
         relative_size = position_size / available_capital
         market_impact = min(max_impact, relative_size * impact_factor)
         
@@ -373,9 +383,9 @@ class NonMajorLeagueBettingStrategy:
         else:
             # Penalize odds outside preferred range
             if odds < preferred_range[0]:
-                odds_score = odds / preferred_range[0]
+                odds_score = odds / preferred_range[0] if preferred_range[0] != 0 else 0
             else:
-                odds_score = preferred_range[1] / odds
+                odds_score = preferred_range[1] / odds if odds != 0 else 0
         
         # Combine scores
         overall_score = base_score * (1 - odds_weight) + odds_score * odds_weight
@@ -497,9 +507,9 @@ class NonMajorLeagueBettingStrategy:
             winning_bets = [bet for bet in settled_bets if bet['outcome'] == 'win']
             losing_bets = [bet for bet in settled_bets if bet['outcome'] == 'loss']
             
-            win_rate = len(winning_bets) / len(settled_bets)
+            win_rate = len(winning_bets) / len(settled_bets) if len(settled_bets) > 0 else 0
             total_profit = sum([bet['net_profit'] for bet in settled_bets])
-            avg_profit = total_profit / len(settled_bets)
+            avg_profit = total_profit / len(settled_bets) if len(settled_bets) > 0 else 0
             
             # Risk metrics
             max_drawdown = self.current_drawdown
@@ -544,7 +554,8 @@ class NonMajorLeagueBettingStrategy:
         if len(settled_bets) < 2:
             return 0
         
-        returns = [bet['net_profit'] / bet['position_size'] for bet in settled_bets]
+        returns = [bet['net_profit'] / bet['position_size'] if bet['position_size'] != 0 else 0 
+                   for bet in settled_bets]
         
         if np.std(returns) == 0:
             return 0

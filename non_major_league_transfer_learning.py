@@ -371,13 +371,10 @@ class NonMajorLeagueTransferLearning:
             eval_metric='mlogloss'
         )
         
-        # Fine-tune with early stopping
-        early_stopping_rounds = self.config['transfer_strategy']['early_stopping_patience']
-        
+        # Fine-tune (early stopping removed for XGBoost 2.0+ compatibility)
         base_model.fit(
             X_train, y_train,
             eval_set=[(X_test, y_test)],
-            early_stopping_rounds=early_stopping_rounds,
             verbose=False
         )
         

@@ -1,0 +1,420 @@
+2025-10-17 00:01:37,481 - phase1_integration - INFO - Output directory: ./data
+2025-10-17 00:01:37,482 - phase1_integration - INFO - Starting Phase 1 pipeline for E1, seasons: ['2324']
+2025-10-17 00:01:37,482 - phase1_integration - INFO - Step 1: Data Collection
+2025-10-17 00:01:37,482 - phase1_integration - INFO - Collecting data for E1, seasons: ['2324']
+2025-10-17 00:01:37,482 - non_major_league_data_collector - INFO - Collecting historical data for E1, seasons: ['2324']
+2025-10-17 00:01:37,483 - non_major_league_data_collector - INFO - Fetching data from https://www.football-data.co.uk/mmz4281/2324/E1.csv
+2025-10-17 00:01:39,547 - non_major_league_data_collector - INFO - Successfully collected 552 matches from football-data.co.uk
+2025-10-17 00:01:39,549 - non_major_league_data_collector - INFO - Collected 552 matches for E1 2324
+2025-10-17 00:01:39,552 - non_major_league_data_collector - INFO - Validating data quality for E1
+2025-10-17 00:01:39,579 - non_major_league_data_collector - INFO - Removed 0 duplicate rows
+2025-10-17 00:01:39,582 - non_major_league_data_collector - WARNING - High missing percentage in IWH: 43.5%
+2025-10-17 00:01:39,583 - non_major_league_data_collector - WARNING - High missing percentage in IWD: 43.5%
+2025-10-17 00:01:39,583 - non_major_league_data_collector - WARNING - High missing percentage in IWA: 43.5%
+2025-10-17 00:01:39,583 - non_major_league_data_collector - WARNING - High missing percentage in IWCH: 43.5%
+2025-10-17 00:01:39,583 - non_major_league_data_collector - WARNING - High missing percentage in IWCD: 43.5%
+2025-10-17 00:01:39,583 - non_major_league_data_collector - WARNING - High missing percentage in IWCA: 43.5%
+2025-10-17 00:01:39,594 - non_major_league_data_collector - WARNING - Found 314 invalid dates
+2025-10-17 00:01:39,603 - non_major_league_data_collector - INFO - Found 24 unique teams
+2025-10-17 00:01:39,614 - non_major_league_data_collector - WARNING - Low data volume: 238 matches (minimum: 300)
+2025-10-17 00:01:39,614 - non_major_league_data_collector - INFO - Data validation complete. Final dataset: 238 matches
+2025-10-17 00:01:39,614 - non_major_league_data_collector - INFO - Total historical data collected: 238 matches
+2025-10-17 00:01:39,615 - phase1_integration - INFO - Step 2: Data Preprocessing
+2025-10-17 00:01:39,615 - phase1_integration - INFO - Preprocessing 238 rows of data
+2025-10-17 00:01:39,615 - non_major_league_preprocessor - INFO - Starting preprocessing pipeline
+2025-10-17 00:01:39,615 - non_major_league_preprocessor - INFO - Validating input data
+2025-10-17 00:01:39,625 - non_major_league_preprocessor - INFO - Found 24 unique teams
+2025-10-17 00:01:39,632 - non_major_league_preprocessor - INFO - Result distribution: {'H': 108, 'A': 74, 'D': 56}
+2025-10-17 00:01:39,633 - non_major_league_preprocessor - INFO - Data validation complete. Valid rows: 238
+2025-10-17 00:01:39,633 - non_major_league_preprocessor - INFO - Handling missing data
+2025-10-17 00:01:39,635 - non_major_league_preprocessor - WARNING - Columns with high missing data: ['IWH', 'IWD', 'IWA', 'IWCH', 'IWCD', 'IWCA']
+2025-10-17 00:01:39,693 - non_major_league_preprocessor - INFO - Missing data handling complete. Remaining missing values: 0
+2025-10-17 00:01:39,694 - non_major_league_preprocessor - INFO - Detecting and treating outliers
+2025-10-17 00:01:39,711 - non_major_league_preprocessor - INFO - Found 11 outliers in HTHG
+2025-10-17 00:01:39,720 - non_major_league_preprocessor - INFO - Found 1 outliers in HTAG
+2025-10-17 00:01:39,730 - non_major_league_preprocessor - INFO - Found 3 outliers in HS
+2025-10-17 00:01:39,741 - non_major_league_preprocessor - INFO - Found 9 outliers in AS
+2025-10-17 00:01:39,754 - non_major_league_preprocessor - INFO - Found 4 outliers in HST
+2025-10-17 00:01:39,765 - non_major_league_preprocessor - INFO - Found 3 outliers in AST
+2025-10-17 00:01:39,775 - non_major_league_preprocessor - INFO - Found 1 outliers in HF
+2025-10-17 00:01:39,785 - non_major_league_preprocessor - INFO - Found 6 outliers in AF
+2025-10-17 00:01:39,794 - non_major_league_preprocessor - INFO - Found 2 outliers in HC
+2025-10-17 00:01:39,804 - non_major_league_preprocessor - INFO - Found 7 outliers in AC
+2025-10-17 00:01:39,814 - non_major_league_preprocessor - INFO - Found 19 outliers in HY
+2025-10-17 00:01:39,827 - non_major_league_preprocessor - INFO - Found 11 outliers in HR
+2025-10-17 00:01:39,835 - non_major_league_preprocessor - INFO - Found 13 outliers in AR
+2025-10-17 00:01:39,844 - non_major_league_preprocessor - INFO - Found 12 outliers in B365H
+2025-10-17 00:01:39,854 - non_major_league_preprocessor - INFO - Found 24 outliers in B365D
+2025-10-17 00:01:39,866 - non_major_league_preprocessor - INFO - Found 22 outliers in B365A
+2025-10-17 00:01:39,877 - non_major_league_preprocessor - INFO - Found 14 outliers in BWH
+2025-10-17 00:01:39,884 - non_major_league_preprocessor - INFO - Found 21 outliers in BWD
+2025-10-17 00:01:39,890 - non_major_league_preprocessor - INFO - Found 19 outliers in BWA
+2025-10-17 00:01:39,896 - non_major_league_preprocessor - INFO - Found 11 outliers in PSH
+2025-10-17 00:01:39,904 - non_major_league_preprocessor - INFO - Found 20 outliers in PSD
+2025-10-17 00:01:39,910 - non_major_league_preprocessor - INFO - Found 16 outliers in PSA
+2025-10-17 00:01:39,918 - non_major_league_preprocessor - INFO - Found 12 outliers in WHH
+2025-10-17 00:01:39,926 - non_major_league_preprocessor - INFO - Found 18 outliers in WHD
+2025-10-17 00:01:39,935 - non_major_league_preprocessor - INFO - Found 20 outliers in WHA
+2025-10-17 00:01:39,943 - non_major_league_preprocessor - INFO - Found 13 outliers in VCH
+2025-10-17 00:01:39,949 - non_major_league_preprocessor - INFO - Found 20 outliers in VCD
+2025-10-17 00:01:39,954 - non_major_league_preprocessor - INFO - Found 18 outliers in VCA
+2025-10-17 00:01:39,961 - non_major_league_preprocessor - INFO - Found 11 outliers in MaxH
+2025-10-17 00:01:39,967 - non_major_league_preprocessor - INFO - Found 24 outliers in MaxD
+2025-10-17 00:01:39,974 - non_major_league_preprocessor - INFO - Found 19 outliers in MaxA
+2025-10-17 00:01:39,981 - non_major_league_preprocessor - INFO - Found 13 outliers in AvgH
+2025-10-17 00:01:39,988 - non_major_league_preprocessor - INFO - Found 21 outliers in AvgD
+2025-10-17 00:01:39,994 - non_major_league_preprocessor - INFO - Found 19 outliers in AvgA
+2025-10-17 00:01:40,003 - non_major_league_preprocessor - INFO - Found 6 outliers in B365<2.5
+2025-10-17 00:01:40,012 - non_major_league_preprocessor - INFO - Found 4 outliers in P<2.5
+2025-10-17 00:01:40,020 - non_major_league_preprocessor - INFO - Found 3 outliers in Max<2.5
+2025-10-17 00:01:40,030 - non_major_league_preprocessor - INFO - Found 4 outliers in Avg<2.5
+2025-10-17 00:01:40,037 - non_major_league_preprocessor - INFO - Found 4 outliers in AHh
+2025-10-17 00:01:40,063 - non_major_league_preprocessor - INFO - Found 13 outliers in B365CH
+2025-10-17 00:01:40,070 - non_major_league_preprocessor - INFO - Found 21 outliers in B365CD
+2025-10-17 00:01:40,078 - non_major_league_preprocessor - INFO - Found 19 outliers in B365CA
+2025-10-17 00:01:40,084 - non_major_league_preprocessor - INFO - Found 10 outliers in BWCH
+2025-10-17 00:01:40,092 - non_major_league_preprocessor - INFO - Found 18 outliers in BWCD
+2025-10-17 00:01:40,099 - non_major_league_preprocessor - INFO - Found 20 outliers in BWCA
+2025-10-17 00:01:40,104 - non_major_league_preprocessor - INFO - Found 11 outliers in PSCH
+2025-10-17 00:01:40,112 - non_major_league_preprocessor - INFO - Found 19 outliers in PSCD
+2025-10-17 00:01:40,118 - non_major_league_preprocessor - INFO - Found 18 outliers in PSCA
+2025-10-17 00:01:40,125 - non_major_league_preprocessor - INFO - Found 10 outliers in WHCH
+2025-10-17 00:01:40,133 - non_major_league_preprocessor - INFO - Found 19 outliers in WHCD
+2025-10-17 00:01:40,138 - non_major_league_preprocessor - INFO - Found 24 outliers in WHCA
+2025-10-17 00:01:40,146 - non_major_league_preprocessor - INFO - Found 13 outliers in VCCH
+2025-10-17 00:01:40,153 - non_major_league_preprocessor - INFO - Found 21 outliers in VCCD
+2025-10-17 00:01:40,161 - non_major_league_preprocessor - INFO - Found 19 outliers in VCCA
+2025-10-17 00:01:40,168 - non_major_league_preprocessor - INFO - Found 10 outliers in MaxCH
+2025-10-17 00:01:40,175 - non_major_league_preprocessor - INFO - Found 21 outliers in MaxCD
+2025-10-17 00:01:40,181 - non_major_league_preprocessor - INFO - Found 22 outliers in MaxCA
+2025-10-17 00:01:40,188 - non_major_league_preprocessor - INFO - Found 10 outliers in AvgCH
+2025-10-17 00:01:40,195 - non_major_league_preprocessor - INFO - Found 19 outliers in AvgCD
+2025-10-17 00:01:40,201 - non_major_league_preprocessor - INFO - Found 19 outliers in AvgCA
+2025-10-17 00:01:40,212 - non_major_league_preprocessor - INFO - Found 6 outliers in B365C<2.5
+2025-10-17 00:01:40,220 - non_major_league_preprocessor - INFO - Found 3 outliers in PC<2.5
+2025-10-17 00:01:40,230 - non_major_league_preprocessor - INFO - Found 3 outliers in MaxC<2.5
+2025-10-17 00:01:40,238 - non_major_league_preprocessor - INFO - Found 3 outliers in AvgC<2.5
+2025-10-17 00:01:40,249 - non_major_league_preprocessor - INFO - Found 4 outliers in AHCh
+2025-10-17 00:01:40,276 - non_major_league_preprocessor - INFO - Engineering basic features
+2025-10-17 00:01:40,525 - non_major_league_preprocessor - INFO - Encoding categorical variables
+2025-10-17 00:01:40,531 - non_major_league_preprocessor - INFO - Scaling numerical features
+2025-10-17 00:01:40,562 - non_major_league_preprocessor - INFO - Augmenting data
+2025-10-17 00:01:40,991 - non_major_league_preprocessor - INFO - Data augmentation complete. Added 100 synthetic samples
+2025-10-17 00:01:40,992 - non_major_league_preprocessor - INFO - Performing final validation
+2025-10-17 00:01:41,009 - non_major_league_preprocessor - INFO - Data types: {dtype('float64'): 112, dtype('O'): 10, dtype('int64'): 3, dtype('<M8[ns]'): 1}
+2025-10-17 00:01:41,010 - non_major_league_preprocessor - INFO - Final data shape: (338, 126)
+2025-10-17 00:01:41,010 - non_major_league_preprocessor - INFO - Preprocessing complete. Final dataset: 338 rows, 126 columns
+2025-10-17 00:01:41,010 - phase1_integration - INFO - Step 3: Data Validation
+2025-10-17 00:01:41,010 - phase1_integration - INFO - Validating 338 rows of data
+2025-10-17 00:01:41,010 - non_major_league_validator - INFO - Starting comprehensive validation for dataset with 338 rows
+2025-10-17 00:01:41,439 - phase1_integration - INFO - Step 4: Feature Engineering
+2025-10-17 00:01:41,440 - phase1_integration - INFO - Engineering features for 338 rows of data
+2025-10-17 00:01:41,440 - non_major_league_feature_engineer - INFO - Starting feature engineering for 338 matches
+2025-10-17 00:01:41,445 - non_major_league_feature_engineer - INFO - Creating basic features
+2025-10-17 00:01:41,454 - non_major_league_feature_engineer - INFO - Creating form features
+2025-10-17 00:01:51,545 - non_major_league_feature_engineer - INFO - Creating consistency features
+2025-10-17 00:01:55,078 - non_major_league_feature_engineer - INFO - Creating market features
+2025-10-17 00:01:55,110 - non_major_league_feature_engineer - INFO - Creating temporal features
+2025-10-17 00:01:57,705 - non_major_league_feature_engineer - INFO - Creating seasonal features
+2025-10-17 00:02:00,194 - non_major_league_feature_engineer - INFO - Creating fixture congestion features
+2025-10-17 00:02:08,948 - non_major_league_feature_engineer - INFO - Creating temporal context features
+2025-10-17 00:02:08,963 - non_major_league_feature_engineer - INFO - Creating momentum features
+2025-10-17 00:02:14,718 - non_major_league_feature_engineer - INFO - Creating league position features
+2025-10-17 00:02:15,030 - non_major_league_feature_engineer - INFO - Creating league-specific features
+2025-10-17 00:02:15,031 - non_major_league_feature_engineer - INFO - Creating cross-league features
+2025-10-17 00:02:15,033 - non_major_league_feature_engineer - INFO - Creating advanced statistical features
+2025-10-17 00:02:15,042 - non_major_league_feature_engineer - INFO - Creating team embedding features
+2025-10-17 00:02:15,440 - non_major_league_feature_engineer - INFO - Finalizing features
+2025-10-17 00:02:15,876 - non_major_league_feature_engineer - INFO - Feature engineering complete. Final features: 248
+2025-10-17 00:02:16,226 - phase1_integration - INFO - Step 5: Final Integration
+2025-10-17 00:02:16,226 - phase1_integration - INFO - Integrating Phase 1 results
+2025-10-17 00:02:16,226 - phase1_integration - INFO - Step 6: Saving Results
+2025-10-17 00:02:16,227 - phase1_integration - INFO - Saving results for E1
+2025-10-17 00:02:16,541 - phase1_integration - INFO - Features data saved to ./data/E1_features.csv
+2025-10-17 00:02:16,543 - non_major_league_validator - INFO - Validation report saved to ./data/E1_validation_report.txt
+2025-10-17 00:02:16,543 - phase1_integration - INFO - Validation report saved to ./data/E1_validation_report.txt
+2025-10-17 00:02:16,544 - phase1_integration - INFO - Pipeline summary saved to ./data/E1_phase1_summary.json
+2025-10-17 00:02:16,550 - non_major_league_preprocessor - INFO - Preprocessors saved to ./data/E1_preprocessor.pkl
+2025-10-17 00:02:16,553 - non_major_league_feature_engineer - INFO - Feature engineer state saved to ./data/E1_feature_engineer.pkl
+2025-10-17 00:02:16,553 - phase1_integration - INFO - Phase 1 results saved successfully
+2025-10-17 00:02:16,554 - phase1_integration - INFO - Phase 1 pipeline completed successfully
+2025-10-17 00:02:41,759 - phase1_integration - INFO - Output directory: ./data
+2025-10-17 00:02:41,759 - phase1_integration - INFO - Starting Phase 1 pipeline for E1, seasons: ['2324']
+2025-10-17 00:02:41,760 - phase1_integration - INFO - Step 1: Data Collection
+2025-10-17 00:02:41,760 - phase1_integration - INFO - Collecting data for E1, seasons: ['2324']
+2025-10-17 00:02:41,760 - non_major_league_data_collector - INFO - Collecting historical data for E1, seasons: ['2324']
+2025-10-17 00:02:41,760 - non_major_league_data_collector - INFO - Fetching data from https://www.football-data.co.uk/mmz4281/2324/E1.csv
+2025-10-17 00:02:46,276 - non_major_league_data_collector - INFO - Successfully collected 552 matches from football-data.co.uk
+2025-10-17 00:02:46,278 - non_major_league_data_collector - INFO - Collected 552 matches for E1 2324
+2025-10-17 00:02:46,279 - non_major_league_data_collector - INFO - Validating data quality for E1
+2025-10-17 00:02:46,299 - non_major_league_data_collector - INFO - Removed 0 duplicate rows
+2025-10-17 00:02:46,302 - non_major_league_data_collector - WARNING - High missing percentage in IWH: 43.5%
+2025-10-17 00:02:46,302 - non_major_league_data_collector - WARNING - High missing percentage in IWD: 43.5%
+2025-10-17 00:02:46,302 - non_major_league_data_collector - WARNING - High missing percentage in IWA: 43.5%
+2025-10-17 00:02:46,302 - non_major_league_data_collector - WARNING - High missing percentage in IWCH: 43.5%
+2025-10-17 00:02:46,303 - non_major_league_data_collector - WARNING - High missing percentage in IWCD: 43.5%
+2025-10-17 00:02:46,303 - non_major_league_data_collector - WARNING - High missing percentage in IWCA: 43.5%
+2025-10-17 00:02:46,317 - non_major_league_data_collector - WARNING - Found 314 invalid dates
+2025-10-17 00:02:46,328 - non_major_league_data_collector - INFO - Found 24 unique teams
+2025-10-17 00:02:46,341 - non_major_league_data_collector - WARNING - Low data volume: 238 matches (minimum: 300)
+2025-10-17 00:02:46,342 - non_major_league_data_collector - INFO - Data validation complete. Final dataset: 238 matches
+2025-10-17 00:02:46,342 - non_major_league_data_collector - INFO - Total historical data collected: 238 matches
+2025-10-17 00:02:46,342 - phase1_integration - INFO - Step 2: Data Preprocessing
+2025-10-17 00:02:46,342 - phase1_integration - INFO - Preprocessing 238 rows of data
+2025-10-17 00:02:46,343 - non_major_league_preprocessor - INFO - Starting preprocessing pipeline
+2025-10-17 00:02:46,343 - non_major_league_preprocessor - INFO - Validating input data
+2025-10-17 00:02:46,353 - non_major_league_preprocessor - INFO - Found 24 unique teams
+2025-10-17 00:02:46,361 - non_major_league_preprocessor - INFO - Result distribution: {'H': 108, 'A': 74, 'D': 56}
+2025-10-17 00:02:46,361 - non_major_league_preprocessor - INFO - Data validation complete. Valid rows: 238
+2025-10-17 00:02:46,361 - non_major_league_preprocessor - INFO - Handling missing data
+2025-10-17 00:02:46,363 - non_major_league_preprocessor - WARNING - Columns with high missing data: ['IWH', 'IWD', 'IWA', 'IWCH', 'IWCD', 'IWCA']
+2025-10-17 00:02:46,402 - non_major_league_preprocessor - INFO - Missing data handling complete. Remaining missing values: 0
+2025-10-17 00:02:46,402 - non_major_league_preprocessor - INFO - Detecting and treating outliers
+2025-10-17 00:02:46,407 - non_major_league_preprocessor - INFO - Found 11 outliers in HTHG
+2025-10-17 00:02:46,413 - non_major_league_preprocessor - INFO - Found 1 outliers in HTAG
+2025-10-17 00:02:46,419 - non_major_league_preprocessor - INFO - Found 3 outliers in HS
+2025-10-17 00:02:46,424 - non_major_league_preprocessor - INFO - Found 9 outliers in AS
+2025-10-17 00:02:46,430 - non_major_league_preprocessor - INFO - Found 4 outliers in HST
+2025-10-17 00:02:46,436 - non_major_league_preprocessor - INFO - Found 3 outliers in AST
+2025-10-17 00:02:46,442 - non_major_league_preprocessor - INFO - Found 1 outliers in HF
+2025-10-17 00:02:46,448 - non_major_league_preprocessor - INFO - Found 6 outliers in AF
+2025-10-17 00:02:46,460 - non_major_league_preprocessor - INFO - Found 2 outliers in HC
+2025-10-17 00:02:46,469 - non_major_league_preprocessor - INFO - Found 7 outliers in AC
+2025-10-17 00:02:46,477 - non_major_league_preprocessor - INFO - Found 19 outliers in HY
+2025-10-17 00:02:46,487 - non_major_league_preprocessor - INFO - Found 11 outliers in HR
+2025-10-17 00:02:46,494 - non_major_league_preprocessor - INFO - Found 13 outliers in AR
+2025-10-17 00:02:46,501 - non_major_league_preprocessor - INFO - Found 12 outliers in B365H
+2025-10-17 00:02:46,508 - non_major_league_preprocessor - INFO - Found 24 outliers in B365D
+2025-10-17 00:02:46,514 - non_major_league_preprocessor - INFO - Found 22 outliers in B365A
+2025-10-17 00:02:46,522 - non_major_league_preprocessor - INFO - Found 14 outliers in BWH
+2025-10-17 00:02:46,529 - non_major_league_preprocessor - INFO - Found 21 outliers in BWD
+2025-10-17 00:02:46,536 - non_major_league_preprocessor - INFO - Found 19 outliers in BWA
+2025-10-17 00:02:46,542 - non_major_league_preprocessor - INFO - Found 11 outliers in PSH
+2025-10-17 00:02:46,548 - non_major_league_preprocessor - INFO - Found 20 outliers in PSD
+2025-10-17 00:02:46,556 - non_major_league_preprocessor - INFO - Found 16 outliers in PSA
+2025-10-17 00:02:46,564 - non_major_league_preprocessor - INFO - Found 12 outliers in WHH
+2025-10-17 00:02:46,571 - non_major_league_preprocessor - INFO - Found 18 outliers in WHD
+2025-10-17 00:02:46,579 - non_major_league_preprocessor - INFO - Found 20 outliers in WHA
+2025-10-17 00:02:46,587 - non_major_league_preprocessor - INFO - Found 13 outliers in VCH
+2025-10-17 00:02:46,595 - non_major_league_preprocessor - INFO - Found 20 outliers in VCD
+2025-10-17 00:02:46,604 - non_major_league_preprocessor - INFO - Found 18 outliers in VCA
+2025-10-17 00:02:46,612 - non_major_league_preprocessor - INFO - Found 11 outliers in MaxH
+2025-10-17 00:02:46,621 - non_major_league_preprocessor - INFO - Found 24 outliers in MaxD
+2025-10-17 00:02:46,629 - non_major_league_preprocessor - INFO - Found 19 outliers in MaxA
+2025-10-17 00:02:46,636 - non_major_league_preprocessor - INFO - Found 13 outliers in AvgH
+2025-10-17 00:02:46,643 - non_major_league_preprocessor - INFO - Found 21 outliers in AvgD
+2025-10-17 00:02:46,652 - non_major_league_preprocessor - INFO - Found 19 outliers in AvgA
+2025-10-17 00:02:46,662 - non_major_league_preprocessor - INFO - Found 6 outliers in B365<2.5
+2025-10-17 00:02:46,672 - non_major_league_preprocessor - INFO - Found 4 outliers in P<2.5
+2025-10-17 00:02:46,682 - non_major_league_preprocessor - INFO - Found 3 outliers in Max<2.5
+2025-10-17 00:02:46,692 - non_major_league_preprocessor - INFO - Found 4 outliers in Avg<2.5
+2025-10-17 00:02:46,699 - non_major_league_preprocessor - INFO - Found 4 outliers in AHh
+2025-10-17 00:02:46,730 - non_major_league_preprocessor - INFO - Found 13 outliers in B365CH
+2025-10-17 00:02:46,738 - non_major_league_preprocessor - INFO - Found 21 outliers in B365CD
+2025-10-17 00:02:46,745 - non_major_league_preprocessor - INFO - Found 19 outliers in B365CA
+2025-10-17 00:02:46,751 - non_major_league_preprocessor - INFO - Found 10 outliers in BWCH
+2025-10-17 00:02:46,759 - non_major_league_preprocessor - INFO - Found 18 outliers in BWCD
+2025-10-17 00:02:46,768 - non_major_league_preprocessor - INFO - Found 20 outliers in BWCA
+2025-10-17 00:02:46,776 - non_major_league_preprocessor - INFO - Found 11 outliers in PSCH
+2025-10-17 00:02:46,783 - non_major_league_preprocessor - INFO - Found 19 outliers in PSCD
+2025-10-17 00:02:46,789 - non_major_league_preprocessor - INFO - Found 18 outliers in PSCA
+2025-10-17 00:02:46,796 - non_major_league_preprocessor - INFO - Found 10 outliers in WHCH
+2025-10-17 00:02:46,802 - non_major_league_preprocessor - INFO - Found 19 outliers in WHCD
+2025-10-17 00:02:46,812 - non_major_league_preprocessor - INFO - Found 24 outliers in WHCA
+2025-10-17 00:02:46,819 - non_major_league_preprocessor - INFO - Found 13 outliers in VCCH
+2025-10-17 00:02:46,825 - non_major_league_preprocessor - INFO - Found 21 outliers in VCCD
+2025-10-17 00:02:46,831 - non_major_league_preprocessor - INFO - Found 19 outliers in VCCA
+2025-10-17 00:02:46,836 - non_major_league_preprocessor - INFO - Found 10 outliers in MaxCH
+2025-10-17 00:02:46,842 - non_major_league_preprocessor - INFO - Found 21 outliers in MaxCD
+2025-10-17 00:02:46,848 - non_major_league_preprocessor - INFO - Found 22 outliers in MaxCA
+2025-10-17 00:02:46,854 - non_major_league_preprocessor - INFO - Found 10 outliers in AvgCH
+2025-10-17 00:02:46,860 - non_major_league_preprocessor - INFO - Found 19 outliers in AvgCD
+2025-10-17 00:02:46,865 - non_major_league_preprocessor - INFO - Found 19 outliers in AvgCA
+2025-10-17 00:02:46,873 - non_major_league_preprocessor - INFO - Found 6 outliers in B365C<2.5
+2025-10-17 00:02:46,881 - non_major_league_preprocessor - INFO - Found 3 outliers in PC<2.5
+2025-10-17 00:02:46,888 - non_major_league_preprocessor - INFO - Found 3 outliers in MaxC<2.5
+2025-10-17 00:02:46,896 - non_major_league_preprocessor - INFO - Found 3 outliers in AvgC<2.5
+2025-10-17 00:02:46,902 - non_major_league_preprocessor - INFO - Found 4 outliers in AHCh
+2025-10-17 00:02:46,924 - non_major_league_preprocessor - INFO - Engineering basic features
+2025-10-17 00:02:47,154 - non_major_league_preprocessor - INFO - Encoding categorical variables
+2025-10-17 00:02:47,158 - non_major_league_preprocessor - INFO - Scaling numerical features
+2025-10-17 00:02:47,192 - non_major_league_preprocessor - INFO - Augmenting data
+2025-10-17 00:02:47,614 - non_major_league_preprocessor - INFO - Data augmentation complete. Added 100 synthetic samples
+2025-10-17 00:02:47,616 - non_major_league_preprocessor - INFO - Performing final validation
+2025-10-17 00:02:47,628 - non_major_league_preprocessor - INFO - Data types: {dtype('float64'): 112, dtype('O'): 10, dtype('int64'): 3, dtype('<M8[ns]'): 1}
+2025-10-17 00:02:47,628 - non_major_league_preprocessor - INFO - Final data shape: (338, 126)
+2025-10-17 00:02:47,628 - non_major_league_preprocessor - INFO - Preprocessing complete. Final dataset: 338 rows, 126 columns
+2025-10-17 00:02:47,628 - phase1_integration - INFO - Step 3: Data Validation
+2025-10-17 00:02:47,629 - phase1_integration - INFO - Validating 338 rows of data
+2025-10-17 00:02:47,629 - non_major_league_validator - INFO - Starting comprehensive validation for dataset with 338 rows
+2025-10-17 00:02:47,988 - phase1_integration - INFO - Step 4: Feature Engineering
+2025-10-17 00:02:47,989 - phase1_integration - INFO - Engineering features for 338 rows of data
+2025-10-17 00:02:47,989 - non_major_league_feature_engineer - INFO - Starting feature engineering for 338 matches
+2025-10-17 00:02:47,992 - non_major_league_feature_engineer - INFO - Creating basic features
+2025-10-17 00:02:47,999 - non_major_league_feature_engineer - INFO - Creating form features
+2025-10-17 00:02:58,226 - non_major_league_feature_engineer - INFO - Creating consistency features
+2025-10-17 00:03:01,843 - non_major_league_feature_engineer - INFO - Creating market features
+2025-10-17 00:03:01,876 - non_major_league_feature_engineer - INFO - Creating temporal features
+2025-10-17 00:03:04,436 - non_major_league_feature_engineer - INFO - Creating seasonal features
+2025-10-17 00:03:06,971 - non_major_league_feature_engineer - INFO - Creating fixture congestion features
+2025-10-17 00:03:16,089 - non_major_league_feature_engineer - INFO - Creating temporal context features
+2025-10-17 00:03:16,102 - non_major_league_feature_engineer - INFO - Creating momentum features
+2025-10-17 00:03:22,316 - non_major_league_feature_engineer - INFO - Creating league position features
+2025-10-17 00:03:22,673 - non_major_league_feature_engineer - INFO - Creating league-specific features
+2025-10-17 00:03:22,673 - non_major_league_feature_engineer - INFO - Creating cross-league features
+2025-10-17 00:03:22,676 - non_major_league_feature_engineer - INFO - Creating advanced statistical features
+2025-10-17 00:03:22,685 - non_major_league_feature_engineer - INFO - Creating team embedding features
+2025-10-17 00:03:23,124 - non_major_league_feature_engineer - INFO - Finalizing features
+2025-10-17 00:03:23,569 - non_major_league_feature_engineer - INFO - Feature engineering complete. Final features: 248
+2025-10-17 00:03:23,908 - phase1_integration - INFO - Step 5: Final Integration
+2025-10-17 00:03:23,909 - phase1_integration - INFO - Integrating Phase 1 results
+2025-10-17 00:03:23,909 - phase1_integration - INFO - Step 6: Saving Results
+2025-10-17 00:03:23,909 - phase1_integration - INFO - Saving results for E1
+2025-10-17 00:03:24,239 - phase1_integration - INFO - Features data saved to ./data/E1_features.csv
+2025-10-17 00:03:24,253 - non_major_league_validator - INFO - Validation report saved to ./data/E1_validation_report.txt
+2025-10-17 00:03:24,253 - phase1_integration - INFO - Validation report saved to ./data/E1_validation_report.txt
+2025-10-17 00:03:24,260 - phase1_integration - INFO - Pipeline summary saved to ./data/E1_phase1_summary.json
+2025-10-17 00:03:24,270 - non_major_league_preprocessor - INFO - Preprocessors saved to ./data/E1_preprocessor.pkl
+2025-10-17 00:03:24,274 - non_major_league_feature_engineer - INFO - Feature engineer state saved to ./data/E1_feature_engineer.pkl
+2025-10-17 00:03:24,275 - phase1_integration - INFO - Phase 1 results saved successfully
+2025-10-17 00:03:24,275 - phase1_integration - INFO - Phase 1 pipeline completed successfully
+2025-10-17 00:03:43,455 - phase1_integration - INFO - Output directory: ./data
+2025-10-17 00:03:43,456 - phase1_integration - INFO - Starting Phase 1 pipeline for E1, seasons: ['2324']
+2025-10-17 00:03:43,456 - phase1_integration - INFO - Step 1: Data Collection
+2025-10-17 00:03:43,456 - phase1_integration - INFO - Collecting data for E1, seasons: ['2324']
+2025-10-17 00:03:43,457 - non_major_league_data_collector - INFO - Collecting historical data for E1, seasons: ['2324']
+2025-10-17 00:03:43,457 - non_major_league_data_collector - INFO - Fetching data from https://www.football-data.co.uk/mmz4281/2324/E1.csv
+2025-10-17 00:03:45,532 - non_major_league_data_collector - INFO - Successfully collected 552 matches from football-data.co.uk
+2025-10-17 00:03:45,534 - non_major_league_data_collector - INFO - Collected 552 matches for E1 2324
+2025-10-17 00:03:45,535 - non_major_league_data_collector - INFO - Validating data quality for E1
+2025-10-17 00:03:45,555 - non_major_league_data_collector - INFO - Removed 0 duplicate rows
+2025-10-17 00:03:45,557 - non_major_league_data_collector - WARNING - High missing percentage in IWH: 43.5%
+2025-10-17 00:03:45,557 - non_major_league_data_collector - WARNING - High missing percentage in IWD: 43.5%
+2025-10-17 00:03:45,557 - non_major_league_data_collector - WARNING - High missing percentage in IWA: 43.5%
+2025-10-17 00:03:45,558 - non_major_league_data_collector - WARNING - High missing percentage in IWCH: 43.5%
+2025-10-17 00:03:45,558 - non_major_league_data_collector - WARNING - High missing percentage in IWCD: 43.5%
+2025-10-17 00:03:45,558 - non_major_league_data_collector - WARNING - High missing percentage in IWCA: 43.5%
+2025-10-17 00:03:45,568 - non_major_league_data_collector - WARNING - Found 314 invalid dates
+2025-10-17 00:03:45,578 - non_major_league_data_collector - INFO - Found 24 unique teams
+2025-10-17 00:03:45,592 - non_major_league_data_collector - WARNING - Low data volume: 238 matches (minimum: 300)
+2025-10-17 00:03:45,592 - non_major_league_data_collector - INFO - Data validation complete. Final dataset: 238 matches
+2025-10-17 00:03:45,592 - non_major_league_data_collector - INFO - Total historical data collected: 238 matches
+2025-10-17 00:03:45,592 - phase1_integration - INFO - Step 2: Data Preprocessing
+2025-10-17 00:03:45,593 - phase1_integration - INFO - Preprocessing 238 rows of data
+2025-10-17 00:03:45,593 - non_major_league_preprocessor - INFO - Starting preprocessing pipeline
+2025-10-17 00:03:45,593 - non_major_league_preprocessor - INFO - Validating input data
+2025-10-17 00:03:45,603 - non_major_league_preprocessor - INFO - Found 24 unique teams
+2025-10-17 00:03:45,611 - non_major_league_preprocessor - INFO - Result distribution: {'H': 108, 'A': 74, 'D': 56}
+2025-10-17 00:03:45,611 - non_major_league_preprocessor - INFO - Data validation complete. Valid rows: 238
+2025-10-17 00:03:45,612 - non_major_league_preprocessor - INFO - Handling missing data
+2025-10-17 00:03:45,614 - non_major_league_preprocessor - WARNING - Columns with high missing data: ['IWH', 'IWD', 'IWA', 'IWCH', 'IWCD', 'IWCA']
+2025-10-17 00:03:45,656 - non_major_league_preprocessor - INFO - Missing data handling complete. Remaining missing values: 0
+2025-10-17 00:03:45,656 - non_major_league_preprocessor - INFO - Detecting and treating outliers
+2025-10-17 00:03:45,663 - non_major_league_preprocessor - INFO - Found 11 outliers in HTHG
+2025-10-17 00:03:45,674 - non_major_league_preprocessor - INFO - Found 1 outliers in HTAG
+2025-10-17 00:03:45,680 - non_major_league_preprocessor - INFO - Found 3 outliers in HS
+2025-10-17 00:03:45,688 - non_major_league_preprocessor - INFO - Found 9 outliers in AS
+2025-10-17 00:03:45,695 - non_major_league_preprocessor - INFO - Found 4 outliers in HST
+2025-10-17 00:03:45,703 - non_major_league_preprocessor - INFO - Found 3 outliers in AST
+2025-10-17 00:03:45,711 - non_major_league_preprocessor - INFO - Found 1 outliers in HF
+2025-10-17 00:03:45,719 - non_major_league_preprocessor - INFO - Found 6 outliers in AF
+2025-10-17 00:03:45,728 - non_major_league_preprocessor - INFO - Found 2 outliers in HC
+2025-10-17 00:03:45,735 - non_major_league_preprocessor - INFO - Found 7 outliers in AC
+2025-10-17 00:03:45,743 - non_major_league_preprocessor - INFO - Found 19 outliers in HY
+2025-10-17 00:03:45,752 - non_major_league_preprocessor - INFO - Found 11 outliers in HR
+2025-10-17 00:03:45,760 - non_major_league_preprocessor - INFO - Found 13 outliers in AR
+2025-10-17 00:03:45,767 - non_major_league_preprocessor - INFO - Found 12 outliers in B365H
+2025-10-17 00:03:45,775 - non_major_league_preprocessor - INFO - Found 24 outliers in B365D
+2025-10-17 00:03:45,784 - non_major_league_preprocessor - INFO - Found 22 outliers in B365A
+2025-10-17 00:03:45,792 - non_major_league_preprocessor - INFO - Found 14 outliers in BWH
+2025-10-17 00:03:45,798 - non_major_league_preprocessor - INFO - Found 21 outliers in BWD
+2025-10-17 00:03:45,806 - non_major_league_preprocessor - INFO - Found 19 outliers in BWA
+2025-10-17 00:03:45,814 - non_major_league_preprocessor - INFO - Found 11 outliers in PSH
+2025-10-17 00:03:45,821 - non_major_league_preprocessor - INFO - Found 20 outliers in PSD
+2025-10-17 00:03:45,830 - non_major_league_preprocessor - INFO - Found 16 outliers in PSA
+2025-10-17 00:03:45,836 - non_major_league_preprocessor - INFO - Found 12 outliers in WHH
+2025-10-17 00:03:45,844 - non_major_league_preprocessor - INFO - Found 18 outliers in WHD
+2025-10-17 00:03:45,851 - non_major_league_preprocessor - INFO - Found 20 outliers in WHA
+2025-10-17 00:03:45,861 - non_major_league_preprocessor - INFO - Found 13 outliers in VCH
+2025-10-17 00:03:45,868 - non_major_league_preprocessor - INFO - Found 20 outliers in VCD
+2025-10-17 00:03:45,877 - non_major_league_preprocessor - INFO - Found 18 outliers in VCA
+2025-10-17 00:03:45,884 - non_major_league_preprocessor - INFO - Found 11 outliers in MaxH
+2025-10-17 00:03:45,895 - non_major_league_preprocessor - INFO - Found 24 outliers in MaxD
+2025-10-17 00:03:45,904 - non_major_league_preprocessor - INFO - Found 19 outliers in MaxA
+2025-10-17 00:03:45,915 - non_major_league_preprocessor - INFO - Found 13 outliers in AvgH
+2025-10-17 00:03:45,922 - non_major_league_preprocessor - INFO - Found 21 outliers in AvgD
+2025-10-17 00:03:45,933 - non_major_league_preprocessor - INFO - Found 19 outliers in AvgA
+2025-10-17 00:03:45,943 - non_major_league_preprocessor - INFO - Found 6 outliers in B365<2.5
+2025-10-17 00:03:45,954 - non_major_league_preprocessor - INFO - Found 4 outliers in P<2.5
+2025-10-17 00:03:45,964 - non_major_league_preprocessor - INFO - Found 3 outliers in Max<2.5
+2025-10-17 00:03:45,975 - non_major_league_preprocessor - INFO - Found 4 outliers in Avg<2.5
+2025-10-17 00:03:45,985 - non_major_league_preprocessor - INFO - Found 4 outliers in AHh
+2025-10-17 00:03:46,026 - non_major_league_preprocessor - INFO - Found 13 outliers in B365CH
+2025-10-17 00:03:46,035 - non_major_league_preprocessor - INFO - Found 21 outliers in B365CD
+2025-10-17 00:03:46,045 - non_major_league_preprocessor - INFO - Found 19 outliers in B365CA
+2025-10-17 00:03:46,053 - non_major_league_preprocessor - INFO - Found 10 outliers in BWCH
+2025-10-17 00:03:46,063 - non_major_league_preprocessor - INFO - Found 18 outliers in BWCD
+2025-10-17 00:03:46,072 - non_major_league_preprocessor - INFO - Found 20 outliers in BWCA
+2025-10-17 00:03:46,081 - non_major_league_preprocessor - INFO - Found 11 outliers in PSCH
+2025-10-17 00:03:46,091 - non_major_league_preprocessor - INFO - Found 19 outliers in PSCD
+2025-10-17 00:03:46,101 - non_major_league_preprocessor - INFO - Found 18 outliers in PSCA
+2025-10-17 00:03:46,112 - non_major_league_preprocessor - INFO - Found 10 outliers in WHCH
+2025-10-17 00:03:46,122 - non_major_league_preprocessor - INFO - Found 19 outliers in WHCD
+2025-10-17 00:03:46,132 - non_major_league_preprocessor - INFO - Found 24 outliers in WHCA
+2025-10-17 00:03:46,142 - non_major_league_preprocessor - INFO - Found 13 outliers in VCCH
+2025-10-17 00:03:46,148 - non_major_league_preprocessor - INFO - Found 21 outliers in VCCD
+2025-10-17 00:03:46,158 - non_major_league_preprocessor - INFO - Found 19 outliers in VCCA
+2025-10-17 00:03:46,165 - non_major_league_preprocessor - INFO - Found 10 outliers in MaxCH
+2025-10-17 00:03:46,172 - non_major_league_preprocessor - INFO - Found 21 outliers in MaxCD
+2025-10-17 00:03:46,179 - non_major_league_preprocessor - INFO - Found 22 outliers in MaxCA
+2025-10-17 00:03:46,186 - non_major_league_preprocessor - INFO - Found 10 outliers in AvgCH
+2025-10-17 00:03:46,193 - non_major_league_preprocessor - INFO - Found 19 outliers in AvgCD
+2025-10-17 00:03:46,199 - non_major_league_preprocessor - INFO - Found 19 outliers in AvgCA
+2025-10-17 00:03:46,208 - non_major_league_preprocessor - INFO - Found 6 outliers in B365C<2.5
+2025-10-17 00:03:46,215 - non_major_league_preprocessor - INFO - Found 3 outliers in PC<2.5
+2025-10-17 00:03:46,225 - non_major_league_preprocessor - INFO - Found 3 outliers in MaxC<2.5
+2025-10-17 00:03:46,235 - non_major_league_preprocessor - INFO - Found 3 outliers in AvgC<2.5
+2025-10-17 00:03:46,243 - non_major_league_preprocessor - INFO - Found 4 outliers in AHCh
+2025-10-17 00:03:46,266 - non_major_league_preprocessor - INFO - Engineering basic features
+2025-10-17 00:03:46,503 - non_major_league_preprocessor - INFO - Encoding categorical variables
+2025-10-17 00:03:46,510 - non_major_league_preprocessor - INFO - Scaling numerical features
+2025-10-17 00:03:46,540 - non_major_league_preprocessor - INFO - Augmenting data
+2025-10-17 00:03:46,930 - non_major_league_preprocessor - INFO - Data augmentation complete. Added 100 synthetic samples
+2025-10-17 00:03:46,931 - non_major_league_preprocessor - INFO - Performing final validation
+2025-10-17 00:03:46,943 - non_major_league_preprocessor - INFO - Data types: {dtype('float64'): 112, dtype('O'): 10, dtype('int64'): 3, dtype('<M8[ns]'): 1}
+2025-10-17 00:03:46,944 - non_major_league_preprocessor - INFO - Final data shape: (338, 126)
+2025-10-17 00:03:46,944 - non_major_league_preprocessor - INFO - Preprocessing complete. Final dataset: 338 rows, 126 columns
+2025-10-17 00:03:46,944 - phase1_integration - INFO - Step 3: Data Validation
+2025-10-17 00:03:46,944 - phase1_integration - INFO - Validating 338 rows of data
+2025-10-17 00:03:46,944 - non_major_league_validator - INFO - Starting comprehensive validation for dataset with 338 rows
+2025-10-17 00:03:47,312 - phase1_integration - INFO - Step 4: Feature Engineering
+2025-10-17 00:03:47,313 - phase1_integration - INFO - Engineering features for 338 rows of data
+2025-10-17 00:03:47,313 - non_major_league_feature_engineer - INFO - Starting feature engineering for 338 matches
+2025-10-17 00:03:47,315 - non_major_league_feature_engineer - INFO - Creating basic features
+2025-10-17 00:03:47,324 - non_major_league_feature_engineer - INFO - Creating form features
+2025-10-17 00:03:57,266 - non_major_league_feature_engineer - INFO - Creating consistency features
+2025-10-17 00:04:00,817 - non_major_league_feature_engineer - INFO - Creating market features
+2025-10-17 00:04:00,855 - non_major_league_feature_engineer - INFO - Creating temporal features
+2025-10-17 00:04:03,592 - non_major_league_feature_engineer - INFO - Creating seasonal features
+2025-10-17 00:04:05,983 - non_major_league_feature_engineer - INFO - Creating fixture congestion features
+2025-10-17 00:04:15,061 - non_major_league_feature_engineer - INFO - Creating temporal context features
+2025-10-17 00:04:15,076 - non_major_league_feature_engineer - INFO - Creating momentum features
+2025-10-17 00:04:20,710 - non_major_league_feature_engineer - INFO - Creating league position features
+2025-10-17 00:04:21,049 - non_major_league_feature_engineer - INFO - Creating league-specific features
+2025-10-17 00:04:21,049 - non_major_league_feature_engineer - INFO - Creating cross-league features
+2025-10-17 00:04:21,053 - non_major_league_feature_engineer - INFO - Creating advanced statistical features
+2025-10-17 00:04:21,062 - non_major_league_feature_engineer - INFO - Creating team embedding features
+2025-10-17 00:04:21,458 - non_major_league_feature_engineer - INFO - Finalizing features
+2025-10-17 00:04:21,859 - non_major_league_feature_engineer - INFO - Feature engineering complete. Final features: 248
+2025-10-17 00:04:22,183 - phase1_integration - INFO - Step 5: Final Integration
+2025-10-17 00:04:22,184 - phase1_integration - INFO - Integrating Phase 1 results
+2025-10-17 00:04:22,184 - phase1_integration - INFO - Step 6: Saving Results
+2025-10-17 00:04:22,184 - phase1_integration - INFO - Saving results for E1
+2025-10-17 00:04:22,470 - phase1_integration - INFO - Features data saved to ./data/E1_features.csv
+2025-10-17 00:04:22,473 - non_major_league_validator - INFO - Validation report saved to ./data/E1_validation_report.txt
+2025-10-17 00:04:22,473 - phase1_integration - INFO - Validation report saved to ./data/E1_validation_report.txt
+2025-10-17 00:04:22,474 - phase1_integration - INFO - Pipeline summary saved to ./data/E1_phase1_summary.json
+2025-10-17 00:04:22,481 - non_major_league_preprocessor - INFO - Preprocessors saved to ./data/E1_preprocessor.pkl
+2025-10-17 00:04:22,484 - non_major_league_feature_engineer - INFO - Feature engineer state saved to ./data/E1_feature_engineer.pkl
+2025-10-17 00:04:22,484 - phase1_integration - INFO - Phase 1 results saved successfully
+2025-10-17 00:04:22,485 - phase1_integration - INFO - Phase 1 pipeline completed successfully

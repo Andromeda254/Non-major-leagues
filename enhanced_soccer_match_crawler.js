@@ -4,7 +4,7 @@
  * Enhanced Soccer Match Crawler with Highlights Tab Extraction
  * Features: Login, Soccer Section Navigation, Highlights Tab Extraction, Time Filtering
  * Integrates with SSL decryption and Firecrawl MCP for enhanced data extraction
- * Target: Soccer matches from Highlights tab, filtered for 5:00 AM to 11:00 AM for ML training
+ * Target: Soccer matches from Highlights tab, filtered for 5:00 AM to 10:00 AM (October 17, 2025) for ML training
  */
 
 const puppeteer = require('puppeteer-extra');
@@ -59,7 +59,7 @@ class EnhancedSoccerMatchCrawler {
         // Intelligence tracking
         this.soccerMatches = [];
         this.highlightsMatches = []; // All highlights matches for training
-        this.filteredMatches = []; // Matches filtered for 5AM-11AM
+        this.filteredMatches = []; // Matches filtered for 5AM-10AM on Oct 17, 2025
         this.apiMatches = []; // Matches extracted from API calls
         this.externalOdds = [];
         this.trafficIntelligence = [];
@@ -151,7 +151,8 @@ class EnhancedSoccerMatchCrawler {
         console.log(`📁 Session ID: ${this.sessionId}`);
         console.log(`🔐 SSL Keylog: ${this.sslKeylogFile}`);
         console.log(`⏰ Current Time: ${this.currentTime.toISOString()}`);
-        console.log(`🎯 Target: All Upcoming Matches for Training`);
+        console.log(`🎯 Target: Matches 3:00 AM - 5:00 AM (Current Date Only)`);
+        console.log(`📅 Current Date: ${this.currentTime.toISOString().split('T')[0]}`);
         console.log(`📱 Username: ${this.username ? '✓ Loaded' : '✗ Missing'}`);
         console.log(`🔑 Password: ${this.password ? '✓ Loaded' : '✗ Missing'}`);
         console.log(`🔥 Firecrawl Integration: ${this.firecrawlEnabled ? '✓ Enabled' : '✗ Disabled'}`);
@@ -725,10 +726,10 @@ class EnhancedSoccerMatchCrawler {
             const matches = await this.extractSoccerMatches();
             console.log(`✅ Extracted ${matches.length} highlights soccer matches`);
             
-            // Step 4: Filter matches for 5:00 AM to 11:00 AM
-            console.log('\n⚽ STEP 4: FILTERING MATCHES FOR 5:00 AM TO 11:00 AM');
+            // Step 4: Filter matches for 5:00 AM to 10:00 AM (October 17, 2025)
+            console.log('\n⚽ STEP 4: FILTERING MATCHES FOR 5:00 AM TO 10:00 AM (OCTOBER 17, 2025)');
             const filteredMatches = await this.filterMatchesByTime(matches);
-            console.log(`✅ Filtered ${filteredMatches.length} matches for ML training (5AM-11AM)`);
+            console.log(`✅ Filtered ${filteredMatches.length} matches for ML training (5AM-10AM, Oct 17, 2025)`);
             
             // Step 5: Save data in multiple formats
             console.log('\n💾 STEP 5: SAVING DATA IN MULTIPLE FORMATS');
@@ -1932,30 +1933,35 @@ class EnhancedSoccerMatchCrawler {
         }
     }
     
-    // Step 4: Filter matches by time (5:00 AM to 11:00 AM)
+    // Step 4: Filter matches by time (3:00 AM to 5:00 AM) for current date only
     async filterMatchesByTime(matches) {
-        console.log('⚽ FILTERING MATCHES BY TIME (5:00 AM TO 11:00 AM)');
+        console.log('⏰ FILTERING MATCHES BY TIME (5:00 AM TO 10:00 AM - OCTOBER 17, 2025)');
         
         try {
-            console.log(`⚽ Filtering ${matches.length} matches for 5:00 AM to 11:00 AM`);
+            // Target date: October 17, 2025
+            const targetDateStr = '2025-10-17'; // YYYY-MM-DD format
+            
+            console.log(`⚽ Filtering ${matches.length} matches for 5:00 AM to 10:00 AM on ${targetDateStr}`);
             
             const filteredMatches = matches.filter(match => {
                 // Extract time from match
                 const timeStr = match.time || match.matchTime || '';
+                const dateStr = match.date || match.matchDate || '';
                 
                 if (!timeStr || timeStr === 'Unknown') {
                     return false;
                 }
                 
-                let hours, minutes;
+                let hours, minutes, matchDate;
                 
                 // Parse different time formats
-                // Format 1: "2025-10-11 16:00:00" (datetime)
+                // Format 1: "2025-10-17 16:00:00" (datetime)
                 const datetimeMatch = timeStr.match(/(\d{4}-\d{2}-\d{2})\s+(\d{1,2}):(\d{2}):(\d{2})/);
                 if (datetimeMatch) {
+                    matchDate = datetimeMatch[1]; // YYYY-MM-DD
                     hours = parseInt(datetimeMatch[2]);
                     minutes = parseInt(datetimeMatch[3]);
-        } else {
+                } else {
                     // Format 2: "16:00" (time only)
                     const timeMatch = timeStr.match(/(\d{1,2}):(\d{2})/);
                     if (!timeMatch) {
@@ -1963,22 +1969,41 @@ class EnhancedSoccerMatchCrawler {
                     }
                     hours = parseInt(timeMatch[1]);
                     minutes = parseInt(timeMatch[2]);
+                    
+                    // Try to get date from separate date field
+                    if (dateStr) {
+                        const dateMatch = dateStr.match(/(\d{4}-\d{2}-\d{2})/);
+                        if (dateMatch) {
+                            matchDate = dateMatch[1];
+                        }
+                    }
                 }
                 
-                // Check if time is between 5:00 AM and 11:00 AM
-                const isWithinRange = (hours >= 5 && hours < 11) || (hours === 11 && minutes === 0);
+                // Check if match is for October 17, 2025
+                const isTargetDate = matchDate === targetDateStr;
                 
-                if (isWithinRange) {
-                    console.log(`✅ Match ${match.homeTeam} vs ${match.awayTeam} at ${timeStr} (${hours}:${minutes.toString().padStart(2, '0')}) - within range`);
+                // Check if time is between 5:00 AM and 10:00 AM (inclusive)
+                // 5:00 AM (05:00) to 10:00 AM (10:00)
+                const isWithinTimeRange = (hours >= 5 && hours < 10) || (hours === 10 && minutes === 0);
+                
+                // Match must be both October 17, 2025 AND within time range
+                const isValid = isTargetDate && isWithinTimeRange;
+                
+                if (isValid) {
+                    console.log(`✅ Match ${match.homeTeam} vs ${match.awayTeam} at ${timeStr} (${hours}:${minutes.toString().padStart(2, '0')}) on ${matchDate} - INCLUDED`);
+                } else if (isWithinTimeRange && !isTargetDate) {
+                    console.log(`⏭️  Match ${match.homeTeam} vs ${match.awayTeam} at ${timeStr} - SKIPPED (not Oct 17, 2025: ${matchDate})`);
+                } else if (isTargetDate && !isWithinTimeRange) {
+                    console.log(`⏭️  Match ${match.homeTeam} vs ${match.awayTeam} at ${timeStr} (${hours}:${minutes.toString().padStart(2, '0')}) - SKIPPED (outside 5AM-10AM range)`);
                 }
                 
-                return isWithinRange;
+                return isValid;
             });
             
             // Store filtered matches
             this.filteredMatches = filteredMatches;
             
-            console.log(`✅ Filtered ${filteredMatches.length} matches for ML training (5AM-11AM)`);
+            console.log(`✅ Filtered ${filteredMatches.length} matches for ML training (5AM-10AM, ${targetDateStr})`);
             return filteredMatches;
             
         } catch (error) {
@@ -2021,7 +2046,8 @@ class EnhancedSoccerMatchCrawler {
                 totalMatches: filteredMatches.length,
                 matches: filteredMatches,
                 filterCriteria: {
-                    timeRange: '5:00 AM to 11:00 AM',
+                    timeRange: '3:00 AM to 5:00 AM',
+                    dateFilter: 'Current date only',
                     purpose: 'ML Training Data'
                 },
                 metadata: {
